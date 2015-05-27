@@ -1,0 +1,686 @@
+# baseURI: null
+
+@prefix composite: <http://www.topbraid.org/2007/05/composite.owl#> .
+@prefix forms: <http://www.topbraid.org/2007/01/forms.owl#> .
+@prefix inference: <http://www.topbraid.org/2007/06/inference.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix visual: <http://topbraid.org/visual#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[
+  rdf:type visual:Graph ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#AboveHumanComfort> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "208"^^xsd:int ;
+      visual:x "16"^^xsd:int ;
+      visual:y "356"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#Alerting> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "131"^^xsd:int ;
+      visual:x "703"^^xsd:int ;
+      visual:y "251"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#BelowHumanComfort> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "206"^^xsd:int ;
+      visual:x "17"^^xsd:int ;
+      visual:y "312"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#BigAppMft> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "147"^^xsd:int ;
+      visual:x "1105"^^xsd:int ;
+      visual:y "559"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#Cooling> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "131"^^xsd:int ;
+      visual:x "33"^^xsd:int ;
+      visual:y "148"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#CoolingSrvc> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "153"^^xsd:int ;
+      visual:x "59"^^xsd:int ;
+      visual:y "224"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#CoolingSystem> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "169"^^xsd:int ;
+      visual:x "307"^^xsd:int ;
+      visual:y "147"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#CoolingTemperatureRequirements> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "272"^^xsd:int ;
+      visual:x "264"^^xsd:int ;
+      visual:y "409"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#DesignForTempSetPtControlAndMonitoring> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "327"^^xsd:int ;
+      visual:x "717"^^xsd:int ;
+      visual:y "355"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#ForHumanComfort> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "191"^^xsd:int ;
+      visual:x "20"^^xsd:int ;
+      visual:y "396"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#FreezerTemp> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "157"^^xsd:int ;
+      visual:x "914"^^xsd:int ;
+      visual:y "408"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#HeatRemoval> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "160"^^xsd:int ;
+      visual:x "699"^^xsd:int ;
+      visual:y "139"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#HomeRefrigerator> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "184"^^xsd:int ;
+      visual:x "685"^^xsd:int ;
+      visual:y "523"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#RefrigeratorTemp> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "182"^^xsd:int ;
+      visual:x "912"^^xsd:int ;
+      visual:y "451"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#SpecSet1> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "136"^^xsd:int ;
+      visual:x "777"^^xsd:int ;
+      visual:y "570"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#Srvc3-L2> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "134"^^xsd:int ;
+      visual:x "1111"^^xsd:int ;
+      visual:y "167"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#SystemHealth> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "162"^^xsd:int ;
+      visual:x "379"^^xsd:int ;
+      visual:y "265"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#TempControl> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "160"^^xsd:int ;
+      visual:x "700"^^xsd:int ;
+      visual:y "171"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#TempManagement> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "191"^^xsd:int ;
+      visual:x "380"^^xsd:int ;
+      visual:y "219"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#TempMonitoring> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "180"^^xsd:int ;
+      visual:x "701"^^xsd:int ;
+      visual:y "210"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#TemperatureSetPoints> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "206"^^xsd:int ;
+      visual:x "328"^^xsd:int ;
+      visual:y "358"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#VaporCompression> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "190"^^xsd:int ;
+      visual:x "335"^^xsd:int ;
+      visual:y "528"^^xsd:int ;
+    ] ;
+  visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#CoolingSrvc> ;
+  rdfs:label "Refrigerator Example Instance Diagram Rev 2" ;
+].
+[
+  rdf:type visual:Graph ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#AboveHumanComfort> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "208"^^xsd:int ;
+      visual:x "164"^^xsd:int ;
+      visual:y "482"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#Alerting> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "131"^^xsd:int ;
+      visual:x "1011"^^xsd:int ;
+      visual:y "383"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#BelowHumanComfort> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "206"^^xsd:int ;
+      visual:x "165"^^xsd:int ;
+      visual:y "438"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#BigAppMft> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "147"^^xsd:int ;
+      visual:x "1591"^^xsd:int ;
+      visual:y "695"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#Cooling> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "131"^^xsd:int ;
+      visual:x "181"^^xsd:int ;
+      visual:y "274"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#CoolingSrvc> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "153"^^xsd:int ;
+      visual:x "207"^^xsd:int ;
+      visual:y "350"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#CoolingSystem> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "169"^^xsd:int ;
+      visual:x "594"^^xsd:int ;
+      visual:y "268"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#CoolingTemperatureRequirements> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "272"^^xsd:int ;
+      visual:x "551"^^xsd:int ;
+      visual:y "530"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#DesignForTempSetPtControlAndMonitoring> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "327"^^xsd:int ;
+      visual:x "1025"^^xsd:int ;
+      visual:y "487"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#ForHumanComfort> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "191"^^xsd:int ;
+      visual:x "168"^^xsd:int ;
+      visual:y "522"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#FreezerTemp> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "157"^^xsd:int ;
+      visual:x "1222"^^xsd:int ;
+      visual:y "540"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#HeatRemoval> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "160"^^xsd:int ;
+      visual:x "1007"^^xsd:int ;
+      visual:y "271"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#HomeRefrigerator> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "184"^^xsd:int ;
+      visual:x "993"^^xsd:int ;
+      visual:y "655"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#RefrigeratorTemp> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "182"^^xsd:int ;
+      visual:x "1220"^^xsd:int ;
+      visual:y "583"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#SpecSet1> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "136"^^xsd:int ;
+      visual:x "1085"^^xsd:int ;
+      visual:y "702"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#Srvc3-L2> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "134"^^xsd:int ;
+      visual:x "1597"^^xsd:int ;
+      visual:y "303"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#SystemHealth> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "162"^^xsd:int ;
+      visual:x "666"^^xsd:int ;
+      visual:y "386"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#TempControl> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "160"^^xsd:int ;
+      visual:x "1008"^^xsd:int ;
+      visual:y "303"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#TempManagement> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "191"^^xsd:int ;
+      visual:x "667"^^xsd:int ;
+      visual:y "340"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#TempMonitoring> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "180"^^xsd:int ;
+      visual:x "1009"^^xsd:int ;
+      visual:y "342"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#TemperatureSetPoints> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "206"^^xsd:int ;
+      visual:x "615"^^xsd:int ;
+      visual:y "479"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#VaporCompression> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "190"^^xsd:int ;
+      visual:x "622"^^xsd:int ;
+      visual:y "649"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ActorRoles#ConceptualService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "164"^^xsd:int ;
+      visual:x "82"^^xsd:int ;
+      visual:y "324"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ActorRoles#ConceptualServiceComposition> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "233"^^xsd:int ;
+      visual:x "18"^^xsd:int ;
+      visual:y "245"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ActorRoles#ConceptualServiceContract> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "210"^^xsd:int ;
+      visual:x "45"^^xsd:int ;
+      visual:y "408"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ActorRoles#ImplementationActor> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "180"^^xsd:int ;
+      visual:x "1469"^^xsd:int ;
+      visual:y "655"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ActorRoles#ImplementationService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "188"^^xsd:int ;
+      visual:x "1491"^^xsd:int ;
+      visual:y "267"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ActorRoles#LogicalActor> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "133"^^xsd:int ;
+      visual:x "498"^^xsd:int ;
+      visual:y "618"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ActorRoles#LogicalService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "141"^^xsd:int ;
+      visual:x "509"^^xsd:int ;
+      visual:y "316"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ActorRoles#LogicalServiceComposition> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "210"^^xsd:int ;
+      visual:x "472"^^xsd:int ;
+      visual:y "231"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ActorRoles#LogicalServiceContract> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "187"^^xsd:int ;
+      visual:x "417"^^xsd:int ;
+      visual:y "436"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ActorRoles#PhysicalActor> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "138"^^xsd:int ;
+      visual:x "920"^^xsd:int ;
+      visual:y "705"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ActorRoles#PhysicalService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "146"^^xsd:int ;
+      visual:x "898"^^xsd:int ;
+      visual:y "239"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ActorRoles#PhysicalServiceContract> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "192"^^xsd:int ;
+      visual:x "1263"^^xsd:int ;
+      visual:y "449"^^xsd:int ;
+    ] ;
+  visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#CoolingSrvc> ;
+  rdfs:label "Refrigerator Example with Classes Rev 1" ;
+].
+[
+  rdf:type visual:Graph ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#AccountManagement> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "190"^^xsd:int ;
+      visual:x "465"^^xsd:int ;
+      visual:y "136"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#BillingDepartment> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "195"^^xsd:int ;
+      visual:x "134"^^xsd:int ;
+      visual:y "313"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#BillingService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "162"^^xsd:int ;
+      visual:x "512"^^xsd:int ;
+      visual:y "392"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#FinancialServices> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "192"^^xsd:int ;
+      visual:x "486"^^xsd:int ;
+      visual:y "186"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#SomeUnnamedServiceCollection> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "172"^^xsd:int ;
+      visual:x "505"^^xsd:int ;
+      visual:y "315"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ActorRoles#ConceptualServiceComposition> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "230"^^xsd:int ;
+      visual:x "714"^^xsd:int ;
+      visual:y "59"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ActorRoles#LogicalActor> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "144"^^xsd:int ;
+      visual:x "319"^^xsd:int ;
+      visual:y "229"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ActorRoles#LogicalService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "145"^^xsd:int ;
+      visual:x "753"^^xsd:int ;
+      visual:y "332"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ActorRoles#LogicalServiceCollection> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "208"^^xsd:int ;
+      visual:x "729"^^xsd:int ;
+      visual:y "228"^^xsd:int ;
+    ] ;
+  visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#SomeUnnamedServiceCollection> ;
+  rdfs:label "ardata:BillingService Graph 1" ;
+].
+[
+  rdf:type visual:Graph ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#Alerting> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "131"^^xsd:int ;
+      visual:x "703"^^xsd:int ;
+      visual:y "251"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#BigAppMft> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "147"^^xsd:int ;
+      visual:x "1021"^^xsd:int ;
+      visual:y "479"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#Cooling> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "131"^^xsd:int ;
+      visual:x "33"^^xsd:int ;
+      visual:y "148"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#CoolingSrvc> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "153"^^xsd:int ;
+      visual:x "64"^^xsd:int ;
+      visual:y "223"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#CoolingSystem> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "169"^^xsd:int ;
+      visual:x "307"^^xsd:int ;
+      visual:y "147"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#DesignForTempSetPtControlAndMonitoring> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "327"^^xsd:int ;
+      visual:x "717"^^xsd:int ;
+      visual:y "355"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#HeatRemoval> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "160"^^xsd:int ;
+      visual:x "699"^^xsd:int ;
+      visual:y "139"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#HomeRefrigerator> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "184"^^xsd:int ;
+      visual:x "686"^^xsd:int ;
+      visual:y "458"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#SpecSet1> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "136"^^xsd:int ;
+      visual:x "778"^^xsd:int ;
+      visual:y "505"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#Srvc3-L2> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "134"^^xsd:int ;
+      visual:x "1026"^^xsd:int ;
+      visual:y "152"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#SystemHealth> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "162"^^xsd:int ;
+      visual:x "379"^^xsd:int ;
+      visual:y "265"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#TempControl> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "160"^^xsd:int ;
+      visual:x "700"^^xsd:int ;
+      visual:y "171"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#TempManagement> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "191"^^xsd:int ;
+      visual:x "380"^^xsd:int ;
+      visual:y "219"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#TempMonitoring> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "180"^^xsd:int ;
+      visual:x "701"^^xsd:int ;
+      visual:y "210"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#TemperatureSetPoints> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "206"^^xsd:int ;
+      visual:x "328"^^xsd:int ;
+      visual:y "358"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#VaporCompression> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "190"^^xsd:int ;
+      visual:x "336"^^xsd:int ;
+      visual:y "463"^^xsd:int ;
+    ] ;
+  visual:depicts <http://sv.cmu.edu/AWP/6.0/ARpopulate#CoolingSrvc> ;
+  rdfs:label "Refrigerator Example Instance Diagram" ;
+].
+[
+  rdf:type inference:Configuration ;
+  composite:child [
+      rdf:type <http://spinrdf.org/spin#TopSPIN> ;
+      composite:index "0"^^xsd:int ;
+    ] ;
+].

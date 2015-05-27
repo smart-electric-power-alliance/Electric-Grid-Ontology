@@ -1,0 +1,217 @@
+# baseURI: http://cmu.sv.edu/ArchiRules
+# imports: http://cmu.sv.edu/spreadsheet
+# imports: http://spinrdf.org/spin
+
+@prefix archi: <http://cmu.sv.edu/ArchiRules#> .
+@prefix archid: <http://cmu.sv.edu/ArchiData#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p20h: <http://cmu.sv.edu/spreadsheet#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix smf: <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix spl: <http://spinrdf.org/spl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://cmu.sv.edu/ArchiRules>
+  rdf:type owl:Ontology ;
+  owl:imports <http://cmu.sv.edu/spreadsheet> ;
+  owl:imports <http://spinrdf.org/spin> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
+archi:ApplicationComponent
+  rdf:type owl:Class ;
+  rdfs:subClassOf archi:ApplicationEntity ;
+.
+archi:ApplicationEntity
+  rdf:type owl:Class ;
+  rdfs:subClassOf archi:Entity ;
+.
+archi:ApplicationService
+  rdf:type owl:Class ;
+  rdfs:subClassOf archi:ApplicationEntity ;
+.
+archi:BusinessEntity
+  rdf:type owl:Class ;
+  rdfs:subClassOf archi:Entity ;
+.
+archi:BusinessRole
+  rdf:type owl:Class ;
+  rdfs:subClassOf archi:BusinessEntity ;
+.
+archi:BusinessService
+  rdf:type owl:Class ;
+  rdfs:subClassOf archi:BusinessEntity ;
+.
+archi:Entity
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+archi:description
+  rdf:type owl:DatatypeProperty ;
+.
+archi:name
+  rdf:type owl:DatatypeProperty ;
+.
+p20h:data
+  spin:rule [
+      rdf:type sp:Construct ;
+      sp:templates (
+          [
+            sp:object archi:ApplicationService ;
+            sp:predicate rdf:type ;
+            sp:subject [
+                sp:varName "uri"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "name"^^xsd:string ;
+              ] ;
+            sp:predicate archi:name ;
+            sp:subject [
+                sp:varName "uri"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "description"^^xsd:string ;
+              ] ;
+            sp:predicate archi:description ;
+            sp:subject [
+                sp:varName "uri"^^xsd:string ;
+              ] ;
+          ]
+        ) ;
+      sp:where (
+          [
+            sp:object "Logical" ;
+            sp:predicate p20h:hierarchyConceptualLogicalPhysical ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object [
+                sp:varName "name"^^xsd:string ;
+              ] ;
+            sp:predicate p20h:entityElementName ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object "Service" ;
+            sp:predicate p20h:actorSrvcCompositionService ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object [
+                sp:varName "description"^^xsd:string ;
+              ] ;
+            sp:predicate p20h:description ;
+            sp:subject spin:_this ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type spif:camelCase ;
+                sp:arg1 [
+                    sp:varName "name"^^xsd:string ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "camelName"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type smf:buildUniqueURI ;
+                sp:arg1 "<http://cmu.sv.edu/ArchiData#{?camelName}>" ;
+              ] ;
+            sp:variable [
+                sp:varName "uri"^^xsd:string ;
+              ] ;
+          ]
+        ) ;
+      rdfs:comment "Rule 2 - build ApplicationService"^^xsd:string ;
+    ] ;
+  spin:rule [
+      rdf:type sp:Construct ;
+      sp:templates (
+          [
+            sp:object archi:BusinessService ;
+            sp:predicate rdf:type ;
+            sp:subject [
+                sp:varName "uri"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "name"^^xsd:string ;
+              ] ;
+            sp:predicate archi:name ;
+            sp:subject [
+                sp:varName "uri"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "description"^^xsd:string ;
+              ] ;
+            sp:predicate archi:description ;
+            sp:subject [
+                sp:varName "uri"^^xsd:string ;
+              ] ;
+          ]
+        ) ;
+      sp:where (
+          [
+            sp:object "Conceptual" ;
+            sp:predicate p20h:hierarchyConceptualLogicalPhysical ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object [
+                sp:varName "name"^^xsd:string ;
+              ] ;
+            sp:predicate p20h:entityElementName ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object "Service" ;
+            sp:predicate p20h:actorSrvcCompositionService ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object [
+                sp:varName "description"^^xsd:string ;
+              ] ;
+            sp:predicate p20h:description ;
+            sp:subject spin:_this ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type spif:camelCase ;
+                sp:arg1 [
+                    sp:varName "name"^^xsd:string ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "camelName"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type smf:buildUniqueURI ;
+                sp:arg1 "<http://cmu.sv.edu/ArchiData#{?camelName}>" ;
+              ] ;
+            sp:variable [
+                sp:varName "uri"^^xsd:string ;
+              ] ;
+          ]
+        ) ;
+      rdfs:comment "Rule 1 - build BusinessService"^^xsd:string ;
+    ] ;
+.

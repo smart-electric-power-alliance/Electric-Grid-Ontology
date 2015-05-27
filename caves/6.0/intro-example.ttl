@@ -1,0 +1,60 @@
+# baseURI: http://example.org/intro-example
+
+@prefix ie: <http://example.org/intro-example#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/intro-example>
+  rdf:type owl:Ontology ;
+  spin:imports <http://topbraid.org/spin/owlrl-all> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
+ie:Female
+  rdf:type owl:Class ;
+  rdfs:subClassOf ie:Human ;
+.
+ie:George
+  rdf:type ie:Male ;
+  ie:isMarriedTo ie:Mary ;
+.
+ie:Human
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+ie:Jane
+  rdf:type ie:Female ;
+.
+ie:Male
+  rdf:type owl:Class ;
+  rdfs:subClassOf ie:Human ;
+.
+ie:Mary
+  rdf:type ie:Female ;
+.
+ie:height
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain ie:Human ;
+  rdfs:range xsd:float ;
+.
+ie:isFatherOf
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain ie:Male ;
+  rdfs:subPropertyOf ie:isParentOf ;
+.
+ie:isMarriedTo
+  rdf:type owl:SymmetricProperty ;
+  rdfs:domain ie:Human ;
+  rdfs:range ie:Human ;
+.
+ie:isParentOf
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain ie:Human ;
+.
+ie:name
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain ie:Human ;
+  rdfs:range xsd:string ;
+.

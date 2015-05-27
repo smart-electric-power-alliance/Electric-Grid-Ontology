@@ -1,0 +1,614 @@
+# baseURI: http://sv.cmu.edu/AWP/6.0/ActorRoles
+# imports: http://spinrdf.org/spin
+# imports: http://topbraid.org/spin/spinowl
+
+@prefix ar: <http://sv.cmu.edu/AWP/6.0/ActorRoles#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix spl: <http://spinrdf.org/spl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://sv.cmu.edu/AWP/6.0/ActorRoles>
+  rdf:type owl:Ontology ;
+  owl:imports <http://spinrdf.org/spin> ;
+  owl:imports <http://topbraid.org/spin/spinowl> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
+ar:Actor
+  rdf:type owl:Class ;
+  rdfs:comment "This is the entity that actually performs an action (i.e. provides or consumes a Service)"^^xsd:string ;
+  rdfs:subClassOf owl:Thing ;
+.
+ar:ConceptualEntity
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+ar:ConceptualService
+  rdf:type owl:Class ;
+  rdfs:label "Conceptual Service"^^xsd:string ;
+  rdfs:subClassOf ar:ConceptualEntity ;
+  rdfs:subClassOf ar:Service ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ConceptualService ;
+      owl:onProperty ar:subClassOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ConceptualService ;
+      owl:onProperty ar:superClassOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ConceptualServiceComposition ;
+      owl:onProperty ar:isPartOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ConceptualServiceContract ;
+      owl:onProperty ar:isSpecifiedBy ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalService ;
+      owl:onProperty ar:isAbstractionOf ;
+    ] ;
+.
+ar:ConceptualServiceComposition
+  rdf:type owl:Class ;
+  rdfs:label "Conceptual Service Composition"^^xsd:string ;
+  rdfs:subClassOf ar:ConceptualEntity ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalServiceComposition ;
+      owl:onProperty ar:isAbstractionOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom [
+          rdf:type owl:Class ;
+          owl:unionOf (
+              ar:ConceptualService
+              ar:ConceptualServiceComposition
+            ) ;
+        ] ;
+      owl:onProperty ar:isCollectionOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty ar:isCollectionOf ;
+    ] ;
+.
+ar:ConceptualServiceContract
+  rdf:type owl:Class ;
+  rdfs:label "Conceptual Contract"^^xsd:string ;
+  rdfs:subClassOf ar:ConceptualEntity ;
+  rdfs:subClassOf ar:ServiceContract ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ConceptualService ;
+      owl:onProperty ar:specifies ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ConceptualServiceContract ;
+      owl:onProperty ar:subClassOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ConceptualServiceContract ;
+      owl:onProperty ar:superClassOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalServiceContract ;
+      owl:onProperty ar:isAbstractionOf ;
+    ] ;
+.
+ar:ImplementationActor
+  rdf:type owl:Class ;
+  rdfs:label "Fum"^^xsd:string ;
+  rdfs:subClassOf ar:Actor ;
+  rdfs:subClassOf ar:ImplementationEntity ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ImplementationActor ;
+      owl:onProperty ar:subClassOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ImplementationActor ;
+      owl:onProperty ar:superClassOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ImplementationService ;
+      owl:onProperty ar:consumes ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ImplementationService ;
+      owl:onProperty ar:provides ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:PhysicalActor ;
+      owl:onProperty ar:isAbstractedAs ;
+    ] ;
+.
+ar:ImplementationEntity
+  rdf:type owl:Class ;
+  rdfs:label "Fum"^^xsd:string ;
+  rdfs:subClassOf owl:Thing ;
+.
+ar:ImplementationService
+  rdf:type owl:Class ;
+  rdfs:label "Fum"^^xsd:string ;
+  rdfs:subClassOf ar:ImplementationEntity ;
+  rdfs:subClassOf ar:Service ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ImplementationActor ;
+      owl:onProperty ar:isConsumedBy ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ImplementationActor ;
+      owl:onProperty ar:isProvidedBy ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ImplementationService ;
+      owl:onProperty ar:subClassOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ImplementationService ;
+      owl:onProperty ar:superClassOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:PhysicalService ;
+      owl:onProperty ar:isAbstractedAs ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:Task ;
+      owl:onProperty ar:does ;
+    ] ;
+.
+ar:LegalRequirement
+  rdf:type owl:Class ;
+  rdfs:subClassOf ar:Requirement ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ServiceContract ;
+      owl:onProperty ar:regulates ;
+    ] ;
+.
+ar:LogicalActor
+  rdf:type owl:Class ;
+  rdfs:label ""^^xsd:string ;
+  rdfs:subClassOf ar:Actor ;
+  rdfs:subClassOf ar:LogicalEntity ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalActor ;
+      owl:onProperty ar:subClassOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalActor ;
+      owl:onProperty ar:superClassOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalService ;
+      owl:onProperty ar:consumes ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalServiceContract ;
+      owl:onProperty ar:isPartyTo ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:PhysicalActor ;
+      owl:onProperty ar:isAbstractionOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom [
+          rdf:type owl:Class ;
+          owl:unionOf (
+              ar:LogicalService
+              ar:LogicalServiceComposition
+            ) ;
+        ] ;
+      owl:onProperty ar:provides ;
+    ] ;
+.
+ar:LogicalEntity
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+ar:LogicalRole
+  rdf:type owl:Class ;
+  rdfs:label ""^^xsd:string ;
+  rdfs:subClassOf ar:LogicalEntity ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalActor ;
+      owl:onProperty ar:providesContextFor ;
+    ] ;
+.
+ar:LogicalService
+  rdf:type owl:Class ;
+  rdfs:label ""^^xsd:string ;
+  rdfs:subClassOf ar:LogicalEntity ;
+  rdfs:subClassOf ar:Service ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ConceptualService ;
+      owl:onProperty ar:isAbstractedAs ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalActor ;
+      owl:onProperty ar:isConsumedBy ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalActor ;
+      owl:onProperty ar:isProvidedBy ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalService ;
+      owl:onProperty ar:subClassOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalService ;
+      owl:onProperty ar:superClassOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalServiceComposition ;
+      owl:onProperty ar:isPartOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalServiceContract ;
+      owl:onProperty ar:isSpecifiedBy ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:PhysicalService ;
+      owl:onProperty ar:isAbstractionOf ;
+    ] ;
+.
+ar:LogicalServiceComposition
+  rdf:type owl:Class ;
+  rdfs:label "Conceptual Service Composition"^^xsd:string ;
+  rdfs:subClassOf ar:LogicalEntity ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ConceptualServiceComposition ;
+      owl:onProperty ar:isAbstractedAs ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom [
+          rdf:type owl:Class ;
+          owl:unionOf (
+              ar:LogicalService
+              ar:LogicalServiceComposition
+            ) ;
+        ] ;
+      owl:onProperty ar:isCollectionOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty ar:isCollectionOf ;
+    ] ;
+.
+ar:LogicalServiceContract
+  rdf:type owl:Class ;
+  rdfs:label ""^^xsd:string ;
+  rdfs:subClassOf ar:LogicalEntity ;
+  rdfs:subClassOf ar:ServiceContract ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ConceptualServiceContract ;
+      owl:onProperty ar:isAbstractedAs ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalActor ;
+      owl:onProperty ar:involvesParty ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalService ;
+      owl:onProperty ar:specifies ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalServiceContract ;
+      owl:onProperty ar:subClassOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalServiceContract ;
+      owl:onProperty ar:superClassOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:PhysicalServiceContract ;
+      owl:onProperty ar:isAbstractionOf ;
+    ] ;
+.
+ar:PhysicalActor
+  rdf:type owl:Class ;
+  rdfs:label ""^^xsd:string ;
+  rdfs:subClassOf ar:Actor ;
+  rdfs:subClassOf ar:PhysicalEntity ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ImplementationActor ;
+      owl:onProperty ar:isAbstractionOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalActor ;
+      owl:onProperty ar:isAbstractedAs ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:PhysicalActor ;
+      owl:onProperty ar:subClassOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:PhysicalActor ;
+      owl:onProperty ar:superClassOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:PhysicalService ;
+      owl:onProperty ar:consumes ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:PhysicalService ;
+      owl:onProperty ar:provides ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:PhysicalServiceContract ;
+      owl:onProperty ar:isPartyTo ;
+    ] ;
+.
+ar:PhysicalEntity
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+ar:PhysicalService
+  rdf:type owl:Class ;
+  rdfs:label ""^^xsd:string ;
+  rdfs:subClassOf ar:PhysicalEntity ;
+  rdfs:subClassOf ar:Service ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ImplementationService ;
+      owl:onProperty ar:isAbstractionOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalService ;
+      owl:onProperty ar:isAbstractedAs ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:PhysicalActor ;
+      owl:onProperty ar:isConsumedBy ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:PhysicalActor ;
+      owl:onProperty ar:isProvidedBy ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:PhysicalService ;
+      owl:onProperty ar:subClassOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:PhysicalService ;
+      owl:onProperty ar:superClassOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:PhysicalServiceContract ;
+      owl:onProperty ar:isSpecifiedBy ;
+    ] ;
+.
+ar:PhysicalServiceContract
+  rdf:type owl:Class ;
+  rdfs:label ""^^xsd:string ;
+  rdfs:subClassOf ar:PhysicalEntity ;
+  rdfs:subClassOf ar:ServiceContract ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalServiceContract ;
+      owl:onProperty ar:isAbstractedAs ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:PhysicalActor ;
+      owl:onProperty ar:involvesParty ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:PhysicalService ;
+      owl:onProperty ar:specifies ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:PhysicalServiceContract ;
+      owl:onProperty ar:subClassOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:PhysicalServiceContract ;
+      owl:onProperty ar:superClassOf ;
+    ] ;
+.
+ar:Requirement
+  rdf:type owl:Class ;
+.
+ar:Service
+  rdf:type owl:Class ;
+  rdfs:label ""^^xsd:string ;
+  rdfs:subClassOf owl:Thing ;
+.
+ar:ServiceContract
+  rdf:type owl:Class ;
+  rdfs:label "A Contract specifies and constrains Roles and is used to bind Actors to those Roles"^^xsd:string ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LegalRequirement ;
+      owl:onProperty ar:hasRegulationReference ;
+    ] ;
+.
+ar:Task
+  rdf:type owl:Class ;
+  rdfs:label "Fum"^^xsd:string ;
+  rdfs:subClassOf ar:ImplementationEntity ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ImplementationService ;
+      owl:onProperty ar:isDoneBy ;
+    ] ;
+.
+ar:consumes
+  rdf:type rdf:Property ;
+  owl:inverseOf ar:isConsumedBy ;
+.
+ar:description
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label ""^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+ar:does
+  rdf:type rdf:Property ;
+  rdfs:label "Fum"^^xsd:string ;
+  owl:inverseOf ar:isDoneBy ;
+.
+ar:hasRegulationReference
+  rdf:type rdf:Property ;
+  rdfs:label "Identifies the regulatory reference code"^^xsd:string ;
+  owl:inverseOf ar:regulates ;
+.
+ar:inContextOf
+  rdf:type rdf:Property ;
+  owl:inverseOf ar:providesContextFor ;
+.
+ar:involvesParty
+  rdf:type rdf:Property ;
+  owl:inverseOf ar:isPartyTo ;
+.
+ar:isAbstractedAs
+  rdf:type owl:TransitiveProperty ;
+  rdfs:label ""^^xsd:string ;
+  owl:inverseOf ar:isAbstractionOf ;
+.
+ar:isAbstractionOf
+  rdf:type owl:TransitiveProperty ;
+  rdfs:label ""^^xsd:string ;
+  owl:inverseOf ar:isAbstractedAs ;
+.
+ar:isCollectionOf
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Conceptual Service Collection"^^xsd:string ;
+.
+ar:isConsumedBy
+  rdf:type rdf:Property ;
+  rdfs:label ""^^xsd:string ;
+  owl:inverseOf ar:consumes ;
+.
+ar:isDoneBy
+  rdf:type rdf:Property ;
+  rdfs:label "Fum"^^xsd:string ;
+  owl:inverseOf ar:does ;
+.
+ar:isPartOf
+  rdf:type rdf:Property ;
+  rdfs:label "Conceptual Service Collection"^^xsd:string ;
+.
+ar:isPartyTo
+  rdf:type rdf:Property ;
+  rdfs:label ""^^xsd:string ;
+  owl:inverseOf ar:involvesParty ;
+.
+ar:isProvidedBy
+  rdf:type rdf:Property ;
+  rdfs:label ""^^xsd:string ;
+  owl:inverseOf ar:provides ;
+.
+ar:isSpecifiedBy
+  rdf:type rdf:Property ;
+  rdfs:label ""^^xsd:string ;
+  owl:inverseOf ar:specifies ;
+.
+ar:nistLegacyDomain
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label ""^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+ar:playsRole
+  rdf:type rdf:Property ;
+  rdfs:label ""^^xsd:string ;
+  rdfs:subPropertyOf sp:arg ;
+.
+ar:provides
+  rdf:type rdf:Property ;
+  rdfs:label ""^^xsd:string ;
+  owl:inverseOf ar:isProvidedBy ;
+.
+ar:providesContextFor
+  rdf:type rdf:Property ;
+  rdfs:label ""^^xsd:string ;
+  owl:inverseOf ar:inContextOf ;
+.
+ar:regulates
+  rdf:type rdf:Property ;
+  rdfs:label "Add import statement"^^xsd:string ;
+  owl:inverseOf ar:hasRegulationReference ;
+.
+ar:specifies
+  rdf:type rdf:Property ;
+  rdfs:label ""^^xsd:string ;
+  owl:inverseOf ar:isSpecifiedBy ;
+.
+ar:subClassOf
+  rdf:type rdf:Property ;
+  rdf:type owl:TransitiveProperty ;
+  rdfs:label "subClass of"^^xsd:string ;
+.
+ar:superClassOf
+  rdf:type rdf:Property ;
+  rdf:type owl:TransitiveProperty ;
+  rdfs:label "Conceptual Service Collection"^^xsd:string ;
+.
+ar:type
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "Whether an entity is an Organization or Application"^^xsd:string ;
+.

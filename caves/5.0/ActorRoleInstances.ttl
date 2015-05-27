@@ -1,0 +1,51 @@
+# baseURI: http://sv.cmu.edu/AWP/5.0/ActorRoleInstances
+# imports: http://sv.cmu.edu/AWP/5.0/ARSubclasses
+# imports: http://sv.cmu.edu/AWP/5.0/ActorRoles
+
+@prefix ar:      <http://sv.cmu.edu/AWP/5.0/ActorRoles#> .
+@prefix ari:     <http://sv.cmu.edu/AWP/5.0/ActorRoleInstances#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<http://sv.cmu.edu/AWP/5.0/ActorRoleInstances>
+      rdf:type owl:Ontology ;
+      owl:imports <http://sv.cmu.edu/AWP/5.0/ARSubclasses> , <http://sv.cmu.edu/AWP/5.0/ActorRoles> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+ar:BusinessService_1
+      rdf:type ar:BusinessService ;
+      rdfs:label ""^^xsd:string ;
+      ar:isProvidedBy ar:Storage_1 .
+
+ar:Contract_1
+      rdf:type ar:Contract ;
+      rdfs:label ""^^xsd:string ;
+      ar:appliesTo ar:EnergyStorageManagement_1 ;
+      ar:binds ar:ElectricStorage_1 .
+
+ar:Contract_2
+      rdf:type ar:Contract ;
+      rdfs:label ""^^xsd:string ;
+      ar:appliesTo ar:BusinessService_1 ;
+      ar:binds ar:Storage_1 .
+
+ar:ElectricStorage_1
+      rdf:type ar:ElectricStorage ;
+      rdfs:label ""^^xsd:string ;
+      ar:isPlayedBy ar:ElectricVehicle_1 ;
+      ar:isSpecifiedBy ar:Contract_1 .
+
+ar:ElectricVehicle_1
+      rdf:type ar:ElectricVehicle ;
+      rdfs:label ""^^xsd:string .
+
+ar:EnergyStorageManagement_1
+      rdf:type ar:EnergyStorageManagement ;
+      rdfs:label ""^^xsd:string ;
+      ar:isProvidedBy ar:ElectricVehicle_1 .
+
+ar:Storage_1
+      rdf:type ar:Storage ;
+      rdfs:label ""^^xsd:string .

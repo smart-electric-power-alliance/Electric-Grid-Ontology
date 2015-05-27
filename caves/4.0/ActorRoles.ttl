@@ -1,0 +1,374 @@
+# baseURI: http://sv.cmu.edu/4.0/ActorRoles
+# imports: http://spinrdf.org/spin
+
+@prefix ar:      <http://sv.cmu.edu/4.0/ActorRoles#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sp:      <http://spinrdf.org/sp#> .
+@prefix spin:    <http://spinrdf.org/spin#> .
+@prefix spl:     <http://spinrdf.org/spl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<http://sv.cmu.edu/4.0/ActorRoles>
+      rdf:type owl:Ontology ;
+      owl:imports <http://spinrdf.org/spin> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+ar:Actor
+      rdf:type owl:Class ;
+      rdfs:comment "This is the entity that actually performs an action (i.e. fullfills a BusinessService by invoking some number of AutomationServices)"^^xsd:string ;
+      rdfs:subClassOf owl:Thing ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom ar:Service ;
+                owl:onProperty ar:provides
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom ar:Role ;
+                owl:onProperty ar:plays
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom ar:Contract ;
+                owl:onProperty ar:isBoundBy
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom ar:Service ;
+                owl:onProperty ar:consumes
+              ] .
+
+ar:Appliance
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:Actor , ar:LogicalEntity .
+
+ar:AutomationService
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:Service .
+
+ar:Battery
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:Actor , ar:LogicalEntity .
+
+ar:BusinessService
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:Service .
+
+ar:Campus
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:GeographicEntity .
+
+ar:CapacitorBank
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:Actor , ar:LogicalEntity .
+
+ar:CoalFacility
+      rdf:type owl:Class ;
+      rdfs:label "Trace the (UML) package hierarchy of a class"^^xsd:string ;
+      rdfs:subClassOf ar:FossilFacility .
+
+ar:Cogeneration
+      rdf:type owl:Class ;
+      rdfs:label ""^^xsd:string ;
+      rdfs:subClassOf ar:Role , ar:LogicalEntity .
+
+ar:CommercialVendor
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualEntity , ar:Role .
+
+ar:ConceptualEntity
+      rdf:type owl:Class ;
+      rdfs:subClassOf owl:Thing ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom ar:LogicalEntity ;
+                owl:onProperty ar:isAbstractionOf
+              ] .
+
+ar:Contract
+      rdf:type owl:Class ;
+      rdfs:label "A Contract specifies and constrains Roles and is used to bind Actors to those Roles"^^xsd:string ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom ar:Actor ;
+                owl:onProperty ar:binds
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom ar:Service ;
+                owl:onProperty ar:appliesTo
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom ar:LegalRequirement ;
+                owl:onProperty ar:hasRegulationReference
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom ar:Role ;
+                owl:onProperty ar:binds
+              ] .
+
+ar:CustomerAppliance
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:Appliance .
+
+ar:ElectricStorage
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalEntity , ar:Role .
+
+ar:ElectricVehicle
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalEntity , ar:Actor .
+
+ar:EnergyStorageManagement
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalEntity , ar:BusinessService .
+
+ar:EnvironmentalAuthority
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:RegulatoryAuthority .
+
+ar:Facility
+      rdf:type owl:Class ;
+      rdfs:label "This is intended to be an abstract superclass that will not be directly instantiated."^^xsd:string ;
+      rdfs:subClassOf ar:Role , ar:ConceptualEntity .
+
+ar:FossilFacility
+      rdf:type owl:Class ;
+      rdfs:label ""^^xsd:string ;
+      rdfs:subClassOf ar:GenerationFacility .
+
+ar:GasFacility
+      rdf:type owl:Class ;
+      rdfs:label ""^^xsd:string ;
+      rdfs:subClassOf ar:FossilFacility .
+
+ar:Generation
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualEntity , ar:Role .
+
+ar:GenerationFacility
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:Actor , ar:LogicalEntity .
+
+ar:GeographicEntity
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:Actor .
+
+ar:HomeApplianceVendor
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:CommercialVendor .
+
+ar:HydroFacility
+      rdf:type owl:Class ;
+      rdfs:label ""^^xsd:string ;
+      rdfs:subClassOf ar:RenewableFacility .
+
+ar:LegalEntity
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:Actor .
+
+ar:LegalRequirement
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:Requirement .
+
+ar:LocalRegulatoryAuthority
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:RegulatoryAuthority .
+
+ar:LogicalEntity
+      rdf:type owl:Class ;
+      rdfs:subClassOf owl:Thing ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom ar:PhysicalEntity ;
+                owl:onProperty ar:isAbstractionOf
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom ar:ConceptualEntity ;
+                owl:onProperty ar:isAbstractedAs
+              ] .
+
+ar:MagneticEnergyStorageSystem
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:PhysicalEntity , ar:Actor .
+
+ar:MarketGenerator
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:Role , ar:ConceptualEntity .
+
+ar:NuclearFacility
+      rdf:type owl:Class ;
+      rdfs:label ""^^xsd:string ;
+      rdfs:subClassOf ar:GenerationFacility .
+
+ar:Peaker
+      rdf:type owl:Class ;
+      rdfs:label ""^^xsd:string ;
+      rdfs:subClassOf ar:LogicalEntity , ar:Role .
+
+ar:PhysicalEntity
+      rdf:type owl:Class ;
+      rdfs:subClassOf owl:Thing ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom ar:LogicalEntity ;
+                owl:onProperty ar:isAbstractedAs
+              ] .
+
+ar:Premises
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:Actor , ar:LegalEntity .
+
+ar:ProductionFacility
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:Actor , ar:LogicalEntity .
+
+ar:RegulatoryAuthority
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:Role , ar:ConceptualEntity .
+
+ar:RenewableFacility
+      rdf:type owl:Class ;
+      rdfs:label ""^^xsd:string ;
+      rdfs:subClassOf ar:GenerationFacility .
+
+ar:Requirement
+      rdf:type owl:Class .
+
+ar:Role
+      rdf:type owl:Class ;
+      rdfs:comment "This is being used to capture the concept of \"context\". That is, an Actor fulfills a BusinessService in the context of a Role."^^xsd:string ;
+      rdfs:subClassOf owl:Thing ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom ar:Service ;
+                owl:onProperty ar:provides
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom ar:Contract ;
+                owl:onProperty ar:isSpecifiedBy
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom ar:Actor ;
+                owl:onProperty ar:isPlayedBy
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom ar:Service ;
+                owl:onProperty ar:consumes
+              ] .
+
+ar:Service
+      rdf:type owl:Class ;
+      rdfs:label ""^^xsd:string ;
+      rdfs:subClassOf owl:Thing ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom
+                        [ rdf:type owl:Class ;
+                          owl:unionOf (ar:Actor ar:Role)
+                        ] ;
+                owl:onProperty ar:isProvidedBy
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom
+                        [ rdf:type owl:Class ;
+                          owl:unionOf (ar:Actor ar:Role)
+                        ] ;
+                owl:onProperty ar:isConsumedBy
+              ] .
+
+ar:Storage
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualEntity , ar:Role .
+
+ar:ThermalStorage
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalEntity , ar:Role .
+
+ar:WindFacility
+      rdf:type owl:Class ;
+      rdfs:label ""^^xsd:string ;
+      rdfs:subClassOf ar:RenewableFacility .
+
+ar:appliesTo
+      rdf:type rdf:Property ;
+      rdfs:label ""^^xsd:string .
+
+ar:binds
+      rdf:type rdf:Property ;
+      rdfs:label ""^^xsd:string .
+
+ar:consumes
+      rdf:type rdf:Property .
+
+ar:hasRegulationReference
+      rdf:type rdf:Property ;
+      rdfs:label "Identifies the regulatory reference code"^^xsd:string .
+
+ar:inContextOf
+      rdf:type rdf:Property .
+
+ar:inFullfillmentOf
+      rdf:type rdf:Property ;
+      rdfs:label "Identifies the regulatory reference code"^^xsd:string .
+
+ar:invokes
+      rdf:type rdf:Property .
+
+ar:involves
+      rdf:type rdf:Property .
+
+ar:isAbstractedAs
+      rdf:type rdf:Property ;
+      rdfs:label ""^^xsd:string ;
+      owl:inverseOf ar:isAbstractionOf .
+
+ar:isAbstractionOf
+      rdf:type rdf:Property ;
+      rdfs:label ""^^xsd:string ;
+      owl:inverseOf ar:isAbstractedAs .
+
+ar:isBoundBy
+      rdf:type rdf:Property ;
+      rdfs:label ""^^xsd:string .
+
+ar:isConsumedBy
+      rdf:type rdf:Property ;
+      rdfs:label ""^^xsd:string .
+
+ar:isPlayedBy
+      rdf:type rdf:Property ;
+      rdfs:label ""^^xsd:string .
+
+ar:isProvidedBy
+      rdf:type rdf:Property ;
+      rdfs:label ""^^xsd:string .
+
+ar:isSpecifiedBy
+      rdf:type rdf:Property ;
+      rdfs:label ""^^xsd:string .
+
+ar:plays
+      rdf:type rdf:Property .
+
+ar:playsRole
+      rdf:type rdf:Property ;
+      rdfs:label ""^^xsd:string ;
+      rdfs:subPropertyOf sp:arg .
+
+ar:provides
+      rdf:type rdf:Property ;
+      rdfs:label ""^^xsd:string .
+
+ar:specifies
+      rdf:type rdf:Property ;
+      rdfs:label ""^^xsd:string .

@@ -1,0 +1,162 @@
+# baseURI: null
+
+@prefix composite:  <http://www.topbraid.org/2007/05/composite.owl#> .
+@prefix forms:   <http://www.topbraid.org/2007/01/forms.owl#> .
+@prefix inference:  <http://www.topbraid.org/2007/06/inference.owl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix visual:  <http://topbraid.org/visual#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+[]    rdf:type visual:Graph ;
+      rdfs:label "Logical Electric Storage Instance Graph" ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://sv.cmu.edu/4.0/ActorRoles#Contract_1> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "123"^^xsd:int ;
+                visual:x "104"^^xsd:int ;
+                visual:y "215"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://sv.cmu.edu/4.0/ActorRoles#Actor> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "95"^^xsd:int ;
+                visual:x "649"^^xsd:int ;
+                visual:y "54"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://sv.cmu.edu/4.0/ActorRoles#ElectricStorage> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "144"^^xsd:int ;
+                visual:x "303"^^xsd:int ;
+                visual:y "118"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://sv.cmu.edu/4.0/ActorRoles#ElectricVehicle> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "142"^^xsd:int ;
+                visual:x "632"^^xsd:int ;
+                visual:y "124"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://sv.cmu.edu/4.0/ActorRoles#EnergyStorageManagement> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "213"^^xsd:int ;
+                visual:x "292"^^xsd:int ;
+                visual:y "347"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://sv.cmu.edu/4.0/ActorRoles#ElectricStorage_1> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "155"^^xsd:int ;
+                visual:x "303"^^xsd:int ;
+                visual:y "177"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://sv.cmu.edu/4.0/ActorRoles#Service> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "103"^^xsd:int ;
+                visual:x "343"^^xsd:int ;
+                visual:y "491"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://sv.cmu.edu/4.0/ActorRoles#BusinessService> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "148"^^xsd:int ;
+                visual:x "317"^^xsd:int ;
+                visual:y "416"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://sv.cmu.edu/4.0/ActorRoles#EnergyStorageManagement_1> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "224"^^xsd:int ;
+                visual:x "288"^^xsd:int ;
+                visual:y "257"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://sv.cmu.edu/4.0/ActorRoles#ElectricVehicle_1> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "153"^^xsd:int ;
+                visual:x "623"^^xsd:int ;
+                visual:y "231"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://sv.cmu.edu/4.0/ActorRoles#Role> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "89"^^xsd:int ;
+                visual:x "329"^^xsd:int ;
+                visual:y "55"^^xsd:int
+              ] ;
+      visual:depicts <http://sv.cmu.edu/4.0/ActorRoles#ElectricStorage_1> .
+
+[]    rdf:type visual:Graph ;
+      rdfs:label "Conceptual Storage Instance Graph" ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://sv.cmu.edu/4.0/ActorRoles#Storage_1> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "117"^^xsd:int ;
+                visual:x "352"^^xsd:int ;
+                visual:y "231"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://sv.cmu.edu/4.0/ActorRoles#Storage> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "106"^^xsd:int ;
+                visual:x "357"^^xsd:int ;
+                visual:y "159"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://sv.cmu.edu/4.0/ActorRoles#BusinessService_1> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "159"^^xsd:int ;
+                visual:x "336"^^xsd:int ;
+                visual:y "356"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://sv.cmu.edu/4.0/ActorRoles#Contract_2> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "123"^^xsd:int ;
+                visual:x "42"^^xsd:int ;
+                visual:y "267"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://sv.cmu.edu/4.0/ActorRoles#Service> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "103"^^xsd:int ;
+                visual:x "365"^^xsd:int ;
+                visual:y "498"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://sv.cmu.edu/4.0/ActorRoles#BusinessService> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "148"^^xsd:int ;
+                visual:x "339"^^xsd:int ;
+                visual:y "421"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://sv.cmu.edu/4.0/ActorRoles#Role> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "89"^^xsd:int ;
+                visual:x "370"^^xsd:int ;
+                visual:y "81"^^xsd:int
+              ] ;
+      visual:depicts <http://sv.cmu.edu/4.0/ActorRoles#Contract_2> .

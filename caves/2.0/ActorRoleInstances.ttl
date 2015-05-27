@@ -1,0 +1,34 @@
+# baseURI: http://sv.cmu.edu/2.0/ActorRoleInstances
+# imports: http://sv.cmu.edu/2.0/ActorRoles
+
+@prefix ActorRoleInstances:  <http://sv.cmu.edu/2.0/ActorRoleInstances#> .
+@prefix ar:      <http://sv.cmu.edu/2.0/ActorRoles#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix ra:      <http://SGArch/Roles&Actors/RA4#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<http://sv.cmu.edu/2.0/ActorRoleInstances>
+      rdf:type owl:Ontology ;
+      owl:imports <http://sv.cmu.edu/2.0/ActorRoles> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+ar:ContextGroup1
+      rdf:type ra:ContextGroup ;
+      rdfs:label ""^^xsd:string ;
+      ra:inContextOf ar:ElectricStorage1 ;
+      ra:inFullfillmentOf ar:ESM1 .
+
+ar:ESM1
+      rdf:type ar:EnergyStorageManagement ;
+      rdfs:label "Example EnergyStorageManagement Instance"^^xsd:string .
+
+ar:EV1
+      rdf:type ar:ElectricVehicle ;
+      rdfs:label ""^^xsd:string ;
+      ra:inFullfillmentOf ar:ESM1 .
+
+ar:ElectricStorage1
+      rdf:type ar:ElectricStorage ;
+      rdfs:label ""^^xsd:string .

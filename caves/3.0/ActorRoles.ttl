@@ -1,0 +1,181 @@
+# baseURI: http://sv.cmu.edu/3.0/ActorRoles
+# imports: http://SGArch/Roles&Actors/RA4
+# imports: http://spinrdf.org/spin
+
+@prefix ar:      <http://sv.cmu.edu/3.0/ActorRoles#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix ra:      <http://SGArch/Roles&Actors/RA4#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sp:      <http://spinrdf.org/sp#> .
+@prefix spin:    <http://spinrdf.org/spin#> .
+@prefix spl:     <http://spinrdf.org/spl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+
+<http://sv.cmu.edu/3.0/ActorRoles>
+      rdf:type owl:Ontology ;
+      owl:imports <http://SGArch/Roles&Actors/RA4> , <http://spinrdf.org/spin> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+ar:Appliance
+      rdf:type owl:Class ;
+      rdfs:subClassOf ra:Actor , ar:LogicalEntity .
+
+ar:Battery
+      rdf:type owl:Class ;
+      rdfs:subClassOf ra:Actor , ar:LogicalEntity .
+
+ar:Campus
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:GeographicEntity .
+
+ar:CapacitorBank
+      rdf:type owl:Class ;
+      rdfs:subClassOf ra:Actor , ar:LogicalEntity .
+
+ar:CoalFacility
+      rdf:type owl:Class ;
+      rdfs:label "Trace the (UML) package hierarchy of a class"^^xsd:string ;
+      rdfs:subClassOf ar:FossilFacility .
+
+ar:Cogeneration
+      rdf:type owl:Class ;
+      rdfs:label ""^^xsd:string ;
+      rdfs:subClassOf ra:Role , ar:LogicalEntity .
+
+ar:CommercialVendor
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualEntity , ra:Role .
+
+ar:ConceptualEntity
+      rdf:type owl:Class ;
+      rdfs:subClassOf owl:Thing .
+
+ar:CustomerAppliance
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:Appliance .
+
+ar:ElectricStorage
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalEntity , ra:Role .
+
+ar:ElectricVehicle
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalEntity , ra:Actor .
+
+ar:EnergyStorageManagement
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalEntity , ra:BusinessService .
+
+ar:EnvironmentalAuthority
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:RegulatoryAuthority .
+
+ar:Facility
+      rdf:type owl:Class ;
+      rdfs:label "This is intended to be an abstract superclass that will not be directly instantiated."^^xsd:string ;
+      rdfs:subClassOf ra:Role , ar:ConceptualEntity .
+
+ar:FossilFacility
+      rdf:type owl:Class ;
+      rdfs:label ""^^xsd:string ;
+      rdfs:subClassOf ar:GenerationFacility .
+
+ar:GasFacility
+      rdf:type owl:Class ;
+      rdfs:label ""^^xsd:string ;
+      rdfs:subClassOf ar:FossilFacility .
+
+ar:Generation
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualEntity , ra:Role .
+
+ar:GenerationFacility
+      rdf:type owl:Class ;
+      rdfs:subClassOf ra:Actor , ar:LogicalEntity .
+
+ar:GeographicEntity
+      rdf:type owl:Class ;
+      rdfs:subClassOf ra:Actor .
+
+ar:HomeApplianceVendor
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:CommercialVendor .
+
+ar:HydroFacility
+      rdf:type owl:Class ;
+      rdfs:label ""^^xsd:string ;
+      rdfs:subClassOf ar:RenewableFacility .
+
+ar:LegalEntity
+      rdf:type owl:Class ;
+      rdfs:subClassOf ra:Actor .
+
+ar:LocalRegulatoryAuthority
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:RegulatoryAuthority .
+
+ar:LogicalEntity
+      rdf:type owl:Class ;
+      rdfs:subClassOf owl:Thing .
+
+ar:MagneticEnergyStorageSystem
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:PhysicalEntity , ra:Actor .
+
+ar:MarketGenerator
+      rdf:type owl:Class ;
+      rdfs:subClassOf ra:Role , ar:ConceptualEntity .
+
+ar:NuclearFacility
+      rdf:type owl:Class ;
+      rdfs:label ""^^xsd:string ;
+      rdfs:subClassOf ar:GenerationFacility .
+
+ar:Peaker
+      rdf:type owl:Class ;
+      rdfs:label ""^^xsd:string ;
+      rdfs:subClassOf ar:LogicalEntity , ra:Role .
+
+ar:PhysicalEntity
+      rdf:type owl:Class ;
+      rdfs:subClassOf owl:Thing .
+
+ar:Premises
+      rdf:type owl:Class ;
+      rdfs:subClassOf ra:Actor , ar:LegalEntity .
+
+ar:ProductionFacility
+      rdf:type owl:Class ;
+      rdfs:subClassOf ra:Actor , ar:LogicalEntity .
+
+ar:RegulatoryAuthority
+      rdf:type owl:Class ;
+      rdfs:subClassOf ra:Role , ar:ConceptualEntity .
+
+ar:RenewableFacility
+      rdf:type owl:Class ;
+      rdfs:label ""^^xsd:string ;
+      rdfs:subClassOf ar:GenerationFacility .
+
+ar:Service
+      rdf:type owl:Class .
+
+ar:Storage
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualEntity , ra:Role .
+
+ar:ThermalStorage
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalEntity , ra:Role .
+
+ar:WindFacility
+      rdf:type owl:Class ;
+      rdfs:label ""^^xsd:string ;
+      rdfs:subClassOf ar:RenewableFacility .
+
+ar:playsRole
+      rdf:type rdf:Property ;
+      rdfs:label ""^^xsd:string ;
+      rdfs:subPropertyOf sp:arg .

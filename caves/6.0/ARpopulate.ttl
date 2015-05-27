@@ -1,0 +1,491 @@
+# baseURI: http://sv.cmu.edu/AWP/6.0/ARpopulate
+# imports: http://sv.cmu.edu/AWP/6.0/ActorRoles
+# imports: http://topbraid.org/sparqlmotionfunctions
+# imports: http://topbraid.org/sparqlmotionlib-tbc
+
+@prefix EntityList: <file:///AWP/6.0/EntityList.xls#> .
+@prefix ar: <http://sv.cmu.edu/AWP/6.0/ActorRoles#> .
+@prefix ardata: <http://sv.cmu.edu/AWP/6.0/ARpopulate#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sm: <http://topbraid.org/sparqlmotion#> .
+@prefix smf: <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml: <http://topbraid.org/sparqlmotionlib#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://sv.cmu.edu/AWP/6.0/ARpopulate>
+  rdf:type owl:Ontology ;
+  spin:imports <http://topbraid.org/spin/owlrl-all> ;
+  owl:imports <http://sv.cmu.edu/AWP/6.0/ActorRoles> ;
+  owl:imports <http://topbraid.org/sparqlmotionfunctions> ;
+  owl:imports <http://topbraid.org/sparqlmotionlib-tbc> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
+ardata:AboveHumanComfort
+  rdf:type ar:ConceptualServiceContract ;
+.
+ardata:AccountManagement
+  rdf:type ar:ConceptualServiceComposition ;
+  ar:isCollectionOf ardata:FinancialServices ;
+.
+ardata:Alerting
+  rdf:type ar:PhysicalService ;
+  ar:isAbstractedAs ardata:SystemHealth ;
+  rdfs:label "Alerting"^^xsd:string ;
+.
+ardata:ApplyConstruct_1
+  rdf:type sml:ApplyConstruct ;
+  sm:next ardata:ApplyConstruct_2 ;
+  sml:constructQuery [
+      rdf:type sp:Construct ;
+      sp:templates (
+          [
+            sp:object [
+                sp:varName "parent"^^xsd:string ;
+              ] ;
+            sp:predicate rdfs:subClassOf ;
+            sp:subject [
+                sp:varName "newEntity"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object owl:Class ;
+            sp:predicate rdf:type ;
+            sp:subject [
+                sp:varName "newEntity"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "description"^^xsd:string ;
+              ] ;
+            sp:predicate ar:description ;
+            sp:subject [
+                sp:varName "newEntity"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "type"^^xsd:string ;
+              ] ;
+            sp:predicate ar:type ;
+            sp:subject [
+                sp:varName "newEntity"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "nistDomain"^^xsd:string ;
+              ] ;
+            sp:predicate ar:nistLegacyDomain ;
+            sp:subject [
+                sp:varName "newEntity"^^xsd:string ;
+              ] ;
+          ]
+        ) ;
+      sp:where (
+          [
+            sp:object [
+                sp:varName "roleactor"^^xsd:string ;
+              ] ;
+            sp:predicate EntityList:actorRoleService ;
+            sp:subject [
+                sp:varName "subject"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "logicalphysical"^^xsd:string ;
+              ] ;
+            sp:predicate EntityList:hierarchyConceptualLogicalPhysical ;
+            sp:subject [
+                sp:varName "subject"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type fn:concat ;
+                sp:arg1 "ar:" ;
+                sp:arg2 [
+                    sp:varName "logicalphysical"^^xsd:string ;
+                  ] ;
+                sp:arg3 [
+                    sp:varName "roleactor"^^xsd:string ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "class"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type spif:buildURI ;
+                sp:arg1 [
+                    sp:varName "class"^^xsd:string ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "parent"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "name"^^xsd:string ;
+              ] ;
+            sp:predicate EntityList:entityName ;
+            sp:subject [
+                sp:varName "subject"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type spif:camelCase ;
+                sp:arg1 [
+                    sp:varName "name"^^xsd:string ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "camelName"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type spif:buildURI ;
+                sp:arg1 [
+                    rdf:type fn:concat ;
+                    sp:arg1 "ar:" ;
+                    sp:arg2 [
+                        sp:varName "camelName"^^xsd:string ;
+                      ] ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "newEntity"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "description"^^xsd:string ;
+              ] ;
+            sp:predicate EntityList:description ;
+            sp:subject [
+                sp:varName "subject"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "type"^^xsd:string ;
+              ] ;
+            sp:predicate EntityList:type ;
+            sp:subject [
+                sp:varName "subject"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "nistDomain"^^xsd:string ;
+              ] ;
+            sp:predicate EntityList:nISTLegacyDomain ;
+            sp:subject [
+                sp:varName "subject"^^xsd:string ;
+              ] ;
+          ]
+        ) ;
+    ] ;
+  sml:replace "true"^^xsd:boolean ;
+  rdfs:label "Create Subclasses from spreadsheet"^^xsd:string ;
+.
+ardata:ApplyConstruct_2
+  rdf:type sml:ApplyConstruct ;
+  sm:next ardata:ExportToRDFFile_1 ;
+  sml:constructQuery [
+      rdf:type sp:Construct ;
+      sp:templates (
+          [
+            sp:object <http://sv.cmu.edu/AWP/6.0/ActorRoles> ;
+            sp:predicate owl:imports ;
+            sp:subject [
+                sp:varName "namespaceURI"^^xsd:string ;
+              ] ;
+          ]
+        ) ;
+      sp:where (
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type smf:buildURI ;
+                sp:arg1 "http://sv.cmu.edu/AWP/6.0/ARSubclasses" ;
+              ] ;
+            sp:variable [
+                sp:varName "namespaceURI"^^xsd:string ;
+              ] ;
+          ]
+        ) ;
+    ] ;
+  rdfs:label "Add import statement"^^xsd:string ;
+.
+ardata:BelowHumanComfort
+  rdf:type ar:ConceptualServiceContract ;
+  ar:isAbstractionOf ardata:CoolingTemperatureRequirements ;
+  ar:isAbstractionOf ardata:TemperatureSetPoints ;
+  ar:specifies ardata:CoolingSrvc ;
+  rdfs:label "BelowHumanComfort"^^xsd:string ;
+.
+ardata:BigAppMft
+  rdf:type ar:ImplementationActor ;
+  ar:isAbstractedAs ardata:SpecSet1 ;
+  ar:provides ardata:Srvc3-L2 ;
+  rdfs:label "BigAppMft"^^xsd:string ;
+.
+ardata:BillingDepartment
+  rdf:type ar:LogicalActor ;
+  ar:provides ardata:SomeUnnamedServiceCollection ;
+.
+ardata:BillingService
+  rdf:type ar:LogicalService ;
+.
+ardata:CommercialRefrigerator
+  rdf:type ar:PhysicalActor ;
+  ar:isAbstractedAs ardata:VaporCompression ;
+  rdfs:label "CommercialRefrigerator"^^xsd:string ;
+.
+ardata:Cooling
+  rdf:type ar:ConceptualServiceComposition ;
+  ar:isAbstractionOf ardata:CoolingSystem ;
+  ar:isCollectionOf ardata:CoolingSrvc ;
+.
+ardata:CoolingSrvc
+  rdf:type ar:ConceptualService ;
+  ar:isAbstractionOf ardata:SystemHealth ;
+  ar:isAbstractionOf ardata:TempManagement ;
+  ar:isPartOf ardata:Cooling ;
+  ar:isSpecifiedBy ardata:BelowHumanComfort ;
+  rdfs:label "CoolingSrvc"^^xsd:string ;
+.
+ardata:CoolingSystem
+  rdf:type ar:LogicalServiceComposition ;
+  ar:isAbstractedAs ardata:Cooling ;
+  ar:isCollectionOf ardata:SystemHealth ;
+  ar:isCollectionOf ardata:TempManagement ;
+  rdfs:label "CoolingSystem"^^xsd:string ;
+.
+ardata:CoolingTemperatureRequirements
+  rdf:type ar:LogicalServiceContract ;
+  ar:specifies ardata:TempManagement ;
+.
+ardata:DesignForTempSetPtControlAndMonitoring
+  rdf:type ar:PhysicalServiceContract ;
+  ar:involvesParty ardata:SpecSet1 ;
+  ar:isAbstractedAs ardata:TemperatureSetPoints ;
+  ar:specifies ardata:HeatRemoval ;
+  ar:specifies ardata:TempControl ;
+  ar:specifies ardata:TempMonitoring ;
+  rdfs:label "DesignForTempSetPtControl&Monitoring"^^xsd:string ;
+.
+ardata:ExportToRDFFile_1
+  rdf:type sml:ExportToRDFFile ;
+  sml:baseURI "http://sv.cmu.edu/AWP/6.0/ARSubclasses"^^xsd:string ;
+  sml:targetFilePath "ARSubclasses.ttl"^^xsd:string ;
+  rdfs:label "Write results to file"^^xsd:string ;
+.
+ardata:FinancialServices
+  rdf:type ar:ConceptualServiceComposition ;
+  ar:isAbstractionOf ardata:SomeUnnamedServiceCollection ;
+.
+ardata:ForHumanComfort
+  rdf:type ar:ConceptualServiceContract ;
+.
+ardata:FreezerTemp
+  rdf:type ar:PhysicalServiceContract ;
+  ar:isSubLayerOf ardata:DesignForTempSetPtControlAndMonitoring ;
+.
+ardata:HeatRemoval
+  rdf:type ar:PhysicalService ;
+  ar:isAbstractedAs ardata:TempManagement ;
+  ar:isSpecifiedBy ardata:DesignForTempSetPtControlAndMonitoring ;
+  rdfs:label "HeatRemoval"^^xsd:string ;
+.
+ardata:HomeRefrigerator
+  rdf:type ar:PhysicalActor ;
+  ar:isAbstractedAs ardata:VaporCompression ;
+  rdfs:label "HomeRefrigerator"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/6.0/ARpopulate#Import-ActorRoles.ttl_1>
+  rdf:type sml:ImportRDFFromWorkspace ;
+  sm:next ardata:ApplyConstruct_1 ;
+  sml:baseURI "http://sv.cmu.edu/AWP/6.0/ActorRoles"^^xsd:string ;
+  sml:ignoreImports "false"^^xsd:boolean ;
+  rdfs:label "Import ActorRoles.ttl"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/6.0/ARpopulate#Import-EntityList.xls_1>
+  rdf:type sml:ImportRDFFromWorkspace ;
+  sm:next ardata:ApplyConstruct_1 ;
+  sml:baseURI "file:///SGArch/AWP/6.0/EntityList.xls"^^xsd:string ;
+  rdfs:label "Import EntityList.xls"^^xsd:string ;
+.
+ardata:ModifyPrefixes_1
+  rdf:type sml:ModifyPrefixes ;
+  sm:next ardata:ApplyConstruct_1 ;
+  sml:addedPrefix "EntityList file:///AWP/6.0/EntityList.xls#"^^xsd:string ;
+  rdfs:label "Add prefix definition"^^xsd:string ;
+.
+ardata:ProcessWasteHeatRemovalSystem
+  rdf:type ar:LogicalActor ;
+  rdfs:label "ProcessWasteHeatRemovalSystem"^^xsd:string ;
+.
+ardata:RefrigeratorTemp
+  rdf:type ar:PhysicalServiceContract ;
+  ar:isSubLayerOf ardata:DesignForTempSetPtControlAndMonitoring ;
+.
+ardata:SomeUnnamedServiceCollection
+  rdf:type ar:LogicalServiceComposition ;
+  ar:isCollectionOf ardata:BillingService ;
+.
+ardata:SpecSet1
+  rdf:type ar:PhysicalActor ;
+  ar:isAbstractionOf ardata:BigAppMft ;
+  ar:isPartyTo ardata:DesignForTempSetPtControlAndMonitoring ;
+  ar:isSubLayerOf ardata:HomeRefrigerator ;
+  rdfs:label "SpecSet1"^^xsd:string ;
+.
+ardata:Srvc3-L2
+  rdf:type ar:ImplementationService ;
+  ar:isProvidedBy ardata:BigAppMft ;
+  rdfs:label "Srvc3-L2"^^xsd:string ;
+.
+ardata:SystemHealth
+  rdf:type ar:LogicalService ;
+  ar:isAbstractionOf ardata:Alerting ;
+  ar:isAbstractionOf ardata:TempMonitoring ;
+  ar:isPartOf ardata:CoolingSystem ;
+  rdfs:label "SystemHealth"^^xsd:string ;
+.
+ardata:TempControl
+  rdf:type ar:PhysicalService ;
+  ar:isAbstractedAs ardata:TempManagement ;
+  ar:isSpecifiedBy ardata:DesignForTempSetPtControlAndMonitoring ;
+  rdfs:label "TempControl"^^xsd:string ;
+.
+ardata:TempManagement
+  rdf:type ar:LogicalService ;
+  ar:isAbstractionOf ardata:HeatRemoval ;
+  ar:isAbstractionOf ardata:TempControl ;
+  ar:isPartOf ardata:CoolingSystem ;
+  ar:isSpecifiedBy ardata:TemperatureSetPoints ;
+  rdfs:label "TempManagement"^^xsd:string ;
+.
+ardata:TempMonitoring
+  rdf:type ar:PhysicalService ;
+  ar:isAbstractedAs ardata:SystemHealth ;
+  ar:isSpecifiedBy ardata:DesignForTempSetPtControlAndMonitoring ;
+  rdfs:label "TempMonitoring"^^xsd:string ;
+.
+ardata:TemperatureSetPoints
+  rdf:type ar:LogicalServiceContract ;
+  ar:isAbstractionOf ardata:DesignForTempSetPtControlAndMonitoring ;
+  ar:specifies ardata:TempManagement ;
+  rdfs:label "TemperatureSetPoints"^^xsd:string ;
+.
+ardata:VaporCompression
+  rdf:type ar:LogicalActor ;
+  ar:isAbstractionOf ardata:CommercialRefrigerator ;
+  ar:isAbstractionOf ardata:HomeRefrigerator ;
+  rdfs:label "VaporCompression"^^xsd:string ;
+.
+ar:Actor
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:Actor ;
+      owl:onProperty ar:isSubLayerOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:Actor ;
+      owl:onProperty ar:isSuperLayerOf ;
+    ] ;
+.
+ar:ConceptualEntity
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ConceptualEntity ;
+      owl:onProperty ar:isSubLayerOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ConceptualEntity ;
+      owl:onProperty ar:isSuperLayerOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty ar:isSubLayerOf ;
+    ] ;
+.
+ar:ImplementationEntity
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ImplementationEntity ;
+      owl:onProperty ar:isSubLayerOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:ImplementationEntity ;
+      owl:onProperty ar:isSuperLayerOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty ar:isSubLayerOf ;
+    ] ;
+.
+ar:LogicalEntity
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalEntity ;
+      owl:onProperty ar:isSubLayerOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:LogicalEntity ;
+      owl:onProperty ar:isSuperLayerOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty ar:isSubLayerOf ;
+    ] ;
+.
+ar:PhysicalEntity
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:PhysicalEntity ;
+      owl:onProperty ar:isSubLayerOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom ar:PhysicalEntity ;
+      owl:onProperty ar:isSuperLayerOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty ar:isSubLayerOf ;
+    ] ;
+.
+ar:isSubLayerOf
+  rdf:type owl:TransitiveProperty ;
+  rdfs:label "isSubLayerOf"^^xsd:string ;
+.
+ar:isSuperLayerOf
+  rdf:type owl:TransitiveProperty ;
+  rdfs:label "isSuperLayerOf"^^xsd:string ;
+.

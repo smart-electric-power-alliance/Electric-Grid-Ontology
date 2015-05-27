@@ -1,0 +1,2001 @@
+# baseURI: http://sv.cmu.edu/AWP/5.0/ARSubclasses
+# imports: http://sv.cmu.edu/AWP/5.0/ActorRoles
+
+@prefix EntityList:  <file:///AWP/5.0/EntityList.xls#> .
+@prefix ar:      <http://sv.cmu.edu/AWP/5.0/ActorRoles#> .
+@prefix arg:     <http://spinrdf.org/arg#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sp:      <http://spinrdf.org/sp#> .
+@prefix spin:    <http://spinrdf.org/spin#> .
+@prefix spl:     <http://spinrdf.org/spl#> .
+@prefix tables:  <http://topbraid.org/tables#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<http://sv.cmu.edu/AWP/5.0/ARSubclasses>
+      rdf:type owl:Ontology ;
+      owl:imports <http://sv.cmu.edu/AWP/5.0/ActorRoles> .
+
+<http://sv.cmu.edu/AWP/5.0/ActorRoles#(Energy)Dispatcher>
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Actor Role in charge of dispatching Electricity (usually at the transmission level)"^^xsd:string ;
+      ar:nistLegacyDomain "Transmission"^^xsd:string ;
+      ar:type "Organizational Entity"^^xsd:string .
+
+ar:AMIHeadEnd
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Provides the Interface to the Advanced Metering Infrastructure and manages the information exchanges between third party systems. The head-end is the command application for AMI solution. Optionally it manages required or desired meter reading schedules, and enacts other meter and communication-related commands. Most Head-ends also contain a vendor specific extension like a Meter Data Master (MDMS) and Validates, edits, and estimates (VEE) meter calculations."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:AMIOperator
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "General operator of the AMI system"^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Role"^^xsd:string .
+
+ar:AMIServiceEngineer
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "External actor responsible for the installation, operation, maintenance and de-installation of the system components. It may access, if properly identified and authorized, those components either directly, via local operation and maintenance interfaces, or from a system component from a higher hierarchical level (e.g. meters may be accessed for maintenance purposes via NNAPs or the HES)."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Person"^^xsd:string .
+
+<http://sv.cmu.edu/AWP/5.0/ActorRoles#AccessPoint(ie.DataAggregationPoint)>
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Collects and aggregates all data from/to end devices through Neighbourhood and/or Field Area and/or AMI networks. These devices are IEEE 802.11n compliant. They interface the Backhaul WAN."^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:AccountManagement
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Business function or service that manages supplier and customer business accounts. "^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:AccountManagementSystem
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Business function or service that manages supplier and customer business accounts. "^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:Actuator
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "An actuator is a transducer that accepts a signal and converts it to a physical action. In other words, an actuator causes an action to occur relating to the data that was sent to it. The are used to remotely operate devices such as switches and circuit-breakers."^^xsd:string ;
+      ar:nistLegacyDomain "Cross Cutting"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:AggregationResource
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualZone ;
+      ar:description "A market-dependent group of Response Method Aggregations that represents a dispatchable entity."^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Organizational Entity"^^xsd:string .
+
+ar:Aggregator
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "The role that combines curtailment, demand or DER of two or more customers into a single purchasing unit to negotiate the purchase or the sale of electricity to retail electric providers. Aggregators may not sell or take title to electricity. Retail electric providers are not aggregators."^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:AncillaryOpsMarket
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Provide a market to provide frequency support, voltage support, spinning reserve and other services as defined by FERC, NERC and the various ISO. These markets normally function on a regional or ISO basis. "^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:AncillaryServiceProviders
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Provide third-party ancillary services to provide frequency support, voltage support, spinning reserve and other services as defined by FERC, NERC and the variousttransmission authority,"^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:Appliance
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "generic appliance"^^xsd:string ;
+      ar:nistLegacyDomain "Cross Cutting"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:ApplianceControl
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "The role associated with the external control of an End Device."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:ApplianceCustomer
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Consumer (in-home) electric device.  Potentially controllable (making them Customer Devices) to reduce/increase load as directed.  Includeslights,  pool pumps, air conditioners, electric water heaters, refrigerators, washers, electric dryers, dishwashers, &c."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:AssetInvestmentPlanning
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Asset investment planning involves strategy definition and prioritisation, maintenance strategy planning, risk management, programme management and decision-making. It drives the condition, configuration, performance, operating costs, and flexibility of the asset base, with the aim of maximising value."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:BackOfficeSystems
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Applications which support the admistrative support for the utility or Service Provider.  These applcations usually include customer billing, general ledger & accounting"^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:BackhaulWAN
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Backhaul Wide-Area Networks (WAN) provides the telcommuncations facilities from edge devices to the Grid Operations Core Network (LAN) eitherdirectly or via a WAN. These edge devices include Substation, Field Automation Networks(FAN), Supervisory Control And Data Acquisition (SCADA) devices, dvanced Meter Infrastructure (AMI) networks, Distributed Generation Resources, etc. A backhaul WAN may be owned by a utility and/or managed by a telecom/cable Service Provider. It may be wireless, wireline, cable or fibre."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:BalanceSupplier
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "A party that markets the difference between actual metered energy consumption and the energy bought with firm energy contracts by the party connected to the grid. In addition the balance supplier markets any difference with the firm energy contract (of the party connected to the grid) and the metered production. "^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:BalancingAuthority
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Ensures  the supply of electricity corresponds to the anticipated consumption of electricity during a given time period and financially regulates any imbalance that arises. THIS NEEDS UPDATE (USE NERC DEFN)"^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:Billing
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Dept that calculates and produces consolidated customer bills, usually allows customer access via Customer Portal."^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:BiomassFacility
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Power plant that produces electricity by using biomass. Biomass includes usually refers to using methane gas produced by landfills, farm lots as fuel for the power generation facility. "^^xsd:string ;
+      ar:nistLegacyDomain "Generation"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:BuildingAutomationSystem
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "The Building Automation System (BAS), also commonly referred to as a Customer Energy Management System (EMS), controls the premise's electrical devices and provides status information.  Building automation systems can be used to allow users to make automated or manual decisions to control energy consumption more efficiently. Through the meter or gateway interface the BAS receives pricing and other signals for managing the building’s systems, including heating and cooling systems, lighting, DER, electric storage, PHEVs and appliances. The BAS may be a utility subscription service, a 3rd party offered service, a consumer specified policy, a consumer owned device, or a manual control by the utility or consumer."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:BuildingManagement
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Service that monitors and controls building energy and which potentially responds to signals while minimizing impact on building occupants. "^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:BusinessEntity
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualActor ;
+      ar:description "The wholesale or retail entity that interacts with other entities in its market."^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:BusinessPlanningAndReporting
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "These actors perform strategic business modeling, manpower planning, reporting, account management, and both assess and report on risk, performance and business impact. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:Campus
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Set of co-located grounds and buildings operated by an entity such as a corporation.  Examples include, industrial parks, universities and corporate business parks,and supporting physical infrastructures"^^xsd:string ;
+      ar:nistLegacyDomain "Cross Cutting"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:CapacitorBank
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Control  voltage  by minimizing voltage drops  and absorbing  line spikes. They also provide Volt/VAR control compensating for VAR losses for large inductive loads."^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+<http://sv.cmu.edu/AWP/5.0/ActorRoles#Clearing&SettlementAgent>
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Assumes liability for clearing and/or settlement of contracts and provides contractual counterparty within a Power Exchangse and  Over the Counter (OTC) contracts."^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:CoalFacility
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Power plant that produces electricity steam by burning coal. They provide the most inexpensive method of producing power and are commonly for base-load and ancillary services."^^xsd:string ;
+      ar:nistLegacyDomain "Generation"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:Cogeneration
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "Devices which increase the efficiency of fuel by capturing and utilizing the both heat and power produced when the fuel is burned. Examples include combined cycle devices which utilize residual heat to generate additional electricity, topping cycle devices which use residual heat for heating or cooling, and bottom cycle processes which use waste heat to produce electricity."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:CommercialCustomer
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "A business that  receives electricity from the electric distribution system, with usage below the threshold set for industrial usage. "^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:CommercialVendor
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Comercial venodrs that provide solutions, services, and equipment "^^xsd:string ;
+      ar:nistLegacyDomain "Cross Cutting"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:CommunicationMethod
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "The method by which an object communicates with another object to instruct, measure or control."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Data"^^xsd:string .
+
+ar:CommunicationNetworks
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Wireline or wireless networks play a role in AMI, Distribution and Substation Automation, automation backhaul and EV roaming. This include Wireless Service Providers (WSP) now commonly used for AMI NANs, EV charging stations. "^^xsd:string ;
+      ar:nistLegacyDomain "Cross Cutting"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:CommunicationsNetwork
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "The planning, operations and maintenance of all communications Network assets including cable, wire, fibre, routers, switches, wireless, etc required to support Operations. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:CommunicationsNetworkOperations
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "The planning, operations and maintenance of all communications "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:Construction
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Examples of construction work include service installations, line extensions, and system betterment projects."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:ConstructionSupervision
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "Monitoring and management of construction work to minimize negative variances from planned costs, performance, and schedule."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:ConsumptionResponseMethod
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "A measurable action taken in response to an instruction to change consumption."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:ConsumptionResponsibleParty
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "A party who can be brought to rights, legally and financially, for any imbalance between energy bought and consumed for all associated metering points. "^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Role"^^xsd:string .
+
+ar:ControlAreaOperator
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description """Responsible for : 
+1. The coordination of exchanges between its associated control blocks and the organisation of the coordination of exchange programs between its related control areas. 
+2. The load frequency control within its own block and ensuring that its control areas respect their obligations in respect to load frequency control and time deviation. 
+3. The organisation of the settlement and/or compensation between its control areas.
+"""^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Role"^^xsd:string .
+
+ar:ControllableLoad
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Devices whose electric usage can be varied in response to signals. Examples include air conditioners, industrial devices and water heaters. May be controlled by a Facility BAS, a Facility Gateway, though a Smart Meter (serving as a Facility Gateway), or other means such as direct communication of price."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:CoordinationCenterOperator
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description """Responsible for : 
+1. The coordination of exchange programs between its related control blocks and for the exchanges between its associated coordination center zones. 
+2. Ensuring that its control blocks respect their obligations in respect to load frequency control. 
+3. Calculating the time deviation in cooperation with the associated coordination centers. 
+4. Carrying out the settlement and/or compensation between its control blocks and against the other coordination center zones"""^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Role"^^xsd:string .
+
+ar:CriticalLoads
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Individual loads deemed to be critical to the operation of the facility or process."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device ?"^^xsd:string .
+
+ar:CustomerDevice
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Household devices that can react to remote management, whether to price, grid integrity, or other energy management signaling. May be controlled by a Facility Building Automation System (BAS), a Facility Gateway, though a Smart Meter (serving as a Facility Gateway), or other means such as direct communication of price or other information. Communication to the device might be via a Home-Area Network or other means."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device ? "^^xsd:string .
+
+ar:CustomerInformationSystem
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "The CIS application provides Customer status information necessary to support Demand/Response programs, outage/restoration and usage information. The CIS provides the usage information for Billing. Optionally, CIS includes other functions including outage management, spatial information and Meter Data Managment System (MDMS) functions. CIS contains customer load data which is estimated for each nodal location on a feeder to provide load shapes for different load categories. The CIS fucntion can reside either with a Service Provider or a utility (which  fulfills that role, notably when there aren't any third-parties in the service territory)"^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:CustomerManagement
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Utility function that manages customer relationships by providing point-of-contact (PoC) and resolution for customer issues and problems. "^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:CustomerMeter
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:PhysicalActor ;
+      ar:description """Meters are devices which measure the amount of electricity used at a particular site. They are typically located at the customer facility and owned by the distributor (eg: utility) or retail provider. 
+"""^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:CustomerPortal
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Internet website so Customers can access their energy and cost information online, enrollment in prepayment electric services and enablement of third party monitoring and control of customer equipment."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:CustomerPremiseNetwork
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Customer Premise Networks support communcations between the various other actors found on a customer premise (eg: Appliances, Thermostats, Energy Management Systems); They are also known as Home Area Networks (HAN), Industrial Area Networks (IAN), Building Area Networks (BAN) and Customer Area Networks (CAN)"^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:CustomerServiceRepresentative
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Customer service provided by a person (e.g., sales and service representative), or by automated means called self-service (e.g., Interactive Voice Response (IVR))."^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Person"^^xsd:string .
+
+ar:CustomerSubstation
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Transmission or distribution substation located at the customer facilty to set-down power wiithin the customer facilty. Contains infrastructre to control/monitor and protect the distribution grid."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:CustomerSupport
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Customer Support actors help customers to purchase, provision,schedule instalationl, troubleshoot power system services, and relay/record customer trouble reports. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:DemandManagement
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "DR issues pricing or other signals to appliances and equipment at customer locations in order to request customers (or their pre-programmed systems) to decrease or increase their loads in response to the signals. Needs to be crisper description - Ron Cunningham to do"^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:DemandResponseManagementSystem
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "DRMS issues pricing or other signals to appliances and equipment at customer locations in order to request customers (or their pre-programmed systems) to decrease or increase their loads in response to the signals."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:DemandResponseObjects
+      rdf:type owl:Class ;
+      rdfs:subClassOf <http://sv.cmu.edu/AWP/5.0/ActorRoles#ConceptualNA Actor> ;
+      ar:description "Physical and logical types of demand response resource objects. - Refer to NAESB for help - is this is a object model - call Marty Burns"^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Data"^^xsd:string .
+
+ar:DemandResponseProvider
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "A service provider that either serves as an aggregator  or otherwise provides distribution of Demand/Response (DR) signals. "^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:DemandResponseServiceProvider
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "A Demand Response (DR) Service Provider may serve as an aggregator (in the Market domain), or otherwise provide distribution of DR signals."^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:DesignatedDispatchServiceEntity
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "A role service which carries the responsibility of receiving and processing demand resource dispatch instructions or market information and (optionally) providing response information.  "^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Service"^^xsd:string .
+
+ar:DisplayUser
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:PhysicalActor ;
+      ar:description "External actor interacting directly with the simple external consumer display."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Person"^^xsd:string .
+
+ar:DistributedGeneration
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Distributed Generation, also called Distributed Energy Resources (DER), includes small-scale generation or storage of whatever form. This is in contrast to centralized or generation and/or storage of electricity. These generation facilities are part of Demand/Reponse programs and may be dispatchable resources. The primary distictions between Distributed Generation (DG) and Generation is: Generation is attached via Transmission facilities, output is sold in wholesale markets, provides base load; DG is sited on a Customer permises attached to the Distribution grid, output is Retail (unless sold via an aggregator), can provide ancillary services.  These generation facilities include but are not limited to Photvoltaic panel (PV), micro-hydro, mindmill, Plug-in Hybrid/Electric Cars (PHEV), and potentially Fuel cells. These facilites are usually not scheduled but can be dispatched."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:DistributedGenerationAggregation
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Distributed  Generation Aggregators combine smaller participants (ie: providers, customers' distributed generation or curtailment assets) to enable these  participants access in larger markets as a virtualized trader"^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:DistributedGenerationSubmeter
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:PhysicalActor ;
+      ar:description "Additional meter used to measure electric usage and generation at some customer sites with generation devices such as solar panels.  Alternatively net metering may be used to measure net usage."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:DistributedIntelligenceCapabilities
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Advanced automated/intelligence application that operates in a normally autonomous mode from the centralized control system to increase responsiveness."^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:DistributedSolar
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Customer owned system which uses the sun to produce electricity and/or heat water."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:DistributedStorage
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "Battery storage typically located at a distribution substation and provides dispatchable energy for congestion and peak load relief. Typical recharged with onsite PV or trickle charging during off-demand intervals. Distributed storage can also augment customer Distributed Generation capabilites."^^xsd:string ;
+      ar:nistLegacyDomain "Cross Cutting"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:DistributedWind
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "Customer owned wind generation which is decentralized as opposed to generation. Examples include micro wind turbines owned by business and residential customers."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:DistributionAssetManagement
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Performed by actors that work together to determine when equipment should have maintenance, calculate the life expectancy of the device, and record its history of operations and maintenance so it can be reviewed in the future for operational and engineering decisions. "^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:DistributionControlDevices
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Actors that permit the Operations domain to manage the flow of power and reliability of the system.  Performed to maintain high levels of reliability and power quality. Examples include switches, capacitors, STATCOM."^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:DistributionDataCollector
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "A data concentrator bringing data from multiple sources and putting it into different form factors."^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:DistributionEngineering
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "A technical function for planning or managing the design and upgrade of the distribution system. Functions include arranging data gathering, construction design ,asset/equipment selection and placement."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:DistributionFieldCrews
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Manual operations of field devices, repair and construction work, patrolling facilities, recording changes in facility parameters, connectivity, in mobile computers, transferring data to the operator, and corresponding database administrators. This is a class of actors."^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:DistributionIntelligentElectricDevice
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Intelligent Electric Device (IED) is a communications-enabled controller to monitor and control automated devices in distribution which communicates with Distribution SCADA or other monitoring/control applications, as well as distributed capabilities for automatic operations in a localized area based on local information and on data exchange between members of the group. Operations such as such as tripping circuit breakers if they sense voltage, current, or frequency anomalies. This is a class of  actors."^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:DistributionManagementSystem
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "A suite of application software that monitors and controls the distribution system equipment based on computer-aided applications, market information, and operator control decisions. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:DistributionMeasure
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:PhysicalRole ;
+      ar:description "Performed by rolesactors that provide visibility into the flow of power and the condition of the systems in the field. In the future measurement might be found in built into meters, transformers, feeders, switches and other devices in the grid. An example would be the digital and analog measurements collected through the SCADA system from a remote terminal unit (RTU) and provide to a grid control center in the Operations domain. "^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:DistributionOperator
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "An entity which carries the responsibility of operating an electricity distribution system."^^xsd:string , "Person operating the distribution system."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Organization"^^xsd:string , "Person"^^xsd:string .
+
+ar:DistributionProtectionAndControlDevices
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Performed by Actors that react rapidly to faults and other events that might cause power outages, brownouts, or the destruction of equipment. Performed to maintain high levels of reliability and power quality. Devices external to a substation which control and protect the distribution system. Examples include Capabitors, Sectionalizers, circuit breakers"^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:DistributionProtectionDevices
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Actors that react rapidly to faults and other events in the system which might cause power outages, brownouts, or the destruction of equipment. Performed to maintain high levels of reliability and power quality. Examples include FACTs devices, switches,circuit interrupters, capacitors, Reactors, fuses"^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:DistributionRecordService
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Service performed by actors that permit other domains to review what has happened on the grid for financial, engineering, operational, compliance and forecasting purposes. "^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:DistributionSensor
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "A Distribution System device (outside the substation) that measures a physical quantity and converts it into a signal which can be read by an observer or by an instrument. Examples include oscillographs, meters, temperature sensors."^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:DistributionStabilizeAndOptimize
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Performed by actors to ensure the network is operating within appropriate tolerances across the system. They  gather information for control decisions that ensure reliable, proper operations (stability) and more efficient operations (optimization). Measurement and control form a feedback loop that allows grid operators to stabilize the flow of energy across the electric network or safely increase the load on a transmission path. "^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:DistributionSubstation
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "A facility who's function is to step-down voltages for distribution feeders. Contains not only transformers, but usually other devices to maintain power quality and reliablity, such as capacitor banks, Ground fault limiters, fuses, reactors."^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:DistributionSubstationNetwork
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "These networks interconnect devices within a substation for localized or  a backhauled WAN connection to Grid Operations . A typical example includes a local Ethernet LAN containing switching, protection andcontrol equipment . The Standard protocol of choice is IEC61850 and/or DNP3."^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:DistributionSystemEnergyResources
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Generation sources connected to the distribution grid regardless of size. Typically these are utilities owned resources. They do not include Customer-permises or Generation generation assets."^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:DistributionSystemOperator
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "according to the Article 2.6 of the Directive: \"a natural or legal person responsible for operating, ensuring the maintenance of and, if necessary, developing the distribution system in a given area and, where applicable, its interconnections with other systems and for ensuring the long-term ability of the system to meet reasonable demands for the distribution of electricity\". Moreover, the DSO is responsible for regional grid access and grid stability, integration of renewables at the distribution level and regional load balancing."^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Role"^^xsd:string .
+
+ar:ElectricMeter
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "A device that is either used for revenue grade at the pPoint of sSale measuring or facility grade device used for the transfer of electricity product and measuring usage and possibly control from one domain/system to another"^^xsd:string ;
+      ar:nistLegacyDomain "Cross Cutting"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:ElectricStorage
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "A system capable of storing power for use at a later time. Examples include pumped water storage, Advanced Energy Systems (AES), Plug-in Electric Vehicles (PEV), and thermal storage systems."^^xsd:string ;
+      ar:nistLegacyDomain "Cross Cutting"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:ElectricVehicle
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "A motorized car or truck which runs exclusively or partially on stored battery power as opposed to being powered directly by carbon-based fuel. Adiitionally, it plugs into a premise Energy Portal to charge vehicle. A PEV is also an EV (Electric Vehicle) that relies only on electric propulsion. A PEV is also a PHEV (Plug-In-Hybrid Vehicle) that also includes an alternative source of propulsion power."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+<http://sv.cmu.edu/AWP/5.0/ActorRoles#ElectricVehicle/TransportationSolutionProviders>
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Manufacturers of electric vehicles and electric transportation (eg: rail). Of special interest for Smart Grid is the inclusion of intelligent communcating Provider of capabilities for remote monitoring and control (eg: charge/dischare cycles). "^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:ElectricVehicleServiceElement
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Device which transfers electricity to electric vehicle batteries and which has information exchange capabilities. The charger can either be on-board the vehicle or off-board. On-board chargers require AC energy transfer to the vehicle (either 120 or 240V single phase) and Off-board chargers are within the EVSE and require. Note that information exchange capabilities for the EVSE are provided by the End Use Measurement Device (EUMD). Note new name added to describe the device from the service provider, this defintion needs correction"^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:ElectricalContractor
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Electrical contractors design, install and maintain industrial, commercial and domestic purposes. Alongside power and lighting applications, they  install ICT, Building Automation Systems (BAS), access, fire and security control equipment, lightning protection systems, and emergency power generating systems and renewable energy systems."^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:ElectricityInstallerContractor
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Electrical contractors design, install and maintain intelligent systems for all kinds of industrial, commercial and domestic purposes. Alongside the power and lighting applications, they equally install ICT and telecommunications, public street lighting, high medium and low voltage lines, control and energy management systems, access, fire and security control equipment, lightning protection systems, advertising and identification signs, emergency power generating systems and renewable energy systems."^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:EmergingServices
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "All the functions, services and innovations that have yet to be created. These will be instrumental in defining the Smart Grid of the future. "^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:EndDevice
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "A physical end-use device that consumes or supplies electricity."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:EndUseMeasurementDevice
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Device that measures and communicates the energy consumed by a Plug-in Electric Vehicle (PEV) and communicates the information to theEnergy Service Interface (ESI)"^^xsd:string , "Device which measures the  energy consumed by a PEV. Used in order to allow rates specific to electric vehicles.  Added name to correspond to device instead of the Service Provider"^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:EnergyInformationProvider
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "A Business that provide energy supply or demand information to Customers or authorized Third Parties."^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Organizational Entity"^^xsd:string .
+
+ar:EnergyManagementSystem
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Energy Management System (EMS) is a system of computer-aided tools used by operators of electric utility grids to monitor, control, and optimize the performance of the generation and/or transmission system. EMS also provides Distribution Managment System (DMS) with transmission/generation-related objectives, constraints, and input data from other EMS applications.  EMS also provides Distribution Automation (DA) with transmission/generation-related objectives, constraints, and input data. EMS system contains the transmission power system model, and can provide the transmission connectivity."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:EnergyMarketClearinghouse
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Wholesale market for energy products provides high-level market signals for operations I(ndependent System Operators (RTO)/Regional Transmission Operators (RTO) and Utility Operations), generation, Distributed Generation (DG) and demand response (DR) programmes."^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:EnergyServiceProvider
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Provides retail electricity, natural gas, and clean energy options, along with energy efficiency products and services."^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:EnergyServicesGateway
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description """Network communications application device which provides a communications capability between premise network domains and network domains esternal to the premise network domain e.g. a gateway. 
+When the gateway service is applied to the communications gateway from the utility (or other energy service provider) to the customer (premise network), additional functionality maybe applied (aka. Energy Services Interface) site. Provides cyber security and coordinates functions that enable secure interactions between relevant Home Area Network (HAN) Devices, meters and the Utility/ESP.  Permits applications such as remote load control, monitoring and control of distributed generation, in-home display of customer usage, reading of non-energy meters, and integration with building management systems.  Provides auditing/logging functions that record transactions to and from Home Area Networking Devices. Can also act as a gateway. Also commonly referred to as a Home-Area Network Gateway, or Residential Gateway. """^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device ?"^^xsd:string .
+
+ar:EnergyServicesInterface
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Network communications application device which provides a gateway from the utility (or other energy service provider) to the customer site. Provides cyber security and coordinates functions that enable secure interactions between relevant Home Area Network (HAN) Devices, meters and the Utility/ESP.  Permits applications such as remote load control, monitoring and control of distributed generation, in-home display of customer usage, reading of non-energy meters, and integration with building management systems.  Provides auditing /logging functions that record transactions to and from Home Area Networking Devices. This services is also a specialized class of services potentially included in HAN gateways. Also commenly referred to as a Home-Area Network Gateway."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:EnergyStorageManagement
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "A utility provided service to superviseor storage management on behalf of the customers."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:EnergySupplyCompany
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "A company that delivers electricity to end use customers. Examples include investor-owned, municipal utilities, private providers."^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:EnvironmentalAuthority
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "A regulatory authority responsible for the development, reporting and enforcement of environmental activities."^^xsd:string ;
+      ar:nistLegacyDomain "Agency"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:ExtensionPlanning
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "Network Extension planning actors develop long term plans for power system reliability, monitor the cost, performance and schedule of construction, and define projects to extend the network such as new lines, feeders or switchgear. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:Facility
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Something such as a building or large piece of equipment that is built for a specific purpose. In the NAESB context this is \"The location at which connection to the  distribution  (or transmission) system is made.\" This is an abstract superclass role is used to describe a cluster of subclasses"^^xsd:string ;
+      ar:nistLegacyDomain "Cross Cutting"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+<http://sv.cmu.edu/AWP/5.0/ActorRoles#FacilityEnergyManagementSystem/Gateway>
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "A logical or physical device typically located at the customer facility which combines communication gateway and energy management functions. "^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:FacilityManager
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "RolePerson responsible for the maintenance and operation of the facility. In the Residential market, this is the home owner, landlord, or building superintendent."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Organizational Entity"^^xsd:string .
+
+<http://sv.cmu.edu/AWP/5.0/ActorRoles#FieldAreaNetwork(FAN)>
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "The FAN connects distribution substations, field devices and Microgrids and Distributed Generation (including utility Bulk Storage) to the Grid Operations Core Network either directly or through a WAN or Backhaul facility."^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:FieldCrewTools
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "A field engineering and maintenance tool set that includes any mobile computing and hand-held devices."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:Financial
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Financial rolesactors measure performance across the whole organization, including the evaluation of investments in capital projects, maintenance, or operations. They track risk, benefits, costs and impact on levels of service. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:FinancialManager
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Person that is responsible for cost accounting and developing financial strategies for an industrial or commercial business."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Organizational Entity"^^xsd:string .
+
+ar:GISOperator
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Operator of the Geographic Information System"^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Organizational Entity"^^xsd:string .
+
+ar:GasMeter
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "A device that is either used for revenue grade at the pPoint of sSale measuring or facility grade device used for the transfer of gas, product and measuring usage and possibly control from one domain/system to another"^^xsd:string ;
+      ar:nistLegacyDomain "Cross Cutting"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+<http://sv.cmu.edu/AWP/5.0/ActorRoles#GasThisIsAnSOAElement,NotAnActorOrRole.>
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Power source provided by gas turbines. Typically used as \"peaker\" to satisfy peak load requirements. These plants are closer to the distribution load, in areas with constraint or high load profiles."^^xsd:string ;
+      ar:nistLegacyDomain "Generation"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:Gateway
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "The function of translating two or more dissimilar protocols.  This role is often fufilled by a communications device (such as a router) used to send messages to devices and sub-systems in a building or structure or from one network domain to another."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:Generation
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Conventional or renewable generation connected to the transmission grid (69kV and up).  Is 69kV really a requirement?  This should include all generation types DER and bulk.  Creating electricity."^^xsd:string ;
+      ar:nistLegacyDomain "Generation"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:GenerationAssetManagement
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Performed by roles actors to determine equipment maintenance schedules, calculate the life expectancy of the device. They also record equipment operations and maintenance history for future operational and engineering decisions. "^^xsd:string ;
+      ar:nistLegacyDomain "Generation"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:GenerationMeasure
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Performed by roles actors that provide visibility into the flow of power and the condition of the systems in the field. In the future measurement might be found in built into meters, transformers, feeders, switches and other devices in the grid. "^^xsd:string ;
+      ar:nistLegacyDomain "Generation"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+<http://sv.cmu.edu/AWP/5.0/ActorRoles#GenerationOperation/Control>
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Performed by roles actors that permit Operations to manage generation assets in maintaining the flow of power and reliability of the system. Generation dispatch is based upon reliablity with economic dispatch."^^xsd:string ;
+      ar:nistLegacyDomain "Generation"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:GenerationProtection
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Performed by rolesActors that react rapidly to faults and other events in the system that might cause power outages, brownouts, or the destruction of equipment. Performed to maintain high levels of reliability and power quality. May work locally or on a wide scale. "^^xsd:string ;
+      ar:nistLegacyDomain "Generation"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:GenerationRecord
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Performed by actors that permit other domains to review what has happened on the grid for financial, engineering, operational, and forecasting purposes. "^^xsd:string ;
+      ar:nistLegacyDomain "Generation"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:GenerationStabilizeAndOptimize
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Performed by rolesactors that ensure the network is operating with the appropriate tolerances across the system. They may gather information to make control decisions that ensure reliable and proper operations (stability) or more efficient operations (optimization). Measurement and control form a feedback loop that allows grid operators to stabilize the flow of energy across the electric network or safely increase the load on a transmission path. "^^xsd:string ;
+      ar:nistLegacyDomain "Generation"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:GenerationSubstation
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Centralized facility that steps-up voltage to transmission level. Usually located adjacent to the generation faciltiy."^^xsd:string ;
+      ar:nistLegacyDomain "Generation"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:GeographicInformationSystem
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "GIS formerly known as Automated Mapping/Facilities Management (AM/FM) contains the geographical information of the distribution power system circuit connectivity, as well as the parameters describing the power system facilities. Conceptually, the GIS' repository contains the  transmission connectivity, ownerships and relevant customer-premises data. Repository of distribution system assets, their relationships (connectivity), ownerships, and activities."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+<http://sv.cmu.edu/AWP/5.0/ActorRoles#GeothermalThisIsAnSOAElement,NotAnActorOrRole.>
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Power plants using geothermal steam for their turbines. These facilitities are located on seismically active areas with hydrothermic reservoirs. "^^xsd:string ;
+      ar:nistLegacyDomain "Generation"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:GridAccessProvider
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "A party responsible for providing access to the grid through a local metering point and its use for energy consumption or production to the party connected to the grid. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Organizational Entity"^^xsd:string .
+
+ar:GridCommunicationsNetworkProviders
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "They plan, build and maintain the communications systems that enable the data communication required to maintain grid stability, load balancing and fault protection systems. They also ensure compliance with the agreed service levels (Service Level Agreements including quality of service, data security and privacy) and compliance with any national and/or international regulations as necessary."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:GridOperations
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Grid operations manage and controls all utility assets, services and processes in \"real-time\" for the distribution of electricity (and gas and water) to and from customers and may serve customers who do not choose direct access. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:GridOperationsCoreNetwork
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "Local Area Networtk (LAN) infrastructure concentrating all operational networks. This includes grid operations management and control communications (eg: Field Area Networks (FANs), Substation Area Networks), as well as external party interfaces (eg: Market, Service Providers)"^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:HomeApplianceVendors
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Home appliance manufacturers. Of special interest for Smart Grid is the inclusion of intelligent communicating appliances which can participate in Demand/Response situations and be monitored/controlled remotely"^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:HomeAutomationOperator
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:PhysicalRole ;
+      ar:description "External role actor interacting directly with the home automation end device."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Person"^^xsd:string .
+
+ar:HomeManagement
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Service that monitors and controls home energy and potentially responds to signals while minimizing impact on home occupants. "^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:HumanResources
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Human Resources (HR) roles actors manage personnel information and activities including safety, training, benefits, performance, review, compensation, recruiting, sceduling, training/employee job-ratings and expenses. HR also determines overtime scheduling and job qualifications for specifc tasks."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Organizational Entity"^^xsd:string .
+
+ar:HydroFacility
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Superclass hydro "^^xsd:string ;
+      ar:nistLegacyDomain "Generation"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+<http://sv.cmu.edu/AWP/5.0/ActorRoles#ISO/RTOOperation>
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "A role that provides market driven perspective to the energy process. Interacts with operations across domains"^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:ImbalanceSettlementResponsible
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "A party that is responsible for settlement of the difference between the contracted quantities and the realised quantities of energy products for the balance responsible parties in a market balance area. "^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:InHomeDisplay
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "An In-Home Display (for Homes) or facilities console for other customers (e.g. commercial buildings, industrial facilities, or vehicles) displaying usage, cost and other information to customers. Could be implemented as a device, web portal, or through another mechanism"^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device ?"^^xsd:string .
+
+ar:IndependentSystemOperator
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Independent System Operator (ISO): An independent entity that monitors/controls a power gridover a limited geographic area (typically a single to few States). Responsible for generation and transmission coordination of electricity, high-level load management and other signals for distribution companies. Additionally responsible for managing the area's wholesale generation Market on the behalf of Market participants (Generation, Distributed Generation, Service Providers and Aggregators."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:IndustrialAutomation
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "System which controls devices at a large customer site which potentially could be used to direct building devices to increase/decrease load as needed.  "^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:IndustrialCustomer
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "A large business which receives electricity from the electric distribution system. Typically utilities define industrial customers with usage above a minimum threshold."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:IndustrialGateway
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:PhysicalActor ;
+      ar:description "Communications device which could be used to send messages to devices and systems at a large industrial customer site."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+<http://sv.cmu.edu/AWP/5.0/ActorRoles#Information&CommunicationTechnology(ICT)ServiceProviders/Vendors>
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Computer Systems, intelligent field equipment,  communications equipment and software providers necessary to support grid operations"^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:InstallationServiceTechnician
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:PhysicalActor ;
+      ar:description "Installer of communicating/controlable customer devices, Building Automation Systems (BAS) and components."^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Person"^^xsd:string .
+
+ar:InterconnectionTradeResponsible
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Is a market particpant or depends on one.  r\\Recognised by the Nomination Validator for the nomination of already allocated capacity."^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:InternetServiceProvider
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "ISPs provide Internet access to Customer Premise Networks. "^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:Lighting
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:PhysicalActor ;
+      ar:description "Customer owned system which provides illumination and which is potentially controllable by  automation or load control systems. "^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:Load
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "Device connected to the distribution system that draws power from the grid. Load devices can be appliances, pump controls, HVACs, electric vehicles, etc"^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:LoadDevice
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Device connected to the distribution system which consumes electricity.  Load devices can be e.g. appliances, pump controls, HVACs, electric vehicles"^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:LoadManagementSystem
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "LMS balances load by controlling Customer appliances and equipment (DR, DER, EV and ES charging/discharging).  To do this LMS processes load management program contracts, relevant historic information, profiles, behavioral models,  customer-specific power quality and reliability characteristics. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:LoadServingEntity
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "A role which carries the responsibility of serving end-users and selling electric energy to end-users."^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:LocalAuthority
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description """A party that produces electricity 
+Additional information: 
+This is a type of Party Connected to the Grid """^^xsd:string ;
+      ar:nistLegacyDomain "Generation"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:LocalRegulatoryAuthority
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "A regulatory authority responsible for the oversight and administration of utility service-related functions within its jurisdiction."^^xsd:string ;
+      ar:nistLegacyDomain "Agency"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:MOLResponsible
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "Responsible for the management of the available tenders for all Acquiring System Operators to establish the order of the reserve capacity that can be activated."^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Role"^^xsd:string .
+
+ar:MagneticEnergyStorageSystems
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:PhysicalActor ;
+      ar:description "SMES stores energy in a superconducting coil which is cryogenically cooled to its superconducting critical tempature."^^xsd:string ;
+      ar:nistLegacyDomain "Cross Cutting "^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:MaintenanceAndConstruction
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Maintenance and Construction actors coordinate equipment inspection, cleaning and adjustment , organize construction and design, dispatch and schedule maintenance and construction work, capture records gathered by field personnel and permit them to view necessary information to perform their tasks. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:Market
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Market are entities that provide energy information/services. Market signal changes  in the operation of the system based upon market economic variable to/from Customers, utilities, and Service Providers. Market include Retail, Wholesale and Demand/Response Programs."^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:MarketEnrollment
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "The collection of enrollment or tariff data for a Demand Resource Object to provide a specific market product or service."^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:MarketGenerator
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Electricity producer (regardless of source), contributing actively to voltage and reactive power control, required to provide the relevant data (information on outages, forecast, actual production) to the energy marketplace"^^xsd:string ;
+      ar:nistLegacyDomain "Enterprise"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:MarketManagement
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "A person or entity that buys and sells energy goods and services in an organized electricity market (Power Exchange) or Over the Counter.Market managers include Regional OPerations entities (Independent System Operators (RTOs), and Regional Transmissiopn Operators (RTO)s for wholesale markets. There are transmission, services and demand response markets as well. Some Distributed Generation (DG) "^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:MarketOps
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Manages and oversees wholesale power generation (and curtailment) contract execution. One of their primary functions is to deter market power abuses and anticompetitive behavior by ensuring  transparency with respect to bilateral contracts. Functions include financial and goods sold clearing, price quotation streams, audit and balancing. "^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:MarketParticipant
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "An organization registered with the System Operator that may take on roles such as Service Provider (SP), LSE, Trade Development Support Program (TDSP),  and/or Market Aggregator in accordance with the System Operator’s market rules."^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:Measurement
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "The role associated with the device or algorithm that measures the consumption or supply of an End Device."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:MeterDataManagementSystem
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Meter Data Master System (MDMS) provides meter information typically including physical (eg: type, serial, firmware), spatial, usage information (e.g. energy usage, energy generation, meter logs, meter test results) and makes data available to authorized systems. Most MDMS also provide data validation and verification for bill settlement."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:MeterReadingAndControl
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Meter Reading and Control actors perform a variety of functions on the metering system including data collection, disconnect/reconnect, outage management, prepayment point of sale, power quality and reliability monitoring, meter maintenance and asset management, meter data management including validation, estimation and editing (VEE), customer billing, and load management, including load analysis and control, demand response, and risk management. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+<http://sv.cmu.edu/AWP/5.0/ActorRoles#Metering,Billing,UtilityBackOfficeNeedsToBeBrokenUp>
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "The systems used for collecting metering information, validating it, settling bills across accounting entities, and issuing bills to customers."^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:MeteringAuthority
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "A role which carries the responsibility of providing data necessary to determine the performance of a Resource."^^xsd:string ;
+      ar:nistLegacyDomain "Agency"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:MicroHydro
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Customer owned river or stream driven power generation resource. Generation used for either Customer consumption or  resale. Often particpates in Demand/Response programmes, could be a scheduled resource."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:MicrogridDistributedGenerationNetwork
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "These networks are comprised of all energy sources (eg: solar, wind, diesel, storage) not part of Generation. In most cases these energy resources are klocatd in industrial parks, campuses (ie: microgrids)"^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:Modeler
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "Organizational entity responsible for Person in charge of modeling the power network."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Organizational Entity"^^xsd:string .
+
+ar:MultiUnitSubmeter
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:PhysicalActor ;
+      ar:description "Meter used to measure electric usage at individual units which are part of an multi-unit apartment buildings, condominiums, commercial buildings, mobile home parks, and similar multi-unit complexes."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:NeighborhoodAreaNetwork
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "NANs provide communications to connect distribution field devices (commonly Smart Meters), Migrogrid/Distributed Generation to a Distribution Grid Operations Core Network"^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:NetworkOperationSimulation
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "This set of services functions allows facilities to define, prepare and optimise the sequence of operations required for carrying out maintenance work on the system (release/clearance orders) and operational planning."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:NetworkOperations
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "The Network Operation domain is a sub-domain within Operation providing the monitoring, control, and maintanence of the utilities grid network. Key applications include monitoring and control remote field equipment (eg: Phase Measurement Units (PMU), capacitor banks, sectionalizers )"^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:NetworkOperationsAnalysis
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Advanced analytics that compare records taken from real-time operation related with information on grid network incidents, connectivity and loading to optimize operations and schedule periodic maintenance. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:NetworkOperationsAnalyst
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "Operation Feedback role that Analysis actors compares records taken from real-time operation related with information on grid network incidents, connectivity and loading to optimize operations and schedule periodic maintenance. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Organizational Entity"^^xsd:string .
+
+ar:NetworkOperationsCalculations
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Real-time Network Calculations actors (not shown) provide system operators with the ability to assess the reliability and security of the power system. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:NetworkOperationsControl
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Centralized Aautomated and manual control operations of the system  to manage the flow of power and Information Communications Technology (ICT), including cyber security to optimize reliabilty of the power delivery system and support infrastructure. Network control is coordinated by actors in this domain, they may only supervise wide area, substation, and local automatic or manual control. An example would be the use of phase angle regulators within a substation to control power flow between two adjacent power systems "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:NetworkOperationsFaultAnalysis
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Fault Management actors enhances the speed at which faults are located, identified, and sectionalized so service can be restored. They provide information for customers, coordinate with workforce dispatch and compile information for statistics. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:NetworkOperationsMonitor
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Network Operation Monitoring rolesactors supervise network topology, connectivity and loading conditions, including breaker and switch states, and control equipment status. They locate customer telephone complaints and field crews. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:NetworkOperationsReportingAndStatistics
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Operational Statistics and Reporting roles actors archive on-line data and to perform feedback analysis about system efficiency and reliability. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:NetworkSegmentCapacityAndReliablity
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description """Algorithms that provide information used to develop a long-term (generally one year and beyond) plan for the reliability (adequacy) of the interconnected electric transmission and distribution networks.
+EU: Real-time Network Calculations actors (not shown) provide system operators with the ability to assess the reliability and security of the power system. """^^xsd:string ;
+      ar:nistLegacyDomain "Cross Cutting"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:NominationValidator
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "Has the responsibility of ensuring that all capacity nominated is within the allowed limits and confirming all valid nominations to all involved parties. That roleHe informs the Interconnection Trade Responsible of the maximum nominated capacity allowed. Depending on market rules for a given interconnection the corresponding System Operators may appoint one Nomination Validator. "^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Role"^^xsd:string .
+
+ar:NonUtilityEnergyProvider
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Non-Utility that sells energy."^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:NonUtilityRetailEnergyProvider
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "A non-utility energy supplier that sells energy to end-users.  For example this could be a solar PV customer that sells back to the grid."^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:NuclearGenerationFacility
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Power plant that produces electricity steam by using nuclear fuel. They provide the most inexpensive method of producing power and are commonly for base-load and ancillary services.Power generation  which uses Nuclear energy for fuel to heat turbine water."^^xsd:string ;
+      ar:nistLegacyDomain "Generation"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:OperationalPlanning
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Operational Planning and Optimization actors perform simulation of grid network operations, schedule switching actions, dispatch repair crews, inform affected customers, and schedule the importing of power. They keep the cost of imported power low through peak generation, switching, load shedding or demand response. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:OutageManagement
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Service that locates and tracks outages, status and their resolution. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:OutageManagementSystem
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description """Application that locates and tracks outages, status and their resolution. OMS may be a stand-alone application or part of a DMS offering. Usual OMS functions include:
+• Predicting fuse or breakerlocation that opened upon failure.
+• Prioritizing restoration efforts and managing resources based upon criteria such as location of emergency facilities, size of outages, and duration of outages.
+• Providing information on extent of outages and number of customers impacted to management, media and regulators.
+• Estimation of restoration time.
+• Management of crews assisting in restoration.
+• Calculation of crews required for restoration.
+Usually interfaces to CIS, WMS and GIS applications; May interface to AMI systems for increased outage granularity."""^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:Participant
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "The entity that represents resources to a market or distribution operator."^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Organizational Entity"^^xsd:string .
+
+ar:Peaker
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "Plants that can be brought online quickly and efficiently in reponse to excess demand. Usually sited near a Substation or within a Generation facility. Typically these are gas turbine-sets spinning the generators."^^xsd:string ;
+      ar:nistLegacyDomain "Transmission"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:PhasorMeasurementUnit
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:PhysicalActor ;
+      ar:description "Measures the electrical waves on an electricity grid to determine the health of the system."^^xsd:string ;
+      ar:nistLegacyDomain "Transmission"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:PlantControlSystem
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Control System for a generating plant. For Generation these applications include plant and asset maintanence, HEAT rate calculations, scheduling, price signalling. DER plants usually use fewer and depend on other providers/applications for their operational needs. This is also called a Distributed Control System (DCS). "^^xsd:string ;
+      ar:nistLegacyDomain "Generation"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:PointOfCommonCoupling
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Point where a local electric power system is connected to an area electric power system"^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:PointOfInterface
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:nana ;
+      ar:description "Point at which connection from the outside the Customer premises occurs. Can be a meter, Emergy Management System, Generation controller, controllable load device. This is a redundant term, use the appropriate term as necessary"^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:PointOfSale
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "A point of sale system is used for the management of prepayment meters, where a customer either purchases a token or makes a prepayment for service."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:PowerExchange
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Provides a market place for trading physical and financial (capacity/energy and derivates) contracts for capacity allocation by implicit auctions within the defined country, region or cross border."^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:PowerGridEquipmentVendors
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Field equipment vendors."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:PowerSystemControlCenter
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalZone ;
+      ar:description "Power system central operations. This is the physical entity from which Grid Operations provides their services. Today these include Regional/Independent Operators, utility-owned transmission Operations and Distribution Operations facilities."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:PremiseInstallationAndMaintenance
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Business function or service that installs and maintains premise equipment."^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:PremiseManagement
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Information regarding the location of a service. This set of functions includes: Address management; Right-of-ways, easements, grants; and Real estate management. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:Premises
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "A house or building or groups of buildings, together with its land and other improvements, occupied by a legal entity or considered in an official context"^^xsd:string ;
+      ar:nistLegacyDomain "Cross Cutting"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:ProductionResponsibleParty
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "A party who can be brought to rights, legally and financially, for any imbalance between energy sold and produced for all associated metering points. Tye of Market Participant."^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+<http://sv.cmu.edu/AWP/5.0/ActorRoles#PublicInternet/Intranet>
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalZone ;
+      ar:description "Public Internet is the pri,ary communications facility used between Grid Operations Core Network, Market, Third Party Providers, and Customer Portals."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:PumpedStorageFacility
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Stored compressed air, or water for power generation as a scheduled resource. Pumped storage is supplied by (but limited to) windmills, tide-driven pumps, electric pumps for closed loop systems."^^xsd:string ;
+      ar:nistLegacyDomain "Generation"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:Reactor
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "(Shunt) Reactors compensate for the capacitive reactive power of the transmission cables. They are typically found in switch yards and substations."^^xsd:string ;
+      ar:nistLegacyDomain "Transmission"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:Recloser
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Reclosers (automatic) are control devices that open a circuit for monentary overload overcurrent and interrupt fault) conditions. Reclosers stay open after a preselect number of tries, isolating the faulted section of the circuit. Reclosers are typically pole-mounted."^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:ReconciliationAccountableParty
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "A party that is financially accountable for the reconciled volume of energy products for a profiled Local metering point."^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:RecordsAndAssetsManagement
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "The Records and Asset Management rolesactors track and report on the substation and network equipment inventory, provide geospatial data and geographic displays, maintain records on non-electrical assets, and perform asset investment planning. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:RegionalInterconnects
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalZone ;
+      ar:description "Regional interconnects are between Grid Operations Core Networks . They are used to signal cross regional awareness, such as cross-regional Wide Area Situational Awareness (WASA) voltage collapse. These facilities are either private proprietary or pubic carrier backbones."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:RegionalTransmissionOrganization
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "An independent entity that monitors/controls a power grid over a wide geographic area (typically several States, may include ISOs). Responsible for wide-are generation and transmission coordination, high-level load management and other signals for distribution companies. Additionally responsible for managing the area's wholesale generation Market on the behalf of Market participants (Generation, Distributed Generation, Service Providers and Aggregators."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:RegulatoryAuthority
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Federal agency that requires information on interactions involving intersate transmission, and security"^^xsd:string ;
+      ar:nistLegacyDomain "Agency"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:Relay
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:PhysicalActor ;
+      ar:description "(Protective) relays are switches that trip circuit breaks when conditions as over-current, over-voltage, reverse power flow, over- and under- frequency and faults up to a certain distance away from a substation."^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:ReliabilityAuthority
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "A regulatory authority responsible for the development, reporting and enforcement of electric reliability-related activities."^^xsd:string ;
+      ar:nistLegacyDomain "Agency"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:RenewableFacility
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Renewable Generation Facility"^^xsd:string ;
+      ar:nistLegacyDomain "Generation"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:ReserveAllocator
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "A party that is responsible for reconciling, within a Metering grid area, the volumes used in the imbalance settlement process for profiled metering points and the actual metered quantities. "^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:ResidentialCustomer
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "A residential consumer of electricity (Eur:includes also agriculture users) may also be involved in contract-based Demand/Response."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:ResourceAggregation
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "The act of collecting a set of resources into an Aggregation."^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:ResourceProvider
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "A role that manages a resource object and provides the schedules for it (Description from ETSO-E market document)."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Role"^^xsd:string .
+
+ar:ResponseMethodAggregator
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "A logical entity that has a reportable interval level of consumption, e.g. a physical entity that may have its own meter, a neighborhood of homes that has a net meter, or an estimate of consumption of an aggregation of retail customers."^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:RetailCustomer
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "An entity that consumes and/or pays for electrical goods or services. A customer of a utility, including customers who provide more power than they consume. This customer may be a residential consumer or also an entity (e.g. department, tenant) within a larger building."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:RetailMarket
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "The Retail Market clears bids and offers, or otherwise sets retail prices."^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:Retailing
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Retailers sell power to end customers and may in the future aggregate or broker  between customers or into the market. Most are connected to a trading organization to allow participation in the wholesale market. "^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:SchedulingCoordinator
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description """A party that is responsible for the schedule information and its exchange on behalf of a balance responsible party. 
+For example in the Polish market a Scheduling Coordinator is responsible for information interchange for scheduling and settlement. """^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Organizational Entity"^^xsd:string .
+
+ar:SchedulingEntity
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "A role which carries the responsibility of submitting bids/offers and receives Schedules and Awards."^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Organizational Entity"^^xsd:string .
+
+ar:Sectionalizer
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Are used to isolate circuits with persistant current poor ground faults by opening branch circuits bypassing the faulty circuit"^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:SecurityManagement
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "The A service that provides management of security policies, distribution and maintenance of security credentials, and centralized authentication and authorization as appropriate. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:ServiceProvider
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "An organization which coordinates resources to support the energy industrydeliver electricity, gas  and clean energy products and services to a market or distribution operator."^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:ServiceProviderStorageManagement
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "A service that provides supervisory energy storage management on behalf of the customers, such as batteries."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:SheddableLoads
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "Individual loads that may be shed or controlled to reduce power demand."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:SmartMeter
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Smart Meter is a device used to measure watts, vars, var-hours, volt-amperes, or volt-ampere-hours. When part of an Smart Grid infrastructure its includes communcations capabiltities that allow it to particpate in monitoring and control - including Demand/Response and Load Management System programs. Can be composed of components for incremental action"^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:Solar
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "Photovoltiac arrays generate power directly. Their ouput is typically used in three ways: 1) direct attached to the grid, 2) By charging batteries or 3) running pumps for a storage facility allowing the storaged energy to be used on scheduled intervals. Power produced by these facilities is sold on the wholesale market. These arays are found in substations, building roof tops(commercial, school, factory) and solar farms."^^xsd:string ;
+      ar:nistLegacyDomain "Generation"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:StakeholderPlanningAndReporting
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "These roles actors perform track and manage the needs and concerns of various utility stakeholders by monitoring customer input, regulators, service standards, and legal proceedings. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:StandardizationBody
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualActor ;
+      ar:description "Responsible for standardization of all relevant elements and components within the electricity supply chain, which leads to harmonizaing relevant services, support towards removing barriers to trade, creating new market opportunities and reducing manufacturing costs."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:Storage
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "Storage of energy.  Storage may serve the transmission, service provider distribution, or customer domain."^^xsd:string ;
+      ar:nistLegacyDomain "Cross Cutting"^^xsd:string ;
+      ar:type "Service"^^xsd:string .
+
+ar:Submeter
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:PhysicalActor ;
+      ar:description "Additional meter used to measure special purpose electric usage and/or generation at customer sites. Typically used at customer sites with distributed generation devices, electric vehicles or multi-dwelling units. May also analyze energy cost/consumption."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:SupervisoryControlAndDataAcquisition
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Distribution SCADA transmits/receives status and controls individual remote devices(IED) and sensors. Manages energy consumption by controlling compliant devices, and allows operators to directly control power system equipment.  Required scope, speed, and accuracy of real-time measurements are provided, supervisory and closed-loop control is supported. Quite oftem provides it inforamtion to a Distributed Managment System (DSM) or Customer Information System (CIS) to outage scenarios."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:SupplyChainLogistics
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Supply Chain and Logistics services actors manage the processes for acquiring and stocking necessary supplies. This includes an inventories' location be it in a field warehouse on installed in the field. Included are items such as inventory asset type, age, performance characteristics, installation date, spatial location."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:Switch
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:PhysicalActor ;
+      ar:description "Circuit reconfiguration is widely used to support roles such as balance loading, improve voltage regulation and reduce system losses. Reconfiguration is accomplished by opening and closing switches, sectionalizers, and etc. This includes normally open and closed switches whose state depends on the domain/roles being instantiated"^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:SwitchActionSchedulingAndOperationWorkScheduling
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Switch action scheduling provides supports for handling all aspects relevant to switch order formulation, drawing up operating guidelines, dispatching repair crews and informing customers affected. It assists in collecting the related data and delivering it in the various forms required."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:SystemOperator
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "An role entity which is resonsible for operating, ensuring the maintenance of and, if necessary, developing the system in a given area, where applicable, its interconnections with other systems and for ensuring the long-term ability of the system to meet reasonable demands forelectricity."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:ThermalStorage
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "System which stores energy for later use  by maintaining material either hotter or colder than ambient temperature.  Examples include making ice at night for use during the day and storing heat for later use generating electricity."^^xsd:string ;
+      ar:nistLegacyDomain "Cross Cutting"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:Thermostat
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:PhysicalActor ;
+      ar:description "Potentially remotely controllable device which adjusts heating and cooling based on temperature and adjustable settings. Communicationg thermostats are part of BAS and/or DR programme."^^xsd:string ;
+      ar:nistLegacyDomain "Customer"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:ThirdParty
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Any entity that has authorization to provide services (such as managed energy services, demand/response) or an exchange information with customers and their systems. This pertains to Service Providers, including aggregators,  utilities use 3rd parties information systems for outsourced operations, weather and major events relevant to utility operations."^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:ThirdPartyBilling
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "3rd party service that manages customer billing information, sends billing statements and processes received payments. "^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:ThirdPartyInstallationAndMaintenance
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "3rd party service that installs and maintains premise equipment."^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:ThisIsBecomingTheComponentsStephToDo
+      rdf:type owl:Class ;
+      rdfs:subClassOf <http://sv.cmu.edu/AWP/5.0/ActorRoles#LogicalService Role> ;
+      ar:description "Applications usually part of a DMS that are required to support DMS functions such as Distribution Operation Model and Analysis  (DOMA),Volt-Var-Watt System (VVWS), Fault Location, Isolation and Repair (FLIR). Examples include topology processor, on-line three-phase unbalanced distribution power flow, contingency analysis, study mode analysis, switch order management, short-circuit analysis, volt/VAR management,  loss analysis, flow/state estimation results   inclusion of distribution automation capabilities, demand response signaling, distributed energy resources, electric storage, Plug-in  Electic Cars (PEV),  load management and outage managment."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:TradeResponsibleParty
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "A party who can be brought to rights, legally and financially, for any imbalance between energy bought and consumed for all associated metering points.  Note: A power exchange without any privileged responsibilities acts as a Trade Responsible Party. "^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Role"^^xsd:string .
+
+ar:Trading
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Traders are participants in markets, which include aggregators for provision and consumption and curtailment, and other qualified entities. There are a number of companies whose primary business is the buying and selling of energy. "^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:TransmissionActuator
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:PhysicalActor ;
+      ar:description "Actuator device used for control of devices in the transmission system."^^xsd:string ;
+      ar:nistLegacyDomain "Transmission"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:TransmissionAssetManagement
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Performed by roleactors that determine when equipment needs maintenance, calculate the life expectancy of the device,   its operation history and maintenance for operational and engineering decisions. "^^xsd:string ;
+      ar:nistLegacyDomain "Transmission"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:TransmissionBatteryStorage
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:PhysicalActor ;
+      ar:description "Battery Storage is typically located at a transmission switch-yard or substation. They provide dispatchable energy for  congestion and peak load relief. Typical recharged either with onsite Photovoltaic (PV) or trickle charging during off-demand intervals."^^xsd:string ;
+      ar:nistLegacyDomain "Transmission"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:TransmissionCapacityAllocator
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description """Manages the allocation of transmission capacity for an allocated capacity area. For explicit auctions:
+The Transmission Capacity Allocator manages, on behalf of the System Operators, the allocation of available transmission capacity for an Allocated capacity area. He offers the available transmission capacity to the market, allocates the available transmission capacity to individual Capacity Traders and calculates the billing amount of already allocated capacities to the Capacity Traders.
+"""^^xsd:string ;
+      ar:nistLegacyDomain "Transmission"^^xsd:string ;
+      ar:type "Role"^^xsd:string .
+
+ar:TransmissionControlDevices
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Actors that permit the Operations domain to manage the flow of power and reliability of the system.  Performed to maintain high levels of reliability and power quality. Examples include Flexible AC Transmission Systems (FACTS) devices, switches, capacitors, static synchronous compensators (STATCOM)."^^xsd:string ;
+      ar:nistLegacyDomain "Transmission"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:TransmissionEngineering
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "A technical function for planning or managing the design and upgrade of the transmission system (typically equipment designed for more than 345,000 volts between conductors). Functions include arranging data gathering, construction design, asset/equipment selection and placement."^^xsd:string ;
+      ar:nistLegacyDomain "Transmission"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:TransmissionIED
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Intelligent Electric Device (IED) is a communications-enabled controller to monitor and control automated devices in Transmission which communicates with   Supervisory Control and Data Acquisition (SCADA), as well as limited capabilities for automatic operations such as tripping circuit breakers if they sense voltage, current, or frequency anomalies. "^^xsd:string ;
+      ar:nistLegacyDomain "Transmission"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:TransmissionMeasurement
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Performed by rolesactors that provide visibility into the flow of power and the condition of the systems in the field.An example would be the digital and analog measurements collected through the Supervisory Control and Data Acquisition (SCADA) system from a remote terminal unit (RTU) and provide to a grid control center in Operations. "^^xsd:string ;
+      ar:nistLegacyDomain "Transmission"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:TransmissionOperationsAndControlCenter
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "Wide-area power system control center providing high level load management and security analysis for the transmission grid, typically using an EMS with generation applications and network analysis applications. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:TransmissionProtectionDevices
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Actors that react rapidly to faults and other events in the system which might cause power outages, brownouts, or the destruction of equipment. Performed to maintain high levels of reliability and power quality. Examples include Flexible AC Transmission Systems (FACTS) devices, switches, capacitors, fuses."^^xsd:string ;
+      ar:nistLegacyDomain "Transmission"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:TransmissionRecording
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Performed by A service actors that permit other domains to review what has happened on the grid for financial, engineering, operational, and forecasting purposes. "^^xsd:string ;
+      ar:nistLegacyDomain "Transmission"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:TransmissionRemoteTerminalUnit
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "RTUs pass status and measurement information from a substation or feeder equipment to a Supervisory Control and Data Acquisition (SCADA) system and transmit control commands from the SCADA system to the field equipment."^^xsd:string ;
+      ar:nistLegacyDomain "Transmission"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:TransmissionSensor
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "A Transmission System actor device (outside the substation) that measures a physical quantity and converts it into a signal which can be read by an observer or by an instrument. Examples include line-sag monitors, insulation detection monitoring."^^xsd:string ;
+      ar:nistLegacyDomain "Transmission"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:TransmissionStabilizeAndOptimize
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "A service Performed by actors that ensure the network is operating with the appropriate tolerances across the system. They  gather information for control decisions that ensure reliable, proper operations (stability) and more efficient operations (optimization). Measurement and control form a feedback loop that allows grid operators to stabilize the flow of energy across the electric network or safely increase the load on a transmission path. "^^xsd:string ;
+      ar:nistLegacyDomain "Transmission"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:TransmissionSubstation
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "A facility who's function is to step-down (or up-voltage) from transmission (68kV or up) for distribution to tributary circuits. Contains not only transformers, but usually other devices to maintain power quality and reliablity, such as transformers, bus-work, capacitor banks, Flexible AC Transmission Systems (FACTS) devices, Ground fault limiters, fuses, reactors."^^xsd:string ;
+      ar:nistLegacyDomain "Transmission"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:TransmissionSubstationNetwork
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "These networks interconnect devices within a substation for backhauled WAN connection to Grid Operations . A typical example includes a local Ethernet LAN containing IEDs, RTUs, PMUs, and other field devices."^^xsd:string ;
+      ar:nistLegacyDomain "Transmission"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:TransmissionSupervisoryControlAndDataAcquisition
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "SCADA is a realtime monitoring and control application receiving information from Remote Terminal Units (RTU).  The primary consumer of SCADA's information is a Transmission organization's Energy Management System (EMS) applications."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:TransmissionSystemOperator
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualRole ;
+      ar:description "According to the Article 2.4 of the Electricity Directive 2009/72/EC (Directive): \"a natural or legal person responsible for operating, ensuring the maintenance of and, if necessary, developing the transmission system in a given area and, where applicable, its interconnections with other systems, and for ensuring the long-term ability of the system to meet reasonable demands for the transmission of electricity\". Moreover, the TSO is responsible for connection of all grid users at the transmission level and connection of the DSOs within the TSO control area."^^xsd:string ;
+      ar:nistLegacyDomain "Transmission"^^xsd:string ;
+      ar:type "Role"^^xsd:string .
+
+ar:UtilityApps
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Software applications and models used to assess distribution operations and help manage these devices through pricing and other signals. "^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:UtilityEnergyProvider
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "Utility that sells energy to end-users."^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:UtilityManagedBilling
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Utility function or group that manages customer billing information, sends billing statements and processes received payments. "^^xsd:string ;
+      ar:nistLegacyDomain "Service Provider"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:WaterMeter
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "A device that is either used for revenue grade at the pPoint of sSale measuring or facility grade device used for the transfer of water, product and measuring usage and possibly control from one domain/system to another"^^xsd:string ;
+      ar:nistLegacyDomain "Cross Cutting"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:WholesaleHydro
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalActor ;
+      ar:description "River or lake driven power generation resource. Generation used solely for resale, is a scheduled resource"^^xsd:string ;
+      ar:nistLegacyDomain "Generation"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:WholesaleMarket
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Market for energy products, including generation, distributed generation, electric storage, electricity transmission/distributionportation, and demand response"^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Organization"^^xsd:string .
+
+ar:Wholesaling
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:ConceptualService ;
+      ar:description "Wholesale sellers are any power generation company, power marketer, municipally owned utility, electric cooperative, river authority, or other entity that sells power at wholesale price vs retail rates allowed for small Distributed Generation and Stored Energy assets (retail customer's Photvoltaic(PV)  arrays,  Plug-in Electric Vehicles (PEV), micro-hydro, etc). Determination between wholesale and retail is determined by each State's regulators."^^xsd:string ;
+      ar:nistLegacyDomain "Market"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:WideAreaMeasurementAndControlSystem
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Applicatrion that monitors all phase measurements and substation equipment over a large geographical base for visual modeling and other techniques to determine actions that need to be perform by transmission actuators."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:WindGeneration
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalRole ;
+      ar:description "Windmill facility (typically a wind farm) which generates power via direct attached generators or by pumping/compressing a storage facility for power generation on scheduled intervals. Facitlites are connected to the Trnsmission Grid. Power produced by these facilities is sold on the wholesale market. Typically not used for base-load due to wind variablity."^^xsd:string ;
+      ar:nistLegacyDomain "Generation"^^xsd:string ;
+      ar:type "Device"^^xsd:string .
+
+ar:WorkManagementSystem
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "An application that provideswork crew project details and schedules to construct and maintain the power system infrastructure. Interfaces to or is usually is part of a bundled Distribution Management System (DMS) or Outage Management (OMS) offering."^^xsd:string ;
+      ar:nistLegacyDomain "Operations"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
+
+ar:WorkforceMobileNetwork
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Workforce Mobile Networks are used to dispatch maintenance, outgage-situation and routine operations. This may include a localized wireless network for advanced field devices "^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Facility"^^xsd:string .
+
+ar:WorkforceTool
+      rdf:type owl:Class ;
+      rdfs:subClassOf ar:LogicalService ;
+      ar:description "Remote field crew applications used to , connectivity transfer information to Operations. Includes astatus of outages, work in orogress status, location logistics, time scheduling."^^xsd:string ;
+      ar:nistLegacyDomain "Distribution"^^xsd:string ;
+      ar:type "Application"^^xsd:string .
