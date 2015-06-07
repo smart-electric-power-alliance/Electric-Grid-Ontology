@@ -1,6 +1,7 @@
 # baseURI: http://sv.cmu.edu/ss2owl.2
 # imports: http://sv.cmu.edu/AWP/7.0/ActorRoles
 
+@prefix data: <http://sv.cmu.edu/2014-05-20-Data#> .
 @prefix fn: <http://www.w3.org/2005/xpath-functions#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -11,10 +12,15 @@
 @prefix spinmap: <http://spinrdf.org/spinmap#> .
 @prefix spinmapl: <http://topbraid.org/spin/spinmapl#> .
 @prefix spl: <http://spinrdf.org/spl#> .
-@prefix ss2owl: <http://sv.cmu.edu/ss2owl#> .
+@prefix ss2owl: <http://sv.cmu.edu/ss2owl.2#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://sv.cmu.edu/2014-05-20-Data#Combined-Elements-noduprows>
+data:Combined-Elements-noduprows
+  rdf:type owl:Class ;
+  rdfs:label "Combined-Elements-noduprows" ;
+.
+
+data:Combined-Elements-noduprows
   spin:rule [
       rdf:type sp:Construct ;
       sp:templates (
@@ -29,7 +35,7 @@
             sp:object [
                 sp:varName "entity"^^xsd:string ;
               ] ;
-            sp:predicate <http://sv.cmu.edu/2014-05-20-Data#actorSrvcCollectionService> ;
+            sp:predicate data:actorSrvcCollectionService ;
             sp:subject spin:_this ;
           ]
           [
@@ -71,7 +77,7 @@
             sp:object [
                 sp:varName "hierarchy"^^xsd:string ;
               ] ;
-            sp:predicate <http://sv.cmu.edu/2014-05-20-Data#hierarchyConceptualLogicalPhysical> ;
+            sp:predicate data:hierarchyConceptualLogicalPhysical ;
             sp:subject spin:_this ;
           ]
           [
@@ -205,7 +211,7 @@
             sp:object [
                 sp:varName "hierarchy"^^xsd:string ;
               ] ;
-            sp:predicate <http://sv.cmu.edu/2014-05-20-Data#hierarchyConceptualLogicalPhysical> ;
+            sp:predicate data:hierarchyConceptualLogicalPhysical ;
             sp:subject spin:_this ;
           ]
           [
@@ -293,7 +299,7 @@
             sp:object [
                 sp:varName "hierarchy"^^xsd:string ;
               ] ;
-            sp:predicate <http://sv.cmu.edu/2014-05-20-Data#hierarchyConceptualLogicalPhysical> ;
+            sp:predicate data:hierarchyConceptualLogicalPhysical ;
             sp:subject spin:_this ;
           ]
           [
@@ -404,7 +410,7 @@
             sp:object [
                 sp:varName "hierarchy"^^xsd:string ;
               ] ;
-            sp:predicate <http://sv.cmu.edu/2014-05-20-Data#hierarchyConceptualLogicalPhysical> ;
+            sp:predicate data:hierarchyConceptualLogicalPhysical ;
             sp:subject spin:_this ;
           ]
           [
@@ -492,7 +498,7 @@
             sp:object [
                 sp:varName "entity"^^xsd:string ;
               ] ;
-            sp:predicate <http://sv.cmu.edu/2014-05-20-Data#actorSrvcCollectionService> ;
+            sp:predicate data:actorSrvcCollectionService ;
             sp:subject spin:_this ;
           ]
           [
@@ -534,7 +540,7 @@
             sp:object [
                 sp:varName "entity"^^xsd:string ;
               ] ;
-            sp:predicate <http://sv.cmu.edu/2014-05-20-Data#actorSrvcCollectionService> ;
+            sp:predicate data:actorSrvcCollectionService ;
             sp:subject spin:_this ;
           ]
           [
@@ -576,7 +582,7 @@
             sp:object [
                 sp:varName "entity"^^xsd:string ;
               ] ;
-            sp:predicate <http://sv.cmu.edu/2014-05-20-Data#actorSrvcCollectionService> ;
+            sp:predicate data:actorSrvcCollectionService ;
             sp:subject spin:_this ;
           ]
           [
