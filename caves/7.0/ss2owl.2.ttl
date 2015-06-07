@@ -1,5 +1,4 @@
 # baseURI: http://sv.cmu.edu/ss2owl.2
-# imports: http://sv.cmu.edu/2014-05-20-Data
 # imports: http://sv.cmu.edu/AWP/7.0/ActorRoles
 
 @prefix data: <http://sv.cmu.edu/2014-05-20-Data#> .
@@ -611,7 +610,6 @@ data:Combined-Elements-noduprows
 .
 <http://sv.cmu.edu/ss2owl.2>
   rdf:type owl:Ontology ;
-  owl:imports <http://sv.cmu.edu/2014-05-20-Data> ;
   owl:imports <http://sv.cmu.edu/AWP/7.0/ActorRoles> ;
   owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
 .
