@@ -1,5 +1,4 @@
-# baseURI: http://sv.cmu.edu/ss2owl
-# imports: http://sv.cmu.edu/2014-05-20-Data
+# baseURI: http://sv.cmu.edu/ss2owl.2
 # imports: http://sv.cmu.edu/AWP/7.0/ActorRoles
 
 @prefix fn: <http://www.w3.org/2005/xpath-functions#> .
@@ -21,7 +20,7 @@
       sp:templates (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#Actor> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
@@ -63,7 +62,7 @@
       sp:templates (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#ConceptualEntity> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
@@ -105,19 +104,19 @@
       sp:templates (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#ConceptualService> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
       sp:where (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#ConceptualEntity> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#Service> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
@@ -128,19 +127,19 @@
       sp:templates (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#ConceptualServiceComposition> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
       sp:where (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#ConceptualEntity> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#ServiceComposition> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
@@ -151,19 +150,19 @@
       sp:templates (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#ConceptualServiceComposition> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
       sp:where (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#LogicalEntity> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#ServiceContract> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
@@ -174,19 +173,19 @@
       sp:templates (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#ConceptualServiceContract> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
       sp:where (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#ConceptualEntity> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#ServiceContract> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
@@ -197,7 +196,7 @@
       sp:templates (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#ImplementationEntity> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
@@ -239,19 +238,19 @@
       sp:templates (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#ImplementationService> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
       sp:where (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#ImplementationEntity> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#Service> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
@@ -262,19 +261,19 @@
       sp:templates (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#LogicalActor> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
       sp:where (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#LogicalEntity> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#Actor> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
@@ -285,7 +284,7 @@
       sp:templates (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#LogicalEntity> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
@@ -327,19 +326,19 @@
       sp:templates (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#LogicalService> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
       sp:where (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#LogicalEntity> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#Service> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
@@ -350,19 +349,19 @@
       sp:templates (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#LogicalServiceComposition> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
       sp:where (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#LogicalEntity> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#ServiceComposition> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
@@ -373,19 +372,19 @@
       sp:templates (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#PhysicalActor> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
       sp:where (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#PhysicalEntity> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#Actor> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
@@ -396,7 +395,7 @@
       sp:templates (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#PhysicalEntity> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
@@ -438,19 +437,19 @@
       sp:templates (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#PhysicalService> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
       sp:where (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#PhysicalEntity> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#Service> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
@@ -461,19 +460,19 @@
       sp:templates (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#PhysicalServiceContract> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
       sp:where (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#PhysicalEntity> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#ServiceContract> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
@@ -484,7 +483,7 @@
       sp:templates (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#Service> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
@@ -526,7 +525,7 @@
       sp:templates (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#ServiceComposition> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
@@ -568,7 +567,7 @@
       sp:templates (
           [
             sp:object <http://sv.cmu.edu/AWP/7.0/ActorRoles#ServiceContract> ;
-            sp:predicate rdf:type ;
+            sp:predicate rdfs:subClassOf ;
             sp:subject spin:_this ;
           ]
         ) ;
@@ -605,10 +604,20 @@
         ) ;
       rdfs:comment "007: Declare all ServiceContracts"^^xsd:string ;
     ] ;
+  spin:rule [
+      rdf:type sp:Construct ;
+      sp:templates (
+          [
+            sp:object owl:Class ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:where () ;
+    ] ;
 .
-<http://sv.cmu.edu/ss2owl>
+<http://sv.cmu.edu/ss2owl.2>
   rdf:type owl:Ontology ;
-  owl:imports <http://sv.cmu.edu/2014-05-20-Data> ;
   owl:imports <http://sv.cmu.edu/AWP/7.0/ActorRoles> ;
   owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
 .
