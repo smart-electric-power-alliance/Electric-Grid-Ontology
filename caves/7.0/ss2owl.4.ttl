@@ -1,11 +1,15 @@
 # baseURI: http://sv.cmu.edu/ss2owl.4
 # imports: http://sv.cmu.edu/AWP/7.0/ActorRoles
+# imports: http://sv.cmu.edu/CombinedElementProperties
 
+@prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
 @prefix data: <http://sv.cmu.edu/2014-05-20-Data#> .
+@prefix entity: <http://sv.cmu.edu/7.0/entity#> .
 @prefix fn: <http://www.w3.org/2005/xpath-functions#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix smf: <http://topbraid.org/sparqlmotionfunctions#> .
 @prefix sp: <http://spinrdf.org/sp#> .
 @prefix spif: <http://spinrdf.org/spif#> .
 @prefix spin: <http://spinrdf.org/spin#> .
@@ -17,6 +21,128 @@
 
 data:Combined-Elements-noduprows
   rdf:type owl:Class ;
+  spin:rule [
+      rdf:type sp:Construct ;
+      sp:templates (
+          [
+            sp:object [
+                sp:varName "obj"^^xsd:string ;
+              ] ;
+            sp:predicate [
+                sp:varName "pred"^^xsd:string ;
+              ] ;
+            sp:subject [
+                sp:varName "newURI"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "name"^^xsd:string ;
+              ] ;
+            sp:predicate rdfs:label ;
+            sp:subject [
+                sp:varName "newURI"^^xsd:string ;
+              ] ;
+          ]
+        ) ;
+      sp:where (
+          [
+            sp:object [
+                sp:varName "name"^^xsd:string ;
+              ] ;
+            sp:predicate data:entityName ;
+            sp:subject spin:_this ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type spif:camelCase ;
+                sp:arg1 [
+                    sp:varName "name"^^xsd:string ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "camelName"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type spif:replaceAll ;
+                sp:arg1 [
+                    sp:varName "camelName"^^xsd:string ;
+                  ] ;
+                sp:arg2 "[:/&()]" ;
+                sp:arg3 "-" ;
+              ] ;
+            sp:variable [
+                sp:varName "cleanName"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type afn:localname ;
+                sp:arg1 spin:_this ;
+              ] ;
+            sp:variable [
+                sp:varName "localName"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type fn:substring ;
+                sp:arg1 [
+                    sp:varName "localName"^^xsd:string ;
+                  ] ;
+                sp:arg2 6 ;
+              ] ;
+            sp:variable [
+                sp:varName "number"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type fn:concat ;
+                sp:arg1 [
+                    sp:varName "cleanName"^^xsd:string ;
+                  ] ;
+                sp:arg2 "-" ;
+                sp:arg3 [
+                    sp:varName "number"^^xsd:string ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "newName"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type smf:buildURI ;
+                sp:arg1 "entity:{?1}" ;
+                sp:arg2 [
+                    sp:varName "newName"^^xsd:string ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "newURI"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "obj"^^xsd:string ;
+              ] ;
+            sp:predicate [
+                sp:varName "pred"^^xsd:string ;
+              ] ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      rdfs:comment "040 Rename the URIs"^^xsd:string ;
+    ] ;
   spin:rule [
       rdf:type sp:Modify ;
       sp:deletePattern (
@@ -743,5 +869,6 @@ data:Combined-Elements-noduprows
 <http://sv.cmu.edu/ss2owl.4>
   rdf:type owl:Ontology ;
   owl:imports <http://sv.cmu.edu/AWP/7.0/ActorRoles> ;
+  owl:imports <http://sv.cmu.edu/CombinedElementProperties> ;
   owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
 .

@@ -20,11 +20,11 @@
 ar:Actor
   rdf:type owl:Class ;
   rdfs:comment "This is the entity that actually performs an action (i.e. provides or consumes a Service)"^^xsd:string ;
-  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf ar:Entity ;
 .
 ar:ConceptualEntity
   rdf:type owl:Class ;
-  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf ar:Entity ;
 .
 ar:ConceptualService
   rdf:type owl:Class ;
@@ -110,6 +110,10 @@ ar:ConceptualServiceContract
       owl:onProperty ar:isAbstractionOf ;
     ] ;
 .
+ar:Entity
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
 ar:ImplementationActor
   rdf:type owl:Class ;
   rdfs:label "Fum"^^xsd:string ;
@@ -144,7 +148,7 @@ ar:ImplementationActor
 ar:ImplementationEntity
   rdf:type owl:Class ;
   rdfs:label "Fum"^^xsd:string ;
-  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf ar:Entity ;
 .
 ar:ImplementationService
   rdf:type owl:Class ;
@@ -235,7 +239,7 @@ ar:LogicalActor
 .
 ar:LogicalEntity
   rdf:type owl:Class ;
-  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf ar:Entity ;
 .
 ar:LogicalRole
   rdf:type owl:Class ;
@@ -399,7 +403,7 @@ ar:PhysicalActor
 .
 ar:PhysicalEntity
   rdf:type owl:Class ;
-  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf ar:Entity ;
 .
 ar:PhysicalService
   rdf:type owl:Class ;
@@ -475,19 +479,21 @@ ar:PhysicalServiceContract
 .
 ar:Requirement
   rdf:type owl:Class ;
+  rdfs:subClassOf ar:Entity ;
 .
 ar:Service
   rdf:type owl:Class ;
   rdfs:label ""^^xsd:string ;
-  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf ar:Entity ;
 .
 ar:ServiceComposition
   rdf:type owl:Class ;
-  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf ar:Entity ;
 .
 ar:ServiceContract
   rdf:type owl:Class ;
   rdfs:label "A Contract specifies and constrains Roles and is used to bind Actors to those Roles"^^xsd:string ;
+  rdfs:subClassOf ar:Entity ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
       owl:allValuesFrom ar:LegalRequirement ;
