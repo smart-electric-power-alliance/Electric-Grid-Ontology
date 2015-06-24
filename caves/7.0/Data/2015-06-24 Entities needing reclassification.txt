@@ -1,0 +1,335 @@
+[subject]	name	classification
+<http://sv.cmu.edu/7.0/entity#0.0-0>	0.0	-
+<http://sv.cmu.edu/7.0/entity#0.0-1>	0.0	-
+entity:AMIOperations-33	AMI operations	generic role
+entity:AMIService-34	AMI Service 	ServiceComposition 
+entity:AMIService-35	AMI service 	generic role
+entity:AMISystem-36	AMI System	System
+entity:AccountManagement-11	Account Management	ServiceCompostion
+entity:AccountingPointResponsible-14	AccountingPoint responsible	Role
+entity:ActorA-externalActor--16	Actor A (external actor) 	- 
+entity:ActorB-externalActor--18	Actor B (external actor) 	- 
+entity:AggregationResource-25	Aggregation Resource  	Zone
+entity:Aggregator-27	Aggregator	Role
+entity:Aggregator-28	Aggregator	Role
+entity:Aggregator-30	Aggregator 	Role
+entity:AncillaryServicesProviders-44	Ancillary Services providers	Role
+entity:Appliances-48	Appliances	System
+entity:AreaEnergyServices-50	Area Energy Services	Role
+entity:AssetInvestmentPlanning-55	Asset Investment Planning	Role
+entity:AssetInvestmentPlanning-AMAIP--56	Asset investment planning (AMAIP) 	Application
+entity:AssetManagementSystem-57	Asset Management System	Application
+entity:BalanceResponsibleParty-78	Balance Responsible Party	Role
+entity:BalanceSupplier-79	Balance Supplier	Role
+entity:BalanceSupplier-80	Balance Supplier	Role
+entity:BatteryServiceOperator-85	Battery Service Operator	Role
+entity:BillingAgent-89	Billing Agent	Role
+entity:BlockEnergySupplier-96	Block energy supplier	Role
+entity:BuildingManagementSystem-100	Building Management System	System
+entity:BuildingOperations-101	Building operations	Role
+entity:CEM-115	CEM 	- 
+entity:CEMSCustomerEnergyManagementSystem-116	CEMS Customer Energy Management System 	- 
+entity:CEMSUser-117	CEMS-user 	- 
+entity:CallTaker-108	Call Taker	Person
+entity:CapacityTrader-114	Capacity Trader	Role
+entity:ChargeServiceProviderCSP-118	Charge Service Provider, CSP 	Role 
+entity:ChargeSpotAreaOwner-119	Charge Spot Area Owner	Role
+entity:ChargeSpotOperationsCSO-120	Charge Spot Operations, CSO	- 
+entity:ChargeSpotOperationsCSO-121	Charge Spot Operations, CSO	-
+entity:ChargeSpotOperationsCSO-122	Charge Spot Operations, CSO	- 
+entity:ChargeSpotOperationsCSO-123	Charge Spot Operations, CSO	- 
+entity:ChargingSpotCS-124	Charging Spot, CS	-
+entity:ChargingSpotCS-125	Charging Spot, CS 	- 
+entity:ChargingSpotCS-126	Charging Spot, CS 	- 
+entity:ClosedLoopController-145	Closed-Loop Controller	Application
+entity:ClosedLoopController-146	Closed-Loop Controller 	Application 
+entity:ComponentManufacturer-169	Component manufacturer 	Role 
+entity:Construction-MCCON--185	Construction (MC-CON)	Application
+entity:ConstructionSupervision-186	Construction Supervision	Role
+entity:ConstructionSupervision-NECSP--187	Construction supervision (NE-CSP)	Application
+entity:Consumer-188	Consumer	Role
+entity:Consumer-189	Consumer	Role
+entity:Consumer-190	Consumer 	Role 
+entity:Consumer-191	Consumer 	Role 
+entity:Consumer-192	Consumer 	- 
+entity:Consumer-193	Consumer 	Role 
+entity:ConsumptionResponsibleParty-194	Consumption Responsible Party	Role
+entity:ConsumptionResponsibleParty-195	Consumption Responsible Party	Role
+entity:ControlAreaServices-204	Control Area Services	Role
+entity:ControlAreaServices-205	Control Area Services	Role
+entity:ControlBlockServices-206	Control Block Services	Role
+entity:ControlCenter-207	Control Center 	System 
+entity:ControlCenter-208	Control Center 	System 
+entity:CoordinationCenterServices-216	Coordination Center Services	ServiceComposition 
+entity:CoordinationCenterServices-217	Coordination Center Services	Role
+entity:CriticalLoad-224	Critical Load	Service (or Service-Collection if the Description had more detail)
+entity:CriticalLoads-225	Critical Loads	Service (or Service-Collection if the Description had more detail)
+entity:Customer-230	Customer	Role
+entity:Customer-231	Customer 	- 
+entity:CustomerEnergyManagementSystem-CEMS--235	customer Energy Management System ( CEMS) 	- 
+entity:CustomerEnergyManagementSystem-CEMS--236	Customer Energy Management System (CEMS) 	- 
+entity:CustomerEnergyManagementSystem-CEMS--237	Customer Energy Management System (CEMS) 	- 
+entity:CustomerEnergyServices-238	Customer Energy Services	-
+entity:CustomerEnergyServices-239	Customer Energy Services	- 
+entity:CustomerInformationSystem-243	Customer Information System	System
+entity:CustomerPortal-248	Customer Portal	Application
+entity:CustomerService-252	Customer Service  	ServiceComposition 
+entity:CustomerService-CSCSRV--251	Customer service (CS-CSRV)	Application
+entity:CustomerSupport-254	Customer Support	Role
+entity:CustomerSupport-CS--255	Customer Support (CS)	System
+entity:DER-282	DER	-
+entity:DER-283	DER 	- 
+entity:DER-284	DER 	- 
+entity:DERManagementSystem-291	DER Management System	System
+entity:DSO-391	DSO 	- 
+entity:DSOSystem-395	DSO System 	Role 
+entity:DSOSystem-396	DSO System 	Role 
+entity:DataAggregator-256	Data Aggregator	System
+entity:DataAggregator-257	Data Aggregator 	System 
+entity:DemandResponseManagementSystem-270	Demand Response Management System	System
+entity:DemandResponseServiceProvider-273	Demand Response Service Provider	Role
+entity:Design-MCDGN--305	Design (MC-DGN)	Application
+entity:Devices-323	Devices 	- 
+entity:Display-331	Display 	- 
+entity:Display-332	Display 	- 
+entity:DistributedGeneration-340	Distributed Generation 	- 
+entity:DistributionManagementSystem-358	Distribution Management System	System
+entity:DistributionNetworkServicesDNO-362	Distribution Network Services DNO	Role
+entity:DistributionProtectionAndControlDevices-368	Distribution Protection and Control Devices	Role
+entity:DistributionProtectionDevices-369	Distribution Protection Devices	Role
+entity:DistributionSystemServices-378	Distribution System Services	Role
+entity:DistributionSystemServices-DSO--379	Distribution System Services (DSO)	Role
+entity:DistributionSystemServices-DSO--381	Distribution System Services (DSO) 	Role 
+entity:DistrubutionIED-387	Distrubution IED 	- 
+entity:EMobilityServiceProvider-eMSP--432	e-Mobility Service Provider (eMSP) 	- 
+entity:ESCOEnergyServicesCompany-499	ESCO Energy Services Company 	- 
+entity:EVSE-420	EVSE	- 
+entity:El.Vehicle-EV--402	El. Vehicle (EV) 	Role 
+entity:El.Vehicle-EV--403	El. Vehicle (EV) 	Role 
+entity:El.Vehicle-EV-PHV--404	El. Vehicle (EV/PHV)	System
+entity:ElectricNetworkSP-406	Electric Network SP 	- 
+entity:ElectricStorage-410	Electric Storage	Role
+entity:ElectricVehicleChargingSP-414	Electric Vehicle Charging SP 	- 
+entity:ElectricVehicleServiceProvider-PEVSP--417	Electric Vehicle Service Provider (PEV-SP) 	- 
+entity:ElectricVehicleSupplyEquipment-EVSE--419	Electric Vehicle Supply Equipment (EVSE) 	- 
+entity:ElectricityInstaller-Contractor-422	Electricity Installer / Contractor	Role
+entity:ElectricitySP-El.SP--425	Electricity-SP (El.-SP) 	- 
+entity:Energy-eMobility-Services-439	Energy (eMobility) Services 	Role
+entity:EnergyB2BMarket-441	Energy B2B market	-
+entity:EnergyB2BMarket-442	Energy B2B market 	- 
+entity:EnergyDispatchServices-2	Energy Dispatch Services	ServiceCompostion
+entity:EnergyManagementGateway-452	Energy Management Gateway	System
+entity:EnergyManagementGateway-453	Energy management gateway 	- 
+entity:EnergyManagementLAN-454	Energy Management LAN	System
+entity:EnergyManagementSystem-455	Energy Management System	System
+entity:EnergyManager-458	Energy Manager	Application
+entity:EnergyMarketClearinghouse-459	Energy Market Clearinghouse	Role
+entity:EnergyMarketManagementSystem-460	Energy Market Management System	System
+entity:EnergyServiceProvider-469	Energy Service Provider	Role
+entity:EnergyServiceProviderESP-470	Energy Service Provider, ESP	Role
+entity:EnergySupplyCompany-479	Energy Supply Company	Role
+entity:EnergyTradingApplication-481	Energy Trading Application	System
+entity:EnterpriseResourcePlanning-ERP--483	Enterprise Resource Planning (ERP)	System
+entity:EnvironmentalAuthority-484	Environmental Authority	Role
+entity:ExtensionPlanning-513	Extension Planning	Role
+entity:FLISR-551	FLISR	- 
+entity:Facility-516	Facility	Role
+entity:FacilityEnergyManagementSystem-Gateway-518	Facility Energy Management System/Gateway	Role
+entity:FacilityManager-520	Facility Manager	Role
+entity:FieldActuators-529	Field Actuators	System
+entity:FieldActuators-530	Field Actuators 	System 
+entity:FieldForceManagementSystem-536	Field Force Management System	System
+entity:FieldRecording-MCFRD--537	Field recording (MC-FRD)	Application
+entity:FieldSensingDevices-538	Field Sensing Devices 	System
+entity:FieldSensingDevices-539	Field Sensing Devices 	System 
+entity:Financial-FIN--542	Financial (FIN)	Application
+entity:FleetServices-547	Fleet Services	Role
+entity:FlexibilityServices-FO--548	Flexibility Services (FO)	Role
+entity:FlexibleLoad-549	Flexible Load 	-
+entity:FlexibleLoad-550	Flexible Load 	- 
+entity:Generation-569	Generation	Role
+entity:GenerationMeasure-572	Generation Measure	Role
+entity:GenerationRecord-575	Generation Record	Role
+entity:Generator-579	Generator	Role
+entity:Generator-580	Generator 	Role 
+entity:Generator-581	Generator 	Role 
+entity:GeographicInformationSystem-583	Geographic Information System 	System
+entity:GeographicalInventory-AMGINV--585	Geographical inventory(AMGINV)	Application
+entity:Grid-589	Grid	System
+entity:Grid-590	Grid 	System 
+entity:Grid-591	Grid 	System 
+entity:Grid-592	Grid 	System 
+entity:GridAccessProvider-593	Grid Access Provider	Role
+entity:GridAccessProvider-594	Grid Access Provider	Role
+entity:GridCommunicationsNetworkProviders-596	Grid communications network providers	Role
+entity:GridMonitoring-600	Grid Monitoring 	Generic Role 
+entity:GridOperationsCoreNetwork-602	Grid Operations Core Network	Role
+entity:GridOperator-604	Grid Operator	Role
+entity:HES-607	HES 	- 
+entity:HESServices-A--608	HES Services (A)	generic role
+entity:HeadEndSystem-HES--606	Head End System (HES)	System
+entity:HomeApplianceVendors-610	Home Appliance vendors	Role
+entity:HomeAutomationEndDevice-611	Home automation end device	System
+entity:HomeAutomationServices-D--612	Home Automation Services (D)	generic role
+entity:HomeCustomer-613	Home customer	Role
+entity:HumanResources-615	Human Resources	Role
+entity:HumanResources-HR--616	Human Resources (HR)	Application
+entity:ISO-RTOOperation-647	ISO/RTO Operation	Role
+entity:ImbalanceSettlementResponsible-620	Imbalance Settlement Responsible	Role
+entity:ImbalanceSettlementResponsible-621	Imbalance Settlement Responsible	Role
+entity:IndependentSystemOperator-624	Independent System Operator	Role
+entity:IndustrialConsumer-626	Industrial consumer	Role
+entity:IndustrialCustomer-627	Industrial Customer	Role
+entity:Information-CommunicationTechnology-ICT-ServiceProviders-Vendors-629	Information & Communication Technology (ICT) service providers/Vendors	Role
+entity:InstallationService-636	Installation Service 	ServiceComposition 
+entity:InterconnectionTradeResponsible-641	Interconnection Trade Responsible	Role
+entity:InterconnectionTradeResponsible-642	Interconnection Trade Responsible	Role
+entity:InternetServiceProvider-644	Internet Service Provider	Role
+entity:LNAP-651	LNAP	System
+entity:LoadServingEntity-664	Load Serving Entity	Role
+entity:LocalAuthority-666	Local Authority	Role
+entity:LocalRegulatoryAuthority-668	Local Regulatory Authority	Role
+entity:MOLResponsible-834	MOL Responsible	Role
+entity:MOLResponsible-835	MOL Responsible	Role
+entity:MaintenanceAndConstruction-MC--691	Maintenance and Construction (MC)	System
+entity:MaintenanceAndInspection-MCMAI--692	Maintenance and inspection (MC-MAI)	Role
+entity:MarketGenerator-779	Market Generator	Role
+entity:MarketInformationAggregator-781	Market Information Aggregator	Role
+entity:MarketManagement-784	Market Management	Role
+entity:MarketOperator-785	Market Operator	Role
+entity:MarketOperator-786	Market Operator 	Role 
+entity:Measurement-796	Measurement	Role
+entity:MeterDataCollectorMDC-804	Meter Data Collector , MDC	Role
+entity:MeterDataManagementSystemMDMS-806	Meter Data Management System, MDMS	System
+entity:MeterOperator-810	Meter Operator	Role
+entity:MeterOperatorMO-811	Meter Operator, MO	Role
+entity:MeterUser-B--813	Meter User (B)	generic role
+entity:MeteredDataAggregator-814	Metered Data Aggregator	Role
+entity:MeteredDataAggregatorMDA-815	Metered Data Aggregator , MDA	Role
+entity:MeteringAuthority-816	Metering Authority	Role
+entity:MicrogridControlCenter-820	Microgrid Control Center 	- 
+entity:MicrogridOperator-825	Microgrid Operator 	- 
+entity:MobileMeteringServiceProvider-830	Mobile metering service provider 	Role 
+entity:MobilityServiceOperator-831	Mobility Service Operator	Role
+entity:Modeler-832	Modeler	Role
+entity:NNAP-882	NNAP	System
+entity:NeighbourhoodNetworkAccessPoint-NNAP--854	Neighbourhood Network Access Point (NNAP) 	- 
+entity:NeighbourhoodNetworkAccessPoint-NNAP--855	Neighbourhood Network Access Point (NNAP) 	- 
+entity:NetworkCalculations-NENCLC--859	Network calculations (NE-NCLC)	Application
+entity:NetworkExtensionPlanning-NE--860	Network Extension Planning (NE)	System
+entity:NetworkOperationMonitoring-NONMON--862	Network operation monitoring (NONMON)	Application
+entity:NetworkOperationMonitoring-NONMON--863	Network operation monitoring (NO-NMON) 	Application 
+entity:NetworkOperationSimulation-OPSIM--865	Network operation simulation (OPSIM)	Application
+entity:NetworkOperations-NO--867	Network Operations (NO)	System
+entity:NetworkOperations-NO--868	Network Operations (NO) 	System 
+entity:NetworkOperationsAnalysis-NOOFA--870	Network Operations Analysis (NO-OFA)	Application
+entity:NetworkOperationsAnalysis-NOOFA--871	Network Operations Analysis (NO-OFA) 	Application 
+entity:NetworkOperationsAnalyst-872	Network Operations Analyst	Role
+entity:NetworkOperationsCalculations-NOCLC--873	Network Operations Calculations (NO-CLC)	Application
+entity:NetworkOperationsControl-NOCTL--875	Network Operations Control (NO-CTL)	Application
+entity:NetworkOperationsFaultAnalysis-NOFLT--877	Network Operations Fault Analysis (NO-FLT)	Application
+entity:NetworkOperationsReportingAndStatistics-NOOST--880	Network Operations Reporting and Statistics (NOOST)	Application
+entity:NominationValidator-887	Nomination Validator	Role
+entity:NominationValidator-888	Nomination Validator	Role
+entity:OEM-897	OEM 	Role 
+entity:OperationalPlanning-OP--903	Operational Planning (OP)	System
+entity:Operator-906	Operator 	- 
+entity:OutageManagementSystem-921	Outage Management System	System
+entity:OverlayGrid-929	Overlay Grid 	- 
+entity:OverlayGridControlCenter-930	Overlay Grid Control Center 	System 
+entity:OverlayGridOperator-931	Overlay Grid Operator 	- 
+entity:PNode-952	P-Node	Role  NA
+entity:ParkingServiceOperator-932	Parking Service Operator	Role
+entity:Participant-933	Participant	Role
+entity:PartyConnectedToTheGrid-935	Party Connected to the Grid	Role
+entity:Peaker-937	Peaker	Role
+entity:PowerEquipment-960	Power equipment 	-
+entity:PowerEquipment-961	Power Equipment 	- 
+entity:PowerExchange-962	Power Exchange	Role
+entity:PowerGridEquipmentVendors-965	Power Grid Equipment vendors	Role
+entity:PowerImportSchedulingAndOptimisation-OPIMP--966	Power import scheduling and optimisation (OP-IMP)	-
+entity:PowerPlantSystem-970	Power Plant System	-
+entity:PowerSystemControlCenter-988	Power System Control Center	Zone
+entity:Premises-PRM--993	Premises (PRM)	-
+entity:ProcessAutomationSystem-1000	Process Automation System	-
+entity:Producer-1001	Producer	Role
+entity:ProductionResponsibleParty-1002	Production Responsible Party	Role
+entity:ProductionResponsibleParty-1003	Production Responsible Party	Role
+entity:ProjectDefinition-NEPRJ--1005	Project definition (NEPRJ)	Application
+entity:PublicInternet-Intranet-1022	Public Internet/Intranet	Zone
+entity:RealTimeStateEstimator-RTSS--1041	Real-time State Estimator (RTSS)	Application
+entity:RealTimeStateEstimator-RTSS--1042	Real-time State Estimator (RTSS) 	Application 
+entity:ReconciliationAccountable-1044	Reconciliation Accountable	Role
+entity:ReconciliationAccountableParty-1045	Reconciliation Accountable Party	Role
+entity:ReconciliationResponsible-1046	Reconciliation Responsible	Role
+entity:RecordsAndAssetManagement-AM--1047	Records and asset management (AM)	System
+entity:RegionalInterconnects-1052	Regional Interconnects	Zone
+entity:RegionalTransmissionOrganization-1053	Regional Transmission Organization	Role
+entity:RegulatoryAuthority-1060	Regulatory Authority	Role
+entity:ReliabilityAuthority-1062	Reliability Authority	Role
+entity:RenewableGenerationForecaster-1067	Renewable Generation Forecaster	System
+entity:RenewableGenerationForecaster-1068	Renewable Generation Forecaster 	System 
+entity:ReserveAllocator-1073	Reserve Allocator	Role
+entity:ReserveAllocator-1074	Reserve Allocator	Role
+entity:ResourceProvider-1080	Resource Provider	Role
+entity:ResourceProvider-1081	Resource Provider	Role
+entity:ResponseMethodAggregator-1083	Response Method Aggregator	Role
+entity:RetailCustomer-1087	Retail Customer	Role
+entity:RetailEnergyMarketSystem-1089	Retail Energy Market System	System
+entity:Retrofilter-1094	Retrofilter 	Role 
+entity:SCADASystem-1097	SCADA system	Application
+entity:SchedulingCoordinator-1104	Scheduling Coordinator	Role
+entity:SchedulingCoordinator-1105	Scheduling Coordinator	Role
+entity:SchedulingEntity-1106	Scheduling Entity	Role
+entity:ServiceProvider-1122	Service Provider	Role
+entity:SheddableLoads-1129	Sheddable Loads	Role
+entity:SimpleExternalConsumerDisplay-1132	Simple external consumer display	System
+entity:SimpleExternalConsumerDisplay-1133	Simple external consumer display 	- 
+entity:SmartAppliance-WhiteGoods--1139	Smart appliance (White goods) 	- 
+entity:SmartAppliance-whiteGoods--1138	Smart appliance (white goods)	-
+entity:SmartApplianceGenerator-ExternalActor--1140	Smart appliance Generator ( external actor) 	- 
+entity:SmartAppliances-1141	Smart appliances 	- 
+entity:SmartDevice-1142	smart device	-
+entity:SmartDevice-1143	Smart device 	-
+entity:SmartDevice-1144	Smart Device 	- 
+entity:SmartMeter-1146	Smart meter 	- 
+entity:SmartMeter-1147	Smart meter 	- 
+entity:SmartMeter-SM--1148	Smart Meter (SM)	System
+entity:SmartMeter-SM--1149	Smart Meter (SM) 	System 
+entity:SmartMeter-SM--1150	Smart Meter (SM) 	System 
+entity:SmartMeteringGateway-LNAP--1151	Smart Metering gateway (LNAP)	-
+entity:SmartMeteringGateway-LNAP--1152	Smart Metering gateway (LNAP) 	- 
+entity:Solar-1153	Solar	Role
+entity:StakeholderPlanningAndReporting-SPM--1156	Stakeholder Planning and Reporting (SPM)	Application
+entity:Storage-1162	Storage	Role
+entity:Storage-1163	Storage 	System
+entity:SubstationAndNetworkInventory-AMEINV--1168	Substation and network inventory (AMEINV)	Application
+entity:SubstationControlSystem-SCS--1169	Substation Control System (SCS)	-
+entity:SubstationControlSystem-SCS--1170	Substation Control System (SCS) 	Generic Role 
+entity:Supplier-1172	Supplier	Role
+entity:SupplyChainLogistics-SC--1174	Supply Chain Logistics (SC)	Application
+entity:SwitchActionScheduling-OperationWorkScheduling-OPSSC--1179	Switch action scheduling / operation work scheduling (OPSSC)	Application
+entity:SwitchActionScheduling-OperationWorkScheduling-OPSSC--1180	Switch action scheduling / operation work scheduling (OP-SSC) 	Application 
+entity:SystemOperator-1190	System Operator	Role
+entity:SystemOperator-1191	System Operator	Role
+entity:SystemSocketAdministrator-1199	System socket administrator 	Role 
+entity:TelcoOperator-1205	Telco Operator 	- 
+entity:ThermalStorage-1208	Thermal Storage	Role
+entity:Timer-1213	Timer	System
+entity:TradeResponsibleParty-1216	Trade Responsible Party	Role
+entity:TradeResponsibleParty-1217	Trade Responsible Party	Role
+entity:TransmissionCapacityAllocator-1227	Transmission Capacity Allocator	Role
+entity:TransmissionCapacityAllocator-1228	Transmission Capacity Allocator	Role
+entity:TransmissionOperationsAndControlCenter-1233	Transmission Operations and Control Center	Role
+entity:TransmissionSystemOperator-1241	Transmission System Operator 	Role
+entity:TransmissionSystemOperator-TSO--1242	Transmission System Operator (TSO)	Role
+entity:TransportationConsumer-1245	Transportation consumer	Role
+entity:TroubleCallManagement-CSTCM--1246	Trouble call management (CS-TCM)	Application
+entity:UtilityBusinessSystems-UBS--1253	Utility Business Systems (UBS)	System
+entity:VehicleManufacturer-1261	Vehicle Manufacturer	Role
+entity:VehicleOwner-1262	Vehicle Owner	Role
+entity:VehicleUser-1263	Vehicle User	Role
+entity:WeatherForecast-1279	Weather Forecast 	- 
+entity:WideAreaMonitoring-WAMON--1289	Wide-area Monitoring (WAMON) 	Application 
+entity:WindGeneration-1290	Wind Generation	Role
+entity:Zone-1296	Zone	Role  NA
