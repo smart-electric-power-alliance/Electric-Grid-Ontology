@@ -299,7 +299,7 @@ ar:LogicalService
 .
 ar:LogicalServiceComposition
   rdf:type owl:Class ;
-  rdfs:label "Conceptual Service Composition"^^xsd:string ;
+  rdfs:label "Logical Service Composition"^^xsd:string ;
   rdfs:subClassOf ar:LogicalEntity ;
   rdfs:subClassOf ar:ServiceComposition ;
   rdfs:subClassOf [
