@@ -80,27 +80,11 @@ data:Combined-Elements-noduprows
               ] ;
           ]
           [
-            rdf:type sp:Bind ;
-            sp:expression [
-                rdf:type afn:localname ;
-                sp:arg1 spin:_this ;
-              ] ;
-            sp:variable [
-                sp:varName "localName"^^xsd:string ;
-              ] ;
-          ]
-          [
-            rdf:type sp:Bind ;
-            sp:expression [
-                rdf:type fn:substring ;
-                sp:arg1 [
-                    sp:varName "localName"^^xsd:string ;
-                  ] ;
-                sp:arg2 6 ;
-              ] ;
-            sp:variable [
+            sp:object [
                 sp:varName "number"^^xsd:string ;
               ] ;
+            sp:predicate <http://topbraid.org/tables#rowIndex> ;
+            sp:subject spin:_this ;
           ]
           [
             rdf:type sp:Bind ;
