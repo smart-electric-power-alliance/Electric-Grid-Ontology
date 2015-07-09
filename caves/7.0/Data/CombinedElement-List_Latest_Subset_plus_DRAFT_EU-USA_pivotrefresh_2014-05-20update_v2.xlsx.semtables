@@ -1,0 +1,10 @@
+@base          <file:///AWP/7.0/Data/CombinedElement-List_Latest_Subset_plus_DRAFT_EU-USA_pivotrefresh_2014-05-20update_v2.xlsx.semtables> .
+@prefix tables: <http://topbraid.org/tables#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<>      a               owl:Ontology ;
+        tables:imports  <http://sv.cmu.edu/props> ;
+        owl:imports     <http://topbraid.org/tables> .
