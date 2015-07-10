@@ -126,7 +126,7 @@ props:Combined-Elements-noduprows
             sp:subject spin:_this ;
           ]
         ) ;
-      rdfs:comment "040 Rename the URIs"^^xsd:string ;
+      rdfs:comment "041 Rename the URIs"^^xsd:string ;
     ] ;
   spin:rule [
       rdf:type sp:Modify ;
@@ -512,6 +512,53 @@ props:Combined-Elements-noduprows
           ]
         ) ;
       rdfs:comment "027 Create PhysicalServiceContract"^^xsd:string ;
+    ] ;
+  spin:rule [
+      rdf:type sp:Modify ;
+      sp:deletePattern (
+          [
+            sp:object [
+                sp:varName "object"^^xsd:string ;
+              ] ;
+            sp:predicate props:entityName ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:insertPattern (
+          [
+            sp:object [
+                sp:varName "string"^^xsd:string ;
+              ] ;
+            sp:predicate props:entityName ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:where (
+          [
+            sp:object [
+                sp:varName "object"^^xsd:string ;
+              ] ;
+            sp:predicate props:entityName ;
+            sp:subject spin:_this ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type sp:strdt ;
+                sp:arg1 [
+                    rdf:type sp:str ;
+                    sp:arg1 [
+                        sp:varName "object"^^xsd:string ;
+                      ] ;
+                  ] ;
+                sp:arg2 xsd:string ;
+              ] ;
+            sp:variable [
+                sp:varName "string"^^xsd:string ;
+              ] ;
+          ]
+        ) ;
+      rdfs:comment "040 Set the datatype of the entityName field data to string (it was erroneously recognized as double)"^^xsd:string ;
     ] ;
   spin:rule [
       rdf:type sp:Modify ;
