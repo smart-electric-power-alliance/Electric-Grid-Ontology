@@ -1,0 +1,1312 @@
+# baseURI: http://sv.cmu.edu/AWP/8.0/props
+# imports: http://topbraid.org/tables
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix props: <http://sv.cmu.edu/AWP/8.0/props#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tables: <http://topbraid.org/tables#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://sv.cmu.edu/AWP/8.0/props>
+  rdf:type owl:Ontology ;
+  owl:imports <http://topbraid.org/tables> ;
+.
+props:Combined-Elements-noduprows
+  rdf:type owl:Class ;
+  tables:sheetIndex "2"^^xsd:int ;
+  rdfs:label "Combined-Elements-noduprows" ;
+.
+props:_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "8"^^xsd:int ;
+  rdfs:label "-" ;
+  rdfs:range xsd:string ;
+.
+props:_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "9"^^xsd:int ;
+  rdfs:label "- " ;
+  rdfs:range xsd:string ;
+.
+props:_2
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "8"^^xsd:int ;
+  rdfs:label " " ;
+  rdfs:range xsd:string ;
+.
+props:aDWPOriginalFocus
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "50"^^xsd:int ;
+  rdfs:label "ADWP original focus" ;
+  rdfs:range xsd:string ;
+.
+props:aDWPOriginalFocus_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "45"^^xsd:int ;
+  rdfs:label "ADWP original focus" ;
+  rdfs:range xsd:string ;
+.
+props:aDWPOriginalFocus_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "45"^^xsd:int ;
+  rdfs:label "ADWP original focus" ;
+  rdfs:range xsd:string ;
+.
+props:aDWPRoles
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "0"^^xsd:int ;
+  rdfs:label """ADWP
+Roles""" ;
+  rdfs:range xsd:string ;
+.
+props:aMISystems
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "20"^^xsd:int ;
+  rdfs:label "AMI Systems" ;
+  rdfs:range xsd:string ;
+.
+props:aMISystems_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "15"^^xsd:int ;
+  rdfs:label "AMI Systems" ;
+  rdfs:range xsd:string ;
+.
+props:aMISystems_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "15"^^xsd:int ;
+  rdfs:label "AMI Systems" ;
+  rdfs:range xsd:string ;
+.
+props:actor
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "4"^^xsd:int ;
+  rdfs:label "Actor" ;
+  rdfs:range xsd:string ;
+.
+props:actorDescription
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "3"^^xsd:int ;
+  rdfs:label "Actor Description" ;
+  rdfs:range xsd:string ;
+.
+props:actorServiceCompositionService
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "6"^^xsd:int ;
+  rdfs:label "Actor / ServiceComposition / Service" ;
+  rdfs:range xsd:string ;
+.
+props:actorSrvcCollectionService
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "5"^^xsd:int ;
+  rdfs:label "Actor / SrvcCollection / Service" ;
+  rdfs:range xsd:string ;
+.
+props:actorSrvcCollectionService_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "5"^^xsd:int ;
+  rdfs:label "Actor / SrvcCollection / Service" ;
+  rdfs:range xsd:string ;
+.
+props:actorType
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "2"^^xsd:int ;
+  rdfs:label "Actor Type" ;
+  rdfs:range xsd:string ;
+.
+props:actorTypeOrRole
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "17"^^xsd:int ;
+  rdfs:label """Actor/ type
+or
+Role""" ;
+  rdfs:range xsd:string ;
+.
+props:actorTypeOrRole_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "12"^^xsd:int ;
+  rdfs:label """Actor/ type
+or
+Role""" ;
+  rdfs:range xsd:string ;
+.
+props:actorTypeOrRole_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "12"^^xsd:int ;
+  rdfs:label """Actor/ type
+or
+Role""" ;
+  rdfs:range xsd:string ;
+.
+props:actor_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "7"^^xsd:int ;
+  rdfs:label "Actor" ;
+  rdfs:range xsd:string ;
+.
+props:ahGCharging
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "39"^^xsd:int ;
+  rdfs:label "AhG Charging" ;
+  rdfs:range xsd:string ;
+.
+props:ahGCharging_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "34"^^xsd:int ;
+  rdfs:label "AhG Charging" ;
+  rdfs:range xsd:string ;
+.
+props:ahGCharging_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "34"^^xsd:int ;
+  rdfs:label "AhG Charging" ;
+  rdfs:range xsd:string ;
+.
+props:analysesOnTypeOfEntitiesactorroleservice
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "0"^^xsd:int ;
+  rdfs:label "Analyses on type of Entities (actor/role/service)" ;
+  rdfs:range xsd:string ;
+.
+props:archiMateTerminologyActorsServiceEtc
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "7"^^xsd:int ;
+  rdfs:label "ArchiMate terminology (Actors, Service, etc)" ;
+  rdfs:range xsd:string ;
+.
+props:archiMateTerminologyLayers
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "9"^^xsd:int ;
+  rdfs:label "ArchiMate terminology (Layers)" ;
+  rdfs:range xsd:string ;
+.
+props:blank
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "12"^^xsd:int ;
+  rdfs:label "(blank)" ;
+  rdfs:range xsd:double ;
+.
+props:businessFunctionService
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "19"^^xsd:int ;
+  rdfs:label "Business function/ service" ;
+  rdfs:range xsd:string ;
+.
+props:businessFunctionService_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "14"^^xsd:int ;
+  rdfs:label "Business function/ service" ;
+  rdfs:range xsd:string ;
+.
+props:businessFunctionService_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "14"^^xsd:int ;
+  rdfs:label "Business function/ service" ;
+  rdfs:range xsd:string ;
+.
+props:businessService
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "4"^^xsd:int ;
+  rdfs:label "Business Service" ;
+  rdfs:range xsd:string ;
+.
+props:cSWGA
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "7"^^xsd:int ;
+  rdfs:label """CSWG
+\"A\"""" ;
+  rdfs:range xsd:string ;
+.
+props:cSWGActors
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "30"^^xsd:int ;
+  rdfs:label "CSWG Actors" ;
+  rdfs:range xsd:string ;
+.
+props:cSWGActors_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "25"^^xsd:int ;
+  rdfs:label "CSWG Actors" ;
+  rdfs:range xsd:string ;
+.
+props:cSWGActors_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "25"^^xsd:int ;
+  rdfs:label "CSWG Actors" ;
+  rdfs:range xsd:string ;
+.
+props:cSWGC
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "5"^^xsd:int ;
+  rdfs:label """CSWG
+\"C\"""" ;
+  rdfs:range xsd:string ;
+.
+props:cSWGI
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "6"^^xsd:int ;
+  rdfs:label """CSWG
+\"I\"""" ;
+  rdfs:range xsd:string ;
+.
+props:cSWGNISTIR7628
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "29"^^xsd:int ;
+  rdfs:label "CSWG NISTIR 7628" ;
+  rdfs:range xsd:string ;
+.
+props:cSWGNISTIR7628_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "24"^^xsd:int ;
+  rdfs:label "CSWG NISTIR 7628" ;
+  rdfs:range xsd:string ;
+.
+props:cSWGNISTIR7628_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "24"^^xsd:int ;
+  rdfs:label "CSWG NISTIR 7628" ;
+  rdfs:range xsd:string ;
+.
+props:clusterLabel
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "51"^^xsd:int ;
+  rdfs:label "Cluster Label" ;
+  rdfs:range xsd:string ;
+.
+props:clusterLabel_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "46"^^xsd:int ;
+  rdfs:label "Cluster Label" ;
+  rdfs:range xsd:string ;
+.
+props:clusterNumber
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "46"^^xsd:int ;
+  rdfs:label "Cluster Number" ;
+  rdfs:range xsd:string ;
+.
+props:colC
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "4"^^xsd:int ;
+  rdfs:label "col-C" ;
+  rdfs:range xsd:string ;
+.
+props:colC_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "3"^^xsd:int ;
+  rdfs:label "col-C" ;
+  rdfs:range xsd:string ;
+.
+props:colC_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "3"^^xsd:int ;
+  rdfs:label "col-C" ;
+  rdfs:range xsd:string ;
+.
+props:colD
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "5"^^xsd:int ;
+  rdfs:label "col-D" ;
+  rdfs:range xsd:string ;
+.
+props:colD_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "4"^^xsd:int ;
+  rdfs:label "col-D" ;
+  rdfs:range xsd:string ;
+.
+props:colD_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "4"^^xsd:int ;
+  rdfs:label "col-D" ;
+  rdfs:range xsd:string ;
+.
+props:comment
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "3"^^xsd:int ;
+  rdfs:label "Comment" ;
+  rdfs:range xsd:string ;
+.
+props:conceptual
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "3"^^xsd:int ;
+  rdfs:label "Conceptual" ;
+  rdfs:range xsd:string ;
+.
+props:conceptualModel
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "26"^^xsd:int ;
+  rdfs:label "Conceptual Model" ;
+  rdfs:range xsd:string ;
+.
+props:conceptualModel_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "21"^^xsd:int ;
+  rdfs:label "Conceptual Model" ;
+  rdfs:range xsd:string ;
+.
+props:conceptualModel_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "21"^^xsd:int ;
+  rdfs:label "Conceptual Model" ;
+  rdfs:range xsd:string ;
+.
+props:contributors
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "4"^^xsd:int ;
+  rdfs:label "Contributor(s)" ;
+  rdfs:range xsd:string ;
+.
+props:dERActor
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "0"^^xsd:int ;
+  rdfs:label "DER Actor" ;
+  rdfs:range xsd:string ;
+.
+props:dKERepository
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "43"^^xsd:int ;
+  rdfs:label "DKE Repository" ;
+  rdfs:range xsd:string ;
+.
+props:dKERepository_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "38"^^xsd:int ;
+  rdfs:label "DKE Repository" ;
+  rdfs:range xsd:string ;
+.
+props:dKERepository_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "38"^^xsd:int ;
+  rdfs:label "DKE Repository" ;
+  rdfs:range xsd:string ;
+.
+props:date
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "1"^^xsd:int ;
+  rdfs:label "Date" ;
+  rdfs:range xsd:string ;
+.
+props:date_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "0"^^xsd:int ;
+  rdfs:label "Date" ;
+  rdfs:range xsd:string ;
+.
+props:definition
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "2"^^xsd:int ;
+  rdfs:label "Definition" ;
+  rdfs:range xsd:string ;
+.
+props:deleteFlag
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "0"^^xsd:int ;
+  rdfs:label "delete flag" ;
+  rdfs:range xsd:string ;
+.
+props:demandResponse
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "24"^^xsd:int ;
+  rdfs:label "Demand Response" ;
+  rdfs:range xsd:string ;
+.
+props:demandResponse_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "19"^^xsd:int ;
+  rdfs:label "Demand Response" ;
+  rdfs:range xsd:string ;
+.
+props:demandResponse_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "19"^^xsd:int ;
+  rdfs:label "Demand Response" ;
+  rdfs:range xsd:string ;
+.
+props:description
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "2"^^xsd:int ;
+  rdfs:label "Description" ;
+  rdfs:range xsd:string ;
+.
+props:description_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "16"^^xsd:int ;
+  rdfs:label "Description" ;
+  rdfs:range xsd:string ;
+.
+props:description_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "11"^^xsd:int ;
+  rdfs:label "Description" ;
+  rdfs:range xsd:string ;
+.
+props:description_2
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "11"^^xsd:int ;
+  rdfs:label "Description" ;
+  rdfs:range xsd:string ;
+.
+props:description_3
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "2"^^xsd:int ;
+  rdfs:label "Description" ;
+  rdfs:range xsd:string ;
+.
+props:distributionGridMgmt
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "22"^^xsd:int ;
+  rdfs:label "Distribution Grid Mgmt" ;
+  rdfs:range xsd:string ;
+.
+props:distributionGridMgmt_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "17"^^xsd:int ;
+  rdfs:label "Distribution Grid Mgmt" ;
+  rdfs:range xsd:string ;
+.
+props:distributionGridMgmt_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "17"^^xsd:int ;
+  rdfs:label "Distribution Grid Mgmt" ;
+  rdfs:range xsd:string ;
+.
+props:eG3
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "45"^^xsd:int ;
+  rdfs:label "EG3" ;
+  rdfs:range xsd:string ;
+.
+props:eG3_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "40"^^xsd:int ;
+  rdfs:label "EG3" ;
+  rdfs:range xsd:string ;
+.
+props:eG3_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "40"^^xsd:int ;
+  rdfs:label "EG3" ;
+  rdfs:range xsd:string ;
+.
+props:eIS
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "32"^^xsd:int ;
+  rdfs:label "EIS" ;
+  rdfs:range xsd:string ;
+.
+props:eIS_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "27"^^xsd:int ;
+  rdfs:label "EIS" ;
+  rdfs:range xsd:string ;
+.
+props:eIS_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "27"^^xsd:int ;
+  rdfs:label "EIS" ;
+  rdfs:range xsd:string ;
+.
+props:eNTSOERoleModel
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "38"^^xsd:int ;
+  rdfs:label "ENTSO-E role model" ;
+  rdfs:range xsd:string ;
+.
+props:eNTSOERoleModel_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "33"^^xsd:int ;
+  rdfs:label "ENTSO-E role model" ;
+  rdfs:range xsd:string ;
+.
+props:eNTSOERoleModel_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "33"^^xsd:int ;
+  rdfs:label "ENTSO-E role model" ;
+  rdfs:range xsd:string ;
+.
+props:eU
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "3"^^xsd:int ;
+  rdfs:label "EU" ;
+  rdfs:range xsd:double ;
+.
+props:eUCommission
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "33"^^xsd:int ;
+  rdfs:label "EU Commission" ;
+  rdfs:range xsd:string ;
+.
+props:eUCommission_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "28"^^xsd:int ;
+  rdfs:label "EU Commission" ;
+  rdfs:range xsd:string ;
+.
+props:eUCommission_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "28"^^xsd:int ;
+  rdfs:label "EU Commission" ;
+  rdfs:range xsd:string ;
+.
+props:eUSCCGWP1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "37"^^xsd:int ;
+  rdfs:label "EU SC-CG WP1 " ;
+  rdfs:range xsd:string ;
+.
+props:eUSCCGWP1_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "32"^^xsd:int ;
+  rdfs:label "EU SC-CG WP1 " ;
+  rdfs:range xsd:string ;
+.
+props:eUSCCGWP1_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "32"^^xsd:int ;
+  rdfs:label "EU SC-CG WP1 " ;
+  rdfs:range xsd:string ;
+.
+props:eUSourceunknown
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "46"^^xsd:int ;
+  rdfs:label "EU Source:unknown" ;
+  rdfs:range xsd:string ;
+.
+props:eUSourceunknown_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "41"^^xsd:int ;
+  rdfs:label "EU Source:unknown" ;
+  rdfs:range xsd:string ;
+.
+props:eUSourceunknown_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "41"^^xsd:int ;
+  rdfs:label "EU Source:unknown" ;
+  rdfs:range xsd:string ;
+.
+<file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#eUWGSPVers0.5>
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "29"^^xsd:int ;
+  rdfs:label "EU WGSP Vers 0.5" ;
+  rdfs:range xsd:string ;
+.
+<file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#eUWGSPVers0.5_0>
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "29"^^xsd:int ;
+  rdfs:label "EU WGSP Vers 0.5" ;
+  rdfs:range xsd:string ;
+.
+props:eUWGSPVers05
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "34"^^xsd:int ;
+  rdfs:label "EU WGSP Vers 0-5" ;
+  rdfs:range xsd:string ;
+.
+props:electricStorage
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "25"^^xsd:int ;
+  rdfs:label "Electric Storage" ;
+  rdfs:range xsd:string ;
+.
+props:electricStorage_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "20"^^xsd:int ;
+  rdfs:label "Electric Storage" ;
+  rdfs:range xsd:string ;
+.
+props:electricStorage_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "20"^^xsd:int ;
+  rdfs:label "Electric Storage" ;
+  rdfs:range xsd:string ;
+.
+props:electricTransportaion
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "21"^^xsd:int ;
+  rdfs:label "Electric Transportaion" ;
+  rdfs:range xsd:string ;
+.
+props:electricTransportaion_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "16"^^xsd:int ;
+  rdfs:label "Electric Transportaion" ;
+  rdfs:range xsd:string ;
+.
+props:electricTransportaion_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "16"^^xsd:int ;
+  rdfs:label "Electric Transportaion" ;
+  rdfs:range xsd:string ;
+.
+props:entityIDDropDown
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "0"^^xsd:int ;
+  rdfs:label """Entity-ID
+Drop-down""" ;
+  rdfs:range xsd:string ;
+.
+props:entityName
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "2"^^xsd:int ;
+  rdfs:label "Entity Name" ;
+  rdfs:range xsd:string ;
+.
+props:entityName_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "1"^^xsd:int ;
+  rdfs:label "Entity Name" ;
+  rdfs:range xsd:string ;
+.
+props:entityName_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "1"^^xsd:int ;
+  rdfs:label "Entity Name" ;
+  rdfs:range xsd:string ;
+.
+props:gUC
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "42"^^xsd:int ;
+  rdfs:label "GUC" ;
+  rdfs:range xsd:string ;
+.
+props:gUC_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "37"^^xsd:int ;
+  rdfs:label "GUC" ;
+  rdfs:range xsd:string ;
+.
+props:gUC_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "37"^^xsd:int ;
+  rdfs:label "GUC" ;
+  rdfs:range xsd:string ;
+.
+props:harmonizationNotes
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "1"^^xsd:int ;
+  rdfs:label "Harmonization Notes" ;
+  rdfs:range xsd:string ;
+.
+props:hierarchyConceptualLogicalPhysical
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "8"^^xsd:int ;
+  rdfs:label "Hierarchy Conceptual/ Logical/ Physical" ;
+  rdfs:range xsd:string ;
+.
+props:hierarchyConceptualLogicalPhysical_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "6"^^xsd:int ;
+  rdfs:label "Hierarchy Conceptual/ Logical/ Physical" ;
+  rdfs:range xsd:string ;
+.
+props:hierarchyConceptualLogicalPhysical_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "6"^^xsd:int ;
+  rdfs:label "Hierarchy Conceptual/ Logical/ Physical" ;
+  rdfs:range xsd:string ;
+.
+props:homeworkBlocks
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "53"^^xsd:int ;
+  rdfs:label "Homework Blocks" ;
+  rdfs:range xsd:string ;
+.
+props:iD
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "0"^^xsd:int ;
+  rdfs:label "ID" ;
+  rdfs:range xsd:string ;
+.
+props:iEC61968IRM
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "40"^^xsd:int ;
+  rdfs:label "IEC61968 IRM" ;
+  rdfs:range xsd:string ;
+.
+props:iEC61968IRM_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "35"^^xsd:int ;
+  rdfs:label "IEC61968 IRM" ;
+  rdfs:range xsd:string ;
+.
+props:iEC61968IRM_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "35"^^xsd:int ;
+  rdfs:label "IEC61968 IRM" ;
+  rdfs:range xsd:string ;
+.
+props:iECSG3
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "41"^^xsd:int ;
+  rdfs:label "IEC SG3" ;
+  rdfs:range xsd:string ;
+.
+props:iECSG3_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "36"^^xsd:int ;
+  rdfs:label "IEC SG3" ;
+  rdfs:range xsd:string ;
+.
+props:iECSG3_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "36"^^xsd:int ;
+  rdfs:label "IEC SG3" ;
+  rdfs:range xsd:string ;
+.
+props:iECTC57WG19DERActorRoles
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "31"^^xsd:int ;
+  rdfs:label "IEC TC57-WG19 DER Actor/Roles" ;
+  rdfs:range xsd:string ;
+.
+props:iECTC57WG19TC8WG6DERActorRoles
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "36"^^xsd:int ;
+  rdfs:label "IEC TC57-WG19 & TC8 WG6 DER Actor/Roles" ;
+  rdfs:range xsd:string ;
+.
+props:iECTC57WG19TC8WG6DERActorRoles_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "31"^^xsd:int ;
+  rdfs:label "IEC TC57-WG19 & TC8 WG6 DER Actor/Roles" ;
+  rdfs:range xsd:string ;
+.
+props:iEEEP2030Draft3
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "31"^^xsd:int ;
+  rdfs:label "IEEE P2030 Draft 3  " ;
+  rdfs:range xsd:string ;
+.
+<file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#iEEEP2030Draft3.0>
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "26"^^xsd:int ;
+  rdfs:label "IEEE P2030 Draft 3.0  " ;
+  rdfs:range xsd:string ;
+.
+<file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#iEEEP2030Draft3.0_0>
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "26"^^xsd:int ;
+  rdfs:label "IEEE P2030 Draft 3.0  " ;
+  rdfs:range xsd:string ;
+.
+props:level
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "3"^^xsd:int ;
+  rdfs:label "Level" ;
+  rdfs:range xsd:string ;
+.
+props:manufacturerCIMIECTypeOfZone
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "13"^^xsd:int ;
+  rdfs:label "Manufacturer-CIM (IEC #) Type of Zone" ;
+  rdfs:range xsd:string ;
+.
+props:manufacturerCIMIECTypeOfZone_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "10"^^xsd:int ;
+  rdfs:label "Manufacturer-CIM (IEC #) Type of Zone" ;
+  rdfs:range xsd:string ;
+.
+props:manufacturerCIMIECTypeOfZone_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "10"^^xsd:int ;
+  rdfs:label "Manufacturer-CIM (IEC #) Type of Zone" ;
+  rdfs:range xsd:string ;
+.
+props:market
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "5"^^xsd:int ;
+  rdfs:label "Market" ;
+  rdfs:range xsd:string ;
+.
+props:nAESB
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "28"^^xsd:int ;
+  rdfs:label "NAESB" ;
+  rdfs:range xsd:string ;
+.
+props:nAESB_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "23"^^xsd:int ;
+  rdfs:label "NAESB" ;
+  rdfs:range xsd:string ;
+.
+props:nAESB_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "23"^^xsd:int ;
+  rdfs:label "NAESB" ;
+  rdfs:range xsd:string ;
+.
+props:nISTLegacyDomain
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "12"^^xsd:int ;
+  rdfs:label "NIST (Legacy) Domain " ;
+  rdfs:range xsd:string ;
+.
+props:nISTLegacyDomain_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "9"^^xsd:int ;
+  rdfs:label "NIST (Legacy) Domain " ;
+  rdfs:range xsd:string ;
+.
+props:nISTLegacyDomain_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "9"^^xsd:int ;
+  rdfs:label "NIST (Legacy) Domain " ;
+  rdfs:range xsd:string ;
+.
+props:nISTLegacyDomain_2
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "1"^^xsd:int ;
+  rdfs:label "NIST (Legacy) Domain" ;
+  rdfs:range xsd:string ;
+.
+props:name
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "1"^^xsd:int ;
+  rdfs:label "Name" ;
+  rdfs:range xsd:string ;
+.
+props:nameOfUseCase
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "7"^^xsd:int ;
+  rdfs:label "Name of Use Case" ;
+  rdfs:range xsd:string ;
+.
+props:new
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "47"^^xsd:int ;
+  rdfs:label "New" ;
+  rdfs:range xsd:string ;
+.
+props:new_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "42"^^xsd:int ;
+  rdfs:label "New" ;
+  rdfs:range xsd:string ;
+.
+props:new_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "42"^^xsd:int ;
+  rdfs:label "New" ;
+  rdfs:range xsd:string ;
+.
+props:note
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "48"^^xsd:int ;
+  rdfs:label "Note" ;
+  rdfs:range xsd:string ;
+.
+props:note_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "43"^^xsd:int ;
+  rdfs:label "Note" ;
+  rdfs:range xsd:string ;
+.
+props:note_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "43"^^xsd:int ;
+  rdfs:label "Note" ;
+  rdfs:range xsd:string ;
+.
+props:notes
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "54"^^xsd:int ;
+  rdfs:label "Notes" ;
+  rdfs:range xsd:string ;
+.
+props:notes_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "48"^^xsd:int ;
+  rdfs:label "Notes" ;
+  rdfs:range xsd:string ;
+.
+props:notes_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "47"^^xsd:int ;
+  rdfs:label "Notes" ;
+  rdfs:range xsd:string ;
+.
+props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "3"^^xsd:int ;
+  rdfs:label "Original Alternative Entity Name  (Including entity names are duplicates)" ;
+  rdfs:range xsd:string ;
+.
+props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "2"^^xsd:int ;
+  rdfs:label "Original Alternative Entity Name  (Including entity names are duplicates)" ;
+  rdfs:range xsd:string ;
+.
+props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "2"^^xsd:int ;
+  rdfs:label "Original Alternative Entity Name  (Including entity names are duplicates)" ;
+  rdfs:range xsd:string ;
+.
+props:primairyActor
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "4"^^xsd:int ;
+  rdfs:label "Primairy Actor" ;
+  rdfs:range xsd:string ;
+.
+props:referenceDiagram
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "27"^^xsd:int ;
+  rdfs:label "Reference Diagram" ;
+  rdfs:range xsd:string ;
+.
+props:referenceDiagram_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "22"^^xsd:int ;
+  rdfs:label "Reference Diagram" ;
+  rdfs:range xsd:string ;
+.
+props:referenceDiagram_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "22"^^xsd:int ;
+  rdfs:label "Reference Diagram" ;
+  rdfs:range xsd:string ;
+.
+props:relatedRole
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "18"^^xsd:int ;
+  rdfs:label "Related Role" ;
+  rdfs:range xsd:string ;
+.
+props:relatedRole_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "13"^^xsd:int ;
+  rdfs:label "Related Role" ;
+  rdfs:range xsd:string ;
+.
+props:relatedRole_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "13"^^xsd:int ;
+  rdfs:label "Related Role" ;
+  rdfs:range xsd:string ;
+.
+props:result
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "2"^^xsd:int ;
+  rdfs:label "Result" ;
+  rdfs:range xsd:string ;
+.
+props:reviewerComments
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "1"^^xsd:int ;
+  rdfs:label "Reviewer/Comments" ;
+  rdfs:range xsd:string ;
+.
+props:role
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "1"^^xsd:int ;
+  rdfs:label "Role" ;
+  rdfs:range xsd:string ;
+.
+props:roleService
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "1"^^xsd:int ;
+  rdfs:label "Role/Service" ;
+  rdfs:range xsd:string ;
+.
+props:role_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "5"^^xsd:int ;
+  rdfs:label "Role" ;
+  rdfs:range xsd:string ;
+.
+props:role_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "10"^^xsd:int ;
+  rdfs:label "Role" ;
+  rdfs:range xsd:string ;
+.
+props:rolefromRoleTab
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "10"^^xsd:int ;
+  rdfs:label "Role (from role tab)" ;
+  rdfs:range xsd:string ;
+.
+props:rolefromRoleTab_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "7"^^xsd:int ;
+  rdfs:label "Role (from role tab)" ;
+  rdfs:range xsd:string ;
+.
+props:rolefromRoleTab_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "7"^^xsd:int ;
+  rdfs:label "Role (from role tab)" ;
+  rdfs:range xsd:string ;
+.
+props:rowActionFlagDeletedHarmonizeh
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "0"^^xsd:int ;
+  rdfs:label """row action flag
+delete (d)
+harmonize (h)""" ;
+  rdfs:range xsd:string ;
+.
+props:rowActionFlagDeletedHarmonizeh_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "0"^^xsd:int ;
+  rdfs:label """row action flag
+delete (d)
+harmonize (h)""" ;
+  rdfs:range xsd:string ;
+.
+props:rowLabels
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "0"^^xsd:int ;
+  rdfs:label "Row Labels" ;
+  rdfs:range xsd:string ;
+.
+props:sGACConceptualArch
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "35"^^xsd:int ;
+  rdfs:label "SGAC Conceptual Arch" ;
+  rdfs:range xsd:string ;
+.
+props:sGACConceptualArch_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "30"^^xsd:int ;
+  rdfs:label "SGAC Conceptual Arch" ;
+  rdfs:range xsd:string ;
+.
+props:sGACConceptualArch_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "30"^^xsd:int ;
+  rdfs:label "SGAC Conceptual Arch" ;
+  rdfs:range xsd:string ;
+.
+props:sGAMDomain
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "14"^^xsd:int ;
+  rdfs:label "SGAM Domain" ;
+  rdfs:range xsd:string ;
+.
+props:sGAMZone
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "15"^^xsd:int ;
+  rdfs:label "SGAM Zone" ;
+  rdfs:range xsd:string ;
+.
+props:sMCG
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "44"^^xsd:int ;
+  rdfs:label "SMCG" ;
+  rdfs:range xsd:string ;
+.
+props:sMCG_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "39"^^xsd:int ;
+  rdfs:label "SMCG" ;
+  rdfs:range xsd:string ;
+.
+props:sMCG_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "39"^^xsd:int ;
+  rdfs:label "SMCG" ;
+  rdfs:range xsd:string ;
+.
+props:service
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "2"^^xsd:int ;
+  rdfs:label "Service" ;
+  rdfs:range xsd:string ;
+.
+props:service_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "6"^^xsd:int ;
+  rdfs:label "Service" ;
+  rdfs:range xsd:string ;
+.
+props:service_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "2"^^xsd:int ;
+  rdfs:label "Service" ;
+  rdfs:range xsd:string ;
+.
+props:source
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "9"^^xsd:int ;
+  rdfs:label "Source" ;
+  rdfs:range xsd:string ;
+.
+props:source_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "4"^^xsd:int ;
+  rdfs:label "Source" ;
+  rdfs:range xsd:string ;
+.
+props:system
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "11"^^xsd:int ;
+  rdfs:label "System" ;
+  rdfs:range xsd:string ;
+.
+<file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase2.1.1>
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "47"^^xsd:int ;
+  rdfs:label "TC8 WG6 use case  actors + assoc. actors for use case 2.1.1" ;
+  rdfs:range xsd:string ;
+.
+<file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211>
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "52"^^xsd:int ;
+  rdfs:label "TC8 WG6 use case  actors + assoc. actors for use case 2-1-1" ;
+  rdfs:range xsd:string ;
+.
+<file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#thisIsAnSOAElementNotAnActorOrRole.>
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "1"^^xsd:int ;
+  rdfs:label "This is an SOA Element, not an actor or role." ;
+  rdfs:range xsd:string ;
+.
+props:totalUSEU
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "1"^^xsd:int ;
+  rdfs:label "Total US+EU" ;
+  rdfs:range xsd:double ;
+.
+props:type
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "11"^^xsd:int ;
+  rdfs:label "Type" ;
+  rdfs:range xsd:string ;
+.
+props:type_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "8"^^xsd:int ;
+  rdfs:label "Type" ;
+  rdfs:range xsd:string ;
+.
+props:type_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "8"^^xsd:int ;
+  rdfs:label "Type" ;
+  rdfs:range xsd:string ;
+.
+props:uS
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "13"^^xsd:int ;
+  rdfs:label "US" ;
+  rdfs:range xsd:string ;
+.
+props:uSEUInput
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "49"^^xsd:int ;
+  rdfs:label "US/EU Input" ;
+  rdfs:range xsd:string ;
+.
+props:uSEUInput_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "44"^^xsd:int ;
+  rdfs:label "US/EU Input" ;
+  rdfs:range xsd:string ;
+.
+props:uSEUInput_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "44"^^xsd:int ;
+  rdfs:label "US/EU Input" ;
+  rdfs:range xsd:string ;
+.
+props:uS_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "2"^^xsd:int ;
+  rdfs:label "US" ;
+  rdfs:range xsd:double ;
+.
+props:useCaseDomain
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "6"^^xsd:int ;
+  rdfs:label "Use Case Domain" ;
+  rdfs:range xsd:string ;
+.
+props:useCaseID
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "5"^^xsd:int ;
+  rdfs:label "Use Case ID" ;
+  rdfs:range xsd:string ;
+.
+props:useCaseLevelOfDepth
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "8"^^xsd:int ;
+  rdfs:label "Use Case Level of Depth" ;
+  rdfs:range xsd:string ;
+.
+props:validateDRResourceInterconnection
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "0"^^xsd:int ;
+  rdfs:label "Validate DR resource interconnection" ;
+  rdfs:range xsd:string ;
+.
+props:validatesThatDRResourcesConnectionComplyWithRelevantStandards
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "6"^^xsd:int ;
+  rdfs:label "Validates that DR resources connection comply with relevant standards " ;
+  rdfs:range xsd:string ;
+.
+props:version
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "0"^^xsd:int ;
+  rdfs:label "Version" ;
+  rdfs:range xsd:string ;
+.
+props:wASA
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "23"^^xsd:int ;
+  rdfs:label "WASA" ;
+  rdfs:range xsd:string ;
+.
+props:wASA_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "18"^^xsd:int ;
+  rdfs:label "WASA" ;
+  rdfs:range xsd:string ;
+.
+props:wASA_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "18"^^xsd:int ;
+  rdfs:label "WASA" ;
+  rdfs:range xsd:string ;
+.
+props:x
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "7"^^xsd:int ;
+  rdfs:label "X" ;
+  rdfs:range xsd:string ;
+.
+props:x_0
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "9"^^xsd:int ;
+  rdfs:label "X" ;
+  rdfs:range xsd:string ;
+.
+props:x_1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "10"^^xsd:int ;
+  rdfs:label "X" ;
+  rdfs:range xsd:string ;
+.
+props:x_2
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "11"^^xsd:int ;
+  rdfs:label "X" ;
+  rdfs:range xsd:string ;
+.
+props:x_3
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "12"^^xsd:int ;
+  rdfs:label "X" ;
+  rdfs:range xsd:string ;
+.
+props:zone
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "3"^^xsd:int ;
+  rdfs:label "Zone" ;
+  rdfs:range xsd:string ;
+.
