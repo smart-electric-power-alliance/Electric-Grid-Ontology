@@ -1,4 +1,4 @@
-# baseURI: http://sv.cmu.edu/results1
+# baseURI: http://sv.cmu.edu/AWP/8.0/results1
 # imports: http://sv.cmu.edu/AWP/8.0/ActorRoles
 # imports: http://sv.cmu.edu/AWP/8.0/props
 
@@ -8,7 +8,7 @@
 @prefix props: <http://sv.cmu.edu/AWP/8.0/props#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix results1: <http://sv.cmu.edu/results1#> .
+@prefix results1: <http://sv.cmu.edu/AWP/8.0/results1#> .
 @prefix tables: <http://topbraid.org/tables#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -17687,7 +17687,7 @@ entity:Zone-1274
   tables:rowIndex "1274"^^xsd:int ;
   rdfs:label "Zone"^^xsd:string ;
 .
-<http://sv.cmu.edu/results1>
+<http://sv.cmu.edu/AWP/8.0/results1>
   rdf:type owl:Ontology ;
   owl:imports <http://sv.cmu.edu/AWP/8.0/ActorRoles> ;
   owl:imports <http://sv.cmu.edu/AWP/8.0/props> ;
