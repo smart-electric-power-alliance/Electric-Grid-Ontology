@@ -215,6 +215,7 @@ owl:Thing
     ] ;
   spin:query [
       rdf:type sp:Select ;
+      sp:distinct "true"^^xsd:boolean ;
       sp:orderBy (
           [
             rdf:type sp:Asc ;
