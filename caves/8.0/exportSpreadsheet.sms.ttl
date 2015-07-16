@@ -255,6 +255,7 @@ exportSpreadsheet:EnterOutputFileName
 .
 exportSpreadsheet:ExportToSpreadsheet
   rdf:type sml:ExportToTextFile ;
+  sm:next exportSpreadsheet:MakeSpreadsheet_Return ;
   sml:replace "true"^^xsd:boolean ;
   sml:targetFilePath "{?outputFile}"^^xsd:string ;
   sml:text [
@@ -267,4 +268,12 @@ exportSpreadsheet:ImportRDFFromWorkspace_1
   sml:baseURI "http://sv.cmu.edu/AWP/8.0/workingresults8.1"^^xsd:string ;
   sml:ignoreImports "false"^^xsd:boolean ;
   sml:sourceFilePath "8.0/Data/workingresults8.1.ttl"^^xsd:string ;
+.
+exportSpreadsheet:MakeSpreadsheet
+  rdf:type sm:Function ;
+  sm:returnModule exportSpreadsheet:MakeSpreadsheet_Return ;
+  rdfs:subClassOf sm:Functions ;
+.
+exportSpreadsheet:MakeSpreadsheet_Return
+  rdf:type sml:ReturnText ;
 .
