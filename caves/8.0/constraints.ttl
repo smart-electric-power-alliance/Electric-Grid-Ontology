@@ -1,5 +1,6 @@
 # baseURI: http://sv.cmu.edu/AWP/8.0/constraints
 # imports: http://spinrdf.org/spl
+# imports: http://sv.cmu.edu/AWP/8.0/ActorRoles
 # imports: http://sv.cmu.edu/AWP/8.0/props
 
 @prefix arg: <http://spinrdf.org/arg#> .
@@ -17,10 +18,11 @@
 <http://sv.cmu.edu/AWP/8.0/constraints>
   rdf:type owl:Ontology ;
   owl:imports <http://spinrdf.org/spl> ;
+  owl:imports <http://sv.cmu.edu/AWP/8.0/ActorRoles> ;
   owl:imports <http://sv.cmu.edu/AWP/8.0/props> ;
   owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
 .
-<http://sv.cmu.edu/AWP/8.0/props#Combined-Elements-noduprows>
+owl:Thing
   spin:constraint [
       rdf:type sp:Ask ;
       sp:where (
@@ -37,7 +39,7 @@
               ) ;
           ]
         ) ;
-      rdfs:comment "002 No specification of Actor, Service, or ServiceComposition."^^xsd:string ;
+      rdfs:comment "002 No specification of Actor, Service, ServiceComposition, or Contract."^^xsd:string ;
     ] ;
   spin:constraint [
       rdf:type sp:Ask ;
@@ -210,5 +212,219 @@
           ]
         ) ;
       rdfs:comment "003 Invalid hierarchy specification."^^xsd:string ;
+    ] ;
+  spin:query [
+      rdf:type sp:Select ;
+      sp:orderBy (
+          [
+            rdf:type sp:Asc ;
+            sp:expression [
+                sp:varName "index"^^xsd:string ;
+              ] ;
+          ]
+        ) ;
+      sp:where (
+          [
+            rdf:type sp:Union ;
+            sp:elements (
+                (
+                  [
+                    rdf:type sp:TriplePath ;
+                    sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#Entity> ;
+                    sp:path [
+                        rdf:type sp:SeqPath ;
+                        sp:path1 rdf:type ;
+                        sp:path2 [
+                            rdf:type sp:ModPath ;
+                            sp:modMax -2 ;
+                            sp:modMin 0 ;
+                            sp:subPath rdfs:subClassOf ;
+                          ] ;
+                      ] ;
+                    sp:subject [
+                        sp:varName "entity"^^xsd:string ;
+                      ] ;
+                  ]
+                )
+                (
+                  [
+                    sp:object <http://sv.cmu.edu/AWP/8.0/props#Combined-Elements-noduprows> ;
+                    sp:predicate rdf:type ;
+                    sp:subject [
+                        sp:varName "entity"^^xsd:string ;
+                      ] ;
+                  ]
+                )
+              ) ;
+          ]
+          [
+            sp:object [
+                sp:varName "index"^^xsd:string ;
+              ] ;
+            sp:predicate <http://topbraid.org/tables#rowIndex> ;
+            sp:subject [
+                sp:varName "entity"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "name"^^xsd:string ;
+              ] ;
+            sp:predicate <http://sv.cmu.edu/AWP/8.0/props#entityName> ;
+            sp:subject [
+                sp:varName "entity"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "label"^^xsd:string ;
+              ] ;
+            sp:predicate rdfs:label ;
+            sp:subject [
+                sp:varName "entity"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "actorOrService"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#actorServiceCompositionService> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "hierarchy"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#hierarchyConceptualLogicalPhysical> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "description"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#description_0> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "originalAlternativeName"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#originalAlternativeEntityNameIncludingEntityNamesAreDuplicates> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "type"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#type> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "nistDomain"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#nISTLegacyDomain> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "cimZone"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#manufacturerCIMIECTypeOfZone> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "euWp1ActorOrRole"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#actorTypeOrRole> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "euWp1RelatedRole"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#relatedRole> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "euWp1FunctionOrService"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#businessFunctionService> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+        ) ;
+      rdfs:comment "001 Generate table of all entities and their properties"^^xsd:string ;
     ] ;
 .

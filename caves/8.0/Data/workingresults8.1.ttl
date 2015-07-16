@@ -1,5 +1,6 @@
 # baseURI: http://sv.cmu.edu/AWP/8.0/workingresults8.1
 # imports: http://sv.cmu.edu/AWP/8.0/ActorRoles
+# imports: http://sv.cmu.edu/AWP/8.0/constraints
 # imports: http://sv.cmu.edu/AWP/8.0/props
 
 @prefix ar: <http://sv.cmu.edu/AWP/8.0/ActorRoles#> .
@@ -17690,6 +17691,7 @@ entity:Zone-1274
 <http://sv.cmu.edu/AWP/8.0/workingresults8.1>
   rdf:type owl:Ontology ;
   owl:imports <http://sv.cmu.edu/AWP/8.0/ActorRoles> ;
+  owl:imports <http://sv.cmu.edu/AWP/8.0/constraints> ;
   owl:imports <http://sv.cmu.edu/AWP/8.0/props> ;
   owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
 .
