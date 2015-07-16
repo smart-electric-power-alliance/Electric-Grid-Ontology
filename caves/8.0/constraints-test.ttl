@@ -1,11 +1,11 @@
-# baseURI: http://sv.cmu.edu/AWP/8.0/constraints2
+# baseURI: http://sv.cmu.edu/AWP/8.0/constraints-test
 # imports: http://semwebquality.org/ontologies/dq-constraints#
 # imports: http://spinrdf.org/spl
 # imports: http://sv.cmu.edu/AWP/8.0/ActorRoles
 # imports: http://sv.cmu.edu/AWP/8.0/props
 
 @prefix arg: <http://spinrdf.org/arg#> .
-@prefix constraints: <http://sv.cmu.edu/AWP/8.0/constraints2#> .
+@prefix constraints: <http://sv.cmu.edu/AWP/8.0/constraints-test#> .
 @prefix dqc: <http://semwebquality.org/ontologies/dq-constraints#> .
 @prefix fn: <http://www.w3.org/2005/xpath-functions#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -17,8 +17,9 @@
 @prefix spl: <http://spinrdf.org/spl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://sv.cmu.edu/AWP/8.0/constraints2>
+<http://sv.cmu.edu/AWP/8.0/constraints-test>
   rdf:type owl:Ontology ;
+  rdfs:comment "At this point, we're not using this version. The main version is constraints.ttl"^^xsd:string ;
   rdfs:comment "In this version, I'm experimenting with importing data quality constraint checking from http://semwebquality.org/ontologies/dq-constraints#. There is a primer on this library at http://semwebquality.org/documentation/primer/20101124/index.html "^^xsd:string ;
   owl:imports dqc: ;
   owl:imports <http://spinrdf.org/spl> ;
