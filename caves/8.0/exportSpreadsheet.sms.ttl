@@ -267,7 +267,7 @@ exportSpreadsheet:ImportRDFFromWorkspace_1
   sm:next exportSpreadsheet:CreateSpreadsheet_1 ;
   sml:baseURI "http://sv.cmu.edu/AWP/8.0/workingresults8.1"^^xsd:string ;
   sml:ignoreImports "false"^^xsd:boolean ;
-  sml:sourceFilePath "8.0/Data/workingresults8.1.ttl"^^xsd:string ;
+  sml:sourceFilePath "{?inputFile}"^^xsd:string ;
 .
 exportSpreadsheet:MakeSpreadsheet
   rdf:type sm:Function ;
