@@ -1,0 +1,265 @@
+# baseURI: http://sv.cmu.edu/AWP/8.0/exportSpreadsheetRon1
+# imports: http://sv.cmu.edu/AWP/8.0/workingresults8.1
+# imports: http://topbraid.org/sparqlmotionfunctions
+# imports: http://topbraid.org/sparqlmotionlib-tbc
+
+@prefix exportSpreadsheet: <http://sv.cmu.edu/AWP/8.0/exportSpreadsheet#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sm: <http://topbraid.org/sparqlmotion#> .
+@prefix sml: <http://topbraid.org/sparqlmotionlib#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://sv.cmu.edu/AWP/8.0/exportSpreadsheetRon1>
+  rdf:type owl:Ontology ;
+  owl:imports <http://sv.cmu.edu/AWP/8.0/workingresults8.1> ;
+  owl:imports <http://topbraid.org/sparqlmotionfunctions> ;
+  owl:imports <http://topbraid.org/sparqlmotionlib-tbc> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/exportSpreadsheetRon1#CreateSpreadsheet_1>
+  rdf:type sml:CreateSpreadsheet ;
+  sm:next <http://sv.cmu.edu/AWP/8.0/exportSpreadsheetRon1#ExportToSpreadsheet> ;
+  sm:outputVariable "spreadsheet"^^xsd:string ;
+  sml:selectQuery [
+      rdf:type sp:Select ;
+      sp:distinct "true"^^xsd:boolean ;
+      sp:orderBy (
+          [
+            rdf:type sp:Asc ;
+            sp:expression [
+                sp:varName "index"^^xsd:string ;
+              ] ;
+          ]
+        ) ;
+      sp:where (
+          (
+            [
+              rdf:type sp:TriplePath ;
+              sp:object owl:Thing ;
+              sp:path [
+                  rdf:type sp:SeqPath ;
+                  sp:path1 rdf:type ;
+                  sp:path2 [
+                      rdf:type sp:ModPath ;
+                      sp:modMax -2 ;
+                      sp:modMin 0 ;
+                      sp:subPath rdfs:subClassOf ;
+                    ] ;
+                ] ;
+              sp:subject [
+                  sp:varName "entity"^^xsd:string ;
+                ] ;
+            ]
+          )
+          [
+            sp:object [
+                sp:varName "index"^^xsd:string ;
+              ] ;
+            sp:predicate <http://topbraid.org/tables#rowIndex> ;
+            sp:subject [
+                sp:varName "entity"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "name"^^xsd:string ;
+              ] ;
+            sp:predicate <http://sv.cmu.edu/AWP/8.0/props#entityName> ;
+            sp:subject [
+                sp:varName "entity"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "label"^^xsd:string ;
+              ] ;
+            sp:predicate rdfs:label ;
+            sp:subject [
+                sp:varName "entity"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "actorOrService"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#actorServiceCompositionService> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "hierarchy"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#hierarchyConceptualLogicalPhysical> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "description"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#description_0> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "originalAlternativeName"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#originalAlternativeEntityNameIncludingEntityNamesAreDuplicates> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "type"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#type> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "nistDomain"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#nISTLegacyDomain> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "cimZone"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#manufacturerCIMIECTypeOfZone> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "euWp1ActorOrRole"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#actorTypeOrRole> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "euWp1RelatedRole"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#relatedRole> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "euWp1FunctionOrService"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#businessFunctionService> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+        ) ;
+    ] ;
+.
+<http://sv.cmu.edu/AWP/8.0/exportSpreadsheetRon1#EnterInputFileName>
+  rdf:type sml:EnterLiteral ;
+  sm:next <http://sv.cmu.edu/AWP/8.0/exportSpreadsheetRon1#ImportRDFFromWorkspace_1> ;
+  sm:outputVariable "inputFile"^^xsd:string ;
+  sml:datatype xsd:string ;
+  sml:text "Enter input file name (e.g. 8.0/Data/workingresults8.1.ttl)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/exportSpreadsheetRon1#EnterOutputFileName>
+  rdf:type sml:EnterLiteral ;
+  sm:next <http://sv.cmu.edu/AWP/8.0/exportSpreadsheetRon1#ExportToSpreadsheet> ;
+  sm:outputVariable "outputFile"^^xsd:string ;
+  sml:datatype xsd:string ;
+  sml:text "Enter the tab-delimited output file name (e.g. Data/test.txt)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/exportSpreadsheetRon1#ExportToSpreadsheet>
+  rdf:type sml:ExportToTextFile ;
+  sm:next <http://sv.cmu.edu/AWP/8.0/exportSpreadsheetRon1#MakeSpreadsheet_Return> ;
+  sml:replace "true"^^xsd:boolean ;
+  sml:targetFilePath "{?outputFile}"^^xsd:string ;
+  sml:text [
+      sp:varName "spreadsheet"^^xsd:string ;
+    ] ;
+.
+<http://sv.cmu.edu/AWP/8.0/exportSpreadsheetRon1#ImportRDFFromWorkspace_1>
+  rdf:type sml:ImportRDFFromWorkspace ;
+  sm:next <http://sv.cmu.edu/AWP/8.0/exportSpreadsheetRon1#CreateSpreadsheet_1> ;
+  sml:baseURI "http://sv.cmu.edu/AWP/8.0/workingresults8.1"^^xsd:string ;
+  sml:ignoreImports "false"^^xsd:boolean ;
+  sml:sourceFilePath "{?inputFile}"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/exportSpreadsheetRon1#MakeSpreadsheet>
+  rdf:type sm:Function ;
+  sm:returnModule <http://sv.cmu.edu/AWP/8.0/exportSpreadsheetRon1#MakeSpreadsheet_Return> ;
+  rdfs:subClassOf sm:Functions ;
+.
+<http://sv.cmu.edu/AWP/8.0/exportSpreadsheetRon1#MakeSpreadsheet_Return>
+  rdf:type sml:ReturnText ;
+.
