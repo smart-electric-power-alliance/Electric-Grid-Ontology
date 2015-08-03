@@ -17688,6 +17688,9 @@ entity:Zone-1274
   tables:rowIndex "1274"^^xsd:int ;
   rdfs:label "Zone"^^xsd:string ;
 .
+props:Combined-Elements-noduprows
+  rdfs:subClassOf owl:Thing ;
+.
 <http://sv.cmu.edu/AWP/8.0/workingresults8.1>
   rdf:type owl:Ontology ;
   owl:imports <http://sv.cmu.edu/AWP/8.0/ActorRoles> ;

@@ -244,7 +244,7 @@ exportSpreadsheet:EnterInputFileName
   sm:next exportSpreadsheet:ImportRDFFromWorkspace_1 ;
   sm:outputVariable "inputFile"^^xsd:string ;
   sml:datatype xsd:string ;
-  sml:text "Enter input file name (e.g. 8.0/Data/workingresults8.1.ttl)"^^xsd:string ;
+  sml:text "Enter input file name (e.g. Data/workingresults8.1.ttl)"^^xsd:string ;
 .
 exportSpreadsheet:EnterOutputFileName
   rdf:type sml:EnterLiteral ;
@@ -265,7 +265,6 @@ exportSpreadsheet:ExportToSpreadsheet
 exportSpreadsheet:ImportRDFFromWorkspace_1
   rdf:type sml:ImportRDFFromWorkspace ;
   sm:next exportSpreadsheet:CreateSpreadsheet_1 ;
-  sml:baseURI "http://sv.cmu.edu/AWP/8.0/workingresults8.1"^^xsd:string ;
   sml:ignoreImports "false"^^xsd:boolean ;
   sml:sourceFilePath "{?inputFile}"^^xsd:string ;
 .
