@@ -13,28 +13,6 @@
 @prefix tables: <http://topbraid.org/tables#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://sv.cmu.edu/AWP/8.0/entity#0.0-0>
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
-  props:dKERepository "X"^^xsd:string ;
-  props:description_0 "Combination of load and generation object devices"^^xsd:string ;
-  props:entityName "0.0"^^xsd:string ;
-  props:note "DKE Repository"^^xsd:string ;
-  props:uSEUInput "EU"^^xsd:string ;
-  tables:rowIndex "0"^^xsd:int ;
-  rdfs:label "0.0"^^xsd:string ;
-.
-<http://sv.cmu.edu/AWP/8.0/entity#0.0-1>
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
-  props:dKERepository "X"^^xsd:string ;
-  props:description_0 "Ã¢â‚¬Â¢ Â Metrology functions including the conventional meter display (register or index) that are under legal metrological control. When under metrological control, these functions shall meet the essential requirements of the MID;"^^xsd:string ;
-  props:entityName "0.0"^^xsd:string ;
-  props:note "Smart Home/Commercial/Industrial/DR-Customer EMS"^^xsd:string ;
-  props:uSEUInput "EU"^^xsd:string ;
-  tables:rowIndex "1"^^xsd:int ;
-  rdfs:label "0.0"^^xsd:string ;
-.
 entity:AMIHeadEnd-28
   rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
@@ -103,9 +81,10 @@ entity:AMIService-30
 .
 entity:AMISystem-31
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:description_0 "Advanced Metering Infrastructure System"^^xsd:string ;
   props:entityName "AMI System"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:homeworkBlocks "07:00:00"^^xsd:string ;
   props:note "SMCG"^^xsd:string ;
   props:sMCG "X"^^xsd:string ;
@@ -223,6 +202,7 @@ entity:AccountingPointResponsible-13
   props:description_0 "Responsible for the maintenance and mapping between the logical registers and the accounting points in compliance with local market rules"^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "AccountingPoint responsible"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "13"^^xsd:int ;
@@ -239,17 +219,6 @@ entity:ActorA-14
   tables:rowIndex "14"^^xsd:int ;
   rdfs:label "Actor A"^^xsd:string ;
 .
-entity:ActorA-externalActor--15
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
-  props:dKERepository "X"^^xsd:string ;
-  props:description_0 ""^^xsd:string ;
-  props:entityName "Actor A (external actor)"^^xsd:string ;
-  props:note "Smart Home/Commercial/Industrial/DR-Customer EMS"^^xsd:string ;
-  props:uSEUInput "EU"^^xsd:string ;
-  tables:rowIndex "15"^^xsd:int ;
-  rdfs:label "Actor A (external actor)"^^xsd:string ;
-.
 entity:ActorB-16
   rdf:type ar:Actor ;
   props:actorServiceCompositionService "External Actor"^^xsd:string ;
@@ -260,17 +229,6 @@ entity:ActorB-16
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "16"^^xsd:int ;
   rdfs:label "Actor B"^^xsd:string ;
-.
-entity:ActorB-externalActor--17
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
-  props:dKERepository "X"^^xsd:string ;
-  props:description_0 "External actor (Smart Grid Market Role) interacting with the system functions and components in the home or home automation network through the metering communication channel. This actor is responsible for collecting metering data. Examples of such market roles are the DSO, metering company, etc."^^xsd:string ;
-  props:entityName "Actor B (external actor)"^^xsd:string ;
-  props:note "Smart Home/Commercial/Industrial/DR-Customer EMS"^^xsd:string ;
-  props:uSEUInput "EU"^^xsd:string ;
-  tables:rowIndex "17"^^xsd:int ;
-  rdfs:label "Actor B (external actor)"^^xsd:string ;
 .
 entity:Actuation-18
   rdf:type ar:LogicalService ;
@@ -322,8 +280,10 @@ entity:AdjustTransformerOperatiningSettings-20
 .
 entity:AdvancedMeteringInfrastructure-AMI--21
   rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Advanced Metering Infrastructure (AMI)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 3 REP and ICT"^^xsd:string ;
   tables:rowIndex "21"^^xsd:int ;
@@ -425,7 +385,7 @@ entity:Aggregator-26
 entity:Aggregator-27
   rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "offers services to aggregate energy production from different sources (generators) and acts towards the grid as one entity, including local aggregation of demand (Demand Response management) and supply (generation management). In cases where the aggregator is not a supplier, it maintains a contract with the supplier."^^xsd:string ;
@@ -433,6 +393,7 @@ entity:Aggregator-27
   props:eUSourceunknown "X"^^xsd:string ;
   props:entityName "Aggregator"^^xsd:string ;
   props:harmonizationNotes "H1 & H2 should be discussed with originating team"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:homeworkBlocks "07:00:00"^^xsd:string ;
   props:note "EG3"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "H2"^^xsd:string ;
@@ -595,10 +556,11 @@ entity:ApplianceCustomer-40
 .
 entity:Appliances-42
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "Object devices"^^xsd:string ;
   props:entityName "Appliances"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:note "DKE Repository"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "42"^^xsd:int ;
@@ -619,12 +581,13 @@ entity:ApplicationManagement-43
 .
 entity:AreaEnergyServices-44
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:ahGCharging "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "ServiceComposition offering services regarding the energy management of a specific location or geographical area. These services could be dedicated to the charge management of electric vehicles as well as the energy management of the location, like tertiary buildings (in such a case the charging of EVs could be included in a local optimization).An Area Energy Service Operator could, at the same time, offer EV charging Energy (e-Mobility) Services (user profile and billing could be integrated in its service offer). Additional information: an Area Energy Service Operator could be considered as an Aggregator for specific services, linked to the charge management. Also, an EPS that serves Local EPSs"^^xsd:string ;
   props:entityName "Area Energy Services"^^xsd:string ;
   props:harmonizationNotes "last sentence from duplicate"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "AhG Charging; Lvl 0 EPS"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
@@ -697,9 +660,10 @@ service"""^^xsd:string ;
 .
 entity:AssetManagementSystem-49
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Application which optimizes the utilization of assets regarding loading, maintenance and lifetime"^^xsd:string ;
   props:entityName "Asset Management System"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks "07:00:00"^^xsd:string ;
   props:iECSG3 "X"^^xsd:string ;
   props:note "SG3"^^xsd:string ;
@@ -978,11 +942,12 @@ entity:BalancePhases-68
 .
 entity:BalanceResponsibleParty-69
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "SrviceComposition"^^xsd:string ;
   props:description_0 """A party that has a contract proving financial security and identifying balance responsibility with the imbalance settlement responsible of the market balance area entitling the party to operate in the market. This is the only role allowing a party to buy or sell energy on a wholesale level. 
 Additional information: The meaning of the word \"balance\" in this context signifies that the quantity contracted to provide or to consume must be equal to the quantity really provided or consumed. Such a party is often owned by a number of market players. Equivalent to \"Program responsible party\" in the Netherlands.Equivalent to \"Balance responsible group\" in Germany. Equivalent to \"market agent\" in Spain."""^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "Balance Responsible Party"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:homeworkBlocks "07:00:00"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -1051,9 +1016,11 @@ entity:BalancingAuthority-72
 .
 entity:BalancingAuthority-market--73
   rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Balancing Authority (market)"^^xsd:string ;
   props:harmonizationNotes "unclear if rows 76 & 77 are different"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "conceptual"^^xsd:string ;
   props:homeworkBlocks "07:00:00"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 5 Trans. And Market"^^xsd:string ;
@@ -1063,8 +1030,10 @@ entity:BalancingAuthority-market--73
 entity:BatteryEnergyStorage-74
   rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Battery energy storage"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 1 DER"^^xsd:string ;
   tables:rowIndex "74"^^xsd:int ;
@@ -1073,7 +1042,7 @@ entity:BatteryEnergyStorage-74
 entity:BatteryServiceOperator-75
   rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:ahGCharging "X"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
   props:description_0 """A party that operates the service for the battery of an electric vehicle that may include the battery rental. The 
@@ -1081,6 +1050,7 @@ Battery Service Operator will manage the compromise of usage of the battery betw
 and an usage for electricity or grid management services.
 A Battery Service Operator could subscribe to different services like electricity charging services to an Area Energy Service Operator or Energy (e-Mobility) Service Operator. The links with these Energy Operators have not been shown on the diagram only for readability reason. Additional information: a Battery Service Operator could be considered as an Aggregator for the usage of the battery"""^^xsd:string ;
   props:entityName "Battery Service Operator"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "AhG Charging"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "75"^^xsd:int ;
