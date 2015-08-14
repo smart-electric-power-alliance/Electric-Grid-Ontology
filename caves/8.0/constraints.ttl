@@ -456,7 +456,766 @@ owl:Thing
               ) ;
           ]
         ) ;
-      rdfs:comment "002 Ron's Spreadsheet generator showing all columns (attributes)"^^xsd:string ;
+      rdfs:comment "002 Ron's Spreadsheet generator with explicit order of attributes"^^xsd:string ;
+    ] ;
+  spin:query [
+      rdf:type sp:Select ;
+      sp:distinct "true"^^xsd:boolean ;
+      sp:orderBy (
+          [
+            rdf:type sp:Asc ;
+            sp:expression [
+                sp:varName "index"^^xsd:string ;
+              ] ;
+          ]
+        ) ;
+      sp:where (
+          [
+            rdf:type sp:TriplePath ;
+            sp:object owl:Thing ;
+            sp:path [
+                rdf:type sp:SeqPath ;
+                sp:path1 rdf:type ;
+                sp:path2 [
+                    rdf:type sp:ModPath ;
+                    sp:modMax -2 ;
+                    sp:modMin 0 ;
+                    sp:subPath rdfs:subClassOf ;
+                  ] ;
+              ] ;
+            sp:subject [
+                sp:varName "entity"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "index"^^xsd:string ;
+              ] ;
+            sp:predicate <http://topbraid.org/tables#rowIndex> ;
+            sp:subject [
+                sp:varName "entity"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "name"^^xsd:string ;
+              ] ;
+            sp:predicate <http://sv.cmu.edu/AWP/8.0/props#entityName> ;
+            sp:subject [
+                sp:varName "entity"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "label"^^xsd:string ;
+              ] ;
+            sp:predicate rdfs:label ;
+            sp:subject [
+                sp:varName "entity"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "actorOrService"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#actorServiceCompositionService> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "hierarchy"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#hierarchyConceptualLogicalPhysical> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "description"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#description_0> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "aDWPOriginalFocus"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#aDWPOriginalFocus> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "aMISystems"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#aMISystems> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "actorTypeOrRole"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#actorTypeOrRole> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "ahGCharging"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#ahGCharging> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "archiMateTerminologyLayers"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#archiMateTerminologyLayers> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "businessFunctionService"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#businessFunctionService> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "cSWGActors"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#cSWGActors> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "cSWGNISTIR7628"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#cSWGNISTIR7628> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "clusterLabel"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#clusterLabel> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "colC"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#colC> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "colD"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#colD> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "conceptualModel"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#conceptualModel> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "dKERepository"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#dKERepository> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "demandResponse"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#demandResponse> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "distributionGridMgmt"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#distributionGridMgmt> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "eG3"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#eG3> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "eIS"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#eIS> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "eNTSOERoleModel"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#eNTSOERoleModel> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "eUCommission"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#eUCommission> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "eUSCCGWP1"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#eUSCCGWP1> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "eUSourceunknown"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#eUSourceunknown> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "eUWGSPVers05"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#eUWGSPVers05> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "electricStorage"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#electricStorage> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "electricTransportaion"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#electricTransportaion> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "gUC"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#gUC> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "harmonizationNotes"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#harmonizationNotes> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "homeworkBlocks"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#homeworkBlocks> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "iEC61968IRM"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#iEC61968IRM> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "iECSG3"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#iECSG3> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "iECTC57WG19TC8WG6DERActorRoles"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#iECTC57WG19TC8WG6DERActorRoles> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "iEEEP2030Draft3"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#iEEEP2030Draft3> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "manufacturerCIMIECTypeOfZone"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#manufacturerCIMIECTypeOfZone> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "nAESB"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#nAESB> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "nISTLegacyDomain"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#nISTLegacyDomain> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "new"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#new> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "note"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#note> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "notes"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#notes> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "originalAlternativeEntityNameIncludingEntityNamesAreDuplicates"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#originalAlternativeEntityNameIncludingEntityNamesAreDuplicates> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "referenceDiagram"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#referenceDiagram> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "relatedRole"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#relatedRole> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "rolefromRoleTab"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#rolefromRoleTab> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "rowActionFlagDeletedHarmonizeh"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#rowActionFlagDeletedHarmonizeh> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "sGACConceptualArch"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#sGACConceptualArch> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "sMCG"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#sMCG> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "type"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#type> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "uSEUInput"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#uSEUInput> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "wASA"^^xsd:string ;
+                    ] ;
+                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#wASA> ;
+                  sp:subject [
+                      sp:varName "entity"^^xsd:string ;
+                    ] ;
+                ]
+              ) ;
+          ]
+        ) ;
+      rdfs:comment "003 Spreadsheet generator showing all columns in arbitrary order"^^xsd:string ;
     ] ;
   spin:query [
       rdf:type sp:Select ;
@@ -672,346 +1431,5 @@ owl:Thing
           ]
         ) ;
       rdfs:comment "001 Generate table of all entities and their properties"^^xsd:string ;
-    ] ;
-  spin:query [
-      rdf:type sp:Select ;
-      sp:distinct "true"^^xsd:boolean ;
-      sp:orderBy (
-          [
-            rdf:type sp:Asc ;
-            sp:expression [
-                sp:varName "index"^^xsd:string ;
-              ] ;
-          ]
-        ) ;
-      sp:where (
-          (
-            [
-              rdf:type sp:TriplePath ;
-              sp:object owl:Thing ;
-              sp:path [
-                  rdf:type sp:SeqPath ;
-                  sp:path1 rdf:type ;
-                  sp:path2 [
-                      rdf:type sp:ModPath ;
-                      sp:modMax -2 ;
-                      sp:modMin 0 ;
-                      sp:subPath rdfs:subClassOf ;
-                    ] ;
-                ] ;
-              sp:subject [
-                  sp:varName "entity"^^xsd:string ;
-                ] ;
-            ]
-          )
-          [
-            sp:object [
-                sp:varName "index"^^xsd:string ;
-              ] ;
-            sp:predicate <http://topbraid.org/tables#rowIndex> ;
-            sp:subject [
-                sp:varName "entity"^^xsd:string ;
-              ] ;
-          ]
-          [
-            sp:object [
-                sp:varName "name"^^xsd:string ;
-              ] ;
-            sp:predicate <http://sv.cmu.edu/AWP/8.0/props#entityName> ;
-            sp:subject [
-                sp:varName "entity"^^xsd:string ;
-              ] ;
-          ]
-          [
-            sp:object [
-                sp:varName "label"^^xsd:string ;
-              ] ;
-            sp:predicate rdfs:label ;
-            sp:subject [
-                sp:varName "entity"^^xsd:string ;
-              ] ;
-          ]
-          [
-            rdf:type sp:Optional ;
-            sp:elements (
-                [
-                  sp:object [
-                      sp:varName "actorOrService"^^xsd:string ;
-                    ] ;
-                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#actorServiceCompositionService> ;
-                  sp:subject [
-                      sp:varName "entity"^^xsd:string ;
-                    ] ;
-                ]
-              ) ;
-          ]
-          [
-            rdf:type sp:Optional ;
-            sp:elements (
-                [
-                  sp:object [
-                      sp:varName "hierarchy"^^xsd:string ;
-                    ] ;
-                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#hierarchyConceptualLogicalPhysical> ;
-                  sp:subject [
-                      sp:varName "entity"^^xsd:string ;
-                    ] ;
-                ]
-              ) ;
-          ]
-          [
-            rdf:type sp:Optional ;
-            sp:elements (
-                [
-                  sp:object [
-                      sp:varName "description"^^xsd:string ;
-                    ] ;
-                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#description_0> ;
-                  sp:subject [
-                      sp:varName "entity"^^xsd:string ;
-                    ] ;
-                ]
-              ) ;
-          ]
-          [
-            rdf:type sp:Optional ;
-            sp:elements (
-                [
-                  sp:object [
-                      sp:varName "originalAlternativeName"^^xsd:string ;
-                    ] ;
-                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#originalAlternativeEntityNameIncludingEntityNamesAreDuplicates> ;
-                  sp:subject [
-                      sp:varName "entity"^^xsd:string ;
-                    ] ;
-                ]
-              ) ;
-          ]
-          [
-            rdf:type sp:Optional ;
-            sp:elements (
-                [
-                  sp:object [
-                      sp:varName "type"^^xsd:string ;
-                    ] ;
-                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#type> ;
-                  sp:subject [
-                      sp:varName "entity"^^xsd:string ;
-                    ] ;
-                ]
-              ) ;
-          ]
-          [
-            rdf:type sp:Optional ;
-            sp:elements (
-                [
-                  sp:object [
-                      sp:varName "nistDomain"^^xsd:string ;
-                    ] ;
-                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#nISTLegacyDomain> ;
-                  sp:subject [
-                      sp:varName "entity"^^xsd:string ;
-                    ] ;
-                ]
-              ) ;
-          ]
-          [
-            rdf:type sp:Optional ;
-            sp:elements (
-                [
-                  sp:object [
-                      sp:varName "cimZone"^^xsd:string ;
-                    ] ;
-                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#manufacturerCIMIECTypeOfZone> ;
-                  sp:subject [
-                      sp:varName "entity"^^xsd:string ;
-                    ] ;
-                ]
-              ) ;
-          ]
-          [
-            rdf:type sp:Optional ;
-            sp:elements (
-                [
-                  sp:object [
-                      sp:varName "euWp1ActorOrRole"^^xsd:string ;
-                    ] ;
-                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#actorTypeOrRole> ;
-                  sp:subject [
-                      sp:varName "entity"^^xsd:string ;
-                    ] ;
-                ]
-              ) ;
-          ]
-          [
-            rdf:type sp:Optional ;
-            sp:elements (
-                [
-                  sp:object [
-                      sp:varName "euWp1RelatedRole"^^xsd:string ;
-                    ] ;
-                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#relatedRole> ;
-                  sp:subject [
-                      sp:varName "entity"^^xsd:string ;
-                    ] ;
-                ]
-              ) ;
-          ]
-          [
-            rdf:type sp:Optional ;
-            sp:elements (
-                [
-                  sp:object [
-                      sp:varName "euWp1FunctionOrService"^^xsd:string ;
-                    ] ;
-                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#businessFunctionService> ;
-                  sp:subject [
-                      sp:varName "entity"^^xsd:string ;
-                    ] ;
-                ]
-              ) ;
-          ]
-          [
-            rdf:type sp:Optional ;
-            sp:elements (
-                [
-                  sp:object [
-                      sp:varName "aDWPOriginalFocus"^^xsd:string ;
-                    ] ;
-                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#aDWPOriginalFocus> ;
-                  sp:subject [
-                      sp:varName "entity"^^xsd:string ;
-                    ] ;
-                ]
-              ) ;
-          ]
-          [
-            rdf:type sp:Optional ;
-            sp:elements (
-                [
-                  sp:object [
-                      sp:varName "archiMateTerminologyLayers"^^xsd:string ;
-                    ] ;
-                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#archiMateTerminologyLayers> ;
-                  sp:subject [
-                      sp:varName "entity"^^xsd:string ;
-                    ] ;
-                ]
-              ) ;
-          ]
-          [
-            rdf:type sp:Optional ;
-            sp:elements (
-                [
-                  sp:object [
-                      sp:varName "euWp1FunctionOrService"^^xsd:string ;
-                    ] ;
-                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#businessFunctionService> ;
-                  sp:subject [
-                      sp:varName "entity"^^xsd:string ;
-                    ] ;
-                ]
-              ) ;
-          ]
-          [
-            rdf:type sp:Optional ;
-            sp:elements (
-                [
-                  sp:object [
-                      sp:varName "columnD"^^xsd:string ;
-                    ] ;
-                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#colD> ;
-                  sp:subject [
-                      sp:varName "entity"^^xsd:string ;
-                    ] ;
-                ]
-              ) ;
-          ]
-          [
-            rdf:type sp:Optional ;
-            sp:elements (
-                [
-                  sp:object [
-                      sp:varName "distributionGridMgmt"^^xsd:string ;
-                    ] ;
-                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#distributionGridMgmt> ;
-                  sp:subject [
-                      sp:varName "entity"^^xsd:string ;
-                    ] ;
-                ]
-              ) ;
-          ]
-          [
-            rdf:type sp:Optional ;
-            sp:elements (
-                [
-                  sp:object [
-                      sp:varName "homeworkBlocks"^^xsd:string ;
-                    ] ;
-                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#homeworkBlocks> ;
-                  sp:subject [
-                      sp:varName "entity"^^xsd:string ;
-                    ] ;
-                ]
-              ) ;
-          ]
-          [
-            rdf:type sp:Optional ;
-            sp:elements (
-                [
-                  sp:object [
-                      sp:varName "nAESB"^^xsd:string ;
-                    ] ;
-                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#nAESB> ;
-                  sp:subject [
-                      sp:varName "entity"^^xsd:string ;
-                    ] ;
-                ]
-              ) ;
-          ]
-          [
-            rdf:type sp:Optional ;
-            sp:elements (
-                [
-                  sp:object [
-                      sp:varName "relatedRole"^^xsd:string ;
-                    ] ;
-                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#relatedRole> ;
-                  sp:subject [
-                      sp:varName "entity"^^xsd:string ;
-                    ] ;
-                ]
-              ) ;
-          ]
-          [
-            rdf:type sp:Optional ;
-            sp:elements (
-                [
-                  sp:object [
-                      sp:varName "rolefromRoleTab"^^xsd:string ;
-                    ] ;
-                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#rolefromRoleTab> ;
-                  sp:subject [
-                      sp:varName "entity"^^xsd:string ;
-                    ] ;
-                ]
-              ) ;
-          ]
-          [
-            rdf:type sp:Optional ;
-            sp:elements (
-                [
-                  sp:object [
-                      sp:varName "uSEUInput"^^xsd:string ;
-                    ] ;
-                  sp:predicate <http://sv.cmu.edu/AWP/8.0/props#uSEUInput> ;
-                  sp:subject [
-                      sp:varName "entity"^^xsd:string ;
-                    ] ;
-                ]
-              ) ;
-          ]
-        ) ;
-      rdfs:comment "003 Spreadsheet generator showing all columns in arbitrary order"^^xsd:string ;
     ] ;
 .
