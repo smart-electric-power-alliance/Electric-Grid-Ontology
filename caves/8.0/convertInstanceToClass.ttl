@@ -1,0 +1,116 @@
+# baseURI: http://sv.cmu.edu/AWP/8.0/convertInstanceToClass
+# imports: http://spinrdf.org/spl
+
+@prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix ar: <http://sv.cmu.edu/AWP/8.0/ActorRoles#> .
+@prefix arg: <http://spinrdf.org/arg#> .
+@prefix convertInstanceToClass: <http://example.org/convertInstanceToClass#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix spl: <http://spinrdf.org/spl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ar:Entity
+  spin:rule [
+      rdf:type sp:Construct ;
+      sp:templates (
+          [
+            sp:object owl:Class ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object ar:SpreadsheetClasses ;
+            sp:predicate rdfs:subClassOf ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:where () ;
+      rdfs:comment "001 Declare the instances as classes"^^xsd:string ;
+    ] ;
+.
+ar:SpreadsheetClasses
+  rdf:type owl:Class ;
+  spin:rule [
+      rdf:type sp:Construct ;
+      sp:templates (
+          [
+            sp:object _:b66790 ;
+            sp:predicate rdfs:subClassOf ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object owl:Restriction ;
+            sp:predicate rdf:type ;
+            sp:subject _:b66790 ;
+          ]
+          [
+            sp:object [
+                sp:varName "object"^^xsd:string ;
+              ] ;
+            sp:predicate owl:allValuesFrom ;
+            sp:subject _:b66790 ;
+          ]
+          [
+            sp:object [
+                sp:varName "pred"^^xsd:string ;
+              ] ;
+            sp:predicate owl:onProperty ;
+            sp:subject _:b66790 ;
+          ]
+        ) ;
+      sp:where (
+          [
+            sp:object [
+                sp:varName "object"^^xsd:string ;
+              ] ;
+            sp:predicate [
+                sp:varName "pred"^^xsd:string ;
+              ] ;
+            sp:subject spin:_this ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type afn:namespace ;
+                sp:arg1 [
+                    sp:varName "pred"^^xsd:string ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "namespace"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Filter ;
+            sp:expression [
+                rdf:type sp:eq ;
+                sp:arg1 [
+                    sp:varName "namespace"^^xsd:string ;
+                  ] ;
+                sp:arg2 "http://sv.cmu.edu/AWP/8.0/ActorRoles#" ;
+              ] ;
+          ]
+        ) ;
+    ] ;
+  rdfs:subClassOf owl:Thing ;
+.
+<http://sv.cmu.edu/AWP/8.0/convertInstanceToClass>
+  rdf:type owl:Ontology ;
+  rdfs:comment """This file adds SPIN rules to declare all instances of http://sv.cmu.edu/AWP/8.0/ActorRoles#Entity to be OWL classes, and then declares any associations that the instances have that are in the http://sv.cmu.edu/AWP/8.0/ActorRoles# namespace to be restrictions on the class. The result is that you can then use all the normal TBC editing tools to create instances one meta-level down, corresponding to actual Actor instances, Service instances, etc. in the real world.
+
+To use this file:
+Open convertInstanceToClass.ttl
+Import the version of the working file you intend.
+Run inference engine
+
+Assert all to graph (and choose the graph corresponding to <convertInstanceToClass>)
+Change the base URI to some new name
+SaveAs <some different file name that is consistent with the new URI>
+"""^^xsd:string ;
+  owl:imports <http://spinrdf.org/spl> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
