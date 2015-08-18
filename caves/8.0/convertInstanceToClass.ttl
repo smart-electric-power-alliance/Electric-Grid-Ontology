@@ -13,8 +13,19 @@
 @prefix spl: <http://spinrdf.org/spl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+spin:ruleWave1
+  rdf:type spin:RuleProperty ;
+  spin:nextRuleProperty spin:ruleWave2 ;
+  rdfs:subPropertyOf spin:rule ;
+.
+spin:ruleWave2
+  rdf:type spin:RuleProperty ;
+  spin:nextRuleProperty spin:rule ;
+  rdfs:subPropertyOf spin:rule ;
+.
 ar:Entity
-  spin:rule [
+  rdf:type owl:Class ;
+  spin:ruleWave1 [
       rdf:type sp:Construct ;
       sp:templates (
           [
@@ -24,17 +35,18 @@ ar:Entity
           ]
           [
             sp:object ar:SpreadsheetClasses ;
-            sp:predicate rdfs:subClassOf ;
+            sp:predicate rdf:type ;
             sp:subject spin:_this ;
           ]
         ) ;
       sp:where () ;
       rdfs:comment "001 Declare the instances as classes"^^xsd:string ;
     ] ;
+  rdfs:subClassOf owl:Thing ;
 .
 ar:SpreadsheetClasses
   rdf:type owl:Class ;
-  spin:rule [
+  spin:ruleWave2 [
       rdf:type sp:Construct ;
       sp:templates (
           [
