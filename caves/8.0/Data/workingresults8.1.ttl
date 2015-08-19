@@ -198,7 +198,7 @@ entity:Accounting-12
 .
 entity:AccountingPointResponsible-13
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:description_0 "Responsible for the maintenance and mapping between the logical registers and the accounting points in compliance with local market rules"^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "AccountingPoint responsible"^^xsd:string ;
@@ -1020,7 +1020,7 @@ entity:BalancingAuthority-market--73
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Balancing Authority (market)"^^xsd:string ;
   props:harmonizationNotes "unclear if rows 76 & 77 are different"^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "conceptual"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:homeworkBlocks "07:00:00"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 5 Trans. And Market"^^xsd:string ;
@@ -2002,8 +2002,10 @@ entity:CommunicationNetworks-138
 .
 entity:CommunicationNodes-139
   rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Communication Nodes"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:homeworkBlocks "07:00:00"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 3 REP and ICT"^^xsd:string ;
@@ -2391,7 +2393,7 @@ NOTE: As the consumer can also generate energy using a Distributed Energy Resour
   props:entityName "Consumer"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "ENTSO-E Role model updated by SMCG"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H1"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "166"^^xsd:int ;
   rdfs:label "Consumer"^^xsd:string ;
@@ -2399,13 +2401,14 @@ NOTE: As the consumer can also generate energy using a Distributed Energy Resour
 entity:Consumer-167
   rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
+  props:dKERepository "X"^^xsd:string ;
   props:description_0 """A party that consumes electricity.
 Additional information:This is a type of Party Connected to the Grid"""^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "Consumer"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H2"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "167"^^xsd:int ;
   rdfs:label "Consumer"^^xsd:string ;
@@ -2418,7 +2421,7 @@ entity:Consumer-168
   props:entityName "Consumer"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "Electric-transportation (ET)"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "d"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "168"^^xsd:int ;
   rdfs:label "Consumer"^^xsd:string ;
@@ -2490,6 +2493,7 @@ entity:ConsumptionResponsibleParty-173
 Additional information:This is a type of Balance Responsible Party"""^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "Consumption Responsible Party"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -2659,7 +2663,7 @@ entity:ControlBlockServices-184
 .
 entity:ControlCenter-185
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 ""^^xsd:string ;
   props:entityName "Control Center"^^xsd:string ;
@@ -3358,9 +3362,11 @@ entity:CustomerSupport-CS--233
 .
 entity:DCEPS-238
   rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "A Local EPS that operates direct current"^^xsd:string ;
   props:entityName "DC EPS"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 0 EPS"^^xsd:string ;
   tables:rowIndex "238"^^xsd:int ;
@@ -3385,11 +3391,12 @@ entity:DCLoads-239
 entity:DER-260
   rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
   props:description_0 "Generic Distributed Energy Resource - \"DER devices are generation and energy storage systems that are connected to a power distribution system\""^^xsd:string ;
   props:entityName "DER"^^xsd:string ;
   props:gUC "X"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:note "GUC"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -3439,9 +3446,11 @@ entity:DERControllableLoad-generic--263
 entity:DERController-generic--264
   rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Controller of DER unit"^^xsd:string ;
   props:entityName "DER Controller (generic)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 1 DER"^^xsd:string ;
   tables:rowIndex "264"^^xsd:int ;
@@ -3464,9 +3473,11 @@ entity:DERDetector-265
 entity:DERGeneratingUnit-generic--266
   rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "DER unit that includes generation of electrical energy"^^xsd:string ;
   props:entityName "DER Generating Unit (generic)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 1 DER"^^xsd:string ;
   tables:rowIndex "266"^^xsd:int ;
@@ -3500,10 +3511,11 @@ entity:DERManagement-268
 entity:DERManagementSystem-269
   rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
   props:description_0 "which provides applications to monitor and control a set of DER"^^xsd:string ;
   props:entityName "DER Management System"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "0.0"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -3524,9 +3536,11 @@ entity:DERManagementSystem-DERMS--generic--270
 .
 entity:DERMeter-271
   rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Meter that records the energy produced within specified time periods, energy used within specified time periods for DER charging of storage, and demand curves of DER generation and storage over time"^^xsd:string ;
   props:entityName "DER Meter"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 1 DER"^^xsd:string ;
   tables:rowIndex "271"^^xsd:int ;
@@ -3559,9 +3573,11 @@ entity:DEROwner-generic--274
 .
 entity:DERProtectionFunction-275
   rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Safety-related function to prevent harm to personnel, the DER system, and/or other electrical equipment"^^xsd:string ;
   props:entityName "DER Protection Function"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 1 DER"^^xsd:string ;
   tables:rowIndex "275"^^xsd:int ;
@@ -3600,9 +3616,11 @@ entity:DERResourceAvailability-277
 entity:DERServices-generic--273
   rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Responsible party for operational aspects of the facilities and their DER systems (generation, storage, and controllable load)"^^xsd:string ;
   props:entityName "DER Services (generic)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 2 FDEMS"^^xsd:string ;
   tables:rowIndex "273"^^xsd:int ;
@@ -3611,9 +3629,11 @@ entity:DERServices-generic--273
 entity:DERStorageUnit-generic--278
   rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "DER unit that includes energy storage that can be converted to electrical energy"^^xsd:string ;
   props:entityName "DER Storage Unit (generic)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 1 DER"^^xsd:string ;
   tables:rowIndex "278"^^xsd:int ;
@@ -3654,9 +3674,11 @@ entity:DERSupportServices-280
 entity:DERSystem-generic--281
   rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Combined DER controller and DER unit, including generators, energy storage, and controllable load"^^xsd:string ;
   props:entityName "DER System (generic)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 1 DER"^^xsd:string ;
   tables:rowIndex "281"^^xsd:int ;
@@ -3665,9 +3687,11 @@ entity:DERSystem-generic--281
 entity:DERUnit-generic--282
   rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Prime mover and converter to and/or from electrical energy, , including generators, energy storage, and controllable load"^^xsd:string ;
   props:entityName "DER Unit (generic)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 1 DER"^^xsd:string ;
   tables:rowIndex "282"^^xsd:int ;
@@ -3746,9 +3770,11 @@ entity:DSOPlanner-372
 entity:DSOServices-371
   rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "ServiceCollaboration responsible for making decisions for operating the distribution power system"^^xsd:string ;
   props:entityName "DSO Services"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 4 DSO"^^xsd:string ;
   tables:rowIndex "371"^^xsd:int ;
@@ -3756,10 +3782,11 @@ entity:DSOServices-371
 .
 entity:DSOSystem-373
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
   props:entityName "DSO System"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "Distribution Grid Management/Microgrid"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -3968,9 +3995,11 @@ service"""^^xsd:string ;
 .
 entity:DemandResponse-DR-PricingSchedule-245
   rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Schedule provided by REPs, DSOs, TSO, and others to indicate contractual and/or forecast prices for energy and ancillary services during specific time periods"^^xsd:string ;
   props:entityName "Demand Response (DR) Pricing Schedule"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 5 Trans. And Market"^^xsd:string ;
   tables:rowIndex "245"^^xsd:int ;
@@ -4123,9 +4152,10 @@ entity:DeploymentManagement-259
 .
 entity:Design-MCDGN--283
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:description_0 "A design is created by an engineer or work planner. Designs can be made up of individual line items or by a set of â€œcompatible unitsâ€� or CUs. Line items and compatible units are associated with a Design Location which is associated with a design location."^^xsd:string ;
   props:entityName "Design (MC-DGN)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -4364,11 +4394,12 @@ entity:DeviceModeling-300
 .
 entity:Devices-301
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "-"^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
   props:entityName "Devices"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:new "-"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "301"^^xsd:int ;
