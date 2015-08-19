@@ -21,12 +21,6 @@
 @prefix ss2owl: <http://sv.cmu.edu/ss2owl.3#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://sv.cmu.edu/AWP/8.0/ss2owl.1>
-  rdf:type owl:Ontology ;
-  owl:imports <http://sv.cmu.edu/AWP/8.0/ActorRoles> ;
-  owl:imports <http://sv.cmu.edu/AWP/8.0/props> ;
-  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
-.
 props:Combined-Elements-noduprows
   rdf:type owl:Class ;
   spin:rule [
@@ -524,6 +518,34 @@ props:Combined-Elements-noduprows
       rdf:type sp:Modify ;
       sp:deletePattern (
           [
+            sp:object props:Combined-Elements-noduprows ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:where (
+          [
+            rdf:type sp:TriplePath ;
+            sp:object ar:Entity ;
+            sp:path [
+                rdf:type sp:SeqPath ;
+                sp:path1 rdf:type ;
+                sp:path2 [
+                    rdf:type sp:ModPath ;
+                    sp:modMax -2 ;
+                    sp:modMin 1 ;
+                    sp:subPath rdfs:subClassOf ;
+                  ] ;
+              ] ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      rdfs:comment "042 Remove the original type assignment for the newly defined entities"^^xsd:string ;
+    ] ;
+  spin:rule [
+      rdf:type sp:Modify ;
+      sp:deletePattern (
+          [
             sp:object [
                 sp:varName "object"^^xsd:string ;
               ] ;
@@ -905,4 +927,9 @@ props:Combined-Elements-noduprows
     ] ;
   rdfs:label "Combined-Elements-noduprows" ;
 .
-
+<http://sv.cmu.edu/AWP/8.0/ss2owl.1>
+  rdf:type owl:Ontology ;
+  owl:imports <http://sv.cmu.edu/AWP/8.0/ActorRoles> ;
+  owl:imports <http://sv.cmu.edu/AWP/8.0/props> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
