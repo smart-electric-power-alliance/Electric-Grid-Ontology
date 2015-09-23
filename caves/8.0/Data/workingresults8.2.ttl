@@ -3093,11 +3093,12 @@ entity:CustomerEnergyManagementSystem-CEMS--213
   rdfs:label "customer Energy Management System ( CEMS)"^^xsd:string ;
 .
 entity:CustomerEnergyManagementSystem-CEMS--214
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  rdf:type ar:LogicalServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "In this usecase, the CEMS functionality is a part of the SGCP"^^xsd:string ;
   props:entityName "Customer Energy Management System (CEMS)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "Smart Home/Commercial/Industrial/DR-Customer EMS"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -3251,10 +3252,11 @@ entity:CustomerPortal-225
   rdfs:label "Customer Portal"^^xsd:string ;
 .
 entity:CustomerPortal-226
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  rdf:type ar:LogicalService ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:description_0 "Web-server application which allows utility customers to register and login to retrieve information about their tariffs, consumption and other information"^^xsd:string ;
   props:entityName "Customer Portal"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iECSG3 "X"^^xsd:string ;
   props:note "SG3"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
@@ -3416,40 +3418,28 @@ entity:DER-260
   rdfs:label "DER"^^xsd:string ;
 .
 entity:DER-261
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 ""^^xsd:string ;
   props:entityName "DER"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "Distribution Grid Management/Microgrid"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
-  props:uSEUInput "EU"^^xsd:string ;
+  props:uSEUInput "EU; US"^^xsd:string ;
   tables:rowIndex "261"^^xsd:int ;
   rdfs:label "DER"^^xsd:string ;
 .
-entity:DER-262
-  rdf:type props:Combined-Elements-noduprows ;
-  <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
-  props:clusterLabel "p"^^xsd:string ;
-  props:dKERepository "X"^^xsd:string ;
-  props:description_0 ""^^xsd:string ;
-  props:eUSourceunknown "X"^^xsd:string ;
-  props:entityName "DER"^^xsd:string ;
-  props:new "-"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
-  props:uSEUInput "US"^^xsd:string ;
-  tables:rowIndex "262"^^xsd:int ;
-  rdfs:label "DER"^^xsd:string ;
-.
 entity:DERControllableLoad-generic--263
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualService ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "DER that consists primarily of a load that is allowed to be modified based on operating conditions, tariffs, contracts, or other criteria"^^xsd:string ;
   props:entityName "DER Controllable Load (generic)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 1 DER"^^xsd:string ;
   tables:rowIndex "263"^^xsd:int ;
@@ -3496,11 +3486,13 @@ entity:DERGeneratingUnit-generic--266
   rdfs:label "DER Generating Unit (generic)"^^xsd:string ;
 .
 entity:DERLog-267
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:PhysicalActor ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Log of significant events and alarms for use in market settlements, operational analysis, and other audit purposes"^^xsd:string ;
   props:entityName "DER Log"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 1 DER"^^xsd:string ;
   tables:rowIndex "267"^^xsd:int ;
@@ -3535,11 +3527,13 @@ entity:DERManagementSystem-269
   rdfs:label "DER Management System"^^xsd:string ;
 .
 entity:DERManagementSystem-DERMS--generic--270
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "System that manages the settings and dispatch of DER systems"^^xsd:string ;
   props:entityName "DER Management System (DER-MS) (generic)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 2 FDEMS"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
@@ -3574,10 +3568,12 @@ entity:DEROperation-272
   rdfs:label "DER operation"^^xsd:string ;
 .
 entity:DEROwner-generic--274
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Responsible party for market and financial decisions  and contracts related to the facilities and their DER systems (generation, storage, and controllable load)"^^xsd:string ;
   props:entityName "DER Owner (generic)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 2 FDEMS"^^xsd:string ;
   tables:rowIndex "274"^^xsd:int ;
@@ -3770,11 +3766,13 @@ entity:DSODEREMS-DDEMS--370
   rdfs:label "DSO DER EMS (DDEMS)"^^xsd:string ;
 .
 entity:DSOPlanner-372
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalService ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Planner"^^xsd:string ;
   props:entityName "DSO Planner"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 4 DSO"^^xsd:string ;
   tables:rowIndex "372"^^xsd:int ;
@@ -4019,10 +4017,12 @@ entity:DemandResponse-DR-PricingSchedule-245
   rdfs:label "Demand Response (DR) Pricing Schedule"^^xsd:string ;
 .
 entity:DemandResponse-DR-System-246
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualService ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "System providing demand response pricing information for different energy products during different time frames"^^xsd:string ;
   props:entityName "Demand Response (DR) System"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 5 Trans. And Market"^^xsd:string ;
   tables:rowIndex "246"^^xsd:int ;
@@ -4042,10 +4042,11 @@ entity:DemandResponseAuditor-247
   rdfs:label "Demand Response Auditor"^^xsd:string ;
 .
 entity:DemandResponseManagementSystem-248
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  rdf:type ar:LogicalServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "a system or an application which maintains the control of many load devices to curtail their energy consumption in response to energy shortages or high energy prices."^^xsd:string ;
   props:entityName "Demand Response Management System"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "SG3"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -4522,28 +4523,18 @@ entity:DispatchMaintenanceTeams-308
   rdfs:label "dispatch maintenance teams"^^xsd:string ;
 .
 entity:Display-309
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  rdf:type ar:PhysicalActor ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
   props:entityName "Display"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:new "-"^^xsd:string ;
+  props:note "Smart Home/Commercial/Industrial/DR-Customer EMS"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "309"^^xsd:int ;
-  rdfs:label "Display"^^xsd:string ;
-.
-entity:Display-310
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
-  props:dKERepository "X"^^xsd:string ;
-  props:description_0 ""^^xsd:string ;
-  props:entityName "Display"^^xsd:string ;
-  props:note "Smart Home/Commercial/Industrial/DR-Customer EMS"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
-  props:uSEUInput "EU"^^xsd:string ;
-  tables:rowIndex "310"^^xsd:int ;
   rdfs:label "Display"^^xsd:string ;
 .
 entity:DisputeManagementService-311
@@ -4588,11 +4579,14 @@ entity:DistributedDataManagement-313
   rdfs:label "Distributed Data Management"^^xsd:string ;
 .
 entity:DistributedEnergyResource-DER--generic--314
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:PhysicalEntity ;
+  rdf:type ar:ServiceComposition ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "A distributed set of one or more energy service resources, including generators, energy storage, controllable load, and ancillary services"^^xsd:string ;
   props:entityName "Distributed Energy Resource (DER) (generic)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 1 DER"^^xsd:string ;
   tables:rowIndex "314"^^xsd:int ;
@@ -4653,12 +4647,13 @@ entity:DistributedGeneration-317
   rdfs:label "Distributed Generation"^^xsd:string ;
 .
 entity:DistributedGeneration-318
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  rdf:type ar:ConceptualServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "-"^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
   props:entityName "Distributed Generation"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:new "-"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
@@ -4793,10 +4788,12 @@ entity:DistributedWind-325
   rdfs:label "Distributed Wind"^^xsd:string ;
 .
 entity:Distribution-DERSCADASystem-363
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Distribution/DER SCADA System"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 4 DSO"^^xsd:string ;
   tables:rowIndex "363"^^xsd:int ;
@@ -4977,11 +4974,12 @@ entity:DistributionInterconnectEstimator-335
   rdfs:label "Distribution Interconnect  Estimator"^^xsd:string ;
 .
 entity:DistributionManagementSystem-336
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  rdf:type ar:LogicalServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
   props:description_0 "a system which provides applications to monitor and control a distribution grid from a centralized location, typically the control center. A DMS typically has interfaces to other systems, like an GIS or an OMS"^^xsd:string ;
   props:entityName "Distribution Management System"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "SG3"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -5041,10 +5039,11 @@ entity:DistributionMeasure-339
   rdfs:label "Distribution Measure"^^xsd:string ;
 .
 entity:DistributionNetworkServicesDNO-340
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  rdf:type ar:ConceptualServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Organization responsible for managing the electricity, gas, heat and/or water network supplying consumer premises.Also referred to as DSO."^^xsd:string ;
   props:entityName "Distribution Network Services DNO"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "SMCG"^^xsd:string ;
   props:sMCG "X"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -5065,11 +5064,14 @@ entity:DistributionNetworkSimulation-341
   rdfs:label "Distribution network simulation"^^xsd:string ;
 .
 entity:DistributionOperationsModelAndAnalysis-DOMA--342
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:PhysicalEntity ;
+  rdf:type ar:ServiceComposition ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Topological model of distribution system, including the location and profile characteristics of all distribution equipment and DER systems (individually and/or in aggregate). This model is derived from the geographic model in the GIS, the facilities information (often included in the GIS and/or an asset management database), and the DER profiles (derived from the CIS and DER characteristics database)"^^xsd:string ;
   props:entityName "Distribution Operations Model and Analysis (DOMA)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 4 DSO"^^xsd:string ;
   tables:rowIndex "342"^^xsd:int ;
@@ -5278,11 +5280,13 @@ entity:DistributionSystemFieldEquipmentConfigurationManagement--355
   rdfs:label "Distribution System Field Equipment Configuration Management:"^^xsd:string ;
 .
 entity:DistributionSystemPowerFlow-DSPF--360
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Application that determines the power flows of the distribution system, using the DOMA model"^^xsd:string ;
   props:entityName "Distribution System Power Flow (DSPF)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 4 DSO"^^xsd:string ;
   tables:rowIndex "360"^^xsd:int ;
@@ -5382,12 +5386,13 @@ entity:DistributionsOperationsTraining-364
   rdfs:label "Distributions operations training"^^xsd:string ;
 .
 entity:DistrubutionIED-365
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  rdf:type ar:PhysicalActor ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
   props:entityName "Distrubution IED"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:new "-"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "365"^^xsd:int ;
@@ -5436,43 +5441,50 @@ entity:DynamicSystemConfiguration-377
   rdfs:label "Dynamic system configuration"^^xsd:string ;
 .
 entity:EMobilityServiceProvider-eMSP--410
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  rdf:type ar:ConceptualServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
   props:entityName "e-Mobility Service Provider (eMSP)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:new "-"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "410"^^xsd:int ;
   rdfs:label "e-Mobility Service Provider (eMSP)"^^xsd:string ;
 .
 entity:EPSSwitch-466
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:PhysicalEntity ;
+  rdf:type ar:ServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Switch plus its controller within an EPS"^^xsd:string ;
   props:entityName "EPS switch"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 0 EPS"^^xsd:string ;
   tables:rowIndex "466"^^xsd:int ;
   rdfs:label "EPS switch"^^xsd:string ;
 .
 entity:ESCOEnergyServicesCompany-477
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  rdf:type ar:ConceptualServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "-"^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
   props:entityName "ESCO Energy Services Company"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:new "-"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "477"^^xsd:int ;
   rdfs:label "ESCO Energy Services Company"^^xsd:string ;
 .
 entity:EVPricingProgram-478
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalService ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Special pricing for charging EVs"^^xsd:string ;
   props:entityName "EV Pricing Program"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   props:note "Lvl 5 Trans. And Market"^^xsd:string ;
   tables:rowIndex "478"^^xsd:int ;
@@ -5746,12 +5758,13 @@ entity:ElectricVehicleServiceElement-394
 .
 entity:ElectricVehicleServiceProvider-PEVSP--395
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
   props:entityName "Electric Vehicle Service Provider (PEV-SP)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:new "-"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "395"^^xsd:int ;
@@ -5804,19 +5817,22 @@ entity:ElectricalContractor-399
 .
 entity:ElectricalPointOfConnection-ECP--402
   rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Point of electrical connection between the DER source or sink of energy and any EPS. Each DER unit has an ECP connecting it to its local power system; groups of DER units have an ECP where they interconnect to the power system at a specific site or plant; a group of DER units plus local loads have an ECP where they are interconnected to the utility power system. NOTE?For those ECPs between a utility EPS and a plant or site EPS, this point is identical to the point of common coupling (PCC) in the IEEE 1547 \"Standard for Interconnecting Distributed Resources with Electric Power Systems\"."^^xsd:string ;
   props:entityName "Electrical Point of Connection (ECP)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
   tables:rowIndex "402"^^xsd:int ;
   rdfs:label "Electrical Point of Connection (ECP)"^^xsd:string ;
 .
 entity:ElectricityInstaller-Contractor-400
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Electrical contractors design, install and maintain intelligent systems for all kinds of industrial, commercial and domestic purposes. Alongside the power and lighting applications, they equally install ICT and telecommunications, public street lighting, high medium and low voltage lines, control and energy management systems, access, fire and security control equipment, lightning protection systems, advertising and identification signs, emergency power generating systems and renewable energy systems."^^xsd:string ;
   props:eG3 "X"^^xsd:string ;
   props:entityName "Electricity Installer / Contractor"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "EG3"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -6031,11 +6047,12 @@ entity:EndUserCommunications-416
 .
 entity:Energy-eMobility-Services-417
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:ahGCharging "X"^^xsd:string ;
   props:description_0 "A party offering specific services for the charge management of electric vehicles. Services included in the EV Charging Energy (e-Mobility) Service. This role is at the interface of the mobility world, which includes the vehicle (including all associated domains with the electric world), and the energy supply (including all the associated domains). Such type of operator will ease the interface with customers, allowing a good optimization of the charge management to the user needs. An Energy (e-Mobility) Service Operator could offer, at the same time, charge reservation either on its own or through subscription to the Area Energy Service Operator. Additional information: an Energy (e-Mobility) Service Operator could be considered as an Aggregator for specific services linked to the charge management. One benefit of a Energy (e-Mobility) Service Operator offering EV Charging Energy (e-Mobility) Services is to offer, from customer point of view, only one interface for the service, regardless the location it will be provided."^^xsd:string ;
   props:entityName """Energy (eMobility) Services
 """^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "AhG Charging"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "417"^^xsd:int ;
@@ -6250,10 +6267,11 @@ This gateway may also provide services including protocol conversion, device man
 .
 entity:EnergyManagementLAN-432
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "Virtual field bus in the smart home, mainly used for energy management functions"^^xsd:string ;
   props:entityName "Energy Management LAN"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:note "DKE Repository"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "432"^^xsd:int ;
@@ -18637,4 +18655,33 @@ props:Combined-Elements-noduprows
   owl:imports <http://sv.cmu.edu/AWP/8.0/ActorRoles> ;
   owl:imports <http://sv.cmu.edu/AWP/8.0/constraints> ;
   owl:imports <http://sv.cmu.edu/AWP/8.0/props> ;
+.
+owl:Thing
+  spin:query [
+      rdf:type sp:Select ;
+      sp:where (
+          [
+            sp:object [
+                sp:varName "o"^^xsd:string ;
+              ] ;
+            sp:predicate [
+                sp:varName "p"^^xsd:string ;
+              ] ;
+            sp:subject [
+                sp:varName "s"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Filter ;
+            sp:expression [
+                rdf:type sp:regex ;
+                sp:arg1 [
+                    sp:varName "o"^^xsd:string ;
+                  ] ;
+                sp:arg2 "der" ;
+              ] ;
+          ]
+        ) ;
+      rdfs:comment "004 Find arbitrary string value anywhere, not just name"^^xsd:string ;
+    ] ;
 .
