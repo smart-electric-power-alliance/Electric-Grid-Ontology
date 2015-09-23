@@ -3747,7 +3747,7 @@ entity:DSO-369
   rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
-  props:description_0 "-"^^xsd:string ;
+  props:description_0 "- "^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
   props:entityName "DSO"^^xsd:string ;
   props:new "-"^^xsd:string ;
