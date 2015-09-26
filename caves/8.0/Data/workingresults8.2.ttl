@@ -3403,14 +3403,14 @@ entity:DCLoads-239
   rdfs:label "DC Loads"^^xsd:string ;
 .
 entity:DER-260
-  rdf:type ar:PhysicalActor ;
+  rdf:type ar:ConceptualServiceComposition ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
-  props:actorServiceCompositionService "Actor"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
   props:description_0 "Generic Distributed Energy Resource - \"DER devices are generation and energy storage systems that are connected to a power distribution system\""^^xsd:string ;
   props:entityName "DER"^^xsd:string ;
   props:gUC "X"^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "GUC"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -3431,6 +3431,36 @@ entity:DER-261
   props:uSEUInput "EU; US"^^xsd:string ;
   tables:rowIndex "261"^^xsd:int ;
   rdfs:label "DER"^^xsd:string ;
+.
+entity:DER-264
+  rdf:type ar:LogicalServiceComposition ;
+  <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
+  props:clusterLabel "p"^^xsd:string ;
+  props:dKERepository "X"^^xsd:string ;
+  props:description_0 "Provides voltage support"^^xsd:string ;
+  props:entityName "DER Generation"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
+  props:note "Distribution Grid Management/Microgrid"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:uSEUInput "EU"^^xsd:string ;
+  tables:rowIndex "264"^^xsd:int ;
+  rdfs:label "DER Geneeration"^^xsd:string ;
+.
+entity:DER-265
+  rdf:type ar:LogicalServiceComposition ;
+  <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
+  props:clusterLabel "p"^^xsd:string ;
+  props:dKERepository "X"^^xsd:string ;
+  props:description_0 "Provides load management services"^^xsd:string ;
+  props:eUSourceunknown "X"^^xsd:string ;
+  props:entityName "DER Load Management"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:uSEUInput "US"^^xsd:string ;
+  tables:rowIndex "265"^^xsd:int ;
+  rdfs:label "DER Load Management"^^xsd:string ;
 .
 entity:DERControllableLoad-generic--263
   rdf:type ar:ConceptualService ;
@@ -3744,7 +3774,6 @@ entity:DRSupportService-368
   rdfs:label "DR support service"^^xsd:string ;
 .
 entity:DSO-369
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "- "^^xsd:string ;
@@ -3756,7 +3785,6 @@ entity:DSO-369
   rdfs:label "DSO"^^xsd:string ;
 .
 entity:DSODEREMS-DDEMS--370
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "DSO DER EMS (DDEMS)"^^xsd:string ;
@@ -3805,7 +3833,6 @@ entity:DSOSystem-373
   rdfs:label "DSO System"^^xsd:string ;
 .
 entity:DSOSystem-374
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
@@ -3818,7 +3845,6 @@ entity:DSOSystem-374
   rdfs:label "DSO System"^^xsd:string ;
 .
 entity:DataAggregator-234
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 """Devices, which are intermediate machines in a communication network, can aggregate the same timing data 
 from field sensing devices."""^^xsd:string ;
@@ -3831,7 +3857,6 @@ from field sensing devices."""^^xsd:string ;
   rdfs:label "Data Aggregator"^^xsd:string ;
 .
 entity:DataAggregator-235
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "-"^^xsd:string ;
@@ -5011,7 +5036,6 @@ entity:DistributionManagementSystem-337
   rdfs:label "Distribution Management System"^^xsd:string ;
 .
 entity:DistributionManagementSystem-DMS--338
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Generic term for all applications used for distribution management."^^xsd:string ;
@@ -5156,7 +5180,6 @@ entity:DistributionRecordService-348
   rdfs:label "Distribution Record Service"^^xsd:string ;
 .
 entity:DistributionSCADASystem-DSCADA--349
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Distribution SCADA System (DSCADA)"^^xsd:string ;
@@ -5312,7 +5335,6 @@ entity:DistributionSystemServices-356
   rdfs:label "Distribution System Services"^^xsd:string ;
 .
 entity:DistributionSystemServices-DSO--357
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "according to the Article 2.6 of the Directive: \"a natural or legal person responsible for operating, ensuring the maintenance of and, if necessary, developing the distribution system in a given area and, where applicable, its interconnections with other systems and for ensuring the long-term ability of the system to meet reasonable demands for the distribution of electricity\". Moreover, the DSO is responsible for regional grid access and grid stability, integration of renewables at the distribution level and regional load balancing."^^xsd:string ;
   props:eG3 "X"^^xsd:string ;
@@ -5324,7 +5346,6 @@ entity:DistributionSystemServices-DSO--357
   rdfs:label "Distribution System Services (DSO)"^^xsd:string ;
 .
 entity:DistributionSystemServices-DSO--358
-  rdf:type props:Combined-Elements-noduprows ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Utility responsible for operating the distribution power system"^^xsd:string ;
   props:entityName "Distribution System Services (DSO)"^^xsd:string ;
@@ -5335,7 +5356,6 @@ entity:DistributionSystemServices-DSO--358
   rdfs:label "Distribution System Services (DSO)"^^xsd:string ;
 .
 entity:DistributionSystemServices-DSO--359
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "according to the Article 2.6 of the Directive: \"a natural or legal person responsible for operating, ensuring the maintenance of and, if necessary, developing the distribution system in a given area and, where applicable, its interconnections with other systems and for ensuring the long-term ability of the system to meet reasonable demands for the distribution of electricity\". Moreover, the DSO is responsible for regional grid access and grid stability, integration of renewables at the distribution level and regional load balancing."^^xsd:string ;
@@ -5491,7 +5511,6 @@ entity:EVPricingProgram-478
   rdfs:label "EV Pricing Program"^^xsd:string ;
 .
 entity:EVSE-398
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
@@ -5532,7 +5551,6 @@ entity:EconomicLoadReduction-379
   rdfs:label "Economic load reduction"^^xsd:string ;
 .
 <http://sv.cmu.edu/AWP/8.0/entity#El.Vehicle-EV--380>
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
@@ -5544,7 +5562,6 @@ entity:EconomicLoadReduction-379
   rdfs:label "El. Vehicle (EV)"^^xsd:string ;
 .
 <http://sv.cmu.edu/AWP/8.0/entity#El.Vehicle-EV--381>
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
@@ -5557,7 +5574,6 @@ entity:EconomicLoadReduction-379
   rdfs:label "El. Vehicle (EV)"^^xsd:string ;
 .
 <http://sv.cmu.edu/AWP/8.0/entity#El.Vehicle-EV-PHV--382>
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "An vehicle with an electric drive (as only drive or in combination with a fuel engine) and a battery which can be charged at a charging station."^^xsd:string ;
@@ -5584,7 +5600,6 @@ entity:ElectricMeter-383
   rdfs:label "Electric Meter"^^xsd:string ;
 .
 entity:ElectricNetworkSP-384
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
@@ -5596,7 +5611,6 @@ entity:ElectricNetworkSP-384
   rdfs:label "Electric Network SP"^^xsd:string ;
 .
 entity:ElectricPowerSystem-EPS--generic--385
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Facilities that deliver electric power to a load"^^xsd:string ;
@@ -5682,7 +5696,6 @@ entity:ElectricVehicle-389
   rdfs:label "Electric Vehicle"^^xsd:string ;
 .
 entity:ElectricVehicle-EV--390
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Automobile which is powered completely or in part by electricity and whose battery can be charged from an EPS"^^xsd:string ;
@@ -5711,7 +5724,6 @@ entity:ElectricVehicle-TransportationSolutionProviders-391
   rdfs:label "Electric Vehicle / Transportation Solution Providers"^^xsd:string ;
 .
 entity:ElectricVehicleChargingSP-392
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
@@ -5724,7 +5736,6 @@ entity:ElectricVehicleChargingSP-392
   rdfs:label "Electric Vehicle Charging SP"^^xsd:string ;
 .
 entity:ElectricVehicleEMS-EVEMS--393
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "System that manages the settings for charging electric vehicles, including as DER systems"^^xsd:string ;
@@ -5757,7 +5768,7 @@ entity:ElectricVehicleServiceElement-394
   rdfs:label "Electric Vehicle Service Element"^^xsd:string ;
 .
 entity:ElectricVehicleServiceProvider-PEVSP--395
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualService ;
   props:actorServiceCompositionService "Service"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
@@ -5771,7 +5782,6 @@ entity:ElectricVehicleServiceProvider-PEVSP--395
   rdfs:label "Electric Vehicle Service Provider (PEV-SP)"^^xsd:string ;
 .
 entity:ElectricVehicleSupplyEquipment-EVSE--396
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Electric Vehicle Supply Equipment (EVSE)"^^xsd:string ;
@@ -5782,7 +5792,6 @@ entity:ElectricVehicleSupplyEquipment-EVSE--396
   rdfs:label "Electric Vehicle Supply Equipment (EVSE)"^^xsd:string ;
 .
 entity:ElectricVehicleSupplyEquipment-EVSE--397
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
@@ -5816,7 +5825,7 @@ entity:ElectricalContractor-399
   rdfs:label "Electrical Contractor"^^xsd:string ;
 .
 entity:ElectricalPointOfConnection-ECP--402
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:PhysicalActor ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Point of electrical connection between the DER source or sink of energy and any EPS. Each DER unit has an ECP connecting it to its local power system; groups of DER units have an ECP where they interconnect to the power system at a specific site or plant; a group of DER units plus local loads have an ECP where they are interconnected to the utility power system. NOTE?For those ECPs between a utility EPS and a plant or site EPS, this point is identical to the point of common coupling (PCC) in the IEEE 1547 \"Standard for Interconnecting Distributed Resources with Electric Power Systems\"."^^xsd:string ;
@@ -5827,7 +5836,7 @@ entity:ElectricalPointOfConnection-ECP--402
   rdfs:label "Electrical Point of Connection (ECP)"^^xsd:string ;
 .
 entity:ElectricityInstaller-Contractor-400
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Electrical contractors design, install and maintain intelligent systems for all kinds of industrial, commercial and domestic purposes. Alongside the power and lighting applications, they equally install ICT and telecommunications, public street lighting, high medium and low voltage lines, control and energy management systems, access, fire and security control equipment, lightning protection systems, advertising and identification signs, emergency power generating systems and renewable energy systems."^^xsd:string ;
   props:eG3 "X"^^xsd:string ;
@@ -5858,7 +5867,6 @@ entity:ElectricityInstallerContractor-401
   rdfs:label "Electricity Installer Contractor"^^xsd:string ;
 .
 <http://sv.cmu.edu/AWP/8.0/entity#ElectricitySP-El.SP--403>
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
@@ -6046,7 +6054,7 @@ entity:EndUserCommunications-416
   rdfs:label "End-user communications"^^xsd:string ;
 .
 entity:Energy-eMobility-Services-417
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:ahGCharging "X"^^xsd:string ;
   props:description_0 "A party offering specific services for the charge management of electric vehicles. Services included in the EV Charging Energy (e-Mobility) Service. This role is at the interface of the mobility world, which includes the vehicle (including all associated domains with the electric world), and the energy supply (including all the associated domains). Such type of operator will ease the interface with customers, allowing a good optimization of the charge management to the user needs. An Energy (e-Mobility) Service Operator could offer, at the same time, charge reservation either on its own or through subscription to the Area Energy Service Operator. Additional information: an Energy (e-Mobility) Service Operator could be considered as an Aggregator for specific services linked to the charge management. One benefit of a Energy (e-Mobility) Service Operator offering EV Charging Energy (e-Mobility) Services is to offer, from customer point of view, only one interface for the service, regardless the location it will be provided."^^xsd:string ;
@@ -6073,7 +6081,6 @@ entity:EnergyAssetAggregation-418
   rdfs:label "Energy Asset Aggregation"^^xsd:string ;
 .
 entity:EnergyB2BMarket-419
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:description_0 "The Energy B2B market is responsible for supplying electricity (and optionally e-pricing)"^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
@@ -6085,7 +6092,6 @@ entity:EnergyB2BMarket-419
   rdfs:label "Energy B2B market"^^xsd:string ;
 .
 entity:EnergyB2BMarket-420
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
@@ -6241,7 +6247,6 @@ entity:EnergyManagement-429
   rdfs:label "Energy Management"^^xsd:string ;
 .
 entity:EnergyManagementGateway-430
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "An access point (functional entity) sending and receiving smart grid related information and commands between actor A and the CEM, letting the CEM decide how to process the events. The communication is often achieved through an internet connection of through a wireless connection."^^xsd:string ;
   props:entityName "Energy Management Gateway"^^xsd:string ;
@@ -6253,7 +6258,6 @@ entity:EnergyManagementGateway-430
   rdfs:label "Energy Management Gateway"^^xsd:string ;
 .
 entity:EnergyManagementGateway-431
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 """An access point (functional entity) sending and receiving smart grid related information and commands between actor A and the CEM, letting the CEM decide how to process the events. The communication is often achieved through an internet connection of through a wireless connection.
@@ -6266,7 +6270,7 @@ This gateway may also provide services including protocol conversion, device man
   rdfs:label "Energy management gateway"^^xsd:string ;
 .
 entity:EnergyManagementLAN-432
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:PhysicalActor ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "Virtual field bus in the smart home, mainly used for energy management functions"^^xsd:string ;
@@ -6278,7 +6282,6 @@ entity:EnergyManagementLAN-432
   rdfs:label "Energy Management LAN"^^xsd:string ;
 .
 entity:EnergyManagementSystem-433
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "System which provides applications to monitor and control a transmission grid and the output of the connected power plants from a centralized location, typically the control center. A DMS typically has interfaces to other EMS"^^xsd:string ;
   props:entityName "Energy Management System"^^xsd:string ;
@@ -6326,7 +6329,6 @@ entity:EnergyManagementTechnicalSupport-435
   rdfs:label "Energy Management technical support"^^xsd:string ;
 .
 entity:EnergyManager-436
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "This gateway may also provide services including protocol conversion, device management, security and service capabilities"^^xsd:string ;
@@ -6357,7 +6359,6 @@ entity:EnergyMarketClearinghouse-437
   rdfs:label "Energy Market Clearinghouse"^^xsd:string ;
 .
 entity:EnergyMarketManagementSystem-438
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "System which provides applications to manage all transactions and workflows necessary to implement an energy market"^^xsd:string ;
   props:entityName "Energy Market Management System"^^xsd:string ;
@@ -6503,7 +6504,6 @@ entity:EnergyServiceProvider-447
   rdfs:label "Energy Service Provider"^^xsd:string ;
 .
 entity:EnergyServiceProviderESP-448
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "Organisation offering energy services to the consumer."^^xsd:string ;
   props:entityName "Energy Service Provider, ESP"^^xsd:string ;
@@ -6567,7 +6567,6 @@ service"""^^xsd:string ;
   rdfs:label "Energy Services Interface"^^xsd:string ;
 .
 entity:EnergyServicesInterface-ESI--451
-  rdf:type props:Combined-Elements-noduprows ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Energy Services Interface (ESI)"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
@@ -6678,7 +6677,6 @@ entity:EnergySupplyConfiguration-458
   rdfs:label "Energy Supply Configuration"^^xsd:string ;
 .
 entity:EnergyTradingApplication-459
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "Application(s) which are used to trade energy in corresponding markets, supports the dispatch in the decision to buy, sell or to self-produce energy and also provides facilities to exchange the necessary information with the Energy Market Management Systems"^^xsd:string ;
   props:entityName "Energy Trading Application"^^xsd:string ;
@@ -6701,7 +6699,6 @@ entity:EnergyUsageReporting-460
   rdfs:label "Energy Usage reporting"^^xsd:string ;
 .
 entity:EnterpriseResourcePlanning-ERP--461
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "Enterprise Resource Planning (ERP) systems integrate internal and external management information across an entire organization, embracing finance/accounting, manufacturing, sales and service, customer relationship management, etc. (source: Wikipedia)"^^xsd:string ;
   props:entityName "Enterprise Resource Planning (ERP)"^^xsd:string ;
@@ -7086,7 +7083,6 @@ service"""^^xsd:string ;
   rdfs:label "Extension Planning"^^xsd:string ;
 .
 entity:FLISR-529
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:description_0 "Fault location, isolation and system restoration (FLIR)"^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
@@ -7141,7 +7137,6 @@ entity:Facility-494
   rdfs:label "Facility"^^xsd:string ;
 .
 entity:FacilityDEREMS-FDEMS--495
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "System that manages the settings and dispatch of DER systems within a facility. This facility could be a residence, a building, a commercial site, an industrial site, or any other generic location."^^xsd:string ;
@@ -7169,7 +7164,6 @@ entity:FacilityEnergyManagementSystem-Gateway-496
   rdfs:label "Facility Energy Management System/Gateway"^^xsd:string ;
 .
 entity:FacilityLocalAreaNetwork-FacilityLAN--497
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Facility Local Area Network (Facility LAN)"^^xsd:string ;
@@ -7307,7 +7301,6 @@ entity:FaultLevelDetector-506
   rdfs:label "Fault level detector"^^xsd:string ;
 .
 entity:FieldActuators-507
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "Primary equipment switches, which are located along the grid lines, realize control actions from the control facility on the Grid. They can be manually operated or remotely operated"^^xsd:string ;
   props:entityName "Field Actuators"^^xsd:string ;
@@ -7319,7 +7312,6 @@ entity:FieldActuators-507
   rdfs:label "Field Actuators"^^xsd:string ;
 .
 entity:FieldActuators-508
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "-"^^xsd:string ;
@@ -7402,7 +7394,6 @@ entity:FieldEquipmentUpgadeManagement--513
   rdfs:label "Field Equipment Upgade Management:"^^xsd:string ;
 .
 entity:FieldForceManagementSystem-514
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "Applications helping to manage Field Force"^^xsd:string ;
   props:entityName "Field Force Management System"^^xsd:string ;
@@ -7412,7 +7403,6 @@ entity:FieldForceManagementSystem-514
   rdfs:label "Field Force Management System"^^xsd:string ;
 .
 entity:FieldRecording-MCFRD--515
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:description_0 "Field recording is often accomplished through hand held devices which allow field personnel to view and enter information relevant to the work they are performing in the field. For example, line crews and servicemen can access their respective district maps, do searches by pole number, substation, transformer number, switch numbers, and feeder names"^^xsd:string ;
   props:entityName "Field recording (MC-FRD)"^^xsd:string ;
@@ -7423,7 +7413,6 @@ entity:FieldRecording-MCFRD--515
   rdfs:label "Field recording (MC-FRD)"^^xsd:string ;
 .
 entity:FieldSensingDevices-516
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "Devices, which are spread on the Grid lines, continuously report current dynamic status such as voltage, current, frequency and so on."^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
@@ -7435,7 +7424,6 @@ entity:FieldSensingDevices-516
   rdfs:label "Field Sensing Devices"^^xsd:string ;
 .
 entity:FieldSensingDevices-517
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
@@ -7460,7 +7448,6 @@ entity:FieldWorkManagement--518
   rdfs:label "Field work management:"^^xsd:string ;
 .
 entity:Financial-FIN--520
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:description_0 "Financial actors measure performance across the whole organization, including the evaluation of investments in capital projects, maintenance, or operations. They track risk, benefits, costs and impact on levels of service."^^xsd:string ;
   props:entityName "Financial (FIN)"^^xsd:string ;
@@ -7542,7 +7529,6 @@ entity:FirewallPolicyEnforcement-524
   rdfs:label "Firewall Policy Enforcement"^^xsd:string ;
 .
 entity:FleetServices-525
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:ahGCharging "X"^^xsd:string ;
   props:description_0 """A party that operates fleets of vehicles (mix of internal combustion engine vehicles and electric ones). The fleet operators could manage their activities in various ways: in private area such as airport fleets or in open market, like car sharing or more conventional car rental.
@@ -7554,7 +7540,6 @@ A Fleet Operator could subscribe to different services, like parking services, m
   rdfs:label "Fleet Services"^^xsd:string ;
 .
 entity:FlexibilityServices-FO--526
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "generic role which links the role customer and its possibility to provide flexibilities to the roles market and grid; generic role that could be taken by many stakeholders, such as a DSO company, an Energy Service Company (ESCO) or an energy supplier"^^xsd:string ;
   props:eUWGSPVers05 "X"^^xsd:string ;
@@ -7565,7 +7550,6 @@ entity:FlexibilityServices-FO--526
   rdfs:label "Flexibility Services (FO)"^^xsd:string ;
 .
 entity:FlexibleLoad-527
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:description_0 "Load that can be modulated"^^xsd:string ;
   props:entityName "Flexible Load"^^xsd:string ;
@@ -7577,7 +7561,6 @@ entity:FlexibleLoad-527
   rdfs:label "Flexible Load"^^xsd:string ;
 .
 entity:FlexibleLoad-528
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "Load that can be modulated"^^xsd:string ;
@@ -7749,7 +7732,6 @@ entity:FrequencyManagementSupport-541
   rdfs:label "Frequency management support"^^xsd:string ;
 .
 entity:FuelCell-542
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Fuel cell"^^xsd:string ;
@@ -7759,7 +7741,6 @@ entity:FuelCell-542
   rdfs:label "Fuel cell"^^xsd:string ;
 .
 entity:FunctionsObjectsOrDataClassifiedAsActorsInReferencesWhichMayNotBeActors-543
-  rdf:type props:Combined-Elements-noduprows ;
   props:entityName """Functions, objects or data 
 classified as Actors in references
 which may not be Actors"""^^xsd:string ;
@@ -7814,7 +7795,6 @@ entity:GasMeter-544
   rdfs:label "Gas Meter"^^xsd:string ;
 .
 entity:GasTurbine-545
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Gas turbine"^^xsd:string ;
@@ -7989,7 +7969,6 @@ entity:GenerationSubstation-556
   rdfs:label "Generation Substation"^^xsd:string ;
 .
 entity:Generator-557
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "Generating electricity, contributing actively to voltage and reactive power control, required to provide the relevant data (information on outages, forecast, actual production) to the energy marketplace (see also the Articles 2.1 and 2.2 of the Directive)."^^xsd:string ;
   props:eG3 "X"^^xsd:string ;
@@ -8000,7 +7979,6 @@ entity:Generator-557
   rdfs:label "Generator"^^xsd:string ;
 .
 entity:Generator-558
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "Generating electricity, contributing actively to voltage and reactive power control, required to provide the relevant data (information on outages, forecast, actual production) to the energy marketplace (see also the Articles 2.1 and 2.2 of the Directive)."^^xsd:string ;
@@ -8012,7 +7990,6 @@ entity:Generator-558
   rdfs:label "Generator"^^xsd:string ;
 .
 entity:Generator-559
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "Generating electricity, contributing actively to voltage and reactive power control, required to provide the relevant data (information on outages, forecast, actual production) to the energy marketplace (see also the Articles 2.1 and 2.2 of the Directive)."^^xsd:string ;
@@ -8046,7 +8023,6 @@ entity:GeographicInformationSystem-560
   rdfs:label "Geographic Information System"^^xsd:string ;
 .
 entity:GeographicInformationSystem-561
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
@@ -8059,7 +8035,6 @@ entity:GeographicInformationSystem-561
   rdfs:label "Geographic Information System"^^xsd:string ;
 .
 entity:GeographicInformationSystem-GIS--562
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Geographic model of the distribution system, including the location and characteristics of all distribution equipment and DER systems (individually and/or in aggregate)"^^xsd:string ;
@@ -8071,7 +8046,6 @@ entity:GeographicInformationSystem-GIS--562
   rdfs:label "Geographic Information System (GIS)"^^xsd:string ;
 .
 entity:GeographicalInventory-AMGINV--563
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:description_0 "Management of geospatial data, typically by utilizing computer graphics technology to enter, store, and update graphic and non-graphic information. Geographic depictions and related non-graphic data elements for each entity are typically stored in some form of a data store. The graphic representations are referenced using a coordinate system that relates to locations on the surface of the earth. Information in the data store can be queried and displayed based upon either the graphic or non-graphic attributes of the entities."^^xsd:string ;
   props:entityName "Geographical inventory(AMGINV)"^^xsd:string ;
@@ -8095,7 +8069,6 @@ entity:GreenHouseGasSupportServices-566
   rdfs:label "Green House Gas support services"^^xsd:string ;
 .
 entity:Grid-567
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "Bulk power systems including power generation, transmission, and MV distribution"^^xsd:string ;
   props:entityName "Grid"^^xsd:string ;
@@ -8108,7 +8081,6 @@ entity:Grid-567
   rdfs:label "Grid"^^xsd:string ;
 .
 entity:Grid-568
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "Power Distribution system"^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
@@ -8121,7 +8093,6 @@ entity:Grid-568
   rdfs:label "Grid"^^xsd:string ;
 .
 entity:Grid-569
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "-"^^xsd:string ;
@@ -8134,7 +8105,6 @@ entity:Grid-569
   rdfs:label "Grid"^^xsd:string ;
 .
 entity:Grid-570
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "-"^^xsd:string ;
@@ -8164,7 +8134,6 @@ entity:GridAccessProvider-571
   rdfs:label "Grid Access Provider"^^xsd:string ;
 .
 entity:GridAccessProvider-572
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "A party responsible for providing access to the grid through a local metering point and its use for energy consumption or production to the party connected to the grid."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -8191,7 +8160,6 @@ entity:GridCommunicationsNetworkProviders-573
   rdfs:label "Grid Communications Network Providers"^^xsd:string ;
 .
 entity:GridCommunicationsNetworkProviders-574
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "Plan, build and maintain the communications systems that enable the data communication required to maintain grid stability, load balancing and fault protection systems by a TSO or DSO. This function is mostly executed by the TSO or the DSO, or may be performed by an independent actor but the overall responsibility and ownership of information remains with TSO and DSO.4 Grid communications network provider ensures compliance with the agreed service levels (Service Level Agreements including quality of service, data security and privacy) and compliance with any national and/or international regulations as necessary;"^^xsd:string ;
   props:eG3 "X"^^xsd:string ;
@@ -8244,7 +8212,6 @@ entity:GridHealthSupport-577
   rdfs:label "Grid Health Support"^^xsd:string ;
 .
 entity:GridMonitoring-578
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Generic Role"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 ""^^xsd:string ;
@@ -8301,7 +8268,6 @@ entity:GridOperationsSupport-581
   rdfs:label "Grid Operations Support"^^xsd:string ;
 .
 entity:GridOperator-582
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "A party that operates one or more grids."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -8325,7 +8291,6 @@ entity:GroupManagement-583
   rdfs:label "Group Management"^^xsd:string ;
 .
 entity:HES-585
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 """Responsible for acquiring the reads from meters and/or from data concentrators
@@ -8344,7 +8309,6 @@ Contains some topology information and aggregation functionality for plug &br/>p
   rdfs:label "HES"^^xsd:string ;
 .
 entity:HESServices-A--586
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "generic role"^^xsd:string ;
   props:description_0 "External actor interacting with the system functions and components via the HES Head End System (Metering)"^^xsd:string ;
   props:entityName "HES Services (A)"^^xsd:string ;
@@ -8355,7 +8319,6 @@ entity:HESServices-A--586
   rdfs:label "HES Services (A)"^^xsd:string ;
 .
 entity:HeadEndSystem-HES--584
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "Central Data System collecting data via the AMI of various meters in its service area. It communicates via a WAN directly to the meters and/or to the NNAP of LNAP."^^xsd:string ;
   props:entityName "Head End System (HES)"^^xsd:string ;
@@ -8396,7 +8359,6 @@ entity:HomeApplianceVendors-588
   rdfs:label "Home Appliance vendors"^^xsd:string ;
 .
 entity:HomeAutomationEndDevice-589
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "Device providing additional functionalities enabling consumers to interact with their own environment."^^xsd:string ;
   props:entityName "Home automation end device"^^xsd:string ;
@@ -8407,7 +8369,6 @@ entity:HomeAutomationEndDevice-589
   rdfs:label "Home automation end device"^^xsd:string ;
 .
 entity:HomeAutomationServices-D--590
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "generic role"^^xsd:string ;
   props:description_0 "External actor interacting directly with the home automation end device."^^xsd:string ;
   props:entityName "Home Automation Services (D)"^^xsd:string ;
@@ -8419,7 +8380,6 @@ entity:HomeAutomationServices-D--590
   rdfs:label "Home Automation Services (D)"^^xsd:string ;
 .
 entity:HomeCustomer-591
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "A residential consumer of electricity (including also agriculture users) may also be involved in contract-based Demand/Response."^^xsd:string ;
   props:entityName "Home customer"^^xsd:string ;
@@ -8459,7 +8419,6 @@ entity:HumanResources-593
   rdfs:label "Human Resources"^^xsd:string ;
 .
 entity:HumanResources-HR--594
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:description_0 "Resources (HR) actors manage personnel information and activities including safety, training, benefits, performance, review, compensation, recruiting, scheduling, training/employee job-ratings and expenses. HR also determines overtime scheduling and job qualifications for specific tasks."^^xsd:string ;
   props:entityName "Human Resources (HR)"^^xsd:string ;
@@ -8489,7 +8448,6 @@ entity:HydroFacility-595
   rdfs:label "Hydro Facility"^^xsd:string ;
 .
 entity:HydroPlant-596
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Hydro plant"^^xsd:string ;
@@ -8546,7 +8504,6 @@ entity:ImbalanceSettlementResponsible-598
   rdfs:label "Imbalance Settlement Responsible"^^xsd:string ;
 .
 entity:ImbalanceSettlementResponsible-599
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "A party that is responsible for settlement of the difference between the contracted quantities and the realised quantities of energy products for the balance responsible parties in a market balance area."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -8625,7 +8582,6 @@ entity:IndustrialAutomation-603
   rdfs:label "Industrial Automation"^^xsd:string ;
 .
 entity:IndustrialConsumer-604
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 """A large consumer of electricity in an industrial / manufacturing industry. May be involved in contract based 
 Demand/Response."""^^xsd:string ;
@@ -8853,7 +8809,6 @@ entity:InterconnectionTradeResponsible-619
   rdfs:label "Interconnection Trade Responsible"^^xsd:string ;
 .
 entity:InterconnectionTradeResponsible-620
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 """Is a Balance Responsible Party or depends on one. He is recognised by the Nomination Validator for the nomination of already allocated capacity. 
 Additional information: This is a type of Balance Responsible Party"""^^xsd:string ;
@@ -8920,7 +8875,6 @@ entity:KeyManagement-626
   rdfs:label "Key Management"^^xsd:string ;
 .
 entity:LNAP-629
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "The Local Network Access Point is a functional entity that provides access to one or more metering end devices, displays and home automation end devices connected to the local network (LN). It may allow data exchange between different functional entities connected to the same LN."^^xsd:string ;
   props:entityName "LNAP"^^xsd:string ;
@@ -9175,7 +9129,6 @@ This is a type of Party Connected to the Grid"""^^xsd:string ;
   rdfs:label "Local Authority"^^xsd:string ;
 .
 entity:LocalEPS-645
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "An EPS contained entirely within a single premises or group of premises"^^xsd:string ;
@@ -9298,7 +9251,6 @@ entity:MOLResponsible-812
   rdfs:label "MOL Responsible"^^xsd:string ;
 .
 entity:MOLResponsible-813
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "Responsible for the management of the available tenders for all Acquiring System Operators to establish the order of the reserve capacity that can be activated."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -9529,7 +9481,6 @@ entity:MaintenanceAndConstruction-668
   rdfs:label "Maintenance and Construction"^^xsd:string ;
 .
 entity:MaintenanceAndConstruction-MC--669
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "Maintenance and Construction actors coordinate equipment inspection, cleaning and adjustment , organize construction and design, dispatch and schedule maintenance and construction work, capture records gathered by field personnel and permit them to view necessary information to perform their tasks."^^xsd:string ;
   props:entityName "Maintenance and Construction (MC)"^^xsd:string ;
@@ -9541,7 +9492,6 @@ entity:MaintenanceAndConstruction-MC--669
   rdfs:label "Maintenance and Construction (MC)"^^xsd:string ;
 .
 entity:MaintenanceAndInspection-MCMAI--670
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "Work involving inspection, cleaning, adjustment, or other service of equipment to enable it to perform better or to extend its service life. Examples of maintenance work are routine oil changes and painting.Examples of inspection work are pole inspections, vault inspections, and substation inspections."^^xsd:string ;
   props:entityName "Maintenance and inspection (MC-MAI)"^^xsd:string ;
@@ -10715,7 +10665,6 @@ entity:MarketHistoryService-758
   rdfs:label "market history service"^^xsd:string ;
 .
 entity:MarketInformationAggregator-759
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 """Market Information Aggregator, A party that provides market related information that has been compiled fromthe figures supplied by different actors in the market. This information may also be published or distributed for general use.
 Note: The Market Information Aggregator may receive information from any market participant that is relevant for publication or distribution"""^^xsd:string ;
@@ -10769,7 +10718,6 @@ entity:MarketManagement-762
   rdfs:label "Market Management"^^xsd:string ;
 .
 entity:MarketOperator-763
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "The unique power exchange of trades for the actual delivery of energy that receives the bids from the Balance Responsible Parties that have a contract to bid. The market operator determines the market energy price for the market balance area after applying technical constraints from the system operator. It may also establish the price for the reconciliation within a metering grid area."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -10780,7 +10728,6 @@ entity:MarketOperator-763
   rdfs:label "Market Operator"^^xsd:string ;
 .
 entity:MarketOperator-764
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "The unique power exchange of trades for the actual delivery of energy that receives the bids from the Balance Responsible Parties that have a contract to bid. The market operator determines the market energy price for the market balance area after applying technical constraints from the system operator. It may also establish the price for the reconciliation within a metering grid area."^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
@@ -10791,7 +10738,6 @@ entity:MarketOperator-764
   rdfs:label "Market Operator"^^xsd:string ;
 .
 entity:MarketOperator-generic--765
-  rdf:type props:Combined-Elements-noduprows ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Market operator (generic)"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
@@ -11016,7 +10962,6 @@ entity:MeterDataCollector-781
   rdfs:label "Meter Data Collector"^^xsd:string ;
 .
 entity:MeterDataCollectorMDC-782
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "A party responsible for meter reading and quality control of the reading."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -11047,7 +10992,6 @@ entity:MeterDataManagementSystem-783
   rdfs:label "Meter Data Management System"^^xsd:string ;
 .
 entity:MeterDataManagementSystemMDMS-784
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "System for validating, storing, processing and analyzing large quantities of meter data"^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -11115,7 +11059,6 @@ entity:MeterOperator-788
   rdfs:label "Meter Operator"^^xsd:string ;
 .
 entity:MeterOperatorMO-789
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "A party responsible for installing, maintaining, testing, certifying and decommissioning physical meters"^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -11141,7 +11084,6 @@ entity:MeterReadingAndControl-790
   rdfs:label "Meter Reading and Control"^^xsd:string ;
 .
 entity:MeterUser-B--791
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "generic role"^^xsd:string ;
   props:description_0 "External actor interacting directly with the smart meter (Metering End Device)."^^xsd:string ;
   props:entityName "Meter User (B)"^^xsd:string ;
@@ -11167,7 +11109,6 @@ entity:MeteredDataAggregator-792
   rdfs:label "Metered Data Aggregator"^^xsd:string ;
 .
 entity:MeteredDataAggregatorMDA-793
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "A party responsible for the establishment and qualification of metered data from the Metered data responsible. This data is aggregated according to a defined set of market rules"^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -11250,7 +11191,6 @@ entity:MicroHydro-797
   rdfs:label "Micro Hydro"^^xsd:string ;
 .
 entity:MicrogridControlCenter-798
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "-"^^xsd:string ;
@@ -11262,7 +11202,6 @@ entity:MicrogridControlCenter-798
   rdfs:label "Microgrid Control Center"^^xsd:string ;
 .
 entity:MicrogridDEREMS-MDEMS--799
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "System that manages the settings and dispatch of DER systems within a microgrid, and that can cause the microgrid to become an island and to reconnect with the Area EPS."^^xsd:string ;
@@ -11290,7 +11229,6 @@ entity:MicrogridDistributedGenerationNetwork-800
   rdfs:label "Microgrid Distributed Generation Network"^^xsd:string ;
 .
 entity:MicrogridEPS-801
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "A Local EPS that can operate as an island and is operated as a virtual resource to the Area EPS"^^xsd:string ;
@@ -11301,7 +11239,6 @@ entity:MicrogridEPS-801
   rdfs:label "Microgrid EPS"^^xsd:string ;
 .
 entity:MicrogridOperator-802
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Responsible party for operational aspects of a microgrid"^^xsd:string ;
@@ -11312,7 +11249,6 @@ entity:MicrogridOperator-802
   rdfs:label "Microgrid Operator"^^xsd:string ;
 .
 entity:MicrogridOperator-803
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
@@ -11324,7 +11260,6 @@ entity:MicrogridOperator-803
   rdfs:label "Microgrid Operator"^^xsd:string ;
 .
 entity:MicrogridOwner-804
-  rdf:type props:Combined-Elements-noduprows ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Responsible party for market and financial decisions and contracts related to a microgrid"^^xsd:string ;
   props:entityName "Microgrid Owner"^^xsd:string ;
@@ -11373,7 +11308,6 @@ entity:MinimizeOutages-807
   rdfs:label "Minimize outages"^^xsd:string ;
 .
 entity:MobileMeteringServiceProvider-808
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 ""^^xsd:string ;
@@ -11384,7 +11318,6 @@ entity:MobileMeteringServiceProvider-808
   rdfs:label "Mobile metering service provider"^^xsd:string ;
 .
 entity:MobilityServiceOperator-809
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:ahGCharging "X"^^xsd:string ;
   props:description_0 """A party offering standard mobility services for all type of vehicles (internal combustion engine vehicles as well as plug-in electric or full electric vehicles). â€œMobility servicesâ€� covers maintenance and repair contract, navigation or guidance services, help deskservices, driving assistance and any other type of services, linked to any vehicle data management exchanged between the vehicle and a communication platform with data aggregation or mining or extraction operation according data privacy regulations.
@@ -11624,7 +11557,6 @@ entity:MultihomingNetworkManagement-827
   rdfs:label "Multihoming network management"^^xsd:string ;
 .
 entity:NNAP-860
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "The Neighbourhood Network Access Point is a functional entity that provides access to one or more LNAPâ€Ÿs, metering end devices, displays and home automation end devices connected to the neighbourhood network (NN). It may allow data exchange between different functional entities connected to the same NN."^^xsd:string ;
   props:entityName "NNAP"^^xsd:string ;
@@ -11691,7 +11623,6 @@ entity:NeighborhoodAreaNetwork-831
   rdfs:label "Neighborhood Area Network"^^xsd:string ;
 .
 entity:NeighbourhoodNetworkAccessPoint-NNAP--832
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 """The Neighbourhood Network Access Point is a functional entity that provides
@@ -11708,7 +11639,6 @@ NN.
   rdfs:label "Neighbourhood Network Access Point (NNAP)"^^xsd:string ;
 .
 entity:NeighbourhoodNetworkAccessPoint-NNAP--833
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 """functional entity that provides
@@ -11764,7 +11694,6 @@ entity:NetworkAddressManagement-836
   rdfs:label "Network Address Management"^^xsd:string ;
 .
 entity:NetworkCalculations-NENCLC--837
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:description_0 "Used to develop a long-term (generally one year and beyond) plan for the reliability (adequacy) of the interconnected electric transmission and distribution networks."^^xsd:string ;
   props:entityName "Network calculations (NE-NCLC)"^^xsd:string ;
@@ -11775,7 +11704,6 @@ entity:NetworkCalculations-NENCLC--837
   rdfs:label "Network calculations (NE-NCLC)"^^xsd:string ;
 .
 entity:NetworkExtensionPlanning-NE--838
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "Network Extension planning actors develop long term plans for power system reliability, monitor the cost, performance and schedule of construction, and define projects to extend the network such as new lines, feeders or switchgear"^^xsd:string ;
   props:entityName "Network Extension Planning (NE)"^^xsd:string ;
@@ -11799,7 +11727,6 @@ entity:NetworkModelVisualizationSupportService-839
   rdfs:label "Network model visualization support service"^^xsd:string ;
 .
 entity:NetworkOperationMonitoring-NONMON--840
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:description_0 "Part of Network Operation Provides the means for supervising main substation topology (breaker and switch state) and control equipment status. It also provides the utilities for handling network connectivity and loading conditions. It also makes it possible to locate customer telephone complaints and supervise the location of field crews."^^xsd:string ;
   props:entityName "Network operation monitoring (NONMON)"^^xsd:string ;
@@ -11811,7 +11738,6 @@ entity:NetworkOperationMonitoring-NONMON--840
   rdfs:label "Network operation monitoring (NONMON)"^^xsd:string ;
 .
 entity:NetworkOperationMonitoring-NONMON--841
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 ""^^xsd:string ;
@@ -11840,7 +11766,6 @@ entity:NetworkOperationSimulation-842
   rdfs:label "Network Operation Simulation"^^xsd:string ;
 .
 entity:NetworkOperationSimulation-OPSIM--843
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:description_0 "This set of functions allows facilities to define, prepare and optimise the sequence of operations required for carrying out maintenance work on the system (release/clearance orders) and operational planning."^^xsd:string ;
   props:entityName "Network operation simulation (OPSIM)"^^xsd:string ;
@@ -11868,7 +11793,6 @@ entity:NetworkOperations-844
   rdfs:label "Network Operations"^^xsd:string ;
 .
 entity:NetworkOperations-NO--845
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "The Network Operation domain is a sub-domain within Operation providing the monitoring, control, and maintenance of the utilities network. Key applications include monitoring and control remote field equipment (e.g.: Phase Measurement Units (PMU), capacitor banks, sectionalizers )"^^xsd:string ;
   props:entityName "Network Operations (NO)"^^xsd:string ;
@@ -11880,7 +11804,6 @@ entity:NetworkOperations-NO--845
   rdfs:label "Network Operations (NO)"^^xsd:string ;
 .
 entity:NetworkOperations-NO--846
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 ""^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
@@ -11907,7 +11830,6 @@ entity:NetworkOperationsAnalysis-847
   rdfs:label "Network Operations Analysis"^^xsd:string ;
 .
 entity:NetworkOperationsAnalysis-NOOFA--848
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:description_0 "Operation Feedback Analysis actors compare records taken from real-time operation related with information on network incidents, connectivity and loading to optimize operations and schedule periodic maintenance."^^xsd:string ;
   props:entityName "Network Operations Analysis (NO-OFA)"^^xsd:string ;
@@ -11919,7 +11841,6 @@ entity:NetworkOperationsAnalysis-NOOFA--848
   rdfs:label "Network Operations Analysis (NO-OFA)"^^xsd:string ;
 .
 entity:NetworkOperationsAnalysis-NOOFA--849
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 ""^^xsd:string ;
@@ -11947,7 +11868,6 @@ entity:NetworkOperationsAnalyst-850
   rdfs:label "Network Operations Analyst"^^xsd:string ;
 .
 entity:NetworkOperationsCalculations-NOCLC--851
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:description_0 "Real-time Network Calculations actors provide system operators with the ability to assess the reliability and security of the power system."^^xsd:string ;
   props:entityName "Network Operations Calculations (NO-CLC)"^^xsd:string ;
@@ -11975,7 +11895,6 @@ entity:NetworkOperationsControl-852
   rdfs:label "Network Operations Control"^^xsd:string ;
 .
 entity:NetworkOperationsControl-NOCTL--853
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:description_0 "Centralized automated and manual control operations of the system to manage the flow of power and optimize reliability of the system. Network control is coordinated by actors in this domain, they may only supervise wide area, substation, and local automatic or manual control. An example would be the use of phase angle regulators within a substation to control power flow between two adjacent power systems"^^xsd:string ;
   props:entityName "Network Operations Control (NO-CTL)"^^xsd:string ;
@@ -12002,7 +11921,6 @@ entity:NetworkOperationsFaultAnalysis-854
   rdfs:label "Network Operations Fault Analysis"^^xsd:string ;
 .
 entity:NetworkOperationsFaultAnalysis-NOFLT--855
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:description_0 "Fault Management actors enhance the speed at which faults are located, identified, and sectionalized so service can be restored. They provide information for customers, coordinate with workforce dispatch and compile information for statistics."^^xsd:string ;
   props:entityName "Network Operations Fault Analysis (NO-FLT)"^^xsd:string ;
@@ -12042,7 +11960,6 @@ entity:NetworkOperationsReportingAndStatistics-857
   rdfs:label "Network Operations Reporting and Statistics"^^xsd:string ;
 .
 entity:NetworkOperationsReportingAndStatistics-NOOST--858
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:description_0 "Operational Statistics and Reporting actors archive on-line data and to perform feedback analysis about system efficiency and reliability."^^xsd:string ;
   props:entityName "Network Operations Reporting and Statistics (NOOST)"^^xsd:string ;
@@ -12141,7 +12058,6 @@ entity:NominationValidator-865
   rdfs:label "Nomination Validator"^^xsd:string ;
 .
 entity:NominationValidator-866
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "Has the responsibility of ensuring that all capacity nominated is within the allowed limits and confirming all valid nominations to all involved parties. He informs the Interconnection Trade Responsible of the maximum nominated capacity allowed. Depending on market rules for a given interconnection the corresponding System Operators may appoint one Nomination Validator."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -12153,7 +12069,6 @@ entity:NominationValidator-866
   rdfs:label "Nomination Validator"^^xsd:string ;
 .
 entity:NonControllableLoad-867
-  rdf:type props:Combined-Elements-noduprows ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Load that is not allowed to be modified"^^xsd:string ;
   props:entityName "Non-Controllable Load"^^xsd:string ;
@@ -12163,7 +12078,6 @@ entity:NonControllableLoad-867
   rdfs:label "Non-Controllable Load"^^xsd:string ;
 .
 entity:NonCriticalLoad-868
-  rdf:type props:Combined-Elements-noduprows ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Loads within a Local EPS having the lowest priority of service.  These loads may be left unserved in favor of Critical Loads."^^xsd:string ;
   props:entityName "Non-Critical Load"^^xsd:string ;
@@ -12186,7 +12100,6 @@ entity:NonIntrusiveMonitoring-869
   rdfs:label "Non-Intrusive Monitoring"^^xsd:string ;
 .
 entity:NonRegulatingDERSystem-870
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "DER system not participating in frequency or voltage regulation."^^xsd:string ;
@@ -12243,7 +12156,6 @@ entity:NuclearFacility-873
   rdfs:label "Nuclear Facility"^^xsd:string ;
 .
 entity:OEM-875
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 ""^^xsd:string ;
@@ -12337,7 +12249,6 @@ entity:OperationalPlanning-880
   rdfs:label "Operational Planning"^^xsd:string ;
 .
 entity:OperationalPlanning-OP--881
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "Operational Planning and Optimization actors perform simulation of network operations, schedule switching actions, dispatch repair crews, inform affected customers, and schedule the importing of power. They keep the cost of imported power low through peak generation, switching, load shedding or demand response."^^xsd:string ;
   props:entityName "Operational Planning (OP)"^^xsd:string ;
@@ -12377,7 +12288,6 @@ entity:OperationalStateDetector-883
   rdfs:label "Operational state detector"^^xsd:string ;
 .
 entity:Operator-884
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
@@ -12613,7 +12523,6 @@ Usually interfaces to CIS, WMS and GIS applications; May interface to AMI system
   rdfs:label "Outage Management System"^^xsd:string ;
 .
 entity:OutageManagementSystem-899
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
@@ -12626,7 +12535,6 @@ entity:OutageManagementSystem-899
   rdfs:label "Outage Management System"^^xsd:string ;
 .
 entity:OutageManagementSystem-OMS--900
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Outage Management System (OMS)"^^xsd:string ;
@@ -12706,7 +12614,6 @@ entity:OutagePlanningSupport-906
   rdfs:label "Outage planning support"^^xsd:string ;
 .
 entity:OverlayGrid-907
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 ""^^xsd:string ;
@@ -12718,7 +12625,6 @@ entity:OverlayGrid-907
   rdfs:label "Overlay Grid"^^xsd:string ;
 .
 entity:OverlayGridControlCenter-908
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 ""^^xsd:string ;
@@ -12730,7 +12636,6 @@ entity:OverlayGridControlCenter-908
   rdfs:label "Overlay Grid Control Center"^^xsd:string ;
 .
 entity:OverlayGridOperator-909
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
@@ -12742,7 +12647,6 @@ entity:OverlayGridOperator-909
   rdfs:label "Overlay Grid Operator"^^xsd:string ;
 .
 entity:PCCSwitch-914
-  rdf:type props:Combined-Elements-noduprows ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Switch at the point of common coupling (PCC) between the Local EPS and the Area EPS"^^xsd:string ;
   props:entityName "PCC Switch"^^xsd:string ;
@@ -12766,7 +12670,6 @@ entity:PNode-930
   rdfs:label "P-Node"^^xsd:string ;
 .
 entity:ParkingServiceOperator-910
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:ahGCharging "X"^^xsd:string ;
   props:description_0 """A party that offers parking services. A Parking Service Operator could subscribe to electricity charging services to an Area Energy Service 
@@ -12807,7 +12710,6 @@ entity:ParticipantRegistrationManagementSystem-912
   rdfs:label "Participant registration management system"^^xsd:string ;
 .
 entity:PartyConnectedToTheGrid-913
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "A party that contracts for the right to consume or produce electricity at a metering point."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -12945,7 +12847,6 @@ entity:PhasorMeasurementUnit-923
   rdfs:label "Phasor Measurement Unit"^^xsd:string ;
 .
 entity:PhotovoltaicSystem-PV--924
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Photovoltaic system (PV)"^^xsd:string ;
@@ -13042,7 +12943,6 @@ entity:PointOfCommonCoupling-931
   rdfs:label "Point of Common Coupling"^^xsd:string ;
 .
 entity:PointOfCommonCoupling-PCC--932
-  rdf:type props:Combined-Elements-noduprows ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "The point where a Local EPS is connected to an Area EPS."^^xsd:string ;
   props:entityName "Point of Common Coupling (PCC)"^^xsd:string ;
@@ -13125,7 +13025,6 @@ entity:PowerCharacteristicManagement-937
   rdfs:label "Power Characteristic Management"^^xsd:string ;
 .
 entity:PowerEquipment-938
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:description_0 "Equipment which directly operates on the Power System and controlled by SCS, including e.g.: On Loap tap changers (OLTC), Switched Capacitor banks , FACTS devices, Voltage Regulator Controllers"^^xsd:string ;
   props:entityName "Power equipment"^^xsd:string ;
@@ -13137,7 +13036,6 @@ entity:PowerEquipment-938
   rdfs:label "Power equipment"^^xsd:string ;
 .
 entity:PowerEquipment-939
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
@@ -13206,7 +13104,6 @@ entity:PowerGridEquipmentVendors-943
   rdfs:label "Power Grid Equipment vendors"^^xsd:string ;
 .
 entity:PowerImportSchedulingAndOptimisation-OPIMP--944
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:description_0 "Power import scheduling and optimisation aims to minimise the cost of imported power by keeping the average imported power close to the contracted value, making use of peak plants, load switching or load shedding."^^xsd:string ;
   props:entityName "Power import scheduling and optimisation (OP-IMP)"^^xsd:string ;
@@ -13217,7 +13114,6 @@ entity:PowerImportSchedulingAndOptimisation-OPIMP--944
   rdfs:label "Power import scheduling and optimisation (OP-IMP)"^^xsd:string ;
 .
 entity:PowerPlantDEREMS-PDEMS--945
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "System that manages the settings and dispatch of DER systems within a power plant"^^xsd:string ;
@@ -13228,7 +13124,6 @@ entity:PowerPlantDEREMS-PDEMS--945
   rdfs:label "Power Plant DER EMS (PDEMS)"^^xsd:string ;
 .
 entity:PowerPlantOperator-946
-  rdf:type props:Combined-Elements-noduprows ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Responsible party for operational aspects of a power plant"^^xsd:string ;
   props:entityName "Power Plant Operator"^^xsd:string ;
@@ -13238,7 +13133,6 @@ entity:PowerPlantOperator-946
   rdfs:label "Power Plant Operator"^^xsd:string ;
 .
 entity:PowerPlantOwner-947
-  rdf:type props:Combined-Elements-noduprows ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Responsible party for market and financial decisions and contracts related to a power plant"^^xsd:string ;
   props:entityName "Power Plant Owner"^^xsd:string ;
@@ -13248,7 +13142,6 @@ entity:PowerPlantOwner-947
   rdfs:label "Power Plant Owner"^^xsd:string ;
 .
 entity:PowerPlantSystem-948
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:description_0 "Applications managing a Power Plant"^^xsd:string ;
   props:entityName "Power Plant System"^^xsd:string ;
@@ -13564,7 +13457,6 @@ entity:Premises-970
   rdfs:label "Premises"^^xsd:string ;
 .
 entity:Premises-PRM--971
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:description_0 "Information regarding the location of a service. This set of functions includes: Address management; Right of ways, easements, grants; and Real estate management."^^xsd:string ;
   props:entityName "Premises (PRM)"^^xsd:string ;
@@ -13654,7 +13546,6 @@ entity:PrivacyPolicyEnforcement-977
   rdfs:label "Privacy Policy Enforcement"^^xsd:string ;
 .
 entity:ProcessAutomationSystem-978
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:description_0 "Automation system to monitor and control industrial production plants."^^xsd:string ;
   props:entityName "Process Automation System"^^xsd:string ;
@@ -13665,7 +13556,6 @@ entity:ProcessAutomationSystem-978
   rdfs:label "Process Automation System"^^xsd:string ;
 .
 entity:Producer-979
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 """A party that produces electricity 
 Additional information: This is a type of Party Connected to the Grid"""^^xsd:string ;
@@ -13693,7 +13583,6 @@ entity:ProductionResponsibleParty-980
   rdfs:label "Production Responsible Party"^^xsd:string ;
 .
 entity:ProductionResponsibleParty-981
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 """A party who can be brought to rights, legally and financially, for any imbalance between energy sold and produced for all associated metering points. 
 Additional information: This is a type of Balance Responsible Party"""^^xsd:string ;
@@ -13719,7 +13608,6 @@ entity:ProfileSupport-982
   rdfs:label "profile support"^^xsd:string ;
 .
 entity:ProjectDefinition-NEPRJ--983
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:description_0 "Planned work activities to enhance or extend the network and/or other assets. Example include line extension for new housing development, a new substation, switchgear change at a substation. Capital development projects (i.e., not billed to a customer) are usually justified with an business case."^^xsd:string ;
   props:entityName "Project definition (NEPRJ)"^^xsd:string ;
@@ -13952,7 +13840,6 @@ entity:PublicInternet-Intranet-1000
   rdfs:label "Public Internet/Intranet"^^xsd:string ;
 .
 entity:PublicNetwork-1001
-  rdf:type props:Combined-Elements-noduprows ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Public Network"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
@@ -13980,7 +13867,6 @@ entity:PumpedStorageFacility-1002
   rdfs:label "Pumped Storage Facility"^^xsd:string ;
 .
 entity:PumpedWaterStorage-1003
-  rdf:type props:Combined-Elements-noduprows ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Pumped water storage"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
@@ -14191,7 +14077,6 @@ entity:RealTimeEmergencyOperations-1018
   rdfs:label "Real-Time Emergency Operations"^^xsd:string ;
 .
 entity:RealTimeStateEstimator-RTSS--1019
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:description_0 "Estimates current spatial-temporal state of grid in real-time. If a contingency in the grid is expected, it triggers a close-loop control or notify systems operators of the contingency via GUIs"^^xsd:string ;
   props:entityName "Real-time State Estimator (RTSS)"^^xsd:string ;
@@ -14203,7 +14088,6 @@ entity:RealTimeStateEstimator-RTSS--1019
   rdfs:label "Real-time State Estimator (RTSS)"^^xsd:string ;
 .
 entity:RealTimeStateEstimator-RTSS--1020
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
@@ -14229,7 +14113,6 @@ entity:Recloser-1021
   rdfs:label "Recloser"^^xsd:string ;
 .
 entity:ReconciliationAccountable-1022
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "A party that is financially accountable for the reconciled volume of energy products for a profiled Local metering point."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -14255,7 +14138,6 @@ entity:ReconciliationAccountableParty-1023
   rdfs:label "Reconciliation Accountable Party"^^xsd:string ;
 .
 entity:ReconciliationResponsible-1024
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "A party that is responsible for reconciling, within a Metering grid area, the volumes used in the imbalance settlement process for profiled metering points and the actual metered quantities."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -14266,7 +14148,6 @@ entity:ReconciliationResponsible-1024
   rdfs:label "Reconciliation Responsible"^^xsd:string ;
 .
 entity:RecordsAndAssetManagement-AM--1025
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "The Records and Asset Management actors track and report on the substation and network equipment inventory, provide geospatial data and geographic displays, maintain records on non-electrical assets, and perform asset investment planning"^^xsd:string ;
   props:entityName "Records and asset management (AM)"^^xsd:string ;
@@ -14432,7 +14313,6 @@ entity:RegulateFrequency-1036
   rdfs:label "regulate frequency"^^xsd:string ;
 .
 entity:RegulatingDERSystem-1037
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "DER system responsible for frequency and/or voltage regulation.  The regulating DER system could be a generator, an energy storage system, or controllable load."^^xsd:string ;
@@ -14517,7 +14397,6 @@ entity:RemoteDeviceOperation-1042
   rdfs:label "Remote device operation"^^xsd:string ;
 .
 entity:RenewableDER-1043
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "DER system whose prime mover energy comes from renewable sources, including water, solar, wind, and biofuels"^^xsd:string ;
@@ -14544,7 +14423,6 @@ entity:RenewableFacility-1044
   rdfs:label "Renewable Facility"^^xsd:string ;
 .
 entity:RenewableGenerationForecaster-1045
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
@@ -14558,7 +14436,6 @@ entity:RenewableGenerationForecaster-1045
   rdfs:label "Renewable Generation Forecaster"^^xsd:string ;
 .
 entity:RenewableGenerationForecaster-1046
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 ""^^xsd:string ;
@@ -14639,7 +14516,6 @@ entity:ReserveAllocator-1051
   rdfs:label "Reserve Allocator"^^xsd:string ;
 .
 entity:ReserveAllocator-1052
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "Informs the market of reserve requirements, receives tenders against the requirements and in compliance with the prequalification criteria, determines what tenders meet requirements and assigns tenders."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -14743,7 +14619,6 @@ entity:ResourceProvider-1058
   rdfs:label "Resource Provider"^^xsd:string ;
 .
 entity:ResourceProvider-1059
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "A role that manages a resource object and provides the schedules for it"^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -14843,7 +14718,6 @@ entity:RetailCustomer-1065
   rdfs:label "Retail Customer"^^xsd:string ;
 .
 entity:RetailDEREnergyManagementSystem-RDEMS--1066
-  rdf:type props:Combined-Elements-noduprows ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "System that manages the settings and dispatch of DER systems that have been contracted to be operated by REPs and/or Aggregators"^^xsd:string ;
   props:entityName "Retail DER Energy Management System (RDEMS)"^^xsd:string ;
@@ -14853,7 +14727,6 @@ entity:RetailDEREnergyManagementSystem-RDEMS--1066
   rdfs:label "Retail DER Energy Management System (RDEMS)"^^xsd:string ;
 .
 entity:RetailEnergyMarketSystem-1067
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "Applications related to the Retail Market"^^xsd:string ;
   props:entityName "Retail Energy Market System"^^xsd:string ;
@@ -14864,7 +14737,6 @@ entity:RetailEnergyMarketSystem-1067
   rdfs:label "Retail Energy Market System"^^xsd:string ;
 .
 entity:RetailEnergyProvider-REP--1068
-  rdf:type props:Combined-Elements-noduprows ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Third party managing DER systems based on market information"^^xsd:string ;
   props:entityName "Retail Energy Provider (REP)"^^xsd:string ;
@@ -14890,7 +14762,6 @@ entity:RetailMarket-1069
   rdfs:label "Retail Market"^^xsd:string ;
 .
 entity:RetailMarket-generic--1070
-  rdf:type props:Combined-Elements-noduprows ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Retail Market (generic)"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
@@ -14914,7 +14785,6 @@ entity:Retailing-1071
   rdfs:label "Retailing"^^xsd:string ;
 .
 entity:Retrofilter-1072
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 ""^^xsd:string ;
@@ -14951,7 +14821,6 @@ entity:RootCauseAnalysis--1074
   rdfs:label "Root Cause Analysis:"^^xsd:string ;
 .
 entity:SCADASystem-1075
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "Supervisory Control And Data Acquisition system provides the basic functionality for implementing EMS or DMS, especially provides the communication with the substations to monitor and control the grid."^^xsd:string ;
@@ -15059,7 +14928,6 @@ For example in the Polish market a Scheduling Coordinator is responsible for inf
   rdfs:label "Scheduling Coordinator"^^xsd:string ;
 .
 entity:SchedulingCoordinator-1083
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "A party that is responsible for the schedule information and its exchange on behalf of a balance responsible party. For example in the Polish market a Scheduling Coordinator is responsible for information interchange for scheduling and settlement."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -15434,7 +15302,6 @@ entity:ShortTermLoadForecasts--1109
   rdfs:label "Short Term Load Forecasts:"^^xsd:string ;
 .
 entity:SimpleExternalConsumerDisplay-1110
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "Display providing accurate information on consumption, tariffs and so on in order to increase consumer awareness."^^xsd:string ;
   props:entityName "Simple external consumer display"^^xsd:string ;
@@ -15446,7 +15313,6 @@ entity:SimpleExternalConsumerDisplay-1110
   rdfs:label "Simple external consumer display"^^xsd:string ;
 .
 entity:SimpleExternalConsumerDisplay-1111
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 ""^^xsd:string ;
@@ -15512,7 +15378,6 @@ entity:SimulateSystem-1115
   rdfs:label "Simulate system"^^xsd:string ;
 .
 entity:SmartAppliance-WhiteGoods--1117
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
@@ -15524,7 +15389,6 @@ entity:SmartAppliance-WhiteGoods--1117
   rdfs:label "Smart appliance (White goods)"^^xsd:string ;
 .
 entity:SmartAppliance-whiteGoods--1116
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:description_0 "An example of a smart device is a smart white goods appliance which is an appliance that has the capability to act in response to a signal from the grid and thereby optimize its behaviour towards the energy supply network. The signal can be received from a utility or a third party energy service provider directly or via a home energy management system. The signal can be information like the cost of energy or the amount of availablerenewable energy, or it can be a Demand Respond signal (delay load signal or other related information) that the appliance must receive, interpret and react upon based on pre-set or active consumer input. The smart appliance is not guaranteed to respond, but will do so based on its status and user settings in order to ensure the expected performance.The consumer has the ultimate control of the appliance and can override any specific mode (e.g. override a delay to allow immediate operation, limit delays to no more than a certain number of hours, or maintain a set room temperature). Any appliance operation settings or modes shall be easy for an average, non-technical consumer to activate or implement."^^xsd:string ;
   props:entityName "Smart appliance (white goods)"^^xsd:string ;
@@ -15535,7 +15399,6 @@ entity:SmartAppliance-whiteGoods--1116
   rdfs:label "Smart appliance (white goods)"^^xsd:string ;
 .
 entity:SmartApplianceGenerator-ExternalActor--1118
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 """The smart appliance with integrated EM, directly receiving data from the grid,
@@ -15552,7 +15415,6 @@ be seen as an external actor
   rdfs:label "Smart appliance Generator ( external actor)"^^xsd:string ;
 .
 entity:SmartAppliances-1119
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "-"^^xsd:string ;
@@ -15563,7 +15425,6 @@ entity:SmartAppliances-1119
   rdfs:label "Smart appliances"^^xsd:string ;
 .
 entity:SmartDevice-1120
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:description_0 """A smart device may be an appliance, generator or storage device (Local storage devices include direct and functional electricity storages such as electrochemical batteries, heat pumps and micro CHP such as fuel cells with heat buffers, air conditioning and cooling devices with thermal inertia, etcâ€¦). The smart device can receive data directly from the grid, though an interface with the CEM and can react to commands and signals from the grid in an intelligent way.
 Since the smart device is outside the scope of the SGCG, it must be seen as an external actor"""^^xsd:string ;
@@ -15576,7 +15437,6 @@ Since the smart device is outside the scope of the SGCG, it must be seen as an e
   rdfs:label "smart device"^^xsd:string ;
 .
 entity:SmartDevice-1121
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
@@ -15588,7 +15448,6 @@ entity:SmartDevice-1121
   rdfs:label "Smart device"^^xsd:string ;
 .
 entity:SmartDevice-1122
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:description_0 """A smart device may be an appliance, generator or storage device (Local storage devices include direct and functional electricity storages such as electrochemical batteries, heat pumps and micro CHP such as fuel cells with heat buffers, air conditioning and cooling devices with thermal inertia, etcÃ¢â‚¬Â¦). The smart device can receive data directly from the grid, though an interface with the CEM and can react to commands and signals from the grid in an intelligent way.
 
@@ -15618,7 +15477,6 @@ entity:SmartMeter-1123
   rdfs:label "Smart Meter"^^xsd:string ;
 .
 entity:SmartMeter-1124
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 """The metering end device is a combination of the following meter-related functions from the Smart Metering reference architecture:
@@ -15635,7 +15493,6 @@ entity:SmartMeter-1124
   rdfs:label "Smart meter"^^xsd:string ;
 .
 entity:SmartMeter-1125
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "The metering end device is a combination of the following meter-related functions from the Smart Metering reference architecture:"^^xsd:string ;
@@ -15647,7 +15504,6 @@ entity:SmartMeter-1125
   rdfs:label "Smart meter"^^xsd:string ;
 .
 entity:SmartMeter-SM--1126
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 """The metering end device is a combination of the following meter-related functions from the Smart Metering reference architecture:
 â€¢ Metrology functions including the conventional meter display (register or index) that are under legal metrological control. When under metrological control, these functions shall meet the essential equirements of the MID;
@@ -15662,7 +15518,6 @@ entity:SmartMeter-SM--1126
   rdfs:label "Smart Meter (SM)"^^xsd:string ;
 .
 entity:SmartMeter-SM--1127
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "Meter with additional functionalities one of which is data communication."^^xsd:string ;
@@ -15674,7 +15529,6 @@ entity:SmartMeter-SM--1127
   rdfs:label "Smart Meter (SM)"^^xsd:string ;
 .
 entity:SmartMeter-SM--1128
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 """The metering end device is a combination of the following meter-related functions from the Smart Metering reference architecture:
@@ -15691,7 +15545,6 @@ entity:SmartMeter-SM--1128
   rdfs:label "Smart Meter (SM)"^^xsd:string ;
 .
 entity:SmartMeteringGateway-LNAP--1129
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:description_0 """An access point (functional entity) that allows access to one or more metering end devices and, when equipped with an interface, to advanced display / home automation end devices connected to the local network.
 A LNAP also may allow data exchange between different functional entities connected to the same LN. The LNAP may act simply as a router transferring messages between the metering end device and/or display/home automation devices and the Neighbourhood network of wide area network.
@@ -15705,7 +15558,6 @@ It may also provide services including protocol conversion, device management, s
   rdfs:label "Smart Metering gateway (LNAP)"^^xsd:string ;
 .
 entity:SmartMeteringGateway-LNAP--1130
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 """An access point (functional entity) that allows access to one or more metering end devices and, when equipped with an interface, to advanced display / home automation end devices connected to the local network.
@@ -15769,7 +15621,6 @@ entity:StakeholderPlanningAndReporting-1133
   rdfs:label "Stakeholder Planning and Reporting"^^xsd:string ;
 .
 entity:StakeholderPlanningAndReporting-SPM--1134
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:description_0 "These actors perform track and manage the needs and concerns of various utility stakeholders by monitoring customer input, regulators, service standards, and legal proceedings."^^xsd:string ;
   props:entityName "Stakeholder Planning and Reporting (SPM)"^^xsd:string ;
@@ -15871,7 +15722,6 @@ entity:Storage-1140
   rdfs:label "Storage"^^xsd:string ;
 .
 entity:Storage-1141
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
@@ -15944,7 +15794,6 @@ entity:SubmeteringService-1145
   rdfs:label "submetering service"^^xsd:string ;
 .
 entity:SubstationAndNetworkInventory-AMEINV--1146
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:description_0 "The electrical substation and network assets that a utility owns, or for which has legal responsibility, and will maintain an accurate asset register developed around an asset hierarchy that supports advanced asset management functions."^^xsd:string ;
   props:entityName "Substation and network inventory (AMEINV)"^^xsd:string ;
@@ -15955,7 +15804,6 @@ entity:SubstationAndNetworkInventory-AMEINV--1146
   rdfs:label "Substation and network inventory (AMEINV)"^^xsd:string ;
 .
 entity:SubstationControlSystem-SCS--1147
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:description_0 "(Primary or secondary) Substation Control System implementing the function. Performs state estimation based on real-time measurement data. Derives control actions from analysis of power flow situation"^^xsd:string ;
   props:entityName "Substation Control System (SCS)"^^xsd:string ;
@@ -15967,7 +15815,6 @@ entity:SubstationControlSystem-SCS--1147
   rdfs:label "Substation Control System (SCS)"^^xsd:string ;
 .
 entity:SubstationControlSystem-SCS--1148
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Generic Role"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 ""^^xsd:string ;
@@ -16003,7 +15850,6 @@ entity:SupervisoryControlAndDataAcquisition-1149
   rdfs:label "Supervisory Control and Data Acquisition"^^xsd:string ;
 .
 entity:Supplier-1150
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 """Entity that offers contracts for supply of energy to a consumer (the supply contract). Within this role he will initiate DSM activities 
 NOTE: In some countries referred to as Retailer"""^^xsd:string ;
@@ -16031,7 +15877,6 @@ entity:SupplyChainLogistics-1151
   rdfs:label "Supply Chain Logistics"^^xsd:string ;
 .
 entity:SupplyChainLogistics-SC--1152
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:description_0 "Business function or service that manages supplier and customer business accounts"^^xsd:string ;
   props:entityName "Supply Chain Logistics (SC)"^^xsd:string ;
@@ -16086,7 +15931,6 @@ entity:Switch-1155
   rdfs:label "Switch"^^xsd:string ;
 .
 entity:SwitchActionScheduling-OperationWorkScheduling-OPSSC--1157
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:description_0 "Switch action scheduling provides supports for handling all aspects relevant to switch order formulation, drawing up operating guidelines, dispatching repair crews and informing customers affected. It assists in collecting the related data and delivering it in the various forms required."^^xsd:string ;
   props:entityName "Switch action scheduling / operation work scheduling (OPSSC)"^^xsd:string ;
@@ -16098,7 +15942,6 @@ entity:SwitchActionScheduling-OperationWorkScheduling-OPSSC--1157
   rdfs:label "Switch action scheduling / operation work scheduling (OPSSC)"^^xsd:string ;
 .
 entity:SwitchActionScheduling-OperationWorkScheduling-OPSSC--1158
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:description_0 ""^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
@@ -16154,7 +15997,6 @@ entity:SynchronizeTime-1160
   rdfs:label "Synchronize Time"^^xsd:string ;
 .
 entity:SynchronizingEquipment-1161
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Equipment that synchronizes the frequency between two EPSs"^^xsd:string ;
@@ -16287,7 +16129,6 @@ entity:SystemOperator-1168
   rdfs:label "System Operator"^^xsd:string ;
 .
 entity:SystemOperator-1169
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 """A party that is responsible for a stable power system operation (including the organisation of physical balance) through a transmission grid in a geographical area. The SO will also determine and be responsible for cross border capacity and exchanges. If necessary he may reduce allocated capacity to ensure operational stability. Transmission as mentioned above means \"the transport of electricity on the extra high or high voltage network with a view to its delivery to final customers or to distributors. Operation of transmission includes as well the tasks of system operation concerning its management of energy flows, reliability of the system and availability of all necessary system services.\" (definition taken from the UCTE Operation handbook Glossary). 
 Note: additional obligations may be imposed through local market rules."""^^xsd:string ;
@@ -16368,7 +16209,6 @@ entity:SystemSimulator-1176
   rdfs:label "System simulator"^^xsd:string ;
 .
 entity:SystemSocketAdministrator-1177
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 ""^^xsd:string ;
@@ -16418,7 +16258,6 @@ entity:SystemStatus-1180
   rdfs:label "System Status"^^xsd:string ;
 .
 entity:TDEMSOrTSOEMS-1181
-  rdf:type props:Combined-Elements-noduprows ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "TDEMS is part of the TSO EMS that manages large DER systems or large aggregations of smaller DER systems"^^xsd:string ;
   props:entityName "TDEMS or TSO EMS"^^xsd:string ;
@@ -16441,7 +16280,6 @@ entity:TechnicalSupportServices-1182
   rdfs:label "technical support services"^^xsd:string ;
 .
 entity:TelcoOperator-1183
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
@@ -16542,7 +16380,6 @@ entity:TimeSynchronizationManagement-1189
   rdfs:label "Time Synchronization Management"^^xsd:string ;
 .
 entity:TimeSynchronizationSource-1190
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Source of an accurate time signal"^^xsd:string ;
@@ -16554,7 +16391,6 @@ entity:TimeSynchronizationSource-1190
   rdfs:label "Time Synchronization Source"^^xsd:string ;
 .
 entity:Timer-1191
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "An initiator that triggers of time based/scheduled use cases"^^xsd:string ;
   props:entityName "Timer"^^xsd:string ;
@@ -16607,7 +16443,6 @@ entity:TradeResponsibleParty-1194
   rdfs:label "Trade Responsible Party"^^xsd:string ;
 .
 entity:TradeResponsibleParty-1195
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 """A party who can be brought to rights, legally and financially, for any imbalance between energy bought and consumed for all associated metering points. 
 Note: A power exchange without any privileged responsibilities acts as a Trade Responsible Party. 
@@ -16735,7 +16570,6 @@ entity:TransmissionBatteryStorage-1203
   rdfs:label "Transmission Battery Storage"^^xsd:string ;
 .
 entity:TransmissionBusLoadModel-TBLM--1204
-  rdf:type props:Combined-Elements-noduprows ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Transmission Bus Load Model (TBLM)"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
@@ -16763,7 +16597,6 @@ The Transmission Capacity Allocator manages, on behalf of the System Operators, 
   rdfs:label "Transmission Capacity Allocator"^^xsd:string ;
 .
 entity:TransmissionCapacityAllocator-1206
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 """Manages the allocation of transmission capacity for an allocated capacity area.
 For explicit auctions:
@@ -16996,7 +16829,6 @@ entity:TransmissionSystemOperator-1219
   rdfs:label "Transmission System Operator"^^xsd:string ;
 .
 entity:TransmissionSystemOperator-TSO--1220
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
   props:description_0 """according to the Article 2.4 of the Electricity Directive 2009/72/EC (Directive): \"a natural or legal person 
@@ -17014,7 +16846,6 @@ TSO control area."""^^xsd:string ;
   rdfs:label "Transmission System Operator (TSO)"^^xsd:string ;
 .
 entity:TransmissionSystemOperator-TSO--1221
-  rdf:type props:Combined-Elements-noduprows ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Transmission System Operator (TSO)"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
@@ -17037,7 +16868,6 @@ entity:TransportCapacitySimulator-1222
   rdfs:label "Transport capacity simulator"^^xsd:string ;
 .
 entity:TransportationConsumer-1223
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "A consumer of electricity providing transport systems. May be involved in contract based Demand/Response. E"^^xsd:string ;
   props:eG3 "X"^^xsd:string ;
@@ -17048,7 +16878,6 @@ entity:TransportationConsumer-1223
   rdfs:label "Transportation consumer"^^xsd:string ;
 .
 entity:TroubleCallManagement-CSTCM--1224
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:description_0 "Customer troubles related to blackouts are transmitted and compared with network data in order to provide accurate information on the incident."^^xsd:string ;
   props:entityName "Trouble call management (CS-TCM)"^^xsd:string ;
@@ -17139,7 +16968,6 @@ entity:UpdateCircuitRecords-1230
   rdfs:label "Update circuit records"^^xsd:string ;
 .
 entity:UtilityBusinessSystems-UBS--1231
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:description_0 "Usually called back-office systems"^^xsd:string ;
   props:entityName "Utility Business Systems (UBS)"^^xsd:string ;
@@ -17165,7 +16993,6 @@ entity:UtilityEnergyProvider-1232
   rdfs:label "Utility Energy Provider"^^xsd:string ;
 .
 entity:V2GDRProgram-1233
-  rdf:type props:Combined-Elements-noduprows ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Vehicle to Grid demand response program"^^xsd:string ;
   props:entityName "V2G DR program"^^xsd:string ;
@@ -17240,7 +17067,6 @@ entity:VariableGenerationSupport-1238
   rdfs:label "Variable generation support"^^xsd:string ;
 .
 entity:VehicleManufacturer-1239
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:ahGCharging "X"^^xsd:string ;
   props:description_0 "A party that produces the electric vehicles, develops the data information messages, which will be available for the service management."^^xsd:string ;
@@ -17251,7 +17077,6 @@ entity:VehicleManufacturer-1239
   rdfs:label "Vehicle Manufacturer"^^xsd:string ;
 .
 entity:VehicleOwner-1240
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "A party that owns the electric vehicle"^^xsd:string ;
   props:entityName "Vehicle Owner"^^xsd:string ;
@@ -17261,7 +17086,6 @@ entity:VehicleOwner-1240
   rdfs:label "Vehicle Owner"^^xsd:string ;
 .
 entity:VehicleUser-1241
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:ahGCharging "X"^^xsd:string ;
   props:description_0 "A party that uses the electric vehicle (a physical person as well as a social one).His goal is to be able to use the vehicle, when he needs it or wants to use it. His involvement in the charge management process is essential but, this will hardly depend on the services offered to him."^^xsd:string ;
@@ -17272,7 +17096,6 @@ entity:VehicleUser-1241
   rdfs:label "Vehicle User"^^xsd:string ;
 .
 entity:VirtualPowerPlant-VPP-DEREMS-VDEMS--1242
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "System that manages the settings and dispatch of DER systems that are enrolled in a virtual power plant"^^xsd:string ;
@@ -17283,7 +17106,6 @@ entity:VirtualPowerPlant-VPP-DEREMS-VDEMS--1242
   rdfs:label "Virtual Power Plant (VPP) DER EMS (VDEMS)"^^xsd:string ;
 .
 entity:VirtualResource-generic--1243
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "A set of one or more energy service resources, including generators, energy storage, controllable load, and ancillary services"^^xsd:string ;
@@ -17485,7 +17307,6 @@ entity:WeatherDataCollection-1256
   rdfs:label "Weather Data Collection"^^xsd:string ;
 .
 entity:WeatherForecast-1257
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:actorServiceCompositionService "-"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
@@ -17513,7 +17334,6 @@ entity:WeatherForecastSupport-1258
   rdfs:label "Weather forecast support"^^xsd:string ;
 .
 entity:WeatherSystem-1259
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Meteorological service providing weather system that can affect DER capabilities"^^xsd:string ;
@@ -17591,7 +17411,6 @@ entity:WideAreaMeasurementAndControlSystem-1263
   rdfs:label "Wide Area Measurement and Control System"^^xsd:string ;
 .
 entity:WideAreaMonitoring-WAMON--1267
-  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Application"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
@@ -17602,7 +17421,6 @@ entity:WideAreaMonitoring-WAMON--1267
   rdfs:label "Wide-area Monitoring (WAMON)"^^xsd:string ;
 .
 entity:WideAreaNetwork-WAN--1264
-  rdf:type props:Combined-Elements-noduprows ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Wide Area Network (WAN)"^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
@@ -17655,7 +17473,6 @@ entity:WindGeneration-1268
   rdfs:label "Wind Generation"^^xsd:string ;
 .
 entity:WindTurbine-1269
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Wind turbine"^^xsd:string ;
@@ -17665,7 +17482,6 @@ entity:WindTurbine-1269
   rdfs:label "Wind turbine"^^xsd:string ;
 .
 entity:WoodChipBoiler-1270
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:entityName "Wood chip boiler"^^xsd:string ;
@@ -18642,7 +18458,7 @@ props:Combined-Elements-noduprows
       rdfs:comment "007: Declare all ServiceContracts"^^xsd:string ;
     ] ;
   rdfs:label "Combined-Elements-noduprows" ;
-  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf ar:Entity ;
 .
 <http://sv.cmu.edu/AWP/8.0/ss2owl.1>
   owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
