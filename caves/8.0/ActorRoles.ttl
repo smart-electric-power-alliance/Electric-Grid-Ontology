@@ -514,6 +514,9 @@ ar:consumes
   rdf:type rdf:Property ;
   owl:inverseOf ar:isConsumedBy ;
 .
+ar:deprecated
+  rdfs:range xsd:boolean ;
+.
 ar:description
   rdf:type owl:DatatypeProperty ;
   rdfs:label ""^^xsd:string ;
