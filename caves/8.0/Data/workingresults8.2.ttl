@@ -3432,35 +3432,20 @@ entity:DER-261
   tables:rowIndex "261"^^xsd:int ;
   rdfs:label "DER"^^xsd:string ;
 .
-entity:DER-264
-  rdf:type ar:LogicalServiceComposition ;
+entity:DER-262
+  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
-  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
+  props:actorServiceCompositionService "-"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
-  props:description_0 "Provides voltage support"^^xsd:string ;
-  props:entityName "DER Generation"^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
-  props:note "Distribution Grid Management/Microgrid"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
-  props:uSEUInput "EU"^^xsd:string ;
-  tables:rowIndex "264"^^xsd:int ;
-  rdfs:label "DER Geneeration"^^xsd:string ;
-.
-entity:DER-265
-  rdf:type ar:LogicalServiceComposition ;
-  <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
-  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
-  props:clusterLabel "p"^^xsd:string ;
-  props:dKERepository "X"^^xsd:string ;
-  props:description_0 "Provides load management services"^^xsd:string ;
+  props:description_0 ""^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
-  props:entityName "DER Load Management"^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
+  props:entityName "DER"^^xsd:string ;
+  props:new "-"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
-  tables:rowIndex "265"^^xsd:int ;
-  rdfs:label "DER Load Management"^^xsd:string ;
+  tables:rowIndex "262"^^xsd:int ;
+  rdfs:label "DER"^^xsd:string ;
 .
 entity:DERControllableLoad-generic--263
   rdf:type ar:ConceptualService ;
@@ -3514,6 +3499,36 @@ entity:DERGeneratingUnit-generic--266
   props:note "Lvl 1 DER"^^xsd:string ;
   tables:rowIndex "266"^^xsd:int ;
   rdfs:label "DER Generating Unit (generic)"^^xsd:string ;
+.
+entity:DERGeneration-1300
+  rdf:type ar:LogicalServiceComposition ;
+  <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
+  props:clusterLabel "p"^^xsd:string ;
+  props:dKERepository "X"^^xsd:string ;
+  props:description_0 "Provides voltage support"^^xsd:string ;
+  props:entityName "DER Generation"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
+  props:note "Distribution Grid Management/Microgrid"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:uSEUInput "EU"^^xsd:string ;
+  tables:rowIndex "1300"^^xsd:int ;
+  rdfs:label "DER Generation"^^xsd:string ;
+.
+entity:DERLoadManagement-1301
+  rdf:type ar:LogicalServiceComposition ;
+  <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
+  props:clusterLabel "p"^^xsd:string ;
+  props:dKERepository "X"^^xsd:string ;
+  props:description_0 "Provides load management services"^^xsd:string ;
+  props:eUSourceunknown "X"^^xsd:string ;
+  props:entityName "DER Load Management"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:uSEUInput "US"^^xsd:string ;
+  tables:rowIndex "1301"^^xsd:int ;
+  rdfs:label "DER Load Management"^^xsd:string ;
 .
 entity:DERLog-267
   rdf:type ar:PhysicalActor ;
