@@ -6159,7 +6159,7 @@ entity:ElectricVehicleChargingSP-392
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "392"^^xsd:int ;
   rdfs:label "Electric Vehicle Charging SP"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:ElectricVehicleEMS-EVEMS--393
   rdf:type props:Combined-Elements-noduprows ;
@@ -6840,9 +6840,10 @@ entity:EnergyMarketClearinghouse-437
 .
 entity:EnergyMarketManagementSystem-438
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "System which provides applications to manage all transactions and workflows necessary to implement an energy market"^^xsd:string ;
   props:entityName "Energy Market Management System"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "SG3"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "438"^^xsd:int ;
@@ -7182,9 +7183,10 @@ entity:EnergySupplyConfiguration-458
 .
 entity:EnergyTradingApplication-459
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Application(s) which are used to trade energy in corresponding markets, supports the dispatch in the decision to buy, sell or to self-produce energy and also provides facilities to exchange the necessary information with the Energy Market Management Systems"^^xsd:string ;
   props:entityName "Energy Trading Application"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "SG3"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "459"^^xsd:int ;
@@ -7207,9 +7209,10 @@ entity:EnergyUsageReporting-460
 .
 entity:EnterpriseResourcePlanning-ERP--461
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Enterprise Resource Planning (ERP) systems integrate internal and external management information across an entire organization, embracing finance/accounting, manufacturing, sales and service, customer relationship management, etc. (source: Wikipedia)"^^xsd:string ;
   props:entityName "Enterprise Resource Planning (ERP)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "SG3"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "461"^^xsd:int ;
@@ -7620,10 +7623,11 @@ service"""^^xsd:string ;
 .
 entity:FLISR-529
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Fault location, isolation and system restoration (FLIR)"^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
   props:entityName "FLISR"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "-"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "529"^^xsd:int ;
@@ -7959,9 +7963,10 @@ entity:FieldEquipmentUpgadeManagement--513
 .
 entity:FieldForceManagementSystem-514
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Applications helping to manage Field Force"^^xsd:string ;
   props:entityName "Field Force Management System"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "SG3"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "514"^^xsd:int ;
@@ -7970,9 +7975,10 @@ entity:FieldForceManagementSystem-514
 .
 entity:FieldRecording-MCFRD--515
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:description_0 "Field recording is often accomplished through hand held devices which allow field personnel to view and enter information relevant to the work they are performing in the field. For example, line crews and servicemen can access their respective district maps, do searches by pole number, substation, transformer number, switch numbers, and feeder names"^^xsd:string ;
   props:entityName "Field recording (MC-FRD)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iECSG3 "X"^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -8022,9 +8028,10 @@ entity:FieldWorkManagement--518
 .
 entity:Financial-FIN--520
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Financial actors measure performance across the whole organization, including the evaluation of investments in capital projects, maintenance, or operations. They track risk, benefits, costs and impact on levels of service."^^xsd:string ;
   props:entityName "Financial (FIN)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
@@ -8110,11 +8117,12 @@ entity:FirewallPolicyEnforcement-524
 .
 entity:FleetServices-525
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:ahGCharging "X"^^xsd:string ;
   props:description_0 """A party that operates fleets of vehicles (mix of internal combustion engine vehicles and electric ones). The fleet operators could manage their activities in various ways: in private area such as airport fleets or in open market, like car sharing or more conventional car rental.
 A Fleet Operator could subscribe to different services, like parking services, mobility services and electricity charging services to an Area Energy Service Operator or Energy (e-Mobility) Service Operator.Additional information: a Fleet Operator could be considered as an Aggregator for specific mobility needs, could sometimes predict the energy demand for the mobility of its fleet and therefore aggregate it. He is responsible for the economical optimization between charge management and mobility."""^^xsd:string ;
   props:entityName "Fleet Services"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "AhG Charging"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "525"^^xsd:int ;
@@ -8123,10 +8131,11 @@ A Fleet Operator could subscribe to different services, like parking services, m
 .
 entity:FlexibilityServices-FO--526
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "generic role which links the role customer and its possibility to provide flexibilities to the roles market and grid; generic role that could be taken by many stakeholders, such as a DSO company, an Energy Service Company (ESCO) or an energy supplier"^^xsd:string ;
   props:eUWGSPVers05 "X"^^xsd:string ;
   props:entityName "Flexibility Services (FO)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "WGSP"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "526"^^xsd:int ;
@@ -8678,9 +8687,10 @@ entity:GeographicInformationSystem-GIS--562
 .
 entity:GeographicalInventory-AMGINV--563
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Management of geospatial data, typically by utilizing computer graphics technology to enter, store, and update graphic and non-graphic information. Geographic depictions and related non-graphic data elements for each entity are typically stored in some form of a data store. The graphic representations are referenced using a coordinate system that relates to locations on the surface of the earth. Information in the data store can be queried and displayed based upon either the graphic or non-graphic attributes of the entities."^^xsd:string ;
   props:entityName "Geographical inventory(AMGINV)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -8925,10 +8935,11 @@ entity:GridOperationsSupport-581
 .
 entity:GridOperator-582
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A party that operates one or more grids."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "Grid Operator"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "582"^^xsd:int ;
@@ -8971,9 +8982,10 @@ Contains some topology information and aggregation functionality for plug &br/>p
 .
 entity:HESServices-A--586
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "generic role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "External actor interacting with the system functions and components via the HES Head End System (Metering)"^^xsd:string ;
   props:entityName "HES Services (A)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "SMCG"^^xsd:string ;
   props:sMCG "X"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -9027,9 +9039,10 @@ entity:HomeApplianceVendors-588
 .
 entity:HomeAutomationEndDevice-589
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:description_0 "Device providing additional functionalities enabling consumers to interact with their own environment."^^xsd:string ;
   props:entityName "Home automation end device"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:note "SMCG"^^xsd:string ;
   props:sMCG "X"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -9039,9 +9052,10 @@ entity:HomeAutomationEndDevice-589
 .
 entity:HomeAutomationServices-D--590
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "generic role"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:description_0 "External actor interacting directly with the home automation end device."^^xsd:string ;
   props:entityName "Home Automation Services (D)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:note "SMCG"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:sMCG "X"^^xsd:string ;
@@ -9052,9 +9066,10 @@ entity:HomeAutomationServices-D--590
 .
 entity:HomeCustomer-591
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:description_0 "A residential consumer of electricity (including also agriculture users) may also be involved in contract-based Demand/Response."^^xsd:string ;
   props:entityName "Home customer"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "SMCG"^^xsd:string ;
   props:sMCG "X"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -9188,10 +9203,11 @@ entity:ImbalanceSettlementResponsible-598
 .
 entity:ImbalanceSettlementResponsible-599
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A party that is responsible for settlement of the difference between the contracted quantities and the realised quantities of energy products for the balance responsible parties in a market balance area."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "Imbalance Settlement Responsible"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "599"^^xsd:int ;
@@ -9272,11 +9288,12 @@ entity:IndustrialAutomation-603
 .
 entity:IndustrialConsumer-604
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 """A large consumer of electricity in an industrial / manufacturing industry. May be involved in contract based 
 Demand/Response."""^^xsd:string ;
   props:eG3 "X"^^xsd:string ;
   props:entityName "Industrial consumer"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "EG3"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "604"^^xsd:int ;
@@ -9517,11 +9534,12 @@ entity:InterconnectionTradeResponsible-619
 .
 entity:InterconnectionTradeResponsible-620
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 """Is a Balance Responsible Party or depends on one. He is recognised by the Nomination Validator for the nomination of already allocated capacity. 
 Additional information: This is a type of Balance Responsible Party"""^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "Interconnection Trade Responsible"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "620"^^xsd:int ;
