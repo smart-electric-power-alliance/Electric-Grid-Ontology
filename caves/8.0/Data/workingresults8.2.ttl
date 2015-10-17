@@ -6839,7 +6839,7 @@ entity:EnergyMarketClearinghouse-437
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:EnergyMarketManagementSystem-438
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "System which provides applications to manage all transactions and workflows necessary to implement an energy market"^^xsd:string ;
   props:entityName "Energy Market Management System"^^xsd:string ;
@@ -7182,7 +7182,7 @@ entity:EnergySupplyConfiguration-458
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:EnergyTradingApplication-459
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Application(s) which are used to trade energy in corresponding markets, supports the dispatch in the decision to buy, sell or to self-produce energy and also provides facilities to exchange the necessary information with the Energy Market Management Systems"^^xsd:string ;
   props:entityName "Energy Trading Application"^^xsd:string ;
@@ -7208,7 +7208,7 @@ entity:EnergyUsageReporting-460
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:EnterpriseResourcePlanning-ERP--461
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Enterprise Resource Planning (ERP) systems integrate internal and external management information across an entire organization, embracing finance/accounting, manufacturing, sales and service, customer relationship management, etc. (source: Wikipedia)"^^xsd:string ;
   props:entityName "Enterprise Resource Planning (ERP)"^^xsd:string ;
@@ -7622,7 +7622,7 @@ service"""^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:FLISR-529
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Fault location, isolation and system restoration (FLIR)"^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
@@ -7962,7 +7962,7 @@ entity:FieldEquipmentUpgadeManagement--513
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:FieldForceManagementSystem-514
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Applications helping to manage Field Force"^^xsd:string ;
   props:entityName "Field Force Management System"^^xsd:string ;
@@ -7974,7 +7974,7 @@ entity:FieldForceManagementSystem-514
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:FieldRecording-MCFRD--515
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalService ;
   props:actorServiceCompositionService "Service"^^xsd:string ;
   props:description_0 "Field recording is often accomplished through hand held devices which allow field personnel to view and enter information relevant to the work they are performing in the field. For example, line crews and servicemen can access their respective district maps, do searches by pole number, substation, transformer number, switch numbers, and feeder names"^^xsd:string ;
   props:entityName "Field recording (MC-FRD)"^^xsd:string ;
@@ -8027,7 +8027,7 @@ entity:FieldWorkManagement--518
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:Financial-FIN--520
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Financial actors measure performance across the whole organization, including the evaluation of investments in capital projects, maintenance, or operations. They track risk, benefits, costs and impact on levels of service."^^xsd:string ;
   props:entityName "Financial (FIN)"^^xsd:string ;
@@ -8116,7 +8116,7 @@ entity:FirewallPolicyEnforcement-524
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:FleetServices-525
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:ahGCharging "X"^^xsd:string ;
   props:description_0 """A party that operates fleets of vehicles (mix of internal combustion engine vehicles and electric ones). The fleet operators could manage their activities in various ways: in private area such as airport fleets or in open market, like car sharing or more conventional car rental.
@@ -8130,7 +8130,7 @@ A Fleet Operator could subscribe to different services, like parking services, m
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:FlexibilityServices-FO--526
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "generic role which links the role customer and its possibility to provide flexibilities to the roles market and grid; generic role that could be taken by many stakeholders, such as a DSO company, an Energy Service Company (ESCO) or an energy supplier"^^xsd:string ;
   props:eUWGSPVers05 "X"^^xsd:string ;
@@ -8686,7 +8686,7 @@ entity:GeographicInformationSystem-GIS--562
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:GeographicalInventory-AMGINV--563
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Management of geospatial data, typically by utilizing computer graphics technology to enter, store, and update graphic and non-graphic information. Geographic depictions and related non-graphic data elements for each entity are typically stored in some form of a data store. The graphic representations are referenced using a coordinate system that relates to locations on the surface of the earth. Information in the data store can be queried and displayed based upon either the graphic or non-graphic attributes of the entities."^^xsd:string ;
   props:entityName "Geographical inventory(AMGINV)"^^xsd:string ;
@@ -8934,7 +8934,7 @@ entity:GridOperationsSupport-581
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:GridOperator-582
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A party that operates one or more grids."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -8981,7 +8981,7 @@ Contains some topology information and aggregation functionality for plug &br/>p
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:HESServices-A--586
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "External actor interacting with the system functions and components via the HES Head End System (Metering)"^^xsd:string ;
   props:entityName "HES Services (A)"^^xsd:string ;
@@ -9038,7 +9038,7 @@ entity:HomeApplianceVendors-588
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:HomeAutomationEndDevice-589
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:PhysicalActor ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:description_0 "Device providing additional functionalities enabling consumers to interact with their own environment."^^xsd:string ;
   props:entityName "Home automation end device"^^xsd:string ;
@@ -9051,7 +9051,7 @@ entity:HomeAutomationEndDevice-589
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:HomeAutomationServices-D--590
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:PhysicalService ;
   props:actorServiceCompositionService "Service"^^xsd:string ;
   props:description_0 "External actor interacting directly with the home automation end device."^^xsd:string ;
   props:entityName "Home Automation Services (D)"^^xsd:string ;
@@ -9065,7 +9065,8 @@ entity:HomeAutomationServices-D--590
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:HomeCustomer-591
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:Actor ;
+  rdf:type ar:ConceptualEntity ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:description_0 "A residential consumer of electricity (including also agriculture users) may also be involved in contract-based Demand/Response."^^xsd:string ;
   props:entityName "Home customer"^^xsd:string ;
@@ -9202,7 +9203,7 @@ entity:ImbalanceSettlementResponsible-598
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ImbalanceSettlementResponsible-599
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A party that is responsible for settlement of the difference between the contracted quantities and the realised quantities of energy products for the balance responsible parties in a market balance area."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -9287,7 +9288,7 @@ entity:IndustrialAutomation-603
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:IndustrialConsumer-604
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 """A large consumer of electricity in an industrial / manufacturing industry. May be involved in contract based 
 Demand/Response."""^^xsd:string ;
@@ -9533,7 +9534,7 @@ entity:InterconnectionTradeResponsible-619
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:InterconnectionTradeResponsible-620
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 """Is a Balance Responsible Party or depends on one. He is recognised by the Nomination Validator for the nomination of already allocated capacity. 
 Additional information: This is a type of Balance Responsible Party"""^^xsd:string ;
@@ -9606,10 +9607,11 @@ entity:KeyManagement-626
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:LNAP-629
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  rdf:type ar:LogicalServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "The Local Network Access Point is a functional entity that provides access to one or more metering end devices, displays and home automation end devices connected to the local network (LN). It may allow data exchange between different functional entities connected to the same LN."^^xsd:string ;
   props:entityName "LNAP"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "SMCG"^^xsd:string ;
   props:sMCG "X"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -10011,11 +10013,12 @@ entity:MOLResponsible-812
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:MOLResponsible-813
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  rdf:type ar:ConceptualServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Responsible for the management of the available tenders for all Acquiring System Operators to establish the order of the reserve capacity that can be activated."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "MOL Responsible"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "813"^^xsd:int ;
@@ -10260,9 +10263,10 @@ entity:MaintenanceAndConstruction-668
 .
 entity:MaintenanceAndConstruction-MC--669
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Maintenance and Construction actors coordinate equipment inspection, cleaning and adjustment , organize construction and design, dispatch and schedule maintenance and construction work, capture records gathered by field personnel and permit them to view necessary information to perform their tasks."^^xsd:string ;
   props:entityName "Maintenance and Construction (MC)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
@@ -10273,9 +10277,10 @@ entity:MaintenanceAndConstruction-MC--669
 .
 entity:MaintenanceAndInspection-MCMAI--670
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Work involving inspection, cleaning, adjustment, or other service of equipment to enable it to perform better or to extend its service life. Examples of maintenance work are routine oil changes and painting.Examples of inspection work are pole inspections, vault inspections, and substation inspections."^^xsd:string ;
   props:entityName "Maintenance and inspection (MC-MAI)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -11536,11 +11541,12 @@ entity:MarketHistoryService-758
 .
 entity:MarketInformationAggregator-759
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 """Market Information Aggregator, A party that provides market related information that has been compiled fromthe figures supplied by different actors in the market. This information may also be published or distributed for general use.
 Note: The Market Information Aggregator may receive information from any market participant that is relevant for publication or distribution"""^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "Market Information Aggregator"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "759"^^xsd:int ;
@@ -11893,10 +11899,11 @@ entity:MeterDataManagementSystem-783
 .
 entity:MeterDataManagementSystemMDMS-784
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "System for validating, storing, processing and analyzing large quantities of meter data"^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "Meter Data Management System, MDMS"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "784"^^xsd:int ;
@@ -11966,10 +11973,11 @@ entity:MeterOperator-788
 .
 entity:MeterOperatorMO-789
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A party responsible for installing, maintaining, testing, certifying and decommissioning physical meters"^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "Meter Operator, MO"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -12022,10 +12030,11 @@ entity:MeteredDataAggregator-792
 .
 entity:MeteredDataAggregatorMDA-793
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A party responsible for the establishment and qualification of metered data from the Metered data responsible. This data is aggregated according to a defined set of market rules"^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "Metered Data Aggregator , MDA"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "793"^^xsd:int ;
@@ -12255,12 +12264,13 @@ entity:MobileMeteringServiceProvider-808
 .
 entity:MobilityServiceOperator-809
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:ahGCharging "X"^^xsd:string ;
   props:description_0 """A party offering standard mobility services for all type of vehicles (internal combustion engine vehicles as well as plug-in electric or full electric vehicles). â€œMobility servicesâ€� covers maintenance and repair contract, navigation or guidance services, help deskservices, driving assistance and any other type of services, linked to any vehicle data management exchanged between the vehicle and a communication platform with data aggregation or mining or extraction operation according data privacy regulations.
 A Mobility Service Operator could subscribe EV Charging Energy (e-Mobility) Services provided by an Energy (e-Mobility) Service Operator exactly in the same manner as it could subscribe other Area Energy Services managed by an Area Energy Service Operator. 
 Additional information: a Mobility Service Operator could be considered as an Aggregator for conventional mobility services."""^^xsd:string ;
   props:entityName "Mobility Service Operator"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "AhG Charging"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "809"^^xsd:int ;
@@ -12513,9 +12523,10 @@ entity:MultihomingNetworkManagement-827
 .
 entity:NNAP-860
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "The Neighbourhood Network Access Point is a functional entity that provides access to one or more LNAPâ€Ÿs, metering end devices, displays and home automation end devices connected to the neighbourhood network (NN). It may allow data exchange between different functional entities connected to the same NN."^^xsd:string ;
   props:entityName "NNAP"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:note "SMCG"^^xsd:string ;
   props:sMCG "X"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -12663,9 +12674,10 @@ entity:NetworkAddressManagement-836
 .
 entity:NetworkCalculations-NENCLC--837
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Used to develop a long-term (generally one year and beyond) plan for the reliability (adequacy) of the interconnected electric transmission and distribution networks."^^xsd:string ;
   props:entityName "Network calculations (NE-NCLC)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -12675,9 +12687,10 @@ entity:NetworkCalculations-NENCLC--837
 .
 entity:NetworkExtensionPlanning-NE--838
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Network Extension planning actors develop long term plans for power system reliability, monitor the cost, performance and schedule of construction, and define projects to extend the network such as new lines, feeders or switchgear"^^xsd:string ;
   props:entityName "Network Extension Planning (NE)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -12860,9 +12873,10 @@ entity:NetworkOperationsAnalyst-850
 .
 entity:NetworkOperationsCalculations-NOCLC--851
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Real-time Network Calculations actors provide system operators with the ability to assess the reliability and security of the power system."^^xsd:string ;
   props:entityName "Network Operations Calculations (NO-CLC)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -12890,9 +12904,10 @@ entity:NetworkOperationsControl-852
 .
 entity:NetworkOperationsControl-NOCTL--853
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Centralized automated and manual control operations of the system to manage the flow of power and optimize reliability of the system. Network control is coordinated by actors in this domain, they may only supervise wide area, substation, and local automatic or manual control. An example would be the use of phase angle regulators within a substation to control power flow between two adjacent power systems"^^xsd:string ;
   props:entityName "Network Operations Control (NO-CTL)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
@@ -12962,9 +12977,10 @@ entity:NetworkOperationsReportingAndStatistics-857
 .
 entity:NetworkOperationsReportingAndStatistics-NOOST--858
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Operational Statistics and Reporting actors archive on-line data and to perform feedback analysis about system efficiency and reliability."^^xsd:string ;
   props:entityName "Network Operations Reporting and Statistics (NOOST)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -13068,10 +13084,11 @@ entity:NominationValidator-865
 .
 entity:NominationValidator-866
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Has the responsibility of ensuring that all capacity nominated is within the allowed limits and confirming all valid nominations to all involved parties. He informs the Interconnection Trade Responsible of the maximum nominated capacity allowed. Depending on market rules for a given interconnection the corresponding System Operators may appoint one Nomination Validator."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "Nomination Validator"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
