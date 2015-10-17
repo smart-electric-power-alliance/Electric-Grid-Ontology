@@ -13756,13 +13756,14 @@ entity:PNode-930
 .
 entity:ParkingServiceOperator-910
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:ahGCharging "X"^^xsd:string ;
   props:description_0 """A party that offers parking services. A Parking Service Operator could subscribe to electricity charging services to an Area Energy Service 
 Operator or Energy (e-Mobility) Service Operator. He could offer the service, in a complete different manner, including the charging service in the fees of the parking, because the current cost of one hour of parking is higher than the cost of electrical energy delivered by a slow charge service. 
 The links with these Energy Operators have not been shown on the diagram only for readability reason.
 Additional information: a Parking Service Operator could be considered as an Aggregator."""^^xsd:string ;
   props:entityName "Parking Service Operator"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "AhG Charging"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "910"^^xsd:int ;
@@ -14228,9 +14229,10 @@ entity:PowerGridEquipmentVendors-943
 .
 entity:PowerImportSchedulingAndOptimisation-OPIMP--944
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Power import scheduling and optimisation aims to minimise the cost of imported power by keeping the average imported power close to the contracted value, making use of peak plants, load switching or load shedding."^^xsd:string ;
   props:entityName "Power import scheduling and optimisation (OP-IMP)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -14274,9 +14276,10 @@ entity:PowerPlantOwner-947
 .
 entity:PowerPlantSystem-948
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Applications managing a Power Plant"^^xsd:string ;
   props:entityName "Power Plant System"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iECSG3 "X"^^xsd:string ;
   props:note "SG3"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -14613,9 +14616,10 @@ entity:Premises-970
 .
 entity:Premises-PRM--971
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Information regarding the location of a service. This set of functions includes: Address management; Right of ways, easements, grants; and Real estate management."^^xsd:string ;
   props:entityName "Premises (PRM)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
@@ -14710,9 +14714,10 @@ entity:PrivacyPolicyEnforcement-977
 .
 entity:ProcessAutomationSystem-978
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Automation system to monitor and control industrial production plants."^^xsd:string ;
   props:entityName "Process Automation System"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iECSG3 "X"^^xsd:string ;
   props:note "SG3"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -14722,11 +14727,12 @@ entity:ProcessAutomationSystem-978
 .
 entity:Producer-979
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 """A party that produces electricity 
 Additional information: This is a type of Party Connected to the Grid"""^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "Producer"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "979"^^xsd:int ;
@@ -14752,11 +14758,12 @@ entity:ProductionResponsibleParty-980
 .
 entity:ProductionResponsibleParty-981
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 """A party who can be brought to rights, legally and financially, for any imbalance between energy sold and produced for all associated metering points. 
 Additional information: This is a type of Balance Responsible Party"""^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "Production Responsible Party"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -14780,9 +14787,10 @@ entity:ProfileSupport-982
 .
 entity:ProjectDefinition-NEPRJ--983
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Planned work activities to enhance or extend the network and/or other assets. Example include line extension for new housing development, a new substation, switchgear change at a substation. Capital development projects (i.e., not billed to a customer) are usually justified with an business case."^^xsd:string ;
   props:entityName "Project definition (NEPRJ)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
