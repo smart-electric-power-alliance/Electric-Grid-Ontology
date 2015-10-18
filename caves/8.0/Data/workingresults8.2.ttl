@@ -18581,10 +18581,11 @@ entity:VariableGenerationSupport-1238
 .
 entity:VehicleManufacturer-1239
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:ahGCharging "X"^^xsd:string ;
   props:description_0 "A party that produces the electric vehicles, develops the data information messages, which will be available for the service management."^^xsd:string ;
   props:entityName "Vehicle Manufacturer"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "AhG Charging"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "1239"^^xsd:int ;
@@ -18593,9 +18594,10 @@ entity:VehicleManufacturer-1239
 .
 entity:VehicleOwner-1240
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:description_0 "A party that owns the electric vehicle"^^xsd:string ;
   props:entityName "Vehicle Owner"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "AhG Charging"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "1240"^^xsd:int ;
@@ -18604,10 +18606,11 @@ entity:VehicleOwner-1240
 .
 entity:VehicleUser-1241
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:ahGCharging "X"^^xsd:string ;
   props:description_0 "A party that uses the electric vehicle (a physical person as well as a social one).His goal is to be able to use the vehicle, when he needs it or wants to use it. His involvement in the charge management process is essential but, this will hardly depend on the services offered to him."^^xsd:string ;
   props:entityName "Vehicle User"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "AhG Charging"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "1241"^^xsd:int ;
