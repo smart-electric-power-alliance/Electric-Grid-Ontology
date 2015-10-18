@@ -10262,7 +10262,7 @@ entity:MaintenanceAndConstruction-668
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:MaintenanceAndConstruction-MC--669
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Maintenance and Construction actors coordinate equipment inspection, cleaning and adjustment , organize construction and design, dispatch and schedule maintenance and construction work, capture records gathered by field personnel and permit them to view necessary information to perform their tasks."^^xsd:string ;
   props:entityName "Maintenance and Construction (MC)"^^xsd:string ;
@@ -10276,7 +10276,7 @@ entity:MaintenanceAndConstruction-MC--669
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:MaintenanceAndInspection-MCMAI--670
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Work involving inspection, cleaning, adjustment, or other service of equipment to enable it to perform better or to extend its service life. Examples of maintenance work are routine oil changes and painting.Examples of inspection work are pole inspections, vault inspections, and substation inspections."^^xsd:string ;
   props:entityName "Maintenance and inspection (MC-MAI)"^^xsd:string ;
@@ -11540,7 +11540,7 @@ entity:MarketHistoryService-758
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:MarketInformationAggregator-759
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 """Market Information Aggregator, A party that provides market related information that has been compiled fromthe figures supplied by different actors in the market. This information may also be published or distributed for general use.
 Note: The Market Information Aggregator may receive information from any market participant that is relevant for publication or distribution"""^^xsd:string ;
@@ -11898,7 +11898,7 @@ entity:MeterDataManagementSystem-783
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:MeterDataManagementSystemMDMS-784
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "System for validating, storing, processing and analyzing large quantities of meter data"^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -11972,7 +11972,7 @@ entity:MeterOperator-788
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:MeterOperatorMO-789
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A party responsible for installing, maintaining, testing, certifying and decommissioning physical meters"^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -12029,7 +12029,7 @@ entity:MeteredDataAggregator-792
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:MeteredDataAggregatorMDA-793
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A party responsible for the establishment and qualification of metered data from the Metered data responsible. This data is aggregated according to a defined set of market rules"^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -12263,7 +12263,7 @@ entity:MobileMeteringServiceProvider-808
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:MobilityServiceOperator-809
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:ahGCharging "X"^^xsd:string ;
   props:description_0 """A party offering standard mobility services for all type of vehicles (internal combustion engine vehicles as well as plug-in electric or full electric vehicles). â€œMobility servicesâ€� covers maintenance and repair contract, navigation or guidance services, help deskservices, driving assistance and any other type of services, linked to any vehicle data management exchanged between the vehicle and a communication platform with data aggregation or mining or extraction operation according data privacy regulations.
@@ -12522,7 +12522,8 @@ entity:MultihomingNetworkManagement-827
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:NNAP-860
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:PhysicalEntity ;
+  rdf:type ar:ServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "The Neighbourhood Network Access Point is a functional entity that provides access to one or more LNAPâ€Ÿs, metering end devices, displays and home automation end devices connected to the neighbourhood network (NN). It may allow data exchange between different functional entities connected to the same NN."^^xsd:string ;
   props:entityName "NNAP"^^xsd:string ;
@@ -12673,7 +12674,7 @@ entity:NetworkAddressManagement-836
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:NetworkCalculations-NENCLC--837
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Used to develop a long-term (generally one year and beyond) plan for the reliability (adequacy) of the interconnected electric transmission and distribution networks."^^xsd:string ;
   props:entityName "Network calculations (NE-NCLC)"^^xsd:string ;
@@ -12686,7 +12687,7 @@ entity:NetworkCalculations-NENCLC--837
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:NetworkExtensionPlanning-NE--838
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Network Extension planning actors develop long term plans for power system reliability, monitor the cost, performance and schedule of construction, and define projects to extend the network such as new lines, feeders or switchgear"^^xsd:string ;
   props:entityName "Network Extension Planning (NE)"^^xsd:string ;
@@ -12872,7 +12873,7 @@ entity:NetworkOperationsAnalyst-850
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:NetworkOperationsCalculations-NOCLC--851
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Real-time Network Calculations actors provide system operators with the ability to assess the reliability and security of the power system."^^xsd:string ;
   props:entityName "Network Operations Calculations (NO-CLC)"^^xsd:string ;
@@ -12903,7 +12904,7 @@ entity:NetworkOperationsControl-852
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:NetworkOperationsControl-NOCTL--853
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Centralized automated and manual control operations of the system to manage the flow of power and optimize reliability of the system. Network control is coordinated by actors in this domain, they may only supervise wide area, substation, and local automatic or manual control. An example would be the use of phase angle regulators within a substation to control power flow between two adjacent power systems"^^xsd:string ;
   props:entityName "Network Operations Control (NO-CTL)"^^xsd:string ;
@@ -12976,7 +12977,7 @@ entity:NetworkOperationsReportingAndStatistics-857
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:NetworkOperationsReportingAndStatistics-NOOST--858
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Operational Statistics and Reporting actors archive on-line data and to perform feedback analysis about system efficiency and reliability."^^xsd:string ;
   props:entityName "Network Operations Reporting and Statistics (NOOST)"^^xsd:string ;
@@ -13083,7 +13084,7 @@ entity:NominationValidator-865
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:NominationValidator-866
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Has the responsibility of ensuring that all capacity nominated is within the allowed limits and confirming all valid nominations to all involved parties. He informs the Interconnection Trade Responsible of the maximum nominated capacity allowed. Depending on market rules for a given interconnection the corresponding System Operators may appoint one Nomination Validator."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -13755,7 +13756,7 @@ entity:PNode-930
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ParkingServiceOperator-910
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:ahGCharging "X"^^xsd:string ;
   props:description_0 """A party that offers parking services. A Parking Service Operator could subscribe to electricity charging services to an Area Energy Service 
@@ -14228,7 +14229,7 @@ entity:PowerGridEquipmentVendors-943
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:PowerImportSchedulingAndOptimisation-OPIMP--944
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Power import scheduling and optimisation aims to minimise the cost of imported power by keeping the average imported power close to the contracted value, making use of peak plants, load switching or load shedding."^^xsd:string ;
   props:entityName "Power import scheduling and optimisation (OP-IMP)"^^xsd:string ;
@@ -14275,7 +14276,7 @@ entity:PowerPlantOwner-947
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:PowerPlantSystem-948
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Applications managing a Power Plant"^^xsd:string ;
   props:entityName "Power Plant System"^^xsd:string ;
@@ -14615,7 +14616,7 @@ entity:Premises-970
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:Premises-PRM--971
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Information regarding the location of a service. This set of functions includes: Address management; Right of ways, easements, grants; and Real estate management."^^xsd:string ;
   props:entityName "Premises (PRM)"^^xsd:string ;
@@ -14713,7 +14714,7 @@ entity:PrivacyPolicyEnforcement-977
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ProcessAutomationSystem-978
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Automation system to monitor and control industrial production plants."^^xsd:string ;
   props:entityName "Process Automation System"^^xsd:string ;
@@ -14726,7 +14727,7 @@ entity:ProcessAutomationSystem-978
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:Producer-979
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 """A party that produces electricity 
 Additional information: This is a type of Party Connected to the Grid"""^^xsd:string ;
@@ -14757,7 +14758,7 @@ entity:ProductionResponsibleParty-980
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ProductionResponsibleParty-981
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 """A party who can be brought to rights, legally and financially, for any imbalance between energy sold and produced for all associated metering points. 
 Additional information: This is a type of Balance Responsible Party"""^^xsd:string ;
@@ -14786,7 +14787,7 @@ entity:ProfileSupport-982
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ProjectDefinition-NEPRJ--983
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Planned work activities to enhance or extend the network and/or other assets. Example include line extension for new housing development, a new substation, switchgear change at a substation. Capital development projects (i.e., not billed to a customer) are usually justified with an business case."^^xsd:string ;
   props:entityName "Project definition (NEPRJ)"^^xsd:string ;
@@ -15336,11 +15337,12 @@ entity:Recloser-1021
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ReconciliationAccountable-1022
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  rdf:type ar:ConceptualServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A party that is financially accountable for the reconciled volume of energy products for a profiled Local metering point."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "Reconciliation Accountable"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "1022"^^xsd:int ;
@@ -15364,11 +15366,12 @@ entity:ReconciliationAccountableParty-1023
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ReconciliationResponsible-1024
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  rdf:type ar:LogicalServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A party that is responsible for reconciling, within a Metering grid area, the volumes used in the imbalance settlement process for profiled metering points and the actual metered quantities."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "Reconciliation Responsible"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "1024"^^xsd:int ;
@@ -15376,10 +15379,11 @@ entity:ReconciliationResponsible-1024
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:RecordsAndAssetManagement-AM--1025
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  rdf:type ar:LogicalServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "The Records and Asset Management actors track and report on the substation and network equipment inventory, provide geospatial data and geographic displays, maintain records on non-electrical assets, and perform asset investment planning"^^xsd:string ;
   props:entityName "Records and asset management (AM)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -15887,11 +15891,12 @@ entity:ResourceProvider-1058
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ResourceProvider-1059
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  rdf:type ar:LogicalService ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:description_0 "A role that manages a resource object and provides the schedules for it"^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "Resource Provider"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "1059"^^xsd:int ;
@@ -16005,10 +16010,11 @@ entity:RetailDEREnergyManagementSystem-RDEMS--1066
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:RetailEnergyMarketSystem-1067
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  rdf:type ar:LogicalActor ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:description_0 "Applications related to the Retail Market"^^xsd:string ;
   props:entityName "Retail Energy Market System"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iECSG3 "X"^^xsd:string ;
   props:note "SG3"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -16988,10 +16994,11 @@ entity:StakeholderPlanningAndReporting-1133
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:StakeholderPlanningAndReporting-SPM--1134
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  rdf:type ar:LogicalServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "These actors perform track and manage the needs and concerns of various utility stakeholders by monitoring customer input, regulators, service standards, and legal proceedings."^^xsd:string ;
   props:entityName "Stakeholder Planning and Reporting (SPM)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
@@ -17175,10 +17182,11 @@ entity:SubmeteringService-1145
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SubstationAndNetworkInventory-AMEINV--1146
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  rdf:type ar:LogicalActor ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:description_0 "The electrical substation and network assets that a utility owns, or for which has legal responsibility, and will maintain an accurate asset register developed around an asset hierarchy that supports advanced asset management functions."^^xsd:string ;
   props:entityName "Substation and network inventory (AMEINV)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -17238,12 +17246,13 @@ entity:SupervisoryControlAndDataAcquisition-1149
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:Supplier-1150
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  rdf:type ar:ConceptualServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 """Entity that offers contracts for supply of energy to a consumer (the supply contract). Within this role he will initiate DSM activities 
 NOTE: In some countries referred to as Retailer"""^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "Supplier"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "1150"^^xsd:int ;
@@ -17268,10 +17277,11 @@ entity:SupplyChainLogistics-1151
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SupplyChainLogistics-SC--1152
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  rdf:type ar:LogicalServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Business function or service that manages supplier and customer business accounts"^^xsd:string ;
   props:entityName "Supply Chain Logistics (SC)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
@@ -17830,10 +17840,11 @@ entity:TimeSynchronizationSource-1190
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:Timer-1191
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  rdf:type ar:LogicalActor ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:description_0 "An initiator that triggers of time based/scheduled use cases"^^xsd:string ;
   props:entityName "Timer"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "SMCG"^^xsd:string ;
   props:sMCG "X"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -17887,13 +17898,14 @@ entity:TradeResponsibleParty-1194
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:TradeResponsibleParty-1195
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  rdf:type ar:ConceptualServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 """A party who can be brought to rights, legally and financially, for any imbalance between energy bought and consumed for all associated metering points. 
 Note: A power exchange without any privileged responsibilities acts as a Trade Responsible Party. 
 Additional information: This is a type of Balance Responsible Party."""^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "Trade Responsible Party"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -18054,8 +18066,8 @@ The Transmission Capacity Allocator manages, on behalf of the System Operators, 
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:TransmissionCapacityAllocator-1206
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  rdf:type ar:LogicalServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 """Manages the allocation of transmission capacity for an allocated capacity area.
 For explicit auctions:
 The Transmission Capacity Allocator manages, on behalf of the System Operators, the allocation of available 
@@ -18064,6 +18076,7 @@ market, allocates the available transmission capacity to individual Capacity Tra
 amount of already allocated capacities to the Capacity Traders."""^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "Transmission Capacity Allocator"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -18345,11 +18358,12 @@ entity:TransportCapacitySimulator-1222
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:TransportationConsumer-1223
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  rdf:type ar:LogicalServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A consumer of electricity providing transport systems. May be involved in contract based Demand/Response. E"^^xsd:string ;
   props:eG3 "X"^^xsd:string ;
   props:entityName "Transportation consumer"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "EG3"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "1223"^^xsd:int ;
@@ -18357,10 +18371,11 @@ entity:TransportationConsumer-1223
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:TroubleCallManagement-CSTCM--1224
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  rdf:type ar:LogicalActor ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:description_0 "Customer troubles related to blackouts are transmitted and compared with network data in order to provide accurate information on the incident."^^xsd:string ;
   props:entityName "Trouble call management (CS-TCM)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -18455,10 +18470,11 @@ entity:UpdateCircuitRecords-1230
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:UtilityBusinessSystems-UBS--1231
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  rdf:type ar:LogicalServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Usually called back-office systems"^^xsd:string ;
   props:entityName "Utility Business Systems (UBS)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "0.0"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "1231"^^xsd:int ;
