@@ -18580,7 +18580,7 @@ entity:VariableGenerationSupport-1238
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:VehicleManufacturer-1239
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:ahGCharging "X"^^xsd:string ;
   props:description_0 "A party that produces the electric vehicles, develops the data information messages, which will be available for the service management."^^xsd:string ;
@@ -18593,7 +18593,7 @@ entity:VehicleManufacturer-1239
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:VehicleOwner-1240
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:description_0 "A party that owns the electric vehicle"^^xsd:string ;
   props:entityName "Vehicle Owner"^^xsd:string ;
@@ -18605,7 +18605,7 @@ entity:VehicleOwner-1240
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:VehicleUser-1241
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:ahGCharging "X"^^xsd:string ;
   props:description_0 "A party that uses the electric vehicle (a physical person as well as a social one).His goal is to be able to use the vehicle, when he needs it or wants to use it. His involvement in the charge management process is essential but, this will hardly depend on the services offered to him."^^xsd:string ;
