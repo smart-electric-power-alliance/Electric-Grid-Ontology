@@ -4421,7 +4421,7 @@ entity:DemandResponseProvider-250
 entity:DemandResponseServiceProvider-251
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "role"^^xsd:string ;
   props:clusterLabel "1.0"^^xsd:string ;
   props:demandResponse "X"^^xsd:string ;
@@ -5501,12 +5501,12 @@ entity:DistributionPlanning--345
 entity:DistributionProtectionAndControlDevices-346
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "system actor"^^xsd:string ;
   props:conceptualModel "X"^^xsd:string ;
   props:description_0 "Performed by Actors that react rapidly to faults and other events that might cause power outages, brownouts, or the destruction of equipment. Performed to maintain high levels of reliability and power quality. Devices external to a substation which control and protect the distribution system. Examples include Capabitors, Sectionalizers, circuit breakers"^^xsd:string ;
   props:entityName "Distribution Protection and Control Devices"^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEEEP2030Draft3 "X"^^xsd:string ;
   props:nISTLegacyDomain "Distribution"^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates "CM: Distribution.Protect"^^xsd:string ;
@@ -6821,7 +6821,7 @@ entity:EnergyMarketClearinghouse-437
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "role"^^xsd:string ;
   props:cSWGNISTIR7628 "X"^^xsd:string ;
   props:description_0 "Wholesale market for energy products provides high-level market signals for operations I(ndependent System Operators (RTO)/Regional Transmission Operators (RTO) and Utility Operations), generation, Distributed Generation (DG) and demand response (DR) programmes."^^xsd:string ;
@@ -6970,7 +6970,7 @@ entity:EnergyServiceProvider-447
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "role"^^xsd:string ;
   props:cSWGNISTIR7628 "X"^^xsd:string ;
   props:colC "ESI"^^xsd:string ;
@@ -7222,7 +7222,7 @@ entity:EnterpriseResourcePlanning-ERP--461
 entity:EnvironmentalAuthority-462
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "role"^^xsd:string ;
   props:description_0 "A regulatory authority responsible for the development, reporting and enforcement of environmental activities."^^xsd:string ;
   props:entityName "Environmental Authority"^^xsd:string ;
@@ -7726,13 +7726,13 @@ entity:FacilityManager-498
   rdf:type ar:ConceptualEntity ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
   props:conceptualModel "X"^^xsd:string ;
   props:description_0 "RolePerson responsible for the maintenance and operation of the facility. In the Residential market, this is the home owner, landlord, or building superintendent."^^xsd:string ;
   props:eIS "X"^^xsd:string ;
   props:entityName "Facility Manager"^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:nISTLegacyDomain "Customer"^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates "E: 1) Landlord, 2) HomeOwner, 3) Operations Manager; CM: Building Manager"^^xsd:string ;
   props:type "Organizational Entity"^^xsd:string ;
@@ -8443,7 +8443,7 @@ service"""^^xsd:string ;
 entity:Generation-547
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "role"^^xsd:string ;
   props:clusterLabel "1.0"^^xsd:string ;
   props:description_0 "Conventional or renewable generation connected to the transmission grid (69kV and up).  Is 69kV really a requirement?  This should include all generation types DER and bulk.  Creating electricity."^^xsd:string ;
@@ -8541,7 +8541,7 @@ entity:GenerationProtection-552
 entity:GenerationRecord-553
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:conceptualModel "X"^^xsd:string ;
   props:description_0 "Performed by actors that permit other domains to review what has happened on the grid for financial, engineering, operational, and forecasting purposes."^^xsd:string ;
   props:entityName "Generation Record"^^xsd:string ;
@@ -8772,7 +8772,7 @@ entity:Grid-570
 entity:GridAccessProvider-571
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A party responsible for providing access to the grid through a local metering point and its use for energy consumption or production to the party connected to the grid."^^xsd:string ;
   props:eUWGSPVers05 "X"^^xsd:string ;
   props:entityName "Grid Access Provider"^^xsd:string ;
@@ -9023,7 +9023,7 @@ entity:HealthMonitoring-587
 entity:HomeApplianceVendors-588
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Home appliance manufacturers. Of special interest for Smart Grid is the inclusion of intelligent communicating appliances which can participate in Demand/Response situations and be monitored/controlled remotely"^^xsd:string ;
   props:eUCommission "X"^^xsd:string ;
   props:entityName "Home Appliance vendors"^^xsd:string ;
@@ -9096,11 +9096,11 @@ entity:HomeManagement-592
 entity:HumanResources-593
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:conceptualModel "X"^^xsd:string ;
   props:description_0 "Human Resources (HR) roles manage personnel information and activities including safety, training, benefits, performance, review, compensation, recruiting, sceduling, training/employee job-ratings and expenses. HR also determines overtime scheduling and job qualifications for specifc tasks."^^xsd:string ;
   props:entityName "Human Resources"^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:type "Organizational Entity"^^xsd:string ;
@@ -9187,7 +9187,7 @@ entity:IdentifyGeographicAreaForFieldWorkOrder-597
 entity:ImbalanceSettlementResponsible-598
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A party that is responsible for settlement of the difference between the contracted quantities and the realised quantities of energy products for the balance responsible parties in a market balance area."^^xsd:string ;
   props:eUWGSPVers05 "X"^^xsd:string ;
   props:entityName "Imbalance Settlement Responsible"^^xsd:string ;
@@ -9253,7 +9253,7 @@ entity:InHomeDisplay-601
 entity:IndependentSystemOperator-602
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:cSWGNISTIR7628 "X"^^xsd:string ;
   props:colC "ISO"^^xsd:string ;
   props:colD "ISO"^^xsd:string ;
@@ -9304,7 +9304,7 @@ Demand/Response."""^^xsd:string ;
 entity:IndustrialCustomer-605
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A large business which receives electricity from the electric distribution system. Typically utilities define industrial customers with usage above a minimum threshold."^^xsd:string ;
   props:eUCommission "X"^^xsd:string ;
   props:entityName "Industrial Customer"^^xsd:string ;
@@ -9335,11 +9335,11 @@ entity:IndustrialGateway-606
 entity:Information-CommunicationTechnology-ICT-ServiceProviders-Vendors-607
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Computer Systems, intelligent field equipment,  communications equipment and software providers necessary to support grid operations"^^xsd:string ;
   props:eUCommission "X"^^xsd:string ;
   props:entityName "Information & Communication Technology (ICT) service providers/Vendors"^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
   props:type "Organization"^^xsd:string ;
@@ -9520,7 +9520,7 @@ entity:InterRegionalCommunications-623
 entity:InterconnectionTradeResponsible-619
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Is a market particpant or depends on one.  r\\Recognised by the Nomination Validator for the nomination of already allocated capacity."^^xsd:string ;
   props:eUWGSPVers05 "X"^^xsd:string ;
   props:entityName "Interconnection Trade Responsible"^^xsd:string ;
@@ -9564,7 +9564,7 @@ entity:InternalMonitoring-621
 entity:InternetServiceProvider-622
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:colC "ISP"^^xsd:string ;
   props:colD "ISP"^^xsd:string ;
   props:description_0 "ISPs provide Internet access to Customer Premise Networks."^^xsd:string ;
@@ -9863,7 +9863,7 @@ entity:LoadTransfer-643
 entity:LocalAuthority-644
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 """A party that produces electricity 
 Additional information: 
 This is a type of Party Connected to the Grid"""^^xsd:string ;
@@ -9895,7 +9895,7 @@ entity:LocalEPS-645
 entity:LocalRegulatoryAuthority-646
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A regulatory authority responsible for the oversight and administration of utility service-related functions within its jurisdiction."^^xsd:string ;
   props:entityName "Local Regulatory Authority"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
@@ -11511,7 +11511,7 @@ entity:MarketEnrollment-756
 entity:MarketGenerator-757
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "1.0"^^xsd:string ;
   props:conceptualModel ""^^xsd:string ;
   props:description_0 "Electricity producer (regardless of source), contributing actively to voltage and reactive power control, required to provide the relevant data (information on outages, forecast, actual production) to the energy marketplace"^^xsd:string ;
@@ -11957,12 +11957,12 @@ entity:MeterDataReportingConfiguration-787
 entity:MeterOperator-788
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:colC "MO"^^xsd:string ;
   props:description_0 "A party responsible for installing, maintaining, testing, certifying and decommissioning physical meters"^^xsd:string ;
   props:eUWGSPVers05 "X"^^xsd:string ;
   props:entityName "Meter Operator"^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:type "Organization"^^xsd:string ;
@@ -12044,12 +12044,12 @@ entity:MeteredDataAggregatorMDA-793
 entity:MeteringAuthority-794
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:colC "MA"^^xsd:string ;
   props:colD "MA"^^xsd:string ;
   props:description_0 "A role which carries the responsibility of providing data necessary to determine the performance of a Resource."^^xsd:string ;
   props:entityName "Metering Authority"^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:nAESB "X"^^xsd:string ;
   props:nISTLegacyDomain "Agency"^^xsd:string ;
   props:type "Organization"^^xsd:string ;
@@ -14170,7 +14170,7 @@ entity:PowerEquipment-939
 entity:PowerExchange-940
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Provides a market place for trading physical and financial (capacity/energy and derivates) contracts for capacity allocation by implicit auctions within the defined country, region or cross border."^^xsd:string ;
   props:entityName "Power Exchange"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
@@ -14214,7 +14214,7 @@ entity:PowerFlowSimulationService-942
 entity:PowerGridEquipmentVendors-943
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Field equipment vendors."^^xsd:string ;
   props:eUCommission "X"^^xsd:string ;
   props:entityName "Power Grid Equipment vendors"^^xsd:string ;
@@ -14743,7 +14743,7 @@ Additional information: This is a type of Party Connected to the Grid"""^^xsd:st
 entity:ProductionResponsibleParty-980
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A party who can be brought to rights, legally and financially, for any imbalance between energy sold and produced for all associated metering points. Tye of Market Participant."^^xsd:string ;
   props:eUWGSPVers05 "X"^^xsd:string ;
   props:entityName "Production Responsible Party"^^xsd:string ;
@@ -15352,7 +15352,7 @@ entity:ReconciliationAccountable-1022
 entity:ReconciliationAccountableParty-1023
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A party that is financially accountable for the reconciled volume of energy products for a profiled Local metering point."^^xsd:string ;
   props:eUWGSPVers05 "X"^^xsd:string ;
   props:entityName "Reconciliation Accountable Party"^^xsd:string ;
@@ -15469,7 +15469,7 @@ entity:RegionalTransmissionOrganization-1031
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:cSWGNISTIR7628 "X"^^xsd:string ;
   props:colC "RTO"^^xsd:string ;
   props:colD "RTO"^^xsd:string ;
@@ -15572,7 +15572,7 @@ entity:RegulatingDERSystem-1037
 entity:RegulatoryAuthority-1038
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Federal agency that requires information on interactions involving intersate transmission, and security"^^xsd:string ;
   props:electricTransportaion "X"^^xsd:string ;
   props:entityName "Regulatory Authority"^^xsd:string ;
@@ -15606,7 +15606,7 @@ entity:Relay-1039
 entity:ReliabilityAuthority-1040
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A regulatory authority responsible for the development, reporting and enforcement of electric reliability-related activities."^^xsd:string ;
   props:entityName "Reliability Authority"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
@@ -15875,7 +15875,7 @@ entity:ResourceOptimization-1057
 entity:ResourceProvider-1058
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "1.0"^^xsd:string ;
   props:description_0 "A role that manages a resource object and provides the schedules for it (Description from ETSO-E market document)."^^xsd:string ;
   props:eUWGSPVers05 "X"^^xsd:string ;
@@ -15982,7 +15982,7 @@ entity:RetailCustomer-1065
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
-  props:actorTypeOrRole "role"^^xsd:string ;
+  props:actorTypeOrRole "ServiceComposition"^^xsd:string ;
   props:cSWGNISTIR7628 "X"^^xsd:string ;
   props:conceptualModel "X"^^xsd:string ;
   props:description_0 "An entity that consumes and/or pays for electrical goods or services. A customer of a utility, including customers who provide more power than they consume. This customer may be a residential consumer or also an entity (e.g. department, tenant) within a larger building."^^xsd:string ;
@@ -16248,7 +16248,7 @@ entity:SchedulingCoordinator-1083
 entity:SchedulingEntity-1084
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:colC "SE"^^xsd:string ;
   props:colD "SE"^^xsd:string ;
   props:description_0 "A role which carries the responsibility of submitting bids/offers and receives Schedules and Awards."^^xsd:string ;
@@ -16481,7 +16481,7 @@ entity:ServiceManagey-1099
 entity:ServiceProvider-1100
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:cSWGNISTIR7628 "X"^^xsd:string ;
   props:colC "SP"^^xsd:string ;
   props:colD "SP"^^xsd:string ;
@@ -17086,12 +17086,12 @@ entity:Storage-1140
   rdf:type ar:ConceptualEntity ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:clusterLabel "1.0"^^xsd:string ;
   props:description_0 "Storage of energy.  Storage may serve the transmission, service provider distribution, or customer domain."^^xsd:string ;
   props:electricStorage "X"^^xsd:string ;
   props:entityName "Storage"^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone "Process"^^xsd:string ;
   props:nAESB ""^^xsd:string ;
   props:nISTLegacyDomain "Cross Cutting"^^xsd:string ;
@@ -17534,13 +17534,13 @@ entity:SystemOperation-1171
 entity:SystemOperator-1168
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:colC "SO"^^xsd:string ;
   props:colD "SO"^^xsd:string ;
   props:description_0 "An role which is resonsible for operating, ensuring the maintenance of and, if necessary, developing the system in a given area, where applicable, its interconnections with other systems and for ensuring the long-term ability of the system to meet reasonable demands forelectricity."^^xsd:string ;
   props:eUCommission "X"^^xsd:string ;
   props:entityName "System Operator"^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone "Operations"^^xsd:string ;
   props:nAESB "X"^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
@@ -18296,7 +18296,7 @@ entity:TransmissionSubstationNetwork-1218
 entity:TransmissionSystemOperator-1219
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
   props:colC "TSO"^^xsd:string ;
   props:description_0 "According to the Article 2.4 of the Electricity Directive 2009/72/EC (Directive): \"a natural or legal person responsible for operating, ensuring the maintenance of and, if necessary, developing the transmission system in a given area and, where applicable, its interconnections with other systems, and for ensuring the long-term ability of the system to meet reasonable demands for the transmission of electricity\". Moreover, the TSO is responsible for connection of all grid users at the transmission level and connection of the DSOs within the TSO control area."^^xsd:string ;
