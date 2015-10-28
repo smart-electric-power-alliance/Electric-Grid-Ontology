@@ -168,7 +168,7 @@ entity:AccessControlManagement-8
 entity:AccountManagement-10
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "ServiceCompostion"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:archiMateTerminologyLayers "Business"^^xsd:string ;
   props:businessFunctionService """function/
 service"""^^xsd:string ;
@@ -240,7 +240,7 @@ entity:ActorA-14
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "14"^^xsd:int ;
   rdfs:label "Actor A"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:ActorB-16
   rdf:type ar:Actor ;
@@ -252,7 +252,7 @@ entity:ActorB-16
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "16"^^xsd:int ;
   rdfs:label "Actor B"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:Actuation-18
   rdf:type ar:LogicalService ;
@@ -349,7 +349,7 @@ entity:AggregateCustomers-23
 entity:AggregationResource-24
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Zone"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
   props:description_0 "A market-dependent group of Response Method Aggregations that represents a dispatchable entity."^^xsd:string ;
   props:entityName "Aggregation Resource"^^xsd:string ;
@@ -689,7 +689,7 @@ entity:AssetInventory-47
 entity:AssetInvestmentPlanning-48
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:businessFunctionService """function/
 service"""^^xsd:string ;
   props:description_0 "Asset investment planning involves strategy definition and prioritisation, maintenance strategy planning, risk management, programme management and decision-making. It drives the condition, configuration, performance, operating costs, and flexibility of the asset base, with the aim of maximising value."^^xsd:string ;
@@ -1029,7 +1029,7 @@ Additional information: The meaning of the word \"balance\" in this context sign
 entity:BalanceSupplier-70
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "role"^^xsd:string ;
   props:description_0 "A party that markets the difference between actual metered energy consumption and the energy bought with firm energy contracts by the party connected to the grid. In addition the balance supplier markets any difference with the firm energy contract (of the party connected to the grid) and the metered production. Additional information: There is only one balance supplier for each metering point."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
@@ -2646,7 +2646,7 @@ entity:Consumer-171
 entity:ConsumptionResponsibleParty-172
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "role"^^xsd:string ;
   props:description_0 "A party who can be brought to rights, legally and financially, for any imbalance between energy bought and consumed for all associated metering points."^^xsd:string ;
   props:eUWGSPVers05 "X"^^xsd:string ;
@@ -2796,7 +2796,7 @@ entity:ContractManagementService-181
 entity:ControlAreaServices-182
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "role"^^xsd:string ;
   props:description_0 """ServiceComposition responsible for : 
 1. The coordination of exchanges between its associated control blocks and the organisation of the coordination of exchange programs between its related control areas. 
@@ -3125,7 +3125,7 @@ entity:CriticalLoad-202
 entity:CriticalLoads-203
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Service (or Service-Collection if the Description had more detail)"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:actorTypeOrRole "system actor"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
   props:description_0 "Individual loads deemed to be critical to the operation of the facility or process."^^xsd:string ;
@@ -3139,7 +3139,7 @@ entity:CriticalLoads-203
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "203"^^xsd:int ;
   rdfs:label "Critical Loads"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:CrossMarketTrade-204
   rdf:type ar:ConceptualService ;
@@ -3203,7 +3203,7 @@ entity:CurrentFlowImbalanceCalculator-207
 entity:Customer-208
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "role"^^xsd:string ;
   props:conceptualModel "X"^^xsd:string ;
   props:entityName "Customer"^^xsd:string ;
@@ -3525,7 +3525,7 @@ entity:CustomerService-230
   props:colD "CSR"^^xsd:string ;
   props:description_0 "Customer service provided by a person (e.g., sales and service representative), or by automated means called self-service (e.g., Interactive Voice Response (IVR))."^^xsd:string ;
   props:entityName "Customer Service"^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Conceptual - if B2B relationships are at the Conceptual level, this has to be Conceptual"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:nISTLegacyDomain "Service Provider"^^xsd:string ;
   props:relatedRole "billing agent ?"^^xsd:string ;
   props:type "Person"^^xsd:string ;
@@ -3568,12 +3568,12 @@ entity:CustomerSubstation-231
 entity:CustomerSupport-232
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "business actor"^^xsd:string ;
   props:conceptualModel "X"^^xsd:string ;
   props:description_0 "Customer Support actors help customers to purchase, provision,schedule instalationl, troubleshoot power system services, and relay/record customer trouble reports."^^xsd:string ;
   props:entityName "Customer Support"^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
   props:relatedRole "billing agent ?"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
@@ -9067,7 +9067,7 @@ entity:HomeAutomationServices-D--590
 entity:HomeCustomer-591
   rdf:type ar:Actor ;
   rdf:type ar:ConceptualEntity ;
-  props:actorServiceCompositionService "Actor"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:description_0 "A residential consumer of electricity (including also agriculture users) may also be involved in contract-based Demand/Response."^^xsd:string ;
   props:entityName "Home customer"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
@@ -17011,7 +17011,7 @@ entity:StandardizationBody-1135
   rdf:type ar:Actor ;
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Actor"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:description_0 "Responsible for standardization of all relevant elements and components within the electricity supply chain, which leads to harmonizaing relevant services, support towards removing barriers to trade, creating new market opportunities and reducing manufacturing costs."^^xsd:string ;
   props:eUCommission "X"^^xsd:string ;
   props:entityName "Standardization Body"^^xsd:string ;
