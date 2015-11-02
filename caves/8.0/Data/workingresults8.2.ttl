@@ -2984,7 +2984,7 @@ entity:CoordinateGenerationToTransmissionCapacity-193
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:CoordinationCenterServices-194
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "business actor"^^xsd:string ;
