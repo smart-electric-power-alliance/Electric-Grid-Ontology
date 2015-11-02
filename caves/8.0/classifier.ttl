@@ -5,10 +5,13 @@
 
 @prefix arg: <http://spinrdf.org/arg#> .
 @prefix cf: <http://sv.cmu.edu/AWP/8.0/classifier#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix smf: <http://topbraid.org/sparqlmotionfunctions#> .
 @prefix sp: <http://spinrdf.org/sp#> .
+@prefix spif: <http://spinrdf.org/spif#> .
 @prefix spin: <http://spinrdf.org/spin#> .
 @prefix spl: <http://spinrdf.org/spl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -21,6 +24,587 @@
   owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
 .
 <http://sv.cmu.edu/AWP/8.0/props#Combined-Elements-noduprows>
+  spin:rule [
+      rdf:type sp:Construct ;
+      sp:templates (
+          [
+            sp:object [
+                sp:varName "obj"^^xsd:string ;
+              ] ;
+            sp:predicate [
+                sp:varName "pred"^^xsd:string ;
+              ] ;
+            sp:subject [
+                sp:varName "newURI"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "name"^^xsd:string ;
+              ] ;
+            sp:predicate rdfs:label ;
+            sp:subject [
+                sp:varName "newURI"^^xsd:string ;
+              ] ;
+          ]
+        ) ;
+      sp:where (
+          [
+            sp:object [
+                sp:varName "name"^^xsd:string ;
+              ] ;
+            sp:predicate <http://sv.cmu.edu/AWP/8.0/props#entityName> ;
+            sp:subject spin:_this ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type spif:camelCase ;
+                sp:arg1 [
+                    sp:varName "name"^^xsd:string ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "camelName"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type spif:replaceAll ;
+                sp:arg1 [
+                    sp:varName "camelName"^^xsd:string ;
+                  ] ;
+                sp:arg2 "[:/&()]" ;
+                sp:arg3 "-" ;
+              ] ;
+            sp:variable [
+                sp:varName "cleanName"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "number"^^xsd:string ;
+              ] ;
+            sp:predicate <http://topbraid.org/tables#rowIndex> ;
+            sp:subject spin:_this ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type fn:concat ;
+                sp:arg1 [
+                    sp:varName "cleanName"^^xsd:string ;
+                  ] ;
+                sp:arg2 "-" ;
+                sp:arg3 [
+                    sp:varName "number"^^xsd:string ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "newName"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type smf:buildURI ;
+                sp:arg1 "entity:{?1}" ;
+                sp:arg2 [
+                    sp:varName "newName"^^xsd:string ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "newURI"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "obj"^^xsd:string ;
+              ] ;
+            sp:predicate [
+                sp:varName "pred"^^xsd:string ;
+              ] ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      rdfs:comment "041 Rename the URIs"^^xsd:string ;
+    ] ;
+  spin:rule [
+      rdf:type sp:Modify ;
+      sp:deletePattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ConceptualEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#Service> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:insertPattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ConceptualService> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:where (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ConceptualEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#Service> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      rdfs:comment "020 Create ConceptualService"^^xsd:string ;
+    ] ;
+  spin:rule [
+      rdf:type sp:Modify ;
+      sp:deletePattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ConceptualEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ServiceComposition> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:insertPattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ConceptualServiceComposition> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:where (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ConceptualEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ServiceComposition> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      rdfs:comment "021 Create ConceptualServiceComposition"^^xsd:string ;
+    ] ;
+  spin:rule [
+      rdf:type sp:Modify ;
+      sp:deletePattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ConceptualEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ServiceContract> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:insertPattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ConceptualServiceContract> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:where (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ConceptualEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ServiceContract> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      rdfs:comment "022 Create ConceptualServiceContract"^^xsd:string ;
+    ] ;
+  spin:rule [
+      rdf:type sp:Modify ;
+      sp:deletePattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ImplementationEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#Service> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:insertPattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ImplementationService> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:where (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ImplementationEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#Service> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      rdfs:comment "028 Create ImplementationService"^^xsd:string ;
+    ] ;
+  spin:rule [
+      rdf:type sp:Modify ;
+      sp:deletePattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#Actor> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:insertPattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalActor> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:where (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#Actor> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      rdfs:comment "029 Create LogicalActor"^^xsd:string ;
+    ] ;
+  spin:rule [
+      rdf:type sp:Modify ;
+      sp:deletePattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#Service> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:insertPattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalService> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:where (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#Service> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      rdfs:comment "023 Create LogicalService"^^xsd:string ;
+    ] ;
+  spin:rule [
+      rdf:type sp:Modify ;
+      sp:deletePattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ServiceComposition> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:insertPattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalServiceComposition> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:where (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ServiceComposition> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      rdfs:comment "024 Create LogicalServiceComposition"^^xsd:string ;
+    ] ;
+  spin:rule [
+      rdf:type sp:Modify ;
+      sp:deletePattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ServiceContract> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:insertPattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ConceptualServiceComposition> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:where (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ServiceContract> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      rdfs:comment "025 Create LogicalServiceContract"^^xsd:string ;
+    ] ;
+  spin:rule [
+      rdf:type sp:Modify ;
+      sp:deletePattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#PhysicalEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#Actor> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:insertPattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#PhysicalActor> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:where (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#PhysicalEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#Actor> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      rdfs:comment "030 Create PhysicalActor"^^xsd:string ;
+    ] ;
+  spin:rule [
+      rdf:type sp:Modify ;
+      sp:deletePattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#PhysicalEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#Service> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:insertPattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#PhysicalService> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:where (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#PhysicalEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#Service> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      rdfs:comment "026 Create PhysicalService"^^xsd:string ;
+    ] ;
+  spin:rule [
+      rdf:type sp:Modify ;
+      sp:deletePattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#PhysicalEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ServiceContract> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:insertPattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#PhysicalServiceContract> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:where (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#PhysicalEntity> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ServiceContract> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      rdfs:comment "027 Create PhysicalServiceContract"^^xsd:string ;
+    ] ;
+  spin:rule [
+      rdf:type sp:Modify ;
+      sp:deletePattern (
+          [
+            sp:object <http://sv.cmu.edu/AWP/8.0/props#Combined-Elements-noduprows> ;
+            sp:predicate rdf:type ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:where (
+          [
+            rdf:type sp:TriplePath ;
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#Entity> ;
+            sp:path [
+                rdf:type sp:SeqPath ;
+                sp:path1 rdf:type ;
+                sp:path2 [
+                    rdf:type sp:ModPath ;
+                    sp:modMax -2 ;
+                    sp:modMin 1 ;
+                    sp:subPath rdfs:subClassOf ;
+                  ] ;
+              ] ;
+            sp:subject spin:_this ;
+          ]
+          [
+            rdf:type sp:NotExists ;
+            sp:elements (
+                [
+                  rdf:type sp:TriplePath ;
+                  sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#Entity> ;
+                  sp:path [
+                      rdf:type sp:SeqPath ;
+                      sp:path1 rdf:type ;
+                      sp:path2 rdfs:subClassOf ;
+                    ] ;
+                  sp:subject spin:_this ;
+                ]
+              ) ;
+          ]
+        ) ;
+      rdfs:comment "042 Remove the original type assignment for the newly defined entities if they were completely classified, not if only partially classified"^^xsd:string ;
+    ] ;
+  spin:rule [
+      rdf:type sp:Modify ;
+      sp:deletePattern (
+          [
+            sp:object [
+                sp:varName "object"^^xsd:string ;
+              ] ;
+            sp:predicate <http://sv.cmu.edu/AWP/8.0/props#entityName> ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:insertPattern (
+          [
+            sp:object [
+                sp:varName "string"^^xsd:string ;
+              ] ;
+            sp:predicate <http://sv.cmu.edu/AWP/8.0/props#entityName> ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
+      sp:where (
+          [
+            sp:object [
+                sp:varName "object"^^xsd:string ;
+              ] ;
+            sp:predicate <http://sv.cmu.edu/AWP/8.0/props#entityName> ;
+            sp:subject spin:_this ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type sp:strdt ;
+                sp:arg1 [
+                    rdf:type sp:str ;
+                    sp:arg1 [
+                        sp:varName "object"^^xsd:string ;
+                      ] ;
+                  ] ;
+                sp:arg2 xsd:string ;
+              ] ;
+            sp:variable [
+                sp:varName "string"^^xsd:string ;
+              ] ;
+          ]
+        ) ;
+      rdfs:comment "040 Set the datatype of the entityName field data to string (it was erroneously recognized as double)"^^xsd:string ;
+    ] ;
   spin:rule [
       rdf:type sp:Modify ;
       sp:insertPattern (
@@ -41,7 +625,7 @@
           [
             rdf:type sp:Bind ;
             sp:expression [
-                rdf:type <http://spinrdf.org/spif#lowerCase> ;
+                rdf:type spif:lowerCase ;
                 sp:arg1 [
                     sp:varName "entity"^^xsd:string ;
                   ] ;
@@ -53,7 +637,7 @@
           [
             rdf:type sp:Filter ;
             sp:expression [
-                rdf:type <http://www.w3.org/2005/xpath-functions#contains> ;
+                rdf:type fn:contains ;
                 sp:arg1 [
                     sp:varName "entityLowerCase"^^xsd:string ;
                   ] ;
@@ -83,7 +667,7 @@
           [
             rdf:type sp:Bind ;
             sp:expression [
-                rdf:type <http://spinrdf.org/spif#lowerCase> ;
+                rdf:type spif:lowerCase ;
                 sp:arg1 [
                     sp:varName "hierarchy"^^xsd:string ;
                   ] ;
@@ -95,7 +679,7 @@
           [
             rdf:type sp:Filter ;
             sp:expression [
-                rdf:type <http://www.w3.org/2005/xpath-functions#contains> ;
+                rdf:type fn:contains ;
                 sp:arg1 [
                     sp:varName "hierarchyLowerCase"^^xsd:string ;
                   ] ;
@@ -125,7 +709,7 @@
           [
             rdf:type sp:Bind ;
             sp:expression [
-                rdf:type <http://spinrdf.org/spif#lowerCase> ;
+                rdf:type spif:lowerCase ;
                 sp:arg1 [
                     sp:varName "hierarchy"^^xsd:string ;
                   ] ;
@@ -137,7 +721,7 @@
           [
             rdf:type sp:Filter ;
             sp:expression [
-                rdf:type <http://www.w3.org/2005/xpath-functions#contains> ;
+                rdf:type fn:contains ;
                 sp:arg1 [
                     sp:varName "hierarchyLowerCase"^^xsd:string ;
                   ] ;
@@ -167,7 +751,7 @@
           [
             rdf:type sp:Bind ;
             sp:expression [
-                rdf:type <http://spinrdf.org/spif#lowerCase> ;
+                rdf:type spif:lowerCase ;
                 sp:arg1 [
                     sp:varName "hierarchy"^^xsd:string ;
                   ] ;
@@ -179,7 +763,7 @@
           [
             rdf:type sp:Filter ;
             sp:expression [
-                rdf:type <http://www.w3.org/2005/xpath-functions#contains> ;
+                rdf:type fn:contains ;
                 sp:arg1 [
                     sp:varName "hierarchyLowerCase"^^xsd:string ;
                   ] ;
@@ -209,7 +793,7 @@
           [
             rdf:type sp:Bind ;
             sp:expression [
-                rdf:type <http://spinrdf.org/spif#lowerCase> ;
+                rdf:type spif:lowerCase ;
                 sp:arg1 [
                     sp:varName "hierarchy"^^xsd:string ;
                   ] ;
@@ -221,7 +805,7 @@
           [
             rdf:type sp:Filter ;
             sp:expression [
-                rdf:type <http://www.w3.org/2005/xpath-functions#contains> ;
+                rdf:type fn:contains ;
                 sp:arg1 [
                     sp:varName "hierarchyLowerCase"^^xsd:string ;
                   ] ;
@@ -251,7 +835,7 @@
           [
             rdf:type sp:Bind ;
             sp:expression [
-                rdf:type <http://spinrdf.org/spif#lowerCase> ;
+                rdf:type spif:lowerCase ;
                 sp:arg1 [
                     sp:varName "entity"^^xsd:string ;
                   ] ;
@@ -263,7 +847,7 @@
           [
             rdf:type sp:Filter ;
             sp:expression [
-                rdf:type <http://www.w3.org/2005/xpath-functions#ends-with> ;
+                rdf:type fn:ends-with ;
                 sp:arg1 [
                     sp:varName "entityLowerCase"^^xsd:string ;
                   ] ;
@@ -293,7 +877,7 @@
           [
             rdf:type sp:Bind ;
             sp:expression [
-                rdf:type <http://spinrdf.org/spif#lowerCase> ;
+                rdf:type spif:lowerCase ;
                 sp:arg1 [
                     sp:varName "entity"^^xsd:string ;
                   ] ;
@@ -305,7 +889,7 @@
           [
             rdf:type sp:Filter ;
             sp:expression [
-                rdf:type <http://www.w3.org/2005/xpath-functions#ends-with> ;
+                rdf:type fn:ends-with ;
                 sp:arg1 [
                     sp:varName "entityLowerCase"^^xsd:string ;
                   ] ;
@@ -335,7 +919,7 @@
           [
             rdf:type sp:Bind ;
             sp:expression [
-                rdf:type <http://spinrdf.org/spif#lowerCase> ;
+                rdf:type spif:lowerCase ;
                 sp:arg1 [
                     sp:varName "entity"^^xsd:string ;
                   ] ;
@@ -347,7 +931,7 @@
           [
             rdf:type sp:Filter ;
             sp:expression [
-                rdf:type <http://www.w3.org/2005/xpath-functions#ends-with> ;
+                rdf:type fn:ends-with ;
                 sp:arg1 [
                     sp:varName "entityLowerCase"^^xsd:string ;
                   ] ;
