@@ -1432,4 +1432,59 @@ owl:Thing
         ) ;
       rdfs:comment "001 Generate table of all entities and their properties"^^xsd:string ;
     ] ;
+  spin:query [
+      rdf:type sp:Select ;
+      sp:distinct "true"^^xsd:boolean ;
+      sp:where (
+          [
+            rdf:type sp:TriplePath ;
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#Entity> ;
+            sp:path [
+                rdf:type sp:SeqPath ;
+                sp:path1 rdf:type ;
+                sp:path2 rdfs:subClassOf ;
+              ] ;
+            sp:subject [
+                sp:varName "inst"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "type"^^xsd:string ;
+              ] ;
+            sp:predicate rdf:type ;
+            sp:subject [
+                sp:varName "inst"^^xsd:string ;
+              ] ;
+          ]
+        ) ;
+      rdfs:comment "005 Find all instances that are only partially classified, or classified into incompatible categories"^^xsd:string ;
+    ] ;
+  spin:query [
+      rdf:type sp:Select ;
+      sp:where (
+          [
+            sp:object [
+                sp:varName "o"^^xsd:string ;
+              ] ;
+            sp:predicate [
+                sp:varName "p"^^xsd:string ;
+              ] ;
+            sp:subject [
+                sp:varName "s"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Filter ;
+            sp:expression [
+                rdf:type sp:regex ;
+                sp:arg1 [
+                    sp:varName "o"^^xsd:string ;
+                  ] ;
+                sp:arg2 "der" ;
+              ] ;
+          ]
+        ) ;
+      rdfs:comment "004 Find arbitrary string value anywhere, not just name"^^xsd:string ;
+    ] ;
 .

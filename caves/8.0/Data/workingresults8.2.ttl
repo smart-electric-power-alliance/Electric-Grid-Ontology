@@ -1,5 +1,6 @@
 # baseURI: http://sv.cmu.edu/AWP/8.0/workingresults8.2
 # imports: http://sv.cmu.edu/AWP/8.0/ActorRoles
+# imports: http://sv.cmu.edu/AWP/8.0/classifier
 # imports: http://sv.cmu.edu/AWP/8.0/constraints
 # imports: http://sv.cmu.edu/AWP/8.0/props
 
@@ -69,7 +70,7 @@ entity:AMIOperations-29
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:AMIService-30
-  rdf:type ar:LogicalEntity ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "business actor"^^xsd:string ;
@@ -166,7 +167,7 @@ entity:AccessControlManagement-8
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:AccountManagement-10
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:archiMateTerminologyLayers "Business"^^xsd:string ;
@@ -232,6 +233,7 @@ entity:AccountingPointResponsible-13
 .
 entity:ActorA-14
   rdf:type ar:Actor ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "External Actor"^^xsd:string ;
   props:description_0 "External actor (Smart Grid Market Role) interacting with the system functions and components in the home or home automation network through the metering communication channel. This actor is responsible for collecting metering data. Examples of such market roles are the DSO, metering company, etc."^^xsd:string ;
   props:entityName "Actor A"^^xsd:string ;
@@ -244,6 +246,7 @@ entity:ActorA-14
 .
 entity:ActorB-16
   rdf:type ar:Actor ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "External Actor"^^xsd:string ;
   props:description_0 "External actor (Smart Grid Market Role) interacting with the system functions and components in the home or home automation network through the metering communication channel. This actor is responsible for collecting metering data. Examples of such market roles are the DSO, metering company, etc."^^xsd:string ;
   props:entityName "Actor B"^^xsd:string ;
@@ -347,7 +350,7 @@ entity:AggregateCustomers-23
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:AggregationResource-24
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
@@ -382,6 +385,7 @@ entity:AggregationSupportService-25
 .
 entity:Aggregator-26
   rdf:type ar:ConceptualEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems " X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
@@ -687,7 +691,7 @@ entity:AssetInventory-47
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:AssetInvestmentPlanning-48
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:businessFunctionService """function/
@@ -1027,7 +1031,7 @@ Additional information: The meaning of the word \"balance\" in this context sign
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:BalanceSupplier-70
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "role"^^xsd:string ;
@@ -1359,6 +1363,7 @@ service"""^^xsd:string ;
 .
 entity:BuildingManagementSystem-89
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:actorServiceCompositionService "System"^^xsd:string ;
   props:archiMateTerminologyLayers "Application 1st"^^xsd:string ;
@@ -1998,6 +2003,7 @@ entity:Cogeneration-129
 entity:CombinedHeatAndPower-CHP--130
   rdf:type ar:PhysicalEntity ;
   rdf:type ar:ServiceComposition ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "DER system whose primary purpose is creation of heat but can also provide electrical energy from the heat creation capability. In some circumstances, electrical energy is the primary purpose with heat as a secondary purpose"^^xsd:string ;
@@ -2124,6 +2130,7 @@ entity:CommunicationManagement-137
 entity:CommunicationNetworks-138
   rdf:type ar:PhysicalEntity ;
   rdf:type ar:ServiceComposition ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:archiMateTerminologyLayers "Technical"^^xsd:string ;
@@ -2520,6 +2527,7 @@ entity:Construction-MCCON--163
 .
 entity:ConstructionSupervision-164
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:businessFunctionService """function/
@@ -2644,7 +2652,7 @@ entity:Consumer-171
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ConsumptionResponsibleParty-172
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "role"^^xsd:string ;
@@ -2794,7 +2802,7 @@ entity:ContractManagementService-181
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ControlAreaServices-182
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "role"^^xsd:string ;
@@ -3123,7 +3131,7 @@ entity:CriticalLoad-202
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:CriticalLoads-203
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualService ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Service"^^xsd:string ;
   props:actorTypeOrRole "system actor"^^xsd:string ;
@@ -3201,7 +3209,7 @@ entity:CurrentFlowImbalanceCalculator-207
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:Customer-208
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "role"^^xsd:string ;
@@ -3497,6 +3505,7 @@ entity:CustomerPowerQualityInformationManagement--227
 entity:CustomerPremiseNetwork-228
   rdf:type ar:PhysicalEntity ;
   rdf:type ar:ServiceComposition ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:archiMateTerminologyLayers "Technical"^^xsd:string ;
@@ -3515,7 +3524,7 @@ service"""^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:CustomerService-230
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "business actor"^^xsd:string ;
@@ -3566,7 +3575,8 @@ entity:CustomerSubstation-231
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:CustomerSupport-232
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "business actor"^^xsd:string ;
@@ -3978,6 +3988,7 @@ entity:DERSupportServices-280
 entity:DERSystem-generic--281
   rdf:type ar:PhysicalEntity ;
   rdf:type ar:ServiceComposition ;
+  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
@@ -4006,6 +4017,7 @@ entity:DERUnit-generic--282
 .
 entity:DMSServices-366
   rdf:type ar:ServiceComposition ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Service of the Distribution Management System"^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
@@ -4419,7 +4431,7 @@ entity:DemandResponseProvider-250
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:DemandResponseServiceProvider-251
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "role"^^xsd:string ;
@@ -4944,6 +4956,7 @@ entity:DistributedDataManagement-313
 entity:DistributedEnergyResource-DER--generic--314
   rdf:type ar:PhysicalEntity ;
   rdf:type ar:ServiceComposition ;
+  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
@@ -5053,6 +5066,7 @@ entity:DistributedGenerationAggregation-319
 entity:DistributedGenerationSubmeter-320
   rdf:type ar:PhysicalEntity ;
   rdf:type ar:ServiceComposition ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "system actor"^^xsd:string ;
@@ -5458,6 +5472,7 @@ entity:DistributionNetworkSimulation-341
 entity:DistributionOperationsModelAndAnalysis-DOMA--342
   rdf:type ar:PhysicalEntity ;
   rdf:type ar:ServiceComposition ;
+  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
@@ -5499,7 +5514,8 @@ entity:DistributionPlanning--345
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:DistributionProtectionAndControlDevices-346
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "system actor"^^xsd:string ;
@@ -5519,6 +5535,7 @@ entity:DistributionProtectionAndControlDevices-346
 .
 entity:DistributionProtectionDevices-347
   rdf:type ar:ConceptualEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:actorTypeOrRole "system actor"^^xsd:string ;
@@ -5701,6 +5718,7 @@ entity:DistributionSystemPowerFlow-DSPF--360
 .
 entity:DistributionSystemServices-356
   rdf:type ar:ConceptualEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:actorTypeOrRole "role"^^xsd:string ;
@@ -5875,6 +5893,7 @@ entity:EMobilityServiceProvider-eMSP--410
 entity:EPSSwitch-466
   rdf:type ar:PhysicalEntity ;
   rdf:type ar:ServiceComposition ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "DER"^^xsd:string ;
   props:description_0 "Switch plus its controller within an EPS"^^xsd:string ;
@@ -6067,6 +6086,7 @@ entity:ElectricReliabilityNotification-387
 .
 entity:ElectricStorage-388
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
@@ -6604,6 +6624,7 @@ entity:EnergyDataStorage-423
 .
 entity:EnergyDispatchServices-2
   rdf:type ar:ConceptualEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceCompostion"^^xsd:string ;
   props:actorTypeOrRole "role"^^xsd:string ;
@@ -6818,7 +6839,7 @@ entity:EnergyManager-436
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:EnergyMarketClearinghouse-437
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -6967,7 +6988,7 @@ entity:EnergyRestoration-446
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:EnergyServiceProvider-447
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -7151,6 +7172,7 @@ entity:EnergyStorageManagement-456
 .
 entity:EnergySupplyCompany-457
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:actorTypeOrRole "role"^^xsd:string ;
@@ -7220,7 +7242,7 @@ entity:EnterpriseResourcePlanning-ERP--461
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:EnvironmentalAuthority-462
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "role"^^xsd:string ;
@@ -7604,6 +7626,7 @@ entity:ExplicitControlResponse-490
 .
 entity:ExtensionPlanning-491
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:actorTypeOrRole "business actor"^^xsd:string ;
@@ -7664,6 +7687,7 @@ entity:FacilitateTrades-493
 .
 entity:Facility-494
   rdf:type ar:ConceptualEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
@@ -7695,6 +7719,7 @@ entity:FacilityDEREMS-FDEMS--495
 .
 entity:FacilityEnergyManagementSystem-Gateway-496
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
@@ -7724,6 +7749,8 @@ entity:FacilityLocalAreaNetwork-FacilityLAN--497
 .
 entity:FacilityManager-498
   rdf:type ar:ConceptualEntity ;
+  rdf:type ar:LogicalActor ;
+  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -7903,6 +7930,7 @@ entity:FieldAreaNetwork-FAN--509
 .
 entity:FieldCrewServices-510
   rdf:type ar:ServiceComposition ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Services on the field"^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
@@ -8382,6 +8410,7 @@ entity:GISOperator-564
 .
 entity:GISServices-565
   rdf:type ar:ServiceComposition ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Operation of the Geographical Information System"^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
@@ -8441,7 +8470,7 @@ service"""^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:Generation-547
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "role"^^xsd:string ;
@@ -8492,6 +8521,7 @@ entity:GenerationForecasting-549
 .
 entity:GenerationMeasure-550
   rdf:type ar:ConceptualEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:conceptualModel "X"^^xsd:string ;
@@ -8539,7 +8569,7 @@ entity:GenerationProtection-552
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:GenerationRecord-553
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:conceptualModel "X"^^xsd:string ;
@@ -8770,7 +8800,7 @@ entity:Grid-570
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:GridAccessProvider-571
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A party responsible for providing access to the grid through a local metering point and its use for energy consumption or production to the party connected to the grid."^^xsd:string ;
@@ -8905,6 +8935,7 @@ entity:GridOperations-579
 .
 entity:GridOperationsCoreNetwork-580
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "Local Area Networtk (LAN) infrastructure concentrating all operational networks. This includes grid operations management and control communications (eg: Field Area Networks (FANs), Substation Area Networks), as well as external party interfaces (eg: Market, Service Providers)"^^xsd:string ;
@@ -9021,7 +9052,7 @@ entity:HealthMonitoring-587
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:HomeApplianceVendors-588
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Home appliance manufacturers. Of special interest for Smart Grid is the inclusion of intelligent communicating appliances which can participate in Demand/Response situations and be monitored/controlled remotely"^^xsd:string ;
@@ -9066,7 +9097,8 @@ entity:HomeAutomationServices-D--590
 .
 entity:HomeCustomer-591
   rdf:type ar:Actor ;
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualService ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Service"^^xsd:string ;
   props:description_0 "A residential consumer of electricity (including also agriculture users) may also be involved in contract-based Demand/Response."^^xsd:string ;
   props:entityName "Home customer"^^xsd:string ;
@@ -9094,7 +9126,8 @@ entity:HomeManagement-592
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:HumanResources-593
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:conceptualModel "X"^^xsd:string ;
@@ -9155,6 +9188,7 @@ entity:HydroPlant-596
 .
 entity:ISO-RTOOperation-625
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:cSWGNISTIR7628 "X"^^xsd:string ;
@@ -9185,7 +9219,7 @@ entity:IdentifyGeographicAreaForFieldWorkOrder-597
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ImbalanceSettlementResponsible-598
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A party that is responsible for settlement of the difference between the contracted quantities and the realised quantities of energy products for the balance responsible parties in a market balance area."^^xsd:string ;
@@ -9251,7 +9285,7 @@ entity:InHomeDisplay-601
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:IndependentSystemOperator-602
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:cSWGNISTIR7628 "X"^^xsd:string ;
@@ -9302,7 +9336,7 @@ Demand/Response."""^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:IndustrialCustomer-605
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A large business which receives electricity from the electric distribution system. Typically utilities define industrial customers with usage above a minimum threshold."^^xsd:string ;
@@ -9333,7 +9367,8 @@ entity:IndustrialGateway-606
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:Information-CommunicationTechnology-ICT-ServiceProviders-Vendors-607
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Computer Systems, intelligent field equipment,  communications equipment and software providers necessary to support grid operations"^^xsd:string ;
@@ -9433,7 +9468,7 @@ entity:InstallationAndMaintenanceOfElectricalService-613
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:InstallationService-614
-  rdf:type ar:LogicalEntity ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "ServiceComposition of communicating/controlable customer devices, Building Automation Systems (BAS) and components."^^xsd:string ;
@@ -9518,7 +9553,7 @@ entity:InterRegionalCommunications-623
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:InterconnectionTradeResponsible-619
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Is a market particpant or depends on one.  r\\Recognised by the Nomination Validator for the nomination of already allocated capacity."^^xsd:string ;
@@ -9562,7 +9597,7 @@ entity:InternalMonitoring-621
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:InternetServiceProvider-622
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:colC "ISP"^^xsd:string ;
@@ -9831,6 +9866,7 @@ entity:LoadManagementSystem-641
 .
 entity:LoadServingEntity-642
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:colC "LSE"^^xsd:string ;
@@ -9861,7 +9897,7 @@ entity:LoadTransfer-643
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:LocalAuthority-644
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 """A party that produces electricity 
@@ -9893,7 +9929,7 @@ entity:LocalEPS-645
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:LocalRegulatoryAuthority-646
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A regulatory authority responsible for the oversight and administration of utility service-related functions within its jurisdiction."^^xsd:string ;
@@ -9998,6 +10034,7 @@ entity:LossLocationManagement--652
 .
 entity:MOLResponsible-812
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "Responsible for the management of the available tenders for all Acquiring System Operators to establish the order of the reserve capacity that can be activated."^^xsd:string ;
@@ -11509,7 +11546,7 @@ entity:MarketEnrollment-756
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:MarketGenerator-757
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "1.0"^^xsd:string ;
@@ -11583,6 +11620,7 @@ entity:MarketMakerSupportService-761
 .
 entity:MarketManagement-762
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:conceptualModel "X"^^xsd:string ;
@@ -11748,6 +11786,7 @@ entity:MeasureCustomer-773
 .
 entity:Measurement-774
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "The role associated with the device or algorithm that measures the consumption or supply of an End Device."^^xsd:string ;
@@ -11955,7 +11994,8 @@ entity:MeterDataReportingConfiguration-787
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:MeterOperator-788
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:colC "MO"^^xsd:string ;
@@ -12014,6 +12054,7 @@ entity:MeterUser-B--791
 .
 entity:MeteredDataAggregator-792
   rdf:type ar:ConceptualEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "A party responsible for the establishment and qualification of metered data from the Metered data responsible. This data is aggregated according to a defined set of market rules."^^xsd:string ;
@@ -12042,7 +12083,8 @@ entity:MeteredDataAggregatorMDA-793
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:MeteringAuthority-794
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:colC "MA"^^xsd:string ;
@@ -12279,6 +12321,7 @@ Additional information: a Mobility Service Operator could be considered as an Ag
 .
 entity:Modeler-810
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "Organizational entity responsible for Person in charge of modeling the power network."^^xsd:string ;
@@ -12296,6 +12339,7 @@ entity:Modeler-810
 .
 entity:ModelingServices-811
   rdf:type ar:ServiceComposition ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Network modeling"^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
@@ -12524,6 +12568,7 @@ entity:MultihomingNetworkManagement-827
 entity:NNAP-860
   rdf:type ar:PhysicalEntity ;
   rdf:type ar:ServiceComposition ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "The Neighbourhood Network Access Point is a functional entity that provides access to one or more LNAPâ€Ÿs, metering end devices, displays and home automation end devices connected to the neighbourhood network (NN). It may allow data exchange between different functional entities connected to the same NN."^^xsd:string ;
   props:entityName "NNAP"^^xsd:string ;
@@ -12858,6 +12903,7 @@ entity:NetworkOperationsAnalysis-NOOFA--849
 .
 entity:NetworkOperationsAnalyst-850
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:conceptualModel "X"^^xsd:string ;
@@ -13068,6 +13114,7 @@ entity:NomadicLoadManagement-864
 .
 entity:NominationValidator-865
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "Has the responsibility of ensuring that all capacity nominated is within the allowed limits and confirming all valid nominations to all involved parties. That role informs the Interconnection Trade Responsible of the maximum nominated capacity allowed. Depending on market rules for a given interconnection the corresponding System Operators may appoint one Nomination Validator."^^xsd:string ;
@@ -13742,6 +13789,7 @@ entity:PCCSwitch-914
 .
 entity:PNode-930
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role  NA"^^xsd:string ;
   props:description_0 "The price location of the Facility in the transmission and/or distribution network."^^xsd:string ;
   props:entityName "P-Node"^^xsd:string ;
@@ -13773,6 +13821,7 @@ Additional information: a Parking Service Operator could be considered as an Agg
 .
 entity:Participant-911
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "The entity that represents resources to a market or distribution operator."^^xsd:string ;
@@ -13814,6 +13863,7 @@ entity:PartyConnectedToTheGrid-913
 .
 entity:Peaker-915
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
@@ -14168,7 +14218,7 @@ entity:PowerEquipment-939
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:PowerExchange-940
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Provides a market place for trading physical and financial (capacity/energy and derivates) contracts for capacity allocation by implicit auctions within the defined country, region or cross border."^^xsd:string ;
@@ -14212,7 +14262,7 @@ entity:PowerFlowSimulationService-942
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:PowerGridEquipmentVendors-943
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Field equipment vendors."^^xsd:string ;
@@ -14537,6 +14587,7 @@ entity:PowerQualitySupportService-965
 .
 entity:PowerSystemControlCenter-966
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Zone"^^xsd:string ;
   props:description_0 "Power system central operations. This is the physical entity from which Grid Operations provides their services. Today these include Regional/Independent Operators, utility-owned transmission Operations and Distribution Operations facilities."^^xsd:string ;
@@ -14741,7 +14792,7 @@ Additional information: This is a type of Party Connected to the Grid"""^^xsd:st
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ProductionResponsibleParty-980
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A party who can be brought to rights, legally and financially, for any imbalance between energy sold and produced for all associated metering points. Tye of Market Participant."^^xsd:string ;
@@ -15024,6 +15075,7 @@ entity:ProvideSecurity-999
 .
 entity:PublicInternet-Intranet-1000
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Zone"^^xsd:string ;
   props:description_0 "Public Internet is the pri,ary communications facility used between Grid Operations Core Network, Market, Third Party Providers, and Customer Portals."^^xsd:string ;
@@ -15350,7 +15402,7 @@ entity:ReconciliationAccountable-1022
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ReconciliationAccountableParty-1023
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A party that is financially accountable for the reconciled volume of energy products for a profiled Local metering point."^^xsd:string ;
@@ -15451,6 +15503,7 @@ entity:ReduceSettlementTimeline-1029
 .
 entity:RegionalInterconnects-1030
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Zone"^^xsd:string ;
   props:description_0 "Regional interconnects are between Grid Operations Core Networks . They are used to signal cross regional awareness, such as cross-regional Wide Area Situational Awareness (WASA) voltage collapse. These facilities are either private proprietary or pubic carrier backbones."^^xsd:string ;
@@ -15466,7 +15519,7 @@ entity:RegionalInterconnects-1030
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:RegionalTransmissionOrganization-1031
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -15570,7 +15623,7 @@ entity:RegulatingDERSystem-1037
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:RegulatoryAuthority-1038
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Federal agency that requires information on interactions involving intersate transmission, and security"^^xsd:string ;
@@ -15604,7 +15657,7 @@ entity:Relay-1039
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ReliabilityAuthority-1040
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A regulatory authority responsible for the development, reporting and enforcement of electric reliability-related activities."^^xsd:string ;
@@ -15763,6 +15816,7 @@ entity:RequestMarketProducts-1050
 .
 entity:ReserveAllocator-1051
   rdf:type ar:ConceptualEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "A party that is responsible for reconciling, within a Metering grid area, the volumes used in the imbalance settlement process for profiled metering points and the actual metered quantities."^^xsd:string ;
@@ -15873,7 +15927,7 @@ entity:ResourceOptimization-1057
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ResourceProvider-1058
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "1.0"^^xsd:string ;
@@ -15919,6 +15973,7 @@ entity:RespondToBid-1060
 .
 entity:ResponseMethodAggregator-1061
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:clusterLabel "1.0"^^xsd:string ;
@@ -15980,6 +16035,7 @@ entity:RestrictedMarketNotificationService-1064
 .
 entity:RetailCustomer-1065
   rdf:type ar:ConceptualEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:actorTypeOrRole "ServiceComposition"^^xsd:string ;
@@ -16214,6 +16270,7 @@ entity:ScheduleWorkcrew-1081
 .
 entity:SchedulingCoordinator-1082
   rdf:type ar:ConceptualEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 """A party that is responsible for the schedule information and its exchange on behalf of a balance responsible party. 
@@ -16246,7 +16303,7 @@ entity:SchedulingCoordinator-1083
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SchedulingEntity-1084
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:colC "SE"^^xsd:string ;
@@ -16479,7 +16536,7 @@ entity:ServiceManagey-1099
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ServiceProvider-1100
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:cSWGNISTIR7628 "X"^^xsd:string ;
@@ -16590,6 +16647,7 @@ entity:SettlementSupportService-1106
 .
 entity:SheddableLoads-1107
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
@@ -16945,6 +17003,7 @@ It may also provide services including protocol conversion, device management, s
 .
 entity:Solar-1131
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
@@ -17009,7 +17068,8 @@ entity:StakeholderPlanningAndReporting-SPM--1134
 .
 entity:StandardizationBody-1135
   rdf:type ar:Actor ;
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualService ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Service"^^xsd:string ;
   props:description_0 "Responsible for standardization of all relevant elements and components within the electricity supply chain, which leads to harmonizaing relevant services, support towards removing barriers to trade, creating new market opportunities and reducing manufacturing costs."^^xsd:string ;
@@ -17083,7 +17143,8 @@ entity:StateManagement-1139
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:Storage-1140
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualService ;
+  rdf:type ar:PhysicalService ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Service"^^xsd:string ;
@@ -17423,6 +17484,7 @@ entity:SynchronizingEquipment-1161
 .
 entity:SystemAdministration-1162
   rdf:type ar:ServiceComposition ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "0.0"^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
@@ -17507,6 +17569,7 @@ entity:SystemOperation-1167
 .
 entity:SystemOperation-1170
   rdf:type ar:ServiceComposition ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Operation Services including monition of dynamic behavior of the Grid via GUIs and take actions to either prevent contingencies or improve system efficiency"^^xsd:string ;
   props:entityName "System Operation"^^xsd:string ;
@@ -17520,6 +17583,7 @@ entity:SystemOperation-1170
 .
 entity:SystemOperation-1171
   rdf:type ar:ServiceComposition ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 "-"^^xsd:string ;
@@ -17532,7 +17596,8 @@ entity:SystemOperation-1171
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SystemOperator-1168
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:colC "SO"^^xsd:string ;
@@ -17761,6 +17826,7 @@ entity:TestSchedulingService-1185
 .
 entity:ThermalStorage-1186
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
@@ -17882,6 +17948,7 @@ entity:TopologySupport-1193
 .
 entity:TradeResponsibleParty-1194
   rdf:type ar:ConceptualEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 "A party who can be brought to rights, legally and financially, for any imbalance between energy bought and consumed for all associated metering points.  Note: A power exchange without any privileged responsibilities acts as a Trade Responsible Party."^^xsd:string ;
@@ -18047,6 +18114,7 @@ entity:TransmissionBusLoadModel-TBLM--1204
 .
 entity:TransmissionCapacityAllocator-1205
   rdf:type ar:ConceptualEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:description_0 """Manages the allocation of transmission capacity for an allocated capacity area. For explicit auctions:
@@ -18156,6 +18224,7 @@ entity:TransmissionMeasurement-1210
 .
 entity:TransmissionOperationsAndControlCenter-1211
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
   props:cSWGNISTIR7628 "X"^^xsd:string ;
@@ -18294,7 +18363,7 @@ entity:TransmissionSubstationNetwork-1218
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:TransmissionSystemOperator-1219
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
@@ -19011,6 +19080,7 @@ entity:WideAreaSituationalAwareness-1266
 .
 entity:WindGeneration-1268
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
@@ -19100,6 +19170,7 @@ entity:WorkforceMobileNetwork-1273
 .
 entity:Zone-1274
   rdf:type ar:LogicalEntity ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:actorServiceCompositionService "Role  NA"^^xsd:string ;
   props:conceptualModel "X"^^xsd:string ;
   props:description_0 "A physical or electrical region."^^xsd:string ;
@@ -19131,35 +19202,7 @@ props:Combined-Elements-noduprows
 <http://sv.cmu.edu/AWP/8.0/workingresults8.2>
   rdf:type owl:Ontology ;
   owl:imports <http://sv.cmu.edu/AWP/8.0/ActorRoles> ;
+  owl:imports <http://sv.cmu.edu/AWP/8.0/classifier> ;
   owl:imports <http://sv.cmu.edu/AWP/8.0/constraints> ;
   owl:imports <http://sv.cmu.edu/AWP/8.0/props> ;
-.
-owl:Thing
-  spin:query [
-      rdf:type sp:Select ;
-      sp:where (
-          [
-            sp:object [
-                sp:varName "o"^^xsd:string ;
-              ] ;
-            sp:predicate [
-                sp:varName "p"^^xsd:string ;
-              ] ;
-            sp:subject [
-                sp:varName "s"^^xsd:string ;
-              ] ;
-          ]
-          [
-            rdf:type sp:Filter ;
-            sp:expression [
-                rdf:type sp:regex ;
-                sp:arg1 [
-                    sp:varName "o"^^xsd:string ;
-                  ] ;
-                sp:arg2 "der" ;
-              ] ;
-          ]
-        ) ;
-      rdfs:comment "004 Find arbitrary string value anywhere, not just name"^^xsd:string ;
-    ] ;
 .
