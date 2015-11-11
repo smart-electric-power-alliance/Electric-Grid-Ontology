@@ -1449,6 +1449,13 @@ owl:Thing
               ] ;
           ]
           [
+            sp:object "false"^^xsd:boolean ;
+            sp:predicate owl:deprecated ;
+            sp:subject [
+                sp:varName "inst"^^xsd:string ;
+              ] ;
+          ]
+          [
             sp:object [
                 sp:varName "type"^^xsd:string ;
               ] ;
