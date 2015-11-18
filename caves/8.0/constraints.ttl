@@ -316,6 +316,13 @@ owl:Thing
               ] ;
           ]
           [
+            sp:object "false"^^xsd:boolean ;
+            sp:predicate owl:deprecated ;
+            sp:subject [
+                sp:varName "entity"^^xsd:string ;
+              ] ;
+          ]
+          [
             rdf:type sp:Optional ;
             sp:elements (
                 [
@@ -510,6 +517,13 @@ owl:Thing
                 sp:varName "label"^^xsd:string ;
               ] ;
             sp:predicate rdfs:label ;
+            sp:subject [
+                sp:varName "entity"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object "false"^^xsd:boolean ;
+            sp:predicate owl:deprecated ;
             sp:subject [
                 sp:varName "entity"^^xsd:string ;
               ] ;
@@ -1285,6 +1299,13 @@ owl:Thing
                 sp:varName "label"^^xsd:string ;
               ] ;
             sp:predicate rdfs:label ;
+            sp:subject [
+                sp:varName "entity"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object "false"^^xsd:boolean ;
+            sp:predicate owl:deprecated ;
             sp:subject [
                 sp:varName "entity"^^xsd:string ;
               ] ;
