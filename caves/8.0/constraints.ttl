@@ -2,6 +2,7 @@
 # imports: http://spinrdf.org/spl
 # imports: http://sv.cmu.edu/AWP/8.0/ActorRoles
 # imports: http://sv.cmu.edu/AWP/8.0/props
+# prefix: constraints
 
 @prefix arg: <http://spinrdf.org/arg#> .
 @prefix constraints: <http://sv.cmu.edu/AWP/8.0/constraints#> .
@@ -212,6 +213,370 @@ owl:Thing
           ]
         ) ;
       rdfs:comment "003 Invalid hierarchy specification."^^xsd:string ;
+    ] ;
+  spin:constraint [
+      rdf:type sp:Ask ;
+      sp:where (
+          [
+            sp:object [
+                sp:varName "hierarchy"^^xsd:string ;
+              ] ;
+            sp:predicate <http://sv.cmu.edu/AWP/8.0/props#hierarchyConceptualLogicalPhysical> ;
+            sp:subject spin:_this ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type spif:lowerCase ;
+                sp:arg1 [
+                    sp:varName "hierarchy"^^xsd:string ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "hierarchyLowerCase"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Filter ;
+            sp:expression [
+                rdf:type fn:contains ;
+                sp:arg1 [
+                    sp:varName "hierarchyLowerCase"^^xsd:string ;
+                  ] ;
+                sp:arg2 "conceptual" ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Union ;
+            sp:elements (
+                (
+                  [
+                    rdf:type sp:TriplePath ;
+                    sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalEntity> ;
+                    sp:path [
+                        rdf:type sp:SeqPath ;
+                        sp:path1 rdf:type ;
+                        sp:path2 [
+                            rdf:type sp:ModPath ;
+                            sp:modMax -2 ;
+                            sp:modMin 0 ;
+                            sp:subPath rdfs:subClassOf ;
+                          ] ;
+                      ] ;
+                    sp:subject spin:_this ;
+                  ]
+                )
+                (
+                  [
+                    rdf:type sp:TriplePath ;
+                    sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#PhysicalEntity> ;
+                    sp:path [
+                        rdf:type sp:SeqPath ;
+                        sp:path1 rdf:type ;
+                        sp:path2 [
+                            rdf:type sp:ModPath ;
+                            sp:modMax -2 ;
+                            sp:modMin 0 ;
+                            sp:subPath rdfs:subClassOf ;
+                          ] ;
+                      ] ;
+                    sp:subject spin:_this ;
+                  ]
+                )
+                (
+                  [
+                    rdf:type sp:TriplePath ;
+                    sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ImplementationEntity> ;
+                    sp:path [
+                        rdf:type sp:SeqPath ;
+                        sp:path1 rdf:type ;
+                        sp:path2 [
+                            rdf:type sp:ModPath ;
+                            sp:modMax -2 ;
+                            sp:modMin 0 ;
+                            sp:subPath rdfs:subClassOf ;
+                          ] ;
+                      ] ;
+                    sp:subject spin:_this ;
+                  ]
+                )
+              ) ;
+          ]
+        ) ;
+      rdfs:comment "005 Classification of \"Conceptual\" is inconsistent with rdf:type declaration. Need to fix one or the other."^^xsd:string ;
+    ] ;
+  spin:constraint [
+      rdf:type sp:Ask ;
+      sp:where (
+          [
+            sp:object [
+                sp:varName "hierarchy"^^xsd:string ;
+              ] ;
+            sp:predicate <http://sv.cmu.edu/AWP/8.0/props#hierarchyConceptualLogicalPhysical> ;
+            sp:subject spin:_this ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type spif:lowerCase ;
+                sp:arg1 [
+                    sp:varName "hierarchy"^^xsd:string ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "hierarchyLowerCase"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Filter ;
+            sp:expression [
+                rdf:type fn:contains ;
+                sp:arg1 [
+                    sp:varName "hierarchyLowerCase"^^xsd:string ;
+                  ] ;
+                sp:arg2 "implementation" ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Union ;
+            sp:elements (
+                (
+                  [
+                    rdf:type sp:TriplePath ;
+                    sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ConceptualEntity> ;
+                    sp:path [
+                        rdf:type sp:SeqPath ;
+                        sp:path1 rdf:type ;
+                        sp:path2 [
+                            rdf:type sp:ModPath ;
+                            sp:modMax -2 ;
+                            sp:modMin 0 ;
+                            sp:subPath rdfs:subClassOf ;
+                          ] ;
+                      ] ;
+                    sp:subject spin:_this ;
+                  ]
+                )
+                (
+                  [
+                    rdf:type sp:TriplePath ;
+                    sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalEntity> ;
+                    sp:path [
+                        rdf:type sp:SeqPath ;
+                        sp:path1 rdf:type ;
+                        sp:path2 [
+                            rdf:type sp:ModPath ;
+                            sp:modMax -2 ;
+                            sp:modMin 0 ;
+                            sp:subPath rdfs:subClassOf ;
+                          ] ;
+                      ] ;
+                    sp:subject spin:_this ;
+                  ]
+                )
+                (
+                  [
+                    rdf:type sp:TriplePath ;
+                    sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#PhysicalEntity> ;
+                    sp:path [
+                        rdf:type sp:SeqPath ;
+                        sp:path1 rdf:type ;
+                        sp:path2 [
+                            rdf:type sp:ModPath ;
+                            sp:modMax -2 ;
+                            sp:modMin 0 ;
+                            sp:subPath rdfs:subClassOf ;
+                          ] ;
+                      ] ;
+                    sp:subject spin:_this ;
+                  ]
+                )
+              ) ;
+          ]
+        ) ;
+      rdfs:comment "008 Classification of \"Implementation\" is inconsistent with rdf:type declaration. Need to fix one or the other."^^xsd:string ;
+    ] ;
+  spin:constraint [
+      rdf:type sp:Ask ;
+      sp:where (
+          [
+            sp:object [
+                sp:varName "hierarchy"^^xsd:string ;
+              ] ;
+            sp:predicate <http://sv.cmu.edu/AWP/8.0/props#hierarchyConceptualLogicalPhysical> ;
+            sp:subject spin:_this ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type spif:lowerCase ;
+                sp:arg1 [
+                    sp:varName "hierarchy"^^xsd:string ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "hierarchyLowerCase"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Filter ;
+            sp:expression [
+                rdf:type fn:contains ;
+                sp:arg1 [
+                    sp:varName "hierarchyLowerCase"^^xsd:string ;
+                  ] ;
+                sp:arg2 "logical" ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Union ;
+            sp:elements (
+                (
+                  [
+                    rdf:type sp:TriplePath ;
+                    sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ConceptualEntity> ;
+                    sp:path [
+                        rdf:type sp:SeqPath ;
+                        sp:path1 rdf:type ;
+                        sp:path2 [
+                            rdf:type sp:ModPath ;
+                            sp:modMax -2 ;
+                            sp:modMin 0 ;
+                            sp:subPath rdfs:subClassOf ;
+                          ] ;
+                      ] ;
+                    sp:subject spin:_this ;
+                  ]
+                )
+                (
+                  [
+                    rdf:type sp:TriplePath ;
+                    sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#PhysicalEntity> ;
+                    sp:path [
+                        rdf:type sp:SeqPath ;
+                        sp:path1 rdf:type ;
+                        sp:path2 [
+                            rdf:type sp:ModPath ;
+                            sp:modMax -2 ;
+                            sp:modMin 0 ;
+                            sp:subPath rdfs:subClassOf ;
+                          ] ;
+                      ] ;
+                    sp:subject spin:_this ;
+                  ]
+                )
+                (
+                  [
+                    rdf:type sp:TriplePath ;
+                    sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ImplementationEntity> ;
+                    sp:path [
+                        rdf:type sp:SeqPath ;
+                        sp:path1 rdf:type ;
+                        sp:path2 [
+                            rdf:type sp:ModPath ;
+                            sp:modMax -2 ;
+                            sp:modMin 0 ;
+                            sp:subPath rdfs:subClassOf ;
+                          ] ;
+                      ] ;
+                    sp:subject spin:_this ;
+                  ]
+                )
+              ) ;
+          ]
+        ) ;
+      rdfs:comment "006 Classification of \"Logical\" is inconsistent with rdf:type declaration. Need to fix one or the other."^^xsd:string ;
+    ] ;
+  spin:constraint [
+      rdf:type sp:Ask ;
+      sp:where (
+          [
+            sp:object [
+                sp:varName "hierarchy"^^xsd:string ;
+              ] ;
+            sp:predicate <http://sv.cmu.edu/AWP/8.0/props#hierarchyConceptualLogicalPhysical> ;
+            sp:subject spin:_this ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type spif:lowerCase ;
+                sp:arg1 [
+                    sp:varName "hierarchy"^^xsd:string ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "hierarchyLowerCase"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Filter ;
+            sp:expression [
+                rdf:type fn:contains ;
+                sp:arg1 [
+                    sp:varName "hierarchyLowerCase"^^xsd:string ;
+                  ] ;
+                sp:arg2 "physical" ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Union ;
+            sp:elements (
+                (
+                  [
+                    rdf:type sp:TriplePath ;
+                    sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ConceptualEntity> ;
+                    sp:path [
+                        rdf:type sp:SeqPath ;
+                        sp:path1 rdf:type ;
+                        sp:path2 [
+                            rdf:type sp:ModPath ;
+                            sp:modMax -2 ;
+                            sp:modMin 0 ;
+                            sp:subPath rdfs:subClassOf ;
+                          ] ;
+                      ] ;
+                    sp:subject spin:_this ;
+                  ]
+                )
+                (
+                  [
+                    rdf:type sp:TriplePath ;
+                    sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalEntity> ;
+                    sp:path [
+                        rdf:type sp:SeqPath ;
+                        sp:path1 rdf:type ;
+                        sp:path2 [
+                            rdf:type sp:ModPath ;
+                            sp:modMax -2 ;
+                            sp:modMin 0 ;
+                            sp:subPath rdfs:subClassOf ;
+                          ] ;
+                      ] ;
+                    sp:subject spin:_this ;
+                  ]
+                )
+                (
+                  [
+                    rdf:type sp:TriplePath ;
+                    sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#ImplementationEntity> ;
+                    sp:path [
+                        rdf:type sp:SeqPath ;
+                        sp:path1 rdf:type ;
+                        sp:path2 [
+                            rdf:type sp:ModPath ;
+                            sp:modMax -2 ;
+                            sp:modMin 0 ;
+                            sp:subPath rdfs:subClassOf ;
+                          ] ;
+                      ] ;
+                    sp:subject spin:_this ;
+                  ]
+                )
+              ) ;
+          ]
+        ) ;
+      rdfs:comment "007 Classification of \"Physical\" is inconsistent with rdf:type declaration. Need to fix one or the other."^^xsd:string ;
     ] ;
   spin:query [
       rdf:type sp:Select ;
