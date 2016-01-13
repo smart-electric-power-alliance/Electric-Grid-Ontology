@@ -1362,10 +1362,9 @@ service"""^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:BuildingManagementSystem-89
-  rdf:type ar:LogicalEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:archiMateTerminologyLayers "Application 1st"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
   props:description_0 "A system consisting of several decentralized controllers and a centralized management system to monitor and control the heating, ventilation, air conditioning, light and other facilities within a building."^^xsd:string ;
@@ -2526,10 +2525,9 @@ entity:Construction-MCCON--163
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ConstructionSupervision-164
-  rdf:type ar:LogicalEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalService ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:businessFunctionService """function/
 service"""^^xsd:string ;
   props:colC "CSP"^^xsd:string ;
@@ -4016,12 +4014,12 @@ entity:DERUnit-generic--282
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:DMSServices-366
-  rdf:type ar:ServiceComposition ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Service of the Distribution Management System"^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
   props:entityName "DMS Services"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "0.0"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "366"^^xsd:int ;
@@ -5748,7 +5746,7 @@ entity:DistributionSystemServices-DSO--357
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "357"^^xsd:int ;
   rdfs:label "Distribution System Services (DSO)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:DistributionSystemServices-DSO--358
   rdf:type props:Combined-Elements-noduprows ;
@@ -6632,7 +6630,7 @@ entity:EnergyDispatchServices-2
   props:description_0 "Services in charge of dispatching Electricity (e.g. transmission level, distribution, etc)"^^xsd:string ;
   props:eUWGSPVers05 "X"^^xsd:string ;
   props:entityName "Energy Dispatch Services"^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Conceptual - 1st"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:nISTLegacyDomain "Transmission/Distribution or all"^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates "Eur: Dispatcher"^^xsd:string ;
@@ -6776,10 +6774,11 @@ entity:EnergyManagementLAN-432
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:EnergyManagementSystem-433
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  rdf:type ar:ConceptualServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "System which provides applications to monitor and control a transmission grid and the output of the connected power plants from a centralized location, typically the control center. A DMS typically has interfaces to other EMS"^^xsd:string ;
   props:entityName "Energy Management System"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "SG3"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -7017,10 +7016,11 @@ entity:EnergyServiceProvider-447
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:EnergyServiceProviderESP-448
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  rdf:type ar:ConceptualServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Organisation offering energy services to the consumer."^^xsd:string ;
   props:entityName "Energy Service Provider, ESP"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "SMCG"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:sMCG "X"^^xsd:string ;
@@ -7171,10 +7171,9 @@ entity:EnergyStorageManagement-456
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:EnergySupplyCompany-457
-  rdf:type ar:LogicalEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "role"^^xsd:string ;
   props:description_0 "A company that delivers electricity to end use customers. Examples include investor-owned, municipal utilities, private providers."^^xsd:string ;
   props:eIS "X"^^xsd:string ;
@@ -7625,10 +7624,9 @@ entity:ExplicitControlResponse-490
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ExtensionPlanning-491
-  rdf:type ar:LogicalEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "business actor"^^xsd:string ;
   props:businessFunctionService """or function/
 service"""^^xsd:string ;
@@ -7687,15 +7685,16 @@ entity:FacilitateTrades-493
 .
 entity:Facility-494
   rdf:type ar:ConceptualEntity ;
+  rdf:type ar:LogicalActor ;
   rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:clusterLabel "1.0"^^xsd:string ;
   props:description_0 "Something such as a building or large piece of equipment that is built for a specific purpose. In the NAESB context this is \"The location at which connection to the  distribution  (or transmission) system is made.\" This is an abstract superclass role is used to describe a cluster of subclasses"^^xsd:string ;
   props:eUCommission "X"^^xsd:string ;
   props:entityName "Facility"^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:nAESB "X"^^xsd:string ;
   props:nISTLegacyDomain "Cross Cutting"^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates "EU: Buildings"^^xsd:string ;
