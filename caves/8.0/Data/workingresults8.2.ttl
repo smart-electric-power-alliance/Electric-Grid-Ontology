@@ -7717,11 +7717,10 @@ entity:FacilityDEREMS-FDEMS--495
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:FacilityEnergyManagementSystem-Gateway-496
-  rdf:type ar:LogicalEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
   props:demandResponse "X"^^xsd:string ;
   props:description_0 "A logical or physical device typically located at the customer facility which combines communication gateway and energy management functions."^^xsd:string ;
@@ -7747,9 +7746,7 @@ entity:FacilityLocalAreaNetwork-FacilityLAN--497
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:FacilityManager-498
-  rdf:type ar:ConceptualEntity ;
   rdf:type ar:LogicalActor ;
-  rdf:type props:Combined-Elements-noduprows ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -7896,7 +7893,7 @@ entity:FieldActuators-507
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "507"^^xsd:int ;
   rdfs:label "Field Actuators"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:FieldActuators-508
   rdf:type props:Combined-Elements-noduprows ;
@@ -7928,12 +7925,12 @@ entity:FieldAreaNetwork-FAN--509
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:FieldCrewServices-510
-  rdf:type ar:ServiceComposition ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Services on the field"^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
   props:entityName "Field crew Services"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "0.0"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "510"^^xsd:int ;
@@ -8014,11 +8011,12 @@ entity:FieldRecording-MCFRD--515
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:FieldSensingDevices-516
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  rdf:type ar:LogicalActor ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:description_0 "Devices, which are spread on the Grid lines, continuously report current dynamic status such as voltage, current, frequency and so on."^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
   props:entityName "Field Sensing Devices"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "0.0"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -8408,12 +8406,12 @@ entity:GISOperator-564
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:GISServices-565
-  rdf:type ar:ServiceComposition ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Operation of the Geographical Information System"^^xsd:string ;
   props:eUSourceunknown "X"^^xsd:string ;
   props:entityName "GIS Services"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "0.0"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -8519,10 +8517,9 @@ entity:GenerationForecasting-549
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:GenerationMeasure-550
-  rdf:type ar:ConceptualEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:conceptualModel "X"^^xsd:string ;
   props:description_0 "Performed by roles that provide visibility into the flow of power and the condition of the systems in the field. In the future measurement might be found in built into meters, transformers, feeders, switches and other devices in the grid."^^xsd:string ;
   props:entityName "Generation Measure"^^xsd:string ;
@@ -8816,11 +8813,12 @@ entity:GridAccessProvider-571
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:GridAccessProvider-572
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  rdf:type ar:LogicalServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A party responsible for providing access to the grid through a local metering point and its use for energy consumption or production to the party connected to the grid."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "Grid Access Provider"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -8845,11 +8843,12 @@ entity:GridCommunicationsNetworkProviders-573
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:GridCommunicationsNetworkProviders-574
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  rdf:type ar:ConceptualServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Plan, build and maintain the communications systems that enable the data communication required to maintain grid stability, load balancing and fault protection systems by a TSO or DSO. This function is mostly executed by the TSO or the DSO, or may be performed by an independent actor but the overall responsibility and ownership of information remains with TSO and DSO.4 Grid communications network provider ensures compliance with the agreed service levels (Service Level Agreements including quality of service, data security and privacy) and compliance with any national and/or international regulations as necessary;"^^xsd:string ;
   props:eG3 "X"^^xsd:string ;
   props:entityName "Grid communications network providers"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "EG3"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -13342,10 +13341,11 @@ entity:OperationalPlanning-880
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:OperationalPlanning-OP--881
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  rdf:type ar:ConceptualServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Operational Planning and Optimization actors perform simulation of network operations, schedule switching actions, dispatch repair crews, inform affected customers, and schedule the importing of power. They keep the cost of imported power low through peak generation, switching, load shedding or demand response."^^xsd:string ;
   props:entityName "Operational Planning (OP)"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
@@ -13637,12 +13637,13 @@ Usually interfaces to CIS, WMS and GIS applications; May interface to AMI system
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:OutageManagementSystem-899
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
   props:description_0 "Outage Management System; key application or system for distribution network operations, supports the control room operator during his jobs to plan and coordinate grid maintenance requiring de-energizing of network parts or to coordinate the remedial ac"^^xsd:string ;
   props:entityName "Outage Management System"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "SG3"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -13819,13 +13820,12 @@ Additional information: a Parking Service Operator could be considered as an Agg
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:Participant-911
-  rdf:type ar:LogicalEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualService ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:description_0 "The entity that represents resources to a market or distribution operator."^^xsd:string ;
   props:entityName "Participant"^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:nAESB "X"^^xsd:string ;
   props:nISTLegacyDomain "Service Provider"^^xsd:string ;
   props:type "Organizational Entity"^^xsd:string ;
@@ -13861,11 +13861,10 @@ entity:PartyConnectedToTheGrid-913
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:Peaker-915
-  rdf:type ar:LogicalEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalService ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:clusterLabel "1.0"^^xsd:string ;
   props:description_0 "Plants that can be brought online quickly and efficiently in reponse to excess demand. Usually sited near a Substation or within a Generation facility. Typically these are gas turbine-sets spinning the generators."^^xsd:string ;
   props:entityName "Peaker"^^xsd:string ;
@@ -14191,11 +14190,12 @@ entity:PowerCharacteristicManagement-937
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:PowerEquipment-938
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  rdf:type ar:PhysicalActor ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:description_0 "Equipment which directly operates on the Power System and controlled by SCS, including e.g.: On Loap tap changers (OLTC), Switched Capacitor banks , FACTS devices, Voltage Regulator Controllers"^^xsd:string ;
   props:entityName "Power equipment"^^xsd:string ;
   props:gUC "X"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:note "GUC"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -14585,13 +14585,14 @@ entity:PowerQualitySupportService-965
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:PowerSystemControlCenter-966
-  rdf:type ar:LogicalEntity ;
+  rdf:type ar:PhysicalEntity ;
+  rdf:type ar:ServiceComposition ;
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Zone"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Power system central operations. This is the physical entity from which Grid Operations provides their services. Today these include Regional/Independent Operators, utility-owned transmission Operations and Distribution Operations facilities."^^xsd:string ;
   props:entityName "Power System Control Center"^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone "Operations"^^xsd:string ;
   props:nAESB ""^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
@@ -15073,10 +15074,9 @@ entity:ProvideSecurity-999
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:PublicInternet-Intranet-1000
-  rdf:type ar:LogicalEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Zone"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Public Internet is the pri,ary communications facility used between Grid Operations Core Network, Market, Third Party Providers, and Customer Portals."^^xsd:string ;
   props:entityName "Public Internet/Intranet"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
@@ -15347,11 +15347,12 @@ entity:RealTimeEmergencyOperations-1018
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:RealTimeStateEstimator-RTSS--1019
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  rdf:type ar:LogicalServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Estimates current spatial-temporal state of grid in real-time. If a contingency in the grid is expected, it triggers a close-loop control or notify systems operators of the contingency via GUIs"^^xsd:string ;
   props:entityName "Real-time State Estimator (RTSS)"^^xsd:string ;
   props:gUC "X"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "GUC"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -15501,10 +15502,9 @@ entity:ReduceSettlementTimeline-1029
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:RegionalInterconnects-1030
-  rdf:type ar:LogicalEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Zone"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "Regional interconnects are between Grid Operations Core Networks . They are used to signal cross regional awareness, such as cross-regional Wide Area Situational Awareness (WASA) voltage collapse. These facilities are either private proprietary or pubic carrier backbones."^^xsd:string ;
   props:entityName "Regional Interconnects"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
@@ -15730,13 +15730,14 @@ entity:RenewableFacility-1044
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:RenewableGenerationForecaster-1045
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalService ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
   props:description_0 "Compute forecast for renewable generation in controlled area based on weather forecast"^^xsd:string ;
   props:entityName "Renewable Generation Forecaster"^^xsd:string ;
   props:gUC "X"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "CUG"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
