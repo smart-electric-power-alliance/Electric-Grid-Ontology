@@ -16269,10 +16269,9 @@ entity:ScheduleWorkcrew-1081
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SchedulingCoordinator-1082
-  rdf:type ar:ConceptualEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualService ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:description_0 """A party that is responsible for the schedule information and its exchange on behalf of a balance responsible party. 
 For example in the Polish market a Scheduling Coordinator is responsible for information interchange for scheduling and settlement."""^^xsd:string ;
   props:eUWGSPVers05 "X"^^xsd:string ;
@@ -16290,11 +16289,12 @@ For example in the Polish market a Scheduling Coordinator is responsible for inf
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SchedulingCoordinator-1083
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  rdf:type ar:ConceptualService ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:description_0 "A party that is responsible for the schedule information and its exchange on behalf of a balance responsible party. For example in the Polish market a Scheduling Coordinator is responsible for information interchange for scheduling and settlement."^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "Scheduling Coordinator"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -17002,16 +17002,15 @@ It may also provide services including protocol conversion, device management, s
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:Solar-1131
-  rdf:type ar:LogicalEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:PhysicalActor ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:clusterLabel "1.0"^^xsd:string ;
   props:conceptualModel "X"^^xsd:string ;
   props:description_0 "Photovoltiac arrays generate power directly. Their ouput is typically used in three ways: 1) direct attached to the grid, 2) By charging batteries or 3) running pumps for a storage facility allowing the storaged energy to be used on scheduled intervals. These arays are found in substations, building roof tops(commercial, school, factory) and solar farms."^^xsd:string ;
   props:entityName "Solar"^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone "Process"^^xsd:string ;
   props:nISTLegacyDomain "Generation"^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates "CM: Formerly under only solar"^^xsd:string ;
@@ -17067,9 +17066,7 @@ entity:StakeholderPlanningAndReporting-SPM--1134
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:StandardizationBody-1135
-  rdf:type ar:Actor ;
   rdf:type ar:ConceptualService ;
-  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "Service"^^xsd:string ;
   props:description_0 "Responsible for standardization of all relevant elements and components within the electricity supply chain, which leads to harmonizaing relevant services, support towards removing barriers to trade, creating new market opportunities and reducing manufacturing costs."^^xsd:string ;
@@ -17618,12 +17615,13 @@ entity:SystemOperator-1168
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SystemOperator-1169
-  rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  rdf:type ar:ConceptualServiceComposition ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 """A party that is responsible for a stable power system operation (including the organisation of physical balance) through a transmission grid in a geographical area. The SO will also determine and be responsible for cross border capacity and exchanges. If necessary he may reduce allocated capacity to ensure operational stability. Transmission as mentioned above means \"the transport of electricity on the extra high or high voltage network with a view to its delivery to final customers or to distributors. Operation of transmission includes as well the tasks of system operation concerning its management of energy flows, reliability of the system and availability of all necessary system services.\" (definition taken from the UCTE Operation handbook Glossary). 
 Note: additional obligations may be imposed through local market rules."""^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
   props:entityName "System Operator"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
@@ -17825,11 +17823,10 @@ entity:TestSchedulingService-1185
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ThermalStorage-1186
-  rdf:type ar:LogicalEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "1.0"^^xsd:string ;
   props:conceptualModel "X"^^xsd:string ;
   props:description_0 "System which stores energy for later use  by maintaining material either hotter or colder than ambient temperature.  Examples include making ice at night for use during the day and storing heat for later use generating electricity."^^xsd:string ;
@@ -17947,10 +17944,9 @@ entity:TopologySupport-1193
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:TradeResponsibleParty-1194
-  rdf:type ar:ConceptualEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 "A party who can be brought to rights, legally and financially, for any imbalance between energy bought and consumed for all associated metering points.  Note: A power exchange without any privileged responsibilities acts as a Trade Responsible Party."^^xsd:string ;
   props:eUWGSPVers05 "X"^^xsd:string ;
   props:entityName "Trade Responsible Party"^^xsd:string ;
@@ -18113,10 +18109,9 @@ entity:TransmissionBusLoadModel-TBLM--1204
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:TransmissionCapacityAllocator-1205
-  rdf:type ar:ConceptualEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 """Manages the allocation of transmission capacity for an allocated capacity area. For explicit auctions:
 The Transmission Capacity Allocator manages, on behalf of the System Operators, the allocation of available transmission capacity for an Allocated capacity area. He offers the available transmission capacity to the market, allocates the available transmission capacity to individual Capacity Traders and calculates the billing amount of already allocated capacities to the Capacity Traders.
 """^^xsd:string ;
@@ -19079,11 +19074,10 @@ entity:WideAreaSituationalAwareness-1266
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:WindGeneration-1268
-  rdf:type ar:LogicalEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:clusterLabel "1.0"^^xsd:string ;
   props:conceptualModel "X"^^xsd:string ;
   props:description_0 "Windmill facility (typically a wind farm) which generates power via direct attached generators or by pumping/compressing a storage facility for power generation on scheduled intervals. Facitlites are connected to the Trnsmission Grid. Power produced by these facilities is sold on the wholesale market. Typically not used for base-load due to wind variablity."^^xsd:string ;
