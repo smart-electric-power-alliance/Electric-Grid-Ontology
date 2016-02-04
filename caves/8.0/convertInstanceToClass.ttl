@@ -39,7 +39,13 @@ ar:Entity
             sp:subject spin:_this ;
           ]
         ) ;
-      sp:where () ;
+      sp:where (
+          [
+            sp:object "false"^^xsd:boolean ;
+            sp:predicate owl:deprecated ;
+            sp:subject spin:_this ;
+          ]
+        ) ;
       rdfs:comment "001 Declare the instances as classes"^^xsd:string ;
     ] ;
   rdfs:subClassOf owl:Thing ;
