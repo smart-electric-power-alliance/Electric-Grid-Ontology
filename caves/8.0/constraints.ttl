@@ -1821,6 +1821,81 @@ owl:Thing
   spin:query [
       rdf:type sp:Select ;
       sp:distinct "true"^^xsd:boolean ;
+      sp:resultVariables (
+          [
+            sp:varName "subject"^^xsd:string ;
+          ]
+          [
+            sp:varName "type"^^xsd:string ;
+          ]
+          [
+            sp:varName "val"^^xsd:string ;
+          ]
+        ) ;
+      sp:where (
+          [
+            rdf:type sp:TriplePath ;
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#Entity> ;
+            sp:path [
+                rdf:type sp:SeqPath ;
+                sp:path1 rdf:type ;
+                sp:path2 [
+                    rdf:type sp:ModPath ;
+                    sp:modMax -2 ;
+                    sp:modMin 1 ;
+                    sp:subPath rdfs:subClassOf ;
+                  ] ;
+              ] ;
+            sp:subject [
+                sp:varName "subject"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "type"^^xsd:string ;
+              ] ;
+            sp:predicate rdf:type ;
+            sp:subject [
+                sp:varName "subject"^^xsd:string ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "val"^^xsd:string ;
+              ] ;
+            sp:predicate <http://sv.cmu.edu/AWP/8.0/props#rowActionFlagDeletedHarmonizeh> ;
+            sp:subject [
+                sp:varName "subject"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type fn:lower-case ;
+                sp:arg1 [
+                    sp:varName "val"^^xsd:string ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "lval"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Filter ;
+            sp:expression [
+                rdf:type fn:contains ;
+                sp:arg1 [
+                    sp:varName "lval"^^xsd:string ;
+                  ] ;
+                sp:arg2 "h" ;
+              ] ;
+          ]
+        ) ;
+      rdfs:comment "006 Find all instances marked for harmonization"^^xsd:string ;
+    ] ;
+  spin:query [
+      rdf:type sp:Select ;
+      sp:distinct "true"^^xsd:boolean ;
       sp:where (
           [
             rdf:type sp:TriplePath ;
