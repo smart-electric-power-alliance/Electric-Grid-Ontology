@@ -2666,19 +2666,23 @@ entity:ConsumptionResponsibleParty-172
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "172"^^xsd:int ;
   rdfs:label "Consumption Responsible Party"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:ConsumptionResponsibleParty-173
   rdf:type ar:ConceptualServiceComposition ;
+  props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:description_0 """A party who can be brought to rights, legally and financially, for any imbalance between energy bought and consumed for all associated metering points. 
 Additional information:This is a type of Balance Responsible Party"""^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
+  props:eUWGSPVers05 "X"^^xsd:string ;
   props:entityName "Consumption Responsible Party"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
+  props:nISTLegacyDomain "Market"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
-  props:uSEUInput "EU"^^xsd:string ;
+  props:relatedRole "consumption responsible party"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
+  props:uSEUInput "EU; US"^^xsd:string ;
   tables:rowIndex "173"^^xsd:int ;
   rdfs:label "Consumption Responsible Party"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
@@ -4136,13 +4140,15 @@ entity:DSOSystem-374
 .
 entity:DataAggregator-234
   rdf:type props:Combined-Elements-noduprows ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
+  props:dKERepository "X"^^xsd:string ;
   props:description_0 """Devices, which are intermediate machines in a communication network, can aggregate the same timing data 
 from field sensing devices."""^^xsd:string ;
   props:entityName "Data Aggregator"^^xsd:string ;
   props:gUC "X"^^xsd:string ;
-  props:note "GUC"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:note "GUC; Bulk Generation"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "234"^^xsd:int ;
   rdfs:label "Data Aggregator"^^xsd:string ;
@@ -4159,7 +4165,7 @@ entity:DataAggregator-235
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "235"^^xsd:int ;
   rdfs:label "Data Aggregator"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:DataDissementation-236
   rdf:type ar:ConceptualService ;
@@ -8386,7 +8392,7 @@ which may not be Actors"""^^xsd:string ;
   rdfs:label """Functions, objects or data 
 classified as Actors in references
 which may not be Actors"""^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:GISOperator-564
   rdf:type ar:LogicalActor ;
