@@ -2779,8 +2779,8 @@ entity:ContractManagementService-180
   props:description_0 "Provide a support platform to manage the execution of market participant contracts"^^xsd:string ;
   props:entityName "Contract Management service"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
-  props:nISTLegacyDomain "Market"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:nISTLegacyDomain "Market; Bulk Generation"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
@@ -2801,7 +2801,7 @@ entity:ContractManagementService-181
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "181"^^xsd:int ;
   rdfs:label "Contract Management service"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:ControlAreaServices-182
   rdf:type ar:ConceptualServiceComposition ;
@@ -2824,21 +2824,26 @@ entity:ControlAreaServices-182
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "182"^^xsd:int ;
   rdfs:label "Control Area Services"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:ControlAreaServices-183
   rdf:type ar:ConceptualServiceComposition ;
+  props:aDWPOriginalFocus "X"^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
+  props:actorTypeOrRole "role"^^xsd:string ;
   props:description_0 """ServiceComposition responsible for : 
 1. The coordination of exchange programs between its related market balance areas and for the exchanges between its associated control areas. 
 2. The load frequency control for its own area. 
 3. The coordination of the correction of time deviations."""^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
+  props:eUWGSPVers05 "X"^^xsd:string ;
   props:entityName "Control Area Services"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
+  props:nISTLegacyDomain "Operations"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
-  props:uSEUInput "EU"^^xsd:string ;
+  props:relatedRole "control area operator"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
+  props:uSEUInput "EU; US"^^xsd:string ;
   tables:rowIndex "183"^^xsd:int ;
   rdfs:label "Control Area Services"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
@@ -2866,8 +2871,8 @@ entity:ControlCenter-185
   props:description_0 ""^^xsd:string ;
   props:entityName "Control Center"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
-  props:note "Distribution Grid Management/Microgrid"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:note "Distribution Grid Management/Microgrid; Electric-transportation (ET)"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "185"^^xsd:int ;
   rdfs:label "Control Center"^^xsd:string ;
@@ -2885,7 +2890,7 @@ entity:ControlCenter-186
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "186"^^xsd:int ;
   rdfs:label "Control Center"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:ControlDevices-187
   rdf:type ar:ConceptualService ;
@@ -3172,7 +3177,7 @@ entity:CurrentFlowImbalanceCalculator-205
   props:entityName "Current flow imbalance calculator"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:nISTLegacyDomain "Transmission"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
@@ -3193,7 +3198,7 @@ entity:CurrentFlowImbalanceCalculator-206
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "206"^^xsd:int ;
   rdfs:label "Current flow imbalance calculator"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:CurrentFlowImbalanceCalculator-207
   rdf:type ar:ConceptualService ;
@@ -3208,7 +3213,7 @@ entity:CurrentFlowImbalanceCalculator-207
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "207"^^xsd:int ;
   rdfs:label "Current flow imbalance calculator"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:Customer-208
   rdf:type ar:ConceptualServiceComposition ;
@@ -3329,7 +3334,7 @@ entity:CustomerEnergyServices-216
   props:gUC "X"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "GUC"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "216"^^xsd:int ;
   rdfs:label "Customer Energy Services"^^xsd:string ;
@@ -4139,7 +4144,7 @@ entity:DSOSystem-374
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:DataAggregator-234
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:PhysicalActor ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:dKERepository "X"^^xsd:string ;
   props:description_0 """Devices, which are intermediate machines in a communication network, can aggregate the same timing data 
