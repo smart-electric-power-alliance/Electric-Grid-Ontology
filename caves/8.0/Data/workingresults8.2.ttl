@@ -3467,16 +3467,18 @@ entity:CustomerPortal-225
   props:actorServiceCompositionService "Service"^^xsd:string ;
   props:actorTypeOrRole "system actor"^^xsd:string ;
   props:cSWGNISTIR7628 "X"^^xsd:string ;
-  props:description_0 "Internet website so Customers can access their energy and cost information online, enrollment in prepayment electric services and enablement of third party monitoring and control of customer equipment."^^xsd:string ;
+  props:description_0 "Internet website so Customers can access their energy and cost information online, enrollment in prepayment electric services and enablement of third party monitoring and control of customer equipment.; Web-server application which allows utility customers to register and login to retrieve information about their tariffs, consumption and other information"^^xsd:string ;
   props:entityName "Customer Portal"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
+  props:iECSG3 "X"^^xsd:string ;
   props:nAESB ""^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
+  props:note "SG3"^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates "RM: Web Site"^^xsd:string ;
   props:relatedRole "billing agent"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:type "Application"^^xsd:string ;
-  props:uSEUInput "US"^^xsd:string ;
+  props:uSEUInput "US; EU"^^xsd:string ;
   tables:rowIndex "225"^^xsd:int ;
   rdfs:label "Customer Portal"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
@@ -3493,7 +3495,7 @@ entity:CustomerPortal-226
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "226"^^xsd:int ;
   rdfs:label "Customer Portal"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:CustomerPowerQualityInformationManagement--227
   rdf:type ar:ConceptualService ;
@@ -4123,7 +4125,7 @@ entity:DSOSystem-373
   props:entityName "DSO System"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "Distribution Grid Management/Microgrid"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "373"^^xsd:int ;
   rdfs:label "DSO System"^^xsd:string ;
@@ -4245,7 +4247,7 @@ entity:Demand-ResponseLoadSheddingExecution-253
   props:entityName "Demand/Response Load Shedding execution"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:nISTLegacyDomain "Transmission"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
@@ -4266,7 +4268,7 @@ entity:Demand-ResponseLoadSheddingExecution-254
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "254"^^xsd:int ;
   rdfs:label "Demand/Response Load Shedding execution"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:Demand-ResponseStatus-255
   rdf:type ar:ConceptualService ;
@@ -4281,7 +4283,7 @@ entity:Demand-ResponseStatus-255
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "255"^^xsd:int ;
   rdfs:label "Demand/Response Status"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:Demand-ResponseStatus-256
   rdf:type ar:ConceptualService ;
@@ -4290,7 +4292,7 @@ entity:Demand-ResponseStatus-256
   props:entityName "Demand/Response Status"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:nISTLegacyDomain "Transmission"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
@@ -4432,7 +4434,7 @@ entity:DemandResponseProvider-250
   props:hierarchyConceptualLogicalPhysical "Conceptual - if B2B relationships are at the Conceptual level, this has to be Conceptual"^^xsd:string ;
   props:nISTLegacyDomain "Service Provider"^^xsd:string ;
   props:relatedRole "D/R market operator"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:type "Organization"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "250"^^xsd:int ;
@@ -4452,7 +4454,7 @@ entity:DemandResponseServiceProvider-251
   props:nAESB ""^^xsd:string ;
   props:nISTLegacyDomain "Service Provider"^^xsd:string ;
   props:relatedRole "D/R market operator"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:type "Organization"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "251"^^xsd:int ;
@@ -4494,7 +4496,7 @@ entity:Deployment-258
   props:entityName "Deployment"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:nISTLegacyDomain "Customer"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
@@ -4509,7 +4511,7 @@ entity:DeploymentManagement-259
   props:entityName "Deployment Management"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:nISTLegacyDomain "Customer"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:type "Business Service"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
@@ -4740,7 +4742,7 @@ entity:DeviceManagement-298
   props:entityName "Device management"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:nISTLegacyDomain "Distribution"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
@@ -4755,7 +4757,7 @@ entity:DeviceManagementOfState-299
   props:entityName "Device Management of State"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:nISTLegacyDomain "Customer"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:type "Business Service"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
@@ -4912,7 +4914,7 @@ entity:Display-309
   props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:new "-"^^xsd:string ;
   props:note "Smart Home/Commercial/Industrial/DR-Customer EMS"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "309"^^xsd:int ;
   rdfs:label "Display"^^xsd:string ;
