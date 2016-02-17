@@ -6140,7 +6140,7 @@ entity:ElectricVehicle-389
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates " IE: Plug-in Electric Vehicle"^^xsd:string ;
   props:referenceDiagram "X"^^xsd:string ;
   props:relatedRole "consumer"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:type "Device"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "389"^^xsd:int ;
@@ -6283,7 +6283,7 @@ entity:ElectricalContractor-399
   props:nISTLegacyDomain "Service Provider"^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates "E: Installation Service Technician; E: Mertering operator"^^xsd:string ;
   props:relatedRole "?"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:type "Organization"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "399"^^xsd:int ;
@@ -8031,7 +8031,7 @@ entity:FieldSensingDevices-516
   props:entityName "Field Sensing Devices"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "0.0"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "516"^^xsd:int ;
   rdfs:label "Field Sensing Devices"^^xsd:string ;
@@ -8072,7 +8072,7 @@ entity:Financial-FIN--520
   props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "520"^^xsd:int ;
   rdfs:label "Financial (FIN)"^^xsd:string ;
@@ -8132,7 +8132,7 @@ entity:FinancialServices-519
   props:entityName "Financial Services"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:type "Organization"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "519"^^xsd:int ;
@@ -8411,7 +8411,7 @@ entity:GISOperator-564
   props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:type "Organizational Entity"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "564"^^xsd:int ;
@@ -9099,7 +9099,7 @@ entity:HomeAutomationServices-D--590
   props:entityName "Home Automation Services (D)"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:note "SMCG"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sMCG "X"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "590"^^xsd:int ;
@@ -9178,7 +9178,7 @@ entity:HydroFacility-595
   props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone "Process"^^xsd:string ;
   props:nISTLegacyDomain "Generation"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:type "Facility"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "595"^^xsd:int ;
@@ -10413,7 +10413,7 @@ entity:MaintenancePrioritizationNotification-676
   props:entityName "Maintenance Prioritization Notification"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:nISTLegacyDomain "Service Provider"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
@@ -12524,7 +12524,7 @@ entity:MultiMarketSupportService-828
   props:entityName "multi-market support service"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:nISTLegacyDomain "Market"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
@@ -12568,7 +12568,7 @@ entity:MultihomingNetworkManagement-827
   props:entityName "Multihoming network management"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:nISTLegacyDomain "Cross-cutting"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:type "Business Service"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
@@ -12806,7 +12806,7 @@ entity:NetworkOperationSimulation-842
   props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:type "Application"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "842"^^xsd:int ;
@@ -12836,7 +12836,7 @@ entity:NetworkOperations-844
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone "Operations"^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:type "Application"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "844"^^xsd:int ;
@@ -12878,7 +12878,7 @@ entity:NetworkOperationsAnalysis-847
   props:entityName "Network Operations Analysis"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:type "Application"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "847"^^xsd:int ;
@@ -12983,7 +12983,7 @@ entity:NetworkOperationsFaultAnalysis-854
   props:entityName "Network Operations Fault Analysis"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:type "Application"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "854"^^xsd:int ;
@@ -14105,7 +14105,7 @@ entity:PointOfCommonCoupling-931
   props:manufacturerCIMIECTypeOfZone "Process"^^xsd:string ;
   props:nISTLegacyDomain "Distribution"^^xsd:string ;
   props:note "definition from IEEE 1547"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:type "Facility"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
@@ -14210,7 +14210,7 @@ entity:PowerEquipment-938
   props:gUC "X"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:note "GUC"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "938"^^xsd:int ;
   rdfs:label "Power equipment"^^xsd:string ;
@@ -14516,7 +14516,7 @@ entity:PowerQualityMonitoring--960
   props:entityName "Power Quality Monitoring:"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:nISTLegacyDomain "Distribution"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:type "Business Service"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
@@ -14531,7 +14531,7 @@ entity:PowerQualityNotification-961
   props:entityName "Power Quality Notification"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:nISTLegacyDomain "Service Provider"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
@@ -15278,7 +15278,7 @@ entity:ReactivePowerManager-1013
   props:entityName "Reactive power manager"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:nISTLegacyDomain "Distribution"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
@@ -15367,7 +15367,7 @@ entity:RealTimeStateEstimator-RTSS--1019
   props:gUC "X"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "GUC"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "1019"^^xsd:int ;
   rdfs:label "Real-time State Estimator (RTSS)"^^xsd:string ;
@@ -15752,7 +15752,7 @@ entity:RenewableGenerationForecaster-1045
   props:gUC "X"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:note "CUG"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "1045"^^xsd:int ;
   rdfs:label "Renewable Generation Forecaster"^^xsd:string ;
@@ -17894,7 +17894,7 @@ entity:TimeSynchronizationManagement-1189
   props:entityName "Time Synchronization Management"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:nISTLegacyDomain "Cross-cutting"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:type "Business Service"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
