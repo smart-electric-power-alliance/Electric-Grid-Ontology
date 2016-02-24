@@ -2562,9 +2562,11 @@ entity:ConstructionSupervision-NECSP--165
 entity:Consumer-166
   rdf:type ar:ConceptualServiceComposition ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
+  props:dKERepository "X"^^xsd:string ;
   props:description_0 """End user of electricity, gas, water or heat. 
 NOTE: As the consumer can also generate energy using a Distributed Energy Resource, he is sometimes called the \"Prosumer\"."""^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
+  props:eUSourceunknown "X"^^xsd:string ;
   props:entityName "Consumer"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "ENTSO-E Role model updated by SMCG"^^xsd:string ;
@@ -2581,14 +2583,15 @@ entity:Consumer-167
   props:description_0 """A party that consumes electricity.
 Additional information:This is a type of Party Connected to the Grid"""^^xsd:string ;
   props:eNTSOERoleModel "X"^^xsd:string ;
+  props:eUSourceunknown "X"^^xsd:string ;
   props:entityName "Consumer"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:rowActionFlagDeletedHarmonizeh "H2"^^xsd:string ;
-  props:uSEUInput "EU"^^xsd:string ;
+  props:uSEUInput "EU; US"^^xsd:string ;
   tables:rowIndex "167"^^xsd:int ;
   rdfs:label "Consumer"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:Consumer-168
   rdf:type ar:ConceptualServiceComposition ;
@@ -2602,7 +2605,7 @@ entity:Consumer-168
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "168"^^xsd:int ;
   rdfs:label "Consumer"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:Consumer-169
   rdf:type ar:ConceptualServiceComposition ;
@@ -2616,7 +2619,7 @@ entity:Consumer-169
   props:uSEUInput "EU"^^xsd:string ;
   tables:rowIndex "169"^^xsd:int ;
   rdfs:label "Consumer"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:Consumer-170
   rdf:type ar:ConceptualServiceComposition ;
@@ -2632,7 +2635,7 @@ ServiceComposition"""^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "170"^^xsd:int ;
   rdfs:label "Consumer"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:Consumer-171
   rdf:type ar:ConceptualServiceComposition ;
@@ -2647,7 +2650,7 @@ entity:Consumer-171
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "171"^^xsd:int ;
   rdfs:label "Consumer"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:ConsumptionResponsibleParty-172
   rdf:type ar:ConceptualServiceComposition ;
@@ -2756,7 +2759,7 @@ entity:ContingencyRanking-178
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "178"^^xsd:int ;
   rdfs:label "Contingency Ranking"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:ContingencyRanking-179
   rdf:type ar:ConceptualService ;
@@ -2765,9 +2768,9 @@ entity:ContingencyRanking-179
   props:entityName "Contingency ranking"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:nISTLegacyDomain "Distribution"^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
-  props:type "Automation Service"^^xsd:string ;
+  props:type "Automation Service; Business Service"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "179"^^xsd:int ;
   rdfs:label "Contingency ranking"^^xsd:string ;
@@ -2937,7 +2940,7 @@ entity:ControlEnergySinks-189
 entity:ControlPowerFlow-190
   rdf:type ar:ConceptualService ;
   props:actorServiceCompositionService "Service"^^xsd:string ;
-  props:description_0 "dynamically configure electrical power system to manage power flow to end-customer"^^xsd:string ;
+  props:description_0 "dynamically configure electrical power system to manage power flow within the power system network"^^xsd:string ;
   props:entityName "control power flow"^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
@@ -2962,7 +2965,7 @@ entity:ControlPowerFlow-191
   props:uSEUInput "US"^^xsd:string ;
   tables:rowIndex "191"^^xsd:int ;
   rdfs:label "control power flow"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:ControllableLoad-192
   rdf:type ar:ConceptualService ;
