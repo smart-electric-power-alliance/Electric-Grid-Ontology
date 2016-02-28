@@ -4135,7 +4135,7 @@ entity:BillingServices-80
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Business Service"^^xsd:string ;
@@ -5683,7 +5683,7 @@ entity:ChargeSpotAreaOwner-107
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type ""^^xsd:string ;
@@ -7408,7 +7408,6 @@ entity:CommunicationManagement-137
 entity:CommunicationNetworks-138
   rdf:type ar:PhysicalEntity ;
   rdf:type ar:ServiceComposition ;
-  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -7576,7 +7575,7 @@ entity:CommunicationPerformanceManagement-141
   props:wASA ""^^xsd:string ;
   tables:rowIndex "141"^^xsd:int ;
   rdfs:label "Communication Performance Management"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:CommunicationService-142
   rdf:type ar:ConceptualService ;
@@ -8939,7 +8938,7 @@ service"""^^xsd:string ;
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole "grid operator"^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Application"^^xsd:string ;
@@ -8947,21 +8946,22 @@ service"""^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "164"^^xsd:int ;
   rdfs:label "Construction Supervision"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
-entity:ConstructionSupervision-NECSP--165
+entity:ConstructionSupervision-165
   rdf:type ar:LogicalService ;
-  props:aDWPOriginalFocus ""^^xsd:string ;
+  props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Service"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
-  props:businessFunctionService ""^^xsd:string ;
+  props:businessFunctionService """function/
+service"""^^xsd:string ;
   props:cSWGActors ""^^xsd:string ;
   props:cSWGNISTIR7628 ""^^xsd:string ;
   props:clusterLabel ""^^xsd:string ;
-  props:colC ""^^xsd:string ;
+  props:colC "CSP"^^xsd:string ;
   props:colD ""^^xsd:string ;
   props:conceptualModel ""^^xsd:string ;
   props:dKERepository ""^^xsd:string ;
@@ -8988,19 +8988,19 @@ entity:ConstructionSupervision-NECSP--165
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
-  props:nISTLegacyDomain ""^^xsd:string ;
+  props:nISTLegacyDomain "Operations"^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
   props:notes ""^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates ""^^xsd:string ;
   props:referenceDiagram ""^^xsd:string ;
-  props:relatedRole ""^^xsd:string ;
+  props:relatedRole "grid operator"^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
-  props:type ""^^xsd:string ;
-  props:uSEUInput "EU"^^xsd:string ;
+  props:type "Application"^^xsd:string ;
+  props:uSEUInput "EU; US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "165"^^xsd:int ;
   rdfs:label "Construction supervision (NE-CSP)"^^xsd:string ;
@@ -19453,26 +19453,26 @@ entity:DistributionManagementSystem-336
   props:wASA ""^^xsd:string ;
   tables:rowIndex "336"^^xsd:int ;
   rdfs:label "Distribution Management System"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:DistributionManagementSystem-337
   rdf:type ar:LogicalService ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems "X"^^xsd:string ;
-  props:actorServiceCompositionService "Service"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "system actor"^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
   props:businessFunctionService ""^^xsd:string ;
   props:cSWGActors ""^^xsd:string ;
   props:cSWGNISTIR7628 "X"^^xsd:string ;
-  props:clusterLabel ""^^xsd:string ;
+  props:clusterLabel "p"^^xsd:string ;
   props:colC "DMS"^^xsd:string ;
   props:colD "DMS"^^xsd:string ;
   props:conceptualModel ""^^xsd:string ;
   props:dKERepository ""^^xsd:string ;
   props:demandResponse ""^^xsd:string ;
-  props:description_0 "A suite of application software that monitors and controls the distribution system equipment based on computer-aided applications, market information, and operator control decisions."^^xsd:string ;
+  props:description_0 "A suite of application software that monitors and controls the distribution system equipment based on computer-aided applications, market information, and operator control decisions typically the control center. A DMS typically has interfaces to other systems, like an GIS or an OMS."^^xsd:string ;
   props:distributionGridMgmt "X"^^xsd:string ;
   props:eG3 ""^^xsd:string ;
   props:eIS ""^^xsd:string ;
@@ -19496,17 +19496,17 @@ entity:DistributionManagementSystem-337
   props:nAESB ""^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
   props:new ""^^xsd:string ;
-  props:note ""^^xsd:string ;
+  props:note "SG3"^^xsd:string ;
   props:notes ""^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates "RM: DMS; NR: Distributed Management System Application"^^xsd:string ;
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole "grid operator"^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Application"^^xsd:string ;
-  props:uSEUInput "US"^^xsd:string ;
+  props:uSEUInput "US; EU"^^xsd:string ;
   props:wASA "X"^^xsd:string ;
   tables:rowIndex "337"^^xsd:int ;
   rdfs:label "Distribution Management System"^^xsd:string ;
@@ -20606,7 +20606,6 @@ entity:DistributionSystemPowerFlow-DSPF--360
 .
 entity:DistributionSystemServices-356
   rdf:type ar:ConceptualEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
