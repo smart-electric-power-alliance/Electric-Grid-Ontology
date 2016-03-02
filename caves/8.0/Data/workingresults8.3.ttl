@@ -26893,7 +26893,7 @@ entity:EquipmentMonitor-473
   props:wASA ""^^xsd:string ;
   tables:rowIndex "473"^^xsd:int ;
   rdfs:label "Equipment monitor"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:EquipmentStatusCollector-474
   rdf:type ar:ConceptualService ;
@@ -27083,7 +27083,7 @@ entity:EventAnalyzer-479
   props:conceptualModel ""^^xsd:string ;
   props:dKERepository ""^^xsd:string ;
   props:demandResponse ""^^xsd:string ;
-  props:description_0 "Provides a root cause analysis of events within the distribution grid within the appropriate timeframe"^^xsd:string ;
+  props:description_0 "Provides a near real-time root cause analysis of events within the distribution grid within the appropriate timeframe"^^xsd:string ;
   props:distributionGridMgmt ""^^xsd:string ;
   props:eG3 ""^^xsd:string ;
   props:eIS ""^^xsd:string ;
@@ -27113,7 +27113,7 @@ entity:EventAnalyzer-479
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
@@ -27121,7 +27121,7 @@ entity:EventAnalyzer-479
   props:wASA ""^^xsd:string ;
   tables:rowIndex "479"^^xsd:int ;
   rdfs:label "Event analyzer"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:EventAnalyzer-480
   rdf:type ar:ConceptualService ;
@@ -27178,7 +27178,7 @@ entity:EventAnalyzer-480
   props:wASA ""^^xsd:string ;
   tables:rowIndex "480"^^xsd:int ;
   rdfs:label "Event analyzer"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:EventDetector-481
   rdf:type ar:ConceptualService ;
@@ -27197,7 +27197,7 @@ entity:EventDetector-481
   props:conceptualModel ""^^xsd:string ;
   props:dKERepository ""^^xsd:string ;
   props:demandResponse ""^^xsd:string ;
-  props:description_0 "Provides a view of the distribution grid operational state within the appropriate timeframe."^^xsd:string ;
+  props:description_0 "Provides a view of the distribution grid operational state within acceptable operational timeframes (near real-time)."^^xsd:string ;
   props:distributionGridMgmt ""^^xsd:string ;
   props:eG3 ""^^xsd:string ;
   props:eIS ""^^xsd:string ;
@@ -27227,7 +27227,7 @@ entity:EventDetector-481
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
@@ -27292,7 +27292,7 @@ entity:EventDetector-482
   props:wASA ""^^xsd:string ;
   tables:rowIndex "482"^^xsd:int ;
   rdfs:label "Event detector"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:EventDetector-483
   rdf:type ar:ConceptualService ;
@@ -27349,7 +27349,7 @@ entity:EventDetector-483
   props:wASA ""^^xsd:string ;
   tables:rowIndex "483"^^xsd:int ;
   rdfs:label "Event detector"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:EventForecastingService-484
   rdf:type ar:ConceptualService ;
@@ -27520,7 +27520,7 @@ entity:EventResolution-486
   props:wASA ""^^xsd:string ;
   tables:rowIndex "486"^^xsd:int ;
   rdfs:label "Event resolution"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:EventResolution-487
   rdf:type ar:ConceptualService ;
@@ -27569,7 +27569,7 @@ entity:EventResolution-487
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
@@ -27634,7 +27634,7 @@ entity:EventResolution-488
   props:wASA ""^^xsd:string ;
   tables:rowIndex "488"^^xsd:int ;
   rdfs:label "Event resolution"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:ExchangeNetworkModels-489
   rdf:type ar:ConceptualService ;
