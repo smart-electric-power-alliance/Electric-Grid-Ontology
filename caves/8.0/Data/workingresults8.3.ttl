@@ -25115,10 +25115,10 @@ entity:EnergyMonitoring-441
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
-  props:type "Business Service"^^xsd:string ;
+  props:type "Business Service; Automation Service"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "441"^^xsd:int ;
@@ -25180,7 +25180,7 @@ entity:EnergyMonitoring-442
   props:wASA ""^^xsd:string ;
   tables:rowIndex "442"^^xsd:int ;
   rdfs:label "Energy Monitoring"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:EnergyOutageDetection-443
   rdf:type ar:ConceptualService ;
@@ -25427,7 +25427,7 @@ entity:EnergyServiceProvider-447
   props:conceptualModel "X"^^xsd:string ;
   props:dKERepository ""^^xsd:string ;
   props:demandResponse ""^^xsd:string ;
-  props:description_0 "Provides retail electricity, natural gas, and clean energy options, along with energy efficiency products and services."^^xsd:string ;
+  props:description_0 "Organisation providing retail electricity, natural gas, and clean energy options, along with energy efficiency products and services."^^xsd:string ;
   props:distributionGridMgmt ""^^xsd:string ;
   props:eG3 ""^^xsd:string ;
   props:eIS ""^^xsd:string ;
@@ -25438,7 +25438,7 @@ entity:EnergyServiceProvider-447
   props:eUWGSPVers05 ""^^xsd:string ;
   props:electricStorage ""^^xsd:string ;
   props:electricTransportaion "X"^^xsd:string ;
-  props:entityName "Energy Service Provider"^^xsd:string ;
+  props:entityName "Energy Service Provider (ESP)"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
@@ -25451,17 +25451,17 @@ entity:EnergyServiceProvider-447
   props:nAESB ""^^xsd:string ;
   props:nISTLegacyDomain "Service Provider"^^xsd:string ;
   props:new ""^^xsd:string ;
-  props:note ""^^xsd:string ;
+  props:note "SMCG"^^xsd:string ;
   props:notes ""^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates "E: Energy Service Company (ESCO)"^^xsd:string ;
   props:referenceDiagram "X"^^xsd:string ;
   props:relatedRole "?"^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Organization"^^xsd:string ;
-  props:uSEUInput "US"^^xsd:string ;
+  props:uSEUInput "US; EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "447"^^xsd:int ;
   rdfs:label "Energy Service Provider"^^xsd:string ;
@@ -25522,7 +25522,7 @@ entity:EnergyServiceProviderESP-448
   props:wASA ""^^xsd:string ;
   tables:rowIndex "448"^^xsd:int ;
   rdfs:label "Energy Service Provider, ESP"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:EnergyServicesGateway-449
   rdf:type ar:LogicalActor ;
@@ -25630,7 +25630,7 @@ service"""^^xsd:string ;
   props:referenceDiagram "X"^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Application"^^xsd:string ;
@@ -26364,7 +26364,7 @@ entity:EnvironmentalMonitoring-463
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
-  props:nISTLegacyDomain "Customer"^^xsd:string ;
+  props:nISTLegacyDomain "Customer; Cross-cutting"^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note ""^^xsd:string ;
   props:notes ""^^xsd:string ;
@@ -26372,10 +26372,10 @@ entity:EnvironmentalMonitoring-463
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
-  props:type "Business Service"^^xsd:string ;
+  props:type "Business Service; Automation Service"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "463"^^xsd:int ;
@@ -26437,7 +26437,7 @@ entity:EnvironmentalMonitroing-464
   props:wASA ""^^xsd:string ;
   tables:rowIndex "464"^^xsd:int ;
   rdfs:label "Environmental Monitroing"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:EnvironmentalMonitroing-465
   rdf:type ar:ConceptualService ;
@@ -26494,7 +26494,7 @@ entity:EnvironmentalMonitroing-465
   props:wASA ""^^xsd:string ;
   tables:rowIndex "465"^^xsd:int ;
   rdfs:label "Environmental Monitroing"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:EquipmentCapacitySimulator-467
   rdf:type ar:ConceptualService ;
