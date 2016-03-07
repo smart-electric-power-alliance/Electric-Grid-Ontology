@@ -9159,8 +9159,9 @@ service"""^^xsd:string ;
   props:uSEUInput "EU; US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "165"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
-  rdfs:label "Construction supervision (NE-CSP)"^^xsd:string ;
+  rdfs:comment """merge 164 into 165, remove acronym in name leave in label 
+"""^^xsd:string ;
+  rdfs:label "Construction supervision (NE-CSP"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:Consumer-166
@@ -9277,7 +9278,9 @@ Additional information:This is a type of Party Connected to the Grid"""^^xsd:str
   props:uSEUInput "EU; US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "167"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment """Both Consumer & Customer are subclasses of business transaction participant, 
+1 financial relationship one physical
+A Customer acts as a Consumer in a Contract """^^xsd:string ;
   rdfs:label "Consumer"^^xsd:string ;
   owl:deprecated "true"^^xsd:boolean ;
 .
@@ -10616,7 +10619,7 @@ entity:ControlPowerFlow-190
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Business Service"^^xsd:string ;
@@ -10827,7 +10830,7 @@ entity:CoordinationCenterServices-194
   props:distributionGridMgmt ""^^xsd:string ;
   props:eG3 ""^^xsd:string ;
   props:eIS ""^^xsd:string ;
-  props:eNTSOERoleModel ""^^xsd:string ;
+  props:eNTSOERoleModel "X"^^xsd:string ;
   props:eUCommission ""^^xsd:string ;
   props:eUSCCGWP1 ""^^xsd:string ;
   props:eUSourceunknown ""^^xsd:string ;
@@ -10847,17 +10850,17 @@ entity:CoordinationCenterServices-194
   props:nAESB ""^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
   props:new ""^^xsd:string ;
-  props:note ""^^xsd:string ;
+  props:note "ENTSO-E Role model"^^xsd:string ;
   props:notes ""^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates ""^^xsd:string ;
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole "control area  operator"^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Role"^^xsd:string ;
-  props:uSEUInput "US"^^xsd:string ;
+  props:uSEUInput "US; EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "194"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
@@ -10865,7 +10868,6 @@ entity:CoordinationCenterServices-194
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:CoordinationCenterServices-195
-  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -10899,7 +10901,6 @@ entity:CoordinationCenterServices-195
   props:entityName "Coordination Center Services"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -10924,7 +10925,7 @@ entity:CoordinationCenterServices-195
   tables:rowIndex "195"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Coordination Center Services"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:CoordinationSupport-196
   rdf:type ar:ConceptualService ;
@@ -11278,7 +11279,7 @@ entity:CriticalLoad-202
   rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -11321,7 +11322,6 @@ entity:CriticalLoad-202
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type ""^^xsd:string ;
@@ -11336,7 +11336,7 @@ entity:CriticalLoads-203
   rdf:type ar:ConceptualService ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Service"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "system actor"^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -11379,7 +11379,6 @@ entity:CriticalLoads-203
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole "consumer"^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Device ?"^^xsd:string ;
@@ -11388,7 +11387,7 @@ entity:CriticalLoads-203
   tables:rowIndex "203"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Critical Loads"^^xsd:string ;
-  owl:deprecated "true"^^xsd:boolean ;
+  owl:deprecated "false"^^xsd:boolean ;
 .
 entity:CrossMarketTrade-204
   rdf:type ar:ConceptualService ;
@@ -11487,7 +11486,7 @@ entity:CurrentFlowImbalanceCalculator-205
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
-  props:nISTLegacyDomain "Transmission"^^xsd:string ;
+  props:nISTLegacyDomain "Transmission; Distribution"^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note ""^^xsd:string ;
   props:notes ""^^xsd:string ;
@@ -11637,7 +11636,7 @@ entity:Customer-208
   props:colC ""^^xsd:string ;
   props:colD ""^^xsd:string ;
   props:conceptualModel "X"^^xsd:string ;
-  props:dKERepository ""^^xsd:string ;
+  props:dKERepository "X"^^xsd:string ;
   props:demandResponse ""^^xsd:string ;
   props:description_0 ""^^xsd:string ;
   props:distributionGridMgmt ""^^xsd:string ;
@@ -11646,7 +11645,7 @@ entity:Customer-208
   props:eNTSOERoleModel ""^^xsd:string ;
   props:eUCommission ""^^xsd:string ;
   props:eUSCCGWP1 ""^^xsd:string ;
-  props:eUSourceunknown ""^^xsd:string ;
+  props:eUSourceunknown "X"^^xsd:string ;
   props:eUWGSPVers05 ""^^xsd:string ;
   props:electricStorage ""^^xsd:string ;
   props:electricTransportaion ""^^xsd:string ;
@@ -11669,14 +11668,14 @@ entity:Customer-208
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole "customer"^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Organization"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "208"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "Merge 208 & 209, find a description "^^xsd:string ;
   rdfs:label "Customer"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -11736,7 +11735,7 @@ entity:Customer-209
   tables:rowIndex "209"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Customer"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:CustomerDataStorage-210
   rdf:type ar:ConceptualService ;
@@ -11869,7 +11868,7 @@ entity:CustomerEnergyManagementSystem-212
   props:colC ""^^xsd:string ;
   props:colD ""^^xsd:string ;
   props:conceptualModel ""^^xsd:string ;
-  props:dKERepository ""^^xsd:string ;
+  props:dKERepository "X"^^xsd:string ;
   props:demandResponse ""^^xsd:string ;
   props:description_0 "Energy management system for energy customers to optimize the utilization of energy according to supply contracts or other economical targets. Is responsible for gathering flexibilities within the customer premises and providing them to an aggregator, and therefore does not directly participate in flexibility markets"^^xsd:string ;
   props:distributionGridMgmt ""^^xsd:string ;
@@ -11909,7 +11908,7 @@ entity:CustomerEnergyManagementSystem-212
   props:wASA ""^^xsd:string ;
   tables:rowIndex "212"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
-  rdfs:label "Customer Energy Management System"^^xsd:string ;
+  rdfs:label "Customer Energy Management System ( CEMS)"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:CustomerEnergyManagementSystem-CEMS--213
@@ -11968,7 +11967,7 @@ entity:CustomerEnergyManagementSystem-CEMS--213
   tables:rowIndex "213"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "customer Energy Management System ( CEMS)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:CustomerEnergyManagementSystem-CEMS--214
   rdf:type ar:LogicalServiceComposition ;
@@ -12026,7 +12025,7 @@ entity:CustomerEnergyManagementSystem-CEMS--214
   tables:rowIndex "214"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Customer Energy Management System (CEMS)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:CustomerEnergyServices-216
   rdf:type ar:LogicalServiceComposition ;
