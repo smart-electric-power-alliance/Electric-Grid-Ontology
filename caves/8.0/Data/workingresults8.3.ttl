@@ -32910,7 +32910,7 @@ entity:GridAccessProvider-571
   props:distributionGridMgmt ""^^xsd:string ;
   props:eG3 ""^^xsd:string ;
   props:eIS ""^^xsd:string ;
-  props:eNTSOERoleModel ""^^xsd:string ;
+  props:eNTSOERoleModel "X"^^xsd:string ;
   props:eUCommission ""^^xsd:string ;
   props:eUSCCGWP1 ""^^xsd:string ;
   props:eUSourceunknown ""^^xsd:string ;
@@ -32930,13 +32930,13 @@ entity:GridAccessProvider-571
   props:nAESB ""^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
   props:new ""^^xsd:string ;
-  props:note ""^^xsd:string ;
+  props:note "ENTSO-E Role model"^^xsd:string ;
   props:notes ""^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates ""^^xsd:string ;
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Organizational Entity"^^xsd:string ;
@@ -33003,7 +33003,7 @@ entity:GridAccessProvider-572
   tables:rowIndex "572"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Grid Access Provider"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:GridCommunicationsNetworkProviders-573
   rdf:type ar:ConceptualService ;
@@ -33061,7 +33061,7 @@ entity:GridCommunicationsNetworkProviders-573
   tables:rowIndex "573"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Grid Communications Network Providers"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:GridCommunicationsNetworkProviders-574
   rdf:type ar:ConceptualServiceComposition ;
@@ -33085,7 +33085,7 @@ entity:GridCommunicationsNetworkProviders-574
   props:eG3 "X"^^xsd:string ;
   props:eIS ""^^xsd:string ;
   props:eNTSOERoleModel ""^^xsd:string ;
-  props:eUCommission ""^^xsd:string ;
+  props:eUCommission "X"^^xsd:string ;
   props:eUSCCGWP1 ""^^xsd:string ;
   props:eUSourceunknown ""^^xsd:string ;
   props:eUWGSPVers05 ""^^xsd:string ;
@@ -33102,7 +33102,7 @@ entity:GridCommunicationsNetworkProviders-574
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
-  props:nISTLegacyDomain ""^^xsd:string ;
+  props:nISTLegacyDomain "Operations"^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note "EG3"^^xsd:string ;
   props:notes ""^^xsd:string ;
@@ -33110,11 +33110,11 @@ entity:GridCommunicationsNetworkProviders-574
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
-  props:type ""^^xsd:string ;
-  props:uSEUInput "EU"^^xsd:string ;
+  props:type "Organization"^^xsd:string ;
+  props:uSEUInput "EU; US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "574"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
@@ -34176,7 +34176,6 @@ entity:HomeManagement-592
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:HumanResources-593
-  rdf:type ar:ConceptualServiceComposition ;
   rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
@@ -34223,7 +34222,7 @@ entity:HumanResources-593
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Organizational Entity"^^xsd:string ;
@@ -36616,7 +36615,7 @@ entity:LoadFlowModeler-634
   tables:rowIndex "634"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Load flow modeler"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:LoadFlowModeler-635
   rdf:type ar:ConceptualService ;
@@ -36665,7 +36664,7 @@ entity:LoadFlowModeler-635
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
@@ -37473,7 +37472,7 @@ entity:LongTermForecastingSupportService-649
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
-  props:nISTLegacyDomain "Transmission"^^xsd:string ;
+  props:nISTLegacyDomain "Transmission; Bulk Generation; Market"^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note ""^^xsd:string ;
   props:notes ""^^xsd:string ;
@@ -37481,7 +37480,7 @@ entity:LongTermForecastingSupportService-649
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
@@ -37548,7 +37547,7 @@ entity:LongTermForecastingSupportService-650
   tables:rowIndex "650"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Long term forecasting support service"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:LongTermForecastingSupportService-651
   rdf:type ar:ConceptualService ;
@@ -37606,7 +37605,7 @@ entity:LongTermForecastingSupportService-651
   tables:rowIndex "651"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Long term forecasting support service"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:LossLocationManagement--652
   rdf:type ar:ConceptualService ;
@@ -38655,10 +38654,10 @@ entity:MaintainVoltage-667
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:MaintenanceAndConstruction-668
-  rdf:type ar:LogicalService ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Service"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -38682,7 +38681,7 @@ entity:MaintenanceAndConstruction-668
   props:eUWGSPVers05 "X"^^xsd:string ;
   props:electricStorage ""^^xsd:string ;
   props:electricTransportaion ""^^xsd:string ;
-  props:entityName "Maintenance and Construction"^^xsd:string ;
+  props:entityName "Maintenance and Construction (MC)"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
@@ -38695,21 +38694,21 @@ entity:MaintenanceAndConstruction-668
   props:nAESB ""^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
   props:new ""^^xsd:string ;
-  props:note ""^^xsd:string ;
+  props:note "61968-IRM"^^xsd:string ;
   props:notes ""^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates "EU-WGSP: Maintenance and Inspection"^^xsd:string ;
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Application"^^xsd:string ;
-  props:uSEUInput "US"^^xsd:string ;
+  props:uSEUInput "US; EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "668"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
-  rdfs:label "Maintenance and Construction"^^xsd:string ;
+  rdfs:label "Maintenance and Construction (MC)"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:MaintenanceAndConstruction-MC--669
@@ -38768,7 +38767,7 @@ entity:MaintenanceAndConstruction-MC--669
   tables:rowIndex "669"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Maintenance and Construction (MC)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:MaintenanceAndInspection-MCMAI--670
   rdf:type ar:LogicalServiceComposition ;
@@ -39232,7 +39231,7 @@ entity:MaintenanceSupportService-677
   tables:rowIndex "677"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "maintenance support service"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:MaintenanceSupportService-678
   rdf:type ar:ConceptualService ;
@@ -39281,7 +39280,7 @@ entity:MaintenanceSupportService-678
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
@@ -43253,7 +43252,7 @@ entity:ManageVoltage-747
   props:conceptualModel ""^^xsd:string ;
   props:dKERepository ""^^xsd:string ;
   props:demandResponse ""^^xsd:string ;
-  props:description_0 "operate a mechanism to regulate voltage within compliance limits for all customers"^^xsd:string ;
+  props:description_0 "operate a mechanism to regulate voltage in all parts of the system within compliance limits for all customers"^^xsd:string ;
   props:distributionGridMgmt ""^^xsd:string ;
   props:eG3 ""^^xsd:string ;
   props:eIS ""^^xsd:string ;
@@ -43275,7 +43274,7 @@ entity:ManageVoltage-747
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
-  props:nISTLegacyDomain "Transmission"^^xsd:string ;
+  props:nISTLegacyDomain "Transmission; Operations"^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note ""^^xsd:string ;
   props:notes ""^^xsd:string ;
@@ -43283,7 +43282,7 @@ entity:ManageVoltage-747
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Business Service"^^xsd:string ;
@@ -43350,7 +43349,7 @@ entity:ManageVoltage-748
   tables:rowIndex "748"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "manage voltage"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:ManageVoltage-749
   rdf:type ar:ConceptualService ;
@@ -43408,7 +43407,7 @@ entity:ManageVoltage-749
   tables:rowIndex "749"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Manage voltage"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:ManageyServiceManagement-750
   rdf:type ar:ConceptualService ;
@@ -45151,7 +45150,7 @@ entity:MeterDataCollection-779
   tables:rowIndex "779"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "meter data collection"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:MeterDataCollection-780
   rdf:type ar:ConceptualService ;
@@ -45200,7 +45199,7 @@ entity:MeterDataCollection-780
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Business Service"^^xsd:string ;
@@ -45258,7 +45257,7 @@ entity:MeterDataCollector-781
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
