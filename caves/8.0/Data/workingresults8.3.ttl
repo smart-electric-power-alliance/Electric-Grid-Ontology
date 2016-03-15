@@ -53309,7 +53309,7 @@ entity:PhaseCurrentFlowDetector-919
   tables:rowIndex "919"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Phase current flow detector"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:PhaseCurrentFlowDetector-920
   rdf:type ar:ConceptualService ;
@@ -53350,7 +53350,7 @@ entity:PhaseCurrentFlowDetector-920
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
-  props:nISTLegacyDomain "Distribution"^^xsd:string ;
+  props:nISTLegacyDomain "Distribution; Transmission"^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note ""^^xsd:string ;
   props:notes ""^^xsd:string ;
@@ -53358,7 +53358,7 @@ entity:PhaseCurrentFlowDetector-920
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
@@ -53408,7 +53408,7 @@ entity:PhaseImbalanceCorrector-921
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
-  props:nISTLegacyDomain "Transmission"^^xsd:string ;
+  props:nISTLegacyDomain "Transmission; Distribution"^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note ""^^xsd:string ;
   props:notes ""^^xsd:string ;
@@ -53416,7 +53416,7 @@ entity:PhaseImbalanceCorrector-921
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
@@ -53483,7 +53483,7 @@ entity:PhaseImbalanceCorrector-922
   tables:rowIndex "922"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Phase imbalance corrector"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:PhasorMeasurementUnit-923
   rdf:type ar:PhysicalActor ;
