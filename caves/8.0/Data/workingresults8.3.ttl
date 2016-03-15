@@ -69258,11 +69258,11 @@ entity:TradeResponsibleParty-1194
   tables:rowIndex "1194"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Trade Responsible Party"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:TradeResponsibleParty-1195
   rdf:type ar:ConceptualServiceComposition ;
-  props:aDWPOriginalFocus ""^^xsd:string ;
+  props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
@@ -69287,7 +69287,7 @@ Additional information: This is a type of Balance Responsible Party."""^^xsd:str
   props:eUCommission ""^^xsd:string ;
   props:eUSCCGWP1 ""^^xsd:string ;
   props:eUSourceunknown ""^^xsd:string ;
-  props:eUWGSPVers05 ""^^xsd:string ;
+  props:eUWGSPVers05 "X"^^xsd:string ;
   props:electricStorage ""^^xsd:string ;
   props:electricTransportaion ""^^xsd:string ;
   props:entityName "Trade Responsible Party"^^xsd:string ;
@@ -69301,7 +69301,7 @@ Additional information: This is a type of Balance Responsible Party."""^^xsd:str
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
-  props:nISTLegacyDomain ""^^xsd:string ;
+  props:nISTLegacyDomain "Market"^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note "ENTSO-E Role model"^^xsd:string ;
   props:notes ""^^xsd:string ;
@@ -69309,11 +69309,11 @@ Additional information: This is a type of Balance Responsible Party."""^^xsd:str
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
-  props:type ""^^xsd:string ;
-  props:uSEUInput "EU"^^xsd:string ;
+  props:type "Role"^^xsd:string ;
+  props:uSEUInput "US; EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1195"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
@@ -69865,7 +69865,7 @@ The Transmission Capacity Allocator manages, on behalf of the System Operators, 
   props:distributionGridMgmt ""^^xsd:string ;
   props:eG3 ""^^xsd:string ;
   props:eIS ""^^xsd:string ;
-  props:eNTSOERoleModel ""^^xsd:string ;
+  props:eNTSOERoleModel "X"^^xsd:string ;
   props:eUCommission ""^^xsd:string ;
   props:eUSCCGWP1 ""^^xsd:string ;
   props:eUSourceunknown ""^^xsd:string ;
@@ -69885,17 +69885,17 @@ The Transmission Capacity Allocator manages, on behalf of the System Operators, 
   props:nAESB ""^^xsd:string ;
   props:nISTLegacyDomain "Transmission"^^xsd:string ;
   props:new ""^^xsd:string ;
-  props:note ""^^xsd:string ;
+  props:note "ENTSO-E Role model"^^xsd:string ;
   props:notes ""^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates ""^^xsd:string ;
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Role"^^xsd:string ;
-  props:uSEUInput "US"^^xsd:string ;
+  props:uSEUInput "US; EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1205"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
@@ -69963,7 +69963,7 @@ amount of already allocated capacities to the Capacity Traders."""^^xsd:string ;
   tables:rowIndex "1206"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Transmission Capacity Allocator"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:TransmissionControlDevices-1207
   rdf:type ar:LogicalActor ;
@@ -70709,7 +70709,7 @@ entity:TransmissionSystemOperator-1219
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Role"^^xsd:string ;
@@ -72216,7 +72216,7 @@ entity:VoltageLevelCollector-1244
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
-  props:nISTLegacyDomain "Transmission"^^xsd:string ;
+  props:nISTLegacyDomain "Transmission; Distribution"^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note ""^^xsd:string ;
   props:notes ""^^xsd:string ;
@@ -72224,7 +72224,7 @@ entity:VoltageLevelCollector-1244
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
@@ -72291,7 +72291,7 @@ entity:VoltageLevelCollector-1245
   tables:rowIndex "1245"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Voltage level collector"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:VoltageLevelDetector-1246
   rdf:type ar:ConceptualService ;
@@ -72332,7 +72332,7 @@ entity:VoltageLevelDetector-1246
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
-  props:nISTLegacyDomain "Transmission"^^xsd:string ;
+  props:nISTLegacyDomain "Transmission; Distribution"^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note ""^^xsd:string ;
   props:notes ""^^xsd:string ;
@@ -72340,7 +72340,7 @@ entity:VoltageLevelDetector-1246
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
@@ -72407,7 +72407,7 @@ entity:VoltageLevelDetector-1247
   tables:rowIndex "1247"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Voltage level detector"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:VoltageLevelDeviation-1248
   rdf:type ar:ConceptualService ;
@@ -72448,7 +72448,7 @@ entity:VoltageLevelDeviation-1248
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
-  props:nISTLegacyDomain "Transmission"^^xsd:string ;
+  props:nISTLegacyDomain "Transmission; Distribution"^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note ""^^xsd:string ;
   props:notes ""^^xsd:string ;
@@ -72456,7 +72456,7 @@ entity:VoltageLevelDeviation-1248
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
@@ -72523,7 +72523,7 @@ entity:VoltageLevelDeviation-1249
   tables:rowIndex "1249"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Voltage level deviation"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:VoltageManagement--1251
   rdf:type ar:ConceptualService ;
