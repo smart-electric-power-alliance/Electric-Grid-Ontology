@@ -36830,7 +36830,7 @@ entity:LoadForecaster-638
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
-  props:nISTLegacyDomain "Transmission"^^xsd:string ;
+  props:nISTLegacyDomain "Transmission; Distribution"^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note ""^^xsd:string ;
   props:notes ""^^xsd:string ;
@@ -36838,7 +36838,7 @@ entity:LoadForecaster-638
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
@@ -36905,7 +36905,7 @@ entity:LoadForecaster-639
   tables:rowIndex "639"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Load forecaster"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:LoadForecasting-640
   rdf:type ar:ConceptualService ;
@@ -49354,7 +49354,7 @@ entity:NetworkOperationsControl-852
   rdf:type ar:ConceptualService ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Service"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -49367,7 +49367,7 @@ entity:NetworkOperationsControl-852
   props:conceptualModel "X"^^xsd:string ;
   props:dKERepository ""^^xsd:string ;
   props:demandResponse ""^^xsd:string ;
-  props:description_0 "Automated and manual control operations of the system  to manage the flow of power and Information Communications Technology (ICT), including cyber security to optimize reliabilty of the power delivery system and support infrastructure. Network control is coordinated by actors in this domain, they may only supervise wide area, substation, and local automatic or manual control. An example would be the use of phase angle regulators within a substation to control power flow between two adjacent power systems"^^xsd:string ;
+  props:description_0 "Centralized automated and manual control operations of the system  to manage the flow of power and Information Communications Technology (ICT), including cyber security to optimize reliabilty of the power delivery system and support infrastructure. Network control is coordinated by actors in this domain, they may only supervise wide area, substation, and local automatic or manual control. An example would be the use of phase angle regulators within a substation to control power flow between two adjacent power systems"^^xsd:string ;
   props:distributionGridMgmt ""^^xsd:string ;
   props:eG3 ""^^xsd:string ;
   props:eIS ""^^xsd:string ;
@@ -49378,12 +49378,12 @@ entity:NetworkOperationsControl-852
   props:eUWGSPVers05 ""^^xsd:string ;
   props:electricStorage ""^^xsd:string ;
   props:electricTransportaion ""^^xsd:string ;
-  props:entityName "Network Operations Control"^^xsd:string ;
+  props:entityName "Network Operations Control (NO-CTL)"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
-  props:iEC61968IRM ""^^xsd:string ;
+  props:iEC61968IRM "X"^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles ""^^xsd:string ;
   props:iEEEP2030Draft3 "X"^^xsd:string ;
@@ -49391,25 +49391,24 @@ entity:NetworkOperationsControl-852
   props:nAESB ""^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
   props:new ""^^xsd:string ;
-  props:note ""^^xsd:string ;
+  props:note "61968-IRM"^^xsd:string ;
   props:notes ""^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates "CM: 1) Distribution.Control, 2) Network Operations Control, 3) Transmission.Control; IE: Transmission Operation and Control"^^xsd:string ;
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Application"^^xsd:string ;
-  props:uSEUInput "US"^^xsd:string ;
+  props:uSEUInput "US; EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "852"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
-  rdfs:label "Network Operations Control"^^xsd:string ;
+  rdfs:label "Network Operations Control (NO-CTL)"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:NetworkOperationsControl-NOCTL--853
-  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -49439,7 +49438,6 @@ entity:NetworkOperationsControl-NOCTL--853
   props:entityName "Network Operations Control (NO-CTL)"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -49464,7 +49462,7 @@ entity:NetworkOperationsControl-NOCTL--853
   tables:rowIndex "853"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Network Operations Control (NO-CTL)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:NetworkOperationsFaultAnalysis-854
   rdf:type ar:LogicalService ;
@@ -50049,10 +50047,9 @@ entity:NomadicLoadManagement-864
 .
 entity:NominationValidator-865
   rdf:type ar:LogicalEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -50069,7 +50066,7 @@ entity:NominationValidator-865
   props:distributionGridMgmt ""^^xsd:string ;
   props:eG3 ""^^xsd:string ;
   props:eIS ""^^xsd:string ;
-  props:eNTSOERoleModel ""^^xsd:string ;
+  props:eNTSOERoleModel "X"^^xsd:string ;
   props:eUCommission ""^^xsd:string ;
   props:eUSCCGWP1 ""^^xsd:string ;
   props:eUSourceunknown ""^^xsd:string ;
@@ -50079,7 +50076,7 @@ entity:NominationValidator-865
   props:entityName "Nomination Validator"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -50089,17 +50086,17 @@ entity:NominationValidator-865
   props:nAESB ""^^xsd:string ;
   props:nISTLegacyDomain "Market"^^xsd:string ;
   props:new ""^^xsd:string ;
-  props:note ""^^xsd:string ;
+  props:note "ENTSO-E Role model"^^xsd:string ;
   props:notes ""^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates ""^^xsd:string ;
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Role"^^xsd:string ;
-  props:uSEUInput "US"^^xsd:string ;
+  props:uSEUInput "US; EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "865"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
@@ -50162,7 +50159,7 @@ entity:NominationValidator-866
   tables:rowIndex "866"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Nomination Validator"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:NonControllableLoad-867
   rdf:type props:Combined-Elements-noduprows ;
@@ -50920,10 +50917,10 @@ entity:OperationalHistorian-879
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:OperationalPlanning-880
-  rdf:type ar:LogicalService ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Service"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -50947,12 +50944,12 @@ entity:OperationalPlanning-880
   props:eUWGSPVers05 ""^^xsd:string ;
   props:electricStorage ""^^xsd:string ;
   props:electricTransportaion ""^^xsd:string ;
-  props:entityName "Operational Planning"^^xsd:string ;
+  props:entityName "Operational Planning (OP)"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
-  props:iEC61968IRM ""^^xsd:string ;
+  props:iEC61968IRM "X"^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles ""^^xsd:string ;
   props:iEEEP2030Draft3 ""^^xsd:string ;
@@ -50960,21 +50957,21 @@ entity:OperationalPlanning-880
   props:nAESB ""^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
   props:new ""^^xsd:string ;
-  props:note ""^^xsd:string ;
+  props:note "61968-IRM"^^xsd:string ;
   props:notes ""^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates "CM: OPs Planning"^^xsd:string ;
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Application"^^xsd:string ;
-  props:uSEUInput "US"^^xsd:string ;
+  props:uSEUInput "US; EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "880"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
-  rdfs:label "Operational Planning"^^xsd:string ;
+  rdfs:label "Operational Planning (OP)"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:OperationalPlanning-OP--881
@@ -51033,7 +51030,7 @@ entity:OperationalPlanning-OP--881
   tables:rowIndex "881"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Operational Planning (OP)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:OperationalStateDetector-882
   rdf:type ar:ConceptualService ;
@@ -51074,7 +51071,7 @@ entity:OperationalStateDetector-882
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
-  props:nISTLegacyDomain "Transmission"^^xsd:string ;
+  props:nISTLegacyDomain "Transmision; Distribution"^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note ""^^xsd:string ;
   props:notes ""^^xsd:string ;
@@ -51082,7 +51079,7 @@ entity:OperationalStateDetector-882
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
@@ -51149,7 +51146,7 @@ entity:OperationalStateDetector-883
   tables:rowIndex "883"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Operational state detector"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:Operator-884
   rdf:type props:Combined-Elements-noduprows ;
@@ -51712,7 +51709,7 @@ entity:OutageImpact-893
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
-  props:nISTLegacyDomain "Transmission"^^xsd:string ;
+  props:nISTLegacyDomain "Transmission; Distribution"^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note ""^^xsd:string ;
   props:notes ""^^xsd:string ;
@@ -51720,7 +51717,7 @@ entity:OutageImpact-893
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
@@ -51787,7 +51784,7 @@ entity:OutageImpact-894
   tables:rowIndex "894"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Outage impact"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:OutageInformationCollector-895
   rdf:type ar:ConceptualService ;
@@ -51908,7 +51905,7 @@ entity:OutageManagement--901
 entity:OutageManagement-896
   rdf:type ar:ConceptualService ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
-  props:aDWPOriginalFocus ""^^xsd:string ;
+  props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Service"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
@@ -51918,8 +51915,8 @@ entity:OutageManagement-896
   props:cSWGActors ""^^xsd:string ;
   props:cSWGNISTIR7628 ""^^xsd:string ;
   props:clusterLabel "p"^^xsd:string ;
-  props:colC ""^^xsd:string ;
-  props:colD ""^^xsd:string ;
+  props:colC "OMS"^^xsd:string ;
+  props:colD "OMS"^^xsd:string ;
   props:conceptualModel ""^^xsd:string ;
   props:dKERepository ""^^xsd:string ;
   props:demandResponse ""^^xsd:string ;
@@ -52321,7 +52318,7 @@ entity:OutageNotification-903
   tables:rowIndex "903"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Outage notification"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:OutageNotification-904
   rdf:type ar:ConceptualService ;
@@ -52362,7 +52359,7 @@ entity:OutageNotification-904
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
-  props:nISTLegacyDomain "Transmission"^^xsd:string ;
+  props:nISTLegacyDomain "Market; Transmission; Distribution"^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note ""^^xsd:string ;
   props:notes ""^^xsd:string ;
@@ -52370,10 +52367,10 @@ entity:OutageNotification-904
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
-  props:type "Automation Service"^^xsd:string ;
+  props:type "Business Service; Automation Service"^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "904"^^xsd:int ;
@@ -52437,7 +52434,7 @@ entity:OutageNotification-905
   tables:rowIndex "905"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Outage notification"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:OutagePlanningSupport-906
   rdf:type ar:ConceptualService ;
