@@ -58751,7 +58751,7 @@ entity:ReactivePowerModifier-1014
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
-  props:nISTLegacyDomain "Transmission"^^xsd:string ;
+  props:nISTLegacyDomain "Transmission; Distribution"^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note ""^^xsd:string ;
   props:notes ""^^xsd:string ;
@@ -58759,7 +58759,7 @@ entity:ReactivePowerModifier-1014
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
@@ -58826,7 +58826,7 @@ entity:ReactivePowerModifier-1015
   tables:rowIndex "1015"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Reactive power modifier"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:Reactor-1016
   rdf:type ar:LogicalActor ;
@@ -60335,7 +60335,7 @@ entity:RemoteDeviceOperation-1041
   tables:rowIndex "1041"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Remote device operation"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:RemoteDeviceOperation-1042
   rdf:type ar:ConceptualService ;
@@ -60384,7 +60384,7 @@ entity:RemoteDeviceOperation-1042
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
@@ -60863,7 +60863,6 @@ entity:RequestMarketProducts-1050
 .
 entity:ReserveAllocator-1051
   rdf:type ar:ConceptualEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Role"^^xsd:string ;
