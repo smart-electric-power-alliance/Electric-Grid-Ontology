@@ -62685,7 +62685,7 @@ For example in the Polish market a Scheduling Coordinator is responsible for inf
   props:distributionGridMgmt ""^^xsd:string ;
   props:eG3 ""^^xsd:string ;
   props:eIS ""^^xsd:string ;
-  props:eNTSOERoleModel ""^^xsd:string ;
+  props:eNTSOERoleModel "X"^^xsd:string ;
   props:eUCommission ""^^xsd:string ;
   props:eUSCCGWP1 ""^^xsd:string ;
   props:eUSourceunknown ""^^xsd:string ;
@@ -62705,17 +62705,17 @@ For example in the Polish market a Scheduling Coordinator is responsible for inf
   props:nAESB "X"^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
   props:new ""^^xsd:string ;
-  props:note ""^^xsd:string ;
+  props:note "ENTSO-E Role model"^^xsd:string ;
   props:notes ""^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates ""^^xsd:string ;
   props:referenceDiagram "X"^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Organizational Entity"^^xsd:string ;
-  props:uSEUInput "US"^^xsd:string ;
+  props:uSEUInput "US; EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1082"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
@@ -62778,7 +62778,7 @@ entity:SchedulingCoordinator-1083
   tables:rowIndex "1083"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Scheduling Coordinator"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:SchedulingEntity-1084
   rdf:type ar:ConceptualServiceComposition ;
@@ -64569,7 +64569,7 @@ entity:SimulateSystem-1114
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Business Service"^^xsd:string ;
@@ -65658,7 +65658,7 @@ entity:StakeholderPlanningAndReporting-1133
   rdf:type ar:ConceptualService ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Service"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -65682,12 +65682,12 @@ entity:StakeholderPlanningAndReporting-1133
   props:eUWGSPVers05 ""^^xsd:string ;
   props:electricStorage ""^^xsd:string ;
   props:electricTransportaion ""^^xsd:string ;
-  props:entityName "Stakeholder Planning and Reporting"^^xsd:string ;
+  props:entityName "Stakeholder Planning and Reporting (SPM)"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
-  props:iEC61968IRM ""^^xsd:string ;
+  props:iEC61968IRM "X"^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles ""^^xsd:string ;
   props:iEEEP2030Draft3 ""^^xsd:string ;
@@ -65695,17 +65695,17 @@ entity:StakeholderPlanningAndReporting-1133
   props:nAESB ""^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
   props:new ""^^xsd:string ;
-  props:note ""^^xsd:string ;
+  props:note "61968-IRM"^^xsd:string ;
   props:notes ""^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates ""^^xsd:string ;
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Application"^^xsd:string ;
-  props:uSEUInput "US"^^xsd:string ;
+  props:uSEUInput "US; EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1133"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
@@ -65768,7 +65768,7 @@ entity:StakeholderPlanningAndReporting-SPM--1134
   tables:rowIndex "1134"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Stakeholder Planning and Reporting (SPM)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:StandardizationBody-1135
   rdf:type ar:ConceptualService ;
@@ -65867,7 +65867,7 @@ entity:StateEstimationCollector-1136
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
-  props:nISTLegacyDomain "Transmission"^^xsd:string ;
+  props:nISTLegacyDomain "Transmission; Distribution"^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note ""^^xsd:string ;
   props:notes ""^^xsd:string ;
@@ -65875,7 +65875,7 @@ entity:StateEstimationCollector-1136
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
@@ -65942,7 +65942,7 @@ entity:StateEstimationCollector-1137
   tables:rowIndex "1137"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "State estimation collector"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:StateEstimationSupport--1138
   rdf:type ar:ConceptualService ;
@@ -66109,7 +66109,7 @@ entity:Storage-1140
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Service"^^xsd:string ;
@@ -66706,7 +66706,7 @@ entity:SupplyChainLogistics-1151
   rdf:type ar:ConceptualService ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Service"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -66730,12 +66730,12 @@ entity:SupplyChainLogistics-1151
   props:eUWGSPVers05 ""^^xsd:string ;
   props:electricStorage ""^^xsd:string ;
   props:electricTransportaion ""^^xsd:string ;
-  props:entityName "Supply Chain Logistics"^^xsd:string ;
+  props:entityName "Supply Chain Logistics (SC)"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
   props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
-  props:iEC61968IRM ""^^xsd:string ;
+  props:iEC61968IRM "X"^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
   props:iECTC57WG19TC8WG6DERActorRoles ""^^xsd:string ;
   props:iEEEP2030Draft3 ""^^xsd:string ;
@@ -66743,17 +66743,17 @@ entity:SupplyChainLogistics-1151
   props:nAESB ""^^xsd:string ;
   props:nISTLegacyDomain "Operations"^^xsd:string ;
   props:new ""^^xsd:string ;
-  props:note ""^^xsd:string ;
+  props:note "61968-IRM"^^xsd:string ;
   props:notes ""^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates ""^^xsd:string ;
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Application"^^xsd:string ;
-  props:uSEUInput "US"^^xsd:string ;
+  props:uSEUInput "US; EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1151"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
@@ -66816,7 +66816,7 @@ entity:SupplyChainLogistics-SC--1152
   tables:rowIndex "1152"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Supply Chain Logistics (SC)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:SupplyForecastSupport-1153
   rdf:type ar:ConceptualService ;
@@ -67155,7 +67155,7 @@ entity:SwitchActionSchedulingAndOperationWorkScheduling-1156
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Application"^^xsd:string ;
@@ -67456,7 +67456,7 @@ entity:SystemBalanceService-1163
   tables:rowIndex "1163"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "system balance service"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:SystemBalanceService-1164
   rdf:type ar:ConceptualService ;
@@ -67497,7 +67497,7 @@ entity:SystemBalanceService-1164
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
-  props:nISTLegacyDomain "Bulk Generation"^^xsd:string ;
+  props:nISTLegacyDomain "Bulk Generation; Transmission"^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note ""^^xsd:string ;
   props:notes ""^^xsd:string ;
@@ -67505,7 +67505,7 @@ entity:SystemBalanceService-1164
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Automation Service"^^xsd:string ;
@@ -67688,11 +67688,10 @@ entity:SystemOperation-1167
   tables:rowIndex "1167"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "System operation"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:SystemOperation-1170
   rdf:type ar:ServiceComposition ;
-  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -67706,7 +67705,7 @@ entity:SystemOperation-1170
   props:colC ""^^xsd:string ;
   props:colD ""^^xsd:string ;
   props:conceptualModel ""^^xsd:string ;
-  props:dKERepository ""^^xsd:string ;
+  props:dKERepository "X"^^xsd:string ;
   props:demandResponse ""^^xsd:string ;
   props:description_0 "Operation Services including monition of dynamic behavior of the Grid via GUIs and take actions to either prevent contingencies or improve system efficiency"^^xsd:string ;
   props:distributionGridMgmt ""^^xsd:string ;
@@ -67722,7 +67721,7 @@ entity:SystemOperation-1170
   props:entityName "System Operation"^^xsd:string ;
   props:gUC "X"^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -67730,7 +67729,7 @@ entity:SystemOperation-1170
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
-  props:nISTLegacyDomain ""^^xsd:string ;
+  props:nISTLegacyDomain "Bulk Generation; Distribution"^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note "GUC"^^xsd:string ;
   props:notes ""^^xsd:string ;
@@ -67738,11 +67737,11 @@ entity:SystemOperation-1170
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
-  props:sGACConceptualArch ""^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
+  props:sGACConceptualArch "X"^^xsd:string ;
   props:sMCG ""^^xsd:string ;
-  props:type ""^^xsd:string ;
-  props:uSEUInput "EU"^^xsd:string ;
+  props:type "Automation Service"^^xsd:string ;
+  props:uSEUInput "US; EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1170"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
@@ -67751,7 +67750,6 @@ entity:SystemOperation-1170
 .
 entity:SystemOperation-1171
   rdf:type ar:ServiceComposition ;
-  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -67806,10 +67804,9 @@ entity:SystemOperation-1171
   tables:rowIndex "1171"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "System Operation"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:SystemOperator-1168
-  rdf:type ar:ConceptualServiceComposition ;
   rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
