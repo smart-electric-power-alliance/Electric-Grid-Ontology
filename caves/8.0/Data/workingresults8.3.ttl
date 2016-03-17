@@ -10868,6 +10868,7 @@ entity:CoordinationCenterServices-194
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:CoordinationCenterServices-195
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -11912,6 +11913,7 @@ entity:CustomerEnergyManagementSystem-212
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:CustomerEnergyManagementSystem-CEMS--213
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -25038,6 +25040,7 @@ entity:EnergyManagementLAN-432
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:EnergyManagementSystem-433
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -33122,10 +33125,9 @@ entity:GridCommunicationsNetworkProviders-574
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:GridConditionIndicator-575
-  rdf:type ar:ConceptualService ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -33152,7 +33154,6 @@ entity:GridConditionIndicator-575
   props:entityName "Grid Condition Indicator"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -33180,10 +33181,9 @@ entity:GridConditionIndicator-575
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:GridConditionIndicator-576
-  rdf:type ar:ConceptualService ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -33210,7 +33210,6 @@ entity:GridConditionIndicator-576
   props:entityName "Grid Condition Indicator"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -49409,6 +49408,7 @@ entity:NetworkOperationsControl-852
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:NetworkOperationsControl-NOCTL--853
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
