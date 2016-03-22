@@ -10868,6 +10868,7 @@ entity:CoordinationCenterServices-194
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:CoordinationCenterServices-195
+  rdf:type ar:ServiceComposition ;
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
@@ -11913,7 +11914,7 @@ entity:CustomerEnergyManagementSystem-212
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:CustomerEnergyManagementSystem-CEMS--213
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -25040,6 +25041,7 @@ entity:EnergyManagementLAN-432
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:EnergyManagementSystem-433
+  rdf:type ar:ServiceComposition ;
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
@@ -33176,7 +33178,7 @@ entity:GridConditionIndicator-575
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "575"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "575 & 576 have the same name, different descriptions and domains.  Need clarification"^^xsd:string ;
   rdfs:label "Grid Condition Indicator"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -33232,7 +33234,7 @@ entity:GridConditionIndicator-576
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "576"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "575 & 576 have the same name, different descriptions and domains.  Need clarification"^^xsd:string ;
   rdfs:label "Grid Condition Indicator"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -49408,6 +49410,7 @@ entity:NetworkOperationsControl-852
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:NetworkOperationsControl-NOCTL--853
+  rdf:type ar:ServiceComposition ;
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
