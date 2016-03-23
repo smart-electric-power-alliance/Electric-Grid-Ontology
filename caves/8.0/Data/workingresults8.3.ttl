@@ -7548,7 +7548,7 @@ entity:CommunicationNetworks-138
   props:conceptualModel ""^^xsd:string ;
   props:dKERepository ""^^xsd:string ;
   props:demandResponse ""^^xsd:string ;
-  props:description_0 "Wireline or wireless networks play a role in AMI, Distribution and Substation Automation, automation backhaul and EV roaming. This include Wireless Service Providers (WSP) now commonly used for AMI NANs, EV charging stations."^^xsd:string ;
+  props:description_0 "Logical networks play a role in AMI, Distribution and Substation Automation, automation backhaul and EV roaming. This include Wireless Service Providers (WSP) now commonly used for AMI NANs, EV charging stations."^^xsd:string ;
   props:distributionGridMgmt ""^^xsd:string ;
   props:eG3 ""^^xsd:string ;
   props:eIS ""^^xsd:string ;
@@ -33422,7 +33422,7 @@ entity:GridOperationsCoreNetwork-580
   props:entityName "Grid Operations Core Network"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -48149,10 +48149,10 @@ entity:NeighborhoodAreaNetwork-831
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:NeighbourhoodNetworkAccessPoint-NNAP--832
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -48184,7 +48184,7 @@ NN.
   props:entityName "Neighbourhood Network Access Point (NNAP)"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -48209,13 +48209,13 @@ NN.
   tables:rowIndex "832"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Neighbourhood Network Access Point (NNAP)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:NeighbourhoodNetworkAccessPoint-NNAP--833
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -48247,7 +48247,7 @@ NN.
   props:entityName "Neighbourhood Network Access Point (NNAP)"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -48263,7 +48263,7 @@ NN.
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type ""^^xsd:string ;
@@ -70567,10 +70567,10 @@ entity:TransmissionSubstation-1217
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:TransmissionSubstationNetwork-1218
-  rdf:type ar:LogicalService ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Service"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -73829,10 +73829,10 @@ entity:WorkScheduling-1272
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:WorkforceMobileNetwork-1273
-  rdf:type ar:LogicalService ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Service"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
