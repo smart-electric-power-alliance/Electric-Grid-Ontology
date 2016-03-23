@@ -7532,7 +7532,7 @@ entity:CommunicationManagement-137
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:CommunicationNetworks-138
-  rdf:type ar:PhysicalEntity ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -7562,7 +7562,7 @@ entity:CommunicationNetworks-138
   props:entityName "Communication Networks"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks "07:00:00"^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -52696,11 +52696,10 @@ entity:PCCSwitch-914
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:PNode-930
-  rdf:type ar:LogicalEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalService ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Role  NA"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -52713,7 +52712,7 @@ entity:PNode-930
   props:conceptualModel ""^^xsd:string ;
   props:dKERepository ""^^xsd:string ;
   props:demandResponse ""^^xsd:string ;
-  props:description_0 "The price location of the Facility in the transmission and/or distribution network."^^xsd:string ;
+  props:description_0 "The price location of the Facility in the transmission and/or distribution network.  This is also called the usage point."^^xsd:string ;
   props:distributionGridMgmt ""^^xsd:string ;
   props:eG3 ""^^xsd:string ;
   props:eIS ""^^xsd:string ;
@@ -52727,7 +52726,7 @@ entity:PNode-930
   props:entityName "P-Node"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Logical  NA"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -60832,7 +60831,7 @@ entity:ReserveAllocator-1051
   rdf:type ar:ConceptualEntity ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -61411,11 +61410,10 @@ entity:RespondToBid-1060
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ResponseMethodAggregator-1061
-  rdf:type ar:LogicalEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalService ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -64082,12 +64080,11 @@ entity:SettlementSupportService-1106
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SheddableLoads-1107
-  rdf:type ar:LogicalEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:PhysicalService ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -64114,7 +64111,7 @@ entity:SheddableLoads-1107
   props:entityName "Sheddable Loads"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -67309,8 +67306,7 @@ entity:SynchronizingEquipment-1161
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SystemAdministration-1162
-  rdf:type ar:ServiceComposition ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -67340,7 +67336,7 @@ entity:SystemAdministration-1162
   props:entityName "System Administration"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -67365,7 +67361,7 @@ entity:SystemAdministration-1162
   tables:rowIndex "1162"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "System Administration"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:SystemBalanceService-1163
   rdf:type ar:ConceptualService ;
@@ -67658,7 +67654,7 @@ entity:SystemOperation-1167
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:SystemOperation-1170
-  rdf:type ar:ServiceComposition ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -70165,11 +70161,10 @@ entity:TransmissionMeasurement-1210
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:TransmissionOperationsAndControlCenter-1211
-  rdf:type ar:LogicalEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -73892,11 +73887,10 @@ entity:WorkforceMobileNetwork-1273
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:Zone-1274
-  rdf:type ar:LogicalEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalService ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Role  NA"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -73948,7 +73942,7 @@ entity:Zone-1274
   tables:rowIndex "1274"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Zone"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 props:Combined-Elements-noduprows
   rdf:type owl:Class ;
