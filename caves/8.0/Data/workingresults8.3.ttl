@@ -20948,7 +20948,7 @@ entity:DistributionSystemPowerFlow-DSPF--360
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:DistributionSystemServices-356
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -46873,7 +46873,7 @@ Additional information: a Mobility Service Operator could be considered as an Ag
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:Modeler-810
-  rdf:type ar:LogicalEntity ;
+  rdf:type ar:ConceptualService ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Service"^^xsd:string ;
@@ -46903,7 +46903,7 @@ entity:Modeler-810
   props:entityName "Modeler"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -46931,7 +46931,7 @@ entity:Modeler-810
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ModelingServices-811
-  rdf:type ar:ServiceComposition ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -60828,7 +60828,7 @@ entity:RequestMarketProducts-1050
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:ReserveAllocator-1051
-  rdf:type ar:ConceptualEntity ;
+  rdf:type ar:ConceptualService ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Service"^^xsd:string ;
@@ -61642,12 +61642,11 @@ entity:RestrictedMarketNotificationService-1064
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:RetailCustomer-1065
-  rdf:type ar:ConceptualEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
-  props:actorTypeOrRole "ServiceComposition"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
+  props:actorTypeOrRole "Role"^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
   props:businessFunctionService ""^^xsd:string ;
