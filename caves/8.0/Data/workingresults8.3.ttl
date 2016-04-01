@@ -10864,8 +10864,7 @@ entity:CoordinationCenterServices-194
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:CoordinationCenterServices-195
-  rdf:type ar:ServiceComposition ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -10881,7 +10880,7 @@ entity:CoordinationCenterServices-195
   props:conceptualModel ""^^xsd:string ;
   props:dKERepository ""^^xsd:string ;
   props:demandResponse ""^^xsd:string ;
-  props:description_0 """ServiceComposition responsible for : 
+  props:description_0 """Services responsible for : 
 1. The coordination of exchange programs between its related control blocks and for the exchanges between its associated coordination center zones. 
 2. Ensuring that its control blocks respect their obligations in respect to load frequency control. 
 3. Calculating the time deviation in cooperation with the associated coordination centers. 
@@ -10899,6 +10898,7 @@ entity:CoordinationCenterServices-195
   props:entityName "Coordination Center Services"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -15185,10 +15185,10 @@ from field sensing devices."""^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:DataAggregator-235
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:PhysicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -15215,7 +15215,7 @@ entity:DataAggregator-235
   props:entityName "Data Aggregator"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -66025,7 +66025,6 @@ entity:StateManagement-1139
 .
 entity:Storage-1140
   rdf:type ar:ConceptualService ;
-  rdf:type ar:PhysicalService ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
@@ -66056,7 +66055,7 @@ entity:Storage-1140
   props:entityName "Storage"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
