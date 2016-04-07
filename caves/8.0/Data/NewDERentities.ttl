@@ -1,0 +1,1493 @@
+# baseURI: http://sv.cmu.edu/AWP/8.0/NewDERentities
+# imports: http://sv.cmu.edu/AWP/8.0/props
+# imports: http://topbraid.org/tables
+# prefix: NewDERentities
+
+@prefix NewDERentities: <http://sv.cmu.edu/AWP/8.0/NewDERentities#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix props: <http://sv.cmu.edu/AWP/8.0/props#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tables: <http://topbraid.org/tables#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://sv.cmu.edu/AWP/8.0/NewDERentities>
+  rdf:type owl:Ontology ;
+  owl:imports <http://sv.cmu.edu/AWP/8.0/props> ;
+  owl:imports <http://topbraid.org/tables> ;
+.
+NewDERentities:Row-0
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "Actor"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Communications network used for interacting with meters"^^xsd:string ;
+  NewDERentities:entity "entity:AdvancedMeteringInfrastructure-AMI--21"^^xsd:string ;
+  NewDERentities:hierarchy "Physical"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2000"^^xsd:int ;
+  NewDERentities:label "Advanced Metering Infrastructure (AMI)"^^xsd:string ;
+  NewDERentities:name "Advanced Metering Infrastructure (AMI)"^^xsd:string ;
+  NewDERentities:note "Lvl 3 REP and ICT"^^xsd:string ;
+  tables:rowIndex "2000"^^xsd:int ;
+.
+NewDERentities:Row-1
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:aDWPOriginalFocus "X"^^xsd:string ;
+  NewDERentities:aMISystems "X"^^xsd:string ;
+  NewDERentities:actorOrService "Role"^^xsd:string ;
+  NewDERentities:actorTypeOrRole "role"^^xsd:string ;
+  NewDERentities:cSWGNISTIR7628 "X"^^xsd:string ;
+  NewDERentities:clusterLabel "p; DER"^^xsd:string ;
+  NewDERentities:conceptualModel "X"^^xsd:string ;
+  NewDERentities:dKERepository "X"^^xsd:string ;
+  NewDERentities:demandResponse "X"^^xsd:string ;
+  NewDERentities:description "Third party managing aggregations of DER systems"^^xsd:string ;
+  NewDERentities:distributionGridMgmt "X"^^xsd:string ;
+  NewDERentities:eUCommission "X"^^xsd:string ;
+  NewDERentities:electricStorage "X"^^xsd:string ;
+  NewDERentities:electricTransportaion "X"^^xsd:string ;
+  NewDERentities:entity "entity:Aggregator-26"^^xsd:string ;
+  NewDERentities:harmonizationNotes "H1 & H2 should be discussed with originating team"^^xsd:string ;
+  NewDERentities:hierarchy "Conceptual"^^xsd:string ;
+  NewDERentities:homeworkBlocks "1899-12-31T15:00:00"^^xsd:dateTime ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2001"^^xsd:int ;
+  NewDERentities:label "Aggregator"^^xsd:string ;
+  NewDERentities:manufacturerCIMIECTypeOfZone "Enterprise"^^xsd:string ;
+  NewDERentities:nISTLegacyDomain "Service Provider"^^xsd:string ;
+  NewDERentities:name "Aggregator"^^xsd:string ;
+  NewDERentities:note "Lvl 3 REP and ICT; Distribution Grid Management/Microgrid"^^xsd:string ;
+  NewDERentities:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates "RM: Energy Services Company; NR: Aggregator / Retail Energy Provider; EU: Supplier; xx: Energy Services Aggregator"^^xsd:string ;
+  NewDERentities:referenceDiagram "X"^^xsd:string ;
+  NewDERentities:rolefromRoleTab "Manager"^^xsd:string ;
+  NewDERentities:rowActionFlagDeletedHarmonizeh "H1"^^xsd:string ;
+  NewDERentities:type "Organization"^^xsd:string ;
+  NewDERentities:uSEUInput "US, EU"^^xsd:string ;
+  NewDERentities:wASA "X"^^xsd:string ;
+  tables:rowIndex "2001"^^xsd:int ;
+.
+NewDERentities:Row-10
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:description "A portion of the area EPS that is associated with a community. It may consist of multiple Local EPSs and could be operated as a virtual resource to the Area EPS"^^xsd:string ;
+  NewDERentities:index "2010"^^xsd:int ;
+  NewDERentities:name "Community EPS"^^xsd:string ;
+  tables:rowIndex "2010"^^xsd:int ;
+.
+NewDERentities:Row-11
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "Service"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Loads within a Local EPS having the highest priority of service.  These loads are served at the expense of all other loads."^^xsd:string ;
+  NewDERentities:entity "entity:CriticalLoad-202"^^xsd:string ;
+  NewDERentities:hierarchy "Logical"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2011"^^xsd:int ;
+  NewDERentities:label "Critical Load"^^xsd:string ;
+  NewDERentities:name "Critical Load"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2011"^^xsd:int ;
+.
+NewDERentities:Row-12
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:description "System with customer information, including personal information, billing information, customer profile information, etc."^^xsd:string ;
+  NewDERentities:index "2012"^^xsd:int ;
+  NewDERentities:name "Customer Information System (CIS)"^^xsd:string ;
+  tables:rowIndex "2012"^^xsd:int ;
+.
+NewDERentities:Row-13
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "Actor"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "A Local EPS that operates direct current"^^xsd:string ;
+  NewDERentities:entity "entity:DCEPS-238"^^xsd:string ;
+  NewDERentities:hierarchy "Physical"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2013"^^xsd:int ;
+  NewDERentities:label "DC EPS"^^xsd:string ;
+  NewDERentities:name "DC EPS"^^xsd:string ;
+  NewDERentities:note "Lvl 0 EPS"^^xsd:string ;
+  tables:rowIndex "2013"^^xsd:int ;
+.
+NewDERentities:Row-14
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "Service"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Schedule provided by REPs, DSOs, TSO, and others to indicate contractual and/or forecast prices for energy and ancillary services during specific time periods"^^xsd:string ;
+  NewDERentities:entity "entity:DemandResponse-DR-PricingSchedule-245"^^xsd:string ;
+  NewDERentities:hierarchy "Conceptual"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2014"^^xsd:int ;
+  NewDERentities:label "Demand Response (DR) Pricing Schedule"^^xsd:string ;
+  NewDERentities:name "Demand Response (DR) Pricing Schedule"^^xsd:string ;
+  NewDERentities:note "Lvl 5 Trans. And Market"^^xsd:string ;
+  tables:rowIndex "2014"^^xsd:int ;
+.
+NewDERentities:Row-15
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "Service"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "System providing demand response pricing information for different energy products during different time frames"^^xsd:string ;
+  NewDERentities:entity "entity:DemandResponse-DR-System-246"^^xsd:string ;
+  NewDERentities:hierarchy "Conceptual"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2015"^^xsd:int ;
+  NewDERentities:label "Demand Response (DR) System"^^xsd:string ;
+  NewDERentities:name "Demand Response (DR) System"^^xsd:string ;
+  NewDERentities:note "Lvl 5 Trans. And Market"^^xsd:string ;
+  tables:rowIndex "2015"^^xsd:int ;
+.
+NewDERentities:Row-16
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "Service"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "DER that consists primarily of a load that is allowed to be modified based on operating conditions, tariffs, contracts, or other criteria"^^xsd:string ;
+  NewDERentities:entity "entity:DERControllableLoad-generic--263"^^xsd:string ;
+  NewDERentities:hierarchy "Conceptual"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2016"^^xsd:int ;
+  NewDERentities:label "DER Controllable Load (generic)"^^xsd:string ;
+  NewDERentities:name "DER Controllable Load (generic)"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2016"^^xsd:int ;
+.
+NewDERentities:Row-17
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "Actor"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Controller of DER unit"^^xsd:string ;
+  NewDERentities:entity "entity:DERController-generic--264"^^xsd:string ;
+  NewDERentities:hierarchy "Physical"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2017"^^xsd:int ;
+  NewDERentities:label "DER Controller (generic)"^^xsd:string ;
+  NewDERentities:name "DER Controller (generic)"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2017"^^xsd:int ;
+.
+NewDERentities:Row-18
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "Actor"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "DER unit that includes generation of electrical energy"^^xsd:string ;
+  NewDERentities:entity "entity:DERGeneratingUnit-generic--266"^^xsd:string ;
+  NewDERentities:hierarchy "Physical"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2018"^^xsd:int ;
+  NewDERentities:label "DER Generating Unit (generic)"^^xsd:string ;
+  NewDERentities:name "DER Generating Unit (generic)"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2018"^^xsd:int ;
+.
+NewDERentities:Row-19
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "Actor"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Log of significant events and alarms for use in market settlements, operational analysis, and other audit purposes"^^xsd:string ;
+  NewDERentities:entity "entity:DERLog-267"^^xsd:string ;
+  NewDERentities:hierarchy "Physical"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2019"^^xsd:int ;
+  NewDERentities:label "DER Log"^^xsd:string ;
+  NewDERentities:name "DER Log"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2019"^^xsd:int ;
+.
+NewDERentities:Row-2
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:description "An EPS that serves Local EPSs"^^xsd:string ;
+  NewDERentities:index "2002"^^xsd:int ;
+  NewDERentities:name "Area EPS"^^xsd:string ;
+  tables:rowIndex "2002"^^xsd:int ;
+.
+NewDERentities:Row-20
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "Actor"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "System that manages the settings and dispatch of DER systems"^^xsd:string ;
+  NewDERentities:entity "entity:DERManagementSystem-DERMS--generic--270"^^xsd:string ;
+  NewDERentities:hierarchy "Logical"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2020"^^xsd:int ;
+  NewDERentities:label "DER Management System (DER-MS) (generic)"^^xsd:string ;
+  NewDERentities:name "DER Management System (DER-MS) (generic)"^^xsd:string ;
+  NewDERentities:note "Lvl 2 FDEMS"^^xsd:string ;
+  NewDERentities:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2020"^^xsd:int ;
+.
+NewDERentities:Row-21
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "Actor"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Meter that records the energy produced within specified time periods, energy used within specified time periods for DER charging of storage, and demand curves of DER generation and storage over time"^^xsd:string ;
+  NewDERentities:entity "entity:DERMeter-271"^^xsd:string ;
+  NewDERentities:hierarchy "Physical"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2021"^^xsd:int ;
+  NewDERentities:label "DER Meter"^^xsd:string ;
+  NewDERentities:name "DER Meter"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2021"^^xsd:int ;
+.
+NewDERentities:Row-22
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "ServiceComposition"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Responsible party for market and financial decisions  and contracts related to the facilities and their DER systems (generation, storage, and controllable load)"^^xsd:string ;
+  NewDERentities:entity "entity:DEROwner-generic--274"^^xsd:string ;
+  NewDERentities:hierarchy "Conceptual"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2022"^^xsd:int ;
+  NewDERentities:label "DER Owner (generic)"^^xsd:string ;
+  NewDERentities:name "DER Owner (generic)"^^xsd:string ;
+  NewDERentities:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2022"^^xsd:int ;
+.
+NewDERentities:Row-23
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "Actor"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Safety-related function to prevent harm to personnel, the DER system, and/or other electrical equipment"^^xsd:string ;
+  NewDERentities:entity "entity:DERProtectionFunction-275"^^xsd:string ;
+  NewDERentities:hierarchy "Physical"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2023"^^xsd:int ;
+  NewDERentities:label "DER Protection Function"^^xsd:string ;
+  NewDERentities:name "DER Protection Function"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2023"^^xsd:int ;
+.
+NewDERentities:Row-24
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "Actor"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "DER unit that includes energy storage that can be converted to electrical energy"^^xsd:string ;
+  NewDERentities:entity "entity:DERStorageUnit-generic--278"^^xsd:string ;
+  NewDERentities:hierarchy "Physical"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2024"^^xsd:int ;
+  NewDERentities:label "DER Storage Unit (generic)"^^xsd:string ;
+  NewDERentities:name "DER Storage Unit (generic)"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2024"^^xsd:int ;
+.
+NewDERentities:Row-25
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "ServiceComposition"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Combined DER controller and DER unit, including generators, energy storage, and controllable load"^^xsd:string ;
+  NewDERentities:entity "entity:DERSystem-generic--281"^^xsd:string ;
+  NewDERentities:hierarchy "Physical"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2025"^^xsd:int ;
+  NewDERentities:label "DER System (generic)"^^xsd:string ;
+  NewDERentities:name "DER System (generic)"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2025"^^xsd:int ;
+.
+NewDERentities:Row-26
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "Actor"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Prime mover and converter to and/or from electrical energy, , including generators, energy storage, and controllable load"^^xsd:string ;
+  NewDERentities:entity "entity:DERUnit-generic--282"^^xsd:string ;
+  NewDERentities:hierarchy "Physical"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2026"^^xsd:int ;
+  NewDERentities:label "DER Unit (generic)"^^xsd:string ;
+  NewDERentities:name "DER Unit (generic)"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2026"^^xsd:int ;
+.
+NewDERentities:Row-27
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "ServiceComposition"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "A distributed set of one or more energy service resources, including generators, energy storage, controllable load, and ancillary services"^^xsd:string ;
+  NewDERentities:entity "entity:DistributedEnergyResource-DER--generic--314"^^xsd:string ;
+  NewDERentities:hierarchy "Physical"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2027"^^xsd:int ;
+  NewDERentities:label "Distributed Energy Resource (DER) (generic)"^^xsd:string ;
+  NewDERentities:name "Distributed Energy Resource (DER) (generic)"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2027"^^xsd:int ;
+.
+NewDERentities:Row-28
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Generic term for all applications used for distribution management."^^xsd:string ;
+  NewDERentities:entity "entity:DistributionManagementSystem-DMS--338"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2028"^^xsd:int ;
+  NewDERentities:label "Distribution Management System (DMS)"^^xsd:string ;
+  NewDERentities:name "Distribution Management System (DMS)"^^xsd:string ;
+  NewDERentities:note "Lvl 4 DSO"^^xsd:string ;
+  NewDERentities:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2028"^^xsd:int ;
+.
+NewDERentities:Row-29
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "ServiceComposition"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Topological model of distribution system, including the location and profile characteristics of all distribution equipment and DER systems (individually and/or in aggregate). This model is derived from the geographic model in the GIS, the facilities information (often included in the GIS and/or an asset management database), and the DER profiles (derived from the CIS and DER characteristics database)"^^xsd:string ;
+  NewDERentities:entity "entity:DistributionOperationsModelAndAnalysis-DOMA--342"^^xsd:string ;
+  NewDERentities:hierarchy "Physical"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2029"^^xsd:int ;
+  NewDERentities:label "Distribution Operations Model and Analysis (DOMA)"^^xsd:string ;
+  NewDERentities:name "Distribution Operations Model and Analysis (DOMA)"^^xsd:string ;
+  NewDERentities:note "Lvl 4 DSO"^^xsd:string ;
+  tables:rowIndex "2029"^^xsd:int ;
+.
+NewDERentities:Row-3
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "ServiceComposition"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Market rules and procedures used for bidding and accepting electricity services at the bulk power (HV) level, including providing electric energy, frequency management, operational reserves, and other ancillary services"^^xsd:string ;
+  NewDERentities:entity "entity:BalancingAuthority-market--73"^^xsd:string ;
+  NewDERentities:harmonizationNotes "unclear if rows 76 & 77 are different"^^xsd:string ;
+  NewDERentities:hierarchy "Conceptual"^^xsd:string ;
+  NewDERentities:homeworkBlocks "1899-12-31T15:00:00"^^xsd:dateTime ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2003"^^xsd:int ;
+  NewDERentities:label "Balancing Authority (market)"^^xsd:string ;
+  NewDERentities:name "Balancing Authority (market)"^^xsd:string ;
+  NewDERentities:note "Lvl 5 Trans. And Market"^^xsd:string ;
+  tables:rowIndex "2003"^^xsd:int ;
+.
+NewDERentities:Row-30
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Distribution system for monitoring and controlling distribution equipment in real time"^^xsd:string ;
+  NewDERentities:entity "entity:DistributionSCADASystem-DSCADA--349"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2030"^^xsd:int ;
+  NewDERentities:label "Distribution SCADA System (DSCADA)"^^xsd:string ;
+  NewDERentities:name "Distribution SCADA System (DSCADA)"^^xsd:string ;
+  tables:rowIndex "2030"^^xsd:int ;
+.
+NewDERentities:Row-31
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "ServiceComposition"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Application that determines the power flows of the distribution system, using the DOMA model"^^xsd:string ;
+  NewDERentities:entity "entity:DistributionSystemPowerFlow-DSPF--360"^^xsd:string ;
+  NewDERentities:hierarchy "Logical"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2031"^^xsd:int ;
+  NewDERentities:label "Distribution System Power Flow (DSPF)"^^xsd:string ;
+  NewDERentities:name "Distribution System Power Flow (DSPF)"^^xsd:string ;
+  NewDERentities:note "Lvl 4 DSO"^^xsd:string ;
+  tables:rowIndex "2031"^^xsd:int ;
+.
+NewDERentities:Row-32
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:description "Utility responsible for operating the distribution power system"^^xsd:string ;
+  NewDERentities:index "2032"^^xsd:int ;
+  NewDERentities:name "Distribution System Operator (DSO)"^^xsd:string ;
+  tables:rowIndex "2032"^^xsd:int ;
+.
+NewDERentities:Row-33
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Distribution utility DER energy management system"^^xsd:string ;
+  NewDERentities:entity "entity:DSODEREMS-DDEMS--370"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2033"^^xsd:int ;
+  NewDERentities:label "DSO DER EMS (DDEMS)"^^xsd:string ;
+  NewDERentities:name "DSO DER EMS (DDEMS)"^^xsd:string ;
+  NewDERentities:note "Lvl 4 DSO"^^xsd:string ;
+  tables:rowIndex "2033"^^xsd:int ;
+.
+NewDERentities:Row-34
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "Service"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Distribution utility planner for distribution systems"^^xsd:string ;
+  NewDERentities:entity "entity:DSOPlanner-372"^^xsd:string ;
+  NewDERentities:hierarchy "Logical"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2034"^^xsd:int ;
+  NewDERentities:label "DSO Planner"^^xsd:string ;
+  NewDERentities:name "DSO Planner"^^xsd:string ;
+  NewDERentities:note "Lvl 4 DSO"^^xsd:string ;
+  tables:rowIndex "2034"^^xsd:int ;
+.
+NewDERentities:Row-35
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:description "Operator responsible for making decisions for operating the distribution power system"^^xsd:string ;
+  NewDERentities:index "2035"^^xsd:int ;
+  NewDERentities:name "DSO Operator"^^xsd:string ;
+  tables:rowIndex "2035"^^xsd:int ;
+.
+NewDERentities:Row-36
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Facilities that deliver electric power to a load"^^xsd:string ;
+  NewDERentities:entity "entity:ElectricPowerSystem-EPS--generic--385"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2036"^^xsd:int ;
+  NewDERentities:label "Electric Power System (EPS) (generic)"^^xsd:string ;
+  NewDERentities:name "Electric Power System (EPS) (generic)"^^xsd:string ;
+  NewDERentities:note "Lvl 0 EPS"^^xsd:string ;
+  tables:rowIndex "2036"^^xsd:int ;
+.
+NewDERentities:Row-37
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:index "2037"^^xsd:int ;
+  NewDERentities:name "Energy storage system (ESS)"^^xsd:string ;
+  tables:rowIndex "2037"^^xsd:int ;
+.
+NewDERentities:Row-38
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Automobile which is powered completely or in part by electricity and whose battery can be charged from an EPS"^^xsd:string ;
+  NewDERentities:entity "entity:ElectricVehicle-EV--390"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2038"^^xsd:int ;
+  NewDERentities:label "Electric Vehicle (EV)"^^xsd:string ;
+  NewDERentities:name "Electric Vehicle (EV)"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  NewDERentities:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2038"^^xsd:int ;
+.
+NewDERentities:Row-39
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "System that manages the settings for charging electric vehicles, including as DER systems"^^xsd:string ;
+  NewDERentities:entity "entity:ElectricVehicleEMS-EVEMS--393"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2039"^^xsd:int ;
+  NewDERentities:label "Electric Vehicle EMS (EVEMS)"^^xsd:string ;
+  NewDERentities:name "Electric Vehicle EMS (EVEMS)"^^xsd:string ;
+  NewDERentities:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2039"^^xsd:int ;
+.
+NewDERentities:Row-4
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "Actor"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:entity "entity:BiomassPlant-82"^^xsd:string ;
+  NewDERentities:hierarchy "Physical"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2004"^^xsd:int ;
+  NewDERentities:label "Biomass plant"^^xsd:string ;
+  NewDERentities:name "Biomass plant"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2004"^^xsd:int ;
+.
+NewDERentities:Row-40
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Charging equipment for electric vehicles"^^xsd:string ;
+  NewDERentities:entity "entity:ElectricVehicleSupplyEquipment-EVSE--396"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2040"^^xsd:int ;
+  NewDERentities:label "Electric Vehicle Supply Equipment (EVSE)"^^xsd:string ;
+  NewDERentities:name "Electric Vehicle Supply Equipment (EVSE)"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER & Lvl 2 FDEMS"^^xsd:string ;
+  NewDERentities:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2040"^^xsd:int ;
+.
+NewDERentities:Row-41
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "Actor"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Point of electrical connection between the DER source or sink of energy and any EPS. Each DER unit has an ECP connecting it to its local power system; groups of DER units have an ECP where they interconnect to the power system at a specific site or plant; a group of DER units plus local loads have an ECP where they are interconnected to the utility power system. NOTE?For those ECPs between a utility EPS and a plant or site EPS, this point is identical to the point of common coupling (PCC) in the IEEE 1547 \"Standard for Interconnecting Distributed Resources with Electric Power Systems\"."^^xsd:string ;
+  NewDERentities:entity "entity:ElectricalPointOfConnection-ECP--402"^^xsd:string ;
+  NewDERentities:hierarchy "Physical"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2041"^^xsd:int ;
+  NewDERentities:label "Electrical Point of Connection (ECP)"^^xsd:string ;
+  NewDERentities:name "Electrical Point of Connection (ECP)"^^xsd:string ;
+  tables:rowIndex "2041"^^xsd:int ;
+.
+NewDERentities:Row-42
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Interface between home area networks and the external actors"^^xsd:string ;
+  NewDERentities:entity "entity:EnergyServicesInterface-ESI--451"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2042"^^xsd:int ;
+  NewDERentities:label "Energy Services Interface (ESI)"^^xsd:string ;
+  NewDERentities:name "Energy Services Interface (ESI)"^^xsd:string ;
+  NewDERentities:note "Lvl 2 FDEMS"^^xsd:string ;
+  NewDERentities:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2042"^^xsd:int ;
+.
+NewDERentities:Row-43
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "ServiceComposition"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Switch plus its controller within an EPS"^^xsd:string ;
+  NewDERentities:entity "entity:EPSSwitch-466"^^xsd:string ;
+  NewDERentities:hierarchy "Physical"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2043"^^xsd:int ;
+  NewDERentities:label "EPS switch"^^xsd:string ;
+  NewDERentities:name "EPS switch"^^xsd:string ;
+  NewDERentities:note "Lvl 0 EPS"^^xsd:string ;
+  tables:rowIndex "2043"^^xsd:int ;
+.
+NewDERentities:Row-44
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "Service"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Special pricing for charging EVs"^^xsd:string ;
+  NewDERentities:entity "entity:EVPricingProgram-478"^^xsd:string ;
+  NewDERentities:hierarchy "Logical"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2044"^^xsd:int ;
+  NewDERentities:label "EV Pricing Program"^^xsd:string ;
+  NewDERentities:name "EV Pricing Program"^^xsd:string ;
+  NewDERentities:note "Lvl 5 Trans. And Market"^^xsd:string ;
+  tables:rowIndex "2044"^^xsd:int ;
+.
+NewDERentities:Row-45
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "System that manages the settings and dispatch of DER systems within a facility. This facility could be a residence, a building, a commercial site, an industrial site, or any other generic location."^^xsd:string ;
+  NewDERentities:entity "entity:FacilityDEREMS-FDEMS--495"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2045"^^xsd:int ;
+  NewDERentities:label "Facility DER EMS (FDEMS)"^^xsd:string ;
+  NewDERentities:name "Facility DER EMS (FDEMS)"^^xsd:string ;
+  NewDERentities:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2045"^^xsd:int ;
+.
+NewDERentities:Row-46
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Facility LAN"^^xsd:string ;
+  NewDERentities:entity "entity:FacilityLocalAreaNetwork-FacilityLAN--497"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2046"^^xsd:int ;
+  NewDERentities:label "Facility Local Area Network (Facility LAN)"^^xsd:string ;
+  NewDERentities:name "Facility Local Area Network (Facility LAN)"^^xsd:string ;
+  NewDERentities:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2046"^^xsd:int ;
+.
+NewDERentities:Row-47
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:entity "entity:FuelCell-542"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2047"^^xsd:int ;
+  NewDERentities:label "Fuel cell"^^xsd:string ;
+  NewDERentities:name "Fuel cell"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2047"^^xsd:int ;
+.
+NewDERentities:Row-48
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:entity "entity:GasTurbine-545"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2048"^^xsd:int ;
+  NewDERentities:label "Gas turbine"^^xsd:string ;
+  NewDERentities:name "Gas turbine"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2048"^^xsd:int ;
+.
+NewDERentities:Row-49
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Geographic model of the distribution system, including the location and characteristics of all distribution equipment and DER systems (individually and/or in aggregate)"^^xsd:string ;
+  NewDERentities:entity "entity:GeographicInformationSystem-GIS--562"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2049"^^xsd:int ;
+  NewDERentities:label "Geographic Information System (GIS)"^^xsd:string ;
+  NewDERentities:name "Geographic Information System (GIS)"^^xsd:string ;
+  NewDERentities:note "Lvl 4 DSO"^^xsd:string ;
+  NewDERentities:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2049"^^xsd:int ;
+.
+NewDERentities:Row-5
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "Actor"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "System that manages the settings and dispatch of DER systems within a building"^^xsd:string ;
+  NewDERentities:entity "entity:BuildingDEREMS-BDEMS--87"^^xsd:string ;
+  NewDERentities:hierarchy "Logical"^^xsd:string ;
+  NewDERentities:homeworkBlocks "1899-12-31T15:00:00"^^xsd:dateTime ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2005"^^xsd:int ;
+  NewDERentities:label "Building DER EMS (BDEMS)"^^xsd:string ;
+  NewDERentities:name "Building DER EMS (BDEMS)"^^xsd:string ;
+  NewDERentities:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2005"^^xsd:int ;
+.
+NewDERentities:Row-50
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:entity "entity:HydroPlant-596"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2050"^^xsd:int ;
+  NewDERentities:label "Hydro plant"^^xsd:string ;
+  NewDERentities:name "Hydro plant"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  NewDERentities:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2050"^^xsd:int ;
+.
+NewDERentities:Row-51
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "An EPS contained entirely within a single premises or group of premises"^^xsd:string ;
+  NewDERentities:entity "entity:LocalEPS-645"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2051"^^xsd:int ;
+  NewDERentities:label "Local EPS"^^xsd:string ;
+  NewDERentities:name "Local EPS"^^xsd:string ;
+  NewDERentities:note "Lvl 0 EPS"^^xsd:string ;
+  tables:rowIndex "2051"^^xsd:int ;
+.
+NewDERentities:Row-52
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:description "Metering data management system"^^xsd:string ;
+  NewDERentities:index "2052"^^xsd:int ;
+  NewDERentities:name "Meter Data Management System (MDMS)"^^xsd:string ;
+  tables:rowIndex "2052"^^xsd:int ;
+.
+NewDERentities:Row-53
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "System that manages the settings and dispatch of DER systems within a microgrid, and that can cause the microgrid to become an island and to reconnect with the Area EPS."^^xsd:string ;
+  NewDERentities:entity "entity:MicrogridDEREMS-MDEMS--799"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2053"^^xsd:int ;
+  NewDERentities:label "Microgrid DER EMS (MDEMS)"^^xsd:string ;
+  NewDERentities:name "Microgrid DER EMS (MDEMS)"^^xsd:string ;
+  NewDERentities:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2053"^^xsd:int ;
+.
+NewDERentities:Row-54
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "A Local EPS that can operate as an island and is operated as a virtual resource to the Area EPS"^^xsd:string ;
+  NewDERentities:entity "entity:MicrogridEPS-801"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2054"^^xsd:int ;
+  NewDERentities:label "Microgrid EPS"^^xsd:string ;
+  NewDERentities:name "Microgrid EPS"^^xsd:string ;
+  NewDERentities:note "Lvl 0 EPS"^^xsd:string ;
+  tables:rowIndex "2054"^^xsd:int ;
+.
+NewDERentities:Row-55
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Responsible party for operational aspects of a microgrid"^^xsd:string ;
+  NewDERentities:entity "entity:MicrogridOperator-802"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2055"^^xsd:int ;
+  NewDERentities:label "Microgrid Operator"^^xsd:string ;
+  NewDERentities:name "Microgrid Operator"^^xsd:string ;
+  NewDERentities:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2055"^^xsd:int ;
+.
+NewDERentities:Row-56
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Responsible party for market and financial decisions and contracts related to a microgrid"^^xsd:string ;
+  NewDERentities:entity "entity:MicrogridOwner-804"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2056"^^xsd:int ;
+  NewDERentities:label "Microgrid Owner"^^xsd:string ;
+  NewDERentities:name "Microgrid Owner"^^xsd:string ;
+  NewDERentities:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2056"^^xsd:int ;
+.
+NewDERentities:Row-57
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Load that is not allowed to be modified"^^xsd:string ;
+  NewDERentities:entity "entity:NonControllableLoad-867"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2057"^^xsd:int ;
+  NewDERentities:label "Non-Controllable Load"^^xsd:string ;
+  NewDERentities:name "Non-Controllable Load"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2057"^^xsd:int ;
+.
+NewDERentities:Row-58
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Loads within a Local EPS having the lowest priority of service.  These loads may be left unserved in favor of Critical Loads."^^xsd:string ;
+  NewDERentities:entity "entity:NonCriticalLoad-868"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2058"^^xsd:int ;
+  NewDERentities:label "Non-Critical Load"^^xsd:string ;
+  NewDERentities:name "Non-Critical Load"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2058"^^xsd:int ;
+.
+NewDERentities:Row-59
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "DER system not participating in frequency or voltage regulation."^^xsd:string ;
+  NewDERentities:entity "entity:NonRegulatingDERSystem-870"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2059"^^xsd:int ;
+  NewDERentities:label "Non-regulating DER System"^^xsd:string ;
+  NewDERentities:name "Non-regulating DER System"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2059"^^xsd:int ;
+.
+NewDERentities:Row-6
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:description "Operator in charge of managing the bulk power market"^^xsd:string ;
+  NewDERentities:index "2006"^^xsd:int ;
+  NewDERentities:name "Bulk power market operator"^^xsd:string ;
+  tables:rowIndex "2006"^^xsd:int ;
+.
+NewDERentities:Row-60
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Outage management system used by utilities to capture customer outage information"^^xsd:string ;
+  NewDERentities:entity "entity:OutageManagementSystem-OMS--900"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2060"^^xsd:int ;
+  NewDERentities:label "Outage Management System (OMS)"^^xsd:string ;
+  NewDERentities:name "Outage Management System (OMS)"^^xsd:string ;
+  NewDERentities:note "Lvl 4 DSO"^^xsd:string ;
+  NewDERentities:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2060"^^xsd:int ;
+.
+NewDERentities:Row-61
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Switch plus its controller at the point of common coupling (PCC) between the Local EPS and the Area EPS"^^xsd:string ;
+  NewDERentities:entity "entity:PCCSwitch-914"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2061"^^xsd:int ;
+  NewDERentities:label "PCC Switch"^^xsd:string ;
+  NewDERentities:name "PCC Switch"^^xsd:string ;
+  NewDERentities:note "Lvl 0 EPS"^^xsd:string ;
+  tables:rowIndex "2061"^^xsd:int ;
+.
+NewDERentities:Row-62
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:entity "entity:PhotovoltaicSystem-PV--924"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2062"^^xsd:int ;
+  NewDERentities:label "Photovoltaic system (PV)"^^xsd:string ;
+  NewDERentities:name "Photovoltaic system (PV)"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2062"^^xsd:int ;
+.
+NewDERentities:Row-63
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "The point where a Local EPS is connected to an Area EPS, typically associated with a meter"^^xsd:string ;
+  NewDERentities:entity "entity:PointOfCommonCoupling-PCC--932"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2063"^^xsd:int ;
+  NewDERentities:label "Point of Common Coupling (PCC)"^^xsd:string ;
+  NewDERentities:name "Point of Common Coupling (PCC)"^^xsd:string ;
+  NewDERentities:note "Lvl 0 EPS"^^xsd:string ;
+  NewDERentities:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2063"^^xsd:int ;
+.
+NewDERentities:Row-64
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "System that manages the settings and dispatch of DER systems within a power plant"^^xsd:string ;
+  NewDERentities:entity "entity:PowerPlantDEREMS-PDEMS--945"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2064"^^xsd:int ;
+  NewDERentities:label "Power Plant DER EMS (PDEMS)"^^xsd:string ;
+  NewDERentities:name "Power Plant DER EMS (PDEMS)"^^xsd:string ;
+  NewDERentities:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2064"^^xsd:int ;
+.
+NewDERentities:Row-65
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Responsible party for operational aspects of a power plant"^^xsd:string ;
+  NewDERentities:entity "entity:PowerPlantOperator-946"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2065"^^xsd:int ;
+  NewDERentities:label "Power Plant Operator"^^xsd:string ;
+  NewDERentities:name "Power Plant Operator"^^xsd:string ;
+  NewDERentities:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2065"^^xsd:int ;
+.
+NewDERentities:Row-66
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Responsible party for market and financial decisions and contracts related to a power plant"^^xsd:string ;
+  NewDERentities:entity "entity:PowerPlantOwner-947"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2066"^^xsd:int ;
+  NewDERentities:label "Power Plant Owner"^^xsd:string ;
+  NewDERentities:name "Power Plant Owner"^^xsd:string ;
+  NewDERentities:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2066"^^xsd:int ;
+.
+NewDERentities:Row-67
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:description "The Internet"^^xsd:string ;
+  NewDERentities:index "2067"^^xsd:int ;
+  NewDERentities:name "Public Internet"^^xsd:string ;
+  tables:rowIndex "2067"^^xsd:int ;
+.
+NewDERentities:Row-68
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Telecommunications network provided by telecommunications provider"^^xsd:string ;
+  NewDERentities:entity "entity:PublicNetwork-1001"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2068"^^xsd:int ;
+  NewDERentities:label "Public Network"^^xsd:string ;
+  NewDERentities:name "Public Network"^^xsd:string ;
+  NewDERentities:note "Lvl 3 REP and ICT"^^xsd:string ;
+  tables:rowIndex "2068"^^xsd:int ;
+.
+NewDERentities:Row-69
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:entity "entity:PumpedWaterStorage-1003"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2069"^^xsd:int ;
+  NewDERentities:label "Pumped water storage"^^xsd:string ;
+  NewDERentities:name "Pumped water storage"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2069"^^xsd:int ;
+.
+NewDERentities:Row-7
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:description "GPRS Cellular phone system"^^xsd:string ;
+  NewDERentities:index "2007"^^xsd:int ;
+  NewDERentities:name "Cellular system"^^xsd:string ;
+  tables:rowIndex "2007"^^xsd:int ;
+.
+NewDERentities:Row-70
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "DER system responsible for frequency and/or voltage regulation.  The regulating DER system could be a generator, an energy storage system, or controllable load."^^xsd:string ;
+  NewDERentities:entity "entity:RegulatingDERSystem-1037"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2070"^^xsd:int ;
+  NewDERentities:label "Regulating DER System"^^xsd:string ;
+  NewDERentities:name "Regulating DER System"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2070"^^xsd:int ;
+.
+NewDERentities:Row-71
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "DER system whose prime mover energy comes from renewable sources, including water, solar, wind, and biofuels"^^xsd:string ;
+  NewDERentities:entity "entity:RenewableDER-1043"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2071"^^xsd:int ;
+  NewDERentities:label "Renewable DER"^^xsd:string ;
+  NewDERentities:name "Renewable DER"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2071"^^xsd:int ;
+.
+NewDERentities:Row-72
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "System that manages the settings and dispatch of DER systems that have been contracted to be operated by REPs and/or Aggregators"^^xsd:string ;
+  NewDERentities:entity "entity:RetailDEREnergyManagementSystem-RDEMS--1066"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2072"^^xsd:int ;
+  NewDERentities:label "Retail DER Energy Management System (RDEMS)"^^xsd:string ;
+  NewDERentities:name "Retail DER Energy Management System (RDEMS)"^^xsd:string ;
+  NewDERentities:note "Lvl 3 REP and ICT"^^xsd:string ;
+  tables:rowIndex "2072"^^xsd:int ;
+.
+NewDERentities:Row-73
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Third party managing DER systems based on market information"^^xsd:string ;
+  NewDERentities:entity "entity:RetailEnergyProvider-REP--1068"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2073"^^xsd:int ;
+  NewDERentities:label "Retail Energy Provider (REP)"^^xsd:string ;
+  NewDERentities:name "Retail Energy Provider (REP)"^^xsd:string ;
+  NewDERentities:note "Lvl 3 REP and ICT"^^xsd:string ;
+  tables:rowIndex "2073"^^xsd:int ;
+.
+NewDERentities:Row-74
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Market rules and procedures used for buying and selling electricity products at the distribution level, including electric energy, voltage management, and other distribution reliability and efficiency services"^^xsd:string ;
+  NewDERentities:entity "entity:RetailMarket-generic--1070"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2074"^^xsd:int ;
+  NewDERentities:label "Retail Market (generic)"^^xsd:string ;
+  NewDERentities:name "Retail Market (generic)"^^xsd:string ;
+  NewDERentities:note "Lvl 5 Trans. And Market"^^xsd:string ;
+  tables:rowIndex "2074"^^xsd:int ;
+.
+NewDERentities:Row-75
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Equipment that synchronizes the frequency between two EPSs"^^xsd:string ;
+  NewDERentities:entity "entity:SynchronizingEquipment-1161"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2075"^^xsd:int ;
+  NewDERentities:label "Synchronizing equipment"^^xsd:string ;
+  NewDERentities:name "Synchronizing equipment"^^xsd:string ;
+  NewDERentities:note "Lvl 0 EPS"^^xsd:string ;
+  tables:rowIndex "2075"^^xsd:int ;
+.
+NewDERentities:Row-76
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "TDEMS is part of the TSO EMS that manages large DER systems or large aggregations of smaller DER systems"^^xsd:string ;
+  NewDERentities:entity "entity:TDEMSOrTSOEMS-1181"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2076"^^xsd:int ;
+  NewDERentities:label "TDEMS or TSO EMS"^^xsd:string ;
+  NewDERentities:name "TDEMS or TSO EMS"^^xsd:string ;
+  NewDERentities:note "Lvl 5 Trans. And Market"^^xsd:string ;
+  tables:rowIndex "2076"^^xsd:int ;
+.
+NewDERentities:Row-77
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Source of an accurate time signal"^^xsd:string ;
+  NewDERentities:entity "entity:TimeSynchronizationSource-1190"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2077"^^xsd:int ;
+  NewDERentities:label "Time Synchronization Source"^^xsd:string ;
+  NewDERentities:name "Time Synchronization Source"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  NewDERentities:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2077"^^xsd:int ;
+.
+NewDERentities:Row-78
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Model of the transmission buses used to interact between transmission and distribution systems"^^xsd:string ;
+  NewDERentities:entity "entity:TransmissionBusLoadModel-TBLM--1204"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2078"^^xsd:int ;
+  NewDERentities:label "Transmission Bus Load Model (TBLM)"^^xsd:string ;
+  NewDERentities:name "Transmission Bus Load Model (TBLM)"^^xsd:string ;
+  NewDERentities:note "Lvl 4 DSO"^^xsd:string ;
+  tables:rowIndex "2078"^^xsd:int ;
+.
+NewDERentities:Row-79
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:description "Market rules and procedures used for bidding and accepting transmission path rights"^^xsd:string ;
+  NewDERentities:index "2079"^^xsd:int ;
+  NewDERentities:name "Transmission Market"^^xsd:string ;
+  tables:rowIndex "2079"^^xsd:int ;
+.
+NewDERentities:Row-8
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "ServiceComposition"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "DER system whose primary purpose is creation of heat but can also provide electrical energy from the heat creation capability. In some circumstances, electrical energy is the primary purpose with heat as a secondary purpose"^^xsd:string ;
+  NewDERentities:entity "entity:CombinedHeatAndPower-CHP--130"^^xsd:string ;
+  NewDERentities:hierarchy "Physical"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2008"^^xsd:int ;
+  NewDERentities:label "Combined Heat and Power (CHP)"^^xsd:string ;
+  NewDERentities:name "Combined Heat and Power (CHP)"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2008"^^xsd:int ;
+.
+NewDERentities:Row-80
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Operator of a transmission system"^^xsd:string ;
+  NewDERentities:entity "entity:TransmissionSystemOperator-TSO--1221"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2080"^^xsd:int ;
+  NewDERentities:label "Transmission System Operator (TSO)"^^xsd:string ;
+  NewDERentities:name "Transmission System Operator (TSO)"^^xsd:string ;
+  NewDERentities:note "Lvl 5 Trans. And Market"^^xsd:string ;
+  NewDERentities:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2080"^^xsd:int ;
+.
+NewDERentities:Row-81
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Vehicle to Grid demand response program"^^xsd:string ;
+  NewDERentities:entity "entity:V2GDRProgram-1233"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2081"^^xsd:int ;
+  NewDERentities:label "V2G DR program"^^xsd:string ;
+  NewDERentities:name "V2G DR program"^^xsd:string ;
+  NewDERentities:note "Lvl 5 Trans. And Market"^^xsd:string ;
+  tables:rowIndex "2081"^^xsd:int ;
+.
+NewDERentities:Row-82
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "System that manages the settings and dispatch of DER systems that are enrolled in a virtual power plant"^^xsd:string ;
+  NewDERentities:entity "entity:VirtualPowerPlant-VPP-DEREMS-VDEMS--1242"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2082"^^xsd:int ;
+  NewDERentities:label "Virtual Power Plant (VPP) DER EMS (VDEMS)"^^xsd:string ;
+  NewDERentities:name "Virtual Power Plant (VPP) DER EMS (VDEMS)"^^xsd:string ;
+  NewDERentities:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2082"^^xsd:int ;
+.
+NewDERentities:Row-83
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "A set of one or more energy service resources, including generators, energy storage, controllable load, and ancillary services"^^xsd:string ;
+  NewDERentities:entity "entity:VirtualResource-generic--1243"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2083"^^xsd:int ;
+  NewDERentities:label "Virtual Resource (generic)"^^xsd:string ;
+  NewDERentities:name "Virtual Resource (generic)"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2083"^^xsd:int ;
+.
+NewDERentities:Row-84
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Meteorological service providing weather system that can affect DER capabilities"^^xsd:string ;
+  NewDERentities:entity "entity:WeatherSystem-1259"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2084"^^xsd:int ;
+  NewDERentities:label "Weather System"^^xsd:string ;
+  NewDERentities:name "Weather system for DER"^^xsd:string ;
+  NewDERentities:note "Lvl 0 EPS"^^xsd:string ;
+  tables:rowIndex "2084"^^xsd:int ;
+.
+NewDERentities:Row-85
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:description "Market rules and procedures used for bidding and accepting electricity services at the bulk power level, including providing electric energy, frequency management, operational reserves, transmission path rights, and other ancillary services"^^xsd:string ;
+  NewDERentities:index "2085"^^xsd:int ;
+  NewDERentities:name "Wholesale or Bulk Energy Market (generic)"^^xsd:string ;
+  tables:rowIndex "2085"^^xsd:int ;
+.
+NewDERentities:Row-86
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Communication networks used to interact between aggregators and facilities and/or DER systems"^^xsd:string ;
+  NewDERentities:entity "entity:WideAreaNetwork-WAN--1264"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2086"^^xsd:int ;
+  NewDERentities:label "Wide Area Network (WAN)"^^xsd:string ;
+  NewDERentities:name "Wide Area Network (WAN)"^^xsd:string ;
+  NewDERentities:note "Lvl 3 REP and ICT"^^xsd:string ;
+  tables:rowIndex "2086"^^xsd:int ;
+.
+NewDERentities:Row-87
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:entity "entity:WindTurbine-1269"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2087"^^xsd:int ;
+  NewDERentities:label "Wind turbine"^^xsd:string ;
+  NewDERentities:name "Wind turbine"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2087"^^xsd:int ;
+.
+NewDERentities:Row-88
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:entity "entity:WoodChipBoiler-1270"^^xsd:string ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2088"^^xsd:int ;
+  NewDERentities:label "Wood chip boiler"^^xsd:string ;
+  NewDERentities:name "Wood chip boiler"^^xsd:string ;
+  NewDERentities:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2088"^^xsd:int ;
+.
+NewDERentities:Row-9
+  rdf:type NewDERentities:Sheet1 ;
+  NewDERentities:actorOrService "Actor"^^xsd:string ;
+  NewDERentities:clusterLabel "DER"^^xsd:string ;
+  NewDERentities:description "Routers, gateways, and other intermediary devices in a communication network"^^xsd:string ;
+  NewDERentities:entity "entity:CommunicationNodes-139"^^xsd:string ;
+  NewDERentities:hierarchy "Physical"^^xsd:string ;
+  NewDERentities:homeworkBlocks "1899-12-31T15:00:00"^^xsd:dateTime ;
+  NewDERentities:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  NewDERentities:index "2009"^^xsd:int ;
+  NewDERentities:label "Communication Nodes"^^xsd:string ;
+  NewDERentities:name "Communication Nodes"^^xsd:string ;
+  NewDERentities:note "Lvl 3 REP and ICT"^^xsd:string ;
+  tables:rowIndex "2009"^^xsd:int ;
+.
+NewDERentities:Sheet1
+  rdf:type owl:Class ;
+  tables:sheetIndex "0"^^xsd:int ;
+  rdfs:label "Sheet1" ;
+.
+NewDERentities:aDWPOriginalFocus
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "7"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "aDWPOriginalFocus" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:aMISystems
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "8"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "aMISystems" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:actorOrService
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "4"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "actorOrService" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:actorTypeOrRole
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "9"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "actorTypeOrRole" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:ahGCharging
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "10"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "ahGCharging" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:archiMateTerminologyLayers
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "11"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "archiMateTerminologyLayers" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:businessFunctionService
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "12"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "businessFunctionService" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:cSWGActors
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "13"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "cSWGActors" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:cSWGNISTIR7628
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "14"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "cSWGNISTIR7628" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:clusterLabel
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "15"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "clusterLabel" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:colC
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "16"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "colC" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:colD
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "17"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "colD" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:conceptualModel
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "18"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "conceptualModel" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:dKERepository
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "19"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "dKERepository" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:demandResponse
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "20"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "demandResponse" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:description
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "6"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "description" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:distributionGridMgmt
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "21"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "distributionGridMgmt" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:eG3
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "22"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "eG3" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:eIS
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "23"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "eIS" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:eNTSOERoleModel
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "24"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "eNTSOERoleModel" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:eUCommission
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "25"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "eUCommission" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:eUSCCGWP1
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "26"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "eUSCCGWP1" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:eUSourceunknown
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "27"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "eUSourceunknown" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:eUWGSPVers05
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "28"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "eUWGSPVers05" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:electricStorage
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "29"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "electricStorage" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:electricTransportaion
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "30"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "electricTransportaion" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:entity
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "0"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "entity" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:gUC
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "31"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "gUC" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:harmonizationNotes
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "32"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "harmonizationNotes" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:hierarchy
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "5"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "hierarchy" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:homeworkBlocks
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "33"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "homeworkBlocks" ;
+  rdfs:range xsd:dateTime ;
+.
+NewDERentities:iEC61968IRM
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "34"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "iEC61968IRM" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:iECSG3
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "35"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "iECSG3" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:iECTC57WG19TC8WG6DERActorRoles
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "36"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "iECTC57WG19TC8WG6DERActorRoles" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:iEEEP2030Draft3
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "37"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "iEEEP2030Draft3" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:index
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "1"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "index" ;
+  rdfs:range xsd:int ;
+.
+NewDERentities:label
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "3"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "label" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:manufacturerCIMIECTypeOfZone
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "38"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "manufacturerCIMIECTypeOfZone" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:nAESB
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "39"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "nAESB" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:nISTLegacyDomain
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "40"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "nISTLegacyDomain" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:name
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "2"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "name" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:new
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "41"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "new" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:note
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "42"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "note" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:notes
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "43"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "notes" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "44"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "originalAlternativeEntityNameIncludingEntityNamesAreDuplicates" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:referenceDiagram
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "45"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "referenceDiagram" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:relatedRole
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "46"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "relatedRole" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:rolefromRoleTab
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "47"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "rolefromRoleTab" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:rowActionFlagDeletedHarmonizeh
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "48"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "rowActionFlagDeletedHarmonizeh" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:sGACConceptualArch
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "49"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "sGACConceptualArch" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:sMCG
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "50"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "sMCG" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:type
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "51"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "type" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:uSEUInput
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "52"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "uSEUInput" ;
+  rdfs:range xsd:string ;
+.
+NewDERentities:wASA
+  rdf:type owl:DatatypeProperty ;
+  tables:columnIndex "53"^^xsd:int ;
+  rdfs:domain NewDERentities:Sheet1 ;
+  rdfs:label "wASA" ;
+  rdfs:range xsd:string ;
+.

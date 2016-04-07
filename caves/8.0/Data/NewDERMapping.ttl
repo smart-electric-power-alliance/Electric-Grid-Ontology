@@ -1,0 +1,416 @@
+# baseURI: http://sv.cmu.edu/AWP/8.0/NewDERMapping
+# imports: http://sv.cmu.edu/AWP/8.0/NewDERResults
+# imports: http://sv.cmu.edu/AWP/8.0/NewDERentities
+# imports: http://topbraid.org/spin/spinmapl
+# prefix: NewDERMapping
+
+@prefix NewDERMapping: <http://sv.cmu.edu/AWP/8.0/NewDERMapping#> .
+@prefix entity: <http://sv.cmu.edu/AWP/8.0/entity#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix spinmap: <http://spinrdf.org/spinmap#> .
+@prefix spinmapl: <http://topbraid.org/spin/spinmapl#> .
+@prefix spl: <http://spinrdf.org/spl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://sv.cmu.edu/AWP/8.0/NewDERMapping>
+  rdf:type owl:Ontology ;
+  owl:imports <http://sv.cmu.edu/AWP/8.0/NewDERResults> ;
+  owl:imports <http://sv.cmu.edu/AWP/8.0/NewDERentities> ;
+  owl:imports <http://topbraid.org/spin/spinmapl> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
+NewDERMapping:Sheet1-Combined-Elements-noduprows
+  rdf:type spinmap:Context ;
+  spinmap:sourceClass <http://sv.cmu.edu/AWP/8.0/NewDERentities#Sheet1> ;
+  spinmap:target [
+      rdf:type spinmapl:buildURI2 ;
+      sp:arg1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#name> ;
+      sp:arg2 <http://topbraid.org/tables#rowIndex> ;
+      spinmap:source spinmap:_source ;
+      spinmapl:template "entity:{?1}-{?2}"^^xsd:string ;
+    ] ;
+  spinmap:targetClass <http://sv.cmu.edu/AWP/8.0/props#Combined-Elements-noduprows> ;
+.
+<http://sv.cmu.edu/AWP/8.0/NewDERentities#Sheet1>
+  spinmap:rule [
+      rdf:type spinmap:Mapping-0-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression <http://sv.cmu.edu/AWP/8.0/props#Combined-Elements-noduprows> ;
+      spinmap:targetPredicate1 rdf:type ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#aDWPOriginalFocus> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#aDWPOriginalFocus> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#aMISystems> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#aMISystems> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#actorOrService> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#actorServiceCompositionService> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#actorTypeOrRole> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#actorTypeOrRole> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#ahGCharging> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#ahGCharging> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#archiMateTerminologyLayers> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#archiMateTerminologyLayers> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#businessFunctionService> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#businessFunctionService> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#cSWGActors> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#cSWGActors> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#cSWGNISTIR7628> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#cSWGNISTIR7628> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#clusterLabel> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#clusterLabel> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#colC> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#colC> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#colD> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#colD> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#conceptualModel> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#conceptualModel> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#dKERepository> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#dKERepository> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#demandResponse> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#demandResponse> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#description> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#description_0> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#distributionGridMgmt> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#distributionGridMgmt> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#eG3> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#eG3> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#eIS> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#eIS> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#eNTSOERoleModel> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#eNTSOERoleModel> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#eUCommission> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#eUCommission> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#eUSCCGWP1> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#eUSCCGWP1> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#eUSourceunknown> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#eUSourceunknown> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#eUWGSPVers05> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#eUWGSPVers05> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#electricStorage> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#electricStorage> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#electricTransportaion> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#electricTransportaion> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#entity> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#entityName> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#gUC> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#gUC> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#harmonizationNotes> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#harmonizationNotes> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#hierarchy> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#hierarchyConceptualLogicalPhysical> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#homeworkBlocks> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#homeworkBlocks> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#iEC61968IRM> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#iEC61968IRM> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#iECSG3> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#iECSG3> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#iECTC57WG19TC8WG6DERActorRoles> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#iECTC57WG19TC8WG6DERActorRoles> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#iEEEP2030Draft3> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#iEEEP2030Draft3> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#manufacturerCIMIECTypeOfZone> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#manufacturerCIMIECTypeOfZone> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#nAESB> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#nAESB> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#nISTLegacyDomain> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#nISTLegacyDomain> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#name> ;
+      spinmap:targetPredicate1 rdfs:label ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#new> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#new> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#note> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#note> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#notes> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#notes> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#originalAlternativeEntityNameIncludingEntityNamesAreDuplicates> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#originalAlternativeEntityNameIncludingEntityNamesAreDuplicates> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#referenceDiagram> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#referenceDiagram> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#relatedRole> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#relatedRole> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#rolefromRoleTab> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#rolefromRoleTab> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#rowActionFlagDeletedHarmonizeh> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#rowActionFlagDeletedHarmonizeh> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#sGACConceptualArch> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#sGACConceptualArch> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#sMCG> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#sMCG> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#type> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#type> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#uSEUInput> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#uSEUInput> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://sv.cmu.edu/AWP/8.0/NewDERentities#wASA> ;
+      spinmap:targetPredicate1 <http://sv.cmu.edu/AWP/8.0/props#wASA> ;
+    ] ;
+  spinmap:rule [
+      rdf:type spinmap:Mapping-1-1 ;
+      spinmap:context NewDERMapping:Sheet1-Combined-Elements-noduprows ;
+      spinmap:expression spin:_arg1 ;
+      spinmap:sourcePredicate1 <http://topbraid.org/tables#rowIndex> ;
+      spinmap:targetPredicate1 <http://topbraid.org/tables#rowIndex> ;
+    ] ;
+.

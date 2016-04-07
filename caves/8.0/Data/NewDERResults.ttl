@@ -1,0 +1,946 @@
+# baseURI: http://sv.cmu.edu/AWP/8.0/NewDERResults
+# imports: http://sv.cmu.edu/AWP/8.0/ActorRoles
+# imports: http://sv.cmu.edu/AWP/8.0/props
+# prefix: NewDERResults
+
+@prefix entity: <http://sv.cmu.edu/AWP/8.0/entity#> .
+@prefix NewDERResults: <http://sv.cmu.edu/AWP/8.0/NewDERResults#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix props: <http://sv.cmu.edu/AWP/8.0/props#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tables: <http://topbraid.org/tables#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://sv.cmu.edu/AWP/8.0/NewDERResults>
+  rdf:type owl:Ontology ;
+  owl:imports <http://sv.cmu.edu/AWP/8.0/ActorRoles> ;
+  owl:imports <http://sv.cmu.edu/AWP/8.0/props> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Advanced_Metering_Infrastructure_(AMI)-2000>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Communications network used for interacting with meters"^^xsd:string ;
+  props:entityName "entity:AdvancedMeteringInfrastructure-AMI--21"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 3 REP and ICT"^^xsd:string ;
+  tables:rowIndex "2000"^^xsd:int ;
+  rdfs:label "Advanced Metering Infrastructure (AMI)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Aggregator-2001>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:aDWPOriginalFocus "X"^^xsd:string ;
+  props:aMISystems "X"^^xsd:string ;
+  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorTypeOrRole "role"^^xsd:string ;
+  props:cSWGNISTIR7628 "X"^^xsd:string ;
+  props:clusterLabel "p; DER"^^xsd:string ;
+  props:conceptualModel "X"^^xsd:string ;
+  props:dKERepository "X"^^xsd:string ;
+  props:demandResponse "X"^^xsd:string ;
+  props:description_0 "Third party managing aggregations of DER systems"^^xsd:string ;
+  props:distributionGridMgmt "X"^^xsd:string ;
+  props:eUCommission "X"^^xsd:string ;
+  props:electricStorage "X"^^xsd:string ;
+  props:electricTransportaion "X"^^xsd:string ;
+  props:entityName "entity:Aggregator-26"^^xsd:string ;
+  props:harmonizationNotes "H1 & H2 should be discussed with originating team"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
+  props:homeworkBlocks "1899-12-31T15:00:00"^^xsd:dateTime ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:manufacturerCIMIECTypeOfZone "Enterprise"^^xsd:string ;
+  props:nISTLegacyDomain "Service Provider"^^xsd:string ;
+  props:note "Lvl 3 REP and ICT; Distribution Grid Management/Microgrid"^^xsd:string ;
+  props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates "RM: Energy Services Company; NR: Aggregator / Retail Energy Provider; EU: Supplier; xx: Energy Services Aggregator"^^xsd:string ;
+  props:referenceDiagram "X"^^xsd:string ;
+  props:rolefromRoleTab "Manager"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H1"^^xsd:string ;
+  props:type "Organization"^^xsd:string ;
+  props:uSEUInput "US, EU"^^xsd:string ;
+  props:wASA "X"^^xsd:string ;
+  tables:rowIndex "2001"^^xsd:int ;
+  rdfs:label "Aggregator"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Area_EPS-2002>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:description_0 "An EPS that serves Local EPSs"^^xsd:string ;
+  tables:rowIndex "2002"^^xsd:int ;
+  rdfs:label "Area EPS"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Balancing_Authority_(market)-2003>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Market rules and procedures used for bidding and accepting electricity services at the bulk power (HV) level, including providing electric energy, frequency management, operational reserves, and other ancillary services"^^xsd:string ;
+  props:entityName "entity:BalancingAuthority-market--73"^^xsd:string ;
+  props:harmonizationNotes "unclear if rows 76 & 77 are different"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
+  props:homeworkBlocks "1899-12-31T15:00:00"^^xsd:dateTime ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 5 Trans. And Market"^^xsd:string ;
+  tables:rowIndex "2003"^^xsd:int ;
+  rdfs:label "Balancing Authority (market)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Biomass_plant-2004>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:entityName "entity:BiomassPlant-82"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2004"^^xsd:int ;
+  rdfs:label "Biomass plant"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Building_DER_EMS_(BDEMS)-2005>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "System that manages the settings and dispatch of DER systems within a building"^^xsd:string ;
+  props:entityName "entity:BuildingDEREMS-BDEMS--87"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
+  props:homeworkBlocks "1899-12-31T15:00:00"^^xsd:dateTime ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2005"^^xsd:int ;
+  rdfs:label "Building DER EMS (BDEMS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Bulk_power_market_operator-2006>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:description_0 "Operator in charge of managing the bulk power market"^^xsd:string ;
+  tables:rowIndex "2006"^^xsd:int ;
+  rdfs:label "Bulk power market operator"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Cellular_system-2007>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:description_0 "GPRS Cellular phone system"^^xsd:string ;
+  tables:rowIndex "2007"^^xsd:int ;
+  rdfs:label "Cellular system"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Combined_Heat_and_Power_(CHP)-2008>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "DER system whose primary purpose is creation of heat but can also provide electrical energy from the heat creation capability. In some circumstances, electrical energy is the primary purpose with heat as a secondary purpose"^^xsd:string ;
+  props:entityName "entity:CombinedHeatAndPower-CHP--130"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2008"^^xsd:int ;
+  rdfs:label "Combined Heat and Power (CHP)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Communication_Nodes-2009>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Routers, gateways, and other intermediary devices in a communication network"^^xsd:string ;
+  props:entityName "entity:CommunicationNodes-139"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:homeworkBlocks "1899-12-31T15:00:00"^^xsd:dateTime ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 3 REP and ICT"^^xsd:string ;
+  tables:rowIndex "2009"^^xsd:int ;
+  rdfs:label "Communication Nodes"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Community_EPS-2010>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:description_0 "A portion of the area EPS that is associated with a community. It may consist of multiple Local EPSs and could be operated as a virtual resource to the Area EPS"^^xsd:string ;
+  tables:rowIndex "2010"^^xsd:int ;
+  rdfs:label "Community EPS"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Critical_Load-2011>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Loads within a Local EPS having the highest priority of service.  These loads are served at the expense of all other loads."^^xsd:string ;
+  props:entityName "entity:CriticalLoad-202"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2011"^^xsd:int ;
+  rdfs:label "Critical Load"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Customer_Information_System_(CIS)-2012>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:description_0 "System with customer information, including personal information, billing information, customer profile information, etc."^^xsd:string ;
+  tables:rowIndex "2012"^^xsd:int ;
+  rdfs:label "Customer Information System (CIS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DC_EPS-2013>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "A Local EPS that operates direct current"^^xsd:string ;
+  props:entityName "entity:DCEPS-238"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 0 EPS"^^xsd:string ;
+  tables:rowIndex "2013"^^xsd:int ;
+  rdfs:label "DC EPS"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DER_Controllable_Load_(generic)-2016>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "DER that consists primarily of a load that is allowed to be modified based on operating conditions, tariffs, contracts, or other criteria"^^xsd:string ;
+  props:entityName "entity:DERControllableLoad-generic--263"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2016"^^xsd:int ;
+  rdfs:label "DER Controllable Load (generic)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DER_Controller_(generic)-2017>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Controller of DER unit"^^xsd:string ;
+  props:entityName "entity:DERController-generic--264"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2017"^^xsd:int ;
+  rdfs:label "DER Controller (generic)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DER_Generating_Unit_(generic)-2018>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "DER unit that includes generation of electrical energy"^^xsd:string ;
+  props:entityName "entity:DERGeneratingUnit-generic--266"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2018"^^xsd:int ;
+  rdfs:label "DER Generating Unit (generic)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DER_Log-2019>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Log of significant events and alarms for use in market settlements, operational analysis, and other audit purposes"^^xsd:string ;
+  props:entityName "entity:DERLog-267"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2019"^^xsd:int ;
+  rdfs:label "DER Log"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DER_Management_System_(DER-MS)_(generic)-2020>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "System that manages the settings and dispatch of DER systems"^^xsd:string ;
+  props:entityName "entity:DERManagementSystem-DERMS--generic--270"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 2 FDEMS"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2020"^^xsd:int ;
+  rdfs:label "DER Management System (DER-MS) (generic)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DER_Meter-2021>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Meter that records the energy produced within specified time periods, energy used within specified time periods for DER charging of storage, and demand curves of DER generation and storage over time"^^xsd:string ;
+  props:entityName "entity:DERMeter-271"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2021"^^xsd:int ;
+  rdfs:label "DER Meter"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DER_Owner_(generic)-2022>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Responsible party for market and financial decisions  and contracts related to the facilities and their DER systems (generation, storage, and controllable load)"^^xsd:string ;
+  props:entityName "entity:DEROwner-generic--274"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2022"^^xsd:int ;
+  rdfs:label "DER Owner (generic)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DER_Protection_Function-2023>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Safety-related function to prevent harm to personnel, the DER system, and/or other electrical equipment"^^xsd:string ;
+  props:entityName "entity:DERProtectionFunction-275"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2023"^^xsd:int ;
+  rdfs:label "DER Protection Function"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DER_Storage_Unit_(generic)-2024>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "DER unit that includes energy storage that can be converted to electrical energy"^^xsd:string ;
+  props:entityName "entity:DERStorageUnit-generic--278"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2024"^^xsd:int ;
+  rdfs:label "DER Storage Unit (generic)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DER_System_(generic)-2025>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Combined DER controller and DER unit, including generators, energy storage, and controllable load"^^xsd:string ;
+  props:entityName "entity:DERSystem-generic--281"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2025"^^xsd:int ;
+  rdfs:label "DER System (generic)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DER_Unit_(generic)-2026>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Prime mover and converter to and/or from electrical energy, , including generators, energy storage, and controllable load"^^xsd:string ;
+  props:entityName "entity:DERUnit-generic--282"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2026"^^xsd:int ;
+  rdfs:label "DER Unit (generic)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DSO_DER_EMS_(DDEMS)-2033>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Distribution utility DER energy management system"^^xsd:string ;
+  props:entityName "entity:DSODEREMS-DDEMS--370"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 4 DSO"^^xsd:string ;
+  tables:rowIndex "2033"^^xsd:int ;
+  rdfs:label "DSO DER EMS (DDEMS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DSO_Operator-2035>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:description_0 "Operator responsible for making decisions for operating the distribution power system"^^xsd:string ;
+  tables:rowIndex "2035"^^xsd:int ;
+  rdfs:label "DSO Operator"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DSO_Planner-2034>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Distribution utility planner for distribution systems"^^xsd:string ;
+  props:entityName "entity:DSOPlanner-372"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 4 DSO"^^xsd:string ;
+  tables:rowIndex "2034"^^xsd:int ;
+  rdfs:label "DSO Planner"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Demand_Response_(DR)_Pricing_Schedule-2014>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Schedule provided by REPs, DSOs, TSO, and others to indicate contractual and/or forecast prices for energy and ancillary services during specific time periods"^^xsd:string ;
+  props:entityName "entity:DemandResponse-DR-PricingSchedule-245"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 5 Trans. And Market"^^xsd:string ;
+  tables:rowIndex "2014"^^xsd:int ;
+  rdfs:label "Demand Response (DR) Pricing Schedule"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Demand_Response_(DR)_System-2015>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "System providing demand response pricing information for different energy products during different time frames"^^xsd:string ;
+  props:entityName "entity:DemandResponse-DR-System-246"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 5 Trans. And Market"^^xsd:string ;
+  tables:rowIndex "2015"^^xsd:int ;
+  rdfs:label "Demand Response (DR) System"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Distributed_Energy_Resource_(DER)_(generic)-2027>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "A distributed set of one or more energy service resources, including generators, energy storage, controllable load, and ancillary services"^^xsd:string ;
+  props:entityName "entity:DistributedEnergyResource-DER--generic--314"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2027"^^xsd:int ;
+  rdfs:label "Distributed Energy Resource (DER) (generic)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Distribution_Management_System_(DMS)-2028>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Generic term for all applications used for distribution management."^^xsd:string ;
+  props:entityName "entity:DistributionManagementSystem-DMS--338"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 4 DSO"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2028"^^xsd:int ;
+  rdfs:label "Distribution Management System (DMS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Distribution_Operations_Model_and_Analysis_(DOMA)-2029>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Topological model of distribution system, including the location and profile characteristics of all distribution equipment and DER systems (individually and/or in aggregate). This model is derived from the geographic model in the GIS, the facilities information (often included in the GIS and/or an asset management database), and the DER profiles (derived from the CIS and DER characteristics database)"^^xsd:string ;
+  props:entityName "entity:DistributionOperationsModelAndAnalysis-DOMA--342"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 4 DSO"^^xsd:string ;
+  tables:rowIndex "2029"^^xsd:int ;
+  rdfs:label "Distribution Operations Model and Analysis (DOMA)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Distribution_SCADA_System_(DSCADA)-2030>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Distribution system for monitoring and controlling distribution equipment in real time"^^xsd:string ;
+  props:entityName "entity:DistributionSCADASystem-DSCADA--349"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  tables:rowIndex "2030"^^xsd:int ;
+  rdfs:label "Distribution SCADA System (DSCADA)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Distribution_System_Operator_(DSO)-2032>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:description_0 "Utility responsible for operating the distribution power system"^^xsd:string ;
+  tables:rowIndex "2032"^^xsd:int ;
+  rdfs:label "Distribution System Operator (DSO)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Distribution_System_Power_Flow_(DSPF)-2031>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Application that determines the power flows of the distribution system, using the DOMA model"^^xsd:string ;
+  props:entityName "entity:DistributionSystemPowerFlow-DSPF--360"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 4 DSO"^^xsd:string ;
+  tables:rowIndex "2031"^^xsd:int ;
+  rdfs:label "Distribution System Power Flow (DSPF)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#EPS_switch-2043>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Switch plus its controller within an EPS"^^xsd:string ;
+  props:entityName "entity:EPSSwitch-466"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 0 EPS"^^xsd:string ;
+  tables:rowIndex "2043"^^xsd:int ;
+  rdfs:label "EPS switch"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#EV_Pricing_Program-2044>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Special pricing for charging EVs"^^xsd:string ;
+  props:entityName "entity:EVPricingProgram-478"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 5 Trans. And Market"^^xsd:string ;
+  tables:rowIndex "2044"^^xsd:int ;
+  rdfs:label "EV Pricing Program"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Electric_Power_System_(EPS)_(generic)-2036>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Facilities that deliver electric power to a load"^^xsd:string ;
+  props:entityName "entity:ElectricPowerSystem-EPS--generic--385"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 0 EPS"^^xsd:string ;
+  tables:rowIndex "2036"^^xsd:int ;
+  rdfs:label "Electric Power System (EPS) (generic)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Electric_Vehicle_(EV)-2038>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Automobile which is powered completely or in part by electricity and whose battery can be charged from an EPS"^^xsd:string ;
+  props:entityName "entity:ElectricVehicle-EV--390"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2038"^^xsd:int ;
+  rdfs:label "Electric Vehicle (EV)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Electric_Vehicle_EMS_(EVEMS)-2039>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "System that manages the settings for charging electric vehicles, including as DER systems"^^xsd:string ;
+  props:entityName "entity:ElectricVehicleEMS-EVEMS--393"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2039"^^xsd:int ;
+  rdfs:label "Electric Vehicle EMS (EVEMS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Electric_Vehicle_Supply_Equipment_(EVSE)-2040>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Charging equipment for electric vehicles"^^xsd:string ;
+  props:entityName "entity:ElectricVehicleSupplyEquipment-EVSE--396"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER & Lvl 2 FDEMS"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2040"^^xsd:int ;
+  rdfs:label "Electric Vehicle Supply Equipment (EVSE)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Electrical_Point_of_Connection_(ECP)-2041>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Point of electrical connection between the DER source or sink of energy and any EPS. Each DER unit has an ECP connecting it to its local power system; groups of DER units have an ECP where they interconnect to the power system at a specific site or plant; a group of DER units plus local loads have an ECP where they are interconnected to the utility power system. NOTE?For those ECPs between a utility EPS and a plant or site EPS, this point is identical to the point of common coupling (PCC) in the IEEE 1547 \"Standard for Interconnecting Distributed Resources with Electric Power Systems\"."^^xsd:string ;
+  props:entityName "entity:ElectricalPointOfConnection-ECP--402"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  tables:rowIndex "2041"^^xsd:int ;
+  rdfs:label "Electrical Point of Connection (ECP)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Energy_Services_Interface_(ESI)-2042>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Interface between home area networks and the external actors"^^xsd:string ;
+  props:entityName "entity:EnergyServicesInterface-ESI--451"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 2 FDEMS"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2042"^^xsd:int ;
+  rdfs:label "Energy Services Interface (ESI)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Energy_storage_system_(ESS)-2037>
+  rdf:type props:Combined-Elements-noduprows ;
+  tables:rowIndex "2037"^^xsd:int ;
+  rdfs:label "Energy storage system (ESS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Facility_DER_EMS_(FDEMS)-2045>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "System that manages the settings and dispatch of DER systems within a facility. This facility could be a residence, a building, a commercial site, an industrial site, or any other generic location."^^xsd:string ;
+  props:entityName "entity:FacilityDEREMS-FDEMS--495"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2045"^^xsd:int ;
+  rdfs:label "Facility DER EMS (FDEMS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Facility_Local_Area_Network_(Facility_LAN)-2046>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Facility LAN"^^xsd:string ;
+  props:entityName "entity:FacilityLocalAreaNetwork-FacilityLAN--497"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2046"^^xsd:int ;
+  rdfs:label "Facility Local Area Network (Facility LAN)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Fuel_cell-2047>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:entityName "entity:FuelCell-542"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2047"^^xsd:int ;
+  rdfs:label "Fuel cell"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Gas_turbine-2048>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:entityName "entity:GasTurbine-545"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2048"^^xsd:int ;
+  rdfs:label "Gas turbine"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Geographic_Information_System_(GIS)-2049>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Geographic model of the distribution system, including the location and characteristics of all distribution equipment and DER systems (individually and/or in aggregate)"^^xsd:string ;
+  props:entityName "entity:GeographicInformationSystem-GIS--562"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 4 DSO"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2049"^^xsd:int ;
+  rdfs:label "Geographic Information System (GIS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Hydro_plant-2050>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:entityName "entity:HydroPlant-596"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2050"^^xsd:int ;
+  rdfs:label "Hydro plant"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Local_EPS-2051>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "An EPS contained entirely within a single premises or group of premises"^^xsd:string ;
+  props:entityName "entity:LocalEPS-645"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 0 EPS"^^xsd:string ;
+  tables:rowIndex "2051"^^xsd:int ;
+  rdfs:label "Local EPS"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Meter_Data_Management_System_(MDMS)-2052>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:description_0 "Metering data management system"^^xsd:string ;
+  tables:rowIndex "2052"^^xsd:int ;
+  rdfs:label "Meter Data Management System (MDMS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Microgrid_DER_EMS_(MDEMS)-2053>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "System that manages the settings and dispatch of DER systems within a microgrid, and that can cause the microgrid to become an island and to reconnect with the Area EPS."^^xsd:string ;
+  props:entityName "entity:MicrogridDEREMS-MDEMS--799"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2053"^^xsd:int ;
+  rdfs:label "Microgrid DER EMS (MDEMS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Microgrid_EPS-2054>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "A Local EPS that can operate as an island and is operated as a virtual resource to the Area EPS"^^xsd:string ;
+  props:entityName "entity:MicrogridEPS-801"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 0 EPS"^^xsd:string ;
+  tables:rowIndex "2054"^^xsd:int ;
+  rdfs:label "Microgrid EPS"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Microgrid_Operator-2055>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Responsible party for operational aspects of a microgrid"^^xsd:string ;
+  props:entityName "entity:MicrogridOperator-802"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2055"^^xsd:int ;
+  rdfs:label "Microgrid Operator"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Microgrid_Owner-2056>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Responsible party for market and financial decisions and contracts related to a microgrid"^^xsd:string ;
+  props:entityName "entity:MicrogridOwner-804"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2056"^^xsd:int ;
+  rdfs:label "Microgrid Owner"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Non-Controllable_Load-2057>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Load that is not allowed to be modified"^^xsd:string ;
+  props:entityName "entity:NonControllableLoad-867"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2057"^^xsd:int ;
+  rdfs:label "Non-Controllable Load"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Non-Critical_Load-2058>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Loads within a Local EPS having the lowest priority of service.  These loads may be left unserved in favor of Critical Loads."^^xsd:string ;
+  props:entityName "entity:NonCriticalLoad-868"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2058"^^xsd:int ;
+  rdfs:label "Non-Critical Load"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Non-regulating_DER_System-2059>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "DER system not participating in frequency or voltage regulation."^^xsd:string ;
+  props:entityName "entity:NonRegulatingDERSystem-870"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2059"^^xsd:int ;
+  rdfs:label "Non-regulating DER System"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Outage_Management_System_(OMS)-2060>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Outage management system used by utilities to capture customer outage information"^^xsd:string ;
+  props:entityName "entity:OutageManagementSystem-OMS--900"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 4 DSO"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2060"^^xsd:int ;
+  rdfs:label "Outage Management System (OMS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#PCC_Switch-2061>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Switch plus its controller at the point of common coupling (PCC) between the Local EPS and the Area EPS"^^xsd:string ;
+  props:entityName "entity:PCCSwitch-914"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 0 EPS"^^xsd:string ;
+  tables:rowIndex "2061"^^xsd:int ;
+  rdfs:label "PCC Switch"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Photovoltaic_system_(PV)-2062>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:entityName "entity:PhotovoltaicSystem-PV--924"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2062"^^xsd:int ;
+  rdfs:label "Photovoltaic system (PV)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Point_of_Common_Coupling_(PCC)-2063>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "The point where a Local EPS is connected to an Area EPS, typically associated with a meter"^^xsd:string ;
+  props:entityName "entity:PointOfCommonCoupling-PCC--932"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 0 EPS"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2063"^^xsd:int ;
+  rdfs:label "Point of Common Coupling (PCC)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Power_Plant_DER_EMS_(PDEMS)-2064>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "System that manages the settings and dispatch of DER systems within a power plant"^^xsd:string ;
+  props:entityName "entity:PowerPlantDEREMS-PDEMS--945"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2064"^^xsd:int ;
+  rdfs:label "Power Plant DER EMS (PDEMS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Power_Plant_Operator-2065>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Responsible party for operational aspects of a power plant"^^xsd:string ;
+  props:entityName "entity:PowerPlantOperator-946"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2065"^^xsd:int ;
+  rdfs:label "Power Plant Operator"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Power_Plant_Owner-2066>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Responsible party for market and financial decisions and contracts related to a power plant"^^xsd:string ;
+  props:entityName "entity:PowerPlantOwner-947"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2066"^^xsd:int ;
+  rdfs:label "Power Plant Owner"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Public_Internet-2067>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:description_0 "The Internet"^^xsd:string ;
+  tables:rowIndex "2067"^^xsd:int ;
+  rdfs:label "Public Internet"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Public_Network-2068>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Telecommunications network provided by telecommunications provider"^^xsd:string ;
+  props:entityName "entity:PublicNetwork-1001"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 3 REP and ICT"^^xsd:string ;
+  tables:rowIndex "2068"^^xsd:int ;
+  rdfs:label "Public Network"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Pumped_water_storage-2069>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:entityName "entity:PumpedWaterStorage-1003"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2069"^^xsd:int ;
+  rdfs:label "Pumped water storage"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Regulating_DER_System-2070>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "DER system responsible for frequency and/or voltage regulation.  The regulating DER system could be a generator, an energy storage system, or controllable load."^^xsd:string ;
+  props:entityName "entity:RegulatingDERSystem-1037"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2070"^^xsd:int ;
+  rdfs:label "Regulating DER System"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Renewable_DER-2071>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "DER system whose prime mover energy comes from renewable sources, including water, solar, wind, and biofuels"^^xsd:string ;
+  props:entityName "entity:RenewableDER-1043"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2071"^^xsd:int ;
+  rdfs:label "Renewable DER"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Retail_DER_Energy_Management_System_(RDEMS)-2072>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "System that manages the settings and dispatch of DER systems that have been contracted to be operated by REPs and/or Aggregators"^^xsd:string ;
+  props:entityName "entity:RetailDEREnergyManagementSystem-RDEMS--1066"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 3 REP and ICT"^^xsd:string ;
+  tables:rowIndex "2072"^^xsd:int ;
+  rdfs:label "Retail DER Energy Management System (RDEMS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Retail_Energy_Provider_(REP)-2073>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Third party managing DER systems based on market information"^^xsd:string ;
+  props:entityName "entity:RetailEnergyProvider-REP--1068"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 3 REP and ICT"^^xsd:string ;
+  tables:rowIndex "2073"^^xsd:int ;
+  rdfs:label "Retail Energy Provider (REP)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Retail_Market_(generic)-2074>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Market rules and procedures used for buying and selling electricity products at the distribution level, including electric energy, voltage management, and other distribution reliability and efficiency services"^^xsd:string ;
+  props:entityName "entity:RetailMarket-generic--1070"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 5 Trans. And Market"^^xsd:string ;
+  tables:rowIndex "2074"^^xsd:int ;
+  rdfs:label "Retail Market (generic)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Synchronizing_equipment-2075>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Equipment that synchronizes the frequency between two EPSs"^^xsd:string ;
+  props:entityName "entity:SynchronizingEquipment-1161"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 0 EPS"^^xsd:string ;
+  tables:rowIndex "2075"^^xsd:int ;
+  rdfs:label "Synchronizing equipment"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#TDEMS_or_TSO_EMS-2076>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "TDEMS is part of the TSO EMS that manages large DER systems or large aggregations of smaller DER systems"^^xsd:string ;
+  props:entityName "entity:TDEMSOrTSOEMS-1181"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 5 Trans. And Market"^^xsd:string ;
+  tables:rowIndex "2076"^^xsd:int ;
+  rdfs:label "TDEMS or TSO EMS"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Time_Synchronization_Source-2077>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Source of an accurate time signal"^^xsd:string ;
+  props:entityName "entity:TimeSynchronizationSource-1190"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2077"^^xsd:int ;
+  rdfs:label "Time Synchronization Source"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Transmission_Bus_Load_Model_(TBLM)-2078>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Model of the transmission buses used to interact between transmission and distribution systems"^^xsd:string ;
+  props:entityName "entity:TransmissionBusLoadModel-TBLM--1204"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 4 DSO"^^xsd:string ;
+  tables:rowIndex "2078"^^xsd:int ;
+  rdfs:label "Transmission Bus Load Model (TBLM)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Transmission_Market-2079>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:description_0 "Market rules and procedures used for bidding and accepting transmission path rights"^^xsd:string ;
+  tables:rowIndex "2079"^^xsd:int ;
+  rdfs:label "Transmission Market"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Transmission_System_Operator_(TSO)-2080>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Operator of a transmission system"^^xsd:string ;
+  props:entityName "entity:TransmissionSystemOperator-TSO--1221"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 5 Trans. And Market"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  tables:rowIndex "2080"^^xsd:int ;
+  rdfs:label "Transmission System Operator (TSO)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#V2G_DR_program-2081>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Vehicle to Grid demand response program"^^xsd:string ;
+  props:entityName "entity:V2GDRProgram-1233"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 5 Trans. And Market"^^xsd:string ;
+  tables:rowIndex "2081"^^xsd:int ;
+  rdfs:label "V2G DR program"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Virtual_Power_Plant_(VPP)_DER_EMS_(VDEMS)-2082>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "System that manages the settings and dispatch of DER systems that are enrolled in a virtual power plant"^^xsd:string ;
+  props:entityName "entity:VirtualPowerPlant-VPP-DEREMS-VDEMS--1242"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 2 FDEMS"^^xsd:string ;
+  tables:rowIndex "2082"^^xsd:int ;
+  rdfs:label "Virtual Power Plant (VPP) DER EMS (VDEMS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Virtual_Resource_(generic)-2083>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "A set of one or more energy service resources, including generators, energy storage, controllable load, and ancillary services"^^xsd:string ;
+  props:entityName "entity:VirtualResource-generic--1243"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2083"^^xsd:int ;
+  rdfs:label "Virtual Resource (generic)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Weather_system_for_DER-2084>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Meteorological service providing weather system that can affect DER capabilities"^^xsd:string ;
+  props:entityName "entity:WeatherSystem-1259"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 0 EPS"^^xsd:string ;
+  tables:rowIndex "2084"^^xsd:int ;
+  rdfs:label "Weather system for DER"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Wholesale_or_Bulk_Energy_Market_(generic)-2085>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:description_0 "Market rules and procedures used for bidding and accepting electricity services at the bulk power level, including providing electric energy, frequency management, operational reserves, transmission path rights, and other ancillary services"^^xsd:string ;
+  tables:rowIndex "2085"^^xsd:int ;
+  rdfs:label "Wholesale or Bulk Energy Market (generic)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Wide_Area_Network_(WAN)-2086>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:description_0 "Communication networks used to interact between aggregators and facilities and/or DER systems"^^xsd:string ;
+  props:entityName "entity:WideAreaNetwork-WAN--1264"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 3 REP and ICT"^^xsd:string ;
+  tables:rowIndex "2086"^^xsd:int ;
+  rdfs:label "Wide Area Network (WAN)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Wind_turbine-2087>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:entityName "entity:WindTurbine-1269"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2087"^^xsd:int ;
+  rdfs:label "Wind turbine"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Wood_chip_boiler-2088>
+  rdf:type props:Combined-Elements-noduprows ;
+  props:clusterLabel "DER"^^xsd:string ;
+  props:entityName "entity:WoodChipBoiler-1270"^^xsd:string ;
+  props:iECTC57WG19TC8WG6DERActorRoles "X"^^xsd:string ;
+  props:note "Lvl 1 DER"^^xsd:string ;
+  tables:rowIndex "2088"^^xsd:int ;
+  rdfs:label "Wood chip boiler"^^xsd:string ;
+.

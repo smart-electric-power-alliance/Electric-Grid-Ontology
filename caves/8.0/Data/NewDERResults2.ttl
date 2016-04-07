@@ -1,0 +1,20 @@
+# baseURI: http://sv.cmu.edu/AWP/8.0/NewDERResults2
+# imports: http://sv.cmu.edu/AWP/8.0/ActorRoles
+# imports: http://sv.cmu.edu/AWP/8.0/props
+# prefix: NewDERResults
+
+@prefix entity: <http://sv.cmu.edu/AWP/8.0/entity#> .
+@prefix NewDERResults2: <http://sv.cmu.edu/AWP/8.0/NewDERResults2#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix props: <http://sv.cmu.edu/AWP/8.0/props#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tables: <http://topbraid.org/tables#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://sv.cmu.edu/AWP/8.0/NewDERResults2>
+  rdf:type owl:Ontology ;
+  owl:imports <http://sv.cmu.edu/AWP/8.0/ActorRoles> ;
+  owl:imports <http://sv.cmu.edu/AWP/8.0/props> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.

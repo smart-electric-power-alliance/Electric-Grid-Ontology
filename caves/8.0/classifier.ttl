@@ -2,6 +2,7 @@
 # imports: http://spinrdf.org/spl
 # imports: http://sv.cmu.edu/AWP/8.0/ActorRoles
 # imports: http://sv.cmu.edu/AWP/8.0/props
+# prefix: cf
 
 @prefix arg: <http://spinrdf.org/arg#> .
 @prefix cf: <http://sv.cmu.edu/AWP/8.0/classifier#> .
@@ -24,112 +25,6 @@
   owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
 .
 <http://sv.cmu.edu/AWP/8.0/props#Combined-Elements-noduprows>
-  spin:rule [
-      rdf:type sp:Construct ;
-      sp:templates (
-          [
-            sp:object [
-                sp:varName "obj"^^xsd:string ;
-              ] ;
-            sp:predicate [
-                sp:varName "pred"^^xsd:string ;
-              ] ;
-            sp:subject [
-                sp:varName "newURI"^^xsd:string ;
-              ] ;
-          ]
-          [
-            sp:object [
-                sp:varName "name"^^xsd:string ;
-              ] ;
-            sp:predicate rdfs:label ;
-            sp:subject [
-                sp:varName "newURI"^^xsd:string ;
-              ] ;
-          ]
-        ) ;
-      sp:where (
-          [
-            sp:object [
-                sp:varName "name"^^xsd:string ;
-              ] ;
-            sp:predicate <http://sv.cmu.edu/AWP/8.0/props#entityName> ;
-            sp:subject spin:_this ;
-          ]
-          [
-            rdf:type sp:Bind ;
-            sp:expression [
-                rdf:type spif:camelCase ;
-                sp:arg1 [
-                    sp:varName "name"^^xsd:string ;
-                  ] ;
-              ] ;
-            sp:variable [
-                sp:varName "camelName"^^xsd:string ;
-              ] ;
-          ]
-          [
-            rdf:type sp:Bind ;
-            sp:expression [
-                rdf:type spif:replaceAll ;
-                sp:arg1 [
-                    sp:varName "camelName"^^xsd:string ;
-                  ] ;
-                sp:arg2 "[:/&()]" ;
-                sp:arg3 "-" ;
-              ] ;
-            sp:variable [
-                sp:varName "cleanName"^^xsd:string ;
-              ] ;
-          ]
-          [
-            sp:object [
-                sp:varName "number"^^xsd:string ;
-              ] ;
-            sp:predicate <http://topbraid.org/tables#rowIndex> ;
-            sp:subject spin:_this ;
-          ]
-          [
-            rdf:type sp:Bind ;
-            sp:expression [
-                rdf:type fn:concat ;
-                sp:arg1 [
-                    sp:varName "cleanName"^^xsd:string ;
-                  ] ;
-                sp:arg2 "-" ;
-                sp:arg3 [
-                    sp:varName "number"^^xsd:string ;
-                  ] ;
-              ] ;
-            sp:variable [
-                sp:varName "newName"^^xsd:string ;
-              ] ;
-          ]
-          [
-            rdf:type sp:Bind ;
-            sp:expression [
-                rdf:type smf:buildURI ;
-                sp:arg1 "entity:{?1}" ;
-                sp:arg2 [
-                    sp:varName "newName"^^xsd:string ;
-                  ] ;
-              ] ;
-            sp:variable [
-                sp:varName "newURI"^^xsd:string ;
-              ] ;
-          ]
-          [
-            sp:object [
-                sp:varName "obj"^^xsd:string ;
-              ] ;
-            sp:predicate [
-                sp:varName "pred"^^xsd:string ;
-              ] ;
-            sp:subject spin:_this ;
-          ]
-        ) ;
-      rdfs:comment "041 Rename the URIs"^^xsd:string ;
-    ] ;
   spin:rule [
       rdf:type sp:Modify ;
       sp:deletePattern (
