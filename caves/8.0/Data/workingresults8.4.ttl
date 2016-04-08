@@ -16285,9 +16285,9 @@ entity:DSO-369
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "369"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "description is just '-' so can't classify"^^xsd:string ;
   rdfs:label "DSO"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:DSODEREMS-DDEMS--370
   rdf:type props:Combined-Elements-noduprows ;
@@ -16752,7 +16752,7 @@ entity:DSOSystem-374
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "374"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "description is '0.0'"^^xsd:string ;
   rdfs:label "DSO System"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -23222,10 +23222,10 @@ entity:DistributionSystemServices-DSO--358
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:DistributionSystemServices-DSO--359
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualService ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ConpositionService"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -23252,7 +23252,7 @@ entity:DistributionSystemServices-DSO--359
   props:entityName "Distribution System Services (DSO)"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -24090,7 +24090,7 @@ entity:EVSE-398
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "398"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "description is '-'"^^xsd:string ;
   rdfs:label "EVSE"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -24264,9 +24264,9 @@ entity:EconomicLoadReduction-379
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "380"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "harmonized with 382"^^xsd:string ;
   rdfs:label "El. Vehicle (EV)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 <http://sv.cmu.edu/AWP/8.0/entity#El.Vehicle-EV--381>
   rdf:type props:Combined-Elements-noduprows ;
@@ -24322,15 +24322,15 @@ entity:EconomicLoadReduction-379
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "381"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "harmonized with 382"^^xsd:string ;
   rdfs:label "El. Vehicle (EV)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 <http://sv.cmu.edu/AWP/8.0/entity#El.Vehicle-EV-PHV--382>
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:PhysicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -24350,14 +24350,14 @@ entity:EconomicLoadReduction-379
   props:eNTSOERoleModel ""^^xsd:string ;
   props:eUCommission ""^^xsd:string ;
   props:eUSCCGWP1 ""^^xsd:string ;
-  props:eUSourceunknown ""^^xsd:string ;
+  props:eUSourceunknown "X"^^xsd:string ;
   props:eUWGSPVers05 ""^^xsd:string ;
   props:electricStorage ""^^xsd:string ;
   props:electricTransportaion ""^^xsd:string ;
   props:entityName "El. Vehicle (EV/PHV)"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -24366,18 +24366,18 @@ entity:EconomicLoadReduction-379
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
   props:nISTLegacyDomain ""^^xsd:string ;
-  props:new ""^^xsd:string ;
+  props:new "-"^^xsd:string ;
   props:note "DKE Repository"^^xsd:string ;
   props:notes ""^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates ""^^xsd:string ;
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type ""^^xsd:string ;
-  props:uSEUInput "EU"^^xsd:string ;
+  props:uSEUInput "EU; US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "382"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
@@ -24496,7 +24496,7 @@ entity:ElectricNetworkSP-384
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "384"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "description is '0.0'"^^xsd:string ;
   rdfs:label "Electric Network SP"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -25432,7 +25432,7 @@ entity:ElectricVehicleSupplyEquipment-EVSE--397
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "397"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "description is '0.0' is thi the same as 398?"^^xsd:string ;
   rdfs:label "Electric Vehicle Supply Equipment (EVSE)"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -25838,7 +25838,7 @@ entity:ElectricityInstallerContractor-401
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "403"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "description is '0.0'"^^xsd:string ;
   rdfs:label "Electricity-SP (El.-SP)"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -26769,7 +26769,7 @@ entity:EnergyB2BMarket-420
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "420"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "description is '0.0'"^^xsd:string ;
   rdfs:label "Energy B2B market"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -27413,10 +27413,10 @@ entity:EnergyManagementGateway-430
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:EnergyManagementGateway-431
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -27444,7 +27444,7 @@ This gateway may also provide services including protocol conversion, device man
   props:entityName "Energy management gateway"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -27705,10 +27705,10 @@ entity:EnergyManagementTechnicalSupport-435
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:EnergyManager-436
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -27735,7 +27735,7 @@ entity:EnergyManager-436
   props:entityName "Energy Manager"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -32059,7 +32059,7 @@ entity:FieldActuators-508
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "508"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "description is '-'"^^xsd:string ;
   rdfs:label "Field Actuators"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -32581,7 +32581,7 @@ entity:FieldSensingDevices-517
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "517"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "description is '0.0'"^^xsd:string ;
   rdfs:label "Field Sensing Devices"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -33168,10 +33168,10 @@ entity:FlexibleLoad-527
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:FlexibleLoad-528
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:PhysicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -33198,7 +33198,7 @@ entity:FlexibleLoad-528
   props:entityName "Flexible Load"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Physical "^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
