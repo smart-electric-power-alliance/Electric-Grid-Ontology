@@ -35090,10 +35090,10 @@ entity:Generator-557
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:Generator-558
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -35120,7 +35120,7 @@ entity:Generator-558
   props:entityName "Generator"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -35130,7 +35130,7 @@ entity:Generator-558
   props:nAESB ""^^xsd:string ;
   props:nISTLegacyDomain ""^^xsd:string ;
   props:new ""^^xsd:string ;
-  props:note "Distribution Grid Management/Microgrid"^^xsd:string ;
+  props:note "Distribution Grid Management/Microgrid; Smart Home/Commercial/Industrial/DR-Customer EMS"^^xsd:string ;
   props:notes ""^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates ""^^xsd:string ;
   props:referenceDiagram ""^^xsd:string ;
@@ -35203,7 +35203,7 @@ entity:Generator-559
   tables:rowIndex "559"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Generator"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:GeographicInformationSystem-560
   rdf:type ar:LogicalService ;
@@ -35726,7 +35726,7 @@ entity:Grid-569
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "569"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description, harmonized with 570"^^xsd:string ;
   rdfs:label "Grid"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -35786,7 +35786,7 @@ entity:Grid-570
   tables:rowIndex "570"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Grid"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:GridAccessProvider-571
   rdf:type ar:ConceptualServiceComposition ;
@@ -36248,7 +36248,7 @@ entity:GridMonitoring-578
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "578"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Grid Monitoring"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -36543,10 +36543,10 @@ entity:GroupManagement-583
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:HES-585
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -36580,7 +36580,7 @@ Contains some topology information and aggregation functionality for plug &br/>p
   props:entityName "HES"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -49317,7 +49317,7 @@ entity:MicrogridControlCenter-798
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "798"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Microgrid Control Center"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -49785,7 +49785,7 @@ entity:MicrogridOperator-803
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "803"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Microgrid Operator"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -50133,7 +50133,7 @@ entity:MobileMeteringServiceProvider-808
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "808"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description, marked as Role"^^xsd:string ;
   rdfs:label "Mobile metering service provider"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -52059,7 +52059,7 @@ entity:NetworkOperationMonitoring-NONMON--841
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "841"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description marked as Application"^^xsd:string ;
   rdfs:label "Network operation monitoring (NO-NMON)"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -52523,7 +52523,7 @@ entity:NetworkOperationsAnalysis-NOOFA--849
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "849"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description marked as Application"^^xsd:string ;
   rdfs:label "Network Operations Analysis (NO-OFA)"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
