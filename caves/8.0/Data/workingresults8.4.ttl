@@ -54091,7 +54091,7 @@ entity:OEM-875
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "875"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description marked as Role"^^xsd:string ;
   rdfs:label "OEM"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -54671,7 +54671,7 @@ entity:Operator-884
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "884"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Operator"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -56075,9 +56075,9 @@ entity:OverlayGrid-907
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "907"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Overlay Grid"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:OverlayGridControlCenter-908
   rdf:type props:Combined-Elements-noduprows ;
@@ -56133,7 +56133,7 @@ entity:OverlayGridControlCenter-908
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "908"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Overlay Grid Control Center"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -56191,7 +56191,7 @@ entity:OverlayGridOperator-909
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "909"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Overlay Grid Operator"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -58110,7 +58110,7 @@ entity:PowerEquipment-939
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "939"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Power Equipment"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -63160,9 +63160,9 @@ entity:RealTimeStateEstimator-RTSS--1020
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1020"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Real-time State Estimator (RTSS)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:Recloser-1021
   rdf:type ar:LogicalActor ;
@@ -64787,7 +64787,7 @@ entity:RenewableGenerationForecaster-1046
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1046"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Renewable Generation Forecaster"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -66471,7 +66471,7 @@ entity:Retrofilter-1072
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1072"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Retrofilter"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -66592,10 +66592,10 @@ entity:RootCauseAnalysis--1074
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SCADASystem-1075
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -66622,7 +66622,7 @@ entity:SCADASystem-1075
   props:entityName "SCADA system"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -68735,9 +68735,8 @@ entity:SimpleExternalConsumerDisplay-1111
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1111"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
   rdfs:label "Simple external consumer display"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:SimulateMarket-1112
   rdf:type ar:ConceptualService ;
@@ -69025,7 +69024,7 @@ entity:SmartAppliance-WhiteGoods--1117
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1117"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Smart appliance (White goods)"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -69088,10 +69087,10 @@ entity:SmartAppliance-whiteGoods--1116
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SmartApplianceGenerator-ExternalActor--1118
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -69124,7 +69123,7 @@ be seen as an external actor
   props:entityName "Smart appliance Generator ( external actor)"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -69205,7 +69204,7 @@ entity:SmartAppliances-1119
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1119"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description - harmonize with 1118?"^^xsd:string ;
   rdfs:label "Smart appliances"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -69322,7 +69321,7 @@ entity:SmartDevice-1121
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1121"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Smart device"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -69446,10 +69445,10 @@ entity:SmartMeter-1123
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SmartMeter-1124
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -69474,14 +69473,14 @@ entity:SmartMeter-1124
   props:eNTSOERoleModel ""^^xsd:string ;
   props:eUCommission ""^^xsd:string ;
   props:eUSCCGWP1 ""^^xsd:string ;
-  props:eUSourceunknown ""^^xsd:string ;
+  props:eUSourceunknown "X"^^xsd:string ;
   props:eUWGSPVers05 ""^^xsd:string ;
   props:electricStorage ""^^xsd:string ;
   props:electricTransportaion ""^^xsd:string ;
-  props:entityName "Smart meter"^^xsd:string ;
+  props:entityName "Smart meter (SM)"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -69491,17 +69490,17 @@ entity:SmartMeter-1124
   props:nAESB ""^^xsd:string ;
   props:nISTLegacyDomain ""^^xsd:string ;
   props:new ""^^xsd:string ;
-  props:note "Smart Home/Commercial/Industrial/DR-Customer EMS"^^xsd:string ;
+  props:note "Smart Home/Commercial/Industrial/DR-Customer EMS; Electric-transportation (ET)"^^xsd:string ;
   props:notes ""^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates ""^^xsd:string ;
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type ""^^xsd:string ;
-  props:uSEUInput "EU"^^xsd:string ;
+  props:uSEUInput "EU; US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1124"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
@@ -69564,7 +69563,7 @@ entity:SmartMeter-1125
   tables:rowIndex "1125"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Smart meter"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:SmartMeter-SM--1126
   rdf:type props:Combined-Elements-noduprows ;
@@ -69683,7 +69682,7 @@ entity:SmartMeter-SM--1127
   tables:rowIndex "1127"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Smart Meter (SM)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:SmartMeter-SM--1128
   rdf:type props:Combined-Elements-noduprows ;
@@ -69745,7 +69744,7 @@ entity:SmartMeter-SM--1128
   tables:rowIndex "1128"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Smart Meter (SM)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:SmartMeteringGateway-LNAP--1129
   rdf:type props:Combined-Elements-noduprows ;
@@ -69808,10 +69807,10 @@ It may also provide services including protocol conversion, device management, s
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SmartMeteringGateway-LNAP--1130
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -69843,7 +69842,7 @@ It may also provide services including protocol conversion, device management, s
   props:entityName "Smart Metering gateway (LNAP)"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -70507,7 +70506,7 @@ entity:Storage-1141
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1141"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Storage"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -70913,7 +70912,7 @@ entity:SubstationControlSystem-SCS--1148
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1148"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Substation Control System (SCS)"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -72656,9 +72655,8 @@ entity:SystemSocketAdministrator-1177
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1177"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
   rdfs:label "System socket administrator"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:SystemStateEstimation-1178
   rdf:type ar:ConceptualService ;
@@ -73062,7 +73060,7 @@ entity:TelcoOperator-1183
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1183"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Telco Operator"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -77839,7 +77837,7 @@ entity:WeatherForecast-1257
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1257"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Weather Forecast"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -78363,9 +78361,9 @@ entity:WideAreaMonitoring-WAMON--1267
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1267"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Wide-area Monitoring (WAMON)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:WideAreaNetwork-WAN--1264
   rdf:type props:Combined-Elements-noduprows ;
