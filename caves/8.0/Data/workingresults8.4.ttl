@@ -1305,11 +1305,10 @@ entity:AggregationSupportService-25
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:Aggregator-2001
-  rdf:type ar:ConceptualEntity ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems "X"^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole "role"^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -7591,9 +7590,7 @@ entity:CombinedHeatAndPower-CHP--130
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:CombinedHeatAndPower-CHP-2008
-  rdf:type ar:PhysicalEntity ;
-  rdf:type ar:ServiceComposition ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -7623,7 +7620,7 @@ entity:CombinedHeatAndPower-CHP-2008
   props:entityName "entity:CombinedHeatAndPower-CHP--130"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -15883,7 +15880,6 @@ entity:DERSystem-generic--281
 entity:DERSystem-generic-2025
   rdf:type ar:PhysicalEntity ;
   rdf:type ar:ServiceComposition ;
-  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -15938,7 +15934,7 @@ entity:DERSystem-generic-2025
   tables:rowIndex "2025"^^xsd:int ;
   rdfs:comment "" ;
   rdfs:label "DER System (generic)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:DERUnit-generic--282
   rdf:type ar:PhysicalActor ;
@@ -20184,9 +20180,7 @@ entity:DistributedEnergyResource-DER--generic--314
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:DistributedEnergyResource-DER-generic-2027
-  rdf:type ar:PhysicalEntity ;
-  rdf:type ar:ServiceComposition ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -20216,7 +20210,7 @@ entity:DistributedEnergyResource-DER-generic-2027
   props:entityName "entity:DistributedEnergyResource-DER--generic--314"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -21998,9 +21992,7 @@ entity:DistributionOperationsModelAndAnalysis-DOMA--342
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:DistributionOperationsModelAndAnalysis-DOMA-2029
-  rdf:type ar:PhysicalEntity ;
-  rdf:type ar:ServiceComposition ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -22030,7 +22022,7 @@ entity:DistributionOperationsModelAndAnalysis-DOMA-2029
   props:entityName "entity:DistributionOperationsModelAndAnalysis-DOMA--342"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -23744,9 +23736,7 @@ entity:EMobilityServiceProvider-eMSP--410
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:EPSSwitch-2043
-  rdf:type ar:PhysicalEntity ;
-  rdf:type ar:ServiceComposition ;
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -23776,7 +23766,7 @@ entity:EPSSwitch-2043
   props:entityName "entity:EPSSwitch-466"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Physical"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
