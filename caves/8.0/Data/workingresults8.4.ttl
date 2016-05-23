@@ -2187,7 +2187,7 @@ entity:AreaEPS-2002
   props:businessFunctionService ""^^xsd:string ;
   props:cSWGActors ""^^xsd:string ;
   props:cSWGNISTIR7628 ""^^xsd:string ;
-  props:clusterLabel ""^^xsd:string ;
+  props:clusterLabel "New DER" ;
   props:colC ""^^xsd:string ;
   props:colD ""^^xsd:string ;
   props:conceptualModel ""^^xsd:string ;
@@ -5162,7 +5162,7 @@ entity:BulkPowerMarketOperator-2006
   props:businessFunctionService ""^^xsd:string ;
   props:cSWGActors ""^^xsd:string ;
   props:cSWGNISTIR7628 ""^^xsd:string ;
-  props:clusterLabel ""^^xsd:string ;
+  props:clusterLabel "New DER" ;
   props:colC ""^^xsd:string ;
   props:colD ""^^xsd:string ;
   props:conceptualModel ""^^xsd:string ;
@@ -6092,7 +6092,7 @@ entity:CellularSystem-2007
   props:businessFunctionService ""^^xsd:string ;
   props:cSWGActors ""^^xsd:string ;
   props:cSWGNISTIR7628 ""^^xsd:string ;
-  props:clusterLabel ""^^xsd:string ;
+  props:clusterLabel "New DER" ;
   props:colC ""^^xsd:string ;
   props:colD ""^^xsd:string ;
   props:conceptualModel ""^^xsd:string ;
@@ -8761,7 +8761,7 @@ entity:CommunityEPS-2010
   props:businessFunctionService ""^^xsd:string ;
   props:cSWGActors ""^^xsd:string ;
   props:cSWGNISTIR7628 ""^^xsd:string ;
-  props:clusterLabel ""^^xsd:string ;
+  props:clusterLabel "New DER" ;
   props:colC ""^^xsd:string ;
   props:colD ""^^xsd:string ;
   props:conceptualModel ""^^xsd:string ;
@@ -13082,7 +13082,7 @@ entity:CustomerInformationSystem-CIS-2012
   props:businessFunctionService ""^^xsd:string ;
   props:cSWGActors ""^^xsd:string ;
   props:cSWGNISTIR7628 ""^^xsd:string ;
-  props:clusterLabel ""^^xsd:string ;
+  props:clusterLabel "New DER" ;
   props:colC ""^^xsd:string ;
   props:colD ""^^xsd:string ;
   props:conceptualModel ""^^xsd:string ;
@@ -13127,7 +13127,7 @@ entity:CustomerInformationSystem-CIS-2012
   tables:rowIndex "2012"^^xsd:int ;
   rdfs:comment "" ;
   rdfs:label "Customer Information System (CIS)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:CustomerManagement-223
   rdf:type ar:ConceptualService ;
@@ -16413,7 +16413,7 @@ entity:DSOOperator-2035
   props:businessFunctionService ""^^xsd:string ;
   props:cSWGActors ""^^xsd:string ;
   props:cSWGNISTIR7628 ""^^xsd:string ;
-  props:clusterLabel ""^^xsd:string ;
+  props:clusterLabel "New DER" ;
   props:colC ""^^xsd:string ;
   props:colD ""^^xsd:string ;
   props:conceptualModel ""^^xsd:string ;
@@ -22875,7 +22875,7 @@ entity:DistributionSystemOperator-DSO-2032
   props:businessFunctionService ""^^xsd:string ;
   props:cSWGActors ""^^xsd:string ;
   props:cSWGNISTIR7628 ""^^xsd:string ;
-  props:clusterLabel ""^^xsd:string ;
+  props:clusterLabel "New DER" ;
   props:colC ""^^xsd:string ;
   props:colD ""^^xsd:string ;
   props:conceptualModel ""^^xsd:string ;
@@ -28984,7 +28984,7 @@ entity:EnergyStorageSystem-ESS-2037
   props:businessFunctionService ""^^xsd:string ;
   props:cSWGActors ""^^xsd:string ;
   props:cSWGNISTIR7628 ""^^xsd:string ;
-  props:clusterLabel ""^^xsd:string ;
+  props:clusterLabel "New DER" ;
   props:colC ""^^xsd:string ;
   props:colD ""^^xsd:string ;
   props:conceptualModel ""^^xsd:string ;
@@ -48392,7 +48392,7 @@ entity:MeterDataManagementSystem-MDMS-2052
   props:businessFunctionService ""^^xsd:string ;
   props:cSWGActors ""^^xsd:string ;
   props:cSWGNISTIR7628 ""^^xsd:string ;
-  props:clusterLabel ""^^xsd:string ;
+  props:clusterLabel "New DER" ;
   props:colC ""^^xsd:string ;
   props:colD ""^^xsd:string ;
   props:conceptualModel ""^^xsd:string ;
@@ -61772,7 +61772,7 @@ entity:PublicInternet-2067
   props:businessFunctionService ""^^xsd:string ;
   props:cSWGActors ""^^xsd:string ;
   props:cSWGNISTIR7628 ""^^xsd:string ;
-  props:clusterLabel ""^^xsd:string ;
+  props:clusterLabel "New DER" ;
   props:colC ""^^xsd:string ;
   props:colD ""^^xsd:string ;
   props:conceptualModel ""^^xsd:string ;
@@ -74701,7 +74701,7 @@ entity:TransmissionMarket-2079
   props:businessFunctionService ""^^xsd:string ;
   props:cSWGActors ""^^xsd:string ;
   props:cSWGNISTIR7628 ""^^xsd:string ;
-  props:clusterLabel ""^^xsd:string ;
+  props:clusterLabel "New DER" ;
   props:colC ""^^xsd:string ;
   props:colD ""^^xsd:string ;
   props:conceptualModel ""^^xsd:string ;
@@ -78134,7 +78134,7 @@ entity:WholesaleOrBulkEnergyMarket-generic-2085
   props:businessFunctionService ""^^xsd:string ;
   props:cSWGActors ""^^xsd:string ;
   props:cSWGNISTIR7628 ""^^xsd:string ;
-  props:clusterLabel ""^^xsd:string ;
+  props:clusterLabel "New DER" ;
   props:colC ""^^xsd:string ;
   props:colD ""^^xsd:string ;
   props:conceptualModel ""^^xsd:string ;
