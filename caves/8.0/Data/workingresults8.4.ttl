@@ -22865,10 +22865,10 @@ entity:DistributionSystemFieldEquipmentConfigurationManagement--355
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:DistributionSystemOperator-DSO-2032
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -22895,7 +22895,7 @@ entity:DistributionSystemOperator-DSO-2032
   props:entityName ""^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -24603,7 +24603,7 @@ entity:ElectricPowerSystem-EPS-generic-2036
   props:uSEUInput ""^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "2036"^^xsd:int ;
-  rdfs:comment "" ;
+  rdfs:comment "this one needs to be normalized wtih others"^^xsd:string ;
   rdfs:label "Electric Power System (EPS) (generic)"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -24901,10 +24901,10 @@ entity:ElectricVehicle-EV--390
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:ElectricVehicle-EV-2038
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -24931,7 +24931,7 @@ entity:ElectricVehicle-EV-2038
   props:entityName "entity:ElectricVehicle-EV--390"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -25424,13 +25424,13 @@ entity:ElectricVehicleSupplyEquipment-EVSE--397
   tables:rowIndex "397"^^xsd:int ;
   rdfs:comment "description is '0.0' is thi the same as 398?"^^xsd:string ;
   rdfs:label "Electric Vehicle Supply Equipment (EVSE)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:ElectricVehicleSupplyEquipment-EVSE-2040
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -25457,7 +25457,7 @@ entity:ElectricVehicleSupplyEquipment-EVSE-2040
   props:entityName "entity:ElectricVehicleSupplyEquipment-EVSE--396"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -26648,10 +26648,10 @@ entity:EnergyAssetAggregation-418
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:EnergyB2BMarket-419
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -26678,7 +26678,7 @@ entity:EnergyB2BMarket-419
   props:entityName "Energy B2B market"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -26761,7 +26761,7 @@ entity:EnergyB2BMarket-420
   tables:rowIndex "420"^^xsd:int ;
   rdfs:comment "description is '0.0'"^^xsd:string ;
   rdfs:label "Energy B2B market"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:EnergyContractProcurementSupport-421
   rdf:type ar:ConceptualService ;
@@ -27345,10 +27345,10 @@ entity:EnergyManagement-429
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:EnergyManagementGateway-430
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -27375,7 +27375,7 @@ entity:EnergyManagementGateway-430
   props:entityName "Energy Management Gateway"^^xsd:string ;
   props:gUC "X"^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -31181,10 +31181,10 @@ entity:FacilityDEREMS-FDEMS--495
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:FacilityDEREMS-FDEMS-2045
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -31211,7 +31211,7 @@ entity:FacilityDEREMS-FDEMS-2045
   props:entityName "entity:FacilityDEREMS-FDEMS--495"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -31357,10 +31357,10 @@ entity:FacilityLocalAreaNetwork-FacilityLAN--497
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:FacilityLocalAreaNetwork-FacilityLAN-2046
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -31387,7 +31387,7 @@ entity:FacilityLocalAreaNetwork-FacilityLAN-2046
   props:entityName "entity:FacilityLocalAreaNetwork-FacilityLAN--497"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
