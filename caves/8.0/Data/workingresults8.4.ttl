@@ -16695,10 +16695,11 @@ entity:DSOSystem-373
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:DSOSystem-374
+  rdf:type ar:Actor ;
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -16725,7 +16726,6 @@ entity:DSOSystem-374
   props:entityName "DSO System"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -16750,7 +16750,7 @@ entity:DSOSystem-374
   tables:rowIndex "374"^^xsd:int ;
   rdfs:comment "description is '0.0'"^^xsd:string ;
   rdfs:label "DSO System"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:DataAggregator-234
   rdf:type ar:PhysicalActor ;
@@ -22865,10 +22865,10 @@ entity:DistributionSystemFieldEquipmentConfigurationManagement--355
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:DistributionSystemOperator-DSO-2032
-  rdf:type ar:ConceptualServiceComposition ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -22895,7 +22895,7 @@ entity:DistributionSystemOperator-DSO-2032
   props:entityName ""^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -23214,10 +23214,10 @@ entity:DistributionSystemServices-DSO--358
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:DistributionSystemServices-DSO--359
-  rdf:type ar:ConceptualService ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "ConpositionService"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -24080,9 +24080,9 @@ entity:EVSE-398
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "398"^^xsd:int ;
-  rdfs:comment "description is '-'"^^xsd:string ;
+  rdfs:comment "description is '-'  Ron will check with OpenSG"^^xsd:string ;
   rdfs:label "EVSE"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:EconomicDispatchSupportService-378
   rdf:type ar:ConceptualService ;
@@ -25187,7 +25187,7 @@ entity:ElectricVehicleEMS-EVEMS-2039
   props:uSEUInput ""^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "2039"^^xsd:int ;
-  rdfs:comment "" ;
+  rdfs:comment "need to pull from ASHRAE authoritative source"^^xsd:string ;
   rdfs:label "Electric Vehicle EMS (EVEMS)"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
