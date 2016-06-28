@@ -1,0 +1,32 @@
+# baseURI: http://sv.cmu.edu/AWP/8.0/cooling
+# imports: http://sv.cmu.edu/AWP/8.0/workingresults8.4
+# prefix: cooling
+
+@prefix ar: <http://sv.cmu.edu/AWP/8.0/ActorRoles#> .
+@prefix cooling: <http://sv.cmu.edu/AWP/8.0/cooling#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix props: <http://sv.cmu.edu/AWP/8.0/props#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://sv.cmu.edu/AWP/8.0/cooling>
+  rdf:type owl:Ontology ;
+  owl:imports <http://sv.cmu.edu/AWP/8.0/workingresults8.4> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#BelowHumanComfort-3001>
+  rdf:type ar:ConceptualServiceContract ;
+  ar:specifies <http://sv.cmu.edu/AWP/8.0/entity#Cooling-3000> ;
+  props:entityName "Conceptual Service Contract"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Cooling-3000>
+  rdf:type ar:ConceptualService ;
+  ar:isAbstractionOf <http://sv.cmu.edu/AWP/8.0/entity#ApplianceControl-41> ;
+  ar:isPartOf <http://sv.cmu.edu/AWP/8.0/entity#Cooling-3002> ;
+  props:entityName "Cooling"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Cooling-3002>
+  rdf:type ar:ConceptualServiceComposition ;
+  props:entityName "Cooling"^^xsd:string ;
+.
