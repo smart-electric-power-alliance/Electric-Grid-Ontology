@@ -24488,7 +24488,7 @@ entity:ElectricNetworkSP-384
   tables:rowIndex "384"^^xsd:int ;
   rdfs:comment "description is '0.0'"^^xsd:string ;
   rdfs:label "Electric Network SP"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:ElectricPowerSystem-EPS--generic--385
   rdf:type props:Combined-Elements-noduprows ;
@@ -25830,7 +25830,7 @@ entity:ElectricityInstallerContractor-401
   tables:rowIndex "403"^^xsd:int ;
   rdfs:comment "description is '0.0'"^^xsd:string ;
   rdfs:label "Electricity-SP (El.-SP)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:EmergingServices-404
   rdf:type ar:ConceptualService ;
@@ -32051,7 +32051,7 @@ entity:FieldActuators-508
   tables:rowIndex "508"^^xsd:int ;
   rdfs:comment "description is '-'"^^xsd:string ;
   rdfs:label "Field Actuators"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:FieldAreaNetwork-FAN--509
   rdf:type ar:LogicalService ;
@@ -32573,7 +32573,7 @@ entity:FieldSensingDevices-517
   tables:rowIndex "517"^^xsd:int ;
   rdfs:comment "description is '0.0'"^^xsd:string ;
   rdfs:label "Field Sensing Devices"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:FieldWorkManagement--518
   rdf:type ar:ConceptualService ;
@@ -33100,10 +33100,10 @@ entity:FlexibilityServices-FO--526
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:FlexibleLoad-527
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalService ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -33130,7 +33130,7 @@ entity:FlexibleLoad-527
   props:entityName "Flexible Load"^^xsd:string ;
   props:gUC "X"^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -35255,11 +35255,11 @@ entity:GeographicInformationSystem-560
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:GeographicInformationSystem-561
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -35286,7 +35286,7 @@ entity:GeographicInformationSystem-561
   props:entityName "Geographic Information System"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -35570,7 +35570,7 @@ entity:Grid-567
   props:eNTSOERoleModel ""^^xsd:string ;
   props:eUCommission ""^^xsd:string ;
   props:eUSCCGWP1 ""^^xsd:string ;
-  props:eUSourceunknown ""^^xsd:string ;
+  props:eUSourceunknown "X"^^xsd:string ;
   props:eUWGSPVers05 ""^^xsd:string ;
   props:electricStorage ""^^xsd:string ;
   props:electricTransportaion ""^^xsd:string ;
@@ -35602,7 +35602,7 @@ entity:Grid-567
   tables:rowIndex "567"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Grid"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:Grid-568
   rdf:type props:Combined-Elements-noduprows ;
@@ -35660,7 +35660,7 @@ entity:Grid-568
   tables:rowIndex "568"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Grid"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:Grid-569
   rdf:type props:Combined-Elements-noduprows ;
