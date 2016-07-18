@@ -36240,7 +36240,7 @@ entity:GridMonitoring-578
   tables:rowIndex "578"^^xsd:int ;
   rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Grid Monitoring"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:GridOperations-579
   rdf:type ar:ConceptualService ;
@@ -48846,10 +48846,10 @@ entity:MeterReadingAndControl-790
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:MeterUser-B--791
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalService ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "generic role"^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -48876,7 +48876,7 @@ entity:MeterUser-B--791
   props:entityName "Meter User (B)"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -49309,7 +49309,7 @@ entity:MicrogridControlCenter-798
   tables:rowIndex "798"^^xsd:int ;
   rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Microgrid Control Center"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:MicrogridDEREMS-MDEMS--799
   rdf:type props:Combined-Elements-noduprows ;
@@ -50125,7 +50125,7 @@ entity:MobileMeteringServiceProvider-808
   tables:rowIndex "808"^^xsd:int ;
   rdfs:comment "no description, marked as Role"^^xsd:string ;
   rdfs:label "Mobile metering service provider"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:MobilityServiceOperator-809
   rdf:type ar:ConceptualServiceComposition ;
@@ -51938,10 +51938,10 @@ entity:NetworkModelVisualizationSupportService-839
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:NetworkOperationMonitoring-NONMON--840
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -51952,7 +51952,7 @@ entity:NetworkOperationMonitoring-NONMON--840
   props:colC ""^^xsd:string ;
   props:colD ""^^xsd:string ;
   props:conceptualModel ""^^xsd:string ;
-  props:dKERepository ""^^xsd:string ;
+  props:dKERepository "X"^^xsd:string ;
   props:demandResponse ""^^xsd:string ;
   props:description_0 "Part of Network Operation Provides the means for supervising main substation topology (breaker and switch state) and control equipment status. It also provides the utilities for handling network connectivity and loading conditions. It also makes it possible to locate customer telephone complaints and supervise the location of field crews."^^xsd:string ;
   props:distributionGridMgmt ""^^xsd:string ;
@@ -51961,14 +51961,14 @@ entity:NetworkOperationMonitoring-NONMON--840
   props:eNTSOERoleModel ""^^xsd:string ;
   props:eUCommission ""^^xsd:string ;
   props:eUSCCGWP1 ""^^xsd:string ;
-  props:eUSourceunknown ""^^xsd:string ;
+  props:eUSourceunknown "X"^^xsd:string ;
   props:eUWGSPVers05 ""^^xsd:string ;
   props:electricStorage ""^^xsd:string ;
   props:electricTransportaion ""^^xsd:string ;
   props:entityName "Network operation monitoring (NONMON)"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -51988,7 +51988,7 @@ entity:NetworkOperationMonitoring-NONMON--840
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type ""^^xsd:string ;
-  props:uSEUInput "EU"^^xsd:string ;
+  props:uSEUInput "EU; US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "840"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
@@ -52051,7 +52051,7 @@ entity:NetworkOperationMonitoring-NONMON--841
   tables:rowIndex "841"^^xsd:int ;
   rdfs:comment "no description marked as Application"^^xsd:string ;
   rdfs:label "Network operation monitoring (NO-NMON)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:NetworkOperationSimulation-842
   rdf:type ar:LogicalService ;
@@ -52112,10 +52112,10 @@ entity:NetworkOperationSimulation-842
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:NetworkOperationSimulation-OPSIM--843
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -52142,7 +52142,7 @@ entity:NetworkOperationSimulation-OPSIM--843
   props:entityName "Network operation simulation (OPSIM)"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -52228,10 +52228,10 @@ entity:NetworkOperations-844
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:NetworkOperations-NO--845
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "System"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -52258,7 +52258,7 @@ entity:NetworkOperations-NO--845
   props:entityName "Network Operations (NO)"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -52339,9 +52339,9 @@ entity:NetworkOperations-NO--846
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "846"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "no description, normalized with 846"^^xsd:string ;
   rdfs:label "Network Operations (NO)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:NetworkOperationsAnalysis-847
   rdf:type ar:LogicalService ;
@@ -52402,10 +52402,10 @@ entity:NetworkOperationsAnalysis-847
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:NetworkOperationsAnalysis-NOOFA--848
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -52416,7 +52416,7 @@ entity:NetworkOperationsAnalysis-NOOFA--848
   props:colC ""^^xsd:string ;
   props:colD ""^^xsd:string ;
   props:conceptualModel ""^^xsd:string ;
-  props:dKERepository ""^^xsd:string ;
+  props:dKERepository "X"^^xsd:string ;
   props:demandResponse ""^^xsd:string ;
   props:description_0 "Operation Feedback Analysis actors compare records taken from real-time operation related with information on network incidents, connectivity and loading to optimize operations and schedule periodic maintenance."^^xsd:string ;
   props:distributionGridMgmt ""^^xsd:string ;
@@ -52425,14 +52425,14 @@ entity:NetworkOperationsAnalysis-NOOFA--848
   props:eNTSOERoleModel ""^^xsd:string ;
   props:eUCommission ""^^xsd:string ;
   props:eUSCCGWP1 ""^^xsd:string ;
-  props:eUSourceunknown ""^^xsd:string ;
+  props:eUSourceunknown "X"^^xsd:string ;
   props:eUWGSPVers05 ""^^xsd:string ;
   props:electricStorage ""^^xsd:string ;
   props:electricTransportaion ""^^xsd:string ;
   props:entityName "Network Operations Analysis (NO-OFA)"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -52452,7 +52452,7 @@ entity:NetworkOperationsAnalysis-NOOFA--848
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type ""^^xsd:string ;
-  props:uSEUInput "EU"^^xsd:string ;
+  props:uSEUInput "EU; US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "848"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
@@ -52515,7 +52515,7 @@ entity:NetworkOperationsAnalysis-NOOFA--849
   tables:rowIndex "849"^^xsd:int ;
   rdfs:comment "no description marked as Application"^^xsd:string ;
   rdfs:label "Network Operations Analysis (NO-OFA)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:NetworkOperationsAnalyst-850
   rdf:type ar:LogicalService ;
@@ -52809,10 +52809,10 @@ entity:NetworkOperationsFaultAnalysis-854
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:NetworkOperationsFaultAnalysis-NOFLT--855
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Application"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -52839,7 +52839,7 @@ entity:NetworkOperationsFaultAnalysis-NOFLT--855
   props:entityName "Network Operations Fault Analysis (NO-FLT)"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM "X"^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -54083,7 +54083,7 @@ entity:OEM-875
   tables:rowIndex "875"^^xsd:int ;
   rdfs:comment "no description marked as Role"^^xsd:string ;
   rdfs:label "OEM"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:ObtainCustomerInformation-874
   rdf:type ar:ConceptualService ;
@@ -54663,7 +54663,7 @@ entity:Operator-884
   tables:rowIndex "884"^^xsd:int ;
   rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Operator"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:OptimalLoadFlow--885
   rdf:type ar:ConceptualService ;
@@ -56125,7 +56125,7 @@ entity:OverlayGridControlCenter-908
   tables:rowIndex "908"^^xsd:int ;
   rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Overlay Grid Control Center"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:OverlayGridOperator-909
   rdf:type props:Combined-Elements-noduprows ;
@@ -56183,7 +56183,7 @@ entity:OverlayGridOperator-909
   tables:rowIndex "909"^^xsd:int ;
   rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Overlay Grid Operator"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:PCCSwitch-2061
   rdf:type props:Combined-Elements-noduprows ;
@@ -58102,7 +58102,7 @@ entity:PowerEquipment-939
   tables:rowIndex "939"^^xsd:int ;
   rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Power Equipment"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:PowerExchange-940
   rdf:type ar:ConceptualServiceComposition ;
