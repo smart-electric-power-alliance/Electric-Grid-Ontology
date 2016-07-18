@@ -36064,15 +36064,14 @@ entity:GridConditionIndicator-575
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "575"^^xsd:int ;
-  rdfs:comment "575 & 576 have the same name, different descriptions and domains.  Need clarification"^^xsd:string ;
+  rdfs:comment "Deprecated in favor of 576 which made more sense to us."^^xsd:string ;
   rdfs:label "Grid Condition Indicator"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:GridConditionIndicator-576
-  rdf:type props:Combined-Elements-noduprows ;
-  props:aDWPOriginalFocus ""^^xsd:string ;
+  rdf:type ar:LogicalService ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -36099,7 +36098,7 @@ entity:GridConditionIndicator-576
   props:entityName "Grid Condition Indicator"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -36107,7 +36106,7 @@ entity:GridConditionIndicator-576
   props:iEEEP2030Draft3 ""^^xsd:string ;
   props:manufacturerCIMIECTypeOfZone ""^^xsd:string ;
   props:nAESB ""^^xsd:string ;
-  props:nISTLegacyDomain "Operations"^^xsd:string ;
+  props:nISTLegacyDomain "Operations; Market"^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note ""^^xsd:string ;
   props:notes ""^^xsd:string ;
@@ -36122,7 +36121,7 @@ entity:GridConditionIndicator-576
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "576"^^xsd:int ;
-  rdfs:comment "575 & 576 have the same name, different descriptions and domains.  Need clarification"^^xsd:string ;
+  rdfs:comment "Folded 575 into this entity"^^xsd:string ;
   rdfs:label "Grid Condition Indicator"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -56537,10 +56536,10 @@ entity:ParticipantRegistrationManagementSystem-912
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:PartyConnectedToTheGrid-913
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Role"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -56567,7 +56566,7 @@ entity:PartyConnectedToTheGrid-913
   props:entityName "Party Connected to the Grid"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -56590,7 +56589,7 @@ entity:PartyConnectedToTheGrid-913
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "913"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "This entity has a mandatory relationship to a contract"^^xsd:string ;
   rdfs:label "Party Connected to the Grid"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
