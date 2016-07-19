@@ -1,0 +1,78 @@
+# baseURI: http://sv.cmu.edu/AWP/8.0/UseCase2-4
+# imports: http://sv.cmu.edu/AWP/8.0/workingresults8.4
+# imports: http://www.w3.org/2004/02/skos/core
+# prefix: u24
+
+@prefix ar: <http://sv.cmu.edu/AWP/8.0/ActorRoles#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix u24: <http://sv.cmu.edu/AWP/8.0/UseCase2-4#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://sv.cmu.edu/AWP/8.0/UseCase2-4>
+  rdf:type owl:Ontology ;
+  owl:imports <http://sv.cmu.edu/AWP/8.0/workingresults8.4> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
+u24:BCE
+  rdf:type ar:LogicalActor ;
+  rdfs:label "Billing Costing Engine"^^xsd:string ;
+.
+u24:DMS
+  rdf:type ar:LogicalActor ;
+  rdfs:label "Distribution Management System"^^xsd:string ;
+.
+u24:DMSS
+  rdf:type ar:LogicalService ;
+  rdfs:label "Distribution Management Service"^^xsd:string ;
+.
+u24:ESI
+  rdf:type ar:LogicalActor ;
+  ar:provides u24:HEMS ;
+  ar:provides <http://sv.cmu.edu/AWP/8.0/entity#MeterReadingAndControl-790> ;
+  rdfs:label "External Services Interface"^^xsd:string ;
+.
+u24:HEM
+  rdf:type ar:LogicalActor ;
+  rdfs:label "Home Energy Management system"^^xsd:string ;
+.
+u24:HEMS
+  rdf:type ar:LogicalService ;
+  rdfs:label "Home Energy Management Service"^^xsd:string ;
+.
+u24:MMB
+  rdf:type ar:LogicalActor ;
+  rdfs:label "Meter Metrology Board"^^xsd:string ;
+.
+u24:NIC
+  rdf:type ar:LogicalActor ;
+  rdfs:label "AMI network interface component"^^xsd:string ;
+.
+u24:RTO
+  rdf:type ar:LogicalActor ;
+  rdfs:label "Regional Transmission Operator"^^xsd:string ;
+.
+u24:RTOS
+  rdf:type ar:LogicalService ;
+  rdfs:label "Regional Transmission Operation Service"^^xsd:string ;
+.
+u24:SGD
+  rdf:type ar:LogicalActor ;
+  rdfs:label "Smart Grid Dispatch System"^^xsd:string ;
+.
+u24:SGDS
+  rdf:type ar:LogicalService ;
+  rdfs:label "Smart Grid Dispatch Service"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DemandResponseManagementSystem-249>
+  ar:consumes <http://sv.cmu.edu/AWP/8.0/entity#Measurement-774> ;
+  ar:consumes <http://sv.cmu.edu/AWP/8.0/entity#MeterReadingAndControl-790> ;
+  ar:provides <http://sv.cmu.edu/AWP/8.0/entity#HomeManagement-592> ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#EnergyInformationProvider-425>
+  ar:provides <http://sv.cmu.edu/AWP/8.0/entity#EnergyServicesInterface-450> ;
+  ar:provides <http://sv.cmu.edu/AWP/8.0/entity#Measurement-774> ;
+  ar:provides <http://sv.cmu.edu/AWP/8.0/entity#MeterReadingAndControl-790> ;
+.
