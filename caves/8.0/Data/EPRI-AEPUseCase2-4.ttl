@@ -1,0 +1,100 @@
+# baseURI: http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4
+# imports: http://sv.cmu.edu/AWP/8.0/workingresults8.4
+# imports: http://www.w3.org/2004/02/skos/core
+# prefix: ea24
+
+@prefix ar: <http://sv.cmu.edu/AWP/8.0/ActorRoles#> .
+@prefix ea24: <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4>
+  rdf:type owl:Ontology ;
+  owl:imports <http://sv.cmu.edu/AWP/8.0/workingresults8.4> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
+ea24:BCE
+  rdf:type ar:LogicalActor ;
+  ar:consumes ea24:ProvidePricingData ;
+  ar:provides ea24:CalculateTotalPrice ;
+  rdfs:label "Billing Costing Engine"^^xsd:string ;
+  skos:closeMatch <http://sv.cmu.edu/AWP/8.0/entity#BillingApplication-79> ;
+  skos:narrower <http://sv.cmu.edu/AWP/8.0/entity#BackOfficeSystems-65> ;
+.
+ea24:CalculateTotalPrice
+  rdf:type ar:LogicalService ;
+  rdfs:label "calculate total price"^^xsd:string ;
+.
+ea24:ClearPrice
+  rdf:type ar:LogicalService ;
+  rdfs:label "provide market clearing price"^^xsd:string ;
+  skos:related <http://sv.cmu.edu/AWP/8.0/entity#RetailMarket-1069> ;
+.
+ea24:DMS
+  rdf:type ar:LogicalActor ;
+  ar:provides ea24:MeasureCongestion ;
+  rdfs:label "Distribution Management System"^^xsd:string ;
+.
+ea24:HEM
+  rdf:type ar:LogicalActor ;
+  ar:consumes ea24:ProvidePriceSignals ;
+  ar:consumes ea24:ReadUsage ;
+  ar:provides ea24:ProvideBids ;
+  ar:provides ea24:ReadUsage ;
+  rdfs:label "Home Energy Management System"^^xsd:string ;
+  skos:narrower <http://sv.cmu.edu/AWP/8.0/entity#BuildingAutomationSystem-86> ;
+  skos:narrower <http://sv.cmu.edu/AWP/8.0/entity#FacilityEnergyManagementSystem-Gateway-496> ;
+.
+ea24:MeasureCongestion
+  rdf:type ar:LogicalService ;
+  rdfs:label "provide current distribution circuit congestion"^^xsd:string ;
+  skos:narrowMatch <http://sv.cmu.edu/AWP/8.0/entity#Measurement-774> ;
+.
+ea24:ProvideBids
+  rdf:type ar:LogicalService ;
+  rdfs:label "provide bids"^^xsd:string ;
+.
+ea24:ProvidePriceSignals
+  rdf:type ar:LogicalService ;
+  rdfs:label "provide price signals"^^xsd:string ;
+.
+ea24:ProvidePricingData
+  rdf:type ar:LogicalService ;
+  rdfs:label "provide real-time and day-ahead pricing data"^^xsd:string ;
+.
+ea24:RTO
+  rdf:type ar:LogicalActor ;
+  ar:provides ea24:ProvidePricingData ;
+  rdfs:label "Regional Transmission Organization"^^xsd:string ;
+.
+ea24:RTP
+  rdf:type ar:LogicalActor ;
+  ar:provides ea24:ProvidePriceSignals ;
+  rdfs:label "Real-Time Pricing system"^^xsd:string ;
+  skos:related <http://sv.cmu.edu/AWP/8.0/entity#DemandResponseManagementSystem-249> ;
+.
+ea24:ReadUsage
+  rdf:type ar:LogicalService ;
+  rdfs:label "provide Demand/Energy usage readings"^^xsd:string ;
+  skos:closeMatch <http://sv.cmu.edu/AWP/8.0/entity#Measurement-774> ;
+  skos:related <http://sv.cmu.edu/AWP/8.0/entity#MeterReadingAndControl-790> ;
+.
+ea24:SGD
+  rdf:type ar:LogicalActor ;
+  ar:consumes ea24:CalculateTotalPrice ;
+  ar:consumes ea24:MeasureCongestion ;
+  ar:consumes ea24:ProvideBids ;
+  ar:consumes ea24:ReadUsage ;
+  ar:provides ea24:ClearPrice ;
+  rdfs:label "Smart Grid Dispatch system"^^xsd:string ;
+  skos:broader <http://sv.cmu.edu/AWP/8.0/entity#DERManagementSystem-DERMS-generic-2020> ;
+.
+ea24:SM
+  rdf:type ar:LogicalActor ;
+  ar:provides ea24:ReadUsage ;
+  rdfs:label "Smart Meter"^^xsd:string ;
+.

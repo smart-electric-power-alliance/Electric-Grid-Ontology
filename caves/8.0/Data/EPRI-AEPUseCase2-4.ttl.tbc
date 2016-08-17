@@ -1,0 +1,200 @@
+# baseURI: null
+
+@prefix composite: <http://www.topbraid.org/2007/05/composite.owl#> .
+@prefix forms: <http://www.topbraid.org/2007/01/forms.owl#> .
+@prefix inference: <http://www.topbraid.org/2007/06/inference.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix visual: <http://topbraid.org/visual#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[
+  rdf:type visual:Graph ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#BCE> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "101"^^xsd:int ;
+      visual:x "526"^^xsd:int ;
+      visual:y "558"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#CalculateTotalPrice> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "181"^^xsd:int ;
+      visual:x "809"^^xsd:int ;
+      visual:y "438"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#ClearPrice> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "133"^^xsd:int ;
+      visual:x "809"^^xsd:int ;
+      visual:y "288"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#DMS> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "105"^^xsd:int ;
+      visual:x "522"^^xsd:int ;
+      visual:y "228"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#HEM> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "106"^^xsd:int ;
+      visual:x "523"^^xsd:int ;
+      visual:y "712"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#MeasureCongestion> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "186"^^xsd:int ;
+      visual:x "809"^^xsd:int ;
+      visual:y "238"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#ProvideBids> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "142"^^xsd:int ;
+      visual:x "813"^^xsd:int ;
+      visual:y "601"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#ProvidePriceSignals> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "183"^^xsd:int ;
+      visual:x "807"^^xsd:int ;
+      visual:y "512"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#ProvidePricingData> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "181"^^xsd:int ;
+      visual:x "810"^^xsd:int ;
+      visual:y "341"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#RTO> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "101"^^xsd:int ;
+      visual:x "523"^^xsd:int ;
+      visual:y "367"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#RTP> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "100"^^xsd:int ;
+      visual:x "527"^^xsd:int ;
+      visual:y "303"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#ReadUsage> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "138"^^xsd:int ;
+      visual:x "809"^^xsd:int ;
+      visual:y "688"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#SGD> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "102"^^xsd:int ;
+      visual:x "523"^^xsd:int ;
+      visual:y "469"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#SM> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "97"^^xsd:int ;
+      visual:x "522"^^xsd:int ;
+      visual:y "628"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#BackOfficeSystems-65> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "203"^^xsd:int ;
+      visual:x "131"^^xsd:int ;
+      visual:y "503"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#BillingApplication-79> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "197"^^xsd:int ;
+      visual:x "134"^^xsd:int ;
+      visual:y "566"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#BuildingAutomationSystem-86> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "249"^^xsd:int ;
+      visual:x "90"^^xsd:int ;
+      visual:y "664"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#DERManagementSystem-DERMS-generic-2020> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "332"^^xsd:int ;
+      visual:x "39"^^xsd:int ;
+      visual:y "440"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#DemandResponseManagementSystem-249> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "313"^^xsd:int ;
+      visual:x "14"^^xsd:int ;
+      visual:y "345"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#FacilityEnergyManagementSystem-Gateway-496> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "341"^^xsd:int ;
+      visual:x "5"^^xsd:int ;
+      visual:y "761"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#Measurement-774> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "182"^^xsd:int ;
+      visual:x "1190"^^xsd:int ;
+      visual:y "452"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#MeterReadingAndControl-790> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "245"^^xsd:int ;
+      visual:x "1190"^^xsd:int ;
+      visual:y "704"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#RetailMarket-1069> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "181"^^xsd:int ;
+      visual:x "1190"^^xsd:int ;
+      visual:y "278"^^xsd:int ;
+    ] ;
+  visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#RTP> ;
+  rdfs:label "Graph1" ;
+].
