@@ -40,6 +40,11 @@ owl:Thing
               ] ;
           ]
           [
+            sp:object "false"^^xsd:boolean ;
+            sp:predicate owl:deprecated ;
+            sp:subject spin:_this ;
+          ]
+          [
             rdf:type sp:NotExists ;
             sp:elements (
                 [
@@ -69,6 +74,11 @@ owl:Thing
               ] ;
           ]
           [
+            sp:object "false"^^xsd:boolean ;
+            sp:predicate owl:deprecated ;
+            sp:subject spin:_this ;
+          ]
+          [
             rdf:type sp:NotExists ;
             sp:elements (
                 [
@@ -96,6 +106,11 @@ owl:Thing
                   ] ;
                 sp:arg2 "http://sv.cmu.edu/AWP/8.0/entity#" ;
               ] ;
+          ]
+          [
+            sp:object "false"^^xsd:boolean ;
+            sp:predicate owl:deprecated ;
+            sp:subject spin:_this ;
           ]
           [
             sp:object [
@@ -186,6 +201,11 @@ owl:Thing
               ] ;
           ]
           [
+            sp:object "false"^^xsd:boolean ;
+            sp:predicate owl:deprecated ;
+            sp:subject spin:_this ;
+          ]
+          [
             sp:object [
                 sp:varName "hierarchy"^^xsd:string ;
               ] ;
@@ -272,6 +292,11 @@ owl:Thing
                   ] ;
                 sp:arg2 "http://sv.cmu.edu/AWP/8.0/entity#" ;
               ] ;
+          ]
+          [
+            sp:object "false"^^xsd:boolean ;
+            sp:predicate owl:deprecated ;
+            sp:subject spin:_this ;
           ]
           [
             sp:object [
@@ -376,6 +401,11 @@ owl:Thing
               ] ;
           ]
           [
+            sp:object "false"^^xsd:boolean ;
+            sp:predicate owl:deprecated ;
+            sp:subject spin:_this ;
+          ]
+          [
             sp:object [
                 sp:varName "hierarchy"^^xsd:string ;
               ] ;
@@ -478,6 +508,11 @@ owl:Thing
               ] ;
           ]
           [
+            sp:object "false"^^xsd:boolean ;
+            sp:predicate owl:deprecated ;
+            sp:subject spin:_this ;
+          ]
+          [
             sp:object [
                 sp:varName "hierarchy"^^xsd:string ;
               ] ;
@@ -578,6 +613,11 @@ owl:Thing
                   ] ;
                 sp:arg2 "http://sv.cmu.edu/AWP/8.0/entity#" ;
               ] ;
+          ]
+          [
+            sp:object "false"^^xsd:boolean ;
+            sp:predicate owl:deprecated ;
+            sp:subject spin:_this ;
           ]
           [
             sp:object [
