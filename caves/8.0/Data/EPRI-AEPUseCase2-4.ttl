@@ -22,8 +22,8 @@ ea24:BCE
   ar:consumes ea24:ProvidePricingData ;
   ar:provides ea24:CalculateTotalPrice ;
   rdfs:label "Billing Costing Engine"^^xsd:string ;
+  skos:broadMatch <http://sv.cmu.edu/AWP/8.0/entity#BackOfficeSystems-65> ;
   skos:closeMatch <http://sv.cmu.edu/AWP/8.0/entity#BillingApplication-79> ;
-  skos:narrower <http://sv.cmu.edu/AWP/8.0/entity#BackOfficeSystems-65> ;
 .
 ea24:CalculateTotalPrice
   rdf:type ar:LogicalService ;
@@ -46,8 +46,8 @@ ea24:HEM
   ar:provides ea24:ProvideBids ;
   ar:provides ea24:ReadUsage ;
   rdfs:label "Home Energy Management System"^^xsd:string ;
-  skos:narrower <http://sv.cmu.edu/AWP/8.0/entity#BuildingAutomationSystem-86> ;
-  skos:narrower <http://sv.cmu.edu/AWP/8.0/entity#FacilityEnergyManagementSystem-Gateway-496> ;
+  skos:broadMatch <http://sv.cmu.edu/AWP/8.0/entity#BuildingAutomationSystem-86> ;
+  skos:broadMatch <http://sv.cmu.edu/AWP/8.0/entity#FacilityEnergyManagementSystem-Gateway-496> ;
 .
 ea24:MeasureCongestion
   rdf:type ar:LogicalService ;
@@ -91,7 +91,7 @@ ea24:SGD
   ar:consumes ea24:ReadUsage ;
   ar:provides ea24:ClearPrice ;
   rdfs:label "Smart Grid Dispatch system"^^xsd:string ;
-  skos:broader <http://sv.cmu.edu/AWP/8.0/entity#DERManagementSystem-DERMS-generic-2020> ;
+  skos:narrowMatch <http://sv.cmu.edu/AWP/8.0/entity#DERManagementSystem-DERMS-generic-2020> ;
 .
 ea24:SM
   rdf:type ar:LogicalActor ;
