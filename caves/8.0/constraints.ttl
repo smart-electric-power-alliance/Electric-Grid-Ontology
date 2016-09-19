@@ -693,6 +693,41 @@ owl:Thing
               ] ;
           ]
           [
+            sp:object "true"^^xsd:boolean ;
+            sp:predicate owl:deprecated ;
+            sp:subject [
+                sp:varName "o"^^xsd:string ;
+              ] ;
+          ]
+        ) ;
+      rdfs:comment "010 SKOS relation points to a deprecated instance"^^xsd:string ;
+    ] ;
+  spin:constraint [
+      rdf:type sp:Ask ;
+      sp:where (
+          [
+            sp:object [
+                sp:varName "o"^^xsd:string ;
+              ] ;
+            sp:predicate [
+                sp:varName "p"^^xsd:string ;
+              ] ;
+            sp:subject spin:_this ;
+          ]
+          [
+            rdf:type sp:Filter ;
+            sp:expression [
+                rdf:type sp:eq ;
+                sp:arg1 [
+                    rdf:type afn:namespace ;
+                    sp:arg1 [
+                        sp:varName "p"^^xsd:string ;
+                      ] ;
+                  ] ;
+                sp:arg2 "http://www.w3.org/2004/02/skos/core#" ;
+              ] ;
+          ]
+          [
             sp:object [
                 sp:varName "types"^^xsd:string ;
               ] ;
