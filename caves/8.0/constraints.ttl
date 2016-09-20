@@ -743,7 +743,40 @@ owl:Thing
       rdfs:comment "010 SKOS relation points to a deprecated instance"^^xsd:string ;
     ] ;
   spin:constraint [
-      rdf:type sp:Ask ;
+      rdf:type sp:Construct ;
+      sp:templates (
+          [
+            sp:object spin:ConstraintViolation ;
+            sp:predicate rdf:type ;
+            sp:subject _:b36523 ;
+          ]
+          [
+            sp:object [
+                sp:varName "error"^^xsd:string ;
+              ] ;
+            sp:predicate rdfs:label ;
+            sp:subject _:b36523 ;
+          ]
+          [
+            sp:object spin:_this ;
+            sp:predicate spin:violationRoot ;
+            sp:subject _:b36523 ;
+          ]
+          [
+            sp:object [
+                sp:varName "p"^^xsd:string ;
+              ] ;
+            sp:predicate spin:violationPath ;
+            sp:subject _:b36523 ;
+          ]
+          [
+            sp:object [
+                sp:varName "o"^^xsd:string ;
+              ] ;
+            sp:predicate spin:violationValue ;
+            sp:subject _:b36523 ;
+          ]
+        ) ;
       sp:where (
           [
             sp:object [
@@ -793,6 +826,31 @@ owl:Thing
                 sp:arg2 [
                     sp:varName "typeo"^^xsd:string ;
                   ] ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type afn:localname ;
+                sp:arg1 [
+                    sp:varName "o"^^xsd:string ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "localname"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type fn:concat ;
+                sp:arg1 "009 Inconsistent type for SKOS mapping to " ;
+                sp:arg2 [
+                    sp:varName "localname"^^xsd:string ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "error"^^xsd:string ;
               ] ;
           ]
         ) ;
