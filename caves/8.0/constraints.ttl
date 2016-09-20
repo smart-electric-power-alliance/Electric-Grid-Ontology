@@ -843,10 +843,26 @@ owl:Thing
           [
             rdf:type sp:Bind ;
             sp:expression [
+                rdf:type afn:localname ;
+                sp:arg1 [
+                    sp:varName "typeo"^^xsd:string ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "objectTypeName"^^xsd:string ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
                 rdf:type fn:concat ;
                 sp:arg1 "009 Inconsistent type for SKOS mapping to " ;
                 sp:arg2 [
                     sp:varName "localname"^^xsd:string ;
+                  ] ;
+                sp:arg3 " which is a " ;
+                sp:arg4 [
+                    sp:varName "objectTypeName"^^xsd:string ;
                   ] ;
               ] ;
             sp:variable [
