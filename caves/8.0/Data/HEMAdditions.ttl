@@ -1,5 +1,6 @@
 # baseURI: http://sv.cmu.edu/AWP/8.0/HEMAdditions
 # imports: http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4
+# imports: http://sv.cmu.edu/AWP/8.0/skosRelations
 # imports: http://www.w3.org/2004/02/skos/core
 # prefix: HEMAdditions
 
@@ -26,19 +27,17 @@
   ar:provides <http://sv.cmu.edu/AWP/8.0/entity#ManageEquipment-707> ;
   ar:provides <http://sv.cmu.edu/AWP/8.0/entity#ManageLoadLimits-715> ;
   ar:provides <http://sv.cmu.edu/AWP/8.0/entity#ManageLoadShed-716> ;
-  skos:broadMatch <http://sv.cmu.edu/AWP/8.0/entity#BuildingAutomationSystem-86> ;
   skos:broadMatch <http://sv.cmu.edu/AWP/8.0/entity#BuildingManagementSystem-89> ;
-  skos:broadMatch <http://sv.cmu.edu/AWP/8.0/entity#EnergyManager-436> ;
   skos:broadMatch <http://sv.cmu.edu/AWP/8.0/entity#FacilityEnergyManagementSystem-Gateway-496> ;
-  skos:closeMatch <http://sv.cmu.edu/AWP/8.0/entity#CustomerEnergyManagementSystem-212> ;
   skos:narrowMatch <http://sv.cmu.edu/AWP/8.0/entity#BuildingDEREMS-BDEMS-2005> ;
-  skos:narrowMatch <http://sv.cmu.edu/AWP/8.0/entity#DERManagementSystem-DERMS-generic-2020> ;
+  skos:narrowMatch <http://sv.cmu.edu/AWP/8.0/entity#EnergyManager-436> ;
   skos:narrowMatch <http://sv.cmu.edu/AWP/8.0/entity#EnergyServicesGateway-449> ;
   skos:narrowMatch <http://sv.cmu.edu/AWP/8.0/entity#EnergyServicesInterface-450> ;
 .
 <http://sv.cmu.edu/AWP/8.0/HEMAdditions>
   rdf:type owl:Ontology ;
   owl:imports <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4> ;
+  owl:imports <http://sv.cmu.edu/AWP/8.0/skosRelations> ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
 .

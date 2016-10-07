@@ -1,0 +1,141 @@
+# baseURI: null
+
+@prefix composite: <http://www.topbraid.org/2007/05/composite.owl#> .
+@prefix forms: <http://www.topbraid.org/2007/01/forms.owl#> .
+@prefix inference: <http://www.topbraid.org/2007/06/inference.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix visual: <http://topbraid.org/visual#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[
+  rdf:type visual:Graph ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#HEM> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "106"^^xsd:int ;
+      visual:x "21"^^xsd:int ;
+      visual:y "328"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#BuildingAutomationSystem-86> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "249"^^xsd:int ;
+      visual:x "677"^^xsd:int ;
+      visual:y "59"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#BuildingDEREMS-BDEMS-2005> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "246"^^xsd:int ;
+      visual:x "229"^^xsd:int ;
+      visual:y "462"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#BuildingManagementSystem-89> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "256"^^xsd:int ;
+      visual:x "239"^^xsd:int ;
+      visual:y "61"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#CustomerEnergyManagementSystem-212> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "306"^^xsd:int ;
+      visual:x "621"^^xsd:int ;
+      visual:y "161"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#DERManagementSystem-DERMS-generic-2020> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "332"^^xsd:int ;
+      visual:x "589"^^xsd:int ;
+      visual:y "457"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#EnergyManager-436> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "192"^^xsd:int ;
+      visual:x "229"^^xsd:int ;
+      visual:y "412"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#EnergyServicesGateway-449> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "232"^^xsd:int ;
+      visual:x "229"^^xsd:int ;
+      visual:y "362"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#EnergyServicesInterface-450> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "233"^^xsd:int ;
+      visual:x "225"^^xsd:int ;
+      visual:y "522"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#FacilityEnergyManagementSystem-Gateway-496> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "341"^^xsd:int ;
+      visual:x "221"^^xsd:int ;
+      visual:y "162"^^xsd:int ;
+    ] ;
+  visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#HEM> ;
+  rdfs:label "ea24:HEM Graph" ;
+].
+[
+  rdf:type visual:Graph ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#HEM> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "116"^^xsd:int ;
+      visual:x "427"^^xsd:int ;
+      visual:y "16"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#BuildingAutomationSystem-86> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "259"^^xsd:int ;
+      visual:x "532"^^xsd:int ;
+      visual:y "287"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#BuildingManagementSystem-89> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "266"^^xsd:int ;
+      visual:x "532"^^xsd:int ;
+      visual:y "141"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#CustomerEnergyManagementSystem-212> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "316"^^xsd:int ;
+      visual:x "495"^^xsd:int ;
+      visual:y "468"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#FacilityEnergyManagementSystem-Gateway-496> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "351"^^xsd:int ;
+      visual:x "99"^^xsd:int ;
+      visual:y "140"^^xsd:int ;
+    ] ;
+  visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#HEM> ;
+  rdfs:label "ea24:HEM Broader" ;
+].
