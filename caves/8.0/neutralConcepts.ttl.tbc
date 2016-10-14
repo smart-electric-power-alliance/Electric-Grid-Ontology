@@ -1,0 +1,117 @@
+# baseURI: null
+
+@prefix composite: <http://www.topbraid.org/2007/05/composite.owl#> .
+@prefix forms: <http://www.topbraid.org/2007/01/forms.owl#> .
+@prefix inference: <http://www.topbraid.org/2007/06/inference.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix visual: <http://topbraid.org/visual#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[
+  rdf:type visual:Graph ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#DERServices> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "132"^^xsd:int ;
+      visual:x "502"^^xsd:int ;
+      visual:y "573"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#DemandResponseServices> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "216"^^xsd:int ;
+      visual:x "428"^^xsd:int ;
+      visual:y "351"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#EnergyMonitoring> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "175"^^xsd:int ;
+      visual:x "347"^^xsd:int ;
+      visual:y "240"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#EnergyPriceBidding> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "182"^^xsd:int ;
+      visual:x "264"^^xsd:int ;
+      visual:y "463"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#HomeEnergyManagementLogicalServices> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "299"^^xsd:int ;
+      visual:x "376"^^xsd:int ;
+      visual:y "128"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LoadForecasting> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "166"^^xsd:int ;
+      visual:x "453"^^xsd:int ;
+      visual:y "463"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LoadManagement> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "176"^^xsd:int ;
+      visual:x "529"^^xsd:int ;
+      visual:y "240"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LoadShedding> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "155"^^xsd:int ;
+      visual:x "626"^^xsd:int ;
+      visual:y "463"^^xsd:int ;
+    ] ;
+  visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#HomeEnergyManagementLogicalDevice> ;
+  rdfs:label "nc:Logical Services" ;
+].
+[
+  rdf:type visual:Graph ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#EnergyMonitoring> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "175"^^xsd:int ;
+      visual:x "425"^^xsd:int ;
+      visual:y "240"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#HomeEnergyManagementLogicalDevice> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "292"^^xsd:int ;
+      visual:x "458"^^xsd:int ;
+      visual:y "16"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#HomeEnergyManagementLogicalServices> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "299"^^xsd:int ;
+      visual:x "454"^^xsd:int ;
+      visual:y "128"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LoadManagement> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "176"^^xsd:int ;
+      visual:x "607"^^xsd:int ;
+      visual:y "240"^^xsd:int ;
+    ] ;
+  visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#HomeEnergyManagementLogicalDevice> ;
+  rdfs:label "nc:HomeEnergyManagementLogicalDevice Graph" ;
+].

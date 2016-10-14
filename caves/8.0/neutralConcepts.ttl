@@ -1,0 +1,64 @@
+# baseURI: http://sv.cmu.edu/AWP/8.0/neutralConcepts
+# imports: http://sv.cmu.edu/AWP/8.0/ActorRoles
+# imports: http://www.w3.org/2004/02/skos/core
+# prefix: nc
+
+@prefix ar: <http://sv.cmu.edu/AWP/8.0/ActorRoles#> .
+@prefix nc: <http://sv.cmu.edu/AWP/8.0/neutralConcepts#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://sv.cmu.edu/AWP/8.0/neutralConcepts>
+  rdf:type owl:Ontology ;
+  owl:imports <http://sv.cmu.edu/AWP/8.0/ActorRoles> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
+nc:DERServices
+  rdf:type ar:LogicalServiceComposition ;
+  rdfs:label "DER Services"^^xsd:string ;
+.
+nc:DemandResponseServices
+  rdf:type ar:LogicalServiceComposition ;
+  ar:isCollectionOf nc:EnergyPriceBidding ;
+  ar:isCollectionOf nc:LoadForecasting ;
+  ar:isCollectionOf nc:LoadShedding ;
+  rdfs:label "Demand Response Services"^^xsd:string ;
+.
+nc:DeviceHealthMonitoring
+  rdf:type ar:LogicalService ;
+  rdfs:label "Device Health Monitoring"^^xsd:string ;
+.
+nc:EnergyMonitoring
+  rdf:type ar:LogicalService ;
+  rdfs:label "Energy Monitoring"^^xsd:string ;
+.
+nc:EnergyPriceBidding
+  rdf:type ar:LogicalService ;
+  rdfs:label "Energy Price Bidding"^^xsd:string ;
+.
+nc:HomeEnergyManagementLogicalDevice
+  rdf:type ar:LogicalActor ;
+  ar:provides nc:HomeEnergyManagementLogicalServices ;
+  rdfs:label "Home Energy Management Logical Device"^^xsd:string ;
+.
+nc:HomeEnergyManagementLogicalServices
+  rdf:type ar:LogicalServiceComposition ;
+  ar:isCollectionOf nc:EnergyMonitoring ;
+  ar:isCollectionOf nc:LoadManagement ;
+  rdfs:label "Home Energy Management Logical Services"^^xsd:string ;
+.
+nc:LoadForecasting
+  rdf:type ar:LogicalService ;
+  rdfs:label "Load Forecasting"^^xsd:string ;
+.
+nc:LoadManagement
+  rdf:type ar:LogicalService ;
+  rdfs:label "Load Management"^^xsd:string ;
+.
+nc:LoadShedding
+  rdf:type ar:LogicalService ;
+  rdfs:label "Load Shedding"^^xsd:string ;
+.

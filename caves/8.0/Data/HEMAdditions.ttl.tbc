@@ -139,3 +139,64 @@
   visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#HEM> ;
   rdfs:label "ea24:HEM Broader" ;
 ].
+[
+  rdf:type visual:Graph ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#HEM2> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "122"^^xsd:int ;
+      visual:x "601"^^xsd:int ;
+      visual:y "16"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#DeviceHealthMonitoring> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "209"^^xsd:int ;
+      visual:x "752"^^xsd:int ;
+      visual:y "128"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#EnergyMonitoring> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "175"^^xsd:int ;
+      visual:x "430"^^xsd:int ;
+      visual:y "352"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#HomeEnergyManagementLogicalDevice> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "292"^^xsd:int ;
+      visual:x "280"^^xsd:int ;
+      visual:y "128"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#HomeEnergyManagementLogicalServices> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "299"^^xsd:int ;
+      visual:x "276"^^xsd:int ;
+      visual:y "240"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LoadForecasting> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "166"^^xsd:int ;
+      visual:x "579"^^xsd:int ;
+      visual:y "128"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LoadManagement> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "176"^^xsd:int ;
+      visual:x "247"^^xsd:int ;
+      visual:y "352"^^xsd:int ;
+    ] ;
+  visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#HEM2> ;
+  rdfs:label "ea24:HEM2 Graph" ;
+].

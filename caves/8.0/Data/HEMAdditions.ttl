@@ -1,5 +1,6 @@
 # baseURI: http://sv.cmu.edu/AWP/8.0/HEMAdditions
 # imports: http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4
+# imports: http://sv.cmu.edu/AWP/8.0/neutralConcepts
 # imports: http://sv.cmu.edu/AWP/8.0/skosRelations
 # imports: http://www.w3.org/2004/02/skos/core
 # prefix: HEMAdditions
@@ -34,10 +35,21 @@
   skos:narrowMatch <http://sv.cmu.edu/AWP/8.0/entity#EnergyServicesGateway-449> ;
   skos:narrowMatch <http://sv.cmu.edu/AWP/8.0/entity#EnergyServicesInterface-450> ;
 .
+<http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#HEM2>
+  rdf:type ar:LogicalActor ;
+  ar:provides <http://sv.cmu.edu/AWP/8.0/neutralConcepts#DeviceHealthMonitoring> ;
+  ar:provides <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LoadForecasting> ;
+  rdfs:label "HEM version 2"^^xsd:string ;
+  skos:narrowMatch <http://sv.cmu.edu/AWP/8.0/neutralConcepts#HomeEnergyManagementLogicalDevice> ;
+.
 <http://sv.cmu.edu/AWP/8.0/HEMAdditions>
   rdf:type owl:Ontology ;
   owl:imports <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4> ;
+  owl:imports <http://sv.cmu.edu/AWP/8.0/neutralConcepts> ;
   owl:imports <http://sv.cmu.edu/AWP/8.0/skosRelations> ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#BuildingManagementSystem-89>
+  skos:narrowMatch <http://sv.cmu.edu/AWP/8.0/neutralConcepts#HomeEnergyManagementLogicalDevice> ;
 .
