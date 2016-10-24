@@ -1,7 +1,6 @@
 # baseURI: http://sv.cmu.edu/AWP/8.0/skosRelations
 # imports: http://sv.cmu.edu/AWP/8.0/workingresults8.4
 # imports: http://www.w3.org/2004/02/skos/core
-# prefix: sr
 
 @prefix ar: <http://sv.cmu.edu/AWP/8.0/ActorRoles#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -22,7 +21,6 @@
   props:entityName "Actor B"^^xsd:string ;
 .
 <http://sv.cmu.edu/AWP/8.0/entity#BuildingAutomationSystem-86>
-  skos:exactMatch <http://sv.cmu.edu/AWP/8.0/entity#CustomerEnergyManagementSystem-212> ;
   skos:narrower <http://sv.cmu.edu/AWP/8.0/entity#BuildingManagementSystem-89> ;
 .
 <http://sv.cmu.edu/AWP/8.0/entity#BuildingDEREMS-BDEMS-2005>
@@ -30,9 +28,6 @@
 .
 <http://sv.cmu.edu/AWP/8.0/entity#BuildingManagementSystem-89>
   skos:broader <http://sv.cmu.edu/AWP/8.0/entity#BuildingAutomationSystem-86> ;
-.
-<http://sv.cmu.edu/AWP/8.0/entity#CustomerEnergyManagementSystem-212>
-  skos:exactMatch <http://sv.cmu.edu/AWP/8.0/entity#BuildingAutomationSystem-86> ;
 .
 <http://sv.cmu.edu/AWP/8.0/entity#CustomerInformationSystem-CIS-2012>
   props:entityName ""^^xsd:string ;
