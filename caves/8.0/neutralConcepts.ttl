@@ -16,9 +16,27 @@
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
 .
+nc:ACControlService
+  rdf:type owl:Class ;
+  rdfs:subClassOf nc:HVACManagementService ;
+.
+nc:CommercialGradeHardware
+  rdf:type owl:Class ;
+  rdfs:subClassOf nc:LogicalHardware ;
+  owl:disjointWith nc:IndustrialGradeHardware ;
+  owl:disjointWith nc:ResidentialGradeHardware ;
+.
+nc:DERManagementService
+  rdf:type owl:Class ;
+  rdfs:subClassOf nc:EnergyManagementService ;
+.
 nc:DERServices
   rdf:type ar:LogicalServiceComposition ;
   rdfs:label "DER Services"^^xsd:string ;
+.
+nc:DRManagementService
+  rdf:type owl:Class ;
+  rdfs:subClassOf nc:EnergyManagementService ;
 .
 nc:DemandResponseServices
   rdf:type ar:LogicalServiceComposition ;
@@ -31,6 +49,10 @@ nc:DeviceHealthMonitoring
   rdf:type ar:LogicalService ;
   rdfs:label "Device Health Monitoring"^^xsd:string ;
 .
+nc:EnergyManagementService
+  rdf:type owl:Class ;
+  rdfs:subClassOf nc:FacilityService ;
+.
 nc:EnergyMonitoring
   rdf:type ar:LogicalService ;
   rdfs:label "Energy Monitoring"^^xsd:string ;
@@ -39,16 +61,29 @@ nc:EnergyPriceBidding
   rdf:type ar:LogicalService ;
   rdfs:label "Energy Price Bidding"^^xsd:string ;
 .
-nc:HomeEnergyManagementLogicalDevice
-  rdf:type ar:LogicalActor ;
-  ar:provides nc:HomeEnergyManagementLogicalServices ;
-  rdfs:label "Home Energy Management Logical Device"^^xsd:string ;
+nc:FacilityService
+  rdf:type owl:Class ;
+  rdfs:subClassOf ar:LogicalService ;
+.
+nc:HVACManagementService
+  rdf:type owl:Class ;
+  rdfs:subClassOf nc:EnergyManagementService ;
+.
+nc:HeatingControlService
+  rdf:type owl:Class ;
+  rdfs:subClassOf nc:HVACManagementService ;
 .
 nc:HomeEnergyManagementLogicalServices
   rdf:type ar:LogicalServiceComposition ;
   ar:isCollectionOf nc:EnergyMonitoring ;
   ar:isCollectionOf nc:LoadManagement ;
   rdfs:label "Home Energy Management Logical Services"^^xsd:string ;
+.
+nc:IndustrialGradeHardware
+  rdf:type owl:Class ;
+  rdfs:subClassOf nc:LogicalHardware ;
+  owl:disjointWith nc:CommercialGradeHardware ;
+  owl:disjointWith nc:ResidentialGradeHardware ;
 .
 nc:LoadForecasting
   rdf:type ar:LogicalService ;
@@ -61,4 +96,45 @@ nc:LoadManagement
 nc:LoadShedding
   rdf:type ar:LogicalService ;
   rdfs:label "Load Shedding"^^xsd:string ;
+.
+nc:LogicalControlHardware
+  rdf:type owl:Class ;
+  rdfs:subClassOf nc:LogicalHardware ;
+.
+nc:LogicalHardware
+  rdf:type owl:Class ;
+  rdfs:subClassOf ar:LogicalActor ;
+.
+nc:LogicalOrganizationalUnit
+  rdf:type owl:Class ;
+  rdfs:subClassOf ar:LogicalActor ;
+.
+nc:LogicalPerson
+  rdf:type owl:Class ;
+  rdfs:subClassOf ar:LogicalActor ;
+.
+nc:LogicalSensorHardware
+  rdf:type owl:Class ;
+  rdfs:subClassOf nc:LogicalHardware ;
+.
+nc:ResidentialGradeHardware
+  rdf:type owl:Class ;
+  rdfs:subClassOf nc:LogicalHardware ;
+  owl:disjointWith nc:CommercialGradeHardware ;
+  owl:disjointWith nc:IndustrialGradeHardware ;
+.
+nc:SecurityService
+  rdf:type owl:Class ;
+  rdfs:subClassOf nc:FacilityService ;
+.
+nc:VentilationControlService
+  rdf:type owl:Class ;
+  rdfs:subClassOf nc:HVACManagementService ;
+.
+nc:hasQuality
+  rdf:type rdf:Property ;
+.
+nc:isAutomated
+  rdf:type rdf:Property ;
+  rdfs:range xsd:boolean ;
 .
