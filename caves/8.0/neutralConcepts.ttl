@@ -20,11 +20,23 @@ nc:ACControlService
   rdf:type owl:Class ;
   rdfs:subClassOf nc:HVACManagementService ;
 .
+nc:BidPowerUsage
+  rdf:type owl:Class ;
+  rdfs:subClassOf ar:LogicalService ;
+.
 nc:CommercialGradeHardware
   rdf:type owl:Class ;
   rdfs:subClassOf nc:LogicalHardware ;
   owl:disjointWith nc:IndustrialGradeHardware ;
   owl:disjointWith nc:ResidentialGradeHardware ;
+.
+nc:ControlGenerator
+  rdf:type owl:Class ;
+  rdfs:subClassOf ar:LogicalService ;
+.
+nc:ControlLoad
+  rdf:type owl:Class ;
+  rdfs:subClassOf ar:LogicalService ;
 .
 nc:DERManagementService
   rdf:type owl:Class ;
@@ -34,9 +46,43 @@ nc:DERServices
   rdf:type ar:LogicalServiceComposition ;
   rdfs:label "DER Services"^^xsd:string ;
 .
-nc:DRManagementService
+nc:DRVENService
   rdf:type owl:Class ;
   rdfs:subClassOf nc:EnergyManagementService ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onProperty ar:isCollectionOf ;
+      owl:someValuesFrom nc:BidPowerUsage ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onProperty ar:isCollectionOf ;
+      owl:someValuesFrom nc:ControlLoad ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onProperty ar:isCollectionOf ;
+      owl:someValuesFrom nc:ForecastLoad ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onProperty ar:isCollectionOf ;
+      owl:someValuesFrom nc:MeasurePower ;
+    ] ;
+.
+nc:DRVTNService
+  rdf:type owl:Class ;
+  rdfs:subClassOf nc:DistributionService ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onProperty ar:isCollectionOf ;
+      owl:someValuesFrom nc:ForecastLoad ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onProperty ar:isCollectionOf ;
+      owl:someValuesFrom nc:ProvidePriceSignal ;
+    ] ;
 .
 nc:DemandResponseServices
   rdf:type ar:LogicalServiceComposition ;
@@ -48,6 +94,10 @@ nc:DemandResponseServices
 nc:DeviceHealthMonitoring
   rdf:type ar:LogicalService ;
   rdfs:label "Device Health Monitoring"^^xsd:string ;
+.
+nc:DistributionService
+  rdf:type owl:Class ;
+  rdfs:subClassOf ar:LogicalServiceComposition ;
 .
 nc:EnergyManagementService
   rdf:type owl:Class ;
@@ -62,6 +112,10 @@ nc:EnergyPriceBidding
   rdfs:label "Energy Price Bidding"^^xsd:string ;
 .
 nc:FacilityService
+  rdf:type owl:Class ;
+  rdfs:subClassOf ar:LogicalServiceComposition ;
+.
+nc:ForecastLoad
   rdf:type owl:Class ;
   rdfs:subClassOf ar:LogicalService ;
 .
@@ -116,6 +170,18 @@ nc:LogicalPerson
 nc:LogicalSensorHardware
   rdf:type owl:Class ;
   rdfs:subClassOf nc:LogicalHardware ;
+.
+nc:MeasureEnergy
+  rdf:type owl:Class ;
+  rdfs:subClassOf ar:LogicalService ;
+.
+nc:MeasurePower
+  rdf:type owl:Class ;
+  rdfs:subClassOf ar:LogicalService ;
+.
+nc:ProvidePriceSignal
+  rdf:type owl:Class ;
+  rdfs:subClassOf ar:LogicalService ;
 .
 nc:ResidentialGradeHardware
   rdf:type owl:Class ;

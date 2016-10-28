@@ -13,6 +13,144 @@
   rdf:type visual:Graph ;
   visual:child [
       rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalActor> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "133"^^xsd:int ;
+      visual:x "499"^^xsd:int ;
+      visual:y "403"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalServiceComposition> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "210"^^xsd:int ;
+      visual:x "450"^^xsd:int ;
+      visual:y "210"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#HEM> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "106"^^xsd:int ;
+      visual:x "504"^^xsd:int ;
+      visual:y "532"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#DRVENService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "143"^^xsd:int ;
+      visual:x "758"^^xsd:int ;
+      visual:y "531"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#DRVTNService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "144"^^xsd:int ;
+      visual:x "193"^^xsd:int ;
+      visual:y "532"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#DistributionService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "168"^^xsd:int ;
+      visual:x "183"^^xsd:int ;
+      visual:y "403"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#EnergyManagementService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "213"^^xsd:int ;
+      visual:x "730"^^xsd:int ;
+      visual:y "407"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#FacilityService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "143"^^xsd:int ;
+      visual:x "761"^^xsd:int ;
+      visual:y "311"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalControlHardware> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "198"^^xsd:int ;
+      visual:x "360"^^xsd:int ;
+      visual:y "633"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#ResidentialGradeHardware> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "208"^^xsd:int ;
+      visual:x "587"^^xsd:int ;
+      visual:y "633"^^xsd:int ;
+    ] ;
+  visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#HEM> ;
+  rdfs:label "ea24:HEM Graph Full" ;
+].
+[
+  rdf:type visual:Graph ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalActor> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "143"^^xsd:int ;
+      visual:x "114"^^xsd:int ;
+      visual:y "244"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#HEM> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "116"^^xsd:int ;
+      visual:x "336"^^xsd:int ;
+      visual:y "245"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#DRVENService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "153"^^xsd:int ;
+      visual:x "321"^^xsd:int ;
+      visual:y "371"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#DRVTNService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "154"^^xsd:int ;
+      visual:x "314"^^xsd:int ;
+      visual:y "140"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalControlHardware> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "208"^^xsd:int ;
+      visual:x "634"^^xsd:int ;
+      visual:y "291"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#ResidentialGradeHardware> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "218"^^xsd:int ;
+      visual:x "633"^^xsd:int ;
+      visual:y "223"^^xsd:int ;
+    ] ;
+  visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#HEM> ;
+  rdfs:label "ea24:HEM Graph" ;
+].
+[
+  rdf:type visual:Graph ;
+  visual:child [
+      rdf:type visual:Box ;
       visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#BCE> ;
       visual:height "18"^^xsd:int ;
       visual:width "101"^^xsd:int ;

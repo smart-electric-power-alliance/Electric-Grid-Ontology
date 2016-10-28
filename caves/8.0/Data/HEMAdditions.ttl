@@ -37,7 +37,7 @@
 .
 <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#HEM2>
   rdf:type ar:LogicalActor ;
-  ar:provides <http://sv.cmu.edu/AWP/8.0/neutralConcepts#DRManagementService> ;
+  ar:provides <http://sv.cmu.edu/AWP/8.0/neutralConcepts#DRVENService> ;
   ar:provides <http://sv.cmu.edu/AWP/8.0/neutralConcepts#HVACManagementService> ;
   rdfs:label "HEM version 2"^^xsd:string ;
   skos:narrowMatch <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalControlHardware> ;

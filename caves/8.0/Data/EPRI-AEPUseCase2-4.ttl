@@ -1,4 +1,5 @@
 # baseURI: http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4
+# imports: http://sv.cmu.edu/AWP/8.0/neutralConcepts
 # imports: http://sv.cmu.edu/AWP/8.0/workingresults8.4
 # imports: http://www.w3.org/2004/02/skos/core
 # prefix: ea24
@@ -13,6 +14,7 @@
 
 <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4>
   rdf:type owl:Ontology ;
+  owl:imports <http://sv.cmu.edu/AWP/8.0/neutralConcepts> ;
   owl:imports <http://sv.cmu.edu/AWP/8.0/workingresults8.4> ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
@@ -41,13 +43,11 @@ ea24:DMS
 .
 ea24:HEM
   rdf:type ar:LogicalActor ;
-  ar:consumes ea24:ProvidePriceSignals ;
-  ar:consumes ea24:ReadUsage ;
-  ar:provides ea24:ProvideBids ;
-  ar:provides ea24:ReadUsage ;
+  ar:consumes <http://sv.cmu.edu/AWP/8.0/neutralConcepts#DRVTNService> ;
+  ar:provides <http://sv.cmu.edu/AWP/8.0/neutralConcepts#DRVENService> ;
   rdfs:label "Home Energy Management System"^^xsd:string ;
-  skos:broadMatch <http://sv.cmu.edu/AWP/8.0/entity#BuildingAutomationSystem-86> ;
-  skos:broadMatch <http://sv.cmu.edu/AWP/8.0/entity#FacilityEnergyManagementSystem-Gateway-496> ;
+  skos:narrowMatch <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalControlHardware> ;
+  skos:narrowMatch <http://sv.cmu.edu/AWP/8.0/neutralConcepts#ResidentialGradeHardware> ;
 .
 ea24:MeasureCongestion
   rdf:type ar:LogicalService ;
