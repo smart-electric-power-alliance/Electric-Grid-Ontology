@@ -11,52 +11,39 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >36</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >216</cd:width>
+        >158</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >426</cd:y>
+        >296</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >764</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#CommercialGradeHardware"/>
+        >1440</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#SecurityService"/>
       </cd:URINode>
     </cd:nodes>
-    <rdfs:label>Logical Actor Hierarchy</rdfs:label>
+    <cd:selectedResource rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalControlHardware"/>
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >36</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >200</cd:width>
+        >172</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >495</cd:y>
+        >528</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >765</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#IndustrialGradeHardware"/>
+        >993</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#ACControlService"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >44</cd:height>
+        >36</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >211</cd:width>
+        >178</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >347</cd:y>
+        >108</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >502</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalHardware"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >124</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >374</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >191</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >206</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalActor"/>
+        >1122</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#DistributionService"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -66,10 +53,50 @@
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >153</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >347</cd:y>
+        >108</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >317</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalPerson"/>
+        >1332</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#FacilityService"/>
+      </cd:URINode>
+    </cd:nodes>
+    <rdfs:label>nc:LogicalServices</rdfs:label>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >218</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >452</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1187</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#HVACManagementService"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >212</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >528</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1427</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#VentilationControlService"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >60</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >424</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >13</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1086</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalServiceComposition"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -79,10 +106,10 @@
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >208</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >423</cd:y>
+        >452</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >384</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalControlHardware"/>
+        >947</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#DERManagementService"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -90,12 +117,12 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >36</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >203</cd:width>
+        >223</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >491</cd:y>
+        >296</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >388</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalSensorHardware"/>
+        >1185</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#EnergyManagementService"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -103,26 +130,25 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >36</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >208</cd:width>
+        >198</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >556</cd:y>
+        >528</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >766</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#ResidentialGradeHardware"/>
+        >1197</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#HeatingControlService"/>
       </cd:URINode>
     </cd:nodes>
-    <cd:selectedResource rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalControlHardware"/>
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >36</cd:height>
+        >44</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >216</cd:width>
+        >424</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >347</cd:y>
+        >452</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >69</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalOrganizationalUnit"/>
+        >1437</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#DRVENService"/>
       </cd:URINode>
     </cd:nodes>
   </cd:Diagram>
@@ -132,41 +158,105 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >36</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >198</cd:width>
+        >153</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >636</cd:y>
+        >296</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >767</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#DERManagementService"/>
+        >442</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#FacilityService"/>
       </cd:URINode>
     </cd:nodes>
-    <cd:nodes>
-      <cd:BNode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >19</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >229</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >469</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >856</cd:x>
-        <cd:hostPredicate rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <cd:hostClass rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#DRVENService"/>
-        <cd:expression>ar:isCollectionOf some nc:MeasurePower</cd:expression>
-      </cd:BNode>
-    </cd:nodes>
-    <rdfs:label>nc:DRManagementService Diagram</rdfs:label>
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >36</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >157</cd:width>
+        >212</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >405</cd:y>
+        >499</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >701</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#MeasurePower"/>
+        >642</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#VentilationControlService"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >60</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >424</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >16</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >306</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalServiceComposition"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:selectedResource rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#ACControlService"/>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >198</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >499</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >412</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#HeatingControlService"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >202</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >431</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >657</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#DRManagementService"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >218</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >431</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >402</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#HVACManagementService"/>
+      </cd:URINode>
+    </cd:nodes>
+    <rdfs:label>Logical Service Hierarchy</rdfs:label>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >208</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >432</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >177</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#DERManagementService"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >172</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >499</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >208</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#ACControlService"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -176,7 +266,7 @@
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >270</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >165</cd:y>
+        >108</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >383</cd:x>
         <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalService"/>
@@ -187,136 +277,12 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >36</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >145</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >405</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >343</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#ControlLoad"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:BNode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >19</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >217</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >469</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >354</cd:x>
-        <cd:hostPredicate rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <cd:hostClass rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#DRVENService"/>
-        <cd:expression>ar:isCollectionOf some nc:ControlLoad</cd:expression>
-      </cd:BNode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >36</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >161</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >405</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >150</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#BidPowerUsage"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >36</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >208</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >635</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >533</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#HVACManagementService"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >36</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >153</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >287</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >582</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#FacilityService"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:BNode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >19</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >221</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >469</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >603</cd:x>
-        <cd:hostPredicate rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <cd:hostClass rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#DRVENService"/>
-        <cd:expression>ar:isCollectionOf some nc:ForecastLoad</cd:expression>
-      </cd:BNode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >36</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >223</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >415</cd:y>
+        >364</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >548</cd:x>
+        >407</cd:x>
         <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#EnergyManagementService"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >60</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >424</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >135</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >447</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalServiceComposition"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:selectedResource rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#DRManagementService"/>
-    <cd:nodes>
-      <cd:BNode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >19</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >233</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >469</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >89</cd:x>
-        <cd:hostPredicate rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <cd:hostClass rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#DRVENService"/>
-        <cd:expression>ar:isCollectionOf some nc:BidPowerUsage</cd:expression>
-      </cd:BNode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >36</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >149</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >405</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >520</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#ForecastLoad"/>
       </cd:URINode>
     </cd:nodes>
   </cd:Diagram>
@@ -393,14 +359,14 @@
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >36</cd:height>
+        >124</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >218</cd:width>
+        >374</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >431</cd:y>
+        >191</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >402</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#HVACManagementService"/>
+        >206</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalActor"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -408,12 +374,26 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >36</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >223</cd:width>
+        >153</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >364</cd:y>
+        >347</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >407</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#EnergyManagementService"/>
+        >317</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalPerson"/>
+      </cd:URINode>
+    </cd:nodes>
+    <rdfs:label>Logical Actor Hierarchy</rdfs:label>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >200</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >495</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >765</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#IndustrialGradeHardware"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -421,40 +401,106 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >36</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >198</cd:width>
+        >216</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >499</cd:y>
+        >347</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >412</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#HeatingControlService"/>
+        >69</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalOrganizationalUnit"/>
       </cd:URINode>
     </cd:nodes>
-    <rdfs:label>Logical Service Hierarchy</rdfs:label>
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >36</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >212</cd:width>
+        >203</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >499</cd:y>
+        >491</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >642</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#VentilationControlService"/>
+        >388</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalSensorHardware"/>
       </cd:URINode>
     </cd:nodes>
-    <cd:selectedResource rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#ACControlService"/>
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >36</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >202</cd:width>
+        >216</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >431</cd:y>
+        >426</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >657</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#DRManagementService"/>
+        >764</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#CommercialGradeHardware"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >44</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >211</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >347</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >502</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalHardware"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >208</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >556</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >766</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#ResidentialGradeHardware"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >208</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >423</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >384</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalControlHardware"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:selectedResource rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalControlHardware"/>
+  </cd:Diagram>
+  <cd:Diagram>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >145</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >405</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >343</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#ControlLoad"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >161</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >405</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >150</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#BidPowerUsage"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -464,9 +510,9 @@
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >424</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >16</cd:y>
+        >135</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >306</cd:x>
+        >447</cd:x>
         <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalServiceComposition"/>
       </cd:URINode>
     </cd:nodes>
@@ -475,12 +521,52 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >36</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >172</cd:width>
+        >223</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >499</cd:y>
+        >415</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >208</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#ACControlService"/>
+        >548</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#EnergyManagementService"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >153</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >287</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >582</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#FacilityService"/>
+      </cd:URINode>
+    </cd:nodes>
+    <rdfs:label>nc:DRManagementService Diagram</rdfs:label>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >157</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >405</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >701</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#MeasurePower"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >198</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >636</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >767</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#DERManagementService"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -490,7 +576,7 @@
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >270</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >108</cd:y>
+        >165</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >383</cd:x>
         <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalService"/>
@@ -503,10 +589,39 @@
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >208</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >432</cd:y>
+        >635</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >177</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#DERManagementService"/>
+        >533</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#HVACManagementService"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:selectedResource rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#DRManagementService"/>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >149</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >405</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >520</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#ForecastLoad"/>
+      </cd:URINode>
+    </cd:nodes>
+  </cd:Diagram>
+  <cd:Diagram>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >216</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >347</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >69</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalOrganizationalUnit"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -516,10 +631,116 @@
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >153</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >296</cd:y>
+        >347</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >442</cd:x>
-        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#FacilityService"/>
+        >317</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalPerson"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >216</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >279</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >880</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#CommercialGradeHardware"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >203</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >507</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >698</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalSensorHardware"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >208</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >409</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >882</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#ResidentialGradeHardware"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >208</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >508</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >475</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalControlHardware"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >44</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >211</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >347</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >502</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalHardware"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:selectedResource rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalControlHardware"/>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >124</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >374</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >191</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >206</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalActor"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >200</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >348</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >881</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#IndustrialGradeHardware"/>
+      </cd:URINode>
+    </cd:nodes>
+    <rdfs:label>Logical Actor Hierarchy Rev 2</rdfs:label>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >204</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >509</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >256</cd:x>
+        <cd:class rdf:resource="http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalActuatorHardware"/>
       </cd:URINode>
     </cd:nodes>
   </cd:Diagram>

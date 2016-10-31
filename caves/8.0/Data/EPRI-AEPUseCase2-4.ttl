@@ -7,6 +7,7 @@
 @prefix ar: <http://sv.cmu.edu/AWP/8.0/ActorRoles#> .
 @prefix ea24: <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix props: <http://sv.cmu.edu/AWP/8.0/props#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -97,4 +98,507 @@ ea24:SM
   rdf:type ar:LogicalActor ;
   ar:provides ea24:ReadUsage ;
   rdfs:label "Smart Meter"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#ActorA-14>
+  rdf:type ar:Actor ;
+  props:entityName "Actor A"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#ActorB-16>
+  rdf:type ar:Actor ;
+  props:entityName "Actor B"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#BuildingAutomationSystem-86>
+  skos:narrower <http://sv.cmu.edu/AWP/8.0/entity#BuildingManagementSystem-89> ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#BuildingManagementSystem-89>
+  rdf:type ar:LogicalActor ;
+  ar:provides <http://sv.cmu.edu/AWP/8.0/neutralConcepts#HVACManagementService> ;
+  ar:provides <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LightingManagementService> ;
+  skos:narrowMatch <http://sv.cmu.edu/AWP/8.0/neutralConcepts#CommercialGradeHardware> ;
+  skos:narrowMatch <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalControlHardware> ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#CustomerInformationSystem-CIS-2012>
+  props:entityName ""^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DER-262>
+  props:entityName "DER"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DSO-369>
+  props:entityName "DSO"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DSODEREMS-DDEMS--370>
+  props:entityName "DSO DER EMS (DDEMS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DSOSystem-374>
+  rdf:type ar:Actor ;
+  props:entityName "DSO System"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DistributionManagementSystem-DMS--338>
+  props:entityName "Distribution Management System (DMS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DistributionSCADASystem-DSCADA--349>
+  props:entityName "Distribution SCADA System (DSCADA)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DistributionSystemServices-DSO--357>
+  props:entityName "Distribution System Services (DSO)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#DistributionSystemServices-DSO--358>
+  props:entityName "Distribution System Services (DSO)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#EVSE-398>
+  props:entityName "EVSE"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#El.Vehicle-EV--380>
+  props:entityName "El. Vehicle (EV)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#El.Vehicle-EV--381>
+  props:entityName "El. Vehicle (EV)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#ElectricNetworkSP-384>
+  props:entityName "Electric Network SP"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#ElectricPowerSystem-EPS--generic--385>
+  props:entityName "Electric Power System (EPS) (generic)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#ElectricPowerSystem-EPS-generic-2036>
+  props:entityName "entity:ElectricPowerSystem-EPS--generic--385"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#ElectricVehicle-EV--390>
+  props:entityName "Electric Vehicle (EV)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#ElectricVehicleChargingSP-392>
+  props:entityName "Electric Vehicle Charging SP"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#ElectricVehicleEMS-EVEMS--393>
+  props:entityName "Electric Vehicle EMS (EVEMS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#ElectricVehicleEMS-EVEMS-2039>
+  props:entityName "entity:ElectricVehicleEMS-EVEMS--393"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#ElectricVehicleSupplyEquipment-EVSE--396>
+  props:entityName "Electric Vehicle Supply Equipment (EVSE)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#ElectricVehicleSupplyEquipment-EVSE--397>
+  props:entityName "Electric Vehicle Supply Equipment (EVSE)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#ElectricitySP-El.SP--403>
+  props:entityName "Electricity-SP (El.-SP)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#EnergyB2BMarket-420>
+  props:entityName "Energy B2B market"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#EnergyManagementSystem-433>
+  rdf:type ar:ServiceComposition ;
+  props:entityName "Energy Management System"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#EnergyServicesInterface-ESI--451>
+  props:entityName "Energy Services Interface (ESI)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#EnergyServicesInterface-ESI-2042>
+  props:entityName "entity:EnergyServicesInterface-ESI--451"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#EnergyStorageSystem-ESS-2037>
+  props:entityName ""^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#FacilityDEREMS-FDEMS--495>
+  props:entityName "Facility DER EMS (FDEMS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#FacilityLocalAreaNetwork-FacilityLAN--497>
+  props:entityName "Facility Local Area Network (Facility LAN)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#FieldActuators-507>
+  props:entityName "Field Actuators"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#FieldActuators-508>
+  props:entityName "Field Actuators"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#FieldSensingDevices-517>
+  props:entityName "Field Sensing Devices"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#FuelCell-2047>
+  props:entityName "entity:FuelCell-542"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#FuelCell-542>
+  props:entityName "Fuel cell"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#FunctionsObjectsOrDataClassifiedAsActorsInReferencesWhichMayNotBeActors-543>
+  props:entityName """Functions, objects or data 
+classified as Actors in references
+which may not be Actors"""^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#GasTurbine-2048>
+  props:entityName "entity:GasTurbine-545"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#GasTurbine-545>
+  props:entityName "Gas turbine"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Generator-559>
+  props:entityName "Generator"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#GeographicInformationSystem-GIS--562>
+  props:entityName "Geographic Information System (GIS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#GeographicInformationSystem-GIS-2049>
+  props:entityName "entity:GeographicInformationSystem-GIS--562"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Grid-567>
+  props:entityName "Grid"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Grid-568>
+  props:entityName "Grid"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Grid-569>
+  props:entityName "Grid"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Grid-570>
+  props:entityName "Grid"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#GridConditionIndicator-575>
+  props:entityName "Grid Condition Indicator"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#GridMonitoring-578>
+  props:entityName "Grid Monitoring"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#HydroPlant-596>
+  props:entityName "Hydro plant"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#LocalEPS-2051>
+  props:entityName "entity:LocalEPS-645"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#LocalEPS-645>
+  props:entityName "Local EPS"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#MarketOperator-764>
+  props:entityName "Market Operator"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#MarketOperator-generic--765>
+  props:entityName "Market operator (generic)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#MicrogridControlCenter-798>
+  props:entityName "Microgrid Control Center"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#MicrogridDEREMS-MDEMS--799>
+  props:entityName "Microgrid DER EMS (MDEMS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#MicrogridDEREMS-MDEMS-2053>
+  props:entityName "entity:MicrogridDEREMS-MDEMS--799"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#MicrogridEPS-2054>
+  props:entityName "entity:MicrogridEPS-801"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#MicrogridEPS-801>
+  props:entityName "Microgrid EPS"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#MicrogridOperator-802>
+  props:entityName "Microgrid Operator"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#MicrogridOperator-803>
+  props:entityName "Microgrid Operator"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#MicrogridOwner-2056>
+  props:entityName "entity:MicrogridOwner-804"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#MicrogridOwner-804>
+  props:entityName "Microgrid Owner"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#MobileMeteringServiceProvider-808>
+  props:entityName "Mobile metering service provider"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#NetworkOperationMonitoring-NONMON--841>
+  props:entityName "Network operation monitoring (NO-NMON)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#NetworkOperations-NO--846>
+  props:entityName "Network Operations (NO)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#NetworkOperationsAnalysis-NOOFA--849>
+  props:entityName "Network Operations Analysis (NO-OFA)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#NetworkOperationsControl-NOCTL--853>
+  rdf:type ar:ServiceComposition ;
+  props:entityName "Network Operations Control (NO-CTL)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#NonControllableLoad-2057>
+  props:entityName "entity:NonControllableLoad-867"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#NonControllableLoad-867>
+  props:entityName "Non-Controllable Load"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#NonCriticalLoad-2058>
+  props:entityName "entity:NonCriticalLoad-868"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#NonCriticalLoad-868>
+  props:entityName "Non-Critical Load"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#NonRegulatingDERSystem-2059>
+  props:entityName "entity:NonRegulatingDERSystem-870"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#NonRegulatingDERSystem-870>
+  props:entityName "Non-regulating DER System"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#OEM-875>
+  props:entityName "OEM"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Operator-884>
+  props:entityName "Operator"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#OutageManagementSystem-OMS--900>
+  props:entityName "Outage Management System (OMS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#OutageManagementSystem-OMS-2060>
+  props:entityName "entity:OutageManagementSystem-OMS--900"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#OverlayGrid-907>
+  props:entityName "Overlay Grid"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#OverlayGridControlCenter-908>
+  props:entityName "Overlay Grid Control Center"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#OverlayGridOperator-909>
+  props:entityName "Overlay Grid Operator"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#PCCSwitch-2061>
+  props:entityName "entity:PCCSwitch-914"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#PCCSwitch-914>
+  props:entityName "PCC Switch"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#PhotovoltaicSystem-PV--924>
+  props:entityName "Photovoltaic system (PV)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#PhotovoltaicSystem-PV-2062>
+  props:entityName "entity:PhotovoltaicSystem-PV--924"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#PointOfCommonCoupling-PCC--932>
+  props:entityName "Point of Common Coupling (PCC)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#PointOfCommonCoupling-PCC-2063>
+  props:entityName "entity:PointOfCommonCoupling-PCC--932"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#PowerEquipment-939>
+  props:entityName "Power Equipment"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#PowerPlantDEREMS-PDEMS--945>
+  props:entityName "Power Plant DER EMS (PDEMS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#PowerPlantDEREMS-PDEMS-2064>
+  props:entityName "entity:PowerPlantDEREMS-PDEMS--945"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#PowerPlantOperator-2065>
+  props:entityName "entity:PowerPlantOperator-946"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#PowerPlantOperator-946>
+  props:entityName "Power Plant Operator"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#PowerPlantOwner-2066>
+  props:entityName "entity:PowerPlantOwner-947"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#PowerPlantOwner-947>
+  props:entityName "Power Plant Owner"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#PublicInternet-2067>
+  props:entityName ""^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#PublicNetwork-1001>
+  props:entityName "Public Network"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#PublicNetwork-2068>
+  props:entityName "entity:PublicNetwork-1001"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#PumpedWaterStorage-1003>
+  props:entityName "Pumped water storage"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#PumpedWaterStorage-2069>
+  props:entityName "entity:PumpedWaterStorage-1003"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#RealTimeStateEstimator-RTSS--1020>
+  props:entityName "Real-time State Estimator (RTSS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#RegulatingDERSystem-1037>
+  props:entityName "Regulating DER System"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#RegulatingDERSystem-2070>
+  props:entityName "entity:RegulatingDERSystem-1037"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#RenewableDER-1043>
+  props:entityName "Renewable DER"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#RenewableDER-2071>
+  props:entityName "entity:RenewableDER-1043"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#RenewableGenerationForecaster-1046>
+  props:entityName "Renewable Generation Forecaster"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#ReserveAllocator-1052>
+  props:entityName "Reserve Allocator"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#RetailDEREnergyManagementSystem-RDEMS--1066>
+  props:entityName "Retail DER Energy Management System (RDEMS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#RetailDEREnergyManagementSystem-RDEMS-2072>
+  props:entityName "entity:RetailDEREnergyManagementSystem-RDEMS--1066"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#RetailEnergyProvider-REP--1068>
+  props:entityName "Retail Energy Provider (REP)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#RetailEnergyProvider-REP-2073>
+  props:entityName "entity:RetailEnergyProvider-REP--1068"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#RetailMarket-generic--1070>
+  props:entityName "Retail Market (generic)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#RetailMarket-generic-2074>
+  props:entityName "entity:RetailMarket-generic--1070"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Retrofilter-1072>
+  props:entityName "Retrofilter"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#SimpleExternalConsumerDisplay-1110>
+  props:entityName "Simple external consumer display"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#SimpleExternalConsumerDisplay-1111>
+  props:entityName "Simple external consumer display"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#SmartAppliance-WhiteGoods--1117>
+  props:entityName "Smart appliance (White goods)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#SmartAppliance-whiteGoods--1116>
+  props:entityName "Smart appliance (white goods)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#SmartAppliances-1119>
+  props:entityName "Smart appliances"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#SmartDevice-1120>
+  props:entityName "smart device"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#SmartDevice-1121>
+  props:entityName "Smart device"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#SmartDevice-1122>
+  props:entityName "Smart Device"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#SmartMeter-1125>
+  props:entityName "Smart meter"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#SmartMeter-SM--1126>
+  props:entityName "Smart Meter (SM)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#SmartMeter-SM--1127>
+  props:entityName "Smart Meter (SM)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#SmartMeter-SM--1128>
+  props:entityName "Smart Meter (SM)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#SmartMeteringGateway-LNAP--1129>
+  props:entityName "Smart Metering gateway (LNAP)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#Storage-1141>
+  props:entityName "Storage"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#SubstationControlSystem-SCS--1147>
+  props:entityName "Substation Control System (SCS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#SubstationControlSystem-SCS--1148>
+  props:entityName "Substation Control System (SCS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#SwitchActionScheduling-OperationWorkScheduling-OPSSC--1157>
+  props:entityName "Switch action scheduling / operation work scheduling (OPSSC)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#SwitchActionScheduling-OperationWorkScheduling-OPSSC--1158>
+  props:entityName "Switch action scheduling / operation work scheduling (OP-SSC)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#SynchronizingEquipment-1161>
+  props:entityName "Synchronizing equipment"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#SynchronizingEquipment-2075>
+  props:entityName "entity:SynchronizingEquipment-1161"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#SystemSocketAdministrator-1177>
+  props:entityName "System socket administrator"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#TDEMSOrTSOEMS-1181>
+  props:entityName "TDEMS or TSO EMS"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#TDEMSOrTSOEMS-2076>
+  props:entityName "entity:TDEMSOrTSOEMS-1181"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#TelcoOperator-1183>
+  props:entityName "Telco Operator"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#TimeSynchronizationSource-1190>
+  props:entityName "Time Synchronization Source"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#TimeSynchronizationSource-2077>
+  props:entityName "entity:TimeSynchronizationSource-1190"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#TransmissionBusLoadModel-TBLM--1204>
+  props:entityName "Transmission Bus Load Model (TBLM)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#TransmissionBusLoadModel-TBLM-2078>
+  props:entityName "entity:TransmissionBusLoadModel-TBLM--1204"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#TransmissionMarket-2079>
+  props:entityName ""^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#TransmissionSystemOperator-TSO--1220>
+  props:entityName "Transmission System Operator (TSO)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#TransmissionSystemOperator-TSO--1221>
+  props:entityName "Transmission System Operator (TSO)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#TransmissionSystemOperator-TSO-2080>
+  props:entityName "entity:TransmissionSystemOperator-TSO--1221"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#V2GDRProgram-1233>
+  props:entityName "V2G DR program"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#V2GDRProgram-2081>
+  props:entityName "entity:V2GDRProgram-1233"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#VirtualPowerPlant-VPP-DEREMS-VDEMS--1242>
+  props:entityName "Virtual Power Plant (VPP) DER EMS (VDEMS)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#VirtualPowerPlant-VPPDEREMS-VDEMS-2082>
+  props:entityName "entity:VirtualPowerPlant-VPP-DEREMS-VDEMS--1242"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#VirtualResource-generic--1243>
+  props:entityName "Virtual Resource (generic)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#VirtualResource-generic-2083>
+  props:entityName "entity:VirtualResource-generic--1243"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#WeatherForecast-1257>
+  props:entityName "Weather Forecast"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#WeatherSystem-1259>
+  props:entityName "Weather System"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#WeatherSystemForDER-2084>
+  props:entityName "entity:WeatherSystem-1259"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#WholesaleOrBulkEnergyMarket-generic-2085>
+  props:entityName ""^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#WideAreaMonitoring-WAMON--1267>
+  props:entityName "Wide-area Monitoring (WAMON)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#WideAreaNetwork-WAN--1264>
+  props:entityName "Wide Area Network (WAN)"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#WideAreaNetwork-WAN-2086>
+  props:entityName "entity:WideAreaNetwork-WAN--1264"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#WindTurbine-1269>
+  props:entityName "Wind turbine"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#WindTurbine-2087>
+  props:entityName "entity:WindTurbine-1269"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#WoodChipBoiler-1270>
+  props:entityName "Wood chip boiler"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/entity#WoodChipBoiler-2088>
+  props:entityName "entity:WoodChipBoiler-1270"^^xsd:string ;
+.
+<http://sv.cmu.edu/AWP/8.0/neutralConcepts#ResidentialGradeHardware>
+  rdfs:subClassOf <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalHardware> ;
 .

@@ -18,7 +18,7 @@
 .
 nc:ACControlService
   rdf:type owl:Class ;
-  rdfs:subClassOf nc:HVACManagementService ;
+  rdfs:subClassOf nc:EnergyManagementService ;
 .
 nc:BidPowerUsage
   rdf:type owl:Class ;
@@ -121,11 +121,14 @@ nc:ForecastLoad
 .
 nc:HVACManagementService
   rdf:type owl:Class ;
+  ar:isCollectionOf nc:ACControlService ;
+  ar:isCollectionOf nc:HeatingControlService ;
+  ar:isCollectionOf nc:VentilationControlService ;
   rdfs:subClassOf nc:EnergyManagementService ;
 .
 nc:HeatingControlService
   rdf:type owl:Class ;
-  rdfs:subClassOf nc:HVACManagementService ;
+  rdfs:subClassOf nc:EnergyManagementService ;
 .
 nc:HomeEnergyManagementLogicalServices
   rdf:type ar:LogicalServiceComposition ;
@@ -139,6 +142,10 @@ nc:IndustrialGradeHardware
   owl:disjointWith nc:CommercialGradeHardware ;
   owl:disjointWith nc:ResidentialGradeHardware ;
 .
+nc:LightingManagementService
+  rdf:type owl:Class ;
+  rdfs:subClassOf nc:EnergyManagementService ;
+.
 nc:LoadForecasting
   rdf:type ar:LogicalService ;
   rdfs:label "Load Forecasting"^^xsd:string ;
@@ -150,6 +157,10 @@ nc:LoadManagement
 nc:LoadShedding
   rdf:type ar:LogicalService ;
   rdfs:label "Load Shedding"^^xsd:string ;
+.
+nc:LogicalActuatorHardware
+  rdf:type owl:Class ;
+  rdfs:subClassOf nc:LogicalHardware ;
 .
 nc:LogicalControlHardware
   rdf:type owl:Class ;
@@ -185,7 +196,6 @@ nc:ProvidePriceSignal
 .
 nc:ResidentialGradeHardware
   rdf:type owl:Class ;
-  rdfs:subClassOf nc:LogicalHardware ;
   owl:disjointWith nc:CommercialGradeHardware ;
   owl:disjointWith nc:IndustrialGradeHardware ;
 .
@@ -195,7 +205,7 @@ nc:SecurityService
 .
 nc:VentilationControlService
   rdf:type owl:Class ;
-  rdfs:subClassOf nc:HVACManagementService ;
+  rdfs:subClassOf nc:EnergyManagementService ;
 .
 nc:hasQuality
   rdf:type rdf:Property ;

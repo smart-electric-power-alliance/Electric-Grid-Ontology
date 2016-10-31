@@ -151,6 +151,160 @@
   rdf:type visual:Graph ;
   visual:child [
       rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalActor> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "143"^^xsd:int ;
+      visual:x "167"^^xsd:int ;
+      visual:y "347"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#BuildingManagementSystem-89> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "266"^^xsd:int ;
+      visual:x "410"^^xsd:int ;
+      visual:y "342"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#ACControlService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "162"^^xsd:int ;
+      visual:x "807"^^xsd:int ;
+      visual:y "628"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#CommercialGradeHardware> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "226"^^xsd:int ;
+      visual:x "793"^^xsd:int ;
+      visual:y "313"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#HVACManagementService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "218"^^xsd:int ;
+      visual:x "569"^^xsd:int ;
+      visual:y "492"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#HeatingControlService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "188"^^xsd:int ;
+      visual:x "354"^^xsd:int ;
+      visual:y "627"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LightingManagementService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "231"^^xsd:int ;
+      visual:x "301"^^xsd:int ;
+      visual:y "492"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalControlHardware> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "208"^^xsd:int ;
+      visual:x "798"^^xsd:int ;
+      visual:y "374"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#VentilationControlService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "202"^^xsd:int ;
+      visual:x "579"^^xsd:int ;
+      visual:y "626"^^xsd:int ;
+    ] ;
+  visual:depicts <http://sv.cmu.edu/AWP/8.0/entity#BuildingManagementSystem-89> ;
+  rdfs:label "entity:BuildingManagementSystem-89 Graph" ;
+].
+[
+  rdf:type visual:Graph ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/ActorRoles#LogicalServiceComposition> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "220"^^xsd:int ;
+      visual:x "529"^^xsd:int ;
+      visual:y "80"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#HEM> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "116"^^xsd:int ;
+      visual:x "503"^^xsd:int ;
+      visual:y "534"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#DERManagementService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "208"^^xsd:int ;
+      visual:x "873"^^xsd:int ;
+      visual:y "421"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#DRVENService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "153"^^xsd:int ;
+      visual:x "488"^^xsd:int ;
+      visual:y "421"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#DistributionService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "178"^^xsd:int ;
+      visual:x "463"^^xsd:int ;
+      visual:y "192"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#EnergyManagementService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "223"^^xsd:int ;
+      visual:x "603"^^xsd:int ;
+      visual:y "306"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#FacilityService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "153"^^xsd:int ;
+      visual:x "648"^^xsd:int ;
+      visual:y "192"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#HVACManagementService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "218"^^xsd:int ;
+      visual:x "648"^^xsd:int ;
+      visual:y "421"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#SecurityService> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "158"^^xsd:int ;
+      visual:x "833"^^xsd:int ;
+      visual:y "306"^^xsd:int ;
+    ] ;
+  visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#HEM> ;
+  rdfs:label "ea24:HEM Services" ;
+].
+[
+  rdf:type visual:Graph ;
+  visual:child [
+      rdf:type visual:Box ;
       visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#BCE> ;
       visual:height "18"^^xsd:int ;
       visual:width "101"^^xsd:int ;
@@ -335,4 +489,73 @@
     ] ;
   visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#RTP> ;
   rdfs:label "Graph1" ;
+].
+[
+  rdf:type visual:Graph ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#HEM> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "106"^^xsd:int ;
+      visual:x "577"^^xsd:int ;
+      visual:y "434"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#CommercialGradeHardware> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "226"^^xsd:int ;
+      visual:x "806"^^xsd:int ;
+      visual:y "508"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#IndustrialGradeHardware> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "210"^^xsd:int ;
+      visual:x "810"^^xsd:int ;
+      visual:y "361"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalActuatorHardware> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "214"^^xsd:int ;
+      visual:x "278"^^xsd:int ;
+      visual:y "256"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalControlHardware> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "208"^^xsd:int ;
+      visual:x "524"^^xsd:int ;
+      visual:y "258"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalHardware> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "168"^^xsd:int ;
+      visual:x "535"^^xsd:int ;
+      visual:y "122"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalSensorHardware> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "203"^^xsd:int ;
+      visual:x "764"^^xsd:int ;
+      visual:y "260"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://sv.cmu.edu/AWP/8.0/neutralConcepts#ResidentialGradeHardware> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "218"^^xsd:int ;
+      visual:x "810"^^xsd:int ;
+      visual:y "433"^^xsd:int ;
+    ] ;
+  visual:depicts <http://sv.cmu.edu/AWP/8.0/EPRI-AEPUseCase2-4#HEM> ;
+  rdfs:label "ea24:HEM Hardware" ;
 ].
