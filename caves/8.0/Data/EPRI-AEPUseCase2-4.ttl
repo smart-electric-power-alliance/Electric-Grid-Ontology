@@ -99,6 +99,19 @@ ea24:SM
   ar:provides ea24:ReadUsage ;
   rdfs:label "Smart Meter"^^xsd:string ;
 .
+ea24:VendorAHardware
+  rdf:type ar:LogicalActor ;
+  ar:provides <http://sv.cmu.edu/AWP/8.0/neutralConcepts#HeatingControlService> ;
+  ar:provides <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LightingManagementService> ;
+  skos:narrowMatch <http://sv.cmu.edu/AWP/8.0/neutralConcepts#CommercialGradeHardware> ;
+  skos:narrowMatch <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalControlHardware> ;
+.
+ea24:VendorBHardware
+  rdf:type ar:LogicalActor ;
+  ar:provides <http://sv.cmu.edu/AWP/8.0/neutralConcepts#HVACManagementService> ;
+  skos:narrowMatch <http://sv.cmu.edu/AWP/8.0/neutralConcepts#LogicalControlHardware> ;
+  skos:narrowMatch <http://sv.cmu.edu/AWP/8.0/neutralConcepts#ResidentialGradeHardware> ;
+.
 <http://sv.cmu.edu/AWP/8.0/entity#ActorA-14>
   rdf:type ar:Actor ;
   props:entityName "Actor A"^^xsd:string ;
