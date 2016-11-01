@@ -5035,10 +5035,11 @@ service"""^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:BuildingManagementSystem-89
+  rdf:type ar:LogicalActor ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers "Application 1st"^^xsd:string ;
