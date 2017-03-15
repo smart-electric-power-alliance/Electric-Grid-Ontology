@@ -1,6 +1,7 @@
 # baseURI: http://sv.cmu.edu/AWP/8.0/ActorRoles
 # imports: http://spinrdf.org/spin
 # imports: http://topbraid.org/spin/spinowl
+# prefix: ar
 
 @prefix ar: <http://sv.cmu.edu/AWP/8.0/ActorRoles#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -15,11 +16,11 @@
   rdf:type owl:Ontology ;
   owl:imports <http://spinrdf.org/spin> ;
   owl:imports <http://topbraid.org/spin/spinowl> ;
-  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+  owl:versionInfo "Created with TopBraid Composer" ;
 .
 ar:Actor
   rdf:type owl:Class ;
-  rdfs:comment "This is the entity that actually performs an action (i.e. provides or consumes a Service)"^^xsd:string ;
+  rdfs:comment "This is the entity that actually performs an action (i.e. provides or consumes a Service)" ;
   rdfs:subClassOf ar:Entity ;
 .
 ar:ConceptualEntity
@@ -28,7 +29,7 @@ ar:ConceptualEntity
 .
 ar:ConceptualService
   rdf:type owl:Class ;
-  rdfs:label "Conceptual Service"^^xsd:string ;
+  rdfs:label "Conceptual Service" ;
   rdfs:subClassOf ar:ConceptualEntity ;
   rdfs:subClassOf ar:Service ;
   rdfs:subClassOf [
@@ -59,7 +60,7 @@ ar:ConceptualService
 .
 ar:ConceptualServiceComposition
   rdf:type owl:Class ;
-  rdfs:label "Conceptual Service Composition"^^xsd:string ;
+  rdfs:label "Conceptual Service Composition" ;
   rdfs:subClassOf ar:ConceptualEntity ;
   rdfs:subClassOf ar:ServiceComposition ;
   rdfs:subClassOf [
@@ -86,7 +87,7 @@ ar:ConceptualServiceComposition
 .
 ar:ConceptualServiceContract
   rdf:type owl:Class ;
-  rdfs:label "Conceptual Contract"^^xsd:string ;
+  rdfs:label "Conceptual Contract" ;
   rdfs:subClassOf ar:ConceptualEntity ;
   rdfs:subClassOf ar:ServiceContract ;
   rdfs:subClassOf [
@@ -116,7 +117,7 @@ ar:Entity
 .
 ar:ImplementationActor
   rdf:type owl:Class ;
-  rdfs:label "Fum"^^xsd:string ;
+  rdfs:label "Fum" ;
   rdfs:subClassOf ar:Actor ;
   rdfs:subClassOf ar:ImplementationEntity ;
   rdfs:subClassOf [
@@ -147,12 +148,12 @@ ar:ImplementationActor
 .
 ar:ImplementationEntity
   rdf:type owl:Class ;
-  rdfs:label "Fum"^^xsd:string ;
+  rdfs:label "Fum" ;
   rdfs:subClassOf ar:Entity ;
 .
 ar:ImplementationService
   rdf:type owl:Class ;
-  rdfs:label "Fum"^^xsd:string ;
+  rdfs:label "Fum" ;
   rdfs:subClassOf ar:ImplementationEntity ;
   rdfs:subClassOf ar:Service ;
   rdfs:subClassOf [
@@ -197,7 +198,7 @@ ar:LegalRequirement
 .
 ar:LogicalActor
   rdf:type owl:Class ;
-  rdfs:label ""^^xsd:string ;
+  rdfs:label "" ;
   rdfs:subClassOf ar:Actor ;
   rdfs:subClassOf ar:LogicalEntity ;
   rdfs:subClassOf [
@@ -243,7 +244,7 @@ ar:LogicalEntity
 .
 ar:LogicalRole
   rdf:type owl:Class ;
-  rdfs:label ""^^xsd:string ;
+  rdfs:label "" ;
   rdfs:subClassOf ar:LogicalEntity ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -253,7 +254,7 @@ ar:LogicalRole
 .
 ar:LogicalService
   rdf:type owl:Class ;
-  rdfs:label ""^^xsd:string ;
+  rdfs:label "" ;
   rdfs:subClassOf ar:LogicalEntity ;
   rdfs:subClassOf ar:Service ;
   rdfs:subClassOf [
@@ -299,7 +300,7 @@ ar:LogicalService
 .
 ar:LogicalServiceComposition
   rdf:type owl:Class ;
-  rdfs:label "Logical Service Composition"^^xsd:string ;
+  rdfs:label "Logical Service Composition" ;
   rdfs:subClassOf ar:LogicalEntity ;
   rdfs:subClassOf ar:ServiceComposition ;
   rdfs:subClassOf [
@@ -326,7 +327,7 @@ ar:LogicalServiceComposition
 .
 ar:LogicalServiceContract
   rdf:type owl:Class ;
-  rdfs:label ""^^xsd:string ;
+  rdfs:label "" ;
   rdfs:subClassOf ar:LogicalEntity ;
   rdfs:subClassOf ar:ServiceContract ;
   rdfs:subClassOf [
@@ -362,7 +363,7 @@ ar:LogicalServiceContract
 .
 ar:PhysicalActor
   rdf:type owl:Class ;
-  rdfs:label ""^^xsd:string ;
+  rdfs:label "" ;
   rdfs:subClassOf ar:Actor ;
   rdfs:subClassOf ar:PhysicalEntity ;
   rdfs:subClassOf [
@@ -407,7 +408,7 @@ ar:PhysicalEntity
 .
 ar:PhysicalService
   rdf:type owl:Class ;
-  rdfs:label ""^^xsd:string ;
+  rdfs:label "" ;
   rdfs:subClassOf ar:PhysicalEntity ;
   rdfs:subClassOf ar:Service ;
   rdfs:subClassOf [
@@ -448,7 +449,7 @@ ar:PhysicalService
 .
 ar:PhysicalServiceContract
   rdf:type owl:Class ;
-  rdfs:label ""^^xsd:string ;
+  rdfs:label "" ;
   rdfs:subClassOf ar:PhysicalEntity ;
   rdfs:subClassOf ar:ServiceContract ;
   rdfs:subClassOf [
@@ -483,7 +484,7 @@ ar:Requirement
 .
 ar:Service
   rdf:type owl:Class ;
-  rdfs:label ""^^xsd:string ;
+  rdfs:label "" ;
   rdfs:subClassOf ar:Entity ;
 .
 ar:ServiceComposition
@@ -492,7 +493,7 @@ ar:ServiceComposition
 .
 ar:ServiceContract
   rdf:type owl:Class ;
-  rdfs:label "A Contract specifies and constrains Roles and is used to bind Actors to those Roles"^^xsd:string ;
+  rdfs:label "A Contract specifies and constrains Roles and is used to bind Actors to those Roles" ;
   rdfs:subClassOf ar:Entity ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -502,13 +503,17 @@ ar:ServiceContract
 .
 ar:Task
   rdf:type owl:Class ;
-  rdfs:label "Fum"^^xsd:string ;
+  rdfs:label "Fum" ;
   rdfs:subClassOf ar:ImplementationEntity ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
       owl:allValuesFrom ar:ImplementationService ;
       owl:onProperty ar:isDoneBy ;
     ] ;
+.
+ar:ambiguousConcept
+  rdf:type owl:DatatypeProperty ;
+  rdfs:range xsd:boolean ;
 .
 ar:consumes
   rdf:type rdf:Property ;
@@ -519,17 +524,17 @@ ar:deprecated
 .
 ar:description
   rdf:type owl:DatatypeProperty ;
-  rdfs:label ""^^xsd:string ;
+  rdfs:label "" ;
   rdfs:range xsd:string ;
 .
 ar:does
   rdf:type rdf:Property ;
-  rdfs:label "Fum"^^xsd:string ;
+  rdfs:label "Fum" ;
   owl:inverseOf ar:isDoneBy ;
 .
 ar:hasRegulationReference
   rdf:type rdf:Property ;
-  rdfs:label "Identifies the regulatory reference code"^^xsd:string ;
+  rdfs:label "Identifies the regulatory reference code" ;
   owl:inverseOf ar:regulates ;
 .
 ar:inContextOf
@@ -542,88 +547,88 @@ ar:involvesParty
 .
 ar:isAbstractedAs
   rdf:type owl:TransitiveProperty ;
-  rdfs:label ""^^xsd:string ;
+  rdfs:label "" ;
   owl:inverseOf ar:isAbstractionOf ;
 .
 ar:isAbstractionOf
   rdf:type owl:TransitiveProperty ;
-  rdfs:label ""^^xsd:string ;
+  rdfs:label "" ;
   owl:inverseOf ar:isAbstractedAs ;
 .
 ar:isCollectionOf
   rdf:type owl:ObjectProperty ;
-  rdfs:label "Conceptual Service Collection"^^xsd:string ;
+  rdfs:label "Conceptual Service Collection" ;
 .
 ar:isConsumedBy
   rdf:type rdf:Property ;
-  rdfs:label ""^^xsd:string ;
+  rdfs:label "" ;
   owl:inverseOf ar:consumes ;
 .
 ar:isDoneBy
   rdf:type rdf:Property ;
-  rdfs:label "Fum"^^xsd:string ;
+  rdfs:label "Fum" ;
   owl:inverseOf ar:does ;
 .
 ar:isPartOf
   rdf:type rdf:Property ;
-  rdfs:label "Conceptual Service Collection"^^xsd:string ;
+  rdfs:label "Conceptual Service Collection" ;
 .
 ar:isPartyTo
   rdf:type rdf:Property ;
-  rdfs:label ""^^xsd:string ;
+  rdfs:label "" ;
   owl:inverseOf ar:involvesParty ;
 .
 ar:isProvidedBy
   rdf:type rdf:Property ;
-  rdfs:label ""^^xsd:string ;
+  rdfs:label "" ;
   owl:inverseOf ar:provides ;
 .
 ar:isSpecifiedBy
   rdf:type rdf:Property ;
-  rdfs:label ""^^xsd:string ;
+  rdfs:label "" ;
   owl:inverseOf ar:specifies ;
 .
 ar:nistLegacyDomain
   rdf:type owl:DatatypeProperty ;
-  rdfs:label ""^^xsd:string ;
+  rdfs:label "" ;
   rdfs:range xsd:string ;
 .
 ar:playsRole
   rdf:type rdf:Property ;
-  rdfs:label ""^^xsd:string ;
+  rdfs:label "" ;
   rdfs:subPropertyOf sp:arg ;
 .
 ar:provides
   rdf:type rdf:Property ;
-  rdfs:label ""^^xsd:string ;
+  rdfs:label "" ;
   owl:inverseOf ar:isProvidedBy ;
 .
 ar:providesContextFor
   rdf:type rdf:Property ;
-  rdfs:label ""^^xsd:string ;
+  rdfs:label "" ;
   owl:inverseOf ar:inContextOf ;
 .
 ar:regulates
   rdf:type rdf:Property ;
-  rdfs:label "Add import statement"^^xsd:string ;
+  rdfs:label "Add import statement" ;
   owl:inverseOf ar:hasRegulationReference ;
 .
 ar:specifies
   rdf:type rdf:Property ;
-  rdfs:label ""^^xsd:string ;
+  rdfs:label "" ;
   owl:inverseOf ar:isSpecifiedBy ;
 .
 ar:subClassOf
   rdf:type rdf:Property ;
   rdf:type owl:TransitiveProperty ;
-  rdfs:label "subClass of"^^xsd:string ;
+  rdfs:label "subClass of" ;
 .
 ar:superClassOf
   rdf:type rdf:Property ;
   rdf:type owl:TransitiveProperty ;
-  rdfs:label "Conceptual Service Collection"^^xsd:string ;
+  rdfs:label "Conceptual Service Collection" ;
 .
 ar:type
   rdf:type owl:DatatypeProperty ;
-  rdfs:label "Whether an entity is an Organization or Application"^^xsd:string ;
+  rdfs:label "Whether an entity is an Organization or Application" ;
 .
