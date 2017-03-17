@@ -2281,6 +2281,47 @@ owl:Thing
     ] ;
   spin:query [
       rdf:type sp:Select ;
+      sp:resultVariables (
+          [
+            sp:expression [
+                rdf:type sp:Count ;
+                sp:expression [
+                    sp:varName "falseOnes" ;
+                  ] ;
+              ] ;
+            sp:varName "notDeprecated" ;
+          ]
+        ) ;
+      sp:where (
+          [
+            rdf:type sp:TriplePath ;
+            sp:object <http://sv.cmu.edu/AWP/8.0/ActorRoles#Entity> ;
+            sp:path [
+                rdf:type sp:SeqPath ;
+                sp:path1 rdf:type ;
+                sp:path2 [
+                    rdf:type sp:ModPath ;
+                    sp:modMax -2 ;
+                    sp:modMin 0 ;
+                    sp:subPath rdfs:subClassOf ;
+                  ] ;
+              ] ;
+            sp:subject [
+                sp:varName "falseOnes" ;
+              ] ;
+          ]
+          [
+            sp:object "false"^^xsd:boolean ;
+            sp:predicate owl:deprecated ;
+            sp:subject [
+                sp:varName "falseOnes" ;
+              ] ;
+          ]
+        ) ;
+      rdfs:comment "008 Count all non-deprecated instances of ar:Entity" ;
+    ] ;
+  spin:query [
+      rdf:type sp:Select ;
       sp:where (
           [
             sp:object [
