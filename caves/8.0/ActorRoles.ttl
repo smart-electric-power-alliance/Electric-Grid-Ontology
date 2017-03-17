@@ -114,6 +114,11 @@ ar:ConceptualServiceContract
 ar:Entity
   rdf:type owl:Class ;
   rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:boolean ;
+      owl:onProperty ar:ambiguousConcept ;
+    ] ;
 .
 ar:ImplementationActor
   rdf:type owl:Class ;
