@@ -2174,6 +2174,65 @@ owl:Thing
       sp:distinct "true"^^xsd:boolean ;
       sp:resultVariables (
           [
+            sp:varName "s" ;
+          ]
+        ) ;
+      sp:where (
+          [
+            rdf:type sp:Bind ;
+            sp:expression "1234" ;
+            sp:variable [
+                sp:varName "searchString" ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "o" ;
+              ] ;
+            sp:predicate [
+                sp:varName "p" ;
+              ] ;
+            sp:subject [
+                sp:varName "s" ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Filter ;
+            sp:expression [
+                rdf:type sp:or ;
+                sp:arg1 [
+                    rdf:type sp:regex ;
+                    sp:arg1 [
+                        sp:varName "o" ;
+                      ] ;
+                    sp:arg2 [
+                        sp:varName "searchString" ;
+                      ] ;
+                    sp:arg3 "i" ;
+                  ] ;
+                sp:arg2 [
+                    rdf:type sp:regex ;
+                    sp:arg1 [
+                        rdf:type afn:localname ;
+                        sp:arg1 [
+                            sp:varName "s" ;
+                          ] ;
+                      ] ;
+                    sp:arg2 [
+                        sp:varName "searchString" ;
+                      ] ;
+                    sp:arg3 "i" ;
+                  ] ;
+              ] ;
+          ]
+        ) ;
+      rdfs:comment "004 Find arbitrary string value anywhere, not just name. Replace \"1234\" with desired search string." ;
+    ] ;
+  spin:query [
+      rdf:type sp:Select ;
+      sp:distinct "true"^^xsd:boolean ;
+      sp:resultVariables (
+          [
             sp:varName "subject" ;
           ]
           [
@@ -2319,32 +2378,5 @@ owl:Thing
           ]
         ) ;
       rdfs:comment "008 Count all non-deprecated instances of ar:Entity" ;
-    ] ;
-  spin:query [
-      rdf:type sp:Select ;
-      sp:where (
-          [
-            sp:object [
-                sp:varName "o" ;
-              ] ;
-            sp:predicate [
-                sp:varName "p" ;
-              ] ;
-            sp:subject [
-                sp:varName "s" ;
-              ] ;
-          ]
-          [
-            rdf:type sp:Filter ;
-            sp:expression [
-                rdf:type sp:regex ;
-                sp:arg1 [
-                    sp:varName "o" ;
-                  ] ;
-                sp:arg2 "der" ;
-              ] ;
-          ]
-        ) ;
-      rdfs:comment "004 Find arbitrary string value anywhere, not just name" ;
     ] ;
 .
