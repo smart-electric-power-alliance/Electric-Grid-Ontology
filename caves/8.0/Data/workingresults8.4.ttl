@@ -34320,7 +34320,7 @@ entity:GasTurbine-2048
   tables:rowIndex "2048"^^xsd:int ;
   rdfs:comment "" ;
   rdfs:label "Gas turbine"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:GasTurbine-545
   rdf:type props:Combined-Elements-noduprows ;
@@ -40145,7 +40145,7 @@ entity:LocalEPS-2051
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -40172,7 +40172,7 @@ entity:LocalEPS-2051
   props:entityName "entity:LocalEPS-645"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -49373,7 +49373,7 @@ entity:MicrogridDEREMS-MDEMS-2053
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -49400,7 +49400,7 @@ entity:MicrogridDEREMS-MDEMS-2053
   props:entityName "entity:MicrogridDEREMS-MDEMS--799"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -49490,7 +49490,7 @@ entity:MicrogridEPS-2054
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -49517,7 +49517,7 @@ entity:MicrogridEPS-2054
   props:entityName "entity:MicrogridEPS-801"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -49782,7 +49782,7 @@ entity:MicrogridOwner-2056
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -49809,7 +49809,7 @@ entity:MicrogridOwner-2056
   props:entityName "entity:MicrogridOwner-804"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -53449,7 +53449,7 @@ entity:NonControllableLoad-2057
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -53476,7 +53476,7 @@ entity:NonControllableLoad-2057
   props:entityName "entity:NonControllableLoad-867"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -53565,7 +53565,7 @@ entity:NonCriticalLoad-2058
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -53592,7 +53592,7 @@ entity:NonCriticalLoad-2058
   props:entityName "entity:NonCriticalLoad-868"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -53791,7 +53791,7 @@ entity:NonRegulatingDERSystem-2059
   tables:rowIndex "2059"^^xsd:int ;
   rdfs:comment "" ;
   rdfs:label "Non-regulating DER System"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:NonRegulatingDERSystem-870
   rdf:type props:Combined-Elements-noduprows ;
@@ -56188,7 +56188,7 @@ entity:PCCSwitch-2061
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -56215,7 +56215,7 @@ entity:PCCSwitch-2061
   props:entityName "entity:PCCSwitch-914"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -57231,7 +57231,7 @@ entity:PhotovoltaicSystem-PV-2062
   tables:rowIndex "2062"^^xsd:int ;
   rdfs:comment "" ;
   rdfs:label "Photovoltaic system (PV)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:PhysicalSecurity-925
   rdf:type ar:ConceptualService ;
@@ -57643,7 +57643,6 @@ entity:PointOfCommonCoupling-PCC-2063
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -57670,7 +57669,6 @@ entity:PointOfCommonCoupling-PCC-2063
   props:entityName "entity:PointOfCommonCoupling-PCC--932"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -57695,7 +57693,7 @@ entity:PointOfCommonCoupling-PCC-2063
   tables:rowIndex "2063"^^xsd:int ;
   rdfs:comment "" ;
   rdfs:label "Point of Common Coupling (PCC)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:PointOfSale-933
   rdf:type ar:LogicalService ;
@@ -58456,7 +58454,7 @@ entity:PowerPlantDEREMS-PDEMS-2064
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -58483,7 +58481,7 @@ entity:PowerPlantDEREMS-PDEMS-2064
   props:entityName "entity:PowerPlantDEREMS-PDEMS--945"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -58514,7 +58512,7 @@ entity:PowerPlantOperator-2065
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -58541,7 +58539,7 @@ entity:PowerPlantOperator-2065
   props:entityName "entity:PowerPlantOperator-946"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -58630,7 +58628,7 @@ entity:PowerPlantOwner-2066
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -58657,7 +58655,7 @@ entity:PowerPlantOwner-2066
   props:entityName "entity:PowerPlantOwner-947"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -61764,7 +61762,7 @@ entity:PublicInternet-2067
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -61791,7 +61789,7 @@ entity:PublicInternet-2067
   props:entityName ""^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -61938,7 +61936,7 @@ entity:PublicNetwork-2068
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -61965,7 +61963,7 @@ entity:PublicNetwork-2068
   props:entityName "entity:PublicNetwork-1001"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
