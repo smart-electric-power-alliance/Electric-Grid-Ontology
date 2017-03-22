@@ -35311,7 +35311,7 @@ entity:GeographicInformationSystem-561
   tables:rowIndex "561"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Geographic Information System"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:GeographicInformationSystem-GIS--562
   rdf:type props:Combined-Elements-noduprows ;
@@ -35428,7 +35428,7 @@ entity:GeographicInformationSystem-GIS-2049
   tables:rowIndex "2049"^^xsd:int ;
   rdfs:comment "" ;
   rdfs:label "Geographic Information System (GIS)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:GeographicalInventory-AMGINV--563
   rdf:type ar:LogicalServiceComposition ;
@@ -55601,7 +55601,7 @@ entity:OutageManagementSystem-899
   tables:rowIndex "899"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Outage Management System"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:OutageManagementSystem-OMS--900
   rdf:type props:Combined-Elements-noduprows ;
@@ -64778,7 +64778,7 @@ entity:RenewableGenerationForecaster-1046
   tables:rowIndex "1046"^^xsd:int ;
   rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Renewable Generation Forecaster"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:RepairOutages-1047
   rdf:type ar:ConceptualService ;
@@ -65059,7 +65059,7 @@ entity:ReserveAllocator-1051
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type "Organization"^^xsd:string ;
@@ -65126,7 +65126,7 @@ entity:ReserveAllocator-1052
   tables:rowIndex "1052"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Reserve Allocator"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:ReserveForecasting-1053
   rdf:type ar:ConceptualService ;
@@ -69015,7 +69015,7 @@ entity:SmartAppliance-WhiteGoods--1117
   tables:rowIndex "1117"^^xsd:int ;
   rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Smart appliance (White goods)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:SmartAppliance-whiteGoods--1116
   rdf:type props:Combined-Elements-noduprows ;
@@ -69201,7 +69201,7 @@ entity:SmartDevice-1120
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "-"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -69229,7 +69229,7 @@ Since the smart device is outside the scope of the SGCG, it must be seen as an e
   props:entityName "smart device"^^xsd:string ;
   props:gUC "X"^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -69245,11 +69245,11 @@ Since the smart device is outside the scope of the SGCG, it must be seen as an e
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type ""^^xsd:string ;
-  props:uSEUInput "EU"^^xsd:string ;
+  props:uSEUInput "EU; US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1120"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
@@ -69312,7 +69312,7 @@ entity:SmartDevice-1121
   tables:rowIndex "1121"^^xsd:int ;
   rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Smart device"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:SmartDevice-1122
   rdf:type props:Combined-Elements-noduprows ;
@@ -69373,7 +69373,7 @@ Since the smart device is outside the scope of the SGCG, it must be seen as an e
   tables:rowIndex "1122"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Smart Device"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:SmartMeter-1123
   rdf:type ar:LogicalActor ;
@@ -69793,7 +69793,7 @@ It may also provide services including protocol conversion, device management, s
   tables:rowIndex "1129"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Smart Metering gateway (LNAP)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:SmartMeteringGateway-LNAP--1130
   rdf:type ar:LogicalServiceComposition ;
@@ -70497,7 +70497,7 @@ entity:Storage-1141
   tables:rowIndex "1141"^^xsd:int ;
   rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Storage"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:StormConditionTriage-1142
   rdf:type ar:ConceptualService ;
@@ -70804,7 +70804,7 @@ entity:SubstationControlSystem-SCS--1147
   props:colC ""^^xsd:string ;
   props:colD ""^^xsd:string ;
   props:conceptualModel ""^^xsd:string ;
-  props:dKERepository ""^^xsd:string ;
+  props:dKERepository "X"^^xsd:string ;
   props:demandResponse ""^^xsd:string ;
   props:description_0 "(Primary or secondary) Substation Control System implementing the function. Performs state estimation based on real-time measurement data. Derives control actions from analysis of power flow situation"^^xsd:string ;
   props:distributionGridMgmt ""^^xsd:string ;
@@ -70830,13 +70830,13 @@ entity:SubstationControlSystem-SCS--1147
   props:nAESB ""^^xsd:string ;
   props:nISTLegacyDomain ""^^xsd:string ;
   props:new ""^^xsd:string ;
-  props:note "GUC"^^xsd:string ;
+  props:note "GUC; Distribution Grid Management/Microgrid"^^xsd:string ;
   props:notes ""^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates ""^^xsd:string ;
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type ""^^xsd:string ;
@@ -70903,7 +70903,7 @@ entity:SubstationControlSystem-SCS--1148
   tables:rowIndex "1148"^^xsd:int ;
   rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Substation Control System (SCS)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:SupervisoryControlAndDataAcquisition-1149
   rdf:type ar:LogicalService ;
@@ -71336,7 +71336,7 @@ entity:SwitchActionScheduling-OperationWorkScheduling-OPSSC--1157
   props:eNTSOERoleModel ""^^xsd:string ;
   props:eUCommission ""^^xsd:string ;
   props:eUSCCGWP1 ""^^xsd:string ;
-  props:eUSourceunknown ""^^xsd:string ;
+  props:eUSourceunknown "X"^^xsd:string ;
   props:eUWGSPVers05 ""^^xsd:string ;
   props:electricStorage ""^^xsd:string ;
   props:electricTransportaion ""^^xsd:string ;
@@ -71354,12 +71354,12 @@ entity:SwitchActionScheduling-OperationWorkScheduling-OPSSC--1157
   props:nISTLegacyDomain ""^^xsd:string ;
   props:new ""^^xsd:string ;
   props:note "61968-IRM"^^xsd:string ;
-  props:notes ""^^xsd:string ;
+  props:notes "Switch action scheduling / operation work scheduling (OP-SSC)"^^xsd:string ;
   props:originalAlternativeEntityNameIncludingEntityNamesAreDuplicates ""^^xsd:string ;
   props:referenceDiagram ""^^xsd:string ;
   props:relatedRole ""^^xsd:string ;
   props:rolefromRoleTab ""^^xsd:string ;
-  props:rowActionFlagDeletedHarmonizeh "h"^^xsd:string ;
+  props:rowActionFlagDeletedHarmonizeh "H"^^xsd:string ;
   props:sGACConceptualArch ""^^xsd:string ;
   props:sMCG ""^^xsd:string ;
   props:type ""^^xsd:string ;
@@ -71426,7 +71426,7 @@ entity:SwitchActionScheduling-OperationWorkScheduling-OPSSC--1158
   tables:rowIndex "1158"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Switch action scheduling / operation work scheduling (OP-SSC)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:SwitchActionSchedulingAndOperationWorkScheduling-1156
   rdf:type ar:LogicalService ;
@@ -75388,7 +75388,7 @@ TSO control area."""^^xsd:string ;
   tables:rowIndex "1220"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Transmission System Operator (TSO)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:TransmissionSystemOperator-TSO--1221
   rdf:type props:Combined-Elements-noduprows ;
@@ -75504,7 +75504,7 @@ entity:TransmissionSystemOperator-TSO-2080
   tables:rowIndex "2080"^^xsd:int ;
   rdfs:comment "" ;
   rdfs:label "Transmission System Operator (TSO)"^^xsd:string ;
-  owl:deprecated "false"^^xsd:boolean ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
 entity:TransportCapacitySimulator-1222
   rdf:type ar:ConceptualService ;
