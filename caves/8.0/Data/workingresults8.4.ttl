@@ -24550,7 +24550,7 @@ entity:ElectricPowerSystem-EPS--generic--385
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:ElectricPowerSystem-EPS-generic-2036
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -25134,7 +25134,7 @@ entity:ElectricVehicleEMS-EVEMS--393
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:ElectricVehicleEMS-EVEMS-2039
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -28625,7 +28625,7 @@ entity:EnergyServicesInterface-ESI--451
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:EnergyServicesInterface-ESI-2042
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -28974,7 +28974,7 @@ entity:EnergyStorageManagement-456
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:EnergyStorageSystem-ESS-2037
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -34320,7 +34320,7 @@ entity:GasTurbine-2048
   tables:rowIndex "2048"^^xsd:int ;
   rdfs:comment "" ;
   rdfs:label "Gas turbine"^^xsd:string ;
-  owl:deprecated "true"^^xsd:boolean ;
+  owl:deprecated "false"^^xsd:boolean ;
 .
 entity:GasTurbine-545
   rdf:type props:Combined-Elements-noduprows ;
@@ -34379,7 +34379,7 @@ entity:GasTurbine-545
   tables:rowIndex "545"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Gas turbine"^^xsd:string ;
-  owl:deprecated "true"^^xsd:boolean ;
+  owl:deprecated "false"^^xsd:boolean ;
 .
 entity:Gateway-546
   rdf:type ar:ConceptualService ;
@@ -40142,7 +40142,7 @@ This is a type of Party Connected to the Grid"""^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:LocalEPS-2051
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -49370,7 +49370,7 @@ entity:MicrogridDEREMS-MDEMS--799
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:MicrogridDEREMS-MDEMS-2053
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -49487,7 +49487,7 @@ entity:MicrogridDistributedGenerationNetwork-800
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:MicrogridEPS-2054
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -49779,7 +49779,7 @@ entity:MicrogridOperator-803
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:MicrogridOwner-2056
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -53446,7 +53446,7 @@ entity:NominationValidator-866
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:NonControllableLoad-2057
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -53562,7 +53562,7 @@ entity:NonControllableLoad-867
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:NonCriticalLoad-2058
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -56185,7 +56185,7 @@ entity:OverlayGridOperator-909
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:PCCSwitch-2061
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -58451,7 +58451,7 @@ entity:PowerPlantDEREMS-PDEMS--945
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:PowerPlantDEREMS-PDEMS-2064
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -58509,7 +58509,7 @@ entity:PowerPlantDEREMS-PDEMS-2064
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:PowerPlantOperator-2065
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -58625,7 +58625,7 @@ entity:PowerPlantOperator-946
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:PowerPlantOwner-2066
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -61759,7 +61759,7 @@ entity:ProvideSecurity-999
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:PublicInternet-2067
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -61933,7 +61933,7 @@ entity:PublicNetwork-1001
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:PublicNetwork-2068
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -64139,7 +64139,7 @@ entity:RegulatingDERSystem-1037
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:RegulatingDERSystem-2070
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -64546,7 +64546,7 @@ entity:RenewableDER-1043
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:RenewableDER-2071
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -65941,7 +65941,7 @@ entity:RetailDEREnergyManagementSystem-RDEMS--1066
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:RetailDEREnergyManagementSystem-RDEMS-2072
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -66115,7 +66115,7 @@ entity:RetailEnergyProvider-REP--1068
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:RetailEnergyProvider-REP-2073
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualService ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Service"^^xsd:string ;
@@ -66289,7 +66289,7 @@ entity:RetailMarket-generic--1070
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:RetailMarket-generic-2074
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -68611,7 +68611,7 @@ entity:ShortTermLoadForecasts--1109
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SimpleExternalConsumerDisplay-1110
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -69196,7 +69196,7 @@ entity:SmartAppliances-1119
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SmartDevice-1120
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -70788,7 +70788,7 @@ entity:SubstationAndNetworkInventory-AMEINV--1146
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SubstationControlSystem-SCS--1147
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -71311,7 +71311,7 @@ entity:Switch-1155
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SwitchActionScheduling-OperationWorkScheduling-OPSSC--1157
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -71660,7 +71660,7 @@ entity:SynchronizingEquipment-1161
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:SynchronizingEquipment-2075
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -72878,7 +72878,7 @@ entity:TDEMSOrTSOEMS-1181
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:TDEMSOrTSOEMS-2076
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -74331,7 +74331,7 @@ entity:TransmissionBusLoadModel-TBLM--1204
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:TransmissionBusLoadModel-TBLM-2078
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -74686,7 +74686,7 @@ entity:TransmissionIED-1209
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:TransmissionMarket-2079
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -76199,7 +76199,7 @@ entity:V2GDRProgram-1233
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:V2GDRProgram-2081
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -76780,7 +76780,7 @@ entity:VirtualPowerPlant-VPP-DEREMS-VDEMS--1242
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:VirtualPowerPlant-VPPDEREMS-VDEMS-2082
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
@@ -76897,7 +76897,7 @@ entity:VirtualResource-generic--1243
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:VirtualResource-generic-2083
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -78119,7 +78119,7 @@ entity:WholesaleMarket-1261
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:WholesaleOrBulkEnergyMarket-generic-2085
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:ConceptualServiceComposition ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
@@ -78409,7 +78409,7 @@ entity:WideAreaNetwork-WAN--1264
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:WideAreaNetwork-WAN-2086
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
   props:actorServiceCompositionService "Actor"^^xsd:string ;
