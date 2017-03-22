@@ -64142,7 +64142,7 @@ entity:RegulatingDERSystem-2070
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -64169,7 +64169,7 @@ entity:RegulatingDERSystem-2070
   props:entityName "entity:RegulatingDERSystem-1037"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -64549,7 +64549,7 @@ entity:RenewableDER-2071
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -64576,7 +64576,7 @@ entity:RenewableDER-2071
   props:entityName "entity:RenewableDER-1043"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -65944,7 +65944,7 @@ entity:RetailDEREnergyManagementSystem-RDEMS-2072
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -65971,7 +65971,7 @@ entity:RetailDEREnergyManagementSystem-RDEMS-2072
   props:entityName "entity:RetailDEREnergyManagementSystem-RDEMS--1066"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -66118,7 +66118,7 @@ entity:RetailEnergyProvider-REP-2073
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "Service"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -66145,7 +66145,7 @@ entity:RetailEnergyProvider-REP-2073
   props:entityName "entity:RetailEnergyProvider-REP--1068"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -66292,7 +66292,7 @@ entity:RetailMarket-generic-2074
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -66319,7 +66319,7 @@ entity:RetailMarket-generic-2074
   props:entityName "entity:RetailMarket-generic--1070"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -71663,7 +71663,7 @@ entity:SynchronizingEquipment-2075
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -71690,7 +71690,7 @@ entity:SynchronizingEquipment-2075
   props:entityName "entity:SynchronizingEquipment-1161"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -72881,7 +72881,7 @@ entity:TDEMSOrTSOEMS-2076
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -72908,7 +72908,7 @@ entity:TDEMSOrTSOEMS-2076
   props:entityName "entity:TDEMSOrTSOEMS-1181"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -73464,7 +73464,6 @@ entity:TimeSynchronizationSource-2077
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -73491,7 +73490,6 @@ entity:TimeSynchronizationSource-2077
   props:entityName "entity:TimeSynchronizationSource-1190"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -74336,7 +74334,7 @@ entity:TransmissionBusLoadModel-TBLM-2078
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -74363,7 +74361,7 @@ entity:TransmissionBusLoadModel-TBLM-2078
   props:entityName "entity:TransmissionBusLoadModel-TBLM--1204"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -74691,7 +74689,7 @@ entity:TransmissionMarket-2079
   rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -74718,7 +74716,7 @@ entity:TransmissionMarket-2079
   props:entityName ""^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Conceptual"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
