@@ -637,3 +637,10 @@ ar:type
   rdf:type owl:DatatypeProperty ;
   rdfs:label "Whether an entity is an Organization or Application" ;
 .
+owl:Thing
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom owl:Thing ;
+      owl:onProperty rdfs:seeAlso ;
+    ] ;
+.
