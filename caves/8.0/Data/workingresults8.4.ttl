@@ -28625,10 +28625,9 @@ entity:EnergyServicesInterface-ESI--451
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:EnergyServicesInterface-ESI-2042
-  rdf:type ar:LogicalActor ;
+  rdf:type props:Combined-Elements-noduprows ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -28655,7 +28654,6 @@ entity:EnergyServicesInterface-ESI-2042
   props:entityName "entity:EnergyServicesInterface-ESI--451"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -28680,6 +28678,7 @@ entity:EnergyServicesInterface-ESI-2042
   tables:rowIndex "2042"^^xsd:int ;
   rdfs:comment "" ;
   rdfs:label "Energy Services Interface (ESI)"^^xsd:string ;
+  rdfs:seeAlso entity:EnergyServicesInterface-450 ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:EnergySourceControlSupportService-452
@@ -34320,6 +34319,7 @@ entity:GasTurbine-2048
   tables:rowIndex "2048"^^xsd:int ;
   rdfs:comment "" ;
   rdfs:label "Gas turbine"^^xsd:string ;
+  rdfs:seeAlso entity:GasTurbine-545 ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:GasTurbine-545
@@ -34379,6 +34379,7 @@ entity:GasTurbine-545
   tables:rowIndex "545"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Gas turbine"^^xsd:string ;
+  rdfs:seeAlso entity:GasTurbine-2048 ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:Gateway-546
@@ -55718,6 +55719,7 @@ entity:OutageManagementSystem-OMS-2060
   tables:rowIndex "2060"^^xsd:int ;
   rdfs:comment "" ;
   rdfs:label "Outage Management System (OMS)"^^xsd:string ;
+  rdfs:seeAlso entity:OutageManagementSystem-898 ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:OutageMinimizationService-902
@@ -69071,6 +69073,7 @@ entity:SmartAppliance-whiteGoods--1116
   tables:rowIndex "1116"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Smart appliance (white goods)"^^xsd:string ;
+  rdfs:seeAlso entity:SmartAppliances-1119 ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SmartApplianceGenerator-ExternalActor--1118
@@ -69193,6 +69196,7 @@ entity:SmartAppliances-1119
   tables:rowIndex "1119"^^xsd:int ;
   rdfs:comment "no description - harmonize with 1118?"^^xsd:string ;
   rdfs:label "Smart appliances"^^xsd:string ;
+  rdfs:seeAlso entity:SmartAppliance-whiteGoods--1116 ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SmartDevice-1120
@@ -69611,6 +69615,8 @@ entity:SmartMeter-SM--1126
   tables:rowIndex "1126"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Smart Meter (SM)"^^xsd:string ;
+  rdfs:seeAlso entity:SmartMeter-1123 ;
+  rdfs:seeAlso entity:SmartMeter-1124 ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SmartMeter-SM--1127
@@ -73049,6 +73055,7 @@ entity:TelcoOperator-1183
   tables:rowIndex "1183"^^xsd:int ;
   rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Telco Operator"^^xsd:string ;
+  rdfs:seeAlso entity:TransmissionSystemOperator-1219 ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:TestResultsService-1184
@@ -73399,6 +73406,8 @@ entity:TimeSynchronizationManagement-1189
   tables:rowIndex "1189"^^xsd:int ;
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Time Synchronization Management"^^xsd:string ;
+  rdfs:seeAlso entity:TimeService-1188 ;
+  rdfs:seeAlso entity:TimeSynchronizationManagement-1189 ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:TimeSynchronizationSource-1190
@@ -73514,6 +73523,8 @@ entity:TimeSynchronizationSource-2077
   tables:rowIndex "2077"^^xsd:int ;
   rdfs:comment "" ;
   rdfs:label "Time Synchronization Source"^^xsd:string ;
+  rdfs:seeAlso entity:TimeService-1188 ;
+  rdfs:seeAlso entity:TimeSynchronizationManagement-1189 ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:Timer-1191
@@ -77824,6 +77835,10 @@ entity:WeatherForecast-1257
   tables:rowIndex "1257"^^xsd:int ;
   rdfs:comment "no description"^^xsd:string ;
   rdfs:label "Weather Forecast"^^xsd:string ;
+  rdfs:seeAlso entity:WeatherDataCollection-1256 ;
+  rdfs:seeAlso entity:WeatherForecastSupport-1258 ;
+  rdfs:seeAlso entity:WeatherSystem-1259 ;
+  rdfs:seeAlso entity:WeatherSystemForDER-2084 ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:WeatherForecastSupport-1258
@@ -78000,6 +78015,10 @@ entity:WeatherSystemForDER-2084
   tables:rowIndex "2084"^^xsd:int ;
   rdfs:comment "" ;
   rdfs:label "Weather system for DER"^^xsd:string ;
+  rdfs:seeAlso entity:WeatherDataCollection-1256 ;
+  rdfs:seeAlso entity:WeatherForecast-1257 ;
+  rdfs:seeAlso entity:WeatherForecastSupport-1258 ;
+  rdfs:seeAlso entity:WeatherSystem-1259 ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:WholesaleHydro-1260
