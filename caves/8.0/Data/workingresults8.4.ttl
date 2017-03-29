@@ -28548,8 +28548,9 @@ service"""^^xsd:string ;
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "450"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "This description is mashup of an Actor and DerviceComposition that should be split per ADWP guideance. The actor portion is logical that gets implemented differenetly by vendors. It lists the major Services and ESI provides, so that portion of the description is the Service Composition."^^xsd:string ;
   rdfs:label "Energy Services Interface"^^xsd:string ;
+  rdfs:seeAlso entity:EnergyServicesInterface-ESI-2042 ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:EnergyServicesInterface-ESI--451
@@ -28662,7 +28663,7 @@ entity:EnergyServicesInterface-ESI-2042
   props:uSEUInput ""^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "2042"^^xsd:int ;
-  rdfs:comment "" ;
+  rdfs:comment "this short description is not a complete simplification of the the longer description in 450"^^xsd:string ;
   rdfs:label "Energy Services Interface (ESI)"^^xsd:string ;
   rdfs:seeAlso entity:EnergyServicesInterface-450 ;
   owl:deprecated "false"^^xsd:boolean ;
@@ -35185,7 +35186,7 @@ entity:GeographicInformationSystem-560
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems "X"^^xsd:string ;
-  props:actorServiceCompositionService "Service"^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -35235,7 +35236,7 @@ entity:GeographicInformationSystem-560
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "560"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "The description is describing a system. Instantiations of GIS systems e.g.: ESRI ArcGIS, GE Small World, Intergraph, Caliper Maptitude, QGIS. This description is more of a GIS respository. The systems mentioned include the repository PLUS a lot of necessary business/app services. This description really is more a Logical Actor description, not the service aspects."^^xsd:string ;
   rdfs:label "Geographic Information System"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -55462,11 +55463,11 @@ entity:OutageManagement-897
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:OutageManagementSystem-898
-  rdf:type ar:LogicalService ;
+  rdf:type ar:LogicalServiceComposition ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus "X"^^xsd:string ;
   props:aMISystems "X"^^xsd:string ;
-  props:actorServiceCompositionService "Service"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -55523,7 +55524,7 @@ Usually interfaces to CIS, WMS and GIS applications; May interface to AMI system
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "898"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "OMS are both the system (instantiation/ applications implementation) and the set of services of that system implementation. This description lists more of the types of services that more mature/feature rich OMS inplementations possess.  As stated is a Logical ServiceComposition."^^xsd:string ;
   rdfs:label "Outage Management System"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -55646,10 +55647,10 @@ entity:OutageManagementSystem-OMS--900
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:OutageManagementSystem-OMS-2060
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalActor ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService ""^^xsd:string ;
+  props:actorServiceCompositionService "Actor"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -55676,7 +55677,7 @@ entity:OutageManagementSystem-OMS-2060
   props:entityName "entity:OutageManagementSystem-OMS--900"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
-  props:hierarchyConceptualLogicalPhysical ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -55699,9 +55700,8 @@ entity:OutageManagementSystem-OMS-2060
   props:uSEUInput ""^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "2060"^^xsd:int ;
-  rdfs:comment "" ;
+  rdfs:comment "Appears to be intended to be a short description (needs to editing work), but typical OMS are a lot more than just the system that caputure outage information e.g. the quiry, display, filtering of that basic information. So, at best is a Logical Actor e.g. system with one service mentioned."^^xsd:string ;
   rdfs:label "Outage Management System (OMS)"^^xsd:string ;
-  rdfs:seeAlso entity:OutageManagementSystem-898 ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:OutageMinimizationService-902
@@ -66440,7 +66440,7 @@ entity:Retrofilter-1072
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1072"^^xsd:int ;
-  rdfs:comment "no description"^^xsd:string ;
+  rdfs:comment "is a DKE Repository item, not sure what the use case is for this element and what the description is intended to be"^^xsd:string ;
   rdfs:label "Retrofilter"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -69051,7 +69051,7 @@ entity:SmartAppliance-whiteGoods--1116
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1116"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "this is a GUC(?), for SGAC to shorten the description, we can propose that, while retaining the original, but that does not make it harmonized until source org agrees to changes proposed"^^xsd:string ;
   rdfs:label "Smart appliance (white goods)"^^xsd:string ;
   rdfs:seeAlso entity:SmartAppliances-1119 ;
   owl:deprecated "false"^^xsd:boolean ;
@@ -69174,7 +69174,7 @@ entity:SmartAppliances-1119
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1119"^^xsd:int ;
-  rdfs:comment "no description - harmonize with 1118?"^^xsd:string ;
+  rdfs:comment "this is a DKE Repository item, do not know what DEK Repository intended"^^xsd:string ;
   rdfs:label "Smart appliances"^^xsd:string ;
   rdfs:seeAlso entity:SmartAppliance-whiteGoods--1116 ;
   owl:deprecated "false"^^xsd:boolean ;
@@ -69411,8 +69411,10 @@ entity:SmartMeter-1123
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1123"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "is an IEEE P2030 contribution. For IEEE's purpose may be sufficient, over reaches on what is measured for some smart meters, is ambigous concerning 2-way communications. Not sufficent from my perspective."^^xsd:string ;
   rdfs:label "Smart Meter"^^xsd:string ;
+  rdfs:seeAlso entity:SmartMeter-1124 ;
+  rdfs:seeAlso entity:SmartMeter-SM--1126 ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SmartMeter-1124
@@ -69474,8 +69476,10 @@ entity:SmartMeter-1124
   props:uSEUInput "EU; US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1124"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "yes, from the description this is more a ServiceComposition and als needs a name change. It is from DKE Repository, description may be sufficient fo DKE context, not sufficient from my perspective, and includes undefined acronyms;. There are other services that could have been included in this composition, but once again not clear of the DKE context."^^xsd:string ;
   rdfs:label "Smart meter"^^xsd:string ;
+  rdfs:seeAlso entity:SmartMeter-1124 ;
+  rdfs:seeAlso entity:SmartMeter-SM--1126 ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:SmartMeter-1125
@@ -69593,7 +69597,7 @@ entity:SmartMeter-SM--1126
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1126"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "this cannot be harmonized/standardized by 14Apr2017"^^xsd:string ;
   rdfs:label "Smart Meter (SM)"^^xsd:string ;
   rdfs:seeAlso entity:SmartMeter-1123 ;
   rdfs:seeAlso entity:SmartMeter-1124 ;
@@ -73033,7 +73037,7 @@ entity:TelcoOperator-1183
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1183"^^xsd:int ;
-  rdfs:comment "no description"^^xsd:string ;
+  rdfs:comment "is a DKE Repository item, not sure what the use case is for this element and what the description is intended to be"^^xsd:string ;
   rdfs:label "Telco Operator"^^xsd:string ;
   rdfs:seeAlso entity:TransmissionSystemOperator-1219 ;
   owl:deprecated "false"^^xsd:boolean ;
@@ -73330,11 +73334,11 @@ entity:TimeService-1188
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:TimeSynchronizationManagement-1189
-  rdf:type ar:ConceptualService ;
+  rdf:type ar:ConceptualServiceComposition ;
   <file:///AWP/8.0/Data/CombinedElement-List_2014-05-20update_v3-homework.xlsx#tC8WG6UseCaseActorsAssoc.ActorsForUseCase211_0> "X"^^xsd:string ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorServiceCompositionService "Service"^^xsd:string ;
+  props:actorServiceCompositionService "ServiceComposition"^^xsd:string ;
   props:actorTypeOrRole ""^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
@@ -73384,10 +73388,8 @@ entity:TimeSynchronizationManagement-1189
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1189"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "the more abstract term is Time Service e.g. conceptual. Time SyncMgmt, is a portion of TimeService and with the mimimal description (very niched to smart grid) is at least a logical ServiceComposition without the detailed listing of the services. "^^xsd:string ;
   rdfs:label "Time Synchronization Management"^^xsd:string ;
-  rdfs:seeAlso entity:TimeService-1188 ;
-  rdfs:seeAlso entity:TimeSynchronizationManagement-1189 ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:TimeSynchronizationSource-1190
@@ -73450,10 +73452,10 @@ entity:TimeSynchronizationSource-1190
   owl:deprecated "true"^^xsd:boolean ;
 .
 entity:TimeSynchronizationSource-2077
-  rdf:type props:Combined-Elements-noduprows ;
+  rdf:type ar:LogicalEntity ;
   props:aDWPOriginalFocus ""^^xsd:string ;
   props:aMISystems ""^^xsd:string ;
-  props:actorTypeOrRole ""^^xsd:string ;
+  props:actorTypeOrRole "Actor"^^xsd:string ;
   props:ahGCharging ""^^xsd:string ;
   props:archiMateTerminologyLayers ""^^xsd:string ;
   props:businessFunctionService ""^^xsd:string ;
@@ -73479,6 +73481,7 @@ entity:TimeSynchronizationSource-2077
   props:entityName "entity:TimeSynchronizationSource-1190"^^xsd:string ;
   props:gUC ""^^xsd:string ;
   props:harmonizationNotes ""^^xsd:string ;
+  props:hierarchyConceptualLogicalPhysical "Logical"^^xsd:string ;
   props:homeworkBlocks ""^^xsd:string ;
   props:iEC61968IRM ""^^xsd:string ;
   props:iECSG3 ""^^xsd:string ;
@@ -73501,10 +73504,8 @@ entity:TimeSynchronizationSource-2077
   props:uSEUInput ""^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "2077"^^xsd:int ;
-  rdfs:comment "" ;
+  rdfs:comment "this is a logical actor. Time synchronization is a composite of using time sync messages from physical actor(s), then using software/algoritiums to distribute and make that time value to downstream time clients. Each interaction with a node in a time synch process, degrades the precision of the time value being distributed."^^xsd:string ;
   rdfs:label "Time Synchronization Source"^^xsd:string ;
-  rdfs:seeAlso entity:TimeService-1188 ;
-  rdfs:seeAlso entity:TimeSynchronizationManagement-1189 ;
   owl:deprecated "false"^^xsd:boolean ;
 .
 entity:Timer-1191
@@ -77752,7 +77753,7 @@ entity:WeatherDataCollection-1256
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1256"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "reads more like a Service"^^xsd:string ;
   rdfs:label "Weather Data Collection"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -77811,7 +77812,7 @@ entity:WeatherForecast-1257
   props:uSEUInput "EU"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1257"^^xsd:int ;
-  rdfs:comment "no description"^^xsd:string ;
+  rdfs:comment "depends upon the context used by DKE e.g. could be a the tangiable forecast or the set of services used to prepare a tangible forecast. Need more information to address this item"^^xsd:string ;
   rdfs:label "Weather Forecast"^^xsd:string ;
   rdfs:seeAlso entity:WeatherDataCollection-1256 ;
   rdfs:seeAlso entity:WeatherForecastSupport-1258 ;
@@ -77874,7 +77875,7 @@ entity:WeatherForecastSupport-1258
   props:uSEUInput "US"^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "1258"^^xsd:int ;
-  rdfs:comment ""^^xsd:string ;
+  rdfs:comment "description needs more clarity, but is more a Service or ServiceComposition"^^xsd:string ;
   rdfs:label "Weather forecast support"^^xsd:string ;
   owl:deprecated "false"^^xsd:boolean ;
 .
@@ -77991,7 +77992,7 @@ entity:WeatherSystemForDER-2084
   props:uSEUInput ""^^xsd:string ;
   props:wASA ""^^xsd:string ;
   tables:rowIndex "2084"^^xsd:int ;
-  rdfs:comment "" ;
+  rdfs:comment "the description is ambiguous, part reads like a service provider, part reads like maybe a system that provides weather service information that describes weather patterns/conditions that impact DER capbilities. Not sure how to categorize it without further clarifications"^^xsd:string ;
   rdfs:label "Weather system for DER"^^xsd:string ;
   rdfs:seeAlso entity:WeatherDataCollection-1256 ;
   rdfs:seeAlso entity:WeatherForecast-1257 ;
