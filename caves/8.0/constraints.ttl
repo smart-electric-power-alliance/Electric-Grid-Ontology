@@ -1181,11 +1181,18 @@ owl:Thing
               ] ;
           ]
           [
-            sp:object "false"^^xsd:boolean ;
-            sp:predicate owl:deprecated ;
-            sp:subject [
-                sp:varName "entity" ;
-              ] ;
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "deprecated" ;
+                    ] ;
+                  sp:predicate owl:deprecated ;
+                  sp:subject [
+                      sp:varName "entity" ;
+                    ] ;
+                ]
+              ) ;
           ]
           [
             rdf:type sp:Optional ;
@@ -1223,6 +1230,34 @@ owl:Thing
                       sp:varName "description" ;
                     ] ;
                   sp:predicate <http://sv.cmu.edu/AWP/8.0/props#description_0> ;
+                  sp:subject [
+                      sp:varName "entity" ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "comment" ;
+                    ] ;
+                  sp:predicate rdfs:comment ;
+                  sp:subject [
+                      sp:varName "entity" ;
+                    ] ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type sp:Optional ;
+            sp:elements (
+                [
+                  sp:object [
+                      sp:varName "seeAlso" ;
+                    ] ;
+                  sp:predicate rdfs:seeAlso ;
                   sp:subject [
                       sp:varName "entity" ;
                     ] ;
