@@ -1,5 +1,4 @@
-# adwp
-Repository for semantic models of the Smart Grid Interoperability Panel, Architecture Development Working Group
+A Repository for semantic models of the Smart Grid Interoperability Panel, Architecture Development Working Group
 <h1><strong>A Rosetta Stone for the Smart Grid Expert</strong></h1>
 <h3>Get acquainted with and test your new favorite tool, SEPA&rsquo;s Smart Grid Ontology</h3>
 <h3 dir="ltr">Smart Grid&rsquo;s Language Problem</h3>
@@ -27,4 +26,4 @@ Repository for semantic models of the Smart Grid Interoperability Panel, Archite
 <li>Oil and Gas</li>
 </ul>
 <h2><strong>Your Next Steps</strong></h2>
-<p>Getting started with SEPA&rsquo;s Smart Grid Ontology is quick and painless. To get your organization onboard, visit our&nbsp;repository&nbsp;and contact our team at WorkingGroup@sepapower.org.</p>
+<p>Getting started with SEPA&rsquo;s Smart Grid Ontology is quick and painless. To get your organization onboard, visit our&nbsp;repository&nbsp;and contact our team at WorkingGroups@sepapower.org.</p>
