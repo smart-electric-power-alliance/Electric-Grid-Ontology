@@ -27,4 +27,4 @@ Repository for semantic models of the Smart Grid Interoperability Panel, Archite
 <li>Oil and Gas</li>
 </ul>
 <h2><strong>Your Next Steps</strong></h2>
-<p>Getting started with SEPA&rsquo;s Smart Grid Ontology is quick and painless. To get your organization onboard, visit our&nbsp;repository&nbsp;and contact our team at data@sepapower.org.</p>
+<p>Getting started with SEPA&rsquo;s Smart Grid Ontology is quick and painless. To get your organization onboard, visit our&nbsp;repository&nbsp;and contact our team at WorkingGroup@sepapower.org.</p>
