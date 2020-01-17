@@ -1,4 +1,4 @@
-The Repository for smart grid semantic models by Smart Electric Power Alliance's Electric Grid Ontology Task Force
+The repository for smart grid semantic models by Smart Electric Power Alliance's Electric Grid Ontology Task Force
 <h1><strong>A Rosetta Stone for the Smart Grid Expert</strong></h1>
 <h3>Get acquainted with and test your new favorite tool, SEPA&rsquo;s Smart Grid Ontology</h3>
 <h3 dir="ltr">Smart Grid&rsquo;s Language Problem</h3>
