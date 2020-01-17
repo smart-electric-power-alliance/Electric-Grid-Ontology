@@ -1,3 +1,5 @@
+<img src="Images/SEPAReadMeLogo.png">
+
 The repository for smart grid semantic models by Smart Electric Power Alliance's Electric Grid Ontology Task Force
 <h1><strong>A Rosetta Stone for the Smart Grid Expert</strong></h1>
 <h3>Get acquainted with and test your new favorite tool, SEPA&rsquo;s Smart Grid Ontology</h3>
@@ -26,4 +28,8 @@ The repository for smart grid semantic models by Smart Electric Power Alliance's
 <li>Oil and Gas</li>
 </ul>
 <h2><strong>Your Next Steps</strong></h2>
-<p>Getting started with SEPA&rsquo;s Smart Grid Ontology is quick and painless. To get your organization onboard, visit our&nbsp;repository&nbsp;and contact our team at WorkingGroups@sepapower.org.</p>
+<p>Getting started with SEPA&rsquo;s Smart Grid Ontology is quick and painless. To get your organization onboard, visit our&nbsp;repository&nbsp;and contact our team at <b>WorkingGroups@sepapower.org </b>.</p>
+
+
+<p align="center">
+<img src="Images/SEPASmartGridOntology.png" width="500">
