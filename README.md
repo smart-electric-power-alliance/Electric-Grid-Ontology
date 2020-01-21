@@ -28,7 +28,7 @@ The repository for smart grid semantic models by Smart Electric Power Alliance's
 <li>Oil and Gas</li>
 </ul>
 <h2><strong>Your Next Steps</strong></h2>
-<p>Getting started with SEPA&rsquo;s Smart Grid Ontology is quick and painless. To get your organization onboard, visit our&nbsp;repository&nbsp;and contact our team at <b>WorkingGroups@sepapower.org </b>.</p>
+<p>Getting started with SEPA&rsquo;s Smart Grid Ontology is quick and painless. To get your organization onboard, visit our&nbsp;repository&nbsp;and contact our team at <b>WorkingGroups@sepapower.org</b>.</p>
 
 
 <p align="center">
