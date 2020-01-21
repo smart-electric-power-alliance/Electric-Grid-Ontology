@@ -3,7 +3,7 @@
 The repository for smart grid semantic models by Smart Electric Power Alliance's Electric Grid Ontology Task Force
 <h1><strong>A Rosetta Stone for the Smart Grid Expert</strong></h1>
 <h3>Get acquainted with and test your new favorite tool, SEPA&rsquo;s Smart Grid Ontology</h3>
-<h3 dir="ltr">Smart Grid&rsquo;s Language Problem</h3>
+<h2 dir="ltr">Smart Grid&rsquo;s Language Problem</h2>
 <p dir="ltr">The vocabulary and language of the smart grid is a problem even for seasoned experts. Teams speak about the same terms and often miscommunicate them as different objects and concepts. This makes cross-organizational discussions and assessments inefficient and frustrating.</p>
 <h2 dir="ltr">Eliminating Communication Friction</h2>
 <p dir="ltr">SEPA&rsquo;s Smart Grid Ontology addresses the frustration and inefficiency problem of smart grid communication head-on. This ontology contains a common set of architectural/business elements and categorical definitions that can be readily used, interpreted, understood, and modeled the same way across projects and organizations.</p>
