@@ -1,5 +1,5 @@
 <img src="Images/SEPAReadMeLogo.png">
-
+Heloo there!!!
 The repository for smart grid semantic models by Smart Electric Power Alliance's Electric Grid Ontology Task Force
 <h1><strong>A Rosetta Stone for the Smart Grid Expert</strong></h1>
 <h3>Get acquainted with and test your new favorite tool, SEPA&rsquo;s Smart Grid Ontology</h3>
